@@ -5,9 +5,6 @@ $(document).ready(function() {
 	$( '.general_information__screen__tourist' ).hide();
 	$( '.general_information__screen__food' ).hide();
 	$( '.general_information__screen__source' ).hide();
-	$( '.general_information__screen__source' ).hide();
-	$( '.general_information__screen__source' ).hide();
-	$( '.general_information__screen__source' ).hide();
 	$("#map").click(function(){
 			$( '.general_information__screen__map' ).show();
 			$( '.general_information__screen__list' ).hide();
