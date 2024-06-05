@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color:#F6E1CD;
+}
+table, th {
+  width: 100%;
+  border:1px solid #B27D4D;
+  border-collapse:collapse;
+  background-color:#F6EAE0
+}
+a:link{
+  color: #B27D4D;
+  font-weight:normal;
+  font-style:normal;
+  text-decoration:none;
+}
+a:visited{
+  color: #B27D4D;
+  font-style:normal;
+  text-decoration:none;
+}
