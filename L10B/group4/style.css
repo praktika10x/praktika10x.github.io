@@ -97,15 +97,15 @@ dt{
   width: 290px;
   height: 220px;
   border-radius: 63px;
-  right:410px;
-  top: 650px;
+  right:90px;
+  top: 660px;
   transition: transform 0.5s ease;
 }
 .firsttext{
   font-family: Lugatype, serif, Arial, Calibri;
   position: absolute;
   left: 90px;
-  right: 400px;
+  right: 480px;
   top:180px;
   font-size: 25px;
 }
@@ -156,7 +156,7 @@ dt{
   font-family: Lugatype, serif, Arial, Calibri;
   position: absolute;
   left: 90px;
-  right: 400px;
+  right: 450px;
   top:180px;
   font-size: 25px;
 }
@@ -172,7 +172,7 @@ dt{
   font-family: Lugatype, serif, Arial, Calibri;
   position: absolute;
   font-size: 25px;
-  right:390px;
+  right:450px;
   left:90px;
   top:720px;
 }
