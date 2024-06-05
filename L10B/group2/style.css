@@ -121,8 +121,8 @@ body {
 
 .screen_general {
 	border: 0.2vw solid #fff;
-	width: 10vw;
-	height: 10vw;
+	width: 11vw;
+	height: 11vw;
 	transition: all 1s ease;
 	margin-right: 5%;
 }
