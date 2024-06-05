@@ -1,14 +1,38 @@
 body {
-      background-color: black;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      font-family: Arial;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial;
 }
 img {
-  max-width: 100px;
+width: 1836.38px;
+}
+.water{
+  height: 668.01px;
+  width: 1836.38px;
+}
+.first{
+  position: absolute;
+  top: 0px;
+  left: 200px;
+}
+.second{
+  position: absolute;
+  top: 0px;
+  left: 300px;
+}
+.thirth{
+  position: absolute;
+  top: 0px;
+  left: 400px;
+}
+.firth{
+  position: absolute;
+  top: 0px;
+  left: 500px;
 }
