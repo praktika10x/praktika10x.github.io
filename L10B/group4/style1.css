@@ -1,0 +1,86 @@
+html, body{
+  height: 100%;
+  width: 100%;
+}
+h1{
+  font-family: Lugatype, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  margin:0;
+}
+.gradient {
+  height: 300px;
+  width: 100%;
+  background: linear-gradient(225deg, rgba(54,54,54,1) 0%, rgba(209,157,3,1) 25%, rgba(161,150,110,1) 49%, rgba(133,179,227,1) 77%, rgba(15,89,107,1) 100%);
+  animation: gradient 10s infinite linear;
+  background-size: 400%; 
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 80% 0%;
+  }
+  50% {
+      background-position: 20% 100%;
+  }
+  100% {
+      background-position: 80% 0%;
+  }
+}
+@font-face {
+  font-family: Lugatype; 
+  src: url(fonts/Tkachev\ -\ Lugatype.otf);
+}
+.first{
+  border-radius: 63px;
+  margin-left:1150px;
+  margin-top: 30px;
+  width: 290px;
+  height: 220px;
+}
+.second{
+  border-radius: 63px;
+  margin-left: 40px;
+  width: 290px;
+  height: 220px;
+}
+.third{
+  border-radius: 63px;
+  margin-left: 1150px;
+  margin-top:80px;
+  width: 290px;
+  height: 220px;
+}
+.firsttext{
+  margin-left: 40px;
+  margin-right: 350px;
+  margin-top:-180px;
+  font-size: 15pt;
+  font-weight: bold;
+}
+.secondtext{
+  margin-left:350px;
+  margin-right:70px;
+  margin-top:-160px;
+  font-size: 15pt;
+  font-weight: bold;
+}
+.thirdtext{
+  margin-left: 40px;
+  margin-right: 350px;
+  margin-top:-150px;
+  font-size: 15pt;
+  font-weight: bold;
+}
+.posylannya1{
+  margin-left:600px;
+}
+.posylannya2{
+  margin-left:60px;
+}
+div{
+  margin-top: 100px;
+}
