@@ -33,6 +33,7 @@ body {
 	height: 90%;
 	text-align: center;
 	font-size: 1.2vw;
+	display: block;
 	box-shadow: 0 0 0.5vw #fff;
 	
 }
@@ -105,7 +106,18 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 }
-
+.general_information__screen__source {
+	width: 100%;
+	height: 100%;
+	margin-top: 4%;
+	margin-left: 4%;
+	list-style: inside;
+	
+}
+.general_information__screen__source a {
+	color: #fff;
+	font-size: 1.5vw;
+}
 
 .screen_general {
 	border: 0.2vw solid #fff;
@@ -426,6 +438,38 @@ body {
 	background-position: center;
 	background-image: url('images/food/2.jpg');
 }
+.screen__food__3_image {
+	background-position: center;
+	background-image: url('images/food/3.jpg');
+}
+.screen__food__4_image {
+	background-position: center;
+	background-image: url('images/food/4.jpg');
+}
+.screen__food__5_image {
+	background-position: center;
+	background-image: url('images/food/5.jpg');
+}
+.screen__food__6_image {
+	background-position: center;
+	background-image: url('images/food/6.jpg');
+}
+.screen__food__7_image {
+	background-position: center;
+	background-image: url('images/food/7.jpg');
+}
+.screen__food__8_image {
+	background-position: center;
+	background-image: url('images/food/8.jpg');
+}
+.screen__food__9_image {
+	background-position: center;
+	background-image: url('images/food/9.jpg');
+}
+.screen__food__10_image {
+	background-position: center;
+	background-image: url('images/food/10.jpg');
+}
 .screen__food__1:hover {
 	width: 18%;
 	height: 36%;
@@ -436,7 +480,46 @@ body {
 	height: 36%;
 	box-shadow: 0 0 0.5vw #fff;
 }
-
+.screen__food__3:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+.screen__food__4:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+.screen__food__5:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+.screen__food__6:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+.screen__food__7:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+.screen__food__8:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+.screen__food__9:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+.screen__food__10:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
 
 .general_information__developers {
     font-size: 0.8vw;
