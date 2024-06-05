@@ -104,14 +104,14 @@ body {
 .container {
     width: 265px;
     height: 265px;
-    border-radius: 35px;
+    border-radius: 50%;
 }
 
 .container-1 {
-    background-image: url(mus.jpg);
+    background-image: url(bograch.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 200%;
+    background-position: 40% 50%;
+    background-size: 150%;
 }
 
 .container-2 {
@@ -133,17 +133,17 @@ body {
 }
 
 .container-4 {
-    background-image: url(palanok12.jpg);
+    background-image: url(Perkelt-1.2_Sn.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 200%;
+    background-size: 150%;
 }
 
 .container-5 {
-    background-image: url(238535.jpg);
+    background-image: url(dxprhn---c740x493x50px50p-up--5e3ee102c91f8b19eaf351314b7ec20e.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 200%;
+    background-position: 92% 50%;
+    background-size: 150%;
 }
 
 .container-6 {
@@ -165,17 +165,17 @@ body {
 }
 
 .container-8 {
-    background-image: url(big_1435.jpg);
+    background-image: url(ripa.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 200%;
+    background-position: 50% 70%;
+    background-size: 110%;
 }
 
 .container-9 {
-    background-image: url(Ozero_Senevyr.jpg);
+    background-image: url(cecce469199f00f13b8b65a0339ef6ec.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 200%;
+    background-size: 140%;
 }
 
 .container-10 {
