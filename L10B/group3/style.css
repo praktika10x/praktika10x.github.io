@@ -25,3 +25,8 @@ th{
   width:18%;
   height:100px;
 }
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
