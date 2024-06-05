@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <table>
+    <tr>
+      <th style="color:#725132; width:50%; text-align:left;">Місто Львів</th>
+      <th style="width:18%; text-align:center;"><a href="">Головна</a></th>
+      <th style="width:18%; text-align:center;"><a href="">Природно-географічні пам’ятки</a></th>
+      <th style="width:18%; text-align:center;"><a style="font-weight:bold;" href="">Історико-культурні пам’ятки</a></th>
+    </tr>
+  </table>
+  Історико-культурні пам’ятки
+  <script src="script.js"></script>
+</body>
+</html>
