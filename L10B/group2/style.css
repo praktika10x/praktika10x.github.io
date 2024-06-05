@@ -1,0 +1,447 @@
+body {
+	overflow:hidden;
+}
+
+
+.general_information {
+	width: 100%;
+	height: 80%;
+	display: flex;
+	flex-direction: row;	
+	margin-top: 2%;	
+}
+
+
+
+.general_information__screen {
+	width: 75%;
+	border: 0.2vw solid #fff;
+	height: 90%;
+	margin-left: 1%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 0.5vw #fff;
+}
+
+
+.general_information__menu {
+	margin-left: 3%;
+	width: 20%;
+	border: 0.2vw solid #fff;
+	height: 90%;
+	text-align: center;
+	font-size: 1.2vw;
+	box-shadow: 0 0 0.5vw #fff;
+	
+}
+
+
+.general_information__screen__map {
+	height: 100%;
+	width: 70%;
+	background-position: center;
+	background-image: url('images/Dnipropetrovsk_regions.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	
+}
+
+
+.general_information__menu li {
+	cursor: pointer;
+	margin-top: 1.5vw ;
+	display: inline-block;
+	padding: 0.5vw;
+	color: #fff;
+
+}
+
+
+.general_information__menu li:hover {
+	background: #fff;
+	color: #000
+}
+
+
+
+.general_information__screen__list{
+	width: 100%;
+	height: 100%;
+	margin-left: 2%;
+	margin-top: 4%;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+
+.general_information__screen__history {
+	width: 100%;
+	height: 100%;
+	margin-left: 2%;
+	margin-top: 4%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.general_information__screen__tourist {
+	width: 100%;
+	height: 100%;
+	margin-left: 2%;
+	margin-top: 4%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.general_information__screen__food {
+	width: 100%;
+	height: 100%;
+	margin-left: 2%;
+	margin-top: 4%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.screen_general {
+	border: 0.2vw solid #fff;
+	width: 10vw;
+	height: 10vw;
+	transition: all 1s ease;
+	margin-right: 5%;
+}
+
+
+
+.screen_general_image {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 65%;
+}
+
+
+
+.screen_general_description {
+	color: #000;
+	font-size: 0.8vw;
+	font-weight: 700;
+	height: 25%;
+	margin-left: 2%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+
+.screen__list__1__image {
+	background-image: url('images/list/21.jpg');
+}
+
+.screen__list__2__image {
+	background-image: url('images/list/27.jpg');
+}
+
+.screen__list__3__image {
+	background-image: url('images/list/28.jpg');
+}
+.screen__list__4__image {
+	background-image: url('images/list/30.jpg');
+}
+.screen__list__5__image {
+	background-image: url('images/list/31.jpg');
+}
+.screen__list__6__image {
+	background-image: url('images/list/32.jpg');
+}
+.screen__list__7__image {
+	background-image: url('images/list/33.jpg');
+}
+.screen__list__8__image {
+	background-image: url('images/list/34.jpg');
+}
+.screen__list__9__image {
+	background-image: url('images/list/35.jpg');
+}
+.screen__list__10__image {
+	background-image: url('images/list/36.jpg');
+}
+
+.screen__list__10:hover {
+
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+.screen__list__9:hover {
+
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+.screen__list__8:hover {
+
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+.screen__list__7:hover {
+
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+.screen__list__6:hover {
+
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+.screen__list__5:hover {
+
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+.screen__list__4:hover {
+
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+.screen__list__3:hover {
+
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+
+.screen__list__2:hover {
+
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+
+.screen__list__1:hover {
+
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+
+
+.screen__history__1_image {
+	background-position: center;
+	background-image: url('images/history/1.jpg');
+}
+.screen__history__2_image {
+	background-position: center;
+	background-image: url('images/history/2.jpg');
+}
+.screen__history__3_image {
+	background-position: center;
+	background-image: url('images/history/3.jpg');
+}
+.screen__history__4_image {
+	background-position: center;
+	background-image: url('images/history/4.jpg');
+}
+.screen__history__5_image {
+	background-position: center;
+	background-image: url('images/history/5.jpg');
+}
+.screen__history__6_image {
+	background-position: center;
+	background-image: url('images/history/6.jpg');
+}
+.screen__history__7_image {
+	background-position: center;
+	background-image: url('images/history/7.jpg');
+}
+.screen__history__8_image {
+	background-position: center;
+	background-image: url('images/history/8.jpg');
+}
+.screen__history__9_image {
+	background-position: center;
+	background-image: url('images/history/9.jpg');
+}
+.screen__history__10_image {
+	background-position: center;
+	background-image: url('images/history/10.jpg');
+}
+/*Не забываем добавить hover*/
+.screen__history__1:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+.screen__history__2:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+.screen__history__3:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+.screen__history__4:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+.screen__history__5:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+.screen__history__6:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+.screen__history__7:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+.screen__history__8:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+.screen__history__9:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+.screen__history__10:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw  #fff;
+}
+
+.screen__tourist__1_image {
+	background-position: center;
+	background-image: url('images/tourist/1.jpg');
+}
+.screen__tourist__2_image {
+	background-position: center;
+	background-image: url('images/tourist/2.jpg');
+}
+.screen__tourist__3_image {
+	background-position: center;
+	background-image: url('images/tourist/3.jpg');
+}
+.screen__tourist__4_image {
+	background-position: center;
+	background-image: url('images/tourist/4.jpg');
+}
+.screen__tourist__5_image {
+	background-position: center;
+	background-image: url('images/tourist/5.jpg');
+}
+.screen__tourist__6_image {
+	background-position: center;
+	background-image: url('images/tourist/6.jpg');
+}
+.screen__tourist__7_image {
+	background-position: center;
+	background-image: url('images/tourist/7.jpg');
+}
+.screen__tourist__8_image {
+	background-position: center;
+	background-image: url('images/tourist/8.jpg');
+}
+.screen__tourist__9_image {
+	background-position: center;
+	background-image: url('images/tourist/9.jpg');
+}
+.screen__tourist__10_image {
+	background-position: center;
+	background-image: url('images/tourist/10.jpg');
+}
+.screen__tourist__1:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+.screen__tourist__2:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+.screen__tourist__3:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+.screen__tourist__4:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+.screen__tourist__5:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+.screen__tourist__6:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+.screen__tourist__7:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+.screen__tourist__8:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+.screen__tourist__9:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+.screen__tourist__10:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+
+.screen__food__1_image {
+	background-position: center;
+	background-image: url('images/food/1.jpg');
+}
+.screen__food__2_image {
+	background-position: center;
+	background-image: url('images/food/2.jpg');
+}
+.screen__food__1:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+.screen__food__2:hover {
+	width: 18%;
+	height: 36%;
+	box-shadow: 0 0 0.5vw #fff;
+}
+
+
+.general_information__developers {
+    font-size: 0.8vw;
+    margin-top: -3%;
+    text-align: right;
+    opacity: 0.5;
+    color: #fff
+}
