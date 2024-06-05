@@ -5,3 +5,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Історичні пам'ятки</title>
   <style>
+body {
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial;
+}
