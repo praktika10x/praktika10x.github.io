@@ -7,7 +7,7 @@ table, th {
   width: 100%;
   border:1px solid #B27D4D;
   border-collapse:collapse;
-  background-color:#F6EAE0
+  background-color:#F6EAE0;
 }
 a:link{
   color: #B27D4D;
@@ -19,4 +19,9 @@ a:visited{
   color: #B27D4D;
   font-style:normal;
   text-decoration:none;
+}
+th{
+  text-align:center;
+  width:18%;
+  height:100px;
 }
