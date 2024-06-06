@@ -20,6 +20,28 @@
     grid-template-columns: 10% auto 35% auto 10%;
     grid-gap: 10px;
   }
+  .backgroundimage{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -10;
+    filter: blur(5px);
+     background-image:url('https://piligrim.ua/wp-content/uploads/2021/10/haram_beach-1024x614.jpg');
+  }
+  .fronte{
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    filter: none;
+  }
+    
+  
   .item {
 
     padding: 20px;
@@ -69,16 +91,16 @@
 </head>
 <body>
 
-<div class="container">
-  <div class="item item1"></div>
-  <div class="item item2"><h1>Туристичний довідник по Криму</h1></div>
-  <div class="item item3"> <button class="toggle-button">Про регіон</button>
+<div class='backgroundimage'></div>
+  <div class='fronte'>
+   <div class="container">
+   <div class="item item1"></div>
+   <div class="item item2"><h1>Туристичний довідник по Криму</h1> </div>
+  <div class="item item3"> <button class="toggle-button">Загальні відомості</button>
   <span class="text"></span>
-  <button class="toggle-button">Маршрути</button>
+  <button class="toggle-button">Туристичні маршрути</button>
   <span class="text"></span>
   <button class="toggle-button">Джерела</button>
-  <span class="text"></span>
-  <button class="toggle-button">Карта</button>
   <span class="text"></span>
   </div>
   <div class="item item4">
@@ -87,6 +109,8 @@
   </div>
   <div class="item item5"></div>
 </div>
+  </div>
+  
   <script src='script.js'></script>
 </body>
 </html>
