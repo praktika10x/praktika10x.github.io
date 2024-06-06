@@ -1,5 +1,5 @@
 :root{
-  --main-color: #000;
+  --main-color: rgba(0, 0, 0, 0.5);;
   --stressing-color: #C1FFB1;
   --bg-color: rgba(90,90,90,.5);
 }
@@ -14,14 +14,26 @@ font-family: Yeseva_One;
 src: url(fonts/shriftforzag/Yeseva_One/YesevaOne-Regular.ttf);
 }
 
-*{
+*
+{
   margin:0;
   padding: 0;
   color: white;
+  font-family: Balsamiq_Sans, serif;
 }
+body{
+  overflow-x: hidden;
+}
+.gradient{
+   height: 100vh;
+   width: 100vw;
+         background: linear-gradient(225deg, rgba(221,119,255,1) 6%, rgba(73,157,132,1) 71%, rgba(0,212,255,1) 100%) no-repeat fixed;
+   animation:gradient 10s infinite linear;
+   background-size: 400% ;
+ }   
 .hdrsticky{
- height: 20vh; 
-  background-color: red;
+ height: 25vh; 
+  /* background-color: red; */
 }
 header{
   position: sticky;
@@ -31,6 +43,7 @@ header{
   background-color: var(--main-color);
   border-bottom-right-radius: 30px;
   margin: 0;
+  z-index: 5;
 }
 .hdr-cont
 {
@@ -38,6 +51,7 @@ header{
   justify-content: space-between;
   align-items: center;
   height: 80px;
+  
 }
 .hdr-cont div
 {
@@ -66,13 +80,13 @@ h1{
   padding: 10px 20px;
 }
 .hdr-cont div:nth-child(3){
-  width: 60vw;
+  width: 60%;
   height: 30px;
   background-color:var(--stressing-color) ;
   border-radius: 30px;
 }
 .hdr-down{
-  width: 45vw;
+  width: 45%;
   height: 80px;
   background-color: var(--main-color);
   border-bottom-right-radius: 30px;
@@ -85,12 +99,13 @@ h1{
   bottom: 20px;
 }
 main{
-  width:80vw;
+  width:80%;
   margin: 20px auto;
   background-color: var(--bg-color);
-  border-radius: 5%;
+  border-radius: 15px;
   padding: 10px;
 }
+
 .gloc
 {
   background-color: var(--bg-color);
@@ -106,6 +121,7 @@ main{
   height: 50px;
   background-color: var(--main-color);
   border-top-left-radius: 30px;
+  margin-top: 50px;
 }
 .footb
 {
@@ -122,13 +138,14 @@ main{
 .butt{
   color:var(--stressing-color);
   border: solid 2px var(--stressing-color);
-   border-radius: 5px;
-  width:140px;
-  line-height: 50px;
+  border-radius: 5px;
+  width:10vw;
+  height: 40px;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   transition: 1s;
+  margin-top: 40px;
 }
 .butt:hover{
   color: var(--main-color);
@@ -141,17 +158,19 @@ h2,h3,h4,h5,h6{
 a{
   text-decoration: none;
 }
+
 /*Роговий class/id*/
 .navigwrap{
-margin-top: 50px;
   display:flex;
   justify-content: right;
 }
 .navig{
   background-color: var(--bg-color);
-  width: 65vw;
+  width: 65%;
   border-radius: 15px;
   padding: 5px;
+  overflow-x: scroll;
+  display: flex;
 }
 
 .navig div{
@@ -161,11 +180,11 @@ margin-top: 50px;
   border-radius: 15px;
   overflow: hidden;
   text-align: center;
-  display: inline-block;
   margin-right: 10px;
+  transition: 1s;
 }
 .navig div:hover{
-  border: solid 2px var(--stressing-color);
+  transform: scale(1.1,1.1);
 }
 
 .navig div div{
@@ -174,25 +193,31 @@ margin-top: 50px;
   margin: 0 auto;
 }
 .navig div div:hover{
-  border:none;
+  transform: scale(1.1,1.1);
+}
+.navig div div img{
+  filter:blur(2px);
+}
+.navig div:hover div img{
+  filter:blur(0);
+  transform: scale(1.1,1.1);
 }
 .Grid-cont{
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 200px repeat(3, 1fr);
   gap:10px;
 }
 .Grid-cont div{
-  background-color: var(--main-color);
+  background-color: var(--bg-color);
+  border-radius: 15px;
+  padding: 5px;
 }
-#brgimg1
-{
-  height: 100px;
+.imgcont{
   overflow: hidden;
+  align-self: center;
 }
-#rgimg1{
+.imgcont img{
   display: block;
-  position: relative;
-  bottom: 340px;
 }
 /*Довгаль class/id*/
 .nav{
@@ -241,26 +266,47 @@ li{
   font-family: Balsamiq_Sans, serif;
 }
 
+.hdr-down1{
+  width: 40vw;
+  height: 100px;
+  background-color: var(--main-color);
+  border-bottom-right-radius: 30px;
+  position: relative;
+  top:-5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
 /*Лихачов class/id*/
+
+
+/*maindi{
+  width:80vw;
+  margin: 20px auto;
+  background-color: var(--bg-color);
+  border-radius: 5%;
+  padding: 10px;
+}*/
 .txt{
   background-color: var(--main-color);
-  width: 338px;
-  height: 290px;
+  width: auto;
+  height: auto;
   border-radius: 15px;
 }
 
 .heading{
   background-color: var(--main-color);
-  width: 338px;
-  height: 90px;
+  width: auto;
+  height: auto;
   border-radius: 15px;
-  
 }
 
 .up{
   color:var(--stressing-color);
   border: solid 2px var(--stressing-color);
-   border-radius: 5px;
+  border-radius: 5px;
   width:140px;
   line-height: 50px;
   text-align: center;
@@ -298,11 +344,12 @@ li{
 
 /*Юровський class/id*/
 .blockdan {
- background-color: var(--main-color);
+ background-color: var(--bg-color);
  margin: 15px auto;
- width:60%;
- border-radius: 10px;
+ width:50%;
+ border-radius: 20px;
  text-align: center;
+ padding: 15px ;
  
 }
 .imagedan {
@@ -311,12 +358,14 @@ li{
   height: 200px;
   overflow:hidden;
   }
+
 .contden {
-  background-color: var(--main-color);
+  background-color: var(--bg-color);
   margin:30px  auto;
   width:85%;
-  border-radius: 5px;
+  border-radius: 20px;
   overflow:hidden;
+  padding: 15px;
 }
   .navigyur{
     margin-top:200px;
@@ -325,27 +374,54 @@ li{
     border-radius: 15px;
     padding: 5px;
     margin-right: 10px;
-  }
+  } 
 
-  .navigyur div{
-    background-color: var(--main-color);
-    width: 100px;
-    height: 60px;
-    border-radius: 15px;
-    overflow: hidden;
-    text-align: center;
-    display: inline-block;
-    margin-right: 10px;
+.navigwrap1{
+margin-top: -70px;
+  display:flex;
+  justify-content: center;
 }
-#dan {
-  padding:0;
-  overflow:hidden;
+.navigyur{
+  background-color: var(--bg-color);
+  width: 50vw;
+  border-radius: 15px;
+  padding: 5px;
+  
+  
+}
+
+.navigyur div{
+  background-color: var(--main-color);
+  width: 120px;
+  height: 80px;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center ;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 17px;
+  font-size: 16px;
+  padding: 2%;
+  justify-content: center; 
+  align-items: center;
+}
+.navigyur div:hover{
+  border: solid 2px var(--stressing-color);
+}
+
+.navigyur div div{
+
+  height: 50px;
+  margin: 0 auto;
+}
+.navigyur div div:hover{
+  border:none;
 }
 #yurdan
 {
   display: block;
   position: relative;
-  bottom: 100%;
+  bottom: 100%; 
 }
 #danyur{
   display: block;
@@ -361,4 +437,18 @@ li{
   display: block;
   position: relative;
   bottom: 10px;
+}
+@keyframes gradient {
+  0% {
+    background-position: 80% 0%;
+  }
+  50% {
+    background-position: 20% 100%;
+  }
+  100%{
+    background-position: 80% 0%;
+  }
+}
+#dan{
+  padding-top: 35px;
 }
