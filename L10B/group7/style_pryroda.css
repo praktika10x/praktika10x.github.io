@@ -1,0 +1,142 @@
+tml {
+  height: 90%;
+  width: 90%; 
+  overflow-x: hidden;
+}
+.container, .container1 {
+  position: relative;
+}
+.container1 {
+  background-color: lightblue;
+
+}
+.Crym, .IP, .other{
+  top: 120px;
+  position: absolute;
+  font-size: 56px;
+  z-index: 2;
+  color: yellow;
+  text-decoration: none;
+}
+.Crym{            
+  left: 1000px;
+}
+.IP {
+  left: 1200px;
+}
+.other{
+  left: 1500px;
+}
+.image {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 1920px;
+  height: 1080px;
+  z-index: 1;
+  filter: blur(5px);
+}
+.image2, .image3, .image4 {
+position: absolute;
+top: 300px;
+width: 300px;
+height: 495px;
+z-index: 2;
+border-radius: 2cm;
+}
+.image2 {
+  left: 770px;
+}
+.image3 {
+  left: 1120px;
+}
+.image4 {
+  left: 1470px;
+}
+.image2:hover, .image3:hover, .image4:hover {
+  width: 350px;
+  height: 545px;
+}
+.text1 {
+  position: absolute;
+  top: 240px;
+  left: 250px;
+  font-size: 96px;
+  z-index: 2;
+  color: yellow;
+}
+
+.text2 {
+  top: 520px;
+  left: 150px;
+  color: lightgoldenrodyellow;
+}
+.centertext {
+  top:1750px;
+  left: 80px;
+  color: yellow;
+}
+.centertext, .text2 {
+  position: absolute;
+  font-size: 32px;
+  z-index: 3;
+
+}
+.button {
+  z-index: 3;
+  position: absolute;
+  font-size: 52px;
+  color: black;
+  top: 750px;
+  left: 250px;
+  background-color: darkgoldenrod;
+  text-decoration: none;
+  border-radius: 1cm;
+  background-size: cover;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+.button:hover, .Crym:hover, .IP:hover, .other:hover{
+padding: 10px 20px;
+background-color: darkblue;
+color: white;
+border-radius: 1cm;
+}
+.gol{
+  top:1700PX;
+  left: 100px;
+}
+.gol, .top{
+  position: absolute;
+  font-size: 50px;
+  z-index: 2;
+  color: darkcyan;
+}
+.spawn{
+  position: relative;
+  top: -6px;
+  left: -6px;
+  padding: 1920px 1080px;
+  background-color: lightblue;
+  filter: blur(5px);
+}
+.top {
+  top: 1125px;
+  left: 800px;
+}
+.imageb {
+  position: absolute;
+  top: 1750px;
+  left: 810px;
+  width: 250px;
+  height: 125px;
+  border-radius: 1cm;
+}
+.imageb:enlarged {
+  position: absolute;
+  top: 1200px;
+  left: 810px;
+  width: 825px;
+  height: 450px;
+  border-radius: 1cm;
+}
