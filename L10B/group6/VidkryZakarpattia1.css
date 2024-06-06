@@ -1,0 +1,301 @@
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation {
+    margin-top: 35px;
+    margin-right: 50px;
+    margin-left: 50px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 35px;
+    z-index: 10;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo {
+    margin-bottom: 50px;
+}
+
+.box {
+    transition: all .5s ease-in-out;
+    margin-bottom: 50px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.box:hover {
+    color: white;
+    background-color: #29A5F2;
+    cursor: pointer;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5,
+.box-7 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    user-select: none;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color: #ECECEC;
+    font-size: 13px;
+    border-radius: 50px;
+}
+
+.box-6 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    background-color: #ECECEC;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-image: url(icons8-bookmark-30.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 55%;
+}
+
+.lenguage-selector {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10px;
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: url(icons8-expand-arrow-50white.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 55%;
+    transition: .5s;
+}
+
+.lenguage-selector:hover {
+    filter: invert();
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.case-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 125px;
+    gap: 35px;
+}
+
+.case-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 35px;
+    gap: 35px;
+}
+
+.container-1,
+.container-2 {
+    border-radius: 35px;
+    width: 460px;
+    height: 235px;
+}
+
+.container-1 {
+    background-image: url(00-pohod-ozero-sinevir3.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    transition: .75s;
+}
+
+.container-1:hover {
+    width: 552px;
+    height: 282px;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    background-image: linear-gradient(45deg, #C5C5C5 , #ECECEC);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    transition: .75s;
+}
+
+.container-2:hover {
+    width: 552px;
+    height: 282px;
+}
+
+.container-2 h1 {
+    font-family: Playfair Display;
+    text-align: center;
+}
+
+.container-2 span {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    width: 185px;
+    height: 235px;
+    background-image: linear-gradient(to top, #25FFB3, #4D56FC, #29A5F2, #25FFB3);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite alternate;
+    transition: .75s;
+}
+
+.container-3:hover {
+    width: 222px;
+    height: 282px;
+}
+
+.container-4,
+.container-5 {
+    border-radius: 35px;
+    width: 460px;
+    height: 235px;
+    background-color: #29A5F2;
+}
+
+.container-5 {
+    background-image: url(Mukachevo-zamok-07-Int-1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    transition: .75s;
+}
+
+.container-5:hover {
+    width: 552px;
+    height: 282px;
+}
+
+.container-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    background-image: linear-gradient(45deg, #C5C5C5 , #ECECEC);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    transition: .75s;
+}
+
+.container-4:hover {
+    width: 552px;
+    height: 282px;
+}
+
+.container-4 h1 {
+    font-family: Playfair Display;
+    text-align: center;
+}
+
+.container-4 span {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.container-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    width: 185px;
+    height: 235px;
+    background-image: linear-gradient(to bottom, #25FFB3, #4D56FC, #29A5F2, #25FFB3);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+    transition: .75s;
+}
+
+.container-6:hover {
+    width: 222px;
+    height: 282px;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 50% 0%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
+
+.dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    gap: 35px;
+    z-index: 10;
+    bottom: 20px;
+}
+
+.dot {
+    background-color: black;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    transition: .75s;
+}
+
+.dot:hover {
+    cursor: pointer;
+    background-color: #4D56FC;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(PlayfairDisplay/PlayfairDisplay-BlackItalic.ttf);
+}
