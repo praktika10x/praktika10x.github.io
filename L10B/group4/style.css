@@ -1,43 +1,42 @@
-html, body{
-  height: 100%;
-  width: 100%;
-}
-h1{
-  font-family: Lugatype, serif, Arial, Calibri;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 64px;
-  line-height: 77px;
-  text-align: center;
-  margin:0;
-}
-.text{
-  font-family: Lugatype, serif, Arial, Calibri;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 38px;
-  line-height: 41px;
-  margin-left:90px;
-  margin-right:90px;
+ html,
+ body {
+   height: 100%;
+   width: 100%;
+ }
 
-}
-dt{
-  font-family: Lugatype, serif, Arial, Calibri;
-  position: absolute;
-  left: 90px;
-  top: 1900px;
-  font-size: 20px;
-  margin-top:5px;
-}
-.map{
-  position: absolute;
-  width: 458px;
-  height: 429px;
-  left: 100px;
-  top: 450px;
-  transition: transform 0.5s ease;
+ h1 {
+   font-family: Lugatype, serif, Arial, Calibri;
+   font-style: italic;
+   font-weight: 500;
+   font-size: 64px;
+   line-height: 77px;
+   text-align: center;
+   margin: 0;
+ }
 
-}
+ .text {
+   font-family: Lugatype, serif, Arial, Calibri;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 38px;
+   line-height: 41px;
+   margin-left: 90px;
+   margin-right: 90px;
+
+ }
+
+
+
+ .map {
+   position: absolute;
+   width: 458px;
+   height: 429px;
+   left: 100px;
+   top: 450px;
+   transition: transform 0.5s ease;
+
+ }
+
 .avtor{
   position: absolute;
   width: 234px;
@@ -47,14 +46,18 @@ dt{
   border-radius:63px;
   transition: transform 0.5s ease;
 }
-.adaptive{
-  width:1920px;
-  height:1080px;
-  max-width:1920px;
-  display:grid;
-  grid-template-columns:1fr 300px;
-  margin: 0 auto;
-}
+
+
+
+ .adaptive {
+   width: 1920px;
+   height: 1080px;
+   max-width: 1920px;
+   display: grid;
+   grid-template-columns: 1fr 300px;
+   margin: 0 auto;
+ }
+
 .textavtor{
   font-size: 18px;
   font-family: Lugatype, serif, Arial, Calibri;
@@ -64,244 +67,416 @@ dt{
   left: 1480px;
   top: 940px;
 }
-.first{
-  position: absolute;
-  border-radius: 63px;
-  top:140px;
-  right:90px;
-  width: 290px;
-  height: 220px;
-  transition: transform 0.5s ease;
-}
-.second{
-  position: absolute;
-  border-radius: 63px;
-  left: 90px;
-  top:390px;
-  width: 290px;
-  height: 220px;
-  transition: transform 0.5s ease;
-}
-.third{
-  position: absolute;
-  width: 290px;
-  height: 220px;
-  border-radius: 63px;
-  right:90px;
-  top: 660px;
-  transition: transform 0.5s ease;
-}
-.firsttext{
-  font-family: Lugatype, serif, Arial, Calibri;
-  position: absolute;
-  left: 90px;
-  right: 480px;
-  top:180px;
-  font-size: 25px;
-}
-.secondtext{
-  font-family: Lugatype, serif, Arial, Calibri;
-  position: absolute;
-  left:430px;
-  right:70px;
-  top: 465px;
-  font-size: 25px;
-}
-.thirdtext{
-  font-family: Lugatype, serif, Arial, Calibri;
-  position: absolute;
-  font-size: 25px;
-  right:400px;
-  left:90px;
-  top:735px;
-}
-.first1{
-  position: absolute;
-  border-radius: 63px;
-  top:140px;
-  right:90px;
-  width: 290px;
-  height: 220px;
-  transition: transform 0.5s ease;
-}
-.second1{
-  position: absolute;
-  border-radius: 63px;
-  left: 90px;
-  top:390px;
-  width: 290px;
-  height: 220px;
-  transition: transform 0.5s ease;
-}
-.third1{
-  position: absolute;
-  width: 290px;
-  height: 220px;
-  border-radius: 63px;
-  right:19px;
-  top: 175px;
-  transition: transform 0.5s ease;
-}
-.firsttext1{
-  font-family: Lugatype, serif, Arial, Calibri;
-  position: absolute;
-  left: 90px;
-  right: 450px;
-  top:180px;
-  font-size: 25px;
-}
-.secondtext1{
-  font-family: Lugatype, serif, Arial, Calibri;
-  position: absolute;
-  left:430px;
-  right:70px;
-  top: 465px;
-  font-size: 25px;
-}
-.thirdtext1{
-  font-family: Lugatype, serif, Arial, Calibri;
-  position: absolute;
-  font-size: 25px;
-  right:450px;
-  left:90px;
-  top:720px;
-}
-.gradient {
-  height: 300px;
-  width: 100%;
-  background: linear-gradient(225deg, rgba(54,54,54,1) 0%, rgba(209,157,3,1) 25%, rgba(161,150,110,1) 49%, rgba(133,179,227,1) 77%, rgba(15,89,107,1) 100%);
-  animation: gradient 10s infinite linear;
-  background-size: 400%; 
-}
 
-@keyframes gradient {
-  0% {
-      background-position: 80% 0%;
-  }
-  50% {
-      background-position: 20% 100%;
-  }
-  100% {
-      background-position: 80% 0%;
-  }
-}
-@font-face {
-  font-family: Lugatype; 
-  src: url(fonts/Tkachev\ -\ Lugatype.otf);
-}
-.jump{
-  position: absolute;
-  font-size: 20px;
-  top:20px;
-  right:40px;
-  margin-left:1550px;
-  font-family: Lugatype, serif, Arial, Calibri;
-  display: inline-block;
-  background: #DAA520;
-  color: #000000;
-  padding: 1rem 1.5rem;
-  text-decoration: none;
-  border-radius: 63px;
-}
-.back1{
-  position: absolute;
-  font-size: 20px;
-  top:20px;
-  left:-80px;
-  margin-left:1550px;
-  font-family: Lugatype, serif, Arial, Calibri;
-  display: inline-block;
-  background: #DAA520;
-  color: #000000;
-  padding: 1rem 1.5rem;
-  text-decoration: none;
-  border-radius: 63px;
-}
-.jump1{
-  position: absolute;
-  top:20px;
-  margin-left:1695px;
-  font-size: 20px;
-  font-family: Lugatype, serif, Arial, Calibri;
-  display: inline-block;
-  background: #DAA520;
-  color: #000000;
-  padding: 1rem 1.5rem;
-  text-decoration: none;
-  border-radius: 63px;
-}
-.back2{
-  position: absolute;
-  top:20px;
-  right:225px;
-  font-size: 20px;
-  font-family: Lugatype, serif, Arial, Calibri;
-  display: inline-block;
-  background: #DAA520;
-  color: #000000;
-  padding: 1rem 1.5rem;
-  text-decoration: none;
-  border-radius: 63px;
-}
-.begin{
-  position: absolute;
-  font-size: 20px;
-  top:20px;
-  left:170px;
-  margin-left:1550px;
-  font-family: Lugatype, serif, Arial, Calibri;
-  display: inline-block;
-  background: #DAA520;
-  color: #000000;
-  padding: 1rem 1.5rem;
-  text-decoration: none;
-  border-radius: 63px;
-  cursor: pointer;
-}
-.begin:hover{
-  background-color: lightblue;
-  color:white;
-}
-.jump:hover{
-  background-color: lightblue;
-  color:white;
-}
-.jump1:hover{
-  background-color: lightblue;
-  color:white;
-}
-.back1:hover{
-  background-color: lightblue;
-  color:white;
-}
-.back2:hover{
-  background-color: lightblue;
-  color:white;
-}
-.map:hover {
-  transform: scale(1.25);
-}
-.avtor:hover {
-  transform: scale(1.25);
-}
-.first:hover {
-  transform: scale(1.25);
-}
-.second:hover {
-  transform: scale(1.25);
-}
-.third:hover {
-  transform: scale(1.25);
-}
-.first1:hover {
-  transform: scale(1.25);
-}
-.second1:hover {
-  transform: scale(1.25);
-}
-.third1:hover {
-  transform: scale(1.25);
-}
+ .first {
+   position: absolute;
+   border-radius: 63px;
+   top: 200px;
+   right: 90px;
+   width: 290px;
+   height: 220px;
+   transition: transform 0.5s ease;
+ }
+
+ .second {
+   position: absolute;
+   border-radius: 63px;
+   left: 90px;
+   top: 500px;
+   width: 290px;
+   height: 220px;
+   transition: transform 0.5s ease;
+ }
+
+ .third {
+   position: absolute;
+   width: 290px;
+   height: 220px;
+   border-radius: 63px;
+   right: 90px;
+   top: 800px;
+   transition: transform 0.5s ease;
+ }
+
+ .fourth {
+   position: absolute;
+   border-radius: 63px;
+   left: 90px;
+   top: 1080px;
+   width: 290px;
+   height: 220px;
+   transition: transform 0.5s ease;
+ }
+
+ .fiveth {
+   position: absolute;
+   width: 290px;
+   height: 220px;
+   border-radius: 63px;
+   right: 90px;
+   top: 1380px;
+   transition: transform 0.5s ease;
+ }
+
+ .sixth {
+   position: absolute;
+   border-radius: 63px;
+   left: 90px;
+   top: 1660px;
+   width: 290px;
+   height: 220px;
+   transition: transform 0.5s ease;
+ }
+
+ .firsttext {
+   font-family: Lugatype, serif, Arial, Calibri;
+   position: absolute;
+   left: 90px;
+   right: 480px;
+   top: 240px;
+   font-size: 25px;
+ }
+
+ .secondtext {
+   font-family: Lugatype, serif, Arial, Calibri;
+   position: absolute;
+   left: 430px;
+   right: 70px;
+   top: 525px;
+   font-size: 25px;
+ }
+
+ .thirdtext {
+   font-family: Lugatype, serif, Arial, Calibri;
+   position: absolute;
+   font-size: 25px;
+   right: 430px;
+   left: 90px;
+   top: 835px;
+ }
+
+ .fourthtext {
+   font-family: Lugatype, serif, Arial, Calibri;
+   position: absolute;
+   left: 430px;
+   right: 70px;
+   top: 1125px;
+   font-size: 25px;
+ }
+
+ .fivethtext {
+   font-family: Lugatype, serif, Arial, Calibri;
+   position: absolute;
+   font-size: 25px;
+   right: 450px;
+   left: 90px;
+   top: 1415px;
+ }
+
+ .sixthtext {
+   font-family: Lugatype, serif, Arial, Calibri;
+   position: absolute;
+   left: 430px;
+   right: 70px;
+   top: 1710px;
+   font-size: 25px;
+ }
+
+ .first1 {
+   position: absolute;
+   border-radius: 63px;
+   top: 200px;
+   right: 90px;
+   width: 290px;
+   height: 220px;
+   transition: transform 0.5s ease;
+ }
+
+ .second1 {
+   position: absolute;
+   border-radius: 63px;
+   left: 90px;
+   top: 500px;
+   width: 290px;
+   height: 220px;
+   transition: transform 0.5s ease;
+ }
+
+ .third1 {
+   position: absolute;
+   width: 290px;
+   height: 220px;
+   border-radius: 63px;
+   right: 20px;
+   top: 220px;
+   transition: transform 0.5s ease;
+ }
+
+ .fourth1 {
+   position: absolute;
+   border-radius: 63px;
+   left: 90px;
+   top: 1080px;
+   width: 290px;
+   height: 220px;
+   transition: transform 0.5s ease;
+ }
+
+ .fiveth1 {
+   position: absolute;
+   width: 290px;
+   height: 220px;
+   border-radius: 63px;
+   right: 90px;
+   top: 1380px;
+   transition: transform 0.5s ease;
+ }
+
+ .sixth1 {
+   position: absolute;
+   border-radius: 63px;
+   left: 90px;
+   top: 1700px;
+   width: 290px;
+   height: 220px;
+   transition: transform 0.5s ease;
+ }
+
+ .firsttext1 {
+   font-family: Lugatype, serif, Arial, Calibri;
+   position: absolute;
+   left: 90px;
+   right: 480px;
+   top: 240px;
+   font-size: 25px;
+ }
+ .secondtext1 {
+   font-family: Lugatype, serif, Arial, Calibri;
+   position: absolute;
+   left: 430px;
+   right: 70px;
+   top: 555px;
+   font-size: 25px;
+ }
+
+ .thirdtext1 {
+   font-family: Lugatype, serif, Arial, Calibri;
+   position: absolute;
+   font-size: 25px;
+   right: 430px;
+   left: 90px;
+   top: 850px;
+ }
+
+ .fourthtext1 {
+   font-family: Lugatype, serif, Arial, Calibri;
+   position: absolute;
+   left: 430px;
+   right: 70px;
+   top: 1125px;
+   font-size: 25px;
+ }
+
+ .fivethtext1 {
+   font-family: Lugatype, serif, Arial, Calibri;
+   position: absolute;
+   font-size: 25px;
+   right: 450px;
+   left: 90px;
+   top: 1415px;
+ }
+
+ .sixthtext1 {
+   font-family: Lugatype, serif, Arial, Calibri;
+   position: absolute;
+   left: 430px;
+   right: 70px;
+   top: 1710px;
+   font-size: 25px;
+ }
+
+ .gradient {
+   height: 100vh;
+   width: 100vw;
+   background: linear-gradient(225deg, rgba(54, 54, 54, 1) 0%, rgba(209, 157, 3, 1) 25%, rgba(161, 150, 110, 1) 49%, rgba(133, 179, 227, 1) 77%, rgba(15, 89, 107, 1) 100%) no-repeat fixed;
+   animation: gradient 10s infinite linear;
+   background-size: 400%;
+ }
+
+ @keyframes gradient {
+   0% {
+     background-position: 80% 0%;
+   }
+
+   50% {
+     background-position: 20% 100%;
+   }
+
+   100% {
+     background-position: 80% 0%;
+   }
+ }
+
+ @font-face {
+   font-family: Lugatype;
+   src: url(fonts/Tkachev\ -\ Lugatype.otf);
+ }
+
+ .jump {
+   position: absolute;
+   font-size: 20px;
+   top: 20px;
+   right: 40px;
+   margin-left: 1550px;
+   font-family: Lugatype, serif, Arial, Calibri;
+   display: inline-block;
+   background: #DAA520;
+   color: #000000;
+   padding: 1rem 1.5rem;
+   text-decoration: none;
+   border-radius: 63px;
+   transition: 0.2s;
+ }
+
+ .back1 {
+   position: absolute;
+   font-size: 20px;
+   top: 20px;
+   left: -80px;
+   margin-left: 1550px;
+   font-family: Lugatype, serif, Arial, Calibri;
+   display: inline-block;
+   background: #DAA520;
+   color: #000000;
+   padding: 1rem 1.5rem;
+   text-decoration: none;
+   border-radius: 63px;
+   transition: 0.2s;
+ }
+
+ .jump1 {
+   position: absolute;
+   top: 20px;
+   margin-left: 1695px;
+   font-size: 20px;
+   font-family: Lugatype, serif, Arial, Calibri;
+   display: inline-block;
+   background: #DAA520;
+   color: #000000;
+   padding: 1rem 1.5rem;
+   text-decoration: none;
+   border-radius: 63px;
+   transition: 0.2s;
+ }
+
+ .back2 {
+   position: absolute;
+   top: 20px;
+   right: 245px;
+   font-size: 20px;
+   font-family: Lugatype, serif, Arial, Calibri;
+   display: inline-block;
+   background: #DAA520;
+   color: #000000;
+   padding: 1rem 1.5rem;
+   text-decoration: none;
+   border-radius: 63px;
+   transition: 0.2s;
+ }
+
+ .begin {
+   position: absolute;
+   font-size: 20px;
+   top: 20px;
+   left: 170px;
+   margin-left: 1550px;
+   font-family: Lugatype, serif, Arial, Calibri;
+   display: inline-block;
+   background: #DAA520;
+   color: #000000;
+   padding: 1rem 1.5rem;
+   text-decoration: none;
+   border-radius: 63px;
+   cursor: pointer;
+   transition: 0.2s;
+ }
+
+ .begin:hover {
+   background-color: lightblue;
+   color: white;
+ }
+
+ .jump:hover {
+   background-color: lightblue;
+   color: white;
+ }
+
+ .jump1:hover {
+   background-color: lightblue;
+   color: white;
+ }
+
+ .back1:hover {
+   background-color: lightblue;
+   color: white;
+ }
+
+ .back2:hover {
+   background-color: lightblue;
+   color: white;
+ }
+
+ .map:hover {
+   transform: scale(1.25);
+ }
+
+ .avtor:hover {
+   transform: scale(1.25);
+ }
+
+ .first:hover {
+   transform: scale(1.25);
+ }
+
+ .second:hover {
+   transform: scale(1.25);
+ }
+
+ .third:hover {
+   transform: scale(1.25);
+ }
+
+ .fourth:hover {
+   transform: scale(1.25);
+ }
+
+ .fiveth:hover {
+   transform: scale(1.25);
+ }
+
+ .sixth:hover {
+   transform: scale(1.25);
+ }
+
+ .first1:hover {
+   transform: scale(1.25);
+ }
+
+ .second1:hover {
+   transform: scale(1.25);
+ }
+
+ .third1:hover {
+   transform: scale(1.25);
+ }
+
+ .video {
+   font-family: Lugatype, serif, Arial, Calibri;
+   position: absolute;
+   left: 900px;
+   top: 1800px;
+   font-size: 25px;
+ }
 .video{
   position: absolute;
   top: 1400px;
@@ -453,6 +628,7 @@ li{
 .u:hover{
   transform: scale(1.25);
 }
+
 .travel{
   font-family: Lugatype, serif, Arial, Calibri;
   position: absolute;
@@ -462,4 +638,12 @@ li{
   line-height: 24px;
   left: 90px;
   top: 1850px;
+}
+dt{
+  font-family: Lugatype, serif, Arial, Calibri;
+  position: absolute;
+  left: 90px;
+  top: 1900px;
+  font-size: 20px;
+  margin-top:5px;
 }
