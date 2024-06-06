@@ -115,6 +115,11 @@ a {
     border-radius: 50%;
 }
 
+.container:hover {
+    width: 318px;
+    height: 318px;
+}
+
 .container-1 {
     font-family: "Lato", sans-serif;
     font-weight: 400;
