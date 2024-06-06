@@ -4,14 +4,207 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Л10Б. Група 5</title>
+  <title>index</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+
+<style>
+  body {
+    background: linear-gradient(to bottom, #161616, #5C5A5A, #777777, #B5B2B2) no-repeat fixed;
+}
+  .bottom {
+    width:250px;
+    height: 40px;
+    border: solid #137534 1px;
+    background: lightgrey;
+    box-shadow: 2px 5px 10px #137534;
+    border-radius:10px;
+    text-align: center;
+    margin: 30px;
+    font-size:16pt;
+    font-family: SST;
+    padding-top: 12px;
+
+  }
+  .btm {
+   transition: 0.3s;
+  }
+  .btm:hover {
+      background-color: #137534;
+       a{color: #FFFFFF;} 
+    }
+  .father {
+    display: flex;
+    justify-content: center;
+  }
+
+  .photo {
+    overflow: hidden;
+    border-radius:20px;
+    height: 300px;
+    width:800px;
+
+  }
+  .father1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .centered {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 36pt;
+    text-align: center;
+    color: #FFFFFF;
+  }
+img {
+  filter: brightness(55%);
+}
+  .card {
+        display: flex;
+        margin-bottom: 20px;
+    }
+   .card img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 30px;
+   }
+    .text {
+      font-size: 14pt;
+      color:white;
+      margin-top: 10px;
+      margin-right: 30px;
+      font-family: 'Times New Roman', Times, serif;';
+    }
+
+
+.photo1 {
+  overflow: hidden;
+  border-radius:20px;
+  height: 500px;
+  width:600px;
+  margin: 35px ;
+}
+a:link {
+      text-decoration: none;
+      color: #0A4F22;
+  }
+a:visited {
+      text-decoration: none;
+      color: #0A4F22;
+  }
+
+#top {
+   display: none; 
+   position: fixed; 
+   bottom: 20px; 
+   right: 30px; 
+   border: none; 
+   background-color: #0A4F22 ;
+   color: white;
+   cursor: pointer; 
+   padding: 15px; 
+   border-radius: 10px;
+   font-size: 24px; 
+  }
+
+  #top:hover {
+    background: #08CA4A; 
+  }
+
+</style>
+  
 </head>
 
+  
 <body>
-  <h1>Туристичний довідник</h1>
-  <p>Туристичний об'єкт - Тернопільська область</p>
-  <script src="script.js"></script>
+  <div class='father'>
+     <a href="https://html5css.ru/colors/colors_gradient.php"><div class="bottom btm">Головна </a>
+
+    </div>
+    <div class="bottom btm">
+       <a href="">Природно-географічні</a>
+     </div>
+    <div class="bottom btm">
+       <a href="">Історико-культурні</a>
+    </div>
+  </div>
+
+  <div class='father1'>
+    <div class='photo'>
+      <img src='https://buktour.icu/images/2018/11/10/d-00-05.jpg'>
+      <div class="centered">
+        <p>Тернопільська область</p>
+        <p style='font-size:5pt;'> Фото:https://buktour.icu/images/2018/11/10/d-00-05.jpg</p>
+        
+
+      </div>
+  </div>
+  </div>
+
+  <button onclick="topFunction()" id="top" title="НАГОРУ">↑</button>
+  
+  <div class="content">
+    <div class="card">
+        <div style="position: relative;">
+            <img style=" overflow: hidden;
+              border-radius:20px;
+              height: 300px;
+              width:500px;
+              margin: 30px ;" src="https://7chudes.in.ua/wp-content/uploads/2010/09/0fe165e00a335bc9c7afff435e5276ba_10_prirodnykh_chudes_ukrainy_03.jpg" >
+            <div class="centered">
+                
+            </div>
+        </div>
+
+        <div class="text" style = "
+            margin-bottom: 50px;">
+          <h1 style=" text-align: center; color: #08CA4A; "><b>Дністровський каньйон</b></h1>
+            <p style=" margin-top: 10px;
+              margin-bottom: 10px; margin-left: 70px; margin-right: 70px;"> Його загальна довжина становить близько 250 км, що забезпечує Дністровському каньйону місце серед найбільших каньйонів не лише України, а й Європи. Дністровський каньйон, згідно з рішенням всеукраїнського Інтернет-опитування, оголошеним 26 серпня 2008 року, визнаний одним із 7 природних чудес України.</p>
+          <h1 style=" text-align: center; color: #08CA4A; "><b>Цікаві факти про Дністровський каньйон</b></h1>
+          <p >
+                           <ul style=" margin-top: 20px; margin-bottom: 5px; margin-left: 60px; margin-right: 60px;" >
+                             <li> Дністровський каньон може похизуватись скелями, що в рази старші за динозаврів. Зокрема, скелям девонського періоду близько 400 млн. років.</li>
+                             <li> Тут знаходиться найбільша в Україні кількість печер.</li> 
+                             </ul>
+                             </p>                   
+        </div>
+    </div>
+   
+
+          <div class="text" style = "
+              margin-bottom: 10px;">
+              
+          </div>
+      </div>
+         <hr style="width:1000px; border: 1px solid white; margin-bottom: 5px; ">
+    <p >
+       <ul style=" margin-top: 20px; margin-bottom: 5px; margin-left: 60px; margin-right: 60px;" >
+         <li> <a href=" https://uk.wikipedia.org/wiki/" </a> https://uk.wikipedia.org/wiki/</li>
+         <li>  <a href="https://karpatium.com.ua/vodni-resursy/dnistrovskyi-kanion" </a>https://karpatium.com.ua/vodni-resursy/dnistrovskyi-kanion </li> 
+         </ul>
+         </p>      
+    
+  
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+     function scrollFunction() {
+        if (document.body.scrollTop > 20 ||    document.documentElement.scrollTop > 20) {
+                        document.getElementById("top").style.display = "block";
+                    } else {
+        document.getElementById("top").style.display = "none";
+                    }
+        }
+     function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+                }
+  </script>
 </body>
 
 </html>
