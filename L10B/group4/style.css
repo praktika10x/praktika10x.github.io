@@ -1,4 +1,4 @@
- html, body{
+html, body{
   height: 100%;
   width: 100%;
 }
@@ -19,13 +19,13 @@ h1{
   line-height: 41px;
   margin-left:90px;
   margin-right:90px;
-  
+
 }
 dt{
   font-family: Lugatype, serif, Arial, Calibri;
   position: absolute;
-  left: 840px;
-  top: 485px;
+  left: 90px;
+  top: 1900px;
   font-size: 20px;
   margin-top:5px;
 }
@@ -36,26 +36,16 @@ dt{
   left: 100px;
   top: 450px;
   transition: transform 0.5s ease;
-  
+
 }
 .avtor{
   position: absolute;
   width: 234px;
   height: 349px;
-  left: 1550px;
-  top: 460px;
+  left: 1480px;
+  top: 1005px;
   border-radius:63px;
   transition: transform 0.5s ease;
-}
-.travel{
-  font-family: Lugatype, serif, Arial, Calibri;
-  position: absolute;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  left: 840px;
-  top: 440px;
 }
 .adaptive{
   width:1920px;
@@ -71,8 +61,8 @@ dt{
   position: absolute;
   width: 351.37px;
   height: 47.91px;
-  left: 1567px;
-  top: 857px;
+  left: 1480px;
+  top: 940px;
 }
 .first{
   position: absolute;
@@ -311,4 +301,165 @@ dt{
 }
 .third1:hover {
   transform: scale(1.25);
+}
+.video{
+  position: absolute;
+  top: 1400px;
+  left: 1300px;
+  border-radius: 63px;
+}
+.grisha{
+  font-family: Lugatype, serif, Arial, Calibri;
+  position: absolute;
+  top: 1000px;
+  left: 90px;
+  right:590px;
+  font-size:20pt;
+}
+.grisha2{
+  font-family: Lugatype, serif, Arial, Calibri;
+  position: absolute;
+  top: 1100px;
+  left: 90px;
+  right:590px;
+  font-size:20pt;
+}
+.grisha3{
+  font-family: Lugatype, serif, Arial, Calibri;
+  position: absolute;
+  top: 1210px;
+  left: 90px;
+  right:590px;
+  font-size:20pt;
+}
+.grisha4{
+  font-family: Lugatype, serif, Arial, Calibri;
+  position: absolute;
+  top: 1340px;
+  left: 90px;
+  right:590px;
+  font-size:20pt;
+}
+.grisha5{
+  font-family: Lugatype, serif, Arial, Calibri;
+  position: absolute;
+  top: 1470px;
+  left: 90px;
+  right:590px;
+  font-size:20pt;
+}
+.city{
+  font-family: Lugatype, serif, Arial, Calibri;
+  position: absolute;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20pt;
+  line-height: 24px;
+  left: 800px;
+  top: 440px;
+}
+ol{
+  font-family: Lugatype, serif, Arial, Calibri;
+  position: absolute;
+  font-size:15pt;
+  left:810px;
+  top:480px;
+  right:90px;
+}
+li{
+  padding:5px;
+}
+.q{
+  position:absolute;
+  top:1850px;
+  left:500px;
+  width:225px;
+  height:150px;
+  border-radius:63px;
+  transition: transform 0.5s ease;
+}
+.q:hover{
+  transform: scale(1.25);
+}
+.w{
+  position:absolute;
+  top:1850px;
+  left:755px;
+  width:225px;
+  height:150px;
+  border-radius:63px;
+  transition: transform 0.5s ease;
+}
+.w:hover{
+  transform: scale(1.25);
+}
+.e{
+  position:absolute;
+  top:1850px;
+  left:1010px;
+  width:225px;
+  height:150px;
+  border-radius:63px;
+  transition: transform 0.5s ease;
+}
+.e:hover{
+  transform: scale(1.25);
+}
+.r{
+  position:absolute;
+  top:1850px;
+  left:1265px;
+  width:225px;
+  height:150px;
+  border-radius:63px;
+  transition: transform 0.5s ease;
+}
+.r:hover{
+  transform: scale(1.25);
+}
+.t{
+  position:absolute;
+  top:1850px;
+  left:1520px;
+  width:225px;
+  height:150px;
+  border-radius:63px;
+  transition: transform 0.5s ease;
+}
+.t:hover{
+  transform: scale(1.25);
+}
+.y{
+  position:absolute;
+  top:2025px;
+  left:500px;
+  width:225px;
+  height:150px;
+  border-radius:63px;
+  transition: transform 0.5s ease;
+}
+.y:hover{
+  transform: scale(1.25);
+}
+.u{
+  position:absolute;
+  top:2025px;
+  left:755px;
+  width:225px;
+  height:150px;
+  border-radius:63px;
+  transition: transform 0.5s ease;
+}
+.u:hover{
+  transform: scale(1.25);
+}
+.travel{
+  font-family: Lugatype, serif, Arial, Calibri;
+  position: absolute;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  left: 90px;
+  top: 1850px;
 }
