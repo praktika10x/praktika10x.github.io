@@ -108,18 +108,12 @@ body {
 }
 
 .container-1 {
-    background-video: url(12078525-hd_1280_720_30fps.mp4);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 200%;
-}
-.container-2 {
     background-image: url(12078525-hd_1280_720_30fps.mp4);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 200%;
 }
-.container-3 {
+.container-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
