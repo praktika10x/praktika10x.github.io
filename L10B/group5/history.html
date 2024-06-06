@@ -1,20 +1,30 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
   <html>
 
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Культурно-історичні</title>
+    <title>Історико-культурні</title>
     <link href="style11.css" rel="stylesheet" type="text/css" />
 
 
 </head>
 <body>
   <div class='father'>
-    <div class="bottom btm"><a href="index.html">Головна </a> </div>
-    <div class="bottom btm"><a href="priroda.html">Природно-географічні</a></div>
-    <div class="bottom btm"><a href="history.html">Історико-культурні</a></div>
+     <a href="index.html"><div class="bottom btm">Головна </a>
+      
+    </div>
+    <div class="bottom btm">
+       <a href="priroda.html">Природно-географічні</a>
+     </div>
+    <div class="bottom btm">
+       <a href="history.html">Історико-культурні</a>
+    </div>
+    <div class="bottom btm">
+       <a href="info.html">Джерела</a>
+    </div>
   </div>
+    
 
   <hr style="width:600px; border: 1px solid white; ">
   <div class="title"><b>Історико-культурні факти</b></div>
@@ -22,18 +32,23 @@
   </div>
 
     <button onclick="topFunction()" id="top" title="НАГОРУ">↑</button>
+    <div class="content-container">
+        <a href="#culture">Культурні діячі</a>
+        <a href="#history">Історичні пам'ятки</a>
+        <a href="#monuments">Скульптури</a>
+    </div>
 
-
-  <h3>Культурні діячі</h3>
+    
+  <h3 id='culture'>Культурні діячі</h3>
   <div class="content">
     <div class="card">
-        <div style="position: relative;">
-            <img src="https://www.ukrlegenda.org/kozak/img/bajda.jpg" >
-            <div class="centered">
-                <p>Дмитро «Байда» Вишневецький</p>
-                <p style='font-size:3pt;'>Фото: https://www.ukrlegenda.org/kozak/img/bajda.jpg</p>
-            </div>
-        </div>
+        <div style="position: relative;" class='screen'>
+              <a href="https://www.ukrlegenda.org/kozak/img/bajda.jpg">
+                <img  src="https://www.ukrlegenda.org/kozak/img/bajda.jpg" >
+              <div class="centered">
+                  <p style="font-size:18pt;"">Дмитро «Байда» Вишневецький</p></div>
+                 </a>    
+          </div>
       
         <div class="text" style = "margin-top: 50px;
             margin-bottom: 50px;">
@@ -45,12 +60,12 @@
 
     <div class="content">
       <div class="card">
-          <div style="position: relative;">
-              <img src="https://nibu.kyiv.ua/media/uploads/2022/09/22/solomiya_krushelnytska_02.jpg" >
+           <div style="position: relative;" class='screen'>
+              <a href="https://nibu.kyiv.ua/media/uploads/2022/09/22/solomiya_krushelnytska_02.jpg">
+                <img  src="https://nibu.kyiv.ua/media/uploads/2022/09/22/solomiya_krushelnytska_02.jpg" >
               <div class="centered">
-                  <p>Соломія Крушельницька</p>
-                  <p style='font-size:3pt;'>Фото: https://nibu.kyiv.ua/media/uploads/2022/09/22/solomiya_krushelnytska_02.jpg</p>
-              </div>
+                  <p style="font-size:18pt;"">Соломія Крушельницька</p></div>
+                 </a>    
           </div>
         <div class="text" style = "margin-top: 40px;
             margin-bottom: 50px;">
@@ -65,14 +80,14 @@
 
       <div class="content">
         <div class="card">
-            <div style="position: relative;">
-                <img style = "float:right;" src="https://www.sevmuz.lg.ua/sites/default/files/nov/n004/s0456-03.jpg" >
+     <div style="position: relative;" class='screen'>
+                <a href="https://www.sevmuz.lg.ua/sites/default/files/nov/n004/s0456-03.jpg">
+                  <img  src="https://www.sevmuz.lg.ua/sites/default/files/nov/n004/s0456-03.jpg" >
                 <div class="centered">
-                    <p>Лесь Курбас</p>
-                    <p style='font-size:3pt;'>Фото: https://www.sevmuz.lg.ua/sites/default/files/nov/n004/s0456-03.jpg</p>
-                </div>
+                    <p style="font-size:18pt;"">Лесь Курбас</p></div>
+                   </a>    
             </div>
-          <div class="text" style = "margin-top: 20px;
+          <div class="text" style = "margin-top:10px;
                 margin-bottom: 50px;">
                   <p><b>Лесь Ку́рбас </b>(повне ім'я — Олександр-Зенон Степанович Курбас) — український режисер, актор, теоретик театру, драматург, публіцист, перекладач. Представник розстріляного відродження. Народний артист Української РСР (1925). Засновник театру «Березіль». Жертва сталінських репресій.
       </p>
@@ -89,17 +104,18 @@
               </div>
           </div>
 
-        <h3>Історичні пам'ятки</h3>
+        <h3 id='history'>Історичні пам'ятки</h3>
         <div class="content">
           <div class="card1">
-              <div style="position: relative;">
-                  <img src="https://ternopilske.com/upload/iblock/093/vyshn_12.jpg" >
-                  <div class="centered">
-                      <p>Вишніве́цький пала́ц</p>
-                      <p style='font-size:3pt;'>Фото:https://ternopilske.com/upload/iblock/093/vyshn_12.jpg</p>
-                  </div>
-              </div>
-
+              <div style="position: relative;" class='screen'>
+                    <a href="https://ternopilske.com/upload/iblock/093/vyshn_12.jpg">
+                      <img 
+                src="https://ternopilske.com/upload/iblock/093/vyshn_12.jpg" >
+                    <div class="centered">
+                        <p style="font-size:18pt;"">Вишніве́цький пала́ц</p></div>
+                       </a>    
+                </div>
+              
               <div class="text" style = "margin-top: 20px;
                   margin-bottom: 50px;">
                   <p><b>Вишніве́цький пала́ц</b> — архітектурна пам'ятка 18 століття загальнодержавного значення у смт Вишнівець Збаразького району Тернопільської області. Колишня резиденція останнього представника князівського роду Вишневецьких — Михайла-Сервація, а після його смерті 1744 — шляхтичів Мнішеків. В архітектурі Вишнівецького палацу поєднані риси пізнього бароко й класицизму.
@@ -113,14 +129,15 @@
 
           <div class="content">
             <div class="card1">
-                <div style="position: relative;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/%D0%9F%D0%BE%D1%87%D0%B0%D1%97%D0%B2_%D0%A3%D1%81%D0%BF%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80-1.JPG" >
-                    <div class="centered">
-                        <p>Свято-Успе́нський собо́р</p>
-                        <p style='font-size:3pt;'>Фото:https://upload.wikimedia.org/wikipedia/commons/e/ef/%D0%9F%D0%BE%D1%87%D0%B0%D1%97%D0%B2_<br>%D0%A3%D1%81%D0%BF%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80-1.JPG</p>
-                    </div>
-                </div>
-
+                <div style="position: relative;" class='screen'>
+                      <a href="https://upload.wikimedia.org/wikipedia/commons/e/ef/%D0%9F%D0%BE%D1%87%D0%B0%D1%97%D0%B2_%D0%A3%D1%81%D0%BF%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80-1.JPG">
+                        <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/e/ef/%D0%9F%D0%BE%D1%87%D0%B0%D1%97%D0%B2_%D0%A3%D1%81%D0%BF%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80-1.JPG" >
+                      <div class="centered">
+                          <p style="font-size:18pt;"">Свято-Успе́нський собо́р</p></div>
+                         </a>    
+                  </div>
+                
                 <div class="text">
                     <p><b>Свято-Успе́нський собо́р</b> (Собо́р Успі́ння Пресвято́ї Богоро́диці) — головний соборний храм Почаївської лаври.</p>
                     <p>Собор побудований у стилі пізнього бароко. Він піднімається над землею на 56 метрів, довжина — 54, а ширина — 40 метрів. Храм вінчає величний купол. Велика тераса-галерея з трьох сторін обрамляє храм. Над центральним входом собору — ікона Успіння Божої Матері. На хорах дві церкви: праворуч — в ім'я святителя Миколая Чудотворця, а ліворуч — в ім'я московського святого благовірного князя Олександра Невського. Служби в них відбуваються тільки на Світлій Седмиці. Освячені вони в пам'ять відвідин монастиря імператорами Миколою I і Олександром II.
@@ -134,14 +151,16 @@
 
             <div class="content">
               <div class="card1">
-                  <div style="position: relative;">
-                      <img src="https://ua.igotoworld.com/frontend/webcontent/websites/1/images/gallery/2689268_800x600_buchach.jpg" >
+                  
+                  <div style="position: relative;" class='screen'>
+                      <a href="https://ua.igotoworld.com/frontend/webcontent/websites/1/images/gallery/2689268_800x600_buchach.jpg">
+                        <img 
+                  src="https://ua.igotoworld.com/frontend/webcontent/websites/1/images/gallery/2689268_800x600_buchach.jpg" >
                       <div class="centered">
-                          <p>Бу́чацька ра́туша</p>
-                          <p style='font-size:3pt;'>Фотоhttps://ua.igotoworld.com/frontend/webcontent/websites/1/images/gallery/2689268_800x600_buchach.jpg</p>
-                      </div>
+                          <p style="font-size:18pt;"">Бучацька ратуша</p></div>
+                         </a>    
                   </div>
-
+                  
                   <div class="text" style = "margin-top: 15px;
                       margin-bottom: 50px;">
                       <p><b>Бу́чацька ра́туша</b> — унікальна пам'ятка архітектури середини XVIII століття в м. Бучачі Тернопільської області. Зведена 1750 (1751, або близько 1743—1758) р., за іншими даними — час невідомий) у стилі рококо. Архітектор Бернард Меретин, скульптор Йоган-Георг Пінзель, фундатор — Микола Василь Потоцький. Легенда оповідає про те, що фундатор ратуші хотів, щоб вона була вищою від львівської Вежі Корнякта. Після 1920 р. будівлю віддали під житло та крамниці. 1982—1992 рр. у ній діяли районний історико-краєзнавчий музей і дитяча художня школа. Перебуває на реставрації з середини 2000-х років. 
@@ -152,6 +171,55 @@
                 
                   </div>
               </div>
+
+                <h3 id="monuments">Скульптури</h3>
+                  <div class="content">
+                    <div class="card">
+                       
+                        <div style="position: relative;" class='screen'>
+                            <a href="https://zabytki.in.ua/images/1747.jpg">
+                              <img 
+src="https://zabytki.in.ua/images/1747.jpg" >
+                            <div class="centered">
+                                <p style="font-size:16pt;"">Статуя Святого Яна Непомука</p></div>
+                               </a>    
+                        </div>
+                           
+                        
+                        <div class="text" style = "margin-top: 20px;
+                            margin-bottom: 50px;">
+                            <p><b>Статуя Святого Яна Непомука</b> в Бучачі — придорожній пам'ятник чеському святому Яну Непомуку (Непомуцькому), розташований у лівобережній частині міста неподалік від пам'ятника Ісусові Христу кілька метрів нижче «цісарської» дороги Бучач — Струсів — Тернопіль (тепер частина автошляху Н18). 
+</p>
+                            <p>Композиція скульптури не повторює повністю композицію жодної з відомих схожих у колишньому Чеському Королівстві. Композиційна схема пам'ятки схожа на композиції фігур, які прикрашають Карлів міст у Празі. Варто зауважити, що фігури з пам'ятника (також зі статуї Богородиці в Бучачі) виразно відрізняються від праць Франтішека Баугута, Матея Вацлава Якеля, Фердинанда чи Яна Брокоффа , Коля, Карела Йозефа Гернля та Ігнаца Франца Плятцера
+</p>
+                            <p>Збігнев Горнунг і Тадеуш Маньковський свого часу вважали, що творчість Бернарда Меретина можна вивести з «віденського мистецького кола» чи північноіталійського (район Боденського озера). Пйотр Красний вважає, що з цим складно погодитися; також, що форми фігур бучацьких придорожніх пам'ятників можна вважати стежиною, яка вкаже на зв'язок мистецтва Меретина з мистецтвом Чеського Королівства.</p>
+                        </div>
+                    </div>
+
+                      <div class="content">
+                          <div class="card">
+
+                              <div style="position: relative;" class='screen'>
+                                  <a href="https://andy-travel.com.ua/sites/default/files/buchach2023dec074.jpg">
+                                    <img 
+                      src="https://andy-travel.com.ua/sites/default/files/buchach2023dec074.jpg" >
+                                  <div class="centered">
+                                      <p style="font-size:16pt;"">Статуя Богородиці</p></div>
+                                     </a>    
+                              </div>
+
+
+                              <div class="text" style = "margin-top: 50px;
+                                  margin-bottom: 50px;">
+                                  <p><b>Статуя («фігура») Богородиці, або Непорочного зачаття Богородиці</b>  — придорожній пам'ятник Богородиці в місті Бучачі (Тернопільська область, Україна).</p>
+                                  <p>Автори статуї: архітектор — Бернард Меретин, скульптор — Йоган Георг Пінзель. Час створення — 1751 р. Замовник, фундатор — Микола Василь Потоцький. За радянської влади в 1947 році статуя була сильно зруйнована. Відновлений скульптором Романом Вільгушинським 2006 року за доброчинні кошти підприємця, громадського діяча Василя Бабали.
+</p>
+                                  <p>Є кілька написів латиною та польською мовою. Зокрема, “Matko Boska, panno poczęta bez zmaż(z)y Staw mi się Matko wszedy ilec wezwę razy”, що означає “Матір Божа, Діво, зачата без ефлітеру З'являйся мені Матір'ю скрізь стільки разів, скільки я кличу.”	
+</p>
+                              </div>
+                          </div>
+
+                
 
  <script>
     window.onscroll = function() {scrollFunction()};
