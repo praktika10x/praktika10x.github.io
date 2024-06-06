@@ -28,7 +28,7 @@ body {
 
 .box {
     transition: all .5s ease-in-out;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 a {
