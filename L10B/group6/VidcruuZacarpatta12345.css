@@ -113,10 +113,13 @@ a {
     width: 265px;
     height: 265px;
     border-radius: 50%;
-    transition: .75s;
 }
 
-.container:hover {
+.container-1:hover,
+.container-4:hover,
+.container-5:hover,
+.container-8:hover,
+.containr-9:hover {
     width: 318px;
     height: 318px;
 }
@@ -129,6 +132,7 @@ a {
     background-repeat: no-repeat;
     background-position: 40% 50%;
     background-size: 150%;
+    transition: .75s;
 }
 
 .container-2 {
@@ -161,6 +165,7 @@ a {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 150%;
+    transition: .75s;
 }
 
 .container-5 {
@@ -171,6 +176,7 @@ a {
     background-repeat: no-repeat;
     background-position: 92% 50%;
     background-size: 150%;
+    transition: .75s;
 }
 
 .container-6 {
@@ -203,6 +209,7 @@ a {
     background-repeat: no-repeat;
     background-position: 50% 70%;
     background-size: 110%;
+    transition: .75s;
 }
 
 .container-9 {
@@ -213,6 +220,7 @@ a {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 140%;
+    transition: .75s;
 }
 
 .container-10 {
