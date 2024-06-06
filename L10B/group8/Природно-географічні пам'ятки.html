@@ -3,19 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vertical Divider</title>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background-color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 150vh;
-    }
-            .card {
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        header {
+            background: #6BAEBD;
+            color: black;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #333 3px solid;
+            text-align: center;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            background: #000;
+        }
+        .card {
             background: #333;
             margin: 10px;
             padding: 20px;
@@ -28,21 +51,16 @@
             height: auto;
             border-radius: 10px;
         }
-    .container {
-        display: flex;
-        width: 80%;
-        height: 80%;
-    }
-    .divider {
-        width: 2px;
-        background-color: white;
-        margin: 0 20px;
-    }
-    .content {
-        color: white;
-        text-align: center;
-        flex: 1;
-    }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+        }
+        footer a {
+            color: #6BAEBD;
+        }
   img {
   width: 500px;
   }
