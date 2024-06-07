@@ -97,7 +97,7 @@ header {
 
 h1 {
   font-size: 25px;
-  padding: 10px 20px;
+  padding: 5px 20px;
 }
 
 .hdr-cont div:nth-child(3) {
@@ -139,6 +139,10 @@ main {
   width: 100px;
   height: 100px;
   border-radius: 15px;
+}
+
+.dimas {
+  font-family: Yeseva_One;
 }
 
 .foott {
@@ -319,9 +323,10 @@ a {
   color: #C1FFB1;
   font-family: Balsamiq_Sans, serif;
   border-radius: 5px;
-  
+
 }
-.turr{
+
+.turr {
   color: #C1FFB1;
   font-size: 20px;
   text-decoration: inherit;
@@ -388,8 +393,7 @@ li {
   align-items: center;
   justify-content: left;
   width: 50px;
-  
-  
+
 }
 
 .rarrow::after {
@@ -409,36 +413,29 @@ li {
   content: "←";
 }
 
-.turrr{
+.turrr {
   color: #C1FFB1;
-  
+
   text-decoration: inherit;
   text-align: center;
-  
+
 }
 
 /*Лихачов class/id*/
 
-
-/*maindi{
-  width:80vw;
-  margin: 20px auto;
-  background-color: var(--bg-color);
-  border-radius: 5%;
-  padding: 10px;
-}*/
 .txt {
   background-color: var(--main-color);
-  width: auto;
+  width: 100%;
   height: auto;
   border-radius: 15px;
 }
 
 .heading {
-  background-color: var(--main-color);
+ 
   width: auto;
   height: auto;
   border-radius: 15px;
+  text-align: center;
 }
 
 .up {
@@ -459,30 +456,28 @@ li {
 }
 
 .navd {
-  margin-top: 280px;
-  background-color: var(--bg-color);
-  width: 95vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 110px;
+  /*background-color: var(--bg-color);*/
+  width: 100vw;
+  align-items: center;
 }
 
-.navd div {
+.titlenav {
   background-color: var(--main-color);
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  
   border-radius: 15px;
-  overflow: hidden;
 }
-
-.titlehdr {
+/* /* .titlehdr {
   background-color: var(--bg-color);
   width: 140px;
   height: 75px;
   border-radius: 10px;
-  overflow: hidden;
-}
+  overflow: hidden; 
+}*/
 
-.pad {
-  padding: 5%;
-}
 
 /*Юровський class/id*/
 .blockdan {
@@ -492,7 +487,6 @@ li {
   border-radius: 20px;
   text-align: center;
   padding: 15px;
-
 }
 
 .imagedan {
@@ -515,7 +509,6 @@ li {
   margin-top: 200px;
   background-color: var(--bg-color);
   width: 65vw;
-  ;
   border-radius: 15px;
   padding: 5px;
   margin-right: 10px;
