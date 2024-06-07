@@ -7,8 +7,24 @@ html {
   top: 100%; 
   left: 0; 
   display: none; 
+  z-index: 2;
 }
 
 .text.active {
   display: block; 
+}
+.sprite-imge {
+  height: 150px;
+  width: 150px;
+  background: url(sprite.png) 0px 0px;
+  animation:play 0/8s steps(9) infinite,
+    step 10s liniar infinite;
+  left: 0;
+  
+}
+@keyframes play{
+  background-position: -150px;
+}
+@keyframes step{
+  background-position: -150px;
 }
