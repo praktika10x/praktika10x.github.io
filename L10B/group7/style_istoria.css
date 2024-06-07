@@ -6,6 +6,33 @@ body{
     color: #ffd600;
 }
 
+header{
+    width: 1200px;
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+header .menu{
+    padding: 0;
+    margin-left: 750px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+header .menu .link{
+    text-decoration: none;
+    color: #ffd600;
+}
+
 /* css slider */
 .slider{
     height: 100vh;
