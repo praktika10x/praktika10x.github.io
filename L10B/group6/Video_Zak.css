@@ -89,7 +89,6 @@ body {
     align-items: center;
     justify-content: space-evenly;
     gap: 25px;
-    margin-top:200px;
     position: absolute;
     z-index: 1;
 }
