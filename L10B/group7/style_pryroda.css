@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: Poppins;
+}
 html {
-  height: 1920%;
-  width: 1080%; 
+  height: 100%;
+  width: 100%; 
   overflow-x: hidden;
 }
 .container, .container1 {
@@ -75,7 +79,7 @@ border-radius: 2cm;
 .centertext {
   top:1200px;
   left: 80px;
-  color: yellow;
+  color: darkgoldenrod;
 }
 .centertext, .text2 {
   position: absolute;
@@ -111,20 +115,22 @@ transition: 1s;
 .gol, .top{
   position: absolute;
   font-size: 50px;
+  font-weight: bold;
   z-index: 2;
-  color: darkcyan;
+  color: #fff700;
+  letter-spacing: 5px;
 }
 .spawn{
-  position: relative;
-  top: -6px;
-  left: -6px;
-  padding: 1920px 1080px;
+  position: absolute;
+  top: 1074px;
+  width: 1920px;
+  height: 1080px;
   background-color: lightblue;
-  filter: blur(5px);
 }
 .top {
   top: 1125px;
-  left: 800px;
+  left: 700px;
+
 }
 .imageb, .imagebb, .imagea {
   position: absolute;
@@ -181,33 +187,36 @@ transition: 1s;
   top: 1650px;
   left: 600px;
   font-size: 21px;
-  color: yellow;
+  color: black;
+  background-color: lightblue;
+  z-index: 10;
 }
 .otherfin {
   position: absolute;
   top: 1500px;
-  left: 100px;
+  left: 50px;
   font-size: 52px;
-  color: darkcyan;
+  color: #fff700;
+  letter-spacing: 5px;
 }
 .cont {
   position: absolute;
   top: 1600px;
   left: 50px;
   font-size: 32px;
-  color: yellowgreen;
+  color: black;
 }
 .info {
   position: absolute;
   top: 1700px;
   left: 50px;
   font-size: 26px;
-  color: yellowgreen;
+  color: black;
 }
 .info2 {
   position: absolute;
-  top: 1800px;
+  top: 1830px;
   left: 50px;
   font-size: 26px;
-  color: yellowgreen;
+  color: black;
 }
