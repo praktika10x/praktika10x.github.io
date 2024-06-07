@@ -37,6 +37,11 @@ body {
     cursor: pointer;
 }
 
+a {
+    color: black;
+    text-dicoration: none;
+}
+
 .box-1,
 .box-2,
 .box-3,
