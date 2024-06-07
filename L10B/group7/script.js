@@ -1,16 +1,16 @@
-const buttons = document.querySelectorAll('.toggle-button');
-const texts = document.querySelectorAll('.text');
-
-
-buttons.forEach((button, index) => {
-  button.addEventListener('click', () => {
-   
-    texts[index].classList.toggle('active');
-
-    if (texts[index].classList.contains('active')) {
-      button.textContent = 'Hide Text';
+function toggleText() {
+    var text = document.getElementById("hiddenText");
+    if (text.style.display === "none") {
+        text.style.display = "block";
     } else {
-      button.textContent = 'Show Text';
+        text.style.display = "none";
     }
-  });
-});
+}
+function  ttoggleText() {
+    var text = document.getElementById("hhiddenText");
+    if (text.style.display === "none") {
+        text.style.display = "block";
+    } else {
+        text.style.display = "none";
+    }
+}
