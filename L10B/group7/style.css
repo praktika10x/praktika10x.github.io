@@ -121,3 +121,21 @@ html {
   p{
      color: yellow;
   }
+@keyframes gradient {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+.gradient-div {
+  width: 96%;
+  height: 20%;
+  border-radius: 1cm;
+  animation: gradient 5s infinite;
+}
