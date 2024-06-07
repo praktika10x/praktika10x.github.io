@@ -90,7 +90,7 @@ body, html {
     margin-right: 60px;
   }
  .togglebutton{ 
-     background: linear-gradient(to bottom,#4e8af9,#437adf);
+    background: linear-gradient(to bottom,#4e8af9,#437adf);
     border-radius: 1cm;
     border: none;
     color: #e4e421;
