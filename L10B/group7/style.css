@@ -89,9 +89,11 @@ body, html {
     align-items: center;
     margin-right: 60px;
   }
-  .togglebutton{
-    background: linear-gradient(to bottom,#4e8af9,#346ad1);
+ .togglebutton{ 
+     background: linear-gradient(to bottom,#4e8af9,#437adf);
     border-radius: 1cm;
+    border: none;
+    color: #e4e421;
   }
   .it5cont{
     border-radius: 1cm;
@@ -104,6 +106,7 @@ body, html {
   }
   p{
      color: yellow;
+     font-size:18px;
   }
 html {
   height: 100%;
