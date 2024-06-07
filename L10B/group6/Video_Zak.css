@@ -89,7 +89,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     gap: 25px;
-    margin-top: 125px;
+    margin-top:200px;
     position: absolute;
     z-index: 1;
 }
@@ -109,7 +109,6 @@ body {
 
 
 .container-1 {
-    margin-top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
