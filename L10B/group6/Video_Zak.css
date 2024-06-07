@@ -16,6 +16,7 @@ body {
     justify-content: space-evenly;
     gap: 35px;
     z-index: 10;
+    overflow: hidden;
 }
 
 .logo:hover {
@@ -39,7 +40,7 @@ body {
 
 a {
     color: black;
-    text-dicoration: none;
+    text-decoration: none;
 }
 
 .box-1,
@@ -89,51 +90,37 @@ a {
 }
 
 .main {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 25px;
+    position: relative;
+    top: 135px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+iframe {
+    border-radius: 25px;
+    margin-right: 800px;
+}
+
+.video {
+    position: relative;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 25px;
-    position: absolute;
-    z-index: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: auto;
+    height: auto;
+    margin-top: -546px;
 }
 
-.case {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    margin-bottom: 50px;
-}
-
-.container {
-    width: 265px;
-    height: 265px;
-    border-radius: 35px;
-}
-
-
-.container-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 35px;
-    width: 380px;
-    height: 380px;
-}
-
-h1 {
-    font-style: italic;
-    font-family: Playfair Display ExtraBold;
-    text-align: center;
-    font-size: 21px;
-}
-
-.container p {
-    padding: 15px;
-    font-family: Lato Semibold;
-    text-align: center;
-    margin-top: -25px;
+video {
+    border-radius: 25px;
 }
 
 .dots {
