@@ -546,7 +546,7 @@ li{
 }
 .q{
   position:absolute;
-  top:1850px;
+  top:1810px;
   left:500px;
   width:225px;
   height:150px;
@@ -558,7 +558,7 @@ li{
 }
 .w{
   position:absolute;
-  top:1850px;
+  top:1810px;
   left:755px;
   width:225px;
   height:150px;
@@ -570,7 +570,7 @@ li{
 }
 .e{
   position:absolute;
-  top:1850px;
+  top:1810px;
   left:1010px;
   width:225px;
   height:150px;
@@ -582,7 +582,7 @@ li{
 }
 .r{
   position:absolute;
-  top:1850px;
+  top:1810px;
   left:1265px;
   width:225px;
   height:150px;
@@ -594,7 +594,7 @@ li{
 }
 .t{
   position:absolute;
-  top:1850px;
+  top:1810px;
   left:1520px;
   width:225px;
   height:150px;
@@ -606,7 +606,7 @@ li{
 }
 .y{
   position:absolute;
-  top:2025px;
+  top:1985px;
   left:500px;
   width:225px;
   height:150px;
@@ -618,7 +618,7 @@ li{
 }
 .u{
   position:absolute;
-  top:2025px;
+  top:1985px;
   left:755px;
   width:225px;
   height:150px;
@@ -628,7 +628,126 @@ li{
 .u:hover{
   transform: scale(1.25);
 }
-
+.i{
+   position:absolute;
+   top:1985px;
+   left:1010px;
+   width:225px;
+   height:150px;
+   border-radius:63px;
+   transition: transform 0.5s ease;
+}
+.i:hover{
+  transform: scale(1.25);
+}
+.o{
+   position: absolute;
+   top:1985px;
+   left:1265px;
+   width:225px;
+   height:150px;
+   border-radius:63px;
+   transition: transform 0.5s ease;
+}
+.o:hover{
+  transform: scale(1.25);
+}
+.p{
+   position: absolute;
+   top:1985px;
+   left:1520px;
+   width:225px;
+   height:150px;
+   border-radius:63px;
+   transition: transform 0.5s ease;
+}
+.p:hover{
+  transform: scale(1.25);
+}
+.a{
+   position: absolute;
+   top:2160px;
+   left:500px;
+   width:225px;
+   height:150px;
+   border-radius:63px;
+   transition: transform 0.5s ease;
+}
+.a:hover{
+  transform: scale(1.25);
+}
+.s{
+   position: absolute;
+   top:2160px;
+   left:755px;
+   width:225px;
+   height:150px;
+   border-radius:63px;
+   transition: transform 0.5s ease;
+}
+.s:hover{
+  transform: scale(1.25);
+}
+.d{
+   position: absolute;
+   top:2160px;
+   left:1010px;
+   width:225px;
+   height:150px;
+   border-radius:63px;
+   transition: transform 0.5s ease;
+}
+.d:hover{
+  transform: scale(1.25);
+}
+.f{
+   position:absolute;
+   top:2160px;
+   left:1265px;
+   width:225px;
+   height:150px;
+   border-radius:63px;
+   transition: transform 0.5s ease;
+}
+.f:hover{
+  transform: scale(1.25);
+}
+.g{
+   position: absolute;
+   top:2160px;
+   left:1520px;
+   width:225px;
+   height:150px;
+   border-radius:63px;
+   transition: transform 0.5s ease;
+}
+.g:hover{
+  transform: scale(1.25);
+}
+.h{
+   position: absolute;
+   top:2335px;
+   left:880px;
+   width:225px;
+   height:150px;
+   border-radius:63px;
+   transition: transform 0.5s ease;
+}
+.h:hover{
+  transform: scale(1.25);
+}
+.j{
+   position: absolute;
+   top:2335px;
+   left:1135px;
+   width:225px;
+   height:150px;
+   border-radius:63px;
+   transition: transform 0.5s ease;
+}
+.j:hover{
+  transform: scale(1.25);
+}
 .travel{
   font-family: Lugatype, serif, Arial, Calibri;
   position: absolute;
