@@ -40,8 +40,13 @@
     z-index: 1;
     filter: none;
   }
-    
-  
+  h1{
+    background: linear-gradient(135deg,#ffff00,#ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+
   .item {
 
     padding: 20px;
@@ -64,7 +69,7 @@
   }
   .item3 {
   grid-row: 2 / 3;
-  grid-column: 3 / 4; 
+  grid-column: 3/ 5; 
    height: 60vh;
   align-self: start;
   dispaly:flex;
@@ -79,13 +84,22 @@
     grid-row: 2 / 3;
     grid-column: 5 / 6; 
     align-self: end; 
-  
-    background: linear-gradient(to bottom,#ffffcc,#ffff99);
   }
   .item5 {
     grid-row: 3 / 4;
-    grid-column: 1 / -1;
-    
+    grid-column: 1 / -1; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .togglebutton{
+    background: linear-gradient(to bottom,#4e8af9,#346ad1);
+    border-radius: 3cm;
+  }
+  .it5cont{
+    border-radius: 3cm;
+    background: linear-gradient(to bottom,#ffffcc,#ffff99);
+    padding: 10px;
   }
 </style>
 </head>
@@ -94,23 +108,29 @@
 <div class='backgroundimage'></div>
   <div class='fronte'>
    <div class="container">
-   <div class="item item1"></div>
-   <div class="item item2"><h1>Туристичний довідник по Криму</h1> </div>
-  <div class="item item3"> <button class="toggle-button">Загальні відомості</button>
-  <span class="text"></span>
-  <button class="toggle-button">Туристичні маршрути</button>
-  <span class="text"></span>
-  <button class="toggle-button">Джерела</button>
-  <span class="text"></span>
+   <div class="item item1">
+    <div class='sprite-imge '>
+   </div>
+     </div>
+   <div class="item item2">
+     <h1>Туристичний довідник по Криму</h1> 
+     <img src="https://img43-ua.redtram.com/news/616668617.jpg?v=1708330985" alt="Крим" style='margin-top:60px; border-radius: 1cm;'>
+   </div>
+  <div class="item item3"> <button class='togglebutton'onclick="toggleText() ">Загальні відомості</button>
+    <p id="hiddenText" style="display: none;">Крим — територія, що включає Кримський півострів та деякі невеликі острови, що знаходяться поряд з ним. До його складу також входить Керченський півострів. Крим є центром літнього відпочинку туристів, омивається на північному заході та південному сході Чорним, а на північному сході — Азовським морем. Південне узбережжя Криму має незвичайний для навколишньої території клімат, з півночі захищений Кримськими горами, він знаходиться у субтропічному поясі, саме тому більшість курортних міст знаходяться саме тут. Крим — місце поєднання кількох різних культур — кримсько-татарської, української, давньогрецької та інших. Подорожуючи півостровом можна побачити старовинні базиліки — залишки грецьких міст-держав, оборонні споруди генуезьких колонізаторів, витончені класичні маєтки, палаци романтичного, готичного, модерного, еклектичного стилів російської доби, ханські палаци, мусульманські мечеті та християнські храми. У курортних містах досить розвинена туристична інфраструктура, доступні екскурсії по історичним місцям, різноманітні розваги, житло та кафетерії для різних груп відпочивальників; дитячі табори, пансіонати, санаторії тощо.</p>
+    <button class='togglebutton'onclick="ttoggleText() ">Джерела</button>
+    <p id="hhiddenText" style="display: none;">Текст, который появится при нажатии кнопки</p>
   </div>
-  <div class="item item4">
-     <a href='priroda.html'>Перейти на <br>природні  обьєкти</a>
-    <a href=''>Перейти на <br>історичні  обьєкти</a>
+  <div class="item item4"></div>
+  <div class="item item5">
+    <div class="it5cont">
+      <a href='priroda.html'>Перейти на <br>природні  обьєкти</a>
+      <a href='istoria.html'>Перейти на <br>історичні  обьєкти</a>
   </div>
-  <div class="item item5"></div>
-</div>
+
   </div>
-  
+   </div>
+  </div>
   <script src='script.js'></script>
 </body>
 </html>
