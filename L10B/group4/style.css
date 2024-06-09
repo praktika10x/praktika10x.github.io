@@ -494,7 +494,30 @@
     background-color: lightblue;
     color: white;
  }
+.begin:hover {
+    background-color: lightblue;
+    color: white;
+ }
 
+ .jumpb:hover {
+    background-color: lightblue;
+    color: white;
+ }
+
+ .jump1b:hover {
+    background-color: lightblue;
+    color: white;
+ }
+
+ .back1b:hover {
+    background-color: lightblue;
+    color: white;
+ }
+
+ .back2b:hover {
+    background-color: lightblue;
+    color: white;
+ }
  .map:hover {
     transform: scale(1.25);
  }
