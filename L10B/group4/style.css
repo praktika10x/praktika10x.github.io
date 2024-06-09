@@ -333,7 +333,21 @@
     border-radius: 63px;
     transition: 0.2s;
  }
-
+ .jumpb {
+    position: absolute;
+    font-size: 20px;
+    top: 2350px;
+    right: 40px;
+    margin-left: 1550px;
+    font-family: Lugatype, serif, Arial, Calibri;
+    display: inline-block;
+    background: #DAA520;
+    color: #000000;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 63px;
+    transition: 0.2s;
+ }
  .back1 {
     position: absolute;
     font-size: 20px;
@@ -364,7 +378,36 @@
     border-radius: 63px;
     transition: 0.2s;
  }
+ .back1b {
+    position: absolute;
+    font-size: 20px;
+    top: 1830px;
+    left: -80px;
+    margin-left: 1550px;
+    font-family: Lugatype, serif, Arial, Calibri;
+    display: inline-block;
+    background: #DAA520;
+    color: #000000;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 63px;
+    transition: 0.2s;
+ }
 
+ .jump1b {
+    position: absolute;
+    top: 1830px;
+    margin-left: 1695px;
+    font-size: 20px;
+    font-family: Lugatype, serif, Arial, Calibri;
+    display: inline-block;
+    background: #DAA520;
+    color: #000000;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 63px;
+    transition: 0.2s;
+ }
  .back2 {
     position: absolute;
     top: 20px;
@@ -396,7 +439,37 @@
     cursor: pointer;
     transition: 0.2s;
  }
+.back2b {
+    position: absolute;
+    top: 1900px;
+    right: 245px;
+    font-size: 20px;
+    font-family: Lugatype, serif, Arial, Calibri;
+    display: inline-block;
+    background: #DAA520;
+    color: #000000;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 63px;
+    transition: 0.2s;
+ }
 
+ .beginb {
+    position: absolute;
+    font-size: 20px;
+    top: 1900px;
+    left: 170px;
+    margin-left: 1550px;
+    font-family: Lugatype, serif, Arial, Calibri;
+    display: inline-block;
+    background: #DAA520;
+    color: #000000;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 63px;
+    cursor: pointer;
+    transition: 0.2s;
+ }
  .begin:hover {
     background-color: lightblue;
     color: white;
