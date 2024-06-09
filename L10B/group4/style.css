@@ -538,7 +538,17 @@
  .third1:hover {
     transform: scale(1.25);
  }
+.fourth1:hover {
+    transform: scale(1.25);
+ }
 
+ .fiveth1:hover {
+    transform: scale(1.25);
+ }
+
+ .sixth1:hover {
+    transform: scale(1.25);
+ }
  .video {
     position: absolute;
     top: 1330px;
