@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Geologica:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Code:wght@300..700&family=Geologica:wght@100..900&display=swap');
+
+body, html {
+   margin: 0;
+   padding: 0;
+   background-color: #f5f5f5;
+   line-height: 1.0;
+}
+
+header {
+   display: flex;
+   background-color: #7c93c3; 
+   color: #fff;
+   padding: 20px 40px;
+   align-items: center;
+}
+
+header img {
+   width: 60px;
+   height: 45px;
+}
+
+nav {
+   margin-left: auto;
+}
+
+nav a {
+   color: #fff;
+   text-decoration: none;
+   font-weight: 700;
+   font-size: 25px;
+   cursor: pointer;
+   text-align: right;
+   margin: 10px;
+}
+
+nav a:hover {
+   color: #bebebe;
+   transition: ease 0.3s;
+}  
+
+.section2 {
+   display: flex;
+   background-color: #504A9F; 
+   color: #fff;
+   padding: 20px 40px;
+   align-items: center;
+   gap: 20px; 
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.section2 div {
+    background-color: #7068D4; 
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.section2 div button {
+    background-color: #9B86BD; 
+    font-family: 'Rubik Dirt', sans-serif;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.section2 button:hover {
+    background-color: #2c387e;
+    transition: background-color 0.5s ease;
+}
+
+.section2 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   background-color: #2E236C; 
+   padding: 20px 40px;
+   flex-wrap: wrap;
+}
+footer ul li {list-style: none;}
+footer h2 {
+    font-family: 'Rubik Dirt', sans-serif;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+footer h3 {
+    font-family: 'Balsamiq Sans', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+footer h4 {
+    font-family: 'Rubik Dirt', sans-serif;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+footer .sourses {
+    background-color: #9B86BD; 
+    font-family: 'Rubik Dirt', sans-serif;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+footer button:hover {
+    background-color: #2c387e;
+    transition: background-color 0.5s ease;
+}
