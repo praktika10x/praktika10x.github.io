@@ -1,76 +1,183 @@
-<!DOCTYPE html> 
-<html lang="uk"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Cyber_sekyrity</title> 
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Safe WEB squad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: consolas;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
 
-    <style>
-        .card {
-            width: 100%;
-            border: 0px grey solid;
-            border-radius: 10px;
-            margin: 10px 0;
-            box-shadow: 2px 2px 5px grey;
-            padding: 10px;
-            box-sizing: border-box;
-        }
+    .logo-bar {
+      background-color: #FFD700;
+      padding: 5px 20px;
+      display: flex;
+      align-items: center;
+    }
 
-        .wrap {
-            width: 100%;
-            margin: 0;
-            padding: 0 10px;
-        }
+    .logo-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
 
-        ul {
-            list-style-type: disc; 
-            padding-left: 20px; 
-        }
+    .logo-text {
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: 15px;
+      color: #333;
+      font-family: Consolas;
+    }
 
-        h1, h2 {
-            font-family: comic sans ms;
-        }
+    header {
+      background-image: url("https://assets.onecompiler.app/43kkydhyn/43kkyer77/%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D0%B1%D0%B5%D0%B7%20%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20(1).png");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      height: 300px;
+      position: relative;
+    }
 
-        li {
-            font-family: comic sans ms;
-        }
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
 
-        a {
-            text-decoration: none;
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #cce6ff;
-            border-radius: 15px;
-            margin: 5px;
-            color: #4B0082;
-            box-shadow: 2px 2px 5px skyblue;
-        }
+    header * {
+      position: relative;
+      z-index: 1;
+    }
 
-        a:hover {
-            background-color: #7B68EE;
-        }
-    </style>
+    .header-text {
+      padding: 40px 20px;
+      text-align: left;
+      max-width: 800px;
+      margin-left: 60px;
+      margin-right: 60px;
+    }
 
-</head> 
-<body> 
+    .nav {
+      background-color: #FFEB3B;
+      text-align: center;
+      padding: 10px;
+    }
 
-    <div class="wrap">
-        <div class="card">
-            <h1>Наша команда</h1>
-            <ul>
-                <li>Бухикало Богдан</li>
-                <li>Шепель Дмитро</li>
-                <li>Максимчук Богдан</li>
-            </ul>
-        </div>
+    .nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      padding: 8px 16px;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+      display: inline-block;
+      font-family: Trebuchet MS;
+    }
 
-        <div class="card">
-            <h2>Напрямок дослідження</h2>
-            <ul>
-                <li>Кібербезпека та її професії</li>
-            </ul>
-        </div>
+    .nav a:hover {
+      background-color: #e6d700;
+      border-color: #b3a000;
+      color: #222;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #FAFAD2;
+      padding: 15px;
+      border: 1px solid #e0c300;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-family: Consolas;
+      font-size: 50px;
+      color: #fff;
+    }
+
+    h2 {
+      font-family: Consolas;
+      font-size: 30px;
+      color: #333;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    li {
+      font-family: Tahoma;
+    }
+
+    footer {
+      background-color: #FFD700;
+      color: #333;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo-bar">
+    <img src="https://i.postimg.cc/3RcBwN6j/image.jpg" alt="лого" class="logo-img">
+    <span class="logo-text">Safe WEB squad</span>
+  </div>
+
+  <header>
+    <div class="header-text">
+      <h1>Safe WEB squad</h1>
+      <p>Кібербезпека — перспективна галузь на ринку праці України. Попит на фахівців зростає через збільшення кіберзагроз. Компанії шукають аналітиків, спеціалістів із захисту даних та мережевої безпеки. Наша мета — дослідити ці професії глибше та зрозуміти потреби ринку.</p>
     </div>
+  </header>
 
-</body> 
+  <div class="nav">
+    <a href="#">Про проєкт</a>
+    <a href="#">Професії</a>
+    <a href="#">Довідникова інформація</a>
+    <a href="#">Напрямок дослідження</a>
+  </div>
+
+  <div class="container">
+    <h2>Коротко про кібербезпеку</h2>
+    <p>Текст</p>
+  </div>
+
+  <div class="container">
+    <h2>Напрямок дослідження</h2>
+    <ul>
+      <li>Дослідження актуальності професій у галузі кібербезпеки станом на 2025 рік</li>
+      <li>Дослідження кількості вакансій на ринку праці</li>
+      <li>Дослідження конкуренції на ринку праці</li>
+      <li>Дослідження легкості працевлаштування</li>
+      <li>Дослідження перспективності професій пов'язаних з кібербезпекою</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h2>Наша команда</h2>
+    <ul>
+      <li>Бухикало Богдан</li>
+      <li>Шепель Дмитро</li>
+      <li>Максимчук Богдан</li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 Safe WEB squad. Всі права захищено.
+  </footer>
+
+</body>
 </html>
