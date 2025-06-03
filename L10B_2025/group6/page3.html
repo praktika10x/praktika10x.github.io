@@ -1,1 +1,105 @@
-3
+<!-- robotic-devops.html -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotic DevOps Engineer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff;
+            background-image: url('img/clouds-bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 40px 20px;
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #111;
+        }
+
+        .info-box {
+            background-color: #5b9bb4;
+            border-radius: 15px;
+            padding: 25px;
+            max-width: 800px;
+        }
+
+        .info-box p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .image {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        a.button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 20px;
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            width: fit-content;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Robotic DevOps Engineer</h1>
+        <div class="info-box">
+            <p><strong>Robotic DevOps Engineer</strong> — це спеціаліст, який поєднує практики DevOps зі сферою робототехніки. Основна мета — автоматизувати розробку, тестування, розгортання та моніторинг робототехнічного програмного забезпечення, забезпечуючи швидкий цикл релізів і стабільність систем у продакшні.</p>
+
+            <p><strong>Обов’язки:</strong></p>
+            <ul>
+                <li>Налаштування процесів CI/CD для репозиторіїв із кодом роботів (ROS-пакети, алгоритми обробки даних, прошивки для мікроконтролерів).</li>
+                <li>Автоматизація збірки й тестування робототехнічних компонентів (симуляція у Gazebo або інших середовищах, юніт-тести для драйверів сенсорів).</li>
+                <li>Розгортання прошивок і контейнеризованих сервісів на фізичні роботизовані платформи чи віртуальні середовища (Docker, Kubernetes, AWS RoboMaker).</li>
+                <li>Впровадження інфраструктури як коду (Infrastructure as Code) — Terraform, Ansible, щоб забезпечити відтворювані середовища для девелопменту та продакшну.</li>
+                <li>Налаштування моніторингу й логування роботів у реальному часі (Prometheus, Grafana, ELK Stack) для швидкого виявлення аномалій і відлагодження поведінки.</li>
+                <li>Оптимізація конвеєра релізів: масштабовані пайплайни у GitLab CI, Jenkins або GitHub Actions із розгортанням на edge-пристроях.</li>
+            </ul>
+
+            <p><strong>Інструменти та технології:</strong></p>
+            <ul>
+                <li><strong>Контейнеризація</strong>: Docker, Podman</li>
+                <li><strong>Оркестрація</strong>: Kubernetes, K3s, AWS EKS</li>
+                <li><strong>CI/CD</strong>: Jenkins, GitLab CI/CD, GitHub Actions</li>
+                <li><strong>Інфраструктура як код</strong>: Terraform, Ansible, Helm Charts</li>
+                <li><strong>Моніторинг</strong>: Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana)</li>
+                <li><strong>Система контролю версій</strong>: Git</li>
+                <li><strong>Хмарні сервіси</strong>: AWS (RoboMaker, EC2, S3), Azure (Azure IoT Edge), Google Cloud (Cloud Build, Cloud Run)</li>
+                <li><strong>Робототехнічні фреймворки</strong>: ROS 1/2, Gazebo, MoveIt</li>
+            </ul>
+
+            <p>Робота Robotic DevOps Engineer охоплює як бекенд-розробку сервісів і конфігураційні скрипти, так і взаємодію з роботизированою апаратурою — від тестування сенсорів до розгортання стабільних прошивок. Завдяки автоматизації можна швидко інтегрувати нові модулі, зменшувати час від розробки до продакшну та підтримувати безперебійне функціонування роботизованих систем у виробничому середовищі.</p>
+
+            <img src="img/devops-robotics-demo.jpg" alt="Robotic DevOps Demo" class="image">
+        </div>
+        <a class="button" href="index.html">Повернутись на головну</a>
+    </div>
+</body>
+</html>
