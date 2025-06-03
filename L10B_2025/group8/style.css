@@ -31,3 +31,35 @@ line-height: 1.5;
  top: 0;
  z-index: 100;
 }
+
+.header-left {
+ display: flex;
+ align-items: center;
+}
+
+.logo {
+ height: 40px;
+ width: 40px;
+ margin-right: 0,75rem;
+}
+
+.site-title {
+ font-size: 1.4rem;
+ font-weight: 600;
+ color: #b5b8ff;
+}
+
+.nav-links {
+ display: flex;
+ gap: 1.5rem;
+}
+
+.nav-link {
+ text-decoration: none;
+ font-size: 1rem;
+ font-weight: 500;
+ color: #cfd0e5;
+ padding: 0.4rem 0.6rem;
+ border-radius: 8px;
+ transition: background-color 0.2s ease;
+}
