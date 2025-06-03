@@ -1,94 +1,113 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Full-stack Developer</title>
-  <style>
-    body {
-      font-family: sans-serif;
-    }
-  </style>
-	<link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tektur&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap" rel="stylesheet">
 </head>
 <body>
-	<p class="textzagolovkiv">Full-stack Developer</p>
-  <p><h1>Сутність професії</h1> </p>
-<p>Full stack developer – це універсальний спеціаліст, який може розробляти як Back-end, так і Front-end
-компоненти вебпродуктів. Також він має достатні знання для роботи з серверами, базами даних, 
-операційними системами та PaaS.</p>
-<p>Специфічні знання та вимоги до фахівця</p>
- <h1>Frontend (клієнтська частина):</h1>
-    <ul type="round">
-	<li>HTML, CSS, JavaScript</li>
-	<li>React.js / Vue.js / Angular</li>
-	<li>Адаптивна верстка (Flexbox, Grid)</li>
-	<li>Axios / Fetch / REST API</li>
-	<li>Bootstrap / Tailwind CSS</li>
+  <header class="hero">
+    <img src="logo.png" alt="logo" class="logo" />
+    <h1 class="main-title">Full-stack Developer</h1>
+  </header>
+
+  <section class="intro">
+    <h2 class="subtitle">Сутність професії</h2>
+    <p>Full stack developer – це універсальний спеціаліст, який може розробляти як Back-end, так і Front-end компоненти вебпродуктів. Також він має достатні знання для роботи з серверами, базами даних, операційними системами та PaaS.</p>
+  </section>
+
+  <section class="tools">
+    <h2 class="subtitle">Специфічні знання та вимоги до фахівця</h2>
+
+    <h3 class="swiper-heading">Frontend (клієнтська частина):</h3>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React.js / Vue.js / Angular</li>
+      <li>Адаптивна верстка (Flexbox, Grid)</li>
+      <li>Axios / Fetch / REST API</li>
+      <li>Bootstrap / Tailwind CSS</li>
     </ul>
- <h1>Backend (серверна частина):</h1>
-	<ul type="round">
-	<li>Node.js (Express), Django, Spring Boot, Laravel</li>
-	<li>REST API, авторизація (JWT, OAuth)</li>
-	<li>MVC-архітектура</li>
-	<li>Обробка запитів, помилок, валідація</li>
-        </ul>
- <h1>Бази даних:</h1>
-<ul type="round">	
-	<li>SQL (PostgreSQL, MySQL)</li>
-	<li>NoSQL (MongoDB)</li>
-	<li>ORM (Sequelize, Mongoose, Django ORM)</li>
-</ul>
- <h1>DevOps та інструменти:</h1>
-	<ul type="round">
-	<li>Git + GitHub</li>
-	<li>Docker</li>
-	<li>CI/CD (GitHub Actions, Jenkins)</li>
-	<li>Хмара: AWS / Firebase / Heroku</li>
-        </ul>
- <h1>Інше:</h1>
-	<ul type="round">
-	<li>Тестування (Jest, Cypress)</li>
-	<li>Figma / Postman</li>
-	<li>Збирачі (Webpack, Vite)</li>
-	</ul>
-<p>Основні інструменти:</p>
- Редактор коду:
-	VS Code
- Контроль версій:
-	Git + GitHub
- Frontend:
-	React / Vue / Angular
-	HTML, CSS, JavaScript
-	Tailwind CSS, Bootstrap
-	Webpack / Vite
-	Figma (дизайн)
- Backend:
-	Node.js + Express / Django / Laravel
-	PostgreSQL / MongoDB
-	Postman (тест API)
- DevOps:
-	Docker
-	GitHub Actions (CI/CD)
-	Heroku / Vercel / AWS (деплой)
- Тестування:
-	Jest / Cypress
-  <div class="wrap">
-    <div class="card">       
-      <img src="https://cdn.freebiesupply.com/logos/large/2x/airbnb-2-logo-png-transparent.png" alt="Airbnb logo">
-      <p>
-        <strong>Airbnb</strong><br>
-        Онлайн-платформа, де люди можуть розміщувати та шукати житло для короткострокового перебування.
-      </p>
+
+    <h3 class="swiper-heading">Backend (серверна частина):</h3>
+    <ul>
+      <li>Node.js (Express), Django, Spring Boot, Laravel</li>
+      <li>REST API, авторизація (JWT, OAuth)</li>
+      <li>MVC-архітектура</li>
+      <li>Обробка запитів, помилок, валідація</li>
+    </ul>
+
+    <h3 class="swiper-heading">Бази даних:</h3>
+    <ul>
+      <li>SQL (PostgreSQL, MySQL)</li>
+      <li>NoSQL (MongoDB)</li>
+      <li>ORM (Sequelize, Mongoose, Django ORM)</li>
+    </ul>
+
+    <h3 class="swiper-heading">DevOps та інструменти:</h3>
+    <ul>
+      <li>Git + GitHub</li>
+      <li>Docker</li>
+      <li>CI/CD (GitHub Actions, Jenkins)</li>
+      <li>Хмара: AWS / Firebase / Heroku</li>
+    </ul>
+
+    <h3 class="swiper-heading">Інше:</h3>
+    <ul>
+      <li>Тестування (Jest, Cypress)</li>
+      <li>Figma / Postman</li>
+      <li>Збирачі (Webpack, Vite)</li>
+    </ul>
+
+    <h3 class="subtitle">Зразки продукції</h3>
+    <div class="swiper">
+      <div class="card pink">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/airbnb-2-logo-png-transparent.png" alt="Airbnb logo">
+        <p><strong>Airbnb</strong><br>Платформа для короткострокової оренди житла.</p>
+      </div>
+      <div class="card yellow">
+        <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/306_Slack_logo-512.png" alt="Slack logo">
+        <p><strong>Slack</strong><br>Корпоративний месенджер для команд.</p>
+      </div>
     </div>
-  </div>
-    <div class="card">       
-      <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/306_Slack_logo-512.png">
-      <p>
-        <strong>Slack</strong><br>
-        Slack – це корпоративний месенджер для командного спілкування.
-      </p>
+  </section>
+  <section class="salary">
+    <h3 class="subtitle">Середня зарплата за червень 2025</h3>
+    <div class="salary-box">54 000 грн</div>
+  </section>
+  <section class="education">
+    <h2 class="subtitle">Заклади освіти</h2>
+    <div class="school-card card1">
+      <strong>КПІ ім. Ігоря Сікорського</strong><br>
+      Київ<br>
+      державна<br>
+      від 16 600 грн<br>
+      денна, заочна<br>
+      бакалавр, магістр, PhD, доктор наук<br>
+      20 000+ студ.
     </div>
-  </div> 
+    <div class="school-card card2">
+      <strong>НУ «Львівська політехніка»</strong><br>
+      Львів<br>
+      державна<br>
+      від 6 400 до 26 000 грн<br>
+      денна, заочна<br>
+      молодший спеціаліст, бакалавр, магістр<br>
+      близько 35 000 студ.
+    </div>
+    <div class="school-card card3">
+      <strong>Одеська політехніка</strong><br>
+      Одеса<br>
+      державна<br>
+      денна: від 18 000 до 40 000 грн<br>
+      заочна: від 12 000 до 15 000 грн<br>
+      денна, заочна, заочна з елементами дистанційної<br>
+      бакалавр, магістр, PhD<br>
+      приблизно 15 000 студ.
+    </div>
+  </section>
+  <footer class="footer"></footer>
 </body>
 </html>
