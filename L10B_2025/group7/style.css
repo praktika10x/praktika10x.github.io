@@ -272,7 +272,7 @@ footer a:hover {
 
 
 .hero {
-  background: linear-gradient(to bottom right, #fff3b0, #555);
+  background: linear-gradient(to bottom right, #fff3b0, #333);
   padding: 60px 20px;
   text-align: center;
 }
