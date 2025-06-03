@@ -1,4 +1,4 @@
-body {More actions
+body {
   font-family: consolas, monospace;
   background: linear-gradient(to bottom right, #fffce0, #fff);
   margin: 0;
@@ -264,32 +264,4 @@ footer a:hover {
   background-color: #e6d700;
   border-color: #b3a000;
   color: #222;
-}
-
-
-
-
-
-
-.hero {
-  background: linear-gradient(to bottom right, #fff3b0, #555);
-  background: linear-gradient(to bottom right, #fff3b0, #333);
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.hero-content h1 {
-  font-size: 42px;
-  font-family: Consolas, monospace;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  font-size: 18px;
-  font-family: Tahoma, sans-serif;
-  color: #555;
-  max-width: 600px;
-  margin: 0 auto;More actions
-  line-height: 1.5;
 }
