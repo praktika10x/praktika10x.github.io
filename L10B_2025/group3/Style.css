@@ -184,8 +184,24 @@ img.fullscreen-image {
   bottom: 0;
   width: 100%;
 }
+.educational-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 40px;
+}
 
 .title {
   font-family: "Press Start 2P";
 }
 
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Press Start 2P", cursive;
+  color: #261374;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  text-decoration: underline;
+}
