@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap');
+@import url('[https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700\&family=Roboto:wght@700\&display=swap](https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap)');
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -88,7 +88,15 @@ html {
     font-size: 16px;
 }
 
-.nav a:hover,
+.nav a:hover {
+    background-color: #e0c340;
+    border-color: #ccac35;
+    color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Updated active state for navigation links */
 .nav a.active {
     background-color: #e0c340;
     border-color: #ccac35;
@@ -99,29 +107,19 @@ html {
 
 .hero {
     position: relative;
-    padding: 120px 20px;
+    padding: 100px 20px;
     text-align: center;
-    color: white;
-    background: url('https://github.com/praktika10x/praktika10x.github.io/blob/main/L10B_2025/group7/3.png?raw=true') no-repeat center center/cover;
+    color: #fff;
+    background: url('[https://github.com/praktika10x/praktika10x.github.io/blob/main/L10B_2025/group7/3.png?raw=true](https://github.com/praktika10x/praktika10x.github.io/blob/main/L10B_2025/group7/3.png?raw=true)') no-repeat center center/cover;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
-    overflow: hidden;
+    margin-bottom: 40px;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
-}
-
-
-.hero p {
+.hero-content {
     position: relative;
     z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .hero h1 {
@@ -129,7 +127,7 @@ html {
     font-size: 60px;
     margin-bottom: 25px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-    color:white;
+    color: #FFFFFF;
 }
 
 .hero p {
@@ -152,36 +150,35 @@ html {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-h1, h2, h3 {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    margin-bottom: 25px;
-}
-
 h1 {
+    font-family: 'Roboto', sans-serif;
     font-size: 52px;
+    color: #333;
     text-align: center;
     margin-bottom: 35px;
 }
 
 h2 {
+    font-family: 'Roboto', sans-serif;
     font-size: 36px;
+    color: #333;
     border-left: 10px solid #f7d04e;
     padding-left: 20px;
+    margin-bottom: 25px;
     margin-top: 35px;
     line-height: 1.2;
 }
 
 h3 {
+    font-family: 'Roboto', sans-serif;
     font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
     margin-top: 30px;
 }
 
-p, li, dl dt, dl dd {
-    font-family: 'Open Sans', sans-serif;
-}
-
 p {
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 18px;
@@ -194,11 +191,13 @@ ul {
 }
 
 li {
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     margin-bottom: 10px;
 }
 
 dl dt {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     margin-top: 18px;
     margin-bottom: 8px;
@@ -207,6 +206,7 @@ dl dt {
 }
 
 dl dd {
+    font-family: 'Open Sans', sans-serif;
     margin-left: 25px;
     margin-bottom: 12px;
     font-size: 17px;
@@ -218,6 +218,7 @@ footer {
     text-align: center;
     padding: 25px;
     margin-top: 50px;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -250,6 +251,7 @@ footer a:hover {
     border: 2px solid #f0e0a0;
     border-radius: 18px;
     padding: 25px;
+    box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
@@ -263,12 +265,15 @@ footer a:hover {
 }
 
 .prof-card h3 {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
     color: #a08c30;
     font-size: 28px;
     margin-bottom: 15px;
 }
 
 .prof-card p {
+    font-family: 'Open Sans', sans-serif;
     color: #555;
     flex-grow: 1;
     margin-bottom: 18px;
@@ -276,16 +281,18 @@ footer a:hover {
 
 .prof-link {
     align-self: flex-start;
+    margin-top: 18px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
     background-color: #f7d04e;
     color: #333;
     padding: 10px 18px;
     border-radius: 10px;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 16px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-    border: 2px solid transparent;
 }
 
 .prof-link:hover {
@@ -310,6 +317,7 @@ footer a:hover {
     border-radius: 18px;
     width: 300px;
     padding: 30px;
+    box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -323,13 +331,17 @@ footer a:hover {
 }
 
 .card h2 {
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
-    color: #a08c30;
     margin-bottom: 18px;
+    color: #a08c30;
+    border-left: none;
+    padding-left: 0;
     margin-top: 0;
 }
 
 .card p {
+    font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     color: #444;
     flex-grow: 1;
@@ -342,10 +354,11 @@ footer a:hover {
     background-color: #f7d04e;
     color: #333;
     padding: 12px 20px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     border-radius: 10px;
     border: 2px solid transparent;
-    text-decoration: none;
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
     text-transform: uppercase;
     font-size: 16px;
@@ -372,8 +385,35 @@ footer a:hover {
 .icon-circle img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fills the circle */
+    border-radius: 50%; /* Makes the image circular */
+}
+
+.hero {
+    background-image: url('[https://github.com/praktika10x/praktika10x.github.io/blob/main/L10B_2025/group7/3.png?raw=true](https://github.com/praktika10x/praktika10x.github.io/blob/main/L10B_2025/group7/3.png?raw=true)');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.hero h1, .hero p {
+    position: relative;
+    z-index: 1;
 }
 
 .intro-section {
@@ -384,10 +424,12 @@ footer a:hover {
 }
 
 .intro-section h2 {
+    border-left: none;
+    padding-left: 0;
+    text-align: center;
     font-size: 44px;
     color: #444;
     margin-bottom: 15px;
-    text-align: center;
 }
 
 .intro-section p {
@@ -439,4 +481,242 @@ footer a:hover {
     height: auto;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-text-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.image-text-block .image-wrapper {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.image-text-block .image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-text-block .text-wrapper {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.image-text-block .text-wrapper h3 {
+    font-size: 32px;
+    color: #333;
+    margin-top: 0;
+}
+
+.image-text-block .text-wrapper p,
+.image-text-block .text-wrapper ul {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.news-carousel-container {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-cards-wrapper {
+    display: flex;
+    gap: 30px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+}
+
+.news-card {
+    background-color: #ffffff;
+    border: 1px solid #f0e0a0;
+    border-radius: 18px;
+    min-width: 300px;
+    max-width: 320px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.news-card h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.news-card p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #555;
+    flex-grow: 1;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.news-card .news-date {
+    font-size: 14px;
+    color: #777;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.news-card .btn {
+    align-self: flex-start;
+    padding: 8px 15px;
+    font-size: 15px;
+}
+
+.carousel-btn {
+    background-color: #f7d04e;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn:hover {
+    background-color: #e0c340;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.prev-btn {
+    left: 0px;
+}
+
+.next-btn {
+    right: 0px;
+}
+
+.container hr {
+    border: none;
+    border-top: 1px solid #f0e0a0;
+    margin: 60px auto;
+    width: 80%;
+}
+
+.news-detail-container {
+    padding: 40px;
+}
+
+.news-detail-container h1 {
+    font-size: 48px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.news-detail-container .news-meta {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.news-detail-container .news-main-image {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 35px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.news-detail-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.news-detail-container h3 {
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333;
+    border-left: 8px solid #f7d04e;
+    padding-left: 15px;
+}
+
+.news-detail-container ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.news-detail-container li {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.quote-block {
+    background-color: #fffaf0;
+    border-left: 5px solid #f7d04e;
+    padding: 20px 30px;
+    margin: 30px 0;
+    font-style: italic;
+    color: #555;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.quote-block p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #a08c
 }
