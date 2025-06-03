@@ -156,7 +156,9 @@ img.fullscreen-image {
   width: 80%;       
   height: 30;      
   object-fit: cover;  
-  display: block;     
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer {
