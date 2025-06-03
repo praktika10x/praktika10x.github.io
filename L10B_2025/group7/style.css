@@ -52,7 +52,6 @@ header * {
 .header-text {
   padding: 40px 20px;
   text-align: left;
- 
   margin-left: 200px;
   margin-right: 200px;
 }
@@ -64,7 +63,7 @@ header * {
 }
 
 .nav a {
-  color: #333;
+  color: #333; 
   text-decoration: none;
   margin: 0 10px;
   font-weight: bold;
