@@ -53,11 +53,11 @@
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-    color: #51a556;
+    color: black;
 }
 
 .swiper-pagination-bullet-active {
-    background: #51a556;
+    background: black;
 }
 
 body {
