@@ -1,90 +1,57 @@
-<!DOCTYPE html> 
-<html lang="uk"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Full-stack Developer</title>
-	<style>
-	.card {
-          border:grey 2px solid;
-          width: 150px;
-          height: 150px;
-          float: left;
-          border-radius: 10px;
-          margin: 10px;
-          box-shadow: 2px 2px 5px skyblue;
-          padding: 10px;
-      }
-      .wrap {
-          width: 1000px;
-          margin: auto;
-      }
-	</style>
-</head> 
-<body> 
-   	<p><h1>Сутність професії</h1> </p>
-<p>Full stack developer – це універсальний спеціаліст, який може розробляти як Back-end, так і Front-end
-компоненти вебпродуктів. Також він має достатні знання для роботи з серверами, базами даних, 
-операційними системами та PaaS.</p>
-<p>Специфічні знання та вимоги до фахівця</p>
- <h1>Frontend (клієнтська частина):</h1>
-    <ul type="round">
-	<li>HTML, CSS, JavaScript</li>
-	<li>React.js / Vue.js / Angular</li>
-	<li>Адаптивна верстка (Flexbox, Grid)</li>
-	<li>Axios / Fetch / REST API</li>
-	<li>Bootstrap / Tailwind CSS</li>
-    </ul>
- <h1>Backend (серверна частина):</h1>
-	<li>Node.js (Express), Django, Spring Boot, Laravel</li>
-	<li>REST API, авторизація (JWT, OAuth)</li>
-	<li>MVC-архітектура</li>
-	<li>Обробка запитів, помилок, валідація</li>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full-stack Developer</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
 
- <h1>Бази даних:</h1>
-	<li>SQL (PostgreSQL, MySQL)</li>
-	<li>NoSQL (MongoDB)</li>
-	<li>ORM (Sequelize, Mongoose, Django ORM)</li>
+    .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
 
- <h1>DevOps та інструменти:</h1>
-	<li>Git + GitHub</li>
-	<li>Docker</li>
-	<li>CI/CD (GitHub Actions, Jenkins)</li>
-	<li>Хмара: AWS / Firebase / Heroku</li>
+    .card {
+      width: 200px;
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
+      background-color: #ffe6ec; 
+      border: 2px solid lightgray;
+      color: #333;
+      text-align: center;
+    }
 
- <h1>Інше:</h1>
-	<li>Тестування (Jest, Cypress)</li>
-	<li>Figma / Postman</li>
-	<li>Збирачі (Webpack, Vite)</li>
-<p>Основні інструменти:</p>
-🔹 Редактор коду:
-•	VS Code
-🔹 Контроль версій:
-•	Git + GitHub
-🔹 Frontend:
-•	React / Vue / Angular
-•	HTML, CSS, JavaScript
-•	Tailwind CSS, Bootstrap
-•	Webpack / Vite
-•	Figma (дизайн)
-🔹 Backend:
-•	Node.js + Express / Django / Laravel
-•	PostgreSQL / MongoDB
-•	Postman (тест API)
-🔹 DevOps:
-•	Docker
-•	GitHub Actions (CI/CD)
-•	Heroku / Vercel / AWS (деплой)
-🔹 Тестування:
-•	Jest / Cypress
-   <div class="wrap">
+    .card img {
+      width: 80px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Сутність професії</h1>
+  <p>Full stack developer – це універсальний спеціаліст...</p>
+
+  <div class="wrap">
     <div class="card">       
-        <p>
-            <img src="https://cdn.freebiesupply.com/logos/large/2x/airbnb-2-logo-png-transparent.png"> <br>
-            Airbnb  <br>
-	онлайн-платформа, де люди можуть розміщувати та шукати житло для короткострокового перебування<br>
-        </p>
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/airbnb-2-logo-png-transparent.png" alt="Airbnb logo">
+      <p>
+        <strong>Airbnb</strong><br>
+        Онлайн-платформа, де люди можуть розміщувати та шукати житло для короткострокового перебування.
+      </p>
     </div>
-    </div>
-</body> 
+  </div>
+
+</body>
 </html>
