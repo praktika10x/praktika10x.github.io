@@ -119,6 +119,7 @@
   color: #333;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: space-between; 
 }
 .card-link {
     background-color: #FFFFFF; 
@@ -131,6 +132,7 @@
 }
 .card_educational {
    background-color: #FFFFFF; 
+   min-height: 240px;
 }
 .card-salary {
   background-color: #F5BB47; 
@@ -189,7 +191,7 @@ img.fullscreen-image {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 20px 40px;
+  align-items: stretch;
 }
 
 .title {
