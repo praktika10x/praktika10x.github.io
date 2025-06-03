@@ -35,16 +35,20 @@
 }
 
 .swiper {
-    width: 100%;
-    height: 500px;
+  width: 100%;
+  height: 350px; /* Встанови висоту, щоб слайдер був видимим */
 }
 
 .swiper-slide {
-    padding: 20px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .card-pic {
