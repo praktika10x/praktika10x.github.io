@@ -67,15 +67,16 @@
 .swiper-pagination-bullet-active {
     background: #51a556;
 }
-    .wrap {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
+.wrap {
+  display: flex;
+  flex-direction: column; /* головне — це! */
+  align-items: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
 
 .card {
   width: 200px;
