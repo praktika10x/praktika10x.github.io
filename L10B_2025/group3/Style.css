@@ -67,4 +67,30 @@
 .swiper-pagination-bullet-active {
     background: #51a556;
 }
+    .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
 
+.card {
+  width: 200px;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
+  background-color: #f9cdda;
+  border: 2px solid lightgray;
+  color: #333;
+  text-align: center;
+}
+
+    .card img {
+      width: 80px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
+    }
