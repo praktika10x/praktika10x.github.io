@@ -75,34 +75,40 @@
 }
 
 .banner {
-  position: relative;
   width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.banner-image {
+  height: 250px;
   background-image: url("https://img.freepik.com/premium-photo/abstract-image-with-curved-shapes-blend-light-pink-hues-that-create-mesmerizing-background-generative-ai_208978-4333.jpg");
   background-size: cover;
   background-position: center;
-  height: 250px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  text-align: center;
+  align-items: center;
   position: relative;
+  overflow: hidden;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.4); 
+  padding: 15px 25px;
+  border-radius: 12px;
+}
+
+.banner-logo {
+  height: 60px;
+  width: auto;
 }
 
 .banner-title {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
   font-family: 'Press Start 2P', cursive;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
   text-shadow: 2px 2px 4px #000;
 }
+
 .card {
   width: 250px;
   border-radius: 15px;
