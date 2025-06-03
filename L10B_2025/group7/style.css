@@ -805,10 +805,3 @@ footer a:hover {
     }
 }
 
-.hero h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 60px;
-    margin-bottom: 25px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-    color: #FFFFFF;
-}
