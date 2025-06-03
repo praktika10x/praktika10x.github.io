@@ -1,20 +1,17 @@
-const swiper1 = new Swiper(".swiper", {
-    // Optional parameters
-    direction: "horizontal",
-    loop: true,
-
-    // If we need pagination
-    pagination: {
-        el: ".swiper-pagination",
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    autoplay: {
+document.addEventListener("DOMContentLoaded", function () {
+    const swiper1 = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
     delay: 20000,
     disableOnInteraction: false,
 },
+    });
 });
