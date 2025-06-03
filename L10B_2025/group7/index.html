@@ -69,17 +69,11 @@
         <h2>Кібербезпека під час війни: захисти себе та Україну</h2>
         <div class="image-text-block">
             <div class="image-wrapper">
-                <img src="=https://github.com/praktika10x/praktika10x.github.io/blob/main/L10B_2025/group7/hq720.png?raw=true" alt="Кібервійна" />
+                <img src="https://github.com/praktika10x/praktika10x.github.io/blob/main/L10B_2025/group7/hq720.png?raw=true" alt="Кібервійна" />
             </div>
             <div class="text-wrapper">
                 <h3>Не дай ворогу маніпулювати собою</h3>
                 <p>З початком повномасштабного вторгнення, росія активно використовує цифрові технології для інформаційної війни. Кібератаки, цілеспрямована пропаганда та дезінформація — це їхні інструменти для маніпулювання громадською думкою та впливу на світову спільноту. У цьому розділі ми детально пояснимо, як не стати жертвою цих ворожих впливів, навчимо розрізняти правдиву та фейкову інформацію, і допоможемо свідомо споживати контент, зміцнюючи наш інформаційний фронт.</p>
-                
-                <div class="youtube-player" data-id="dQw4w9WgXcQ">
-                    <img src="https://www.youtube.com/watch?v=u6J0S9C6kP0" alt="Відео про кібербезпеку під час війни" class="youtube-thumbnail">
-                    <div class="play-button"></div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -179,20 +173,6 @@
 
         window.addEventListener('resize', updateCarousel);
         updateCarousel();
-
-        document.querySelectorAll('.youtube-player').forEach(player => {
-            player.addEventListener('click', function() {
-                const videoId = this.dataset.id;
-                const iframe = document.createElement('iframe');
-                iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`);
-                iframe.setAttribute('frameborder', '0');
-                iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
-                iframe.setAttribute('allowfullscreen', '');
-                this.innerHTML = '';
-                this.appendChild(iframe);
-                this.classList.add('active');
-            });
-        });
     </script>
 </body>
 </html>
