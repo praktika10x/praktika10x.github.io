@@ -127,4 +127,10 @@ li a:hover {
 .info-card {
   margin-bottom: 20px;
 }
+img.fullscreen-image {
+  width: 100vw;       
+  height: 100vh;      
+  object-fit: cover;  
+  display: block;     
+}
 
