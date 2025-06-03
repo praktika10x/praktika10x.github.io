@@ -94,7 +94,9 @@
   margin: 0 auto 10px;
 }
 
-
+.card-salary {
+  background-color: #F5BB47; 
+}
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 4px 4px 12px rgba(135, 206, 235, 0.8);
