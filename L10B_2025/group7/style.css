@@ -1,5 +1,5 @@
 body {
-  font-family: Consolas, monospace;
+  font-family: consolas, monospace;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
@@ -8,15 +8,17 @@ body {
 
 .logo-bar {
   background-color: #FFD700;
-  padding: 10px 20px;
+  padding: 5px 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  border-bottom: none;
 }
 
 .logo-left {
   display: flex;
   align-items: center;
+  gap: 15px;
 }
 
 .logo-img {
@@ -29,20 +31,30 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: #333;
-  margin-left: 15px;
+  font-family: Consolas, monospace;
 }
 
 .language-switcher a {
+  font-family: Trebuchet MS, sans-serif;
   color: #333;
   text-decoration: none;
   font-weight: bold;
-  margin-left: 5px;
+  padding: 0 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.language-switcher a:hover {
+  color: #b38f00;
 }
 
 .nav {
   background-color: #FFD700;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
+  border-top: none;
+  border-bottom: none;
+  margin: 0;
 }
 
 .nav a {
@@ -51,14 +63,18 @@ body {
   margin: 0 10px;
   font-weight: bold;
   padding: 8px 16px;
+  border: 2px solid transparent;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
   display: inline-block;
+  font-family: Trebuchet MS, sans-serif;
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav a.active {
   background-color: #e6d700;
-  color: #000;
+  border-color: #b3a000;
+  color: #222;
 }
 
 .container {
@@ -69,6 +85,28 @@ body {
   padding: 15px;
   border: 1px solid #e0c300;
   border-radius: 10px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: Consolas, monospace;
+  font-size: 50px;
+  color: #fff;
+}
+
+h2 {
+  font-family: Consolas, monospace;
+  font-size: 30px;
+  color: #333;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+li {
+  font-family: Tahoma, sans-serif;
 }
 
 footer {
@@ -81,4 +119,55 @@ footer {
 
 footer .team-info {
   margin-bottom: 10px;
+}
+
+.profesiyi-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.prof-card {
+  background-color: #FAFAD2;
+  border: 1px solid #e0c300;
+  border-radius: 10px;
+  width: 250px;
+  padding: 15px;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px #d9c900;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.prof-card h3 {
+  margin-top: 0;
+  font-family: Consolas, monospace;
+  color: #333;
+}
+
+.prof-card p {
+  font-family: Tahoma, sans-serif;
+  color: #555;
+  flex-grow: 1;
+}
+
+.prof-link {
+  align-self: flex-start;
+  margin-top: 10px;
+  font-family: Trebuchet MS, sans-serif;
+  text-decoration: none;
+  background-color: #ffd700;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.prof-link:hover {
+  background-color: #e6d700;
+  border-color: #b3a000;
+  color: #222;
 }
