@@ -1,3 +1,4 @@
+/* Reset & базовые стили */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +12,7 @@ body {
   line-height: 1.5;
 }
 
+/* Header */
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -46,9 +48,7 @@ body {
   border-radius: 8px;
   transition: background-color 0.2s;
 }
-.nav-link:hover {
-  background-color: rgba(255,255,255,0.1);
-}
+.nav-link:hover { background-color: rgba(255,255,255,0.1); }
 .nav-link.active {
   background-color: #3b3eac;
   color: #fff;
@@ -59,10 +59,12 @@ body {
   cursor: pointer;
 }
 
+/* Main content */
 .main-content {
   padding: 2rem;
 }
 
+/* Project info: logo + text */
 .project-info-box-flex {
   background-color: rgba(255,255,255,0.05);
   border-radius: 16px;
@@ -72,7 +74,6 @@ body {
   max-width: 600px;
   margin: 0 auto 2rem;
   overflow: hidden;
-  position: relative;
 }
 .logo-float {
   float: left;
@@ -97,11 +98,13 @@ body {
   }
 }
 
+/* Section wrapper */
 .section-box {
   max-width: 800px;
   margin: 0 auto 2rem;
 }
 
+/* Полупрозрачная панель */
 .panel {
   background-color: rgba(255,255,255,0.05);
   border-radius: 16px;
@@ -111,6 +114,7 @@ body {
   color: inherit;
 }
 
+/* Definition */
 .definition .panel h2 {
   font-size: 1.5rem;
   color: #d0d3f2;
@@ -121,6 +125,7 @@ body {
   line-height: 1.6;
 }
 
+/* Професії */
 .professions-title {
   text-align: center;
   font-size: 1.3rem;
@@ -141,11 +146,15 @@ body {
 .prof-card .panel {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
+  aspect-ratio: 1 / 1;   /* квадратная карточка */
+  overflow: hidden;
 }
 .prof-card img {
-  width: 80px;
+  max-width: 50%;
+  height: auto;
   margin-bottom: 1rem;
 }
 .prof-card h4 {
@@ -153,6 +162,7 @@ body {
   font-weight: 500;
 }
 
+/* Back link */
 .back-link {
   text-align: center;
   margin-top: 2rem;
@@ -160,4 +170,9 @@ body {
 .back-link .nav-link {
   background: none;
   padding: 0;
+}
+
+@media (max-width: 600px) {
+  .main-content { padding: 1rem; }
+  .prof-grid { grid-template-columns: 1fr; }
 }
