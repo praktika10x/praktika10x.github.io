@@ -1,138 +1,126 @@
+
 * {
- box-sizing: border-box;
- margin: 0;
- padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html {
- font-size: 16px;
+  font-size: 16px;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0e0e1a;
+  color: #cfd0e5;
+  line-height: 1.5;
 }
 
-
-
-.card{
- background: #4A4894;
- opacity: .7;
-}
-body{
-font-family: 'Inter', sans-serif;
-background-color: #0e0e1a;
-color: #cfd0e5;
-line-height: 1.5;
-}
-
+/* Хедер */
 .site-header {
- display: flex;
- justify-content: space-between;
- align-items: centr;
- background-color: #111222;
- padding: 1rem 2rem;
- box-shadow: 0 2px 10px rgba(0,0,0,0.5);
- position: sticky;
- top: 0;
- z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111222;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
-
-.header-left {
- display: flex;
- align-items: center;
-}
-
 .logo {
- height: 40px;
- width: 40px;
- margin-right: 0,75rem;
+  width: 40px;
+  height: 40px;
+  margin-right: 0.75rem;
 }
-
 .site-title {
- font-size: 1.4rem;
- font-weight: 600;
- color: #b5b8ff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #b5b8ff;
 }
-
 .nav-links {
- display: flex;
- gap: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-
 .nav-link {
- text-decoration: none;
- font-size: 1rem;
- font-weight: 500;
- color: #cfd0e5;
- padding: 0.4rem 0.6rem;
- border-radius: 8px;
- transition: background-color 0.2s ease;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #cfd0e5;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
 }
-
-.nav-link:hover{
- background-color: rgba(255,255,255,0.1);
+.nav-link:hover {
+  background-color: rgba(255,255,255,0.1);
 }
-
 .nav-link.active {
- background-color: #3b3eac;
- color: #ffffff
+  background-color: #3b3eac;
+  color: #fff;
 }
-
 .menu-icon {
- display: none;
- font-size 1.5rem;
- color: #cfd0e5;
- background-color: rgba(255,255,255,0,1);
- padding: 0.4rem 0.6rem;
- border-radius: 8px;
- cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
+/* Основной контент */
 .main-content {
- padding: 2rem;
+  padding: 2rem;
 }
-
-.page-section {
- display: flex;
- justify-content: center;
- margin-bottom: 2rem;
-}
-
 .section-box {
- background: linear-gradient(145deg, #1a1a2e, #12121e);
- padding: 2rem;
- border-radius: 16px;
- box-shadow: 0 0 25px rgba(0,0,0,0.6)
- max-width: 700px;
- width: 100%;
+  background: linear-gradient(145deg, #1a1a2e, #12121e);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+  max-width: 700px;
+  margin: 0 auto 2rem;
 }
-
 .section-box h2 {
- color: #d0d3f2;
- font-size: 1.5rem;
- margin-bottom: 1rem;
+  color: #d0d3f2;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
-
 .section-box p {
- color: #cfd0e5;
- font-size: 1.05rem;
- line-height: 1.6;
+  color: #cfd0e5;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
-
-.project-info {
- display: flex;
- justify-content: center;
- margin-bottom: 2rem;
-}
-
 .project-info-box {
- background: linear-gradient(145deg, #1a1a2e, #12121e);
- padding: 1.5rem 2rem;
- border-radius: 16px;
- box-shadow: 0 0 20px rgba(0,0,0,0.6)
- max-width: 500px;
- color: #cfd0e5;
- font-size: 1rem;
- line-height: 1.5;
+  background: linear-gradient(145deg, #1a1a2e, #12121e);
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  max-width: 500px;
+  margin: 0 auto 2rem;
 }
-
-.definition {
- display: flex;
- justify-content: centr;
- margin-bottom: 3rem;
+.professions-title {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #d0d3f2;
+}
+.professions-list {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.professions-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(145deg, #1a1a2e, #12121e);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  width: 150px;
+  text-decoration: none;
+  color: #cfd0e5;
+  transition: transform 0.2s, background-color 0.2s;
+}
+.professions-card img {
+  width: 80px;
+  margin-bottom: 0.5rem;
+}
+.professions-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(80,80,120,0.5);
 }
