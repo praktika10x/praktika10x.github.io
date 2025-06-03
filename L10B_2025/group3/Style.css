@@ -133,3 +133,15 @@ li a:hover {
 .info-card {
   margin-bottom: 20px;
 }
+
+.textzagolovkiv {
+  font-family: 'Press Start 2P';
+  font-size: 20px;
+  color: white;
+}
+
+.pidzagolov {
+  font-family: 'Tektur';
+  font-size: 20px;
+  color: #261374;
+}
