@@ -2,42 +2,15 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Професії</title>
+  <title>Професії - Safe WEB squad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .prof-blocks {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-    .prof-card {
-      background-color: #fffacd;
-      border: 1px solid #e0c300;
-      border-radius: 10px;
-      padding: 15px;
-      width: 220px;
-      text-align: center;
-      box-shadow: 2px 2px 5px #ccc;
-    }
-    .prof-card a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #222;
-      display: inline-block;
-      margin-top: 10px;
-      padding: 5px 10px;
-      background-color: #FFD700;
-      border-radius: 6px;
-    }
-  </style>
 </head>
 <body>
 
   <div class="logo-bar">
     <div class="logo-left">
-      <img src="https://i.postimg.cc/3RcBwN6j/image.jpg" alt="лого" class="logo-img">
+      <img src="https://i.postimg.cc/3RcBwN6j/image.jpg" alt="лого" class="logo-img" />
       <span class="logo-text">Safe WEB squad</span>
     </div>
     <div class="language-switcher">
@@ -47,60 +20,64 @@
 
   <div class="nav">
     <a href="index.html">Головна</a>
-    <a href="project.html">Про проєкт</a>
-    <a href="profesiyi.html">Професії</a>
-    <a href="dovidka.html">Довідкова інформація</a>
+    <a href="profesiyi.html" class="active">Професії</a>
+    <a href="dovidka.html">Довідникова інформація</a>
     <a href="napryamok.html">Напрямок дослідження</a>
   </div>
 
-  <div class="container">
-    <h2>Професії у кібербезпеці</h2>
-    <div class="prof-blocks">
-      <div class="prof-card">
-        <h3>Cybersecurity Analyst</h3>
-        <p>Моніторинг та захист інформаційних систем.</p>
-        <a href="profesiyi/cybersecurity-analyst.html">Детальніше</a>
-      </div>
-      <div class="prof-card">
-        <h3>SOC Analyst</h3>
-        <p>Робота в центрі кібербезпеки.</p>
-        <a href="profesiyi/soc-analyst.html">Детальніше</a>
-      </div>
-      <div class="prof-card">
-        <h3>Incident Responder</h3>
-        <p>Реагування на кіберінциденти.</p>
-        <a href="profesiyi/incident-responder.html">Детальніше</a>
-      </div>
-      <div class="prof-card">
-        <h3>Pentester</h3>
-        <p>Тестування безпеки систем.</p>
-        <a href="profesiyi/pentester.html">Детальніше</a>
-      </div>
-      <div class="prof-card">
-        <h3>Security Researcher</h3>
-        <p>Дослідження вразливостей та атак.</p>
-        <a href="profesiyi/security-researcher.html">Детальніше</a>
-      </div>
-      <div class="prof-card">
-        <h3>Malware Analyst</h3>
-        <p>Аналіз шкідливого ПЗ.</p>
-        <a href="profesiyi/malware-analyst.html">Детальніше</a>
-      </div>
-      <div class="prof-card">
-        <h3>Red Team</h3>
-        <p>Атакуючі операції.</p>
-        <a href="profesiyi/red-team.html">Детальніше</a>
-      </div>
-      <div class="prof-card">
-        <h3>Blue Team</h3>
-        <p>Оборона від кібератак.</p>
-        <a href="profesiyi/blue-team.html">Детальніше</a>
-      </div>
-      <div class="prof-card">
-        <h3>Purple Team</h3>
-        <p>Співпраця Red та Blue команд.</p>
-        <a href="profesiyi/purple-team.html">Детальніше</a>
-      </div>
+  <div class="container profesiyi-container">
+    <div class="prof-card">
+      <h3>Cybersecurity Analyst</h3>
+      <p>Моніторинг безпеки, виявлення загроз і захист ІТ-інфраструктури.</p>
+      <a href="profesiyi/cybersecurity-analyst.html" class="prof-link">Детальніше</a>
+    </div>
+
+    <div class="prof-card">
+      <h3>SOC Analyst</h3>
+      <p>Аналіз і реагування на інциденти в центрі безпеки.</p>
+      <a href="profesiyi/soc-analyst.html" class="prof-link">Детальніше</a>
+    </div>
+
+    <div class="prof-card">
+      <h3>Incident Responder</h3>
+      <p>Реагування на кіберінциденти та мінімізація шкоди.</p>
+      <a href="profesiyi/incident-responder.html" class="prof-link">Детальніше</a>
+    </div>
+
+    <div class="prof-card">
+      <h3>Pentester</h3>
+      <p>Перевірка безпеки систем шляхом тестування на проникнення.</p>
+      <a href="profesiyi/pentester.html" class="prof-link">Детальніше</a>
+    </div>
+
+    <div class="prof-card">
+      <h3>Security Researcher</h3>
+      <p>Вивчення нових загроз і розробка заходів безпеки.</p>
+      <a href="profesiyi/security-researcher.html" class="prof-link">Детальніше</a>
+    </div>
+
+    <div class="prof-card">
+      <h3>Malware Analyst</h3>
+      <p>Аналіз шкідливого програмного забезпечення.</p>
+      <a href="profesiyi/malware-analyst.html" class="prof-link">Детальніше</a>
+    </div>
+
+    <div class="prof-card">
+      <h3>Red Team</h3>
+      <p>Атака для тестування безпеки організації.</p>
+      <a href="profesiyi/red-team.html" class="prof-link">Детальніше</a>
+    </div>
+
+    <div class="prof-card">
+      <h3>Blue Team</h3>
+      <p>Оборона від кібератак.</p>
+      <a href="profesiyi/blue-team.html" class="prof-link">Детальніше</a>
+    </div>
+
+    <div class="prof-card">
+      <h3>Purple Team</h3>
+      <p>Співпраця Red та Blue команд.</p>
+      <a href="profesiyi/purple-team.html" class="prof-link">Детальніше</a>
     </div>
   </div>
 
