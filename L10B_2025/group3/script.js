@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
             prevEl: ".swiper-button-prev",
         },
         autoplay: {
-    delay: 20000,
-    disableOnInteraction: false,
-},
+            delay: 20000,
+            disableOnInteraction: false,
+        },
     });
 });
