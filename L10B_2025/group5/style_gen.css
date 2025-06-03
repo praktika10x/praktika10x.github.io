@@ -11,26 +11,31 @@ body, html {
 }
 
 header {
+   top: 0;
+   left: 0;
+   height: 60px;
    display: flex;
    background-color: #7c93c3; 
    color: #fff;
-   padding: 20px 40px;
+   padding: 15px 40px;
    align-items: center;
 }
 
-header img {
-   width: 60px;
-   height: 45px;
+.logo {
+    width: 60px;
+    height: 60px;
 }
 
-header h1 {
-   font-size:30px;
-   font-family: 'Rubik Dirt', sans-serif;
-   color: #fff;
+header img {
+   width: 100%;
+   height: 100%;
+   border-radius: 100%;
+   object-fit: cover;
 }
 
 nav {
    margin-left: auto;
+   margin-right: 40px;
 }
 
 nav a {
@@ -39,8 +44,6 @@ nav a {
    font-weight: 700;
    font-size: 25px;
    cursor: pointer;
-   text-align: right;
-   margin: 10px;
 }
 
 nav a:hover {
@@ -48,8 +51,106 @@ nav a:hover {
    transition: ease 0.3s;
 }  
 
+nav ul  {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+
+nav ul li ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: auto;
+    background-color: #8055f7;
+    width: 150px;
+    z-index: 1000;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0;
+
+
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li:hover ul {
+    opacity: 0.95;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+nav ul li ul li a {
+    display: block;
+    padding: 12px 0; 
+    color: #fff;
+    width: 150px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+
+}
+
+
+nav ul li ul li:hover {
+    background-color: #5b3aff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+nav ul li:hover .categories-list-triangle {
+    transform: rotate(-90deg);
+} 
+    
+.categories-list-triangle {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+
+.main-section {
+   display: flex;
+   width: 100%;
+   height: 500px;
+   background-color: #2219a3; 
+   color: #fff;
+   padding: 20px 40px;
+   align-items: center;
+   gap: 20px; 
+   justify-content: space-between;
+   flex-wrap: wrap;
+   background-image: url('https://www.teranalytics.com/wp-content/uploads/2021/01/data_0.jpg');
+   background-repeat: no-repeat;
+}
+
+
+.text-field {
+   display: flex;
+   width: 300px;
+   height: 400px;
+   background-color: #504A9F;
+   margin-left: 10%;
+   border-radius: 20px;
+   opacity: 0.95;
+}
+
+
 .section2 {
    display: flex;
+   width: 100%;
+   height: 500px;
    background-color: #504A9F; 
    color: #fff;
    padding: 20px 40px;
@@ -90,12 +191,7 @@ nav a:hover {
     border-radius: 50%;
     margin-bottom: 10px;
 }
-.sectoin2 h2 {
-   font-size:24px;
-   font-family: 'Balsamiq Sans';
-   color: #fff;
-   text-align:center;
-}
+
 footer {
    display: flex;
    justify-content: space-between;
