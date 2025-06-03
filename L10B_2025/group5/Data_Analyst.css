@@ -10,6 +10,9 @@ body, html {
    line-height: 1.0;
    font-size: 16px;
    box-sizing: border-box;
+   width: 100%;
+   max-width: 100vw;
+   overflow-x: hidden;
 }
 
 header {
@@ -24,11 +27,27 @@ header {
    flex-wrap: wrap;
 }
 
-.logo {
-    width: 50px;
-    height: 50px;
-    min-width: 40px;
-    min-height: 40px;
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.logo-title img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.main-title {
+  font-family: 'Rubik Dirt', sans-serif;
+  font-size: 2.2rem;
+  color: #fff;
+  margin: 0;
+  padding: 0 0 0 2px;
+  letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 header img {
@@ -37,20 +56,14 @@ header img {
    border-radius: 100%;
    object-fit: cover;
 }
+header img h1 {
+    font-family: 'Rubik Dirt' sans-serif;
+    font-size: 24px;
+    color: #fff;
+    
+}
 header ul li {margin-right: 20px; margin-top: 15px;}
 
-header nav ul li:not(.action) a:hover {
-    border-bottom: 5px solid #2E236C;
-}
-
-header nav ul > li > a:hover {
-    border-bottom: 5px solid #2E236C;
-}
-
-header nav ul > li:hover > a:has(+ ul),
-header nav ul > li > a:has(+ ul):hover {
-    border-bottom: none !important;
-}
 
 nav {
    margin-left: auto;
@@ -87,14 +100,19 @@ nav ul li {
 }
 
 nav ul li ul {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #8055f7;
-    width: 180px;
+    width: 160px; 
     z-index: 1000;
     border-radius: 10px;
-    text-align: left;
+    text-align: center;
     margin: 0;
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
     padding: 0;
@@ -105,20 +123,22 @@ nav ul li ul {
 
 nav ul li:hover ul,
 nav ul li:focus-within ul {
-    display: block;
     opacity: 1;
     pointer-events: auto;
 }
 
 nav ul li ul li a {
     display: block;
-    padding: 12px 20px;
+    padding: 10px 0;
     color: #fff;
     width: 100%;
     box-sizing: border-box;
-    text-align: left;
+    text-align: center;
     margin: 0;
-    font-size: 18px;
+    font-size: 16px; 
+    font-weight: 700;
+    font-family: 'Balsamiq Sans', sans-serif;
+    transition: background 0.2s;
 }
 
 nav ul li ul li:hover {
@@ -129,6 +149,11 @@ nav ul li ul li:hover {
 nav ul li:hover .categories-list-triangle {
     transform: rotate(-90deg);
 }
+
+header nav ul li a:hover {
+    border-bottom: 5px solid #433D8B;
+}
+
 
 .categories-list-triangle {
     transition: transform 0.3s ease;
