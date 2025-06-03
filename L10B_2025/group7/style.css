@@ -96,7 +96,7 @@ html {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Updated active state for navigation links */
+
 .nav a.active {
     background-color: #e0c340;
     border-color: #ccac35;
