@@ -118,7 +118,7 @@ html {
     z-index: 0;
 }
 
-.hero h1,
+
 .hero p {
     position: relative;
     z-index: 1;
@@ -129,6 +129,7 @@ html {
     font-size: 60px;
     margin-bottom: 25px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    color:white;
 }
 
 .hero p {
