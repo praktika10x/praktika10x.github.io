@@ -1,203 +1,534 @@
-:root {
-  --main-yellow: #FFD600;
-  --main-black: #000000;
-  --dark-gray: #2E2E2E;
-  --light-gray: #F2F2F2;
-  --font-main: 'Arial', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@700&family=Trebuchet+MS&display=swap');
 
-/* Загальні стилі */
 body {
-  margin: 0;
-  font-family: var(--font-main);
-  background-color: var(--light-gray);
-  color: var(--dark-gray);
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom right, #fffce0, #fff);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
 }
 
-header {
-  background-color: var(--main-black);
-  padding: 20px;
-  color: white;
+html {
+    scroll-behavior: smooth;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2em;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-nav {
-  background-color: var(--main-yellow);
-  padding: 10px 20px;
+/* Header & Navigation */
+.logo-bar {
+    background-color: #FFD700;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-nav a {
-  color: var(--main-black);
-  text-decoration: none;
-  font-weight: bold;
-  margin-right: 15px;
+.logo-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.logo-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 8px rgba: (0, 0, 0, 0.3);
 }
 
-main {
-  padding: 40px 20px;
-  background-color: white;
+.logo-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #4CAF50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-section {
-  margin-bottom: 40px;
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
 }
 
-h2 {
-  color: var(--main-black);
-  font-size: 1.8em;
-  margin-bottom: 10px;
+.main-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
-p {
-  font-size: 1.1em;
-  line-height: 1.6;
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    background-color: #4CAF50;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.button {
-  background-color: var(--main-yellow);
-  color: var(--main-black);
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s;
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px;
+    background: linear-gradient(to right, #e0ffe0, #f0fff0);
+    text-align: left;
+    gap: 40px;
 }
 
-.button:hover {
-  background-color: #e6c200;
+.hero-content {
+    flex: 1;
+    max-width: 600px;
 }
 
-footer {
-  background-color: var(--dark-gray);
-  color: white;
-  padding: 20px;
-  text-align: center;
+.hero-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5em;
+    color: #2E8B57;
+    margin-bottom: 20px;
+    line-height: 1.2;
 }
 
-/* Респонсивність */
-@media screen and (max-width: 768px) {
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  header h1 {
-    font-size: 1.5em;
-  }
-
-  h2 {
-    font-size: 1.4em;
-  }
+.hero-content p {
+    font-size: 1.3em;
+    color: #555;
+    margin-bottom: 30px;
 }
 
-/* Блоки контенту */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FFD700;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #FFC107;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.primary-btn {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background-color: #367C39;
+    color: #fff;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-hero-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* About Us Section */
+.about-us {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8em;
+    color: #2E8B57;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.about-us h2::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: #FFD700;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-image {
+    max-width: 600px;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Section */
+.services {
+    padding: 60px 0;
+    background-color: #e0ffe0;
+    text-align: center;
+}
+
+.services h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8em;
+    color: #2E8B57;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.services h2::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: #FFD700;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .card {
-  background-color: var(--light-gray);
-  padding: 20px;
-  border-left: 5px solid var(--main-yellow);
-  margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid #4CAF50;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 .card h3 {
-  margin-top: 0;
-  color: var(--dark-gray);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
 }
 
 .card p {
-  color: #444;
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
 }
 
-/* Інтерактивні елементи */
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.card-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    border-radius: 50%; /* Для круглих іконок */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input:focus,
-textarea:focus {
-  border-color: var(--main-yellow);
-  outline: none;
+/* Resources Section */
+.resources {
+    padding: 60px 0;
+    background-color: #f0fff0;
+    text-align: center;
 }
 
-.form-section {
-  background-color: #fff;
-  padding: 30px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+.resources h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8em;
+    color: #2E8B57;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: var(--dark-gray);
+.resources h2::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: #FFD700;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
 }
 
-/* Анімації */
-.fade-in {
-  animation: fadeIn 1s ease-in;
+.section-description {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+.resource-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-/* Додаткові стилі */
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
+.resource-grid .card {
+    border-top: 5px solid #FFD700;
 }
 
-li {
-  margin-bottom: 10px;
+/* FAQ Section */
+.faq {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
-blockquote {
-  border-left: 4px solid var(--main-yellow);
-  padding-left: 15px;
-  font-style: italic;
-  color: #666;
+.faq h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: #2E8B57;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
 }
 
-/* Розділювачі */
-.divider {
-  height: 2px;
-  background-color: var(--main-yellow);
-  margin: 40px 0;
+.faq h3::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    background-color: #FFD700;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
 }
 
-/* Позиціонування */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.faq dl {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.center {
-  text-align: center;
+.faq dt {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.faq dt::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+    font-size: 0.8em;
+    transition: transform 0.3s ease;
 }
 
-.flex-col {
-  display: flex;
-  flex-direction: column;
+.faq dd {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    border-left: 2px solid #eee;
+    padding-bottom: 5px;
+    display: none; /* Приховано за замовчуванням */
+    opacity: 0;
+    transition: opacity 0.3s ease, height 0.3s ease;
+    overflow: hidden;
+    height: 0;
+}
+
+.faq dt.active::before {
+    transform: rotate(90deg);
+}
+
+.faq dd.active {
+    display: block;
+    opacity: 1;
+    height: auto; /* Дозволяє контенту займати потрібну висоту */
+}
+
+.faq-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+}
+
+.social-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 15px;
+        align-items: flex-start;
+    }
+
+    .main-nav ul li a {
+        padding: 5px 10px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .service-cards, .resource-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .faq dl {
+        padding: 15px;
+    }
+
+    .faq dt {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 1.8em;
+    }
+
+    .logo-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 0.9em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
 }
