@@ -93,7 +93,9 @@
   display: block;
   margin: 0 auto 10px;
 }
-
+.card_educational {
+   background-color: #FFFFFF; 
+}
 .card-salary {
   background-color: #F5BB47; 
 }
