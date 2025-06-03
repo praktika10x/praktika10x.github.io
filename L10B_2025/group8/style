@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width">
   <title>стиль</title>
   <style>
+      body {
+          font-family: 'Mak';
+          src: url('fonts/CustomFont.ttf') format('truetype');
       .card{
       border: 2px grey solid ;
       border-radius: 30px;
