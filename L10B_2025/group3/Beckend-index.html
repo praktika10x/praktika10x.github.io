@@ -4,12 +4,21 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <title>Beckend для чайників</title>
-        <link rel="stylesheet" href="styles.css">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="project-style.css" />
     </head>
     <body>
         <div class="header">
+            <div class="header-logo">
+                <img src="\Project-img\SVG\ПроектЛого.svg" class="eniac" />
+            </div>
+        </div>
+        <div class="intro">
             <h1>Backend-розробка</h1>
-            <h2>"невидима" частина вебсайтів</h2>
+            <h2 class="subtitle">"невидима" частина вебсайтів</h2>
         </div>
         <div class="about">
             <h2>Про професію</h2>
@@ -25,8 +34,126 @@
                 видно, але без чого не існує жоден сучасний сервіс.
             </p>
             <h2>Чим займається бекендер?</h2>
-            <p>(свайпер)</p>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide info-card">
+                        <div class="card-pic">
+                            <img
+                                src="./img/svg/plastic1.svg"
+                                class="card-thump"
+                            />
+                        </div>
+                        <h3 class="card-title">Розробка серверної логіки</h3>
+                        <p class="cart-desc">
+                            авторизація, обробка запитів, бізнес-логіка
+                        </p>
+                    </div>
+                    <div class="swiper-slide info-card">
+                        <div class="card-pic">
+                            <img
+                                src="./img/svg/plastic2.svg"
+                                class="card-thump"
+                            />
+                        </div>
+                        <h3 class="card-title">Робота з базами даних</h3>
+                        <p class="cart-desc">MySQL, PostgreSQL, MongoDB тощо</p>
+                    </div>
+                    <div class="swiper-slide info-card">
+                        <div class="plastic__card-pic">
+                            <img
+                                src="./img/svg/plastic3.svg"
+                                class="card-thump"
+                            />
+                        </div>
+                        <h3 class="card-title">Полівінілхлорид, PVC або ПВХ</h3>
+                        <p class="cart-desc">
+                            Один із перших різновидів пластику – з нього
+                            виробляють меблі, штучну шкіру, кабелі, пляшки для
+                            рослинних олій тощо. Це один з найбільш токсичних
+                            видів пластику, оскільки уже через 10 років з нього
+                            виділяються хлорвмісні токсичні сполуки.
+                        </p>
+                    </div>
+                    <div class="swiper-slide info-card">
+                        <div class="card-pic">
+                            <img
+                                src="./img/svg/plastic4.svg"
+                                class="card-thump"
+                            />
+                        </div>
+                        <h3 class="card-title">
+                            Поліетилен низької щільності, PELD (LDPE)
+                        </h3>
+                        <p class="cart-desc">
+                            Саме з нього виготовляється більшість пакетів, він є
+                            основою підгузків та прокладок. Розкладається
+                            близько 500 років.
+                        </p>
+                    </div>
+                    <div class="swiper-slide plastic__info-card">
+                        <div class="plastic__card-pic">
+                            <img
+                                src="./img/svg/plastic5.svg"
+                                class="plastic__card-thump"
+                            />
+                        </div>
+                        <h3 class="plastic__card-title">
+                            Поліпропілен, PP або ПП
+                        </h3>
+                        <p class="plastic__cart-desc">
+                            основа пластикових кришечок, харчових лотків,
+                            стаканчиків, упаковки для круп, цукерок (характерна
+                            ознака – шурхотіння). У ґрунті чистий поліпропілен
+                            розкладаєтеся повністю за 20-30 років, проте цей
+                            період залежить від домішок і може супроводжуватись
+                            виділенням токсичних альдегідів.
+                        </p>
+                    </div>
+                    <div class="swiper-slide plastic__info-card">
+                        <div class="plastic__card-pic">
+                            <img
+                                src="./img/svg/plastic6.svg"
+                                class="plastic__card-thump"
+                            />
+                        </div>
+                        <h2 class="plastic__card-title">
+                            Полістирол, PS або ПС
+                        </h2>
+                        <p class="plastic__cart-desc">
+                            так маркується практично весь одноразовий посуд.
+                            Даний вид пластику є основним забруднювачем океанів.
+                            Донедавна вважалось, що він має тривалий період
+                            розкладання (більше 1000 років), проте останні
+                            дослідження встановили, що під дією сонячних
+                            променів полістирен розчиняється у воді за 100-300
+                            років.
+                        </p>
+                    </div>
+                    <div class="swiper-slide plastic__info-card">
+                        <div class="plastic__card-pic">
+                            <img
+                                src="./img/svg/plastic7.svg"
+                                class="plastic__card-thump"
+                            />
+                        </div>
+                        <h2 class="plastic__card-title">Інше або оther</h2>
+                        <p class="plastic__cart-desc">
+                            До цієї категорії належать багатошарові упаковки,
+                            для яких важко визначити період розкладання.
+                        </p>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
+
         <div class="Roadmap">
             <h1>Скоро з'явиться</h1>
         </div>
