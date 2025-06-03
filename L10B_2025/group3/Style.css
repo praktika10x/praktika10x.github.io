@@ -122,6 +122,7 @@ li a {
   color: #ffffff;
   padding: 8px 16px;
   text-decoration: none;
+  background-color: #4B3E82;
 }
 li a:hover {
   background-color: #4B3E82;
