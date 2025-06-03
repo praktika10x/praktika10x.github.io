@@ -63,3 +63,76 @@ line-height: 1.5;
  border-radius: 8px;
  transition: background-color 0.2s ease;
 }
+
+.nav-link:hover{
+ background-color: rgba(255,255,255,0.1);
+}
+
+.nav-link.active {
+ background-color: #3b3eac;
+ color: #ffffff
+}
+
+.menu-icon {
+ display: none;
+ font-size 1.5rem;
+ color: #cfd0e5;
+ background-color: rgba(255,255,255,0,1);
+ padding: 0.4rem 0.6rem;
+ border-radius: 8px;
+ cursor: pointer;
+}
+
+.main-content {
+ padding: 2rem;
+}
+
+.page-section {
+ display: flex;
+ justify-content: center;
+ margin-bottom: 2rem;
+}
+
+.section-box {
+ background: linear-gradient(145deg, #1a1a2e, #12121e);
+ padding: 2rem;
+ border-radius: 16px;
+ box-shadow: 0 0 25px rgba(0,0,0,0.6)
+ max-width: 700px;
+ width: 100%;
+}
+
+.section-box h2 {
+ color: #d0d3f2;
+ font-size: 1.5rem;
+ margin-bottom: 1rem;
+}
+
+.section-box p {
+ color: #cfd0e5;
+ font-size: 1.05rem;
+ line-height: 1.6;
+}
+
+.project-info {
+ display: flex;
+ justify-content: center;
+ margin-bottom: 2rem;
+}
+
+.project-info-box {
+ background: linear-gradient(145deg, #1a1a2e, #12121e);
+ padding: 1.5rem 2rem;
+ border-radius: 16px;
+ box-shadow: 0 0 20px rgba(0,0,0,0.6)
+ max-width: 500px;
+ color: #cfd0e5;
+ font-size: 1rem;
+ line-height: 1.5;
+}
+
+.definition {
+ display: flex;
+ justify-content: centr;
+ margin-bottom: 3rem;
+}
