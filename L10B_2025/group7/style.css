@@ -1,5 +1,5 @@
 body {
-  font-family: consolas;
+  font-family: Consolas, monospace;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
@@ -8,7 +8,13 @@ body {
 
 .logo-bar {
   background-color: #FFD700;
-  padding: 5px 20px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-left {
   display: flex;
   align-items: center;
 }
@@ -22,9 +28,15 @@ body {
 .logo-text {
   font-size: 20px;
   font-weight: bold;
-  margin-left: 15px;
   color: #333;
-  font-family: Consolas;
+  margin-left: 15px;
+}
+
+.language-switcher a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
 }
 
 .nav {
@@ -39,17 +51,14 @@ body {
   margin: 0 10px;
   font-weight: bold;
   padding: 8px 16px;
-  border: 2px solid transparent;
   border-radius: 8px;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease;
   display: inline-block;
-  font-family: Trebuchet MS;
 }
 
 .nav a:hover {
   background-color: #e6d700;
-  border-color: #b3a000;
-  color: #222;
+  color: #000;
 }
 
 .container {
@@ -62,31 +71,14 @@ body {
   border-radius: 10px;
 }
 
-h1 {
-  font-family: Consolas;
-  font-size: 50px;
-  color: #333;
-}
-
-h2 {
-  font-family: Consolas;
-  font-size: 30px;
-  color: #333;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-li {
-  font-family: Tahoma;
-}
-
 footer {
   background-color: #FFD700;
   color: #333;
   text-align: center;
   padding: 15px;
   margin-top: 20px;
+}
+
+footer .team-info {
+  margin-bottom: 10px;
 }
