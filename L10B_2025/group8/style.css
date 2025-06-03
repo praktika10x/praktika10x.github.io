@@ -1,146 +1,227 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 html {
   font-size: 16px;
 }
-
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #13131f; 
-  color: #d5d7f0; 
+  background-color: #0e0e1a;
+  color: #cfd0e5;
   line-height: 1.5;
+}
+
+/* Хедер */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111222;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.75rem;
+}
+.site-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #b5b8ff;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #cfd0e5;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+.nav-link:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+.nav-link.active {
+  background-color: #3b3eac;
+  color: #fff;
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
 }
 
 /* Основной контент */
 .main-content {
   padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
 }
-
-.network-title {
-  text-align: center;
-  font-size: 3rem;
-  color: #8a96e0; 
-  margin: 1.5rem 0 1rem;
-}
-
-.network-description {
-  text-align: center;
-  max-width: 900px;
-  margin: 0 auto 3rem;
-  color: #c0c3e8; 
-  font-size: 1.2rem;
-  line-height: 1.6;
-  padding: 0 1rem;
-}
-
-.ecosystem-cards {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.ecosystem-card {
-  background: linear-gradient(145deg, #1e1e30, #181828);
+.section-box {
+  background: linear-gradient(145deg, #1a1a2e, #12121e);
+  padding: 2.5rem;
   border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
-  padding: 2rem;
-  width: 340px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-}
-
-.card-image {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 1.5rem;
-}
-
-.card-title {
-  font-size: 1.5rem;
-  color: #d7dbff; 
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.card-description {
-  font-size: 1rem;
-  color: #b8bcde; 
-  text-align: center;
-  line-height: 1.6;
-}
-
-.project-info-box {
-  background: linear-gradient(145deg, #1e1e30, #181828);
-  padding: 1.5rem 2rem;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
   max-width: 500px;
-  margin: 0 auto 3rem;
-  display: flex;
-  align-items: center;
+  width: 80%;
+  min-height: 300px;
+  margin: 0 auto 2rem;
 }
-
-.logo-project {
-  width: 80px;
-  height: 80px;
-  border-radius: 12px;
-  margin-right: 1.5rem;
-}
-
-.project-info-text {
-  color: #c0c3e8;
-}
-
-.definition-box {
-  background: linear-gradient(145deg, #1e1e30, #181828);
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
-  max-width: 700px;
-  margin: 0 auto 3rem;
-}
-
-.definition-box h2 {
-  color: #d7dbff; 
+.section-box h2 {
+  color: #d0d3f2;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-
-.definition-box p {
-  color: #b8bcde; 
+.section-box p {
+  color: #cfd0e5;
   font-size: 1.05rem;
   line-height: 1.6;
 }
-
-.components-title {
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 2rem 0;
-  color: #d0d3f2;
+.project-info-box-flex {
+  background: linear-gradient(145deg, #1a1a2e, #12121e);
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  overflow: hidden;
+  position: relative;
 }
-
-@media (max-width: 768px) {
-  .project-info-box {
-    flex-direction: column;
+.logo-float {
+  float: left;
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.18);
+}
+.project-info-box-flex p {
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .logo-float {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+  .project-info-box-flex {
     text-align: center;
   }
-  
-  .logo-project {
-    margin-right: 0;
-    margin-bottom: 1rem;
-  }
-  
-  .ecosystem-card {
-    width: 100%;
-    max-width: 340px;
-  }
+}
+.professions-title {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #d0d3f2;
+}
+.professions-list {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.professions-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(145deg, #1a1a2e, #12121e);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  width: 150px;
+  text-decoration: none;
+  color: #cfd0e5;
+  transition: transform 0.2s, background-color 0.2s;
+}
+.professions-card img {
+  width: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.prof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px) 200px;
+  grid-auto-rows: 100px;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.prof-card {
+  background: linear-gradient(145deg, #1a1a2e, #12121e);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+.prof-card.small {
+  width: 100px;
+  height: 100px;
+}
+.prof-card.large {
+  width: 200px;
+  height: 200px;
+}
+
+/* Motion-дизайнер */
+.motion-designer {
+  max-width: 500px;
+  margin: 0 auto 2rem;
+}
+.section-heading {
+  color: #d0d3f2;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.card-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.card {
+  background: linear-gradient(145deg, #1a1a2e, #12121e);
+  padding: 1rem;
+  border-radius: 12px;
+  width: 120px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+/* Інформаційні блоки */
+.info-box {
+  background: linear-gradient(145deg, #1a1a2e, #12121e);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  margin: 1rem auto;
+  max-width: 500px;
+  color: #cfd0e5;
+}
+.info-box.two-cols {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Плейсхолдер таблиці */
+.table-placeholder {
+  background: linear-gradient(145deg, #1a1a2e, #12121e);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  width: 100%;
+  max-width: 500px;
+  height: 240px;
+  margin: 1rem auto;
+}
+.professions-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(80,80,120,0.5);
 }
