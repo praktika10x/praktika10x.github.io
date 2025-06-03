@@ -1,4 +1,74 @@
-/* Reset & базові стилі */
+
+.banner {
+  background: url('wave-bg.jpg') center/cover no-repeat;
+  padding: 3rem 1rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.banner h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+}
+
+/* Приклади професій */
+.example-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.example-card {
+  background: rgba(26,26,46,0.6);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.example-card img {
+  max-width: 50px;
+  margin-bottom: 0.5rem;
+}
+.example-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Motion-sample */
+.motion-sample {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+/* Інструменти розробника */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.tool-card {
+  background: rgba(26,26,46,0.6);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.tool-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Back button in header */
+.back-btn {
+  margin-right: 1rem;
+  background: rgba(255,255,255,0.1);
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  color: #cfd0e5;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,7 +98,6 @@ body {
   width: 40px;
   height: 40px;
   margin-right: 0.75rem;
-  animation: spin 4s linear infinite;
 }
 .site-title {
   font-size: 1.4rem;
@@ -159,8 +228,8 @@ body {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .prof-card .panel img {
   max-width: 60%;
@@ -171,8 +240,10 @@ body {
   margin: 0;
   font-weight: 500;
 }
+/* Плавный лифт при наведении */
 .prof-card:hover .panel {
-  transform: translateY(-6px) scale(1.03);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.7);
 }
 .prof-grid .prof-card:nth-child(1) .panel { animation-delay: 0.7s; }
 .prof-grid .prof-card:nth-child(2) .panel { animation-delay: 0.9s; }
@@ -190,6 +261,21 @@ body {
   padding: 0;
 }
 
+.prof-card {
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+  /* allow the hover lift to sit above siblings */
+  position: relative;
+  z-index: 1;
+}
+
+.prof-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
 /* Keyframes */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
@@ -198,10 +284,6 @@ body {
 @keyframes fadeIn {
   from { opacity: 0; }
   to   { opacity: 1; }
-}
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
 }
 
 /* Адаптивність */
