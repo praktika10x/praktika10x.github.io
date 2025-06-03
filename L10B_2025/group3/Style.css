@@ -82,8 +82,14 @@
 }
 
 .banner-image {
-  width: 100%;
-  display: block;
+  background-image: url("https://img.freepik.com/premium-photo/abstract-image-with-curved-shapes-blend-light-pink-hues-that-create-mesmerizing-background-generative-ai_208978-4333.jpg");
+  background-size: cover;         
+  background-position: center;    
+  height: 250px;                 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .banner-title {
