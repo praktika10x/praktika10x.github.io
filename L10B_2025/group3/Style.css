@@ -135,13 +135,13 @@ li a:hover {
 }
 
 .textzagolovkiv {
-  font-family: 'Press Start 2P';
+  font-family: "Press Start 2P", sans-serif;
   font-size: 20px;
   color: white;
 }
 
 .pidzagolov {
-  font-family: 'Tektur';
+  font-family: "Tektur", sans-serif;
   font-size: 20px;
   color: #261374;
 }
