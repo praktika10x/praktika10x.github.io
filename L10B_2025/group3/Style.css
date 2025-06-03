@@ -86,7 +86,9 @@
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.card-link {
+    background-color: #FFFFFF; 
+}
 .card img {
   width: 80px;
   height: auto;
