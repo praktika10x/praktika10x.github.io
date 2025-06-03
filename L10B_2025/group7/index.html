@@ -110,32 +110,26 @@
     ---
     <section class="container" id="news-section">
         <h2>Останні новини кібербезпеки</h2>
-        <div class="news-carousel">
+        <div class="news-carousel-controls">
             <button class="carousel-btn prev-btn">&lt;</button>
-            <div class="news-cards-wrapper">
-                <div class="news-card">
-                    <img src="https://i.postimg.cc/zvq0X363/news1.jpg" alt="Новина 1" />
-                    <h3>Стартує Всеукраїнська інформаційна кампанія з платіжної безпеки #ШахрайГудбай</h3>
-                    <p class="news-date">13.05.2025</p>
-                    <p>Національний банк України та партнери розпочинають кампанію з підвищення обізнаності громадян щодо правил безпеки безготівкових розрахунків та протидії кібершахрайству.</p>
-                    <a href="news_detail_shahraigoodbye.html" class="btn">Детальніше</a>
-                </div>
-                <div class="news-card">
-                    <img src="https://i.postimg.cc/YSpw421Q/news2.jpg" alt="Новина 2" />
-                    <h3>Нові методи фішингу: як розпізнати та захиститися</h3>
-                    <p class="news-date">01.06.2025</p>
-                    <p>Експерти попереджають про збільшення кількості фішингових атак, що стали більш витонченими. Будьте уважні до підозрілих повідомлень.</p>
-                    <a href="news_detail_2.html" class="btn">Детальніше</a>
-                </div>
-                <div class="news-card">
-                    <img src="https://i.postimg.cc/mk084G2C/news3.jpg" alt="Новина 3" />
-                    <h3>Штучний інтелект у кібербезпеці: нові можливості та загрози</h3>
-                    <p class="news-date">25.05.2025</p>
-                    <p>Розглянемо, як ШІ трансформує підходи до захисту даних і які виклики виникають перед фахівцями.</p>
-                    <a href="news_detail_3.html" class="btn">Детальніше</a>
-                </div>
-            </div>
             <button class="carousel-btn next-btn">&gt;</button>
+        </div>
+        <div class="news-cards-wrapper">
+            <div class="news-card">
+                <img src="https://i.postimg.cc/zvq0X363/news1.jpg" alt="Новина 1" />
+                <h3><a href="news_detail_shahraigoodbye.html">Стартує Всеукраїнська інформаційна кампанія з платіжної безпеки #ШахрайГудбай</a></h3>
+                <p class="news-date">13.05.2025</p>
+                </div>
+            <div class="news-card">
+                <img src="https://i.postimg.cc/YSpw421Q/news2.jpg" alt="Новина 2" />
+                <h3><a href="news_detail_2.html">Нові методи фішингу: як розпізнати та захиститися</a></h3>
+                <p class="news-date">01.06.2025</p>
+            </div>
+            <div class="news-card">
+                <img src="https://i.postimg.cc/mk084G2C/news3.jpg" alt="Новина 3" />
+                <h3><a href="news_detail_3.html">Штучний інтелект у кібербезпеці: нові можливості та загрози</a></h3>
+                <p class="news-date">25.05.2025</p>
+            </div>
         </div>
     </section>
 
@@ -175,21 +169,25 @@
     </footer>
 
     <script>
-        const newsCarousel = document.querySelector('.news-carousel');
+        const newsCarousel = document.querySelector('.news-carousel-controls'); // Змінено на елемент, що містить кнопки
         const newsCardsWrapper = document.querySelector('.news-cards-wrapper');
-        const prevBtn = document.querySelector('.prev-btn');
-        const nextBtn = document.querySelector('.next-btn');
+        const prevBtn = newsCarousel.querySelector('.prev-btn'); // Отримуємо кнопки з нового контейнера
+        const nextBtn = newsCarousel.querySelector('.next-btn');
         const newsCards = document.querySelectorAll('.news-card');
 
         let currentIndex = 0;
 
         function updateCarousel() {
-            const cardWidth = newsCards[0].offsetWidth + 30; // Ширина картки + відступ
-            newsCardsWrapper.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
+            if (newsCards.length === 0) return; // Перевірка, щоб уникнути помилок, якщо карток немає
+            const cardStyle = window.getComputedStyle(newsCards[0]);
+            const cardWidth = newsCards[0].offsetWidth;
+            const gap = parseFloat(cardStyle.marginRight) || parseFloat(cardStyle.gap) || 30; // Беремо gap зі стилів
+            const totalShift = currentIndex * (cardWidth + gap);
+            newsCardsWrapper.style.transform = `translateX(${-totalShift}px)`;
         }
 
         nextBtn.addEventListener('click', () => {
-            if (currentIndex < newsCards.length - 1) {
+            if (currentIndex < newsCards.length - 1) { // Якщо є наступна картка
                 currentIndex++;
             } else {
                 currentIndex = 0; // Повернутися на початок
@@ -206,6 +204,7 @@
             updateCarousel();
         });
 
+        // Ініціалізація та оновлення при зміні розміру вікна
         window.addEventListener('resize', updateCarousel);
         updateCarousel();
     </script>
