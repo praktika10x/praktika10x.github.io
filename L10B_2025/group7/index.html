@@ -1,163 +1,110 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Кібер Брама</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f8f9fa;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #222;
-      color: #ffd700;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: 700;
-    }
-    header nav a {
-      color: #ffd700;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: 600;
-    }
-    header nav a:hover {
-      text-decoration: underline;
-    }
-
-    .language-switcher {
-      font-weight: 600;
-    }
-
-    .search-bar {
-      margin-left: 20px;
-      padding: 5px;
-      border-radius: 3px;
-      border: none;
-      font-size: 1rem;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 15px;
-    }
-
-    h1 {
-      color: #222;
-      font-weight: 700;
-      font-size: 2.2rem;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-weight: 700;
-      color: #444;
-      margin-top: 30px;
-      margin-bottom: 15px;
-    }
-
-    p {
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #ffd700;
-      color: #222;
-      padding: 10px 18px;
-      border-radius: 5px;
-      font-weight: 700;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background: #e6c200;
-    }
-
-    .section-block {
-      background: white;
-      padding: 20px 25px;
-      margin-bottom: 30px;
-      border-radius: 6px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      padding: 15px;
-      background: #222;
-      color: #ffd700;
-      margin-top: 40px;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <title>Safe WEB squad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-<header>
-  <div>
-    <a href="#" style="color:#ffd700; font-size:1.3rem; font-weight:700; text-decoration:none;">Про проєкт</a>
-    <a href="#" style="color:#ffd700; margin-left: 15px;">Категорії</a>
-    <a href="#" style="color:#ffd700; margin-left: 15px;">Посібник</a>
-    <a href="#" style="color:#ffd700; margin-left: 15px;">Новини</a>
-    <a href="#" style="color:#ffd700; margin-left: 15px;">Словник</a>
-    <a href="#" style="color:#ffd700; margin-left: 15px;">Повідомити про проблему</a>
-  </div>
-  <div class="language-switcher">UA</div>
-</header>
+    <div class="logo-bar">
+        <div class="logo-left">
+            <img src="https://i.postimg.cc/3RcBwN6j/image.jpg" alt="лого" class="logo-img" />
+            <span class="logo-text">Safe WEB squad</span>
+        </div>
+        <div class="language-switcher">
+            <a href="#">UA</a> | <a href="#">EN</a>
+        </div>
+    </div>
 
-<main>
-  <h1>Кібер Брама</h1>
-  <p><strong>Твоя міць в інтернеті</strong></p>
-  <p>Кібер Брама - допоможе дізнатись, як безпечно користуватись всесвітньою мережею, попереджати та протидіяти злочинним діям в Інтернеті та не стати жертвою ворожої пропаганди</p>
-  <a href="#" class="btn">Детальніше</a>
+    <div class="nav">
+        <a href="project.html">Про проєкт</a>
+        <a href="profesiyi.html">Професії</a>
+        <a href="dovidka.html">Довідкова інформація</a>
+        <a href="napryamok.html">Напрямок дослідження</a>
+    </div>
 
-  <div class="section-block">
-    <h2>Кібербезпека в освіті</h2>
-    <p>Кібербезпека в освіті</p>
-  </div>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Безпека в Інтернеті починається з тебе</h1>
+            <p>Ми допоможемо розібратися, як захистити себе онлайн та обрати сучасну кіберпрофесію.</p>
+            <a href="#features" class="btn">Дізнатись більше</a>
+        </div>
+    </section>
 
-  <div class="section-block">
-    <h2>Кібербезпека в роботі</h2>
-    <p>Кібербезпека в роботі</p>
-  </div>
+    <div class="container">
+        <h2 class="section-title" id="features">Що ми пропонуємо</h2>
+        <div class="grid-container">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Що таке кібербезпека?</h3>
+                <p>Ми пояснюємо простою мовою, чому важливо захищати свої дані, пристрої та онлайн-активність у сучасному світі.</p>
+                <a href="dovidka.html" class="btn btn-secondary">Детальніше</a>
+            </div>
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h3>Ким працювати?</h3>
+                <p>Ми допоможемо розібратися у перспективних професіях майбутнього, пов’язаних із кібербезпекою.</p>
+                <a href="profesiyi.html" class="btn btn-secondary">Переглянути професії</a>
+            </div>
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Як обрати напрям?</h3>
+                <p>Наші дослідження покажуть, де найкращі перспективи та як ефективно обрати свій шлях у кіберсфері.</p>
+                <a href="napryamok.html" class="btn btn-secondary">Переглянути напрямки</a>
+            </div>
+        </div>
+    </div>
 
-  <div class="section-block">
-    <h2>Кібербезпека у повсякденному житті</h2>
-    <p>Кібербезпека у повсякденному житті</p>
-  </div>
+    <section class="highlight-section">
+        <div class="highlight-content">
+            <h2>Захисти своє цифрове життя</h2>
+            <p>Дізнайся, як уникнути шахрайства, захистити свої особисті дані та безпечно використовувати інтернет. Ми пропонуємо практичні поради та покрокові інструкції для кожного, хто хоче почуватися впевнено у цифровому просторі.</p>
+            <a href="dovidka.html" class="btn">Більше порад</a>
+        </div>
+        <div class="highlight-image">
+            <img src="https://i.postimg.cc/FK42mYm4/pexels-fotios-photos-1090638.jpg" alt="Захист даних" />
+        </div>
+    </section>
 
-  <div class="section-block">
-    <h2>Кібербезпека в розвагах та спілкуванні</h2>
-    <p>Кібербезпека в розвагах та спілкуванні</p>
-  </div>
+    <div class="container team-section">
+        <h2 class="section-title">Команда Safe WEB squad</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150/FFD700/333333?text=Іван" alt="Іван Петренко">
+                <h4>Іван Петренко</h4>
+                <p>Керівник проєкту</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150/E0C200/333333?text=Ольга" alt="Ольга Сидоренко">
+                <h4>Ольга Сидоренко</h4>
+                <p>Головний аналітик</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150/FFD700/333333?text=Андрій" alt="Андрій Ковальчук">
+                <h4>Андрій Ковальчук</h4>
+                <p>Експерт з безпеки</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150/E0C200/333333?text=Марія" alt="Марія Гончар">
+                <h4>Марія Гончар</h4>
+                <p>Веб-розробник</p>
+            </div>
+        </div>
+    </div>
 
-  <div class="section-block">
-    <h2>Кібербезпека під час війни</h2>
-    <p>З початком повномасштабного вторгнення росії на територію України ворог активно використовує інформаційні технології в тактичних цілях. Кібератаки, пропаганда та дезінформація — інструмент для маніпулювання громадською думкою та переконання світової спільноти у точках зору, які пропонує російське військово-політичне керівництво. У цьому розділі ви дізнаєтесь як не стати жертвою пропаганди та навчитись розрізняти правдиву та фейкову інформацію.</p>
-    <a href="#" class="btn">Детальніше</a>
-  </div>
-
-  <div class="section-block">
-    <h2>Новини</h2>
-    <p>Поки новини відсутні.</p>
-  </div>
-
-</main>
-
-<footer>
-  © 2025. Усі права захищені.
-</footer>
+    <footer>
+        <p>Контакти: info@safebwebsquad.ua | Телефон: +380 44 123 4567</p>
+        <p>&copy; 2025 Safe WEB squad. Всі права захищено. <a href="#">Політика конфіденційності</a></p>
+    </footer>
 
 </body>
 </html>
