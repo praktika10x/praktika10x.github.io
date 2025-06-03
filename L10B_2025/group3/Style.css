@@ -132,8 +132,8 @@ li a:hover {
   margin-bottom: 20px;
 }
 img.fullscreen-image {
-  width: 100vw;       
-  height: 100vh;      
+  width: 80%;       
+  height: 30;      
   object-fit: cover;  
   display: block;     
 }
