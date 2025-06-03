@@ -1,9 +1,13 @@
 body {
   font-family: consolas, monospace;
-  background-color: #ffffff;
+  background: linear-gradient(to bottom right, #fffce0, #fff);
   margin: 0;
   padding: 0;
   color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .logo-bar {
@@ -98,6 +102,15 @@ h2 {
   font-family: Consolas, monospace;
   font-size: 30px;
   color: #333;
+  border-left: 6px solid #e0c300;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: Tahoma, sans-serif;
 }
 
 ul {
@@ -115,10 +128,21 @@ footer {
   text-align: center;
   padding: 15px;
   margin-top: 20px;
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
 }
 
 footer .team-info {
   margin-bottom: 10px;
+}
+
+footer a {
+  color: #333;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #b3a000;
 }
 
 .profesiyi-container {
@@ -139,6 +163,12 @@ footer .team-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prof-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(217, 201, 0, 0.4);
 }
 
 .prof-card h3 {
