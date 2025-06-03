@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+</head> 
+<body> 
+    <h1> UI/UX Designer</h1>
+    
+    <div class="card">
+            <h3>Сутність та вимоги<br> до працівника</h3>
+            <p>
+                Фахівець який створює зручні<br>
+функціональні та красиві<br>
+інтерфейси для цифрових
+продуктів.<br>
+Відповідає за кольори,
+кнопки,<br>іконки, анімації,
+типографіку. <br>Головне створити
+ зрозумілий<br> та
+привабливий інтерфейс.<br>
+Коли продукт готовий<br> то
+тестує його на <br>реальних
+корисутвачах.
+            </p>
+        </div>
+    
+</body> 
+</html>
