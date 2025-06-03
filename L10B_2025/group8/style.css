@@ -86,13 +86,38 @@ body {
   font-size: 1.05rem;
   line-height: 1.6;
 }
-.project-info-box {
+.project-info-box-flex {
   background: linear-gradient(145deg, #1a1a2e, #12121e);
   padding: 1.5rem 2rem;
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(0,0,0,0.6);
   max-width: 500px;
   margin: 0 auto 2rem;
+  overflow: hidden;
+  position: relative;
+}
+.logo-float {
+  float: left;
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.18);
+}
+.project-info-box-flex p {
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .logo-float {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+  .project-info-box-flex {
+    text-align: center;
+  }
 }
 .professions-title {
   text-align: center;
