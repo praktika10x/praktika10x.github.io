@@ -1,4 +1,4 @@
-/* Reset & базовые стили */
+/* Reset & базові стилі */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -59,12 +59,12 @@ body {
   cursor: pointer;
 }
 
-/* Main content */
+/* Основний контент */
 .main-content {
   padding: 2rem;
 }
 
-/* Project info: logo + text */
+/* Project-info: logo + text */
 .project-info-box-flex {
   background-color: rgba(255,255,255,0.05);
   border-radius: 16px;
@@ -77,12 +77,12 @@ body {
 }
 .logo-float {
   float: left;
-  width: 110px;
-  height: 110px;
-  margin-right: 1.5rem;
+  width: 90px;
+  height: 90px;
+  margin-right: 1rem;
   margin-bottom: 1rem;
   border-radius: 12px;
-  object-fit: contain;
+  object-fit: cover;
 }
 .project-info-box-flex p {
   margin: 0;
@@ -93,9 +93,7 @@ body {
     display: block;
     margin: 0 auto 1rem;
   }
-  .project-info-box-flex {
-    text-align: center;
-  }
+  .project-info-box-flex { text-align: center; }
 }
 
 /* Section wrapper */
@@ -104,7 +102,7 @@ body {
   margin: 0 auto 2rem;
 }
 
-/* Полупрозрачная панель */
+/* Полупрозрачна панель */
 .panel {
   background-color: rgba(255,255,255,0.05);
   border-radius: 16px;
@@ -114,7 +112,7 @@ body {
   color: inherit;
 }
 
-/* Definition */
+/* Визначення */
 .definition .panel h2 {
   font-size: 1.5rem;
   color: #d0d3f2;
@@ -134,7 +132,7 @@ body {
 }
 .prof-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto 2rem;
@@ -146,14 +144,13 @@ body {
 .prof-card .panel {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  aspect-ratio: 1 / 1;   /* квадратная карточка */
-  overflow: hidden;
+  width: 100%;
+  height: auto;
 }
 .prof-card img {
-  max-width: 50%;
+  max-width: 60%;
   height: auto;
   margin-bottom: 1rem;
 }
@@ -162,7 +159,7 @@ body {
   font-weight: 500;
 }
 
-/* Back link */
+/* Ссилка назад */
 .back-link {
   text-align: center;
   margin-top: 2rem;
@@ -172,6 +169,7 @@ body {
   padding: 0;
 }
 
+/* Адаптивність */
 @media (max-width: 600px) {
   .main-content { padding: 1rem; }
   .prof-grid { grid-template-columns: 1fr; }
