@@ -103,7 +103,9 @@
   transform: translateY(-5px);
   box-shadow: 4px 4px 12px rgba(135, 206, 235, 0.8);
 }
-
+.card_educational {
+  background-color: #FFFFFF; 
+}
 ul {
   list-style-type: none;
   padding: 0;
