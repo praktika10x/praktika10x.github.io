@@ -107,3 +107,21 @@ body {
   transform: translateY(-5px);
   box-shadow: 4px 4px 12px rgba(135, 206, 235, 0.8);
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 395px;
+  height: 600px;
+  color:#261374;
+}
+li a {
+  display: block;
+  color: #ffffff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #4B3E82;
+  color: white;
+}
