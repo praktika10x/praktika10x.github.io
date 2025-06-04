@@ -1,44 +1,160 @@
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* === HEADER === */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: linear-gradient(to right, #5e3c98, #6e6bc0);
+  color: white;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header-logo img {
+  height: 50px;
+}
+.header-title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* === SIDEBAR === */
+.sidebar {
+  width: 10px;
+  background-color: #221c69;
+  transition: width 0.4s ease;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 10;
+}
+.sidebar:hover {
+  width: 120px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 20px 0;
+}
+.sidebar ul li {
+  padding: 12px 20px;
+}
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  transition: background 0.3s;
+}
+.sidebar ul li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* === MAIN CONTENT WRAPPER === */
+.container {
+  margin-left: 10px;
+  transition: margin-left 0.4s ease;
+}
+.sidebar:hover ~ .container {
+  margin-left: 120px;
+}
+
+/* === SECTION TITLES === */
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Press Start 2P", cursive;
+  color: #261374;
+  margin: 40px 0 30px;
+  text-decoration: underline;
+}
+
+/* === CARDS === */
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  width: 250px;
+  background-color: #f9cdda;
+  border: 2px solid lightgray;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  color: #333;
+  box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 12px rgba(135, 206, 235, 0.8);
+}
+.card img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+.card_educational {
+  background-color: #fff;
+  min-height: 240px;
+}
+.card-salary {
+  background-color: #f5bb47;
+}
+
+/* === INFO CARDS === */
 .cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    margin-bottom: 40px;
-    cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 40px;
+  cursor: pointer;
 }
-
 .card-size {
-    grid-column: span 2;
+  grid-column: span 2;
 }
-
 .info-cards {
-    display: grid;
-    grid-column-gap: 55px;
-    padding: 0 100px;
+  display: grid;
+  grid-column-gap: 55px;
+  padding: 0 100px;
 }
-
 .info-card {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
 .card-title {
-    width: 100%;
-    font-weight: 420;
-    font-size: 25px;
-    line-height: 32px;
-    margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 32px;
+  margin-bottom: 20px;
 }
-
 .cart-desc {
-    font-size: 18px;
-    line-height: 28px;
-    margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 30px;
 }
 
+/* === SWIPER (Slider) === */
 .swiper {
   width: 100%;
-  height: 350px; /* Встанови висоту, щоб слайдер був видимим */
+  height: 350px;
 }
-
 .swiper-slide {
   display: flex;
   flex-direction: column;
@@ -47,188 +163,48 @@
   background: #f0f0f0;
   border-radius: 10px;
   padding: 20px;
-  box-sizing: border-box;
   text-align: center;
 }
-
-.card-pic {
-    width: 100%;
-}
-
 .swiper-button-prev::after,
 .swiper-button-next::after {
-    color: #51a556;
+  color: #51a556;
 }
-
 .swiper-pagination-bullet-active {
-    background: #51a556;
+  background: #51a556;
 }
-
-.wrap {
-  display: flex;
-  flex-direction: row; 
-  flex-wrap: wrap;     
-  justify-content: center;     
-  align-items: center;        
-  gap: 20px;                  
-  padding: 20px;
-}
-
-
-
-.card {
-  width: 250px;
-  border-radius: 15px;
-  padding: 15px;
-  box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6); 
-  background-color: #f9cdda;
-  border: 2px solid lightgray;
-  color: #333;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  justify-content: space-between; 
-}
-.card-link {
-    background-color: #FFFFFF; 
-}
-.card img {
-  width: 80px;
-  height: auto;
-  display: block;
-  margin: 0 auto 10px;
-}
-.card_educational {
-   background-color: #FFFFFF; 
-   min-height: 240px;
-}
-.card-salary {
-  background-color: #F5BB47; 
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 4px 4px 12px rgba(135, 206, 235, 0.8);
-}
-.card_educational {
-  background-color: #FFFFFF; 
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-  width: 395px;
-  height: 600px;
-  color:#261374;
-}
-li a {
-  display: block;
-  color: #ffffff;
-  padding: 8px 16px;
-  text-decoration: none;
-  background-color: #4B3E82;
-}
-li a:hover {
-  background-color: #4B3E82;
-  color: white;
-}
-
-
-.info-card {
-  margin-bottom: 20px;
-}
-img.fullscreen-image {
-  width: 80%;       
-  height: 30;      
-  object-fit: cover;  
-  display: block; 
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer {
-  background-color: #954BAA;     
-  color: #fff;                
-  text-align: center;         
-  padding: 20px 0;            
-  font-size: 14px;
-  position: relative;         
-  bottom: 0;
+.card-pic {
   width: 100%;
 }
+
+/* === FULLSCREEN IMAGE === */
+img.fullscreen-image {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* === FOOTER === */
+.footer {
+  background-color: #954baa;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* === TEXT === */
+.title {
+  font-family: "Press Start 2P";
+}
+
+/* === EDUCATIONAL WRAP === */
 .educational-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   align-items: stretch;
-}
-
-.title {
-  font-family: "Press Start 2P";
-}
-
-.section-title {
-  text-align: center;
-  font-size: 24px;
-  font-family: "Press Start 2P", cursive;
-  color: #261374;
-  margin-bottom: 30px;
-  margin-top: 40px;
-  text-decoration: underline;
-}
-.nav-links a {
-    color: #fff;
-    text-decoration:none;
-    font-size: 1.1rem;
-    position: relative;
-    transition: all 0.3s ease;
-    opacity: 0; 
-    transform: translateY(-10px); 
-    transition: all 0.3s ease 0.2s; 
-}
-
-.container {
-  display: flex;
-  height: 100vh;
-  background-color: #1e1e2f; 
-}
-
-.sidebar {
-  width: 10px; 
-  background-color: #221c69;
-  transition: width 0.5s ease;
-  overflow: hidden;
-  position: relative;
-}
-
-.sidebar:hover {
-  width: 100px; /* повна ширина при наведенні */
-}
-
-.nav-title {
-  color: white;
-  font-size: 14px;
-  writing-mode: vertical-lr;
-  text-orientation: mixed;
-  padding: 10px;
-  white-space: nowrap;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar ul li {
-  padding: 15px 20px;
-  transition: background 0.3s;
-}
-
-.sidebar ul li:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.sidebar ul li a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
 }
