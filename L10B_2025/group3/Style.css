@@ -42,24 +42,28 @@ body {
   height: 50px;
 }
 
-/* === NAVIGATION === */
 .nav-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  list-style: none;
+  display: flex;              
+  justify-content: center;    
+  align-items: center;
+  gap: 20px;                  
+  list-style: none;           
+  padding: 0;
+  margin: 0;
 }
 
 .nav-links li a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;           
   font-size: 1.1rem;
   transition: color 0.3s;
+  font-family: "Tektur", sans-serif;
 }
 
 .nav-links li a:hover {
-  color: #ffcc00;
+  color: #ffcc00;           
 }
+
 
 /* === SIDEBAR === */
 .sidebar {
