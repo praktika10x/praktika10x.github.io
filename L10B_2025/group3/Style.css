@@ -35,6 +35,7 @@ body {
 
 body.home .header {
   flex-direction: row-reverse;
+   background: linear-gradient(to top, #F5BB47, #F28D6C, #EE46A5);
 }
 
 /* === HEADER LOGO === */
