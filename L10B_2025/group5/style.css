@@ -1234,18 +1234,20 @@ footer .sourses:hover {
   .dashboard-card {
     min-width: 0;
     max-width: 95vw;
-    width: 95vw;
-    font-size: 15px;
-    padding: 10px 8px;
+    width: 65vw;
+    font-size: 20px;
+    padding: 20px 8px;
     border-radius: 16px;
-    height: auto;
+    height: auto;           /* Уже есть, оставьте */
+    box-sizing: border-box; /* Добавьте */
+    /* Уберите фиксированную высоту, если она есть */
   }
   .dashboard-title {
-    font-size: 18px;
+    font-size: 20px;        /* Сделайте чуть меньше */
     margin-bottom: 8px;
   }
   .dashboard-text {
-    font-size: 14px;
+    font-size: 24px;        /* Сделайте чуть меньше */
   }
 
   footer {
