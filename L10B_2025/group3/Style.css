@@ -276,3 +276,9 @@ body.home .footer {
   gap: 20px;
   align-items: stretch;
 }
+/* == Списки == */
+body.home ul {
+  list-style-type: disc;     
+  color: black;              
+  padding-left: 2rem;        
+}
