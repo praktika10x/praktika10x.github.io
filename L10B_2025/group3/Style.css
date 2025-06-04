@@ -138,13 +138,6 @@ body.home .header {
   gap: 20px;
   padding: 20px;
 }
-.wrap .card:nth-child(odd) {
-  background-color: #fbaad8; /* рожева */
-}
-
-.wrap .card:nth-child(even) {
-  background-color: #f5bb47; /* жовта */
-}
 .card {
   width: 250px;
   background-color: #f9cdda;
