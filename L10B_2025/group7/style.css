@@ -11,8 +11,9 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: url('https://github.com/praktika10x/praktika10x.github.io/blob/main/L10B_2025/group7/35a28d51a9ea1fbff7d35517e6a1e9e6_w200.gif?raw=true') no-repeat center center fixed;
-    background-size: cover;
+    background: linear-gradient(135deg, #fffbde, #f0f0c0, #fffbde);
+    background-size: 200% 200%;
+    animation: backgroundPan 30s linear infinite alternate;
     margin: 0;
     padding: 0;
     color: #333;
@@ -54,11 +55,11 @@ html {
     color: #333;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    margin-right: 30px;
+    margin-right: 30px; /* Space between logo text and nav links */
 }
 
 .language-switcher {
-    margin-left: auto;
+    margin-left: auto; /* Pushes language switcher to the right */
 }
 
 .language-switcher a {
@@ -78,24 +79,25 @@ html {
     background-color: #e0c340;
 }
 
-.nav-header {
+.nav-header { /* New class for navigation links within header */
     display: flex;
     align-items: center;
+    /* Removed margin-left to allow the logo-left flex-grow to push it */
 }
 
 .nav-header a {
     color: #333;
     text-decoration: none;
-    margin: 0 18px;
+    margin: 0 18px; /* Restored original margin for better spacing */
     font-weight: 600;
-    padding: 12px 25px;
+    padding: 12px 25px; /* Restored original padding for button-like appearance */
     border: 2px solid transparent;
-    border-radius: 30px;
+    border-radius: 30px; /* Restored original border-radius */
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 16px; /* Restored original font size */
 }
 
 .nav-header a:hover,
@@ -144,7 +146,7 @@ html {
     width: 90%;
     max-width: 1000px;
     margin: 30px auto;
-    background-color: #ffffff;
+    background-color: #ffffff; /* Changed to solid white */
     padding: 35px;
     border: 0px solid #f0e0a0;
     border-radius: 18px;
@@ -223,15 +225,15 @@ footer {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /* Changed to flexbox */
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 15px; /* Spacing between inline elements */
 }
 
 footer .team-info {
-    margin-bottom: 0;
+    margin-bottom: 0; /* Remove margin-bottom as it's now inline */
 }
 
 footer a {
@@ -244,17 +246,18 @@ footer a:hover {
     color: #ccac35;
 }
 
+/* New class for inline footer text elements */
 .footer-text-inline {
-    display: inline-block;
-    margin: 0;
-    padding: 0 10px;
+    display: inline-block; /* Makes paragraphs behave like inline elements */
+    margin: 0; /* Remove default paragraph margins */
+    padding: 0 10px; /* Add some padding for spacing */
 }
 
 .profesiyi-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    padding: 40px;
+    padding: 40px; /* Збільшений відступ з усіх сторін */
     max-width: 1200px;
     margin: 30px auto;
     justify-content: center;
@@ -341,7 +344,7 @@ footer a:hover {
     margin: 0 auto 60px auto;
 }
 
-.intro-cards {
+.intro-cards { /* Existing class, now with white background */
     background-color: #ffffff;
     border: 0px solid transparent;
     border-radius: 18px;
@@ -354,23 +357,23 @@ footer a:hover {
     justify-content: space-between;
 }
 
-.card-no-background {
+.card-no-background { /* New class for transparent background */
     background: none;
     border: 0px solid transparent;
     border-radius: 18px;
     padding: 30px;
     box-sizing: border-box;
-    box-shadow: none;
+    box-shadow: none; /* Removed box shadow for transparency */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.card {
+.card { /* Added border-radius for team cards */
     background-color: #ffffff;
     border: 1px solid #f0e0a0;
-    border-radius: 10px;
+    border-radius: 10px; /* Added border-radius here */
     padding: 30px;
     box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -881,6 +884,7 @@ footer a:hover {
     padding-left: 0;
 }
 
+/* Styles for the "Report a Problem" button in the footer */
 .footer-report-btn {
     background-color: #f7d04e;
     color: #333;
@@ -891,11 +895,11 @@ footer a:hover {
     border-radius: 8px;
     border: 2px solid #ccac35;
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    display: inline-flex;
+    display: inline-flex; /* Use flex to align icon and text */
     align-items: center;
-    gap: 8px;
+    gap: 8px; /* Space between emoji and text */
     font-size: 16px;
-    margin-top: 0;
+    margin-top: 0; /* Removed margin-top as it's now inline */
 }
 
 .footer-report-btn:hover {
@@ -906,8 +910,8 @@ footer a:hover {
 }
 
 .footer-report-btn .emoji {
-    font-size: 24px;
-    line-height: 1;
+    font-size: 24px; /* Size of the emoji */
+    line-height: 1; /* Ensure emoji sits nicely */
 }
 
 @media (max-width: 1200px) {
@@ -927,6 +931,7 @@ footer a:hover {
     .nav-header {
         width: 100%;
         justify-content: center;
+        /* margin-left: 0; REMOVED this line as it was conflicting with desired layout */
         margin-bottom: 10px;
     }
     .language-switcher {
@@ -1020,12 +1025,12 @@ footer a:hover {
     }
 
     footer {
-        flex-direction: column;
-        gap: 8px;
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 8px; /* Reduce gap when stacked */
     }
 
     .footer-text-inline {
-        padding: 0;
+        padding: 0; /* Remove horizontal padding when stacked */
     }
 }
 
