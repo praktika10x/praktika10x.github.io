@@ -172,15 +172,6 @@ nav ul li:hover .categories-list-triangle {
 }
 
 
-
-section h1 {
-    font-family: 'Rubik Dirt', sans-serif;
-    color: #fff;
-    font-size: 26px;
-    margin: 0;
-    padding: 20px 5vw;
-}
-
 .sourses1 div {
     background-color: #55679C;
     color: #fff;    
@@ -195,17 +186,29 @@ section h1 {
     font-family: 'Geologica', sans-serif;
     font-size: 14px;
     margin-bottom: 24px;
-    text-align: center; 
+    text-align: left; 
 }
 .sourses2 div {
     background-color: #504A9F;
     color: #fff;    
 }
+.sourses2 h1 {
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-size: 38px;
+    margin-bottom: 24px;
+    text-align: center; 
+}
+
 .sourses3 div {
     background-color: #1E2A5E;
     color: #fff;    
 }
-
+.sourses3 h1 {
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-size: 38px;
+    margin-bottom: 24px;
+    text-align: center; 
+}
 
 footer {
     display: flex;
