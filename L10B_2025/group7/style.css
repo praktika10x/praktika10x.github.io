@@ -82,22 +82,22 @@ html {
 .nav-header { /* New class for navigation links within header */
     display: flex;
     align-items: center;
-    margin-left: 20px; /* Space between logo and nav links */
+    /* Removed margin-left to allow the logo-left flex-grow to push it */
 }
 
 .nav-header a {
     color: #333;
     text-decoration: none;
-    margin: 0 15px; /* Adjust spacing between nav links */
+    margin: 0 18px; /* Restored original margin for better spacing */
     font-weight: 600;
-    padding: 8px 15px; /* Smaller padding for header nav */
+    padding: 12px 25px; /* Restored original padding for button-like appearance */
     border: 2px solid transparent;
-    border-radius: 20px; /* Slightly smaller border-radius */
+    border-radius: 30px; /* Restored original border-radius */
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 15px; /* Slightly smaller font size */
+    font-size: 16px; /* Restored original font size */
 }
 
 .nav-header a:hover,
@@ -924,7 +924,7 @@ footer a:hover {
     .nav-header {
         width: 100%;
         justify-content: center;
-        margin-left: 0;
+        /* margin-left: 0; REMOVED this line as it was conflicting with desired layout */
         margin-bottom: 10px;
     }
     .language-switcher {
