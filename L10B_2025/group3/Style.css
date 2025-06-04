@@ -66,23 +66,11 @@ body.home .header {
 
 /* === SIDEBAR === */
 .sidebar {
-  width: 10px;
+  width: 10px; 
   background-color: #221c69;
-  transition: width 0.4s ease;
+  transition: width 0.5s ease;
   overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  z-index: 10;
-}
-/*==бічна панель==*/
-body.home .sidebar {
-  height: 35vh;
-}
-
-.sidebar:hover {
-  width: 120px;
+  position: relative;
 }
 
 .sidebar ul {
@@ -92,19 +80,18 @@ body.home .sidebar {
 }
 
 .sidebar ul li {
-  padding: 12px 20px;
-}
-
-.sidebar ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-  display: block;
+  padding: 15px 20px;
   transition: background 0.3s;
 }
 
 .sidebar ul li:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
 }
 
 /* === MAIN CONTENT WRAPPER === */
