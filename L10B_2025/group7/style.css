@@ -232,8 +232,8 @@ footer a:hover {
 
 .profesiyi-container {
     display: grid;
-    
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px; /* Consistent gap between cards */
     padding: 25px;
     max-width: 1200px;
@@ -311,16 +311,17 @@ footer a:hover {
     color: #222;
 }
 
-
-.cards-container.profesiyi-container { 
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+/* MODIFIED: Adjusted max-width and added horizontal padding */
+.cards-container.profesiyi-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Made cards slightly narrower */
     gap: 30px;
     justify-content: center;
-    padding: 25px 20px; 
-    max-width: 1200px; 
-    margin: 30px auto; 
+    padding: 25px 50px; /* Added more horizontal padding */
+    max-width: 1200px;
+    margin: 30px auto;
 }
 
+/* MODIFIED: Ensure individual cards respond to the new grid width */
 .card {
     background-color: #ffffff;
     border: 2px solid #f0e0a0;
@@ -332,7 +333,9 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* max-width: 350px; */ /* Optional: if you want a strict max width per card regardless of grid */
 }
+
 
 .card:hover {
     transform: translateY(-8px);
@@ -903,10 +906,11 @@ main section:last-of-type {
         font-size: 16px;
     }
 
+   
     .cards-container {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
         margin-bottom: 40px;
-        padding: 25px 20px;
+        padding: 25px 20px; 
     }
 
     .image-text-block {
@@ -928,9 +932,10 @@ main section:last-of-type {
         padding: 0 10px;
     }
 
+    
     .cards-container {
         grid-template-columns: 1fr;
-        padding: 25px 15px;
+        padding: 25px 15px; 
     }
 
     .card {
