@@ -1122,90 +1122,164 @@ footer .sourses:hover {
 @media (max-width: 700px) {
   .header {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: auto;
-    padding: 10px 5vw;
-    gap: 10px;
+    padding: 16px 0 8px 0;
+    gap: 8px;
   }
   .logo {
-    width: 40px;
-    height: 40px;
+    margin: 0 auto;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
   }
   .data-napryam {
-    font-size: 20px;
-    margin-right: 0;
+    font-size: 22px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+  .header nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 0;
+  }
+  .header nav ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
   .header nav a {
     font-size: 18px;
+    width: 100%;
+    display: inline-block;
+    padding: 6px 0;
   }
-  .intro-text {
+
+  .skills-flip-cards {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  .skills-flip-card,
+  .skills-flip-card-1,
+  .skills-flip-card-2 {
+    width: 95vw;
+    max-width: 340px;
+    height: auto;
+    min-height: 90px;
+    perspective: none;
+    margin: 0 auto;
+  }
+  .skills-flip-card-inner {
+    transform: none;
+    transition: none;
+  }
+  .skills-flip-card-front,
+  .skills-flip-card-back {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    background: #1E2A5E;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 18px 12px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(30,42,94,0.12);
+    overflow: visible;
+  }
+  .skills-flip-card-front::before {
+    display: none;
+  }
+  .skills-flip-card-back {
+    transform: none;
     font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    padding: 12px 14px;
+    box-shadow: none;
   }
-  .intro-video iframe {
-    height: 180px;
-    max-width: 98vw;
+  .skills-flip-card-back ul {
+    font-size: 16px;
+    padding-left: 18px;
   }
-  .skills-main-text {
-    font-size: 18px;
-  }
-  .skills-flip-card {
-    height: 140px;
-    font-size: 18px;
+
+  .dashboard-row {
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
   }
   .dashboard-card {
-    font-size: 14px;
-    padding: 12px 8px;
+    min-width: 0;
+    max-width: 95vw;
+    width: 95vw;
+    font-size: 15px;
+    padding: 10px 8px;
+    border-radius: 16px;
   }
-  .path-card {
-    height: 120px;
-    font-size: 18px;
-    padding: 10px 4px;
+  .dashboard-title {
+    font-size: 17px;
+    margin-bottom: 8px;
   }
-  .duty {
-    font-size: 14px;
-    padding: 10px 6px;
+  .dashboard-text {
+    font-size: 15px;
   }
-  .career-block,
-  .career-sequence .career-block,
-  .career-block-roles,
-  .career-sequence .career-block-roles {
-    font-size: 0.95rem;
-    padding: 10px 4px;
-  }
-  .career-arrow-vertical {
-    width: 28px;
-    height: 36px;
-  }
-  .salary-table,
-  .education-table {
-    font-size: 12px;
-    padding: 2px;
-  }
-  .salary-table th, .salary-table td,
-  .education-table th, .education-table td {
-    font-size: 10px;
-    padding: 4px;
-  }
-  .demand-title,
-  .salary-title,
-  .sample-title,
-  .career-title,
-  .path-title,
-  .education-title,
-  #education h1,
-  #education .education-title {
-    font-size: 14px;
-    padding: 6px 2px;
-    width: 98vw;
-  }
-  .footer-author-block img {
-    width: 90px;
-    height: 100px;
-  }
-  .footer-author-block h3 {
-    font-size: 12px;
-    width: 60px;
+
+  footer {
+    padding: 32px 0 24px 0;
   }
   .footer-authors {
-    gap: 10px;
+    gap: 18px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-author-block img {
+    width: 110px;
+    height: 120px;
+  }
+  .footer-author-block h3 {
+    font-size: 15px;
+    width: 80px;
+  }
+  .footer-left {
+    gap: 14px;
+  }
+  .sourses-lang {
+    gap: 16px;
+    margin-top: 18px;
+  }
+  .change-lang img {
+    width: 22px;
+    height: 26px;
+  }
+  .change-lang button {
+    font-size: 16px;
+  }
+  footer .sourses {
+    font-size: 16px;
+    padding: 8px 14px;
+    margin-top: 8px;
   }
 }
