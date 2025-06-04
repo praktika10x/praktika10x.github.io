@@ -1,16 +1,20 @@
 body{ 
-    max-width:1024px;
+    max-width:1200px;
     margin:auto;
     padding:20px;
 }
-h1{
-          margin-left: auto !important;
-          color:steelblue; 
-          background-color:gray;
-          display: inline;
-          padding: 2px 2px;
-          text-shadow:2px 2px 5px darkblue;
-      }
+h1 {
+    margin: 0;
+    padding: 2px;
+    color: steelblue;
+    background: gray;
+    text-shadow: 2px 2px 5px darkblue;
+    text-align: left;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+     
 h3{
     width:150px;
           color:white;
@@ -30,4 +34,26 @@ h3{
           box-shadow:2px 2px 5px DeepSkyblue;
           padding:30px;
           font-size:20px;
+         
+}
+.card{
+          width:200px;
+          height:250px;
+          border: 2px grey solid;
+          border-radius: 10px;
+          float:left;
+          margin:50px;
+          box-shadow:2px 2px 5px DeepSkyblue;
+          padding:10px;
+          font-size:16px;
+}
+
+.sample{
+    float:center;
+    margin:20px;
+}
+.roadmap{
+    float:right;
+    margin:20px;
+    top: -30px;
 }
