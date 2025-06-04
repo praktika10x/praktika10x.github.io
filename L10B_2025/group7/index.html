@@ -38,7 +38,7 @@
     </div>
 
     <div class="container cards-container">
-        <div class="card intro-card-text intro-cards"> <div class="icon-circle">
+        <div class="card intro-card-text card-no-background"> <div class="icon-circle">
                 <img src="security-removebg-preview.png" alt="Замок на щиті" />
             </div>
             <h2>Що таке кібербезпека?</h2>
@@ -46,7 +46,7 @@
             <a href="dovidka.html" class="btn">Дізнатись більше</a>
         </div>
 
-        <div class="card intro-card-text intro-cards"> <div class="icon-circle">
+        <div class="card intro-card-text card-no-background"> <div class="icon-circle">
                 <img src="18133303-removebg-preview.png" alt="Іконка безпеки" />
             </div>
             <h2>Ким працювати?</h2>
@@ -54,7 +54,7 @@
             <a href="profesiyi.html" class="btn">Переглянути професії</a>
         </div>
 
-        <div class="card intro-card-text intro-cards"> <div class="icon-circle">
+        <div class="card intro-card-text card-no-background"> <div class="icon-circle">
                 <img src="7.png" alt="Дослідження" />
             </div>
             <h2>Як обрати напрям?</h2>
@@ -147,9 +147,8 @@
             const cardWidth = newsCards[0].offsetWidth;
             const gap = parseFloat(getComputedStyle(newsCardsWrapper).gap) || 30;
             // Get the actual width of a card (including padding/border)
-            const cardWidth = newsCards[0].offsetWidth; 
-            const gap = parseFloat(getComputedStyle(newsCardsWrapper).gap) || 30; // Get the computed gap
-            const totalShift = currentIndex * (cardWidth + gap);
+            const cardWidthAdjusted = newsCards[0].offsetWidth; // Use a new variable to avoid confusion
+            const totalShift = currentIndex * (cardWidthAdjusted + gap);
             newsCardsWrapper.style.transform = `translateX(${-totalShift}px)`;
         }
 
@@ -157,7 +156,6 @@
             if (currentIndex < newsCards.length - 1) {
                 currentIndex++;
             } else {
-                currentIndex = 0;
                 currentIndex = 0; // Loop back to the beginning
             }
             updateCarousel();
@@ -167,14 +165,12 @@
             if (currentIndex > 0) {
                 currentIndex--;
             } else {
-                currentIndex = newsCards.length - 1;
                 currentIndex = newsCards.length - 1; // Loop to the end
             }
             updateCarousel();
         });
 
         window.addEventListener('resize', updateCarousel);
-        updateCarousel();
         updateCarousel(); // Initial call to set correct position on load
     </script>
 </body>
