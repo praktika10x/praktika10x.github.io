@@ -1089,7 +1089,13 @@ footer .sourses:hover {
     width: 40px;
     height: 56px;
   }
-  .salary-table,
+
+  .salary-table {
+    width: 70vw;
+    font-size: 18px;
+    padding: 10px;
+  }
+
   .education-table {
     width: 98vw;
     font-size: 18px;
@@ -1179,52 +1185,7 @@ footer .sourses:hover {
     gap: 16px;
     align-items: center;
   }
-  .skills-flip-card,
-  .skills-flip-card-1,
-  .skills-flip-card-2 {
-    width: 95vw;
-    max-width: 340px;
-    height: auto;
-    min-height: 90px;
-    perspective: none;
-    margin: 0 auto;
-  }
-  .skills-flip-card-inner {
-    transform: none;
-    transition: none;
-  }
-  .skills-flip-card-front,
-  .skills-flip-card-back {
-    position: static;
-    width: 100%;
-    height: auto;
-    border-radius: 24px;
-    background: #1E2A5E;
-    color: #fff;
-    display: block;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 18px 12px;
-    box-sizing: border-box;
-    text-align: center;
-    box-shadow: 0 4px 16px rgba(30,42,94,0.12);
-    overflow: visible;
-  }
-  .skills-flip-card-front::before {
-    display: none;
-  }
-  .skills-flip-card-back {
-    transform: none;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: left;
-    padding: 12px 14px;
-    box-shadow: none;
-  }
-  .skills-flip-card-back ul {
-    font-size: 16px;
-    padding-left: 18px;
-  }
+
 
   .dashboard-row {
     flex-direction: column;
@@ -1238,16 +1199,15 @@ footer .sourses:hover {
     font-size: 20px;
     padding: 20px 8px;
     border-radius: 16px;
-    height: auto;           /* Уже есть, оставьте */
-    box-sizing: border-box; /* Добавьте */
-    /* Уберите фиксированную высоту, если она есть */
+    height: auto;
+    box-sizing: border-box;
   }
   .dashboard-title {
-    font-size: 20px;        /* Сделайте чуть меньше */
+    font-size: 20px;
     margin-bottom: 8px;
   }
   .dashboard-text {
-    font-size: 24px;        /* Сделайте чуть меньше */
+    font-size: 24px;
   }
 
   footer {
