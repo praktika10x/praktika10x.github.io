@@ -6,28 +6,25 @@
   <title>Full-stack Developer</title>
   <link rel="stylesheet" href="Style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-</head>
-<body>
-  <header class="header">
-    <div class="header-logo">
-      <img src="Project-img/SVG/ПроектЛого.svg" alt="Логотип" class="eniac">
-    </div>
-    <ul class="nav-links">
-      <li><a href="#essence">Сутність професії</a></li>
-      <li><a href="#knowledge">Специфічні знання та вимоги</a></li>
-      <li><a href="#tools">Основні інструменти</a></li>
-      <li><a href="#product">Продукти</a></li>
-      <li><a href="#demand">Затребуваність</a></li>
-      <li><a href="#salary">Заробітня плата</a></li>
-      <li><a href="#educational">Заклади освіти</a></li>
-    </ul>
-  </header>
-
-  <main>
-    <h1 id="essence">Сутність професії</h1>
-    <p>Full stack developer – це універсальний спеціаліст, який може розробляти як Back-end, так і Front-end компоненти вебпродуктів...</p>
-
-    <h2 id="knowledge">Специфічні знання та вимоги до фахівця</h2>
+  </head>
+    <body>
+       
+            
+                <img src="Project-img/SVG/ПроектЛого.svg" class="eniac" />
+           
+            <ul>
+   <li> <a href="#essence">Сутність професії</a> </li>
+   <li>  <a href="#knowledge">Специфічні знання та вимоги</a> </li>
+   <li> <a href="#tools">Основні інструменти</a> </li>
+   <li><a href="#product">Продукти</a></li>
+   <li> <a href="#demand">Затребуваність</a></li>
+   <li> <a href="#salary">Заробітня плата</a></li>
+   <li>  <a href="#educational">Заклади освіти</a></li>
+</ul>
+        
+<p>Full stack developer – це універсальний спеціаліст, який може розробляти як Back-end, так і Front-end компоненти вебпродуктів.
+  Також він має достатні знання для роботи з серверами, базами даних, операційними системами та PaaS.</p>
+<h2 id="knowledge">Специфічні знання та вимоги до фахівця</h2>
     <h3>Frontend (клієнтська частина):</h3>
     <ul>
       <li>HTML, CSS, JavaScript</li>
@@ -63,109 +60,26 @@
       <li>Збирачі (Webpack, Vite)</li>
     </ul>
 
-    <!-- Слайдер інструментів -->
-    <section id="tools">
-      <h2>Основні інструменти:</h2>
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide info-card">
-            <h3 class="card-title">Редактор коду</h3>
-            <p class="cart-desc">VS Code</p>
-          </div>
-          <div class="swiper-slide info-card">
-            <h3 class="card-title">Контроль версій</h3>
-            <p class="cart-desc">Git + GitHub</p>
-          </div>
-          <div class="swiper-slide info-card">
-            <h3 class="card-title">Frontend</h3>
-            <p class="cart-desc">React / Vue / Angular, HTML, CSS, JS, Tailwind, Bootstrap, Webpack, Vite, Figma</p>
-          </div>
-          <div class="swiper-slide info-card">
-            <h3 class="card-title">Backend</h3>
-            <p class="cart-desc">Node.js / Django / Laravel, PostgreSQL / MongoDB, Postman</p>
-          </div>
-          <div class="swiper-slide info-card">
-            <h3 class="card-title">DevOps</h3>
-            <p class="cart-desc">Docker, GitHub Actions, Heroku / AWS / Vercel</p>
-          </div>
-          <div class="swiper-slide info-card">
-            <h3 class="card-title">Тестування</h3>
-            <p class="cart-desc">Jest / Cypress</p>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </section>
 
-    <!-- Продукти -->
-    <section class="wrap">
-      <div class="card">
-        <img src="https://cdn.freebiesupply.com/logos/large/2x/airbnb-2-logo-png-transparent.png" alt="Airbnb">
-        <p id="product"><strong>Airbnb</strong><br>Онлайн-платформа для пошуку житла</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/306_Slack_logo-512.png" alt="Slack">
-        <p><strong>Slack</strong><br>Корпоративний месенджер</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn.freebiesupply.com/logos/large/2x/shopify-logo-png-transparent.png" alt="Shopify">
-        <p><strong>Shopify</strong><br>Софт для онлайн-магазинів</p>
-      </div>
-    </section>
 
-    <p id="demand"><img src="2.png" class="fullscreen-image" alt="Графік попиту"></p>
-
-    <div class="wrap">
-      <div class="card card-salary">
-        <p id="salary">54 000 грн</p>
-        <p>на червень 2025</p>
-      </div>
-    </div>
-
-    <h2 class="section-title" id="educational">Заклади освіти</h2>
-    <section class="wrap">
-      <div class="card card-educational">
-        <p><strong>КПІ ім. Ігоря Сікорського</strong></p>
-        <p>Київ, державна, денна/заочна, від 16 600 грн</p>
-      </div>
-      <div class="card card-educational">
-        <p><strong>НУ «Львівська політехніка»</strong></p>
-        <p>Львів, державна, денна/заочна, від 6 400 грн</p>
-      </div>
-      <div class="card card-educational">
-        <p><strong>Одеська політехніка</strong></p>
-        <p>Одеса, державна, дистанційна, від 18 000 грн</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>Пропонуємо для ознайомлення</p>
-    <div class="wrap">
-      <a href="Frontend.html" class="card card-link"><p>Frontend розробник</p></a>
-      <a href="Beckend-index.html" class="card card-link"><p>Backend розробник</p></a>
-      <a href="Full-stack Developer.html" class="card card-link"><p>Full-stack розробник</p></a>
-      <a href="index.html" class="card card-link"><p>На головну</p></a>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const swiper = new Swiper('.swiper', {
-        direction: 'horizontal',
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-    });
-  </script>
+  
+       <script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+});
+</script>  
+</head>
+<body>
 </body>
 </html>
+
