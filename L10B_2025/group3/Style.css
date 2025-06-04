@@ -176,9 +176,11 @@ img.fullscreen-image {
 }
 .nav-links a {
     color: #fff;
+    text-decoration:none;
     font-size: 1.1rem;
     position: relative;
-    opacity: 1; 
-    transform: none; 
-    transition: none; 
+    transition: all 0.3s ease;
+    opacity: 0; 
+    transform: translateY(-10px); 
+    transition: all 0.3s ease 0.2s; 
 }
