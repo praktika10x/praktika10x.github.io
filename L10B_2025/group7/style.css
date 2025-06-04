@@ -1,62 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap');
 
-@keyframes moveAndFade {
-    0% {
-        transform: translate(0, 0) scale(0.8) rotate(0deg);
-        opacity: 0.1;
-    }
-    25% {
-        opacity: 0.15;
-    }
-    50% {
-        transform: translate(100vw, 100vh) scale(1.2) rotate(180deg);
-        opacity: 0.2;
-    }
-    75% {
-        opacity: 0.1;
-    }
-    100% {
-        transform: translate(0, 0) scale(0.8) rotate(360deg);
-        opacity: 0.15;
-    }
-}
-
-.animated-background {
-    position: relative;
-    overflow: hidden;
-    background-color: #FFFFFF;
-}
-
-.animated-background::before,
-.animated-background::after {
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-image: linear-gradient(45deg, #f0e0a0 25%, transparent 25%, transparent 75%, #f0e0a0 75%, #f0e0a0),
-                      linear-gradient(-45deg, #f0e0a0 25%, transparent 25%, transparent 75%, #f0e0a0 75%, #f0e0a0);
-    background-size: 20px 20px;
-    background-repeat: round;
-    top: -50px;
-    left: -50px;
-    opacity: 0.1;
-    z-index: -1;
-    animation: moveAndFade 25s linear infinite alternate;
-}
-
-.animated-background::after {
-    width: 150px;
-    height: 150px;
-    top: auto;
-    left: auto;
-    bottom: -50px;
-    right: -50px;
-    animation: moveAndFade 30s linear infinite alternate-reverse;
-}
-
 body {
-    font-family: 'Courier', Courier;
-    background-color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif; /* Змінено на Open Sans, бо Courier виглядав застарілим */
+    background-color: #fffbde;
     margin: 0;
     padding: 0;
     color: #333;
@@ -92,7 +38,7 @@ html {
 }
 
 .logo-text {
-    font-family: 'Roboto', Bookman Old Style;
+    font-family: 'Roboto', sans-serif; /* Використовуємо Roboto, як і в інших заголовках */
     font-size: 28px;
     font-weight: 700;
     color: #333;
@@ -101,7 +47,7 @@ html {
 }
 
 .language-switcher a {
-    font-family: 'Open Sans', Calibri;
+    font-family: 'Open Sans', sans-serif;
     color: #333;
     text-decoration: none;
     font-weight: bold;
@@ -364,14 +310,14 @@ footer a:hover {
     color: #222;
 }
 
-.intro-cards-grid {
+.cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    padding: 25px;
-    max-width: 1200px;
-    margin: 30px auto 60px auto;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 25px 0;
+    max-width: 1400px;
+    margin: 0 auto 60px auto;
 }
 
 .card {
@@ -385,7 +331,6 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: left;
 }
 
 .card:hover {
@@ -401,7 +346,6 @@ footer a:hover {
     border-left: none;
     padding-left: 0;
     margin-top: 0;
-    text-align: left;
 }
 
 .card p {
@@ -411,7 +355,6 @@ footer a:hover {
     flex-grow: 1;
     margin-bottom: 25px;
     line-height: 1.6;
-    text-align: left;
 }
 
 .btn {
@@ -433,6 +376,24 @@ footer a:hover {
     background-color: #e0c340;
     border-color: #ccac35;
     color: #222;
+}
+
+.intro-card-text {
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.intro-card-text h2 {
+    text-align: left;
+    padding-left: 0px;
+}
+
+.intro-card-text p {
+    text-align: left;
+    padding-left: 0px;
 }
 
 .icon-circle {
@@ -798,7 +759,7 @@ footer a:hover {
 .youtube-player {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
     margin-top: 20px;
@@ -862,7 +823,7 @@ footer a:hover {
     transform: translate(-50%, -50%) scale(1.1);
 }
 
-.guide-section-title { 
+.guide-section-title {
     font-family: 'Roboto', sans-serif;
     font-size: 38px;
     color: #a08c30;
@@ -873,10 +834,102 @@ footer a:hover {
     padding-left: 0;
 }
 
+/* Styling for the Report Problem Page */
+.report-problem-container {
+    padding: 40px;
+    background-color: #ffffff;
+    border: 1px solid #f0e0a0;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    max-width: 800px; /* Adjust max-width for the form */
+    margin: 50px auto; /* Center the container */
+}
+
+.report-problem-container h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.report-problem-container .intro-paragraph {
+    font-size: 19px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.problem-report-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: #333;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #f7d04e;
+    box-shadow: 0 0 0 3px rgba(247, 208, 78, 0.3);
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 120px;
+}
+
+.submit-btn {
+    align-self: center; /* Center the button */
+    margin-top: 25px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #f7d04e;
+    color: #333;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e0c340;
+    border-color: #ccac35;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
 @media (max-width: 1200px) {
-    .intro-cards-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    .cards-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
 
@@ -954,13 +1007,44 @@ footer a:hover {
         font-size: 16px;
     }
 
-    .intro-cards-grid {
+    .cards-container {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         margin-bottom: 40px;
     }
 
     .image-text-block {
         margin-bottom: 40px;
+    }
+
+    /* Responsive adjustments for the form on problem.html */
+    .report-problem-container {
+        padding: 30px;
+        margin: 30px auto;
+    }
+
+    .report-problem-container h1 {
+        font-size: 38px;
+    }
+
+    .report-problem-container .intro-paragraph {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 15px;
+        padding: 10px 12px;
+    }
+
+    .submit-btn {
+        padding: 12px 25px;
+        font-size: 16px;
     }
 }
 
