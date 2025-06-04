@@ -1,3 +1,17 @@
+@media (max-width: 768px) {
+  .swiper-slide {
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .cart-desc {
+    font-size: 14px;
+  }
+}
 /* === BODY === */
 body {
   font-family: Arial, sans-serif;
@@ -199,21 +213,39 @@ body.home .sidebar {
 /* === SWIPER (Slider) === */
 .swiper {
   width: 100%;
-  height: 350px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 .swiper-slide {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #f0f0f0;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  width: 300px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 200px;
 }
 
+.info-card {
+  width: 100%;
+  max-width: 300px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.cart-desc {
+  font-size: 16px;
+  line-height: 1.4;
+}
 .swiper-button-prev::after,
 .swiper-button-next::after {
   color: #954BAA;
