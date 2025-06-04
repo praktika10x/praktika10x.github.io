@@ -184,3 +184,14 @@ img.fullscreen-image {
     transform: translateY(-10px); 
     transition: all 0.3s ease 0.2s; 
 }
+ .sidebar{
+     width:60px;
+     height:100%;
+     background-color: #261374;
+     padding:20px;
+     box-sizing:border-box;
+     color:#fff;
+     overflow:hidden;
+     border-radius:5px 0 0 5px;
+     transition: width .75s ease;
+ }
