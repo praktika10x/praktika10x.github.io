@@ -6,186 +6,179 @@
   <title>Full-stack Developer</title>
   <link rel="stylesheet" href="Style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  </head>
-    <body>
-       
-            
-                <img src="Project-img/SVG/ПроектЛого.svg">
-           
-            <ul>
-   <li> <a href="#essence">Сутність професії</a> </li>
-   <li>  <a href="#knowledge">Специфічні знання та вимоги</a> </li>
-   <li> <a href="#tools">Основні інструменти</a> </li>
-   <li><a href="#product">Продукти</a></li>
-   <li> <a href="#demand">Затребуваність</a></li>
-   <li> <a href="#salary">Заробітня плата</a></li>
-   <li>  <a href="#educational">Заклади освіти</a></li>
-</ul>
-        
-<p id="essence">Full stack developer – це універсальний спеціаліст, який може розробляти як Back-end, так і Front-end компоненти вебпродуктів.
-  Також він має достатні знання для роботи з серверами, базами даних, операційними системами та PaaS.</p>
-<h2 id="knowledge">Специфічні знання та вимоги до фахівця</h2>
-    <h3>Frontend (клієнтська частина):</h3>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>React.js / Vue.js / Angular</li>
-      <li>Адаптивна верстка (Flexbox, Grid)</li>
-      <li>Axios / Fetch / REST API</li>
-      <li>Bootstrap / Tailwind CSS</li>
-    </ul>
-    <h3>Backend</h3>
-    <ul>
-      <li>Node.js (Express), Django, Spring Boot, Laravel</li>
-      <li>REST API, авторизація (JWT, OAuth)</li>
-      <li>MVC-архітектура</li>
-      <li>Обробка запитів, помилок, валідація</li>
-    </ul>
-    <h3>Бази даних:</h3>
-    <ul>
-      <li>SQL (PostgreSQL, MySQL)</li>
-      <li>NoSQL (MongoDB)</li>
-      <li>ORM (Sequelize, Mongoose, Django ORM)</li>
-    </ul>
-    <h3>DevOps та інструменти:</h3>
-    <ul>
-      <li>Git + GitHub</li>
-      <li>Docker</li>
-      <li>CI/CD (GitHub Actions, Jenkins)</li>
-      <li>Хмара: AWS / Firebase / Heroku</li>
-    </ul>
-    <h3>Інше:</h3>
-    <ul>
-      <li>Тестування (Jest, Cypress)</li>
-      <li>Figma / Postman</li>
-      <li>Збирачі (Webpack, Vite)</li>
-    </ul>
-   <!-- Слайдер інструментів -->
+</head>
+<body>
+
+  <header>
+    <img src="Project-img/SVG/ПроектЛого.svg" alt="Логотип проєкту">
+    <nav>
+      <ul>
+        <li><a href="#essence">Сутність професії</a></li>
+        <li><a href="#knowledge">Специфічні знання та вимоги</a></li>
+        <li><a href="#tools">Основні інструменти</a></li>
+        <li><a href="#product">Продукти</a></li>
+        <li><a href="#demand">Затребуваність</a></li>
+        <li><a href="#salary">Заробітна плата</a></li>
+        <li><a href="#educational">Заклади освіти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="essence">
+      <p>Full stack developer – це універсальний спеціаліст, який може розробляти як Back-end, так і Front-end компоненти вебпродуктів. Також він має достатні знання для роботи з серверами, базами даних, операційними системами та PaaS.</p>
+    </section>
+
+    <section id="knowledge">
+      <h2>Специфічні знання та вимоги до фахівця</h2>
+
+      <h3>Frontend (клієнтська частина):</h3>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React.js / Vue.js / Angular</li>
+        <li>Адаптивна верстка (Flexbox, Grid)</li>
+        <li>Axios / Fetch / REST API</li>
+        <li>Bootstrap / Tailwind CSS</li>
+      </ul>
+
+      <h3>Backend:</h3>
+      <ul>
+        <li>Node.js (Express), Django, Spring Boot, Laravel</li>
+        <li>REST API, авторизація (JWT, OAuth)</li>
+        <li>MVC-архітектура</li>
+        <li>Обробка запитів, помилок, валідація</li>
+      </ul>
+
+      <h3>Бази даних:</h3>
+      <ul>
+        <li>SQL (PostgreSQL, MySQL)</li>
+        <li>NoSQL (MongoDB)</li>
+        <li>ORM (Sequelize, Mongoose, Django ORM)</li>
+      </ul>
+
+      <h3>DevOps та інструменти:</h3>
+      <ul>
+        <li>Git + GitHub</li>
+        <li>Docker</li>
+        <li>CI/CD (GitHub Actions, Jenkins)</li>
+        <li>Хмара: AWS / Firebase / Heroku</li>
+      </ul>
+
+      <h3>Інше:</h3>
+      <ul>
+        <li>Тестування (Jest, Cypress)</li>
+        <li>Figma / Postman</li>
+        <li>Збирачі (Webpack, Vite)</li>
+      </ul>
+    </section>
+
     <section id="tools">
       <h2>Основні інструменти:</h2>
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-          <div>
-            <h3 >Редактор коду</h3>
-            <p >VS Code</p>
+            <h3>Редактор коду</h3>
+            <p>VS Code</p>
           </div>
-          <div>
+          <div class="swiper-slide">
             <h3>Контроль версій</h3>
             <p>Git + GitHub</p>
           </div>
-          <div>
-            <h3 >Frontend</h3>
-            <p >React / Vue / Angular, HTML, CSS, JS, Tailwind, Bootstrap, Webpack, Vite, Figma</p>
+          <div class="swiper-slide">
+            <h3>Frontend</h3>
+            <p>React / Vue / Angular, HTML, CSS, JS, Tailwind, Bootstrap, Webpack, Vite, Figma</p>
           </div>
-          <div >
-            <h3 >Backend</h3>
-            <p >Node.js / Django / Laravel, PostgreSQL / MongoDB, Postman</p>
+          <div class="swiper-slide">
+            <h3>Backend</h3>
+            <p>Node.js / Django / Laravel, PostgreSQL / MongoDB, Postman</p>
           </div>
-          <div >
-            <h3 >DevOps</h3>
-            <p >Docker, GitHub Actions, Heroku / AWS / Vercel</p>
+          <div class="swiper-slide">
+            <h3>DevOps</h3>
+            <p>Docker, GitHub Actions, Heroku / AWS / Vercel</p>
           </div>
-          <div >
-            <h3 >Тестування</h3>
-            <p >Jest / Cypress</p>
+          <div class="swiper-slide">
+            <h3>Тестування</h3>
+            <p>Jest / Cypress</p>
           </div>
         </div>
-        </div>
+
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
     </section>
-<div >
-    <div >       
-      <img src="https://cdn.freebiesupply.com/logos/large/2x/airbnb-2-logo-png-transparent.png" alt="Airbnb logo">
-      <p>
-        <strong>Airbnb</strong><br>
-        Онлайн-платформа, де люди можуть розміщувати та шукати житло для короткострокового перебування.
-      </p>
-    </div>
-    <div >       
-      <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/306_Slack_logo-512.png">
-      <p>
-        <strong>Slack</strong><br>
-        Slack – це корпоративний месенджер для командного спілкування.
-      </p>
-    </div>
-  </div> 
-  <img src="2.png">
-  
-      <div id="salary">
-        <p>54 000 грн</p>
-        <p>на червень 2025</p>
+
+    <section id="product">
+      <h2>Відомі продукти, створені Full-stack розробниками</h2>
+      <div class="product-card">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/airbnb-2-logo-png-transparent.png" alt="Airbnb logo">
+        <p><strong>Airbnb</strong><br>Онлайн-платформа для оренди житла на короткий термін.</p>
       </div>
-   <div class="cards-wrap">
-            <div class="card">
-                <img src="" class="card-img" />
-                <h3>КПІ ім. Ігоря Сікорського</h3>
-                <p>
-                    Знаходиться в Києві, державний, денна та заочна форма
-                    навчання (від 16 600 грн/рік). Пропонує актуальні
-                    IT-спеціальності: "Комп’ютерні науки", "Інженерія
-                    програмного забезпечення", "Системний аналіз". Сильна база з
-                    програмування, алгоритмів, баз даних, веб-технологій та
-                    архітектури ПЗ — усе, що потрібно майбутньому розробнику.
-                </p>
-            </div>
-            <div">
-                <img src="">
-                <h3>НУ «Львівська політехніка»</h3>
-                <p>
-                    Один із найстаріших і найавторитетніших технічних
-                    університетів України. Знаходиться у Львові, державний,
-                    доступні денна та заочна форми навчання (від 6 400 грн/рік).
-                    Пропонує сучасні IT-напрями, включно з "Комп’ютерними
-                    науками" та "Інженерією програмного забезпечення". Міцна
-                    технічна база, фокус на практиці, викладання сучасних мов,
-                    фреймворків і технологій — відмінний старт.
-                </p>
-            </div>
-            <div>
-                <img src="">
-                <h3>Одеська політехніка</h3>
-                <p>
-                    Державний технічний університет із сучасним підходом до
-                    освіти. Знаходиться в Одесі, навчає дистанційно, вартість —
-                    від 18 000 грн/рік. Пропонує популярні IT-спеціальності,
-                    зокрема "Комп’ютерні науки" та "Інженерію програмного
-                    забезпечення". Зручний формат, актуальні знання, орієнтація
-                    на практику — гарний вибір для майбутнього розробника.
-                </p>
-            </div>
+      <div class="product-card">
+        <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/306_Slack_logo-512.png" alt="Slack logo">
+        <p><strong>Slack</strong><br>Корпоративний месенджер для командної роботи.</p>
+      </div>
+    </section>
+
+    <img src="2.png" alt="Схема роботи Full-stack розробника">
+
+    <section id="salary">
+      <h2>Заробітна плата</h2>
+      <p>54 000 грн</p>
+      <p>на червень 2025</p>
+    </section>
+
+    <section id="educational">
+      <h2>Заклади освіти</h2>
+      <div class="cards-wrap">
+        <div class="card">
+          <img src="" alt="КПІ">
+          <h3>КПІ ім. Ігоря Сікорського</h3>
+          <p>Університет у Києві з державним статусом. Пропонує програми з "Комп’ютерних наук", "Інженерії ПЗ" та інших IT-напрямів. Вартість — від 16 600 грн/рік.</p>
         </div>
-        <p>Пропонуємо для ознайомлення</p>
-        <div>
-            <a href="Frontend.html">
-                <p>Frontend розробник</p>
-            </a>
-            <a href="Beckend-index.html">
-                <p>Beckend розробник</p>
-            </a>
-            <a href="Full-stack Developer.html">
-                <p>Full-stack розробник</p>
-            </a>
-            <a href="index.html">
-                <p>На головну</p>
-            </a>
+
+        <div class="card">
+          <img src="" alt="Львівська політехніка">
+          <h3>НУ «Львівська політехніка»</h3>
+          <p>Сильна технічна база у Львові. Пропонує сучасні спеціальності, включаючи "Комп’ютерні науки". Вартість — від 6 400 грн/рік.</p>
         </div>
-       <script>
-  document.addEventListener('DOMContentLoaded', function () {
-  const swiper = new Swiper('.swiper', {
-    direction: 'horizontal',
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-});
-</script>  
+
+        <div class="card">
+          <img src="" alt="Одеська політехніка">
+          <h3>Одеська політехніка</h3>
+          <p>Навчання онлайн. Пропонує популярні спеціальності з орієнтацією на практику. Вартість — від 18 000 грн/рік.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Ознайомтесь також:</h2>
+      <nav>
+        <ul>
+          <li><a href="Frontend.html">Frontend розробник</a></li>
+          <li><a href="Backend-index.html">Backend розробник</a></li>
+          <li><a href="Full-stack Developer.html">Full-stack розробник</a></li>
+          <li><a href="index.html">На головну</a></li>
+        </ul>
+      </nav>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    });
+  </script>
 </body>
 </html>
