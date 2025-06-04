@@ -132,3 +132,57 @@ h1 {
     text-align: center;
     width: max-content;
 }
+
+.menu-box {
+    position: relative;
+    display: inline-block;
+}
+
+#menu-1 {
+    display: none;
+}
+
+.menu-icon img {
+    height: 40px;
+    cursor: pointer;
+}
+
+.menu-n {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    display: none;
+    z-index: 100;
+}
+
+.menu-n ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-n li {
+    margin: 10px 0;
+}
+
+.menu-n a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu-n a:hover {
+    color: #DAA520;
+}
+
+#menu-1 {
+    display: none;
+}
+
+#menu-1:checked + .menu-icon + .menu-n {
+    display: block;
+}
