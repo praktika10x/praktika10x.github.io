@@ -145,7 +145,7 @@ html {
     width: 90%;
     max-width: 1000px;
     margin: 30px auto;
-    background-color: #ffffff;
+    background-color:linear-gradient(135deg, #fffbde, #f0f0c0, #fffbde);
     padding: 35px;
     border: 0px solid #f0e0a0;
     border-radius: 18px;
