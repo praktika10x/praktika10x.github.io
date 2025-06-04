@@ -124,7 +124,7 @@ nav ul li ul {
 
 nav ul li:hover ul,
 nav ul li:focus-within ul {
-    display: block
+    display: block;
     pointer-events: auto;
 }
 
