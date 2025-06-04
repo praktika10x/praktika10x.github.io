@@ -12,15 +12,18 @@
         <div class="logo-left">
             <img src="https://i.postimg.cc/3RcBwN6j/image.jpg" alt="лого" class="logo-img" />
             <span class="logo-text">Safe WEB squad</span>
-            <div class="nav-header">
-                <a href="project.html">Про проєкт</a>
-                <a href="profesiyi.html">Професії</a>
-                <a href="dovidka.html">Довідникова інформація</a>
-            </div>
         </div>
         <div class="language-switcher">
             <a href="#">UA</a> | <a href="#">EN</a>
         </div>
+    </div>
+
+    <div class="nav">
+        <a href="index.html" class="active">Головна</a>
+        <a href="project.html">Про проєкт</a>
+        <a href="profesiyi.html">Професії</a>
+        <a href="dovidka.html">Довідникова інформація</a>
+        <a href="posibnyk.html">Посібник</a>
     </div>
 
     <section class="hero">
@@ -94,7 +97,7 @@
                 </div>
                 <div class="news-card">
                     <img src="https://i.postimg.cc/mk084G2C/news3.jpg" alt="Новина 3" />
-                    <h3><a href="https://eska.global/blog/ai-u-kiberbezpeci-novi-mozhlivosti-chi-zagroza">Штучний інтелект у кібербезпеці: нові можливості та загрози</a></h3>
+                    <h3><a href="https://eska.global/blog/ai-u-kiberbezpeci-novi-mozlyvosti-chi-zagroza">Штучний інтелект у кібербезпеці: нові можливості та загрози</a></h3>
                     <p class="news-date">25.05.2025</p>
                 </div>
             </div>
@@ -121,7 +124,7 @@
         <p>Контакти: info@safewebsquad.ua | Телефон: +380 44 123 4567</p>
         <p>© 2025 Safe WEB squad. Всі права захищено.</p>
         <a href="problem.html" class="footer-report-btn">
-            <span class="emoji">⚠️;</span> Повідомити про проблему
+            <span class="emoji">⚠️</span> Повідомити про проблему
         </a>
     </footer>
 
@@ -137,8 +140,7 @@
             if (newsCards.length === 0) return;
             const cardWidth = newsCards[0].offsetWidth;
             const gap = parseFloat(getComputedStyle(newsCardsWrapper).gap) || 30;
-            // Get the actual width of a card (including padding/border)
-            const cardWidthAdjusted = newsCards[0].offsetWidth; // Use a new variable to avoid confusion
+            const cardWidthAdjusted = newsCards[0].offsetWidth;
             const totalShift = currentIndex * (cardWidthAdjusted + gap);
             newsCardsWrapper.style.transform = `translateX(${-totalShift}px)`;
         }
