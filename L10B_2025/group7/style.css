@@ -244,7 +244,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    padding: 25px;
+    padding: 40px; /* Збільшений відступ з усіх сторін */
     max-width: 1200px;
     margin: 30px auto;
     justify-content: center;
