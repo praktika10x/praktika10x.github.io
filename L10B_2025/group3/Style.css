@@ -14,12 +14,14 @@ body {
 /* === HEADER === */
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 40px;
   background: linear-gradient(to right, #5e3c98, #6e6bc0);
   color: white;
+  flex-direction: row-reverse; 
 }
+
 
 .header-logo {
   display: flex;
