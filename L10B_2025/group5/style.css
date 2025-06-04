@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Geologica:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Code:wght@300..700&family=Geologica:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
 
 
@@ -605,7 +605,7 @@ nav ul li:hover .categories-list-triangle {
 .dashboard-row {
   display: flex;
   flex-direction: row;
-  gap: 32px;
+  gap: 100px;
   width: 100%;
   justify-content: center;
 }
@@ -630,7 +630,7 @@ nav ul li:hover .categories-list-triangle {
   color: #903cf0;;
 }
 .dashboard-text {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 400;
   color: #fff;
   line-height: 1.4;
@@ -1024,7 +1024,7 @@ footer .sourses:hover {
   }
   .skills-main-text {
     width: 95vw;
-    font-size: 28px;
+    font-size: 26px;
   }
   .skills-flip-cards {
     flex-direction: column;
@@ -1064,6 +1064,8 @@ footer .sourses:hover {
     flex-direction: column;
     gap: 18px;
     position: static;
+    width: 100%;
+    box-sizing: border-box;
   }
   .duty {
     position: static;
@@ -1071,6 +1073,8 @@ footer .sourses:hover {
     max-width: 600px;
     font-size: 20px;
     margin: 0 auto;
+    box-sizing: border-box;
+    word-break: break-word;
   }
   .career-sequence {
     gap: 18px;
@@ -1091,7 +1095,7 @@ footer .sourses:hover {
   }
 
   .salary-table {
-    width: 70vw;
+    width: 86vw;
     font-size: 18px;
     padding: 10px;
   }
@@ -1121,7 +1125,7 @@ footer .sourses:hover {
   #education .education-title {
     font-size: 22px;
     padding: 12px 8px;
-    width: 98vw;
+    width: 80vw;
   }
 }
 
@@ -1147,6 +1151,20 @@ footer .sourses:hover {
     height: 100%;
     object-fit: contain;
     display: block;
+  }
+
+  .duty {
+    position: static;
+    width: 70vw;
+    max-width: 98vw;
+    font-size: 16px;
+    padding: 16px 8px;
+    left: auto;
+    right: auto;
+    top: auto;
+    margin: 0 auto 18px auto;
+    box-sizing: border-box;
+    word-break: break-word;
   }
   .data-napryam {
     font-size: 22px;
@@ -1179,14 +1197,11 @@ footer .sourses:hover {
     display: inline-block;
     padding: 6px 0;
   }
-
   .skills-flip-cards {
     flex-direction: column;
     gap: 16px;
     align-items: center;
   }
-
-
   .dashboard-row {
     flex-direction: column;
     gap: 14px;
@@ -1203,11 +1218,11 @@ footer .sourses:hover {
     box-sizing: border-box;
   }
   .dashboard-title {
-    font-size: 20px;
+    font-size: 40px;
     margin-bottom: 8px;
   }
   .dashboard-text {
-    font-size: 24px;
+    font-size: 35px;
   }
 
   footer {
