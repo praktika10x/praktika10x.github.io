@@ -146,7 +146,7 @@
         function updateCarousel() {
             if (newsCards.length === 0) return;
             const cardWidth = newsCards[0].offsetWidth;
-            const gap = parseFloat(getComputedStyle(newsCardsWrapper).gap) || 30; // Get gap from parent
+            const gap = parseFloat(getComputedStyle(newsCardsWrapper).gap) || 30;
             const totalShift = currentIndex * (cardWidth + gap);
             newsCardsWrapper.style.transform = `translateX(${-totalShift}px)`;
         }
@@ -155,7 +155,7 @@
             if (currentIndex < newsCards.length - 1) {
                 currentIndex++;
             } else {
-                currentIndex = 0; // Loop back to the first card
+                currentIndex = 0;
             }
             updateCarousel();
         });
@@ -164,12 +164,11 @@
             if (currentIndex > 0) {
                 currentIndex--;
             } else {
-                currentIndex = newsCards.length - 1; // Loop back to the last card
+                currentIndex = newsCards.length - 1;
             }
             updateCarousel();
         });
 
-        // Initialize carousel on page load and on resize
         window.addEventListener('resize', updateCarousel);
         updateCarousel();
     </script>
