@@ -257,12 +257,6 @@ body.home .footer {
 
 /* === TEXT === */
 .title {
-position: absolute;
-width: 942px;
-height: 378px;
-left: 320px;
-top: 151px;
-
 font-family: 'Press Start 2P';
 font-style: normal;
 font-weight: 400;
