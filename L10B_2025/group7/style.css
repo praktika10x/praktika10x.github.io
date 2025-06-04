@@ -331,13 +331,26 @@ footer a:hover {
     margin: 0 auto 60px auto;
 }
 
-.intro-cards .card { /* New class for specific styling */
-    background: none; /* Removed background */
-    border: 0px solid transparent; /* Set border to 0px */
+.intro-cards { /* Existing class, now with white background */
+    background-color: #ffffff; 
+    border: 0px solid transparent; 
     border-radius: 18px;
     padding: 30px;
     box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-no-background { /* New class for transparent background */
+    background: none; 
+    border: 0px solid transparent; 
+    border-radius: 18px;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: none; /* Removed box shadow for transparency */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
