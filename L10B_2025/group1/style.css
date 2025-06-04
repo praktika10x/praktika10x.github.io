@@ -1,3 +1,26 @@
-h1 {
-  color: red;
+h1{
+          text-align: left;
+          color:steelblue; 
+          background-color:gray;
+          display: inline;
+          padding: 2px 2px;
+          text-shadow:2px 2px 5px darkblue;
+      }
+h3{
+    width:150px;
+          color:white;
+          background:lightgray;
+          text-align:center;
+          padding:5px 10px;
+          border-radius: 10px;
+}
+.text{
+    width:200px;
+          height:370px;
+          border: 2px grey solid;
+          border-radius: 10px;
+          float:left;
+          margin:10px;
+          box-shadow:2px 2px 5px DeepSkyblue;
+          padding:10px;
 }
