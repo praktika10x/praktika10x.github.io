@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="Restart V5">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_06_2025_14_55_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_06_2025_14_55__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+    <list id="f1ab00e0-7278-4685-bbc4-952ba86327f0" name="don't commit" comment="" />
+    <list id="2022e4c7-dfdd-48fb-b1e4-4f61ac093540" name="to commit" comment="to commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,22 +24,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": -1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: -1
+}</component>
   <component name="ProjectId" id="2xzocPcKcyOh6vkaS8CfuaQ3b8G" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Peter Bakun\Documents\GitHub\praktika10x.github.io\L10B_2025\group9\main\templates\main" />
@@ -63,6 +49,8 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="" />
+      <changelist id="2022e4c7-dfdd-48fb-b1e4-4f61ac093540" name="to commit" comment="" />
+      <changelist id="f1ab00e0-7278-4685-bbc4-952ba86327f0" name="don't commit" comment="" />
       <created>1748950341455</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -76,7 +64,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748951764324</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="to commit">
+      <option name="closed" value="true" />
+      <created>1749029251572</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749029251572</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +115,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Restart V5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Restart V5" />
+    <MESSAGE value="to commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="to commit" />
   </component>
 </project>
