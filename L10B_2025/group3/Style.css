@@ -7,6 +7,7 @@ html, body {
 
 /* === BODY === */
 body {
+  display: flex;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   color: #333;
@@ -66,15 +67,11 @@ body.home .header {
 
 /* === SIDEBAR === */
 .sidebar {
-  width: 10px;
+  width: 120px;
   background-color: #221c69;
+  height: 100vh;
   transition: width 0.4s ease;
   overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  z-index: 10;
 }
 /*==бічна панель==*/
 body.home .sidebar {
@@ -105,7 +102,8 @@ body.home .sidebar {
 
 /* === MAIN CONTENT WRAPPER === */
 .container {
-  transition: margin-left 0.4s ease;
+  flex: 1;
+  padding: 20px;
 }
 
 .sidebar:hover ~ .container {
