@@ -297,6 +297,13 @@ body.home .container ul {
 .team-card:hover {
   transform: scale(1.05);
 }
+.team-cards-wrapper {
+  background: linear-gradient(to bottom, #fbc2eb, #a6c1ee); 
+  padding: 40px 20px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
 .team-cards {
   display: flex;
   justify-content: center;
