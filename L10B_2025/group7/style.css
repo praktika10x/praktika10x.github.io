@@ -236,6 +236,7 @@ footer a:hover {
     padding: 25px;
     max-width: 1200px;
     margin: 30px auto;
+    justify-content: center;
 }
 
 .prof-card {
@@ -311,7 +312,7 @@ footer a:hover {
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     justify-content: center;
     padding: 25px 0;
@@ -323,8 +324,7 @@ footer a:hover {
     background-color: #ffffff;
     border: 2px solid #f0e0a0;
     border-radius: 18px;
-    width: 300px;
-    padding: 30px; /* Original padding */
+    padding: 30px;
     box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
