@@ -3,72 +3,414 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="style.css" rel="stylesheet" />
-  <title>3D графіка</title>
+  <link href="style-page2.css" rel="stylesheet" />
+  <title>3D графіка — Комп'ютерна графіка</title>
 </head>
 <body>
   <header class="site-header">
     <div class="header-left">
-      <img src="polit.png" alt="Логотип Політ" class="logo" />
-      <span class="site-title">3D графіка</span>
+      <img src="images.jpg" alt="Логотип Політ" class="logo" />
+    </div>
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Пошук...">
+      <button class="search-button">🔍</button>
     </div>
     <nav class="nav-links">
-      <a href="index.html" class="nav-link active">Головна</a>
       <div class="menu-icon">≡</div>
     </nav>
   </header>
 
   <main class="main-content">
-    <!-- Що таке 3D графіка -->
-    <section class="section-box">
-      <h2>Що таке 3D графіка?</h2>
-      <p>
-        Комп'ютерна 3D-графіка (CGI, 3-D-CGI або тривимірна комп’ютерна графіка) — це графіка, яка використовує тривимірне представлення геометричних даних (часто декартових), які зберігаються в комп’ютері з метою виконання обчислень і візуалізації цифрових зображень, зазвичай 2D зображення, але іноді 3D. Отримані зображення можна зберегти для подальшого перегляду (наприклад, анімація) або відобразити в реальному часі.
-      </p>
-    </section>
-
-    <!-- Існуючі професії -->
-    <section class="professions">
-      <h3 class="professions-title">Існуючі професії</h3>
-      <div class="prof-grid">
-        <div class="prof-card small"></div>
-        <div class="prof-card small"></div>
-        <div class="prof-card small"></div>
-        <div class="prof-card large"></div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <video class="hero-background" autoplay muted loop playsinline>
+        <source src="gradient.mp4" type="video/mp4">
+        <img src="https://cdn.discordapp.com/attachments/1266156981450838171/1379836116936691772/5f2c8c4b013ed26c6804691dbc8acb4ef66923ed.gif" alt="Background gradient">
+      </video>
+      
+      <div class="hero-content">
+        <h1 class="main-title">Комп'ютерна графіка</h1>
+        <h2 class="sub-title">3D графіка</h2>
       </div>
     </section>
 
-    <!-- Motion-дизайнер -->
-    <section class="motion-designer">
-      <h3 class="section-heading">Motion-дизайнер</h3>
-
-      <div class="card-group">
-        <div class="card">Рисунок</div>
-        <div class="card">Ступінь професії</div>
+    <!-- Definition Section -->
+    <section class="definition-section">
+      <div class="definition-content">
+        <h3 class="definition-title">Що таке 3D графіка</h3>
+        <div class="definition-text">
+          <p><span class="highlight">Комп'ютерна 3D-графіка (СG)</span>, 3-D СGI або тривимірна комп'ютерна графіка) — це графіка, яка використовує тривимірне представлення геометричних даних (часто декартових), що зберігаються в комп'ютері з метою виконання обчислень і візуалізації <span class="highlight">2D зображень</span>, але іноді 3D. Отримані зображення можна зберегти для подальшого перегляду (наприклад, <span class="highlight">анімації</span>) або відображати в <span class="highlight">реальному часі</span>.</p>
+        </div>
       </div>
+    </section>
 
-      <div class="info-box">
-        Специфічні знання та вимоги до фахівця (детальний roadmap до професії)
+    <!-- Professions Section -->
+    <section class="professions-section">
+      <div class="professions-content">
+        <h3 class="professions-title">приклади професій:</h3>
+        
+        <div class="profession-cards">
+          <div class="profession-card">
+            <div class="profession-icon">
+              <img src="prof1.png" alt="3D-моделер" />
+            </div>
+            <div class="profession-info">
+              <h4>1. 3D-моделер</h4>
+              <ul>
+                <li>Створює тривимірні моделі персонажів, об'єктів, середовищ.</li>
+                <li>Програми: Blender, Maya, 3ds Max, ZBrush.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="profession-card">
+            <div class="profession-icon">
+              <img src="prof2.png" alt="3D-аніматор" />
+            </div>
+            <div class="profession-info">
+              <h4>2. 3D-аніматор</h4>
+              <ul>
+                <li>Анімує 3D-моделі, створює рухи персонажів і об'єктів.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="profession-card">
+            <div class="profession-icon">
+              <img src="prof3.png" alt="Технічний художник" />
+            </div>
+            <div class="profession-info">
+              <h4>3. Технічний художник (Technical Artist)</h4>
+              <ul>
+                <li>Поєднує художні навички та технічне розуміння процесів,</li>
+                <li>налаштовує шейдери.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="info-box">
-        Інструменти розробника
+    <!-- 3D Modeler Detail Section -->
+    <section class="motion-designer-section">
+      <div class="motion-content">
+        <h3 class="motion-title">3D-моделер</h3>
+        
+        <div class="motion-detail">
+          <div class="motion-gif">
+            <img src="3dmodel.png" alt="3D модель" loading="lazy" />
+          </div>
+          <div class="motion-description">
+            <p>3D-моделер — це фахівець, який створює тривимірні моделі об'єктів у віртуальному просторі за допомогою програмного забезпечення для 3D-моделювання. Ці моделі можуть використовуватися в різних галузях, таких як ігри індустрія, кіно, архітектура, інженерія та багато інших.</p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="info-box two-cols">
-        <span>Знання</span>
-        <span>Продукція</span>
+    <!-- Skills and Requirements Section -->
+    <section class="skills-section">
+      <div class="skills-content">
+        <h3 class="skills-title">специфічні знання та вимоги до фахівця</h3>
+        
+        <div class="skills-list">
+          <ul>
+            <li>Освоєння 3D-моделювання (полігональ modeling)</li>
+            <li>Текстурування, UV-розгортки</li>
+            <li>Топологія, анатомія (для персонажів)</li>
+            <li>Оптимізація моделей для ігор/VR</li>
+            <li>Уміння працювати в команді</li>
+          </ul>
+        </div>
       </div>
+    </section>
 
-      <div class="info-box">
-        Зарплата, затребуваність на ринку праці, складові освіти, де можна
-        отримати спеціальність (спеціальності в ЗВО тощо).
+    <!-- Tools Section -->
+    <section class="tools-section">
+      <div class="tools-content">
+        <h3 class="tools-title">інструменти розробника</h3>
+        
+        <div class="tools-grid">
+          <div class="tool-item">
+            <div class="tool-text">
+              <p>Blender (безкоштовний), Maya, 3ds Max</p>
+            </div>
+            <div class="tool-icon">
+              <img src="blender.png" alt="Blender" />
+            </div>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-text">
+              <p>ZBrush — скульптинг</p>
+            </div>
+            <div class="tool-icon">
+              <img src="zbrush.png" alt="ZBrush" />
+            </div>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-text">
+              <p>Substance Painter, Photoshop — текстури (ініші)</p>
+            </div>
+            <div class="tool-icon">
+              <img src="substance.png" alt="Substance Painter" />
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="table-placeholder">
-        <!-- тут буде таблиця з детальною інформацією -->
+    <!-- What 3D Modelers Create Section -->
+    <section class="motion-create-section">
+      <div class="motion-create-content">
+        <h3 class="motion-create-title">Що розробляють 3D-моделери?</h3>
+        
+        <div class="motion-create-info">
+          <div class="motion-create-text">
+            <ul>
+              <li>Ігрові персонажі, техніка</li>
+              <li>Архітектурні моделі</li>
+              <li>Об'єкти для віртуальних світів</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section class="examples-section">
+      <div class="examples-content">
+        <h3 class="examples-title">зразки</h3>
+        
+        <div class="examples-grid">
+          <div class="example-gif large">
+            <img src="bigimg1.png" alt="3D дизайн приклад" loading="lazy" />
+          </div>
+          <div class="char-image">
+            <img src="img1.png" alt="3D модель 1" />
+          </div>
+          <div class="char-image">
+            <img src="img2.png" alt="3D модель 2" />
+          </div>
+          <div class="char-image">
+            <img src="img3.png" alt="3D модель 3" />
+          </div>
+          <div class="char-image">
+            <img src="img4.png" alt="3D модель 4" />
+          </div>
+          <div class="example-gif small">
+            <img src="img5.png" alt="3D дизайн приклад 2" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Job Market Section -->
+    <section class="job-market-section">
+      <div class="job-market-content">
+        <h3 class="job-market-title">Ринок праці</h3>
+        
+        <div class="job-market-grid">
+          <div class="salary-info">
+            <h4>Зарплата (в Україні):</h4>
+            <ul>
+              <li>Junior: $500-800</li>
+              <li>Middle: $1000-1800</li>
+              <li>Senior: $2000-3000+</li>
+              <li>Фріланс: $30-100+ за модель</li>
+            </ul>
+          </div>
+          
+          <div class="demand-info">
+            <h4>Затребуваність:</h4>
+            <ul>
+              <li>Висока. Особливо в ігровій індустрії, VR/AR, архівізуалізації.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="roadmap-section">
+      <div class="roadmap-content">
+        <h3 class="roadmap-title">Освіта</h3>
+        
+        <div class="roadmap-info">
+          <div class="roadmap-steps">
+            <div class="roadmap-step">
+              <h4>Спеціальності:</h4>
+              <p>Комп'ютерна графіка, Дизайн середовища, Мультимедійні технології</p>
+            </div>
+            
+            <div class="roadmap-step">
+              <h4>ЗВО:</h4>
+              <p>КНУКІМ, ХНУРЕ, КНУТД, IT Step Academy, Projector, Mate Academy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3D Modeler Roadmap Section -->
+    <section class="roadmap-section">
+      <div class="roadmap-content">
+        <h3 class="roadmap-title">3D-моделер – Roadmap (8-24 міс)</h3>
+        
+        <div class="roadmap-info">
+          <div class="roadmap-steps">
+            <div class="roadmap-step">
+              <h4>1. Основи 3D (1-2 міс.)</h4>
+              <ul>
+                <li>Освоїти Blender або Maya (інтерфейс, моделювання)</li>
+                <li>Вивчити типи полігонального моделювання (low poly, high poly)</li>
+                <li>Створити прості об'єкти (чашка, меблі, меч тощо)</li>
+              </ul>
+            </div>
+            
+            <div class="roadmap-step">
+              <h4>2. Текстури, UV, рендер (2-4 міс.)</h4>
+              <ul>
+                <li>Вивчити UV-розгортку, нормалі, шейдери</li>
+                <li>Освоїти Substance Painter (текстурування)</li>
+                <li>Експортувати моделі в рендер-движки</li>
+              </ul>
+            </div>
+            
+            <div class="roadmap-step">
+              <h4>3. Поглиблення (3-6 міс.)</h4>
+              <ul>
+                <li>Вивчити ZBrush (органіка, скульптинг)</li>
+                <li>Створити 2-3 складні моделі (персонаж, техніка, інтер'єр)</li>
+                <li>Додати роботи на ArtStation, Sketchfab</li>
+              </ul>
+            </div>
+            
+            <div class="roadmap-step">
+              <h4>4. Перехід до ринку (6-12 міс.)</h4>
+              <ul>
+                <li>Фріланс: або джуні-позиції у студії (геймдев, візуалізація)</li>
+                <li>Поглиблене навчання: retopology, baking maps, оптимізація</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Table Section -->
+    <section class="table-section">
+      <div class="table-content">
+        <h3 class="table-title">Таблиця</h3>
+        
+        <div class="comparison-table">
+          <div class="table-column pros">
+            <div class="column-header">+</div>
+            <div class="column-content">
+              <div class="table-item">
+                <h5>Високий попит:</h5>
+                <p>затребувані в ігровій індустрії, архітектурі, рекламі.</p>
+              </div>
+              
+              <div class="table-item">
+                <h5>Креативна реалізація:</h5>
+                <p>створення персонажів, об'єктів, середовищ.</p>
+              </div>
+              
+              <div class="table-item">
+                <h5>Гнучкий графік:</h5>
+                <p>можливість працювати віддалено або на фрілансі.</p>
+              </div>
+              
+              <div class="table-item">
+                <h5>Кар'єрне зростання:</h5>
+                <p>можливість перерости у суміжні ролі, такі як Environment Artist.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="table-column cons">
+            <div class="column-header">-</div>
+            <div class="column-content">
+              <div class="table-item">
+                <h5>Складність освоєння:</h5>
+                <p>необхідно вивчити кілька складних програм.</p>
+              </div>
+              
+              <div class="table-item">
+                <h5>Монотонність:</h5>
+                <p>деякі завдання можуть бути рутинними.</p>
+              </div>
+              
+              <div class="table-item">
+                <h5>Високий рівень деталізації:</h5>
+                <p>якісні клієнти, високий рівень конкуренції: багато фахівців на ринку.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="images.jpg" alt="Логотип Політ" class="footer-logo-img" />
+          <span class="footer-logo-text">Комп'ютерна графіка</span>
+        </div>
+        <p class="footer-description">
+          Вивчайте комп'ютерну графіку разом з нами. Від основ до професійного рівня.
+        </p>
+        <a href="index.html" class="home-button">
+          🏠 На головну
+        </a>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Навігація</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Головна</a></li>
+          <li><a href="#definition">Що таке 3D графіка</a></li>
+          <li><a href="#professions">Професії</a></li>
+          <li><a href="#tools">Інструменти</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Ресурси</h4>
+        <ul class="footer-links">
+          <li><a href="#examples">Приклади робіт</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#job-market">Ринок праці</a></li>
+          <li><a href="#skills">Навички</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Контакти</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:info@example.com">info@example.com</a></li>
+          <li><a href="tel:+380123456789">+38 (012) 345-67-89</a></li>
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p>&copy; 2025 Комп'ютерна графіка. Всі права захищені.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link">📘</a>
+          <a href="#" class="social-link">📷</a>
+          <a href="#" class="social-link">🐦</a>
+          <a href="#" class="social-link">💼</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
