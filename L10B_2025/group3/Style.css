@@ -302,10 +302,6 @@ body.home .container ul {
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
-  background: linear-gradient(to bottom, #fbc2eb, #a6c1ee); 
-  padding: 40px 20px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
 }
 .team-card img {
   width: 120px;
