@@ -225,15 +225,15 @@ footer {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Changed to flexbox */
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 15px; /* Spacing between inline elements */
 }
 
 footer .team-info {
-    margin-bottom: 12px;
+    margin-bottom: 0; /* Remove margin-bottom as it's now inline */
 }
 
 footer a {
@@ -244,6 +244,13 @@ footer a {
 
 footer a:hover {
     color: #ccac35;
+}
+
+/* New class for inline footer text elements */
+.footer-text-inline {
+    display: inline-block; /* Makes paragraphs behave like inline elements */
+    margin: 0; /* Remove default paragraph margins */
+    padding: 0 10px; /* Add some padding for spacing */
 }
 
 .profesiyi-container {
@@ -892,7 +899,7 @@ footer a:hover {
     align-items: center;
     gap: 8px; /* Space between emoji and text */
     font-size: 16px;
-    margin-top: 15px; /* Add some space above the button */
+    margin-top: 0; /* Removed margin-top as it's now inline */
 }
 
 .footer-report-btn:hover {
@@ -1015,6 +1022,15 @@ footer a:hover {
 
     .image-text-block {
         margin-bottom: 40px;
+    }
+
+    footer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 8px; /* Reduce gap when stacked */
+    }
+
+    .footer-text-inline {
+        padding: 0; /* Remove horizontal padding when stacked */
     }
 }
 
