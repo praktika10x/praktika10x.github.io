@@ -64,7 +64,7 @@
             <a href="napryamok.html" class="btn">Переглянути напрямки</a>
         </div>
     </div>
-    
+
     <section class="container" id="wartime-cybersecurity">
         <h2>Кібербезпека під час війни: захисти себе та Україну</h2>
         <div class="image-text-block">
@@ -77,29 +77,29 @@
             </div>
         </div>
     </section>
-    
+
     <section class="container" id="news-section">
         <h2>Останні новини кібербезпеки</h2>
-        <div class="news-carousel-controls">
+        <div class="news-carousel-container">
             <button class="carousel-btn prev-btn"><</button>
+            <div class="news-cards-wrapper">
+                <div class="news-card">
+                    <img src="https://i.postimg.cc/zvq0X363/news1.jpg" alt="Новина 1" />
+                    <h3><a href="news_detail_shahraigoodbye.html">Стартує Всеукраїнська інформаційна кампанія з платіжної безпеки #ШахрайГудбай</a></h3>
+                    <p class="news-date">13.05.2025</p>
+                </div>
+                <div class="news-card">
+                    <img src="https://i.postimg.cc/YSpw421Q/news2.jpg" alt="Новина 2" />
+                    <h3><a href="news_detail_2.html">Нові методи фішингу: як розпізнати та захиститися</a></h3>
+                    <p class="news-date">01.06.2025</p>
+                </div>
+                <div class="news-card">
+                    <img src="https://i.postimg.cc/mk084G2C/news3.jpg" alt="Новина 3" />
+                    <h3><a href="news_detail_3.html">Штучний інтелект у кібербезпеці: нові можливості та загрози</a></h3>
+                    <p class="news-date">25.05.2025</p>
+                </div>
+            </div>
             <button class="carousel-btn next-btn">></button>
-        </div>
-        <div class="news-cards-wrapper">
-            <div class="news-card">
-                <img src="https://i.postimg.cc/zvq0X363/news1.jpg" alt="Новина 1" />
-                <h3><a href="news_detail_shahraigoodbye.html">Стартує Всеукраїнська інформаційна кампанія з платіжної безпеки #ШахрайГудбай</a></h3>
-                <p class="news-date">13.05.2025</p>
-            </div>
-            <div class="news-card">
-                <img src="https://i.postimg.cc/YSpw421Q/news2.jpg" alt="Новина 2" />
-                <h3><a href="news_detail_2.html">Нові методи фішингу: як розпізнати та захиститися</a></h3>
-                <p class="news-date">01.06.2025</p>
-            </div>
-            <div class="news-card">
-                <img src="https://i.postimg.cc/mk084G2C/news3.jpg" alt="Новина 3" />
-                <h3><a href="news_detail_3.html">Штучний інтелект у кібербезпеці: нові можливості та загрози</a></h3>
-                <p class="news-date">25.05.2025</p>
-            </div>
         </div>
     </section>
 
@@ -116,7 +116,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="container" id="report-problem">
         <div class="highlight-section">
             <div class="highlight-content">
@@ -136,19 +136,17 @@
     </footer>
 
     <script>
-        const newsCarousel = document.querySelector('.news-carousel-controls');
         const newsCardsWrapper = document.querySelector('.news-cards-wrapper');
-        const prevBtn = newsCarousel.querySelector('.prev-btn');
-        const nextBtn = newsCarousel.querySelector('.next-btn');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
         const newsCards = document.querySelectorAll('.news-card');
 
         let currentIndex = 0;
 
         function updateCarousel() {
             if (newsCards.length === 0) return;
-            const cardStyle = window.getComputedStyle(newsCards[0]);
             const cardWidth = newsCards[0].offsetWidth;
-            const gap = parseFloat(cardStyle.marginRight) || parseFloat(cardStyle.gap) || 30;
+            const gap = parseFloat(getComputedStyle(newsCardsWrapper).gap) || 30; // Get gap from parent
             const totalShift = currentIndex * (cardWidth + gap);
             newsCardsWrapper.style.transform = `translateX(${-totalShift}px)`;
         }
@@ -157,7 +155,7 @@
             if (currentIndex < newsCards.length - 1) {
                 currentIndex++;
             } else {
-                currentIndex = 0;
+                currentIndex = 0; // Loop back to the first card
             }
             updateCarousel();
         });
@@ -166,11 +164,12 @@
             if (currentIndex > 0) {
                 currentIndex--;
             } else {
-                currentIndex = newsCards.length - 1;
+                currentIndex = newsCards.length - 1; // Loop back to the last card
             }
             updateCarousel();
         });
 
+        // Initialize carousel on page load and on resize
         window.addEventListener('resize', updateCarousel);
         updateCarousel();
     </script>

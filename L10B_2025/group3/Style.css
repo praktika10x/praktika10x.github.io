@@ -138,7 +138,6 @@ body.home .header {
   gap: 20px;
   padding: 20px;
 }
-
 .card {
   width: 250px;
   background-color: #f9cdda;
@@ -275,4 +274,10 @@ body.home .footer {
   justify-content: center;
   gap: 20px;
   align-items: stretch;
+}
+/* == Списки == */
+body.home .container ul {
+  list-style-type: disc;     
+  color: black;              
+  padding-left: 2rem;        
 }
