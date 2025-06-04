@@ -952,3 +952,314 @@ footer .sourses:hover {
     z-index: 2;
 }
 
+@media (max-width: 1024px) {
+  .intro-center {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .intro-text {
+    width: 90%;
+    font-size: 20px;
+    text-align: center;
+  }
+  .intro-video iframe {
+    width: 90vw;
+    max-width: 560px;
+    height: 260px;
+  }
+  .duties-list {
+    min-height: 700px;
+  }
+  .duty {
+    font-size: 22px;
+    padding: 18px 16px;
+  }
+  .duty:nth-child(1) { top: 10px; left: 10px; width: 90vw; max-width: 700px;}
+  .duty:nth-child(2) { top: 110px; right: 10px; width: 90vw; max-width: 700px;}
+  .duty:nth-child(3) { top: 260px; left: 10px; width: 90vw; max-width: 700px;}
+  .duty:nth-child(4) { top: 410px; right: 10px; width: 90vw; max-width: 700px;}
+  .path-cards {
+    gap: 20px;
+  }
+  .skills-main-text {
+    font-size: 28px;
+    width: 95vw;
+    max-width: 95vw;
+  }
+  .skills-flip-cards {
+    gap: 20px;
+    max-width: 100vw;
+  }
+  .skills-flip-card {
+    width: 320px;
+    height: 200px;
+  }
+  .skills-flip-card-front, .skills-flip-card-back {
+    font-size: 22px;
+    padding: 20px 10px;
+  }
+  .skills-flip-card-back ul {
+    font-size: 18px;
+  }
+  .dashboard-row {
+    gap: 16px;
+  }
+  .dashboard-card {
+    min-width: 180px;
+    max-width: 320px;
+    font-size: 16px;
+    padding: 18px 10px;
+  }
+  .dashboard-title {
+    font-size: 20px;
+  }
+  .career-block,
+  .career-sequence .career-block,
+  .career-block-roles,
+  .career-sequence .career-block-roles {
+    font-size: 1.2rem;
+    min-width: 180px;
+    max-width: 220px;
+    padding: 16px 10px;
+  }
+  .career-arrow,
+  .career-sequence .career-arrow {
+    width: 32px;
+    height: 22px;
+  }
+  .salary-table {
+    width: 90vw;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .salary-table th, .salary-table td {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .footer-author-block img {
+    width: 120px;
+    height: 130px;
+  }
+  .footer-author-block h3 {
+    font-size: 16px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 5vw;
+    gap: 10px;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .data-napryam {
+    font-size: 20px;
+    margin-right: 0;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  nav ul li ul {
+    width: 90vw;
+    left: 0;
+    transform: none;
+  }
+  nav a, .mobile-menu a {
+    font-size: 16px;
+  }
+  .intro {
+    padding: 20px 0;
+  }
+  .intro-center {
+    gap: 10px;
+    max-width: 100vw;
+  }
+  .intro-text {
+    font-size: 16px;
+    width: 98vw;
+    padding: 0 2vw;
+  }
+  .intro-video iframe {
+    width: 98vw;
+    height: 180px;
+    max-width: 100vw;
+  }
+  .duties {
+    padding: 20px 0;
+  }
+  .duties-list {
+    min-height: 900px;
+  }
+  .duty {
+    font-size: 16px;
+    padding: 10px 6px;
+    width: 95vw;
+    left: 2vw;
+    right: 2vw;
+  }
+  .duty:nth-child(1) { top: 10px;}
+  .duty:nth-child(2) { top: 120px;}
+  .duty:nth-child(3) { top: 250px;}
+  .duty:nth-child(4) { top: 380px;}
+  .path {
+    padding: 20px 0;
+  }
+  .path-cards {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .path-card {
+    width: 90vw;
+    height: 180px;
+    font-size: 24px;
+  }
+  .skills {
+    padding: 20px 0;
+  }
+  .skills-main-text {
+    font-size: 18px;
+    width: 98vw;
+    margin: 10px auto 0 auto;
+  }
+  .skills-flip-cards {
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100vw;
+    align-items: center;
+  }
+  .skills-flip-card {
+    width: 90vw;
+    height: 120px;
+  }
+  .skills-flip-card-front, .skills-flip-card-back {
+    font-size: 14px;
+    padding: 10px 4px;
+  }
+  .skills-flip-card-back ul {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+  .demand {
+    padding: 20px 0;
+  }
+  .demand-img-block img {
+    width: 98vw;
+    min-width: 0;
+    max-width: 100vw;
+  }
+  .demand-title {
+    font-size: 18px;
+    padding: 8px 6px;
+    width: 98vw;
+  }
+  .demand-title a {
+    font-size: 14px;
+  }
+  .demand-desc {
+    font-size: 14px;
+    padding: 8px 6px;
+    width: 98vw;
+  }
+  .salary {
+    padding: 20px 0;
+  }
+  .salary-table {
+    width: 98vw;
+    font-size: 12px;
+    padding: 2px;
+  }
+  .salary-table th, .salary-table td {
+    font-size: 10px;
+    padding: 4px;
+  }
+  .sample {
+    padding: 20px 0;
+  }
+  .dashboard {
+    gap: 10px;
+    max-width: 100vw;
+  }
+  .dashboard-row {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+  }
+  .dashboard-card {
+    min-width: 0;
+    max-width: 98vw;
+    font-size: 12px;
+    padding: 10px 4px;
+  }
+  .dashboard-title {
+    font-size: 14px;
+  }
+  .career {
+    padding: 20px 0;
+  }
+  .career-sequence {
+    gap: 8px;
+    max-width: 100vw;
+    padding-bottom: 4px;
+  }
+  .career-block,
+  .career-sequence .career-block,
+  .career-block-roles,
+  .career-sequence .career-block-roles {
+    font-size: 0.9rem;
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 8px 2vw;
+  }
+  .career-arrow,
+  .career-sequence .career-arrow {
+    width: 18px;
+    height: 12px;
+  }
+  footer {
+    padding: 20px 0 10px 0;
+  }
+  .footer-authors {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .footer-author-block img {
+    width: 60px;
+    height: 70px;
+  }
+  .footer-author-block h3 {
+    font-size: 10px;
+    width: 40px;
+  }
+  .sourses-lang {
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .change-lang img {
+    width: 16px;
+    height: 18px;
+  }
+  .change-lang button {
+    font-size: 12px;
+  }
+  footer .sourses {
+    font-size: 12px;
+    padding: 4px 8px;
+    margin-top: 4px;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
