@@ -55,11 +55,6 @@ html {
     color: #333;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    margin-right: 30px; /* Space between logo text and nav links */
-}
-
-.language-switcher {
-    margin-left: auto; /* Pushes language switcher to the right */
 }
 
 .language-switcher a {
@@ -79,29 +74,33 @@ html {
     background-color: #e0c340;
 }
 
-.nav-header { /* New class for navigation links within header */
-    display: flex;
-    align-items: center;
-    /* Removed margin-left to allow the logo-left flex-grow to push it */
+.nav {
+    background-color: #f7d04e;
+    text-align: center;
+    padding: 15px 0;
+    border-top: none;
+    border-bottom: none;
+    margin: 0;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
 }
 
-.nav-header a {
+.nav a {
     color: #333;
     text-decoration: none;
-    margin: 0 18px; /* Restored original margin for better spacing */
+    margin: 0 18px;
     font-weight: 600;
-    padding: 12px 25px; /* Restored original padding for button-like appearance */
+    padding: 12px 25px;
     border: 2px solid transparent;
-    border-radius: 30px; /* Restored original border-radius */
+    border-radius: 30px;
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 16px; /* Restored original font size */
+    font-size: 16px;
 }
 
-.nav-header a:hover,
-.nav-header a.active {
+.nav a:hover,
+.nav a.active {
     background-color: #e0c340;
     border-color: #ccac35;
     color: #222;
@@ -146,9 +145,9 @@ html {
     width: 90%;
     max-width: 1000px;
     margin: 30px auto;
-    background-color: #ffffff; /* Changed to solid white */
+    background-color: #ffffff;
     padding: 35px;
-    border: 0px solid #f0e0a0;
+    border: 1px solid #f0e0a0;
     border-radius: 18px;
     box-sizing: border-box;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
@@ -225,15 +224,10 @@ footer {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
-    display: flex; /* Changed to flexbox */
-    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
-    align-items: center;
-    justify-content: center;
-    gap: 15px; /* Spacing between inline elements */
 }
 
 footer .team-info {
-    margin-bottom: 0; /* Remove margin-bottom as it's now inline */
+    margin-bottom: 12px;
 }
 
 footer a {
@@ -244,13 +238,6 @@ footer a {
 
 footer a:hover {
     color: #ccac35;
-}
-
-/* New class for inline footer text elements */
-.footer-text-inline {
-    display: inline-block; /* Makes paragraphs behave like inline elements */
-    margin: 0; /* Remove default paragraph margins */
-    padding: 0 10px; /* Add some padding for spacing */
 }
 
 .profesiyi-container {
@@ -344,36 +331,10 @@ footer a:hover {
     margin: 0 auto 60px auto;
 }
 
-.intro-cards { /* Existing class, now with white background */
+.card {
     background-color: #ffffff;
-    border: 0px solid transparent;
+    border: 2px solid #f0e0a0;
     border-radius: 18px;
-    padding: 30px;
-    box-sizing: border-box;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card-no-background { /* New class for transparent background */
-    background: none;
-    border: 0px solid transparent;
-    border-radius: 18px;
-    padding: 30px;
-    box-sizing: border-box;
-    box-shadow: none; /* Removed box shadow for transparency */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card { /* Added border-radius for team cards */
-    background-color: #ffffff;
-    border: 1px solid #f0e0a0;
-    border-radius: 10px; /* Added border-radius here */
     padding: 30px;
     box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -884,60 +845,122 @@ footer a:hover {
     padding-left: 0;
 }
 
-/* Styles for the "Report a Problem" button in the footer */
-.footer-report-btn {
+.report-problem-container {
+    padding: 40px;
+    background-color: #ffffff;
+    border: 1px solid #f0e0a0;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.report-problem-container h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.report-problem-container .intro-paragraph {
+    font-size: 19px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.problem-report-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.form-group label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    padding: 14px 18px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #333;
+    background-color: #fcfcfc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #a08c30;
+    box-shadow: 0 0 0 4px rgba(247, 208, 78, 0.4);
+    background-color: #ffffff;
+    outline: none;
+}
+
+.form-group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M287%2C114.7L159.2%2C242.5c-4.4%2C4.4-11.4%2C4.4-15.8%2C0L5.4%2C114.7c-4.4-4.4-4.4-11.4%2C0-15.8c4.4-4.4%2C11.4-4.4%2C15.8%2C0l135.2%2C135.2L271.2%2C98.9c4.4-4.4%2C11.4-4.4%2C15.8%2C0C291.4%2C103.3%2C291.4%2C110.3%2C287%2C114.7z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 15px;
+    padding-right: 40px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    align-self: center;
+    margin-top: 35px;
+    padding: 18px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
     background-color: #f7d04e;
     color: #333;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    border-radius: 8px;
     border: 2px solid #ccac35;
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    display: inline-flex; /* Use flex to align icon and text */
-    align-items: center;
-    gap: 8px; /* Space between emoji and text */
-    font-size: 16px;
-    margin-top: 0; /* Removed margin-top as it's now inline */
+    border-radius: 12px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.footer-report-btn:hover {
+.submit-btn:hover {
     background-color: #e0c340;
     border-color: #a08c30;
-    transform: translateY(-2px);
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-.footer-report-btn .emoji {
-    font-size: 24px; /* Size of the emoji */
-    line-height: 1; /* Ensure emoji sits nicely */
+
+.submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ccac35;
+    border-color: #a08c30;
 }
+
 
 @media (max-width: 1200px) {
     .cards-container {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-    .logo-bar {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-    .logo-left {
-        width: 100%;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-    .nav-header {
-        width: 100%;
-        justify-content: center;
-        /* margin-left: 0; REMOVED this line as it was conflicting with desired layout */
-        margin-bottom: 10px;
-    }
-    .language-switcher {
-        width: 100%;
-        text-align: center;
-        margin-left: 0;
     }
 }
 
@@ -1024,13 +1047,34 @@ footer a:hover {
         margin-bottom: 40px;
     }
 
-    footer {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        gap: 8px; /* Reduce gap when stacked */
+    .report-problem-container {
+        padding: 30px;
+        margin: 30px auto;
     }
 
-    .footer-text-inline {
-        padding: 0; /* Remove horizontal padding when stacked */
+    .report-problem-container h1 {
+        font-size: 38px;
+    }
+
+    .report-problem-container .intro-paragraph {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 15px;
+        padding: 10px 12px;
+    }
+
+    .submit-btn {
+        padding: 12px 25px;
+        font-size: 16px;
     }
 }
 
@@ -1042,26 +1086,12 @@ footer a:hover {
     .news-cards-wrapper {
         padding: 0 10px;
     }
+}
 
-    .logo-text {
-        font-size: 22px;
-    }
-    .nav-header a {
-        margin: 0 8px;
-        padding: 6px 10px;
-        font-size: 13px;
-    }
-    .hero h1 {
-        font-size: 40px;
-    }
-    .hero p {
-        font-size: 16px;
-    }
-    .footer-report-btn {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
-    .footer-report-btn .emoji {
-        font-size: 20px;
-    }
+.hero h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    color: #FFFFFF;
 }
