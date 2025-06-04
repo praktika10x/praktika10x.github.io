@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: url('https://github.com/praktika10x/praktika10x.github.io/blob/main/L10B_2025/group7/35a28d51a9ea1fbff7d35517e6a1e9e6_w200.gif?raw=true') no-repeat center center fixed;
+    background: url('https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3697.jpg?semt=ais_hybrid&w=740') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -250,160 +250,6 @@ footer a:hover {
     padding: 0 10px;
 }
 
-.profesiyi-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 40px;
-    max-width: 1200px;
-    margin: 30px auto;
-    justify-content: center;
-}
-
-.prof-card {
-    background-color: #ffffff;
-    border: 2px solid #f0e0a0;
-    border-radius: 18px;
-    padding: 25px;
-    box-sizing: border-box;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.prof-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.prof-image-wrapper {
-    width: 100%;
-    height: 180px;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.prof-image-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.prof-card h3 {
-    margin-top: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #a08c30;
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.prof-card p {
-    font-family: 'Open Sans', sans-serif;
-    color: #555;
-    flex-grow: 1;
-    margin-bottom: 18px;
-}
-
-.prof-link {
-    align-self: flex-start;
-    margin-top: 18px;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    background-color: #f7d04e;
-    color: #333;
-    padding: 10px 18px;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-.prof-link:hover {
-    background-color: #e0c340;
-    border-color: #ccac35;
-    color: #222;
-}
-
-.cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    justify-content: space-around;
-    padding: 25px 0;
-    max-width: 1400px;
-    margin: 0 auto 60px auto;
-}
-
-.intro-cards {
-    background-color: #ffffff;
-    border: 0px solid transparent;
-    border-radius: 18px;
-    padding: 30px;
-    box-sizing: border-box;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card-no-background {
-    background: none;
-    border: 0px solid transparent;
-    border-radius: 18px;
-    padding: 30px;
-    box-sizing: border-box;
-    box-shadow: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card {
-    background-color: #ffffff;
-    border: 1px solid #f0e0a0;
-    border-radius: 10px;
-    padding: 30px;
-    box-sizing: border-box;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.card h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    margin-bottom: 18px;
-    color: #a08c30;
-    border-left: none;
-    padding-left: 0;
-    margin-top: 0;
-}
-
-.card p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
-    color: #444;
-    flex-grow: 1;
-    margin-bottom: 25px;
-    line-height: 1.6;
-}
-
 .btn {
     align-self: flex-start;
     background-color: #f7d04e;
@@ -441,26 +287,6 @@ footer a:hover {
 .intro-card-text p {
     text-align: left;
     padding-left: 0px;
-}
-
-.icon-circle {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: #e0c340;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 25px 0;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.icon-circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
 }
 
 .hero {
@@ -911,9 +737,6 @@ footer a:hover {
 }
 
 @media (max-width: 1200px) {
-    .cards-container {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
     .logo-bar {
         flex-wrap: wrap;
         justify-content: center;
@@ -1009,12 +832,7 @@ footer a:hover {
     .quote-block p {
         font-size: 16px;
     }
-
-    .cards-container {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        margin-bottom: 40px;
-    }
-
+    
     .image-text-block {
         margin-bottom: 40px;
     }
