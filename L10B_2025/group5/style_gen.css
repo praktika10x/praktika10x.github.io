@@ -76,11 +76,11 @@ nav a {
    font-weight: 700;
    font-size: 22px; 
    cursor: pointer;
+   transition: color 0.3s ease;
 }
 
 nav a:hover {
    color: #bebebe;
-   transition: ease 0.3s;
 }  
 
 nav ul  {
@@ -100,7 +100,7 @@ nav ul li {
 }
 
 nav ul li ul {
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -109,7 +109,7 @@ nav ul li ul {
     left: 50%;
     transform: translateX(-50%);
     background-color: #8055f7;
-    width: 160px; 
+    width: 150px; 
     z-index: 1000;
     border-radius: 10px;
     text-align: center;
@@ -127,9 +127,15 @@ nav ul li:focus-within ul {
     pointer-events: auto;
 }
 
+
+nav ul li ul li {
+    margin: 0;
+    width: 100%;
+}
+
 nav ul li ul li a {
     display: block;
-    padding: 10px 0;
+    padding: 20px 0;
     color: #fff;
     width: 100%;
     box-sizing: border-box;
@@ -138,7 +144,7 @@ nav ul li ul li a {
     font-size: 16px; 
     font-weight: 700;
     font-family: 'Balsamiq Sans', sans-serif;
-    transition: background 0.2s;
+    transition: color 0.2s;
 }
 
 nav ul li ul li:hover {
@@ -150,9 +156,14 @@ nav ul li:hover .categories-list-triangle {
     transform: rotate(-90deg);
 }
 
-header nav ul li a:hover {
-    border-bottom: 5px solid #433D8B;
+.border-bottom-hover {
+    transition: border 0.1s ease;
 }
+
+.border-bottom-hover:hover {
+    border-bottom: 3px solid #433D8B;
+}
+
 
 .categories-list-triangle {
     transition: transform 0.3s ease;
@@ -160,10 +171,11 @@ header nav ul li a:hover {
 }
 
 
+
 .main-section {
    display: flex;
    width: 100%;
-   min-height: 500px;
+   min-height: 600px;
    height: auto;
    background-color: #2219a3; 
    color: #fff;
@@ -183,13 +195,12 @@ header nav ul li a:hover {
 .text-field {
    display: flex;
    flex-direction: column;
-   width: 100%;
    max-width: 350px;
    min-width: 220px;
    height: auto;
-   min-height: 200px;
+   min-height: 450px;
    background-color: #504A9F;
-   margin-left: 0;
+   margin-left: 80px;
    border-radius: 20px;
    opacity: 0.95;
    padding: 20px;
@@ -200,15 +211,16 @@ header nav ul li a:hover {
    display: flex;
    flex-direction: row;
    width: 100%;
-   min-height: 500px;
+   min-height: 600px;
    background-color: #504A9F; 
    color: #fff;
-   padding: 30px; 
+   padding: 60px; 
    align-items: stretch;
-   gap: 50px; 
+   gap: 80px; 
    justify-content: center;
    box-sizing: border-box;
    flex-wrap: wrap;
+   background: linear-gradient(to bottom, #504A9F 90%, #2E236C 100%);
 
 }
 
@@ -282,8 +294,9 @@ footer {
 footer h2 {
     font-family: 'Rubik Dirt', sans-serif;
     color: #fff;
-    font-size: 24px;
-    margin: 0;
+    font-size: 30px;
+    align-self: flex-start;
+    margin-bottom: 20px;
 }
 
 .footer-authors {
@@ -325,8 +338,8 @@ footer h2 {
 .footer-author-block h3 {
     font-family: 'Balsamiq Sans', sans-serif;
     color: #fff;
-    font-size: 16px;
-    margin: 0;
+    font-size: 20px;
+    margin-top: 8px;
     text-align: center;
     width: 100px;
     font-weight: normal;
