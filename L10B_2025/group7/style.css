@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap');More actions
 
 body {
     font-family: 'Courier', Courier;
+    background-color: #FFFBDE;
     background-color: #fffbde;
     margin: 0;
     padding: 0;
@@ -310,15 +311,14 @@ footer a:hover {
     color: #222;
 }
 
-/* New: Styles for the introductory cards grid */
-.intro-cards-grid {
+.cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    padding: 25px;
-    max-width: 1200px; /* Adjust as needed */
-    margin: 30px auto 60px auto; /* Centered with bottom margin */
-    justify-content: center;
+    justify-content: space-around; /* Changed from center to space-around */
+    padding: 25px 0;
+    max-width: 1400px;
+    margin: 0 auto 60px auto;
 }
 
 .card {
@@ -332,7 +332,6 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: left; /* Ensure text alignment for the cards */
 }
 
 .card:hover {
@@ -345,10 +344,9 @@ footer a:hover {
     font-size: 30px;
     margin-bottom: 18px;
     color: #a08c30;
-    border-left: none; /* Remove left border for these cards */
+    border-left: none;
     padding-left: 0;
     margin-top: 0;
-    text-align: left; /* Align card title to the left */
 }
 
 .card p {
@@ -358,7 +356,6 @@ footer a:hover {
     flex-grow: 1;
     margin-bottom: 25px;
     line-height: 1.6;
-    text-align: left; /* Align card paragraph to the left */
 }
 
 .btn {
@@ -382,8 +379,23 @@ footer a:hover {
     color: #222;
 }
 
-/* Removed .intro-card-text as its styles are now integrated into .card */
-/* Removed .cards-container as it's replaced by .intro-cards-grid for the introductory cards */
+.intro-card-text {
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.intro-card-text h2 {
+    text-align: left;
+    padding-left: 0px;
+}
+
+.intro-card-text p {
+    text-align: left;
+    padding-left: 0px;
+}
 
 .icon-circle {
     width: 90px;
@@ -825,8 +837,8 @@ footer a:hover {
 
 
 @media (max-width: 1200px) {
-    .intro-cards-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    .cards-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
 
@@ -904,7 +916,7 @@ footer a:hover {
         font-size: 16px;
     }
 
-    .intro-cards-grid { /* Updated for responsiveness */
+    .cards-container {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         margin-bottom: 40px;
     }
