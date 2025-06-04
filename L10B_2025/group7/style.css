@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(to bottom right, #f8f8f8, #ffffff);
+    background: linear-gradient(to bottom right, #f8f8f8, #000000);
     margin: 0;
     padding: 0;
     color: #333;
@@ -38,7 +38,7 @@ html {
 }
 
 .logo-text {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Bookman Old Style;
     font-size: 28px;
     font-weight: 700;
     color: #333;
@@ -47,7 +47,7 @@ html {
 }
 
 .language-switcher a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Calibri;
     color: #333;
     text-decoration: none;
     font-weight: bold;
