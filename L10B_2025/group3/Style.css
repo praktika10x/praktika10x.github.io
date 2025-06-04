@@ -255,6 +255,13 @@ img.fullscreen-image {
   width: 100%;
   margin: 0;
 }
+body.home .footer {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c1146747822663.58864f9b18733.jpg"); 
+  background-size: cover;       
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color: white;                
+}
 
 /* === TEXT === */
 .title {
