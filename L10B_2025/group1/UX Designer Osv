@@ -7,6 +7,7 @@
   <style>
 	    table, th, td {
 	        border: 1px solid black;
+	        font-size:30px
 	    }
 	    table {
 	        width: 80%;
@@ -14,14 +15,15 @@
 	        margin: auto;
 	    }
 	    .card {
-          width: 150px;
-          height: 200px;
+          width: 250px;
+          height: 410px;
           border: 2px grey solid;
           border-radius:10px;
           float:left;
           margin: 10px;
-          padding: 10px;
+          padding: 20px;
          background: lightgrey;
+         font-size:30px;
       }
       .wrap{
           width: 1000px;
@@ -36,6 +38,10 @@
          background: lightgrey;
               display: flex;
           justify-content: center;
+          font-size:30px
+          }
+          h2{font-size:50px;
+              text-align: center;
           }
           
 	    </style>
@@ -67,7 +73,7 @@
 Практико-орієнтованість – багато лабораторних, курсових і реальних проєктів . Міждисциплінарність – спільні програми з IT, дизайну, бізнесу.</td>
 </tr>
 </table>
-<h2 align="center">Умови вступу</h2>
+<h2>Умови вступу</h2>
 <div class="wrap">
         <div class="card">
             <h3>Київський Політехнічний Інститут</h3>
