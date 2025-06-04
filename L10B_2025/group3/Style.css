@@ -218,11 +218,11 @@ body.home .header {
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  color: #51a556;
+  color: #954BAA;
 }
 
 .swiper-pagination-bullet-active {
-  background: #51a556;
+  background: #954BAA;
 }
 
 .card-pic {
