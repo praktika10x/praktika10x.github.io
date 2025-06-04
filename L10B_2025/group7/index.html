@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>More actions
 <html lang="uk">
 <head>
     <meta charset="UTF-8" />
@@ -37,8 +37,8 @@
         <p>У світі, де цифрові технології інтегровані в кожен аспект нашого життя, кібербезпека стає не просто важливою, а критично необхідною. Від персональних даних до національної інфраструктури, усе потребує надійного захисту. Розуміння основ кібербезпеки та можливість захистити себе і свою інформацію є ключовими навичками для кожного.</p>
     </div>
 
-    <div class="intro-cards-grid">
-        <div class="card">
+    <div class="container cards-container">
+        <div class="card intro-card-text">
             <div class="icon-circle">
                 <img src="security-removebg-preview.png" alt="Замок на щиті" />
             </div>
@@ -47,7 +47,7 @@
             <a href="dovidka.html" class="btn">Дізнатись більше</a>
         </div>
 
-        <div class="card">
+        <div class="card intro-card-text">
             <div class="icon-circle">
                 <img src="18133303-removebg-preview.png" alt="Іконка безпеки" />
             </div>
@@ -56,7 +56,7 @@
             <a href="profesiyi.html" class="btn">Переглянути професії</a>
         </div>
 
-        <div class="card">
+        <div class="card intro-card-text">
             <div class="icon-circle">
                 <img src="7.png" alt="Дослідження" />
             </div>
@@ -65,6 +65,7 @@
             <a href="napryamok.html" class="btn">Переглянути напрямки</a>
         </div>
     </div>
+
     <section class="container" id="wartime-cybersecurity">
         <h2>Кібербезпека під час війни: захисти себе та Україну</h2>
         <div class="image-text-block">
@@ -109,6 +110,7 @@
             <div class="text-wrapper">
                 <h3>Залишайся в безпеці онлайн</h3>
                 <p>Проводите в інтернеті понад 5 хвилин на день? Тоді дізнайтеся про новітні ігри, програми та соціальні мережі. А також як захистити свою інформацію та повідомити про неприйнятний контент чи порушення політики приватності. Цей посібник стане вашим надійним помічником у цифровому світі.</p>
+                <a href="posibnick.html" class="btn">Переглянути всі</a>
                 <a href="posibnyk.html" class="btn">Переглянути всі</a>
             </div>
             <div class="image-wrapper">
@@ -145,6 +147,8 @@
 
         function updateCarousel() {
             if (newsCards.length === 0) return;
+            const cardWidth = newsCards[0].offsetWidth;
+            const gap = parseFloat(getComputedStyle(newsCardsWrapper).gap) || 30;
             // Get the actual width of a card (including padding/border)
             const cardWidth = newsCards[0].offsetWidth; 
             const gap = parseFloat(getComputedStyle(newsCardsWrapper).gap) || 30; // Get the computed gap
@@ -156,6 +160,7 @@
             if (currentIndex < newsCards.length - 1) {
                 currentIndex++;
             } else {
+                currentIndex = 0;
                 currentIndex = 0; // Loop back to the beginning
             }
             updateCarousel();
@@ -165,12 +170,14 @@
             if (currentIndex > 0) {
                 currentIndex--;
             } else {
+                currentIndex = newsCards.length - 1;
                 currentIndex = newsCards.length - 1; // Loop to the end
             }
             updateCarousel();
         });
 
         window.addEventListener('resize', updateCarousel);
+        updateCarousel();
         updateCarousel(); // Initial call to set correct position on load
     </script>
 </body>
