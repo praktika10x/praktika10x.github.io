@@ -66,19 +66,19 @@ body {
   color: #F5BB47;
 }
 .pnav{
-  grid-column: 2 / span 3;
-  grid-row: 2 / span 4;
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 5;
   justify-self: center;
   align-self: center;
   font-family: "Press Start 2P", system-ui;
-  font-weight: 500;
-  font-size: 95px;
+  font-weight: 600;
+  font-size: 100px;
   line-height: 125%;
   text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.50);
   letter-spacing: -0.05em;
   text-align: right;
   color: #fff;
-  margin:0 5px 0 0;
+  margin:0 30px 0 0;
 }
 .logonav{
   width: 50%;
