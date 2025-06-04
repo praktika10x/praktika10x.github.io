@@ -1,17 +1,4 @@
-@media (max-width: 768px) {
-  .swiper-slide {
-    min-height: auto;
-    padding: 16px;
-  }
 
-  .card-title {
-    font-size: 16px;
-  }
-
-  .cart-desc {
-    font-size: 14px;
-  }
-}
 /* === BODY === */
 body {
   font-family: Arial, sans-serif;
