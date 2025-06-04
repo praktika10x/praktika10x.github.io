@@ -331,11 +331,9 @@ footer a:hover {
     margin: 0 auto 60px auto;
 }
 
-.card {
-    background: linear-gradient(135deg, #fffbde, #f0f0c0, #fffbde);
-    background-size: 200% 200%;
-    border: 2px solid transparent; /* Changed border to transparent */
-    border-image: linear-gradient(135deg, #f0e0a0, #fffbde, #f0e0a0) 1; /* Added border image */
+.intro-cards .card { /* New class for specific styling */
+    background: none; /* Removed background */
+    border: 0px solid transparent; /* Set border to 0px */
     border-radius: 18px;
     padding: 30px;
     box-sizing: border-box;
@@ -345,6 +343,7 @@ footer a:hover {
     flex-direction: column;
     justify-content: space-between;
 }
+
 
 .card:hover {
     transform: translateY(-8px);
