@@ -185,6 +185,18 @@ section h1 {
     background-color: #55679C;
     color: #fff;    
 }
+.sourses1 h1 {
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-size: 38px;
+    margin-bottom: 24px;
+    text-align: center; 
+}
+.sourses1 h3 {
+    font-family: 'Geologica', sans-serif;
+    font-size: 14px;
+    margin-bottom: 24px;
+    text-align: center; 
+}
 .sourses2 div {
     background-color: #504A9F;
     color: #fff;    
