@@ -15,7 +15,7 @@
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
 </head>
-<body>
+
         <div class="header">
             <div class="header-logo">
                 <img src="Project-img/SVG/ПроектЛого.svg" class="eniac" />
@@ -230,4 +230,22 @@
     </div>
   </a>	
 </div>
-
+	</footer>
+	        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       <script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+});
+</script>
+</body>
+</html>
