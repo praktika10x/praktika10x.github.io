@@ -1238,13 +1238,14 @@ footer .sourses:hover {
     font-size: 15px;
     padding: 10px 8px;
     border-radius: 16px;
+    height: auto;
   }
   .dashboard-title {
-    font-size: 25px;
+    font-size: 18px;
     margin-bottom: 8px;
   }
   .dashboard-text {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   footer {
