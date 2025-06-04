@@ -378,6 +378,21 @@ footer a:hover {
     color: #222;
 }
 
+/* New class for the introductory cards' text alignment */
+.intro-card-text {
+    text-align: left; /* Align text to the left */
+    padding-left: 0px; /* Reset padding to 0, then adjust as needed */
+}
+
+.intro-card-text h2 {
+    text-align: left; /* Ensure heading is also left-aligned */
+    padding-left: 0px;
+}
+
+.intro-card-text p {
+    text-align: left; /* Ensure paragraph is also left-aligned */
+    padding-left: 0px;
+}
 
 .icon-circle {
     width: 90px;
