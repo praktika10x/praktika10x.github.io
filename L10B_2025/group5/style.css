@@ -1098,6 +1098,8 @@ footer .sourses:hover {
     width: 86vw;
     font-size: 18px;
     padding: 10px;
+    margin: 0 auto;
+    
   }
 
   .education-table {
@@ -1222,7 +1224,7 @@ footer .sourses:hover {
     margin-bottom: 8px;
   }
   .dashboard-text {
-    font-size: 35px;
+    font-size: 28px;
   }
 
   footer {
@@ -1259,5 +1261,37 @@ footer .sourses:hover {
     font-size: 16px;
     padding: 8px 14px;
     margin-top: 8px;
+  }
+}
+
+@media (min-width: 1101px) {
+  .career-sequence {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0;
+    position: relative;
+    width: auto;
+    max-width: none;
+    margin: 0 auto;
+    overflow-x: unset;
+    padding-bottom: 16px;
+  }
+  .career-sequence .career-block,
+  .career-sequence .career-block-roles {
+    margin: 0;
+    min-width: 260px;
+    max-width: 340px;
+    width: 320px;
+    align-self: stretch;
+  }
+  .career-sequence .career-arrow-vertical {
+    width: 64px;
+    height: 64px;
+    margin: 0 24px;
+    transform: rotate(180deg);
+    align-self: center;
+    display: block;
+    filter: drop-shadow(0 2px 8px rgba(30,42,94,0.18));
   }
 }
