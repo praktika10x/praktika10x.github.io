@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap');
 
 body {
-    font-family: 'Open Sans', Impact, fantasy;
-    background: linear-gradient(to bottom right, #f8f8f8, #000000);
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000000;
     margin: 0;
     padding: 0;
     color: #333;
@@ -324,7 +324,7 @@ footer a:hover {
     border: 2px solid #f0e0a0;
     border-radius: 18px;
     width: 300px;
-    padding: 30px;
+    padding: 30px; /* Original padding */
     box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -378,19 +378,21 @@ footer a:hover {
     color: #222;
 }
 
-/* New class for the introductory cards' text alignment */
 .intro-card-text {
-    text-align: left; /* Align text to the left */
-    padding-left: 0px; /* Reset padding to 0, then adjust as needed */
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .intro-card-text h2 {
-    text-align: left; /* Ensure heading is also left-aligned */
+    text-align: left;
     padding-left: 0px;
 }
 
 .intro-card-text p {
-    text-align: left; /* Ensure paragraph is also left-aligned */
+    text-align: left;
     padding-left: 0px;
 }
 
@@ -402,7 +404,7 @@ footer a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 25px auto;
+    margin: 0 0 25px 0;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
