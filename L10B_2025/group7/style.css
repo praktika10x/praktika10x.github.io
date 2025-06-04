@@ -311,19 +311,19 @@ footer a:hover {
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted min-width for better responsiveness */
     gap: 30px;
     justify-content: center;
     padding: 25px 0;
     max-width: 1400px;
-    margin: 0 auto 60px auto; 
+    margin: 0 auto 60px auto;
 }
 
 .card {
     background-color: #ffffff;
     border: 2px solid #f0e0a0;
     border-radius: 18px;
-    width: 300px;
+    /* width: 300px;  Removed fixed width */
     padding: 30px;
     box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -905,6 +905,7 @@ main section:last-of-type {
     .cards-container {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         margin-bottom: 40px;
+        padding: 25px 20px; 
     }
 
     .image-text-block {
@@ -925,5 +926,14 @@ main section:last-of-type {
 
     .news-cards-wrapper {
         padding: 0 10px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr; 
+        padding: 25px 15px; 
+    }
+
+    .card {
+        width: auto; 
     }
 }
