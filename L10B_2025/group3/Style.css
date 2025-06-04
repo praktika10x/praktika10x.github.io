@@ -15,12 +15,11 @@ body {
 /* === HEADER === */
 .header {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   padding: 20px;
   background: linear-gradient(to right, #5e3c98, #6e6bc0);
   gap: 40px;
-}
 }
 
 .header-logo {
@@ -29,7 +28,7 @@ body {
 
 body.home .header {
   flex-direction: row-reverse;
-   background: linear-gradient(to top, #F5BB47, #F28D6C, #EE46A5);
+  background: linear-gradient(to top, #F5BB47, #F28D6C, #EE46A5);
 }
 
 /* === HEADER LOGO === */
@@ -44,27 +43,26 @@ body.home .header {
 }
 
 .nav-links {
-  display: flex;              
-  justify-content: center;    
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 20px;                  
-  list-style: none;           
+  gap: 20px;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .nav-links li a {
   text-decoration: none;
-  color: #ffffff;           
+  color: #ffffff;
   font-size: 1.1rem;
   transition: color 0.3s;
   font-family: "Tektur", sans-serif;
 }
 
 .nav-links li a:hover {
-  color: #ffcc00;           
+  color: #ffcc00;
 }
-
 
 /* === SIDEBAR === */
 .sidebar {
@@ -79,13 +77,18 @@ body.home .header {
   z-index: 10;
 }
 
+body.home .sidebar {
+  height: 75vh;
+}
+
 .sidebar:hover {
   width: 120px;
 }
 
 .sidebar ul {
   list-style: none;
-  padding: 20px 0;
+  padding: 0;
+  margin: 0;
 }
 
 .sidebar ul li {
@@ -132,6 +135,7 @@ body.home .header {
   gap: 20px;
   padding: 20px;
 }
+
 .card {
   width: 250px;
   background-color: #f9cdda;
@@ -249,12 +253,13 @@ img.fullscreen-image {
   width: 100%;
   margin: 0;
 }
+
 body.home .footer {
-  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c1146747822663.58864f9b18733.jpg"); 
-  background-size: cover;       
-  background-position: center; 
-  background-repeat: no-repeat; 
-  color: white;                
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c1146747822663.58864f9b18733.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 /* === TEXT === */
@@ -273,16 +278,15 @@ body.home .footer {
   gap: 20px;
   align-items: stretch;
 }
+
 /* == Списки == */
 body.home .container ul {
-  list-style-type: disc;     
-  color: black;              
-  padding-left: 2rem;        
+  list-style-type: disc;
+  color: black;
+  padding-left: 2rem;
 }
-body.home .sidebar {
-  height: 75vh; 
-}
-/* == team-cards == */
+
+/* == TEAM-CARDS == */
 .team-card {
   background: linear-gradient(to bottom, rgba(149, 75, 170, 0.65), rgba(255, 255, 255, 0.65));
   border-radius: 20px;
@@ -302,8 +306,9 @@ body.home .sidebar {
 .team-card:hover {
   transform: scale(1.05);
 }
+
 .team-cards-wrapper {
-  background: linear-gradient(to bottom, #fbc2eb, #a6c1ee); 
+  background: linear-gradient(to bottom, #fbc2eb, #a6c1ee);
   padding: 40px 20px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -315,6 +320,7 @@ body.home .sidebar {
   flex-wrap: wrap;
   gap: 40px;
 }
+
 .team-card img {
   width: 120px;
   height: 120px;
