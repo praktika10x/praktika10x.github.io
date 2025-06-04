@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap');
 
+@keyframes backgroundPan {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
 body {
-    font-family: 'Open Sans', sans-serif; /* Змінено на Open Sans, бо Courier виглядав застарілим */
-    background-color: #fffbde;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(135deg, #fffbde, #f0f0c0, #fffbde);
+    background-size: 200% 200%;
+    animation: backgroundPan 30s linear infinite alternate;
     margin: 0;
     padding: 0;
     color: #333;
@@ -38,7 +49,7 @@ html {
 }
 
 .logo-text {
-    font-family: 'Roboto', sans-serif; /* Використовуємо Roboto, як і в інших заголовках */
+    font-family: 'Roboto', sans-serif;
     font-size: 28px;
     font-weight: 700;
     color: #333;
@@ -759,7 +770,7 @@ footer a:hover {
 .youtube-player {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     margin-top: 20px;
@@ -834,15 +845,14 @@ footer a:hover {
     padding-left: 0;
 }
 
-/* Styling for the Report Problem Page */
 .report-problem-container {
     padding: 40px;
     background-color: #ffffff;
     border: 1px solid #f0e0a0;
     border-radius: 18px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    max-width: 800px; /* Adjust max-width for the form */
-    margin: 50px auto; /* Center the container */
+    max-width: 800px;
+    margin: 50px auto;
 }
 
 .report-problem-container h1 {
@@ -860,92 +870,86 @@ footer a:hover {
     line-height: 1.7;
 }
 
-/* Form Group Spacing and Alignment */
 .problem-report-form {
     display: flex;
     flex-direction: column;
-    gap: 25px; /* Increased space between form groups */
-    padding: 0 20px; /* Add some horizontal padding inside the form */
+    gap: 25px;
+    padding: 0 20px;
 }
 
-/* Labels */
 .form-group label {
     font-family: 'Open Sans', sans-serif;
-    font-size: 19px; /* Slightly larger font for labels */
-    font-weight: 700; /* Bolder labels */
-    color: #444; /* Darker color for better contrast */
-    margin-bottom: 10px; /* Increased space below labels */
+    font-size: 19px;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 10px;
 }
 
-/* Input, Select, Textarea Base Styles */
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group select,
 .form-group textarea {
-    padding: 14px 18px; /* More padding for a comfortable feel */
-    border: 2px solid #ddd; /* Slightly thicker, subtle border */
-    border-radius: 10px; /* More rounded corners */
+    padding: 14px 18px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px; /* Slightly larger text inside fields */
+    font-size: 18px;
     color: #333;
-    background-color: #fcfcfc; /* Light background for fields */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle inner shadow */
+    background-color: #fcfcfc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-/* Input, Select, Textarea Focus Styles */
 .form-group input[type="text"]:focus,
 .form-group input[type="email"]:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border-color: #a08c30; /* Stronger focus border color */
-    box-shadow: 0 0 0 4px rgba(247, 208, 78, 0.4); /* More prominent focus glow */
-    background-color: #ffffff; /* White background on focus */
+    border-color: #a08c30;
+    box-shadow: 0 0 0 4px rgba(247, 208, 78, 0.4);
+    background-color: #ffffff;
     outline: none;
 }
 
-/* Dropdown Arrow Customization (for some browsers) */
 .form-group select {
-    -webkit-appearance: none; /* Remove default arrow on WebKit browsers */
-    -moz-appearance: none;    /* Remove default arrow on Firefox */
-    appearance: none;         /* Remove default arrow for others */
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M287%2C114.7L159.2%2C242.5c-4.4%2C4.4-11.4%2C4.4-15.8%2C0L5.4%2C114.7c-4.4-4.4-4.4-11.4%2C0-15.8c4.4-4.4%2C11.4-4.4%2C15.8%2C0l135.2%2C135.2L271.2%2C98.9c4.4-4.4%2C11.4-4.4%2C15.8%2C0C291.4%2C103.3%2C291.4%2C110.3%2C287%2C114.7z%22%2F%3E%3C%2Fsvg%3E'); /* Custom arrow SVG */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M287%2C114.7L159.2%2C242.5c-4.4%2C4.4-11.4%2C4.4-15.8%2C0L5.4%2C114.7c-4.4-4.4-4.4-11.4%2C0-15.8c4.4-4.4%2C11.4-4.4%2C15.8%2C0l135.2%2C135.2L271.2%2C98.9c4.4-4.4%2C11.4-4.4%2C15.8%2C0C291.4%2C103.3%2C291.4%2C110.3%2C287%2C114.7z%22%2F%3E%3C%2Fsvg%3E');
     background-repeat: no-repeat;
     background-position: right 15px center;
     background-size: 15px;
-    padding-right: 40px; /* Space for the custom arrow */
+    padding-right: 40px;
 }
 
 .form-group textarea {
-    resize: vertical; /* Allow vertical resizing */
+    resize: vertical;
     min-height: 120px;
 }
 
-/* Submit Button */
 .submit-btn {
-    align-self: center; /* Center the button */
-    margin-top: 35px; /* More space above the button */
-    padding: 18px 40px; /* Larger padding for a more substantial button */
-    font-size: 20px; /* Larger font size for the button text */
-    font-weight: 700; /* Bolder button text */
+    align-self: center;
+    margin-top: 35px;
+    padding: 18px 40px;
+    font-size: 20px;
+    font-weight: 700;
     cursor: pointer;
     background-color: #f7d04e;
     color: #333;
-    border: 2px solid #ccac35; /* Solid border for the button */
-    border-radius: 12px; /* More rounded corners */
+    border: 2px solid #ccac35;
+    border-radius: 12px;
     transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     text-transform: uppercase;
-    letter-spacing: 1px; /* Slightly increased letter spacing */
+    letter-spacing: 1px;
 }
 
 .submit-btn:hover {
     background-color: #e0c340;
-    border-color: #a08c30; /* Darker border on hover */
-    transform: translateY(-3px); /* More pronounced lift effect */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    border-color: #a08c30;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Add a pressed state for the button */
+
 .submit-btn:active {
     transform: translateY(0);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -1043,7 +1047,6 @@ footer a:hover {
         margin-bottom: 40px;
     }
 
-    /* Responsive adjustments for the form on problem.html */
     .report-problem-container {
         padding: 30px;
         margin: 30px auto;
