@@ -276,7 +276,7 @@ body.home .footer {
   align-items: stretch;
 }
 /* == Списки == */
-body.home ul {
+body.home .container ul {
   list-style-type: disc;     
   color: black;              
   padding-left: 2rem;        
