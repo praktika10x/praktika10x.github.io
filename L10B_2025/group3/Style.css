@@ -1,4 +1,23 @@
+/*шрифти*/
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.tektur {
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+@font-face {
+  font-family: 'Comic_Sans_MS';
+  src: url('Comic_Sans_MS.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 /* === BODY === */
 body {
   font-family: Arial, sans-serif;
