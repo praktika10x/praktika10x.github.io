@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Data-напрям</title>
 	<link href="style_gen.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dehaze"/>
 </head>
 
 <body id="general">
@@ -14,9 +15,9 @@
 			<img src="photos/logo.png" alt="logo">
 			<h1 class="main-title">Data-напрям</h1>
 		</div>
-		<nav>
+		<nav id="desktop-nav">
 			
-			<ul>
+			<ul class="desktop-menu">
 				
 				<li>
 					<a href="#proj">Професії <span class="categories-list-triangle"> ◀</span></a>
@@ -30,7 +31,28 @@
 			</ul>
 		
 		</nav>
-	
+
+		<div class="mobile-menu-wrapper">
+				<span class="material-symbols-outlined hamburger-icon">
+					dehaze
+				</span>
+			<nav id="mobile-menu-nav">
+				<ul class="mobile-menu">
+					
+					<li>
+						<a href="#proj">Професії <span class="categories-list-triangle"> ◀</span></a>
+						<ul>
+												<li><a href="Data_Analyst.html">Data Analyst</a></li>
+												<li><a href="ML_Engineer.html">ML Engineer</a></li>
+												<li><a href="MLOps_Engineer.html">MLOps Engineer</a></li>
+												
+							</ul>
+					</li>
+					<li><a class="" href="#general">Головна</a></li>
+					
+				</ul>
+			</nav>
+			</div>
 	</header>
 	
 	<main>
