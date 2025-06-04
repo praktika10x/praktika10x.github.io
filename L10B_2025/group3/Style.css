@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* === BODY === */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -20,9 +28,10 @@ body {
   background: linear-gradient(to right, #5e3c98, #6e6bc0);
   color: white;
   flex-direction: row-reverse; 
+  width: 100%;
 }
 
-
+/* === HEADER LOGO === */
 .header-logo {
   display: flex;
   align-items: center;
@@ -233,6 +242,7 @@ img.fullscreen-image {
   padding: 20px 0;
   font-size: 14px;
   width: 100%;
+  margin: 0;
 }
 
 /* === TEXT === */
