@@ -7,7 +7,6 @@ html, body {
 
 /* === BODY === */
 body {
-  display: flex;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   color: #333;
@@ -67,15 +66,23 @@ body.home .header {
 
 /* === SIDEBAR === */
 .sidebar {
-  width: 120px;
+  width: 10px;
   background-color: #221c69;
-  height: 100vh;
   transition: width 0.4s ease;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 10;
 }
 /*==бічна панель==*/
 body.home .sidebar {
   height: 35vh;
+}
+
+.sidebar:hover {
+  width: 120px;
 }
 
 .sidebar ul {
@@ -102,8 +109,8 @@ body.home .sidebar {
 
 /* === MAIN CONTENT WRAPPER === */
 .container {
-  flex: 1;
-  padding: 20px;
+  margin-left: 10px;
+  transition: margin-left 0.4s ease;
 }
 
 .sidebar:hover ~ .container {
@@ -255,6 +262,14 @@ body.home .footer {
   color: white;
 }
 
+/* === TEXT === */
+.title {
+  font-family: "Press Start 2P";
+  font-size: 20px;
+  color: white;
+  margin-left: 20px;
+}
+
 /* === EDUCATIONAL WRAP === */
 .educational-wrap {
   display: flex;
@@ -313,23 +328,4 @@ body.home .container ul {
   border-radius: 50%;
   margin-bottom: 15px;
   border: 4px solid white;
-}
-
-/* === TEXT === */
-.title {
-  font-family: "Press Start 2P";
-  font-size: 20px;
-  color: white;
-  margin-left: 20px;
-}
-h3{
-  font-family: "Press Start 2P", system-ui;
-  text-align: center;
-  color: black;
-  padding: 0; 
-  margin:  5px 0;
-}
-a{
-  color: #000;
-  text-decoration: none;
 }
