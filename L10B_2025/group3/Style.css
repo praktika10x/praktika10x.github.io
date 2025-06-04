@@ -76,9 +76,9 @@ body.home .header {
   height: 100vh;
   z-index: 10;
 }
-
+/*==бічна панель==*/
 body.home .sidebar {
-  height: 75vh;
+  height: 35vh;
 }
 
 .sidebar:hover {
