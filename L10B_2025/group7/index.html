@@ -22,6 +22,7 @@
         <a href="project.html">Про проєкт</a>
         <a href="profesiyi.html">Професії</a>
         <a href="dovidka.html">Довідникова інформація</a>
+        <a href="posibnyk.html">Посібник</a>
     </div>
 
     <section class="hero">
@@ -109,7 +110,7 @@
             <div class="text-wrapper">
                 <h3>Залишайся в безпеці онлайн</h3>
                 <p>Проводите в інтернеті понад 5 хвилин на день? Тоді дізнайтеся про новітні ігри, програми та соціальні мережі. А також як захистити свою інформацію та повідомити про неприйнятний контент чи порушення політики приватності. Цей посібник стане вашим надійним помічником у цифровому світі.</p>
-                <a href="posibnick.html" class="btn">Переглянути всі</a>
+                <a href="posibnyk.html" class="btn">Переглянути всі</a>
             </div>
             <div class="image-wrapper">
                 <img src="https://i.postimg.cc/Qtxj3dD2/internet-guide.jpg" alt="Посібник з безпечного інтернету" />
@@ -145,8 +146,9 @@
 
         function updateCarousel() {
             if (newsCards.length === 0) return;
-            const cardWidth = newsCards[0].offsetWidth;
-            const gap = parseFloat(getComputedStyle(newsCardsWrapper).gap) || 30;
+            // Get the actual width of a card (including padding/border)
+            const cardWidth = newsCards[0].offsetWidth; 
+            const gap = parseFloat(getComputedStyle(newsCardsWrapper).gap) || 30; // Get the computed gap
             const totalShift = currentIndex * (cardWidth + gap);
             newsCardsWrapper.style.transform = `translateX(${-totalShift}px)`;
         }
@@ -155,7 +157,7 @@
             if (currentIndex < newsCards.length - 1) {
                 currentIndex++;
             } else {
-                currentIndex = 0;
+                currentIndex = 0; // Loop back to the beginning
             }
             updateCarousel();
         });
@@ -164,13 +166,13 @@
             if (currentIndex > 0) {
                 currentIndex--;
             } else {
-                currentIndex = newsCards.length - 1;
+                currentIndex = newsCards.length - 1; // Loop to the end
             }
             updateCarousel();
         });
 
         window.addEventListener('resize', updateCarousel);
-        updateCarousel();
+        updateCarousel(); // Initial call to set correct position on load
     </script>
 </body>
 </html>
