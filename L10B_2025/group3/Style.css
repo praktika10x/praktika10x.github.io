@@ -1,210 +1,207 @@
 /* === RESET === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: #333;
 }
 
 /* === HEADER === */
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background: linear-gradient(to right, #5e3c98, #6e6bc0);
-  color: white;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 40px;
+background: linear-gradient(to right, #5e3c98, #6e6bc0);
+color: white;
 }
 .header-logo {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+display: flex;
+align-items: center;
+gap: 15px;
 }
 .header-logo img {
-  height: 50px;
-}
-.header-title {
-  font-size: 26px;
-  font-weight: bold;
+height: 50px;
 }
 
 /* === SIDEBAR === */
 .sidebar {
-  width: 10px;
-  background-color: #221c69;
-  transition: width 0.4s ease;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  z-index: 10;
+width: 10px;
+background-color: #221c69;
+transition: width 0.4s ease;
+overflow: hidden;
+position: fixed;
+top: 0;
+left: 0;
+height: 100vh;
+z-index: 10;
 }
 .sidebar:hover {
-  width: 120px;
+width: 120px;
 }
 .sidebar ul {
-  list-style: none;
-  padding: 20px 0;
+list-style: none;
+padding: 20px 0;
 }
 .sidebar ul li {
-  padding: 12px 20px;
+padding: 12px 20px;
 }
 .sidebar ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-  display: block;
-  transition: background 0.3s;
+color: white;
+text-decoration: none;
+font-size: 14px;
+display: block;
+transition: background 0.3s;
 }
 .sidebar ul li:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* === MAIN CONTENT WRAPPER === */
 .container {
-  margin-left: 10px;
-  transition: margin-left 0.4s ease;
+margin-left: 10px;
+transition: margin-left 0.4s ease;
 }
 .sidebar:hover ~ .container {
-  margin-left: 120px;
+margin-left: 120px;
 }
 
 /* === SECTION TITLES === */
 .section-title {
-  text-align: center;
-  font-size: 24px;
-  font-family: "Press Start 2P", cursive;
-  color: #261374;
-  margin: 40px 0 30px;
-  text-decoration: underline;
+text-align: center;
+font-size: 24px;
+font-family: "Press Start 2P", cursive;
+color: #261374;
+margin: 40px 0 30px;
+text-decoration: underline;
 }
 
 /* === CARDS === */
 .wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+padding: 20px;
 }
 .card {
-  width: 250px;
-  background-color: #f9cdda;
-  border: 2px solid lightgray;
-  border-radius: 15px;
-  padding: 15px;
-  text-align: center;
-  color: #333;
-  box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
-  transition: transform 0.3s, box-shadow 0.3s;
+width: 250px;
+background-color: #f9cdda;
+border: 2px solid lightgray;
+border-radius: 15px;
+padding: 15px;
+text-align: center;
+color: #333;
+box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
+transition: transform 0.3s, box-shadow 0.3s;
 }
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 4px 4px 12px rgba(135, 206, 235, 0.8);
+transform: translateY(-5px);
+box-shadow: 4px 4px 12px rgba(135, 206, 235, 0.8);
 }
 .card img {
-  width: 80px;
-  margin-bottom: 10px;
+width: 80px;
+margin-bottom: 10px;
 }
 .card_educational {
-  background-color: #fff;
-  min-height: 240px;
+background-color: #fff;
+min-height: 240px;
 }
 .card-salary {
-  background-color: #f5bb47;
+background-color: #f5bb47;
 }
 
 /* === INFO CARDS === */
 .cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  margin-bottom: 40px;
-  cursor: pointer;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 10px;
+margin-bottom: 40px;
+cursor: pointer;
 }
 .card-size {
-  grid-column: span 2;
+grid-column: span 2;
 }
 .info-cards {
-  display: grid;
-  grid-column-gap: 55px;
-  padding: 0 100px;
+display: grid;
+grid-column-gap: 55px;
+padding: 0 100px;
 }
 .info-card {
-  margin-bottom: 20px;
+margin-bottom: 20px;
 }
 .card-title {
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 32px;
-  margin-bottom: 20px;
+font-weight: 500;
+font-size: 25px;
+line-height: 32px;
+margin-bottom: 20px;
 }
 .cart-desc {
-  font-size: 18px;
-  line-height: 28px;
-  margin-bottom: 30px;
+font-size: 18px;
+line-height: 28px;
+margin-bottom: 30px;
 }
 
 /* === SWIPER (Slider) === */
 .swiper {
-  width: 100%;
-  height: 350px;
+width: 100%;
+height: 350px;
 }
 .swiper-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #f0f0f0;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background: #f0f0f0;
+border-radius: 10px;
+padding: 20px;
+text-align: center;
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  color: #51a556;
+color: #51a556;
 }
 .swiper-pagination-bullet-active {
-  background: #51a556;
+background: #51a556;
 }
 .card-pic {
-  width: 100%;
+width: 100%;
 }
 
 /* === FULLSCREEN IMAGE === */
 img.fullscreen-image {
-  width: 80%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
+width: 80%;
+height: auto;
+object-fit: cover;
+display: block;
+margin: 0 auto;
 }
 
 /* === FOOTER === */
 .footer {
-  background-color: #954baa;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 14px;
-  width: 100%;
+background-color: #954baa;
+color: #fff;
+text-align: center;
+padding: 20px 0;
+font-size: 14px;
+width: 100%;
 }
 
 /* === TEXT === */
 .title {
-  font-family: "Press Start 2P";
+font-family: "Press Start 2P";
 }
 
 /* === EDUCATIONAL WRAP === */
 .educational-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  align-items: stretch;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+align-items: stretch;
 }
