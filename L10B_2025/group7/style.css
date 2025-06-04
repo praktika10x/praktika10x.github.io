@@ -229,10 +229,12 @@ footer a:hover {
     color: #ccac35;
 }
 
+
 .profesiyi-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; /* Consistent gap between cards */
     padding: 25px;
     max-width: 1200px;
     margin: 30px auto;
@@ -309,22 +311,20 @@ footer a:hover {
     color: #222;
 }
 
-.cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+
+.cards-container.profesiyi-container { 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
     gap: 30px;
     justify-content: center;
-    padding: 25px 0;
-    max-width: 1400px;
-    margin-right: 20px;
-    margin-left: 20px;
+    padding: 25px 20px; 
+    max-width: 1200px; 
+    margin: 30px auto; 
 }
 
 .card {
     background-color: #ffffff;
     border: 2px solid #f0e0a0;
     border-radius: 18px;
-    
     padding: 30px;
     box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -821,7 +821,7 @@ main section:last-of-type {
 
 @media (max-width: 1200px) {
     .cards-container {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted for slightly smaller cards */
     }
 }
 
@@ -906,13 +906,12 @@ main section:last-of-type {
     .cards-container {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         margin-bottom: 40px;
-        padding: 25px 20px; 
+        padding: 25px 20px;
     }
 
     .image-text-block {
         margin-bottom: 40px;
     }
-
 
     section {
         margin-bottom: 40px;
@@ -930,11 +929,11 @@ main section:last-of-type {
     }
 
     .cards-container {
-        grid-template-columns: 1fr; 
-        padding: 25px 15px; 
+        grid-template-columns: 1fr;
+        padding: 25px 15px;
     }
 
     .card {
-        width: auto; 
+        width: auto;
     }
 }
