@@ -27,8 +27,14 @@ body {
   padding: 20px 40px;
   background: linear-gradient(to right, #5e3c98, #6e6bc0);
   color: white;
-  flex-direction: row-reverse; 
-  width: 100%;
+}
+
+.header-logo {
+  order: 0;
+}
+
+body.home .header {
+  flex-direction: row-reverse;
 }
 
 /* === HEADER LOGO === */
