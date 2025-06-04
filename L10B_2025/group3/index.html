@@ -1,52 +1,85 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>Frontend</title>
-        <link rel="stylesheet" href="Style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktika_group3</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body class="home">
 
-    </head>
-    <body>
-            <header class="header"><ul class="ulnav">
-            <li class="nav-link"><a href="index.html"  class="anav">Головна</a></li>
-            <li class="nav-link"><a href="Beckend-index.html" class="anav">Backend Developer</a></li>
-            <li class="nav-link"><a href="Frontend.html" class="anav">Frontend Developer</a></li>
-            <li class="nav-link"><a href="Full-stack Developer.html" class="anav">Full-stack Developer</a></li>
-            <li class="nav-link"><a href="../../index.html" class="anav">Подивитися інші професії</a></li>
-        </ul>
-            <p class="pnav">Розробка програмного забезпечення</p>
-            <img src="ПроектЛого.svg../" class="logonav">
-            </header>
-        <p><span>Розробка програмного забезпечення</span> — це не просто написання коду. Це захопливий і складний процес створення цифрових рішень, які ми щодня використовуємо: мобільні додатки, вебсайти, ігри, програми для бізнесу, системи керування, штучний інтелект та багато іншого.<br>Цей процес включає кілька ключових етапів:</p>
-        <ul>
-            <li>Збір вимог — вивчення потреб користувачів та замовників;</li>
-            <li>Проєктування — створення структури та логіки майбутньої програми;</li>
-            <li>Кодування — перетворення ідей у робочий код;</li>
-            <li>Тестування — пошук і виправлення помилок;</li>
-            <li>Розгортання — запуск продукту у світ;.</li>
-            <li>Підтримка та оновлення — удосконалення програм після релізу</li>
-        </ul>
-        <p><span>Розробка ПЗ</span>— це командна гра, у якій беруть участь аналітики, дизайнери, програмісти, тестувальники та менеджери. Це поле, де творчість зустрічається з технологіями, а кожен новий проєкт — це виклик і можливість змінити світ на краще.<br>Якщо ти мрієш створювати інноваційні продукти, впливати на майбутнє і постійно розвиватись — розробка програмного забезпечення може стати твоїм ідеальним шляхом.</p>
-        <div class="wrapnav">
-            <a href="Frontend.html"><div class="cardnav">
-                <img class="imgnav" src="фотонав1.jpg">
-                <h3>Левченко Юлія</h3>
-                <p class="name">Привіт! Я Юлія, 16 років, тімлід цього проєкту. Дбаю про злагоджену роботу команди. Також створила одну зі сторінок — натисни на картку, щоб її побачити!</p>
-            </div></a>
-            <a href="Beckend-index.html"><div class="cardnav">
-                <img class="imgnav" src="фотонав2.jpg">
-                <h3>Носова Лілія</h3>
-                <p  class="name">Привіт! Я Лі, 16 років. Я працювала над сторінкою про Backend (щоб переглянути її натисни тут)</p>
-            </div></a>
-            <a href="Full-stack Developer.html"><div class="cardnav">
-                <img class="imgnav" src="фотонав3.jpg">
-                <h3>Лелеко Діана</h3>
-                <p  class="name">Привіт! Я Діана, 16 років. Щоб перейти та ознайомитись з професією Full-stack Developer натисніть кнопку.</p>
-            </div></a>
+    <!-- Хедер -->
+    <header class="header">
+        <div class="header-logo">
+            <img src="Project-img/SVG/ПроектЛого.svg" alt="Логотип" />
+            <p>Розробка програмного забезпечення</p>
         </div>
-    </body>
+    </header>
+    
+    <!-- Навігація (бокова) -->
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="Frontend.html">Frontend Developer</a></li>
+                <li><a href="Beckend-index.html">Backend</a></li>
+                <li><a href="Full-stack Developer.html">Full-stack Developer</a></li>
+                <li><a href="../../index.html">Інші професії</a></li>
+            </ul>
+        </aside>
+
+        <!-- Основний контент -->
+        <main class="main-content">
+            <section class="intro">
+                <dl>
+                    <dt>Номер групи</dt>
+                    <dd>3</dd>
+                    <dt>Учасники</dt>
+                    <dd>Левченко Юля, Носова Ліля, Лелеко Діана</dd>
+                    <dt>Тема дослідження</dt>
+                    <dd>Розробка програмного забезпечення: Frontend, Backend, Full-stack</dd>
+                </dl>
+            </section>
+        </main>
+    
+    
+<p>Розробка програмного забезпечення — це не просто написання коду. Це захопливий і складний процес створення цифрових рішень, які ми щодня використовуємо: 
+    мобільні додатки, вебсайти, ігри, програми для бізнесу, системи керування, штучний інтелект та багато іншого.</p>
+Цей процес включає кілька ключових етапів:
+<ul>
+<li>Збір вимог — вивчення потреб користувачів та замовників;</li>
+<li>Проєктування — створення структури та логіки майбутньої програми;</li>
+<li>Кодування — перетворення ідей у робочий код;</li>
+<li>Тестування — пошук і виправлення помилок;</li>
+<li>Розгортання — запуск продукту у світ;</li>
+<li>Підтримка та оновлення — удосконалення програм після релізу.</li>
+<li>Розробка ПЗ — це командна гра, у якій беруть участь аналітики, дизайнери, програмісти, тестувальники та менеджери. Це поле, де творчість зустрічається з технологіями, а кожен новий проєкт — це виклик і можливість змінити світ на краще.</li>
+<li>Якщо ти мрієш створювати інноваційні продукти, впливати на майбутнє і постійно розвиватись — розробка програмного забезпечення може стати твоїм ідеальним шляхом.</li>
+</ul>
+        <p>Розробка ПЗ — це командна гра, у якій беруть участь аналітики, дизайнери, програмісти, тестувальники та менеджери. Це поле, де творчість зустрічається з технологіями, а кожен новий проєкт — це виклик і можливість змінити світ на краще.
+Якщо ти мрієш створювати інноваційні продукти, впливати на майбутнє і постійно розвиватись — розробка програмного забезпечення може стати твоїм ідеальним шляхом.</p>
+ </div>   
+    <!-- Футер -->
+<footer class="footer">
+  <div class="team-cards">
+    <a href="Frontend.html" class="card team-card">
+      <img src="Project-img/yulia.jpg">
+      <h3>Левченко Юлія</h3>
+      <p>Привіт! Я Юлія, 16 років, тімлід цього проєкту...</p>
+    </a>
+
+    <a href="Beckend-index.html" class="card team-card">
+      <img src="Project-img/lilia.jpg">
+      <h3>Носова Лілія</h3>
+      <p>Привіт! Я Лі, 16 років. Я працювала над сторінкою...</p>
+    </a>
+
+    <a href="Full-stack Developer.html" class="card team-card">
+      <img src="Project-img/diana.jpg">
+      <h3>Лелеко Діана</h3>
+      <p>Привіт! Я Діана, 16 років. Щоб перейти до професії...</p>
+    </a>
+  </div>
+</footer>
+
+</body>
 </html>
