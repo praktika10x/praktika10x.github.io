@@ -14,16 +14,16 @@ body {
 
 /* === HEADER === */
 .header {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  padding: 20px;
   background: linear-gradient(to right, #5e3c98, #6e6bc0);
-  gap: 40px;
+  padding: 20px;
+  color: white;
 }
 
 .header-logo {
-  order: 0;
+  justify-self: start;
 }
 
 body.home .header {
