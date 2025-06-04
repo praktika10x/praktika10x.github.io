@@ -1045,6 +1045,99 @@ footer .sourses:hover {
     width: 80px;
   }
 }
+@media (max-width: 1024px) {
+  .intro-center {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .intro-text {
+    width: 90%;
+    font-size: 20px;
+    text-align: center;
+  }
+  .intro-video iframe {
+    width: 90vw;
+    max-width: 560px;
+    height: 260px;
+  }
+  .duties-list {
+    min-height: 700px;
+  }
+  .duty {
+    font-size: 22px;
+    padding: 18px 16px;
+  }
+  .duty:nth-child(1) { top: 10px; left: 10px; width: 90vw; max-width: 700px;}
+  .duty:nth-child(2) { top: 110px; right: 10px; width: 90vw; max-width: 700px;}
+  .duty:nth-child(3) { top: 260px; left: 10px; width: 90vw; max-width: 700px;}
+  .duty:nth-child(4) { top: 410px; right: 10px; width: 90vw; max-width: 700px;}
+  .path-cards {
+    gap: 20px;
+  }
+  .skills-main-text {
+    font-size: 28px;
+    width: 95vw;
+    max-width: 95vw;
+  }
+  .skills-flip-cards {
+    gap: 20px;
+    max-width: 100vw;
+  }
+  .skills-flip-card {
+    width: 320px;
+    height: 200px;
+  }
+  .skills-flip-card-front, .skills-flip-card-back {
+    font-size: 22px;
+    padding: 20px 10px;
+  }
+  .skills-flip-card-back ul {
+    font-size: 18px;
+  }
+  .dashboard-row {
+    gap: 16px;
+  }
+  .dashboard-card {
+    min-width: 180px;
+    max-width: 320px;
+    font-size: 16px;
+    padding: 18px 10px;
+  }
+  .dashboard-title {
+    font-size: 20px;
+  }
+  .career-block,
+  .career-sequence .career-block,
+  .career-block-roles,
+  .career-sequence .career-block-roles {
+    font-size: 1.2rem;
+    min-width: 180px;
+    max-width: 220px;
+    padding: 16px 10px;
+  }
+  .career-arrow,
+  .career-sequence .career-arrow {
+    width: 32px;
+    height: 22px;
+  }
+  .salary-table {
+    width: 90vw;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .salary-table th, .salary-table td {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .footer-author-block img {
+    width: 120px;
+    height: 130px;
+  }
+  .footer-author-block h3 {
+    font-size: 16px;
+    width: 80px;
+  }
+}
 
 @media (max-width: 700px) {
   .header {
@@ -1255,11 +1348,4 @@ footer .sourses:hover {
     padding: 4px 8px;
     margin-top: 4px;
   }
-}
-
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
 }
