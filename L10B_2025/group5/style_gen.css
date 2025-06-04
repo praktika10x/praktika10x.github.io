@@ -163,7 +163,7 @@ header nav ul li a:hover {
 .main-section {
    display: flex;
    width: 100%;
-   min-height: 300px;
+   min-height: 500px;
    height: auto;
    background-color: #2219a3; 
    color: #fff;
