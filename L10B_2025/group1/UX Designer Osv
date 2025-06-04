@@ -4,47 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>UI/UX Designer osv</title>
-  <style>
-	    table, th, td {
-	        border: 1px solid black;
-	        font-size:30px
-	    }
-	    table {
-	        width: 80%;
-	        
-	        margin: auto;
-	    }
-	    .card {
-          width: 250px;
-          height: 410px;
-          border: 2px grey solid;
-          border-radius:10px;
-          float:left;
-          margin: 10px;
-          padding: 20px;
-         background: lightgrey;
-         font-size:30px;
-      }
-      .wrap{
-          width: 1000px;
-          margin: auto;
-          display: flex;
-          justify-content: space-evenly;}
-          .bum {
-              aling: center
-          height: 30px;
-          border: 2px grey solid;
-          border-radius:10px;
-         background: lightgrey;
-              display: flex;
-          justify-content: center;
-          font-size:30px
-          }
-          h2{font-size:50px;
-              text-align: center;
-          }
-          
-	    </style>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div class="bum">
