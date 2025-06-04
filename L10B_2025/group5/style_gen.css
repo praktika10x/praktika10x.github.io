@@ -306,10 +306,10 @@ footer h2 {
     display: flex;
     flex-direction: row;
     gap: 32px;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    margin-left: auto;
+    width: 100%;
 }
 
 
