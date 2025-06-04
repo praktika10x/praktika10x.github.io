@@ -1,3 +1,4 @@
+/* === RESET === */
 html, body {
   margin: 0;
   padding: 0;
@@ -11,312 +12,138 @@ body {
   background-color: #f4f4f4;
   color: #333;
 }
+/* === FONT === */
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tektur {
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+@font-face {
+  font-family: 'Comic_Sans_MS';
+  src: url('Comic_Sans_MS.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* === HEADER === */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background: linear-gradient(to right, #5e3c98, #6e6bc0);
-  color: white;
+.header{
+  width: 100%;
+  height: 75vh;
+  background: linear-gradient(180deg, #ee46a5 0%, #f28d6c 44.23%, #f5bb47 73.08%);
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: repeat(6, 1fr);
 }
 
-.header-logo {
-  order: 0;
-}
-
-body.home .header {
-  flex-direction: row-reverse;
-   background: linear-gradient(to top, #F5BB47, #F28D6C, #EE46A5);
-}
-
-/* === HEADER LOGO === */
-.header-logo {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.header-logo img {
-  height: 50px;
-}
-
-.nav-links {
-  display: flex;              
-  justify-content: center;    
-  align-items: center;
-  gap: 20px;                  
-  list-style: none;           
-  padding: 0;
-  margin: 0;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #ffffff;           
-  font-size: 1.1rem;
-  transition: color 0.3s;
-  font-family: "Tektur", sans-serif;
-}
-
-.nav-links li a:hover {
-  color: #ffcc00;           
-}
-
-
-/* === SIDEBAR === */
-.sidebar {
-  width: 10px;
-  background-color: #221c69;
-  transition: width 0.4s ease;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  z-index: 10;
-}
-
-.sidebar:hover {
-  width: 120px;
-}
-
-.sidebar ul {
+.header > .ulnav {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 6;
+  width: 100%;
+  height: 116.5%;
   list-style: none;
-  padding: 20px 0;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
 }
 
-.sidebar ul li {
-  padding: 12px 20px;
-}
-
-.sidebar ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-  display: block;
-  transition: background 0.3s;
-}
-
-.sidebar ul li:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* === MAIN CONTENT WRAPPER === */
-.container {
-  margin-left: 10px;
-  transition: margin-left 0.4s ease;
-}
-
-.sidebar:hover ~ .container {
-  margin-left: 120px;
-}
-
-/* === SECTION TITLES === */
-.section-title {
-  text-align: center;
-  font-size: 24px;
-  font-family: "Press Start 2P", cursive;
-  color: #261374;
-  margin: 40px 0 30px;
-  text-decoration: underline;
-}
-
-/* === CARDS === */
-.wrap {
+.nav-link .anav {
   display: flex;
-  flex-wrap: wrap;
+  padding: 8px 16px;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #4B3E82;
+  font-family: "Press Start 2P", system-ui;
+  height: 100%; 
 }
-.card {
+
+.nav-link .anav:hover {
+  color: #F5BB47;
+}
+.pnav{
+  grid-column: 2 / span 3;
+  grid-row: 2 / span 4;
+  justify-self: center;
+  align-self: center;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 500;
+  font-size: 95px;
+  line-height: 125%;
+  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.50);
+  letter-spacing: -0.05em;
+  text-align: right;
+  color: #fff;
+  margin:0 5px 0 0;
+}
+.logonav{
+  width: 50%;
+  grid-column: 4 / span 1;
+  margin: 8px;
+  justify-self: end;
+}
+/*ТЕКСТ ГОЛОВНА*/
+span{
+  font-family: "Tektur", sans-serif;
+  font-size: 20px;
+  font-weight: 550;
+  color: #261374;
+}
+p{
+  font-family: "Comic_Sans_MS", cursive;
+  margin: 20px 25% ;
+}
+ul{
+  font-family: "Comic_Sans_MS", cursive;
+  margin: 20px 25% ;
+  
+}
+
+/*КАРТИ ГОЛОВНА*/
+.cardnav{
+  height: 320px;
   width: 250px;
-  background-color: #f9cdda;
-  border: 2px solid lightgray;
   border-radius: 15px;
   padding: 15px;
-  text-align: center;
-  color: #333;
-  box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 6px 8px 8px 0 rgba(38, 19, 116, 0.45);
+  background: linear-gradient(180deg, rgba(149, 75, 170, 0.65) 65.38%, rgba(255, 255, 255, 0.65) 99.99%);
 }
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 4px 4px 12px rgba(135, 206, 235, 0.8);
-}
-
-.card img {
-  width: 80px;
-  margin-bottom: 10px;
-}
-
-.card_educational {
-  background-color: #fff;
-  min-height: 240px;
-}
-
-.card-salary {
-  background-color: #f5bb47;
-}
-
-/* === INFO CARDS === */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  margin-bottom: 40px;
-  cursor: pointer;
-}
-
-.card-size {
-  grid-column: span 2;
-}
-
-.info-cards {
-  display: grid;
-  grid-column-gap: 55px;
-  padding: 0 100px;
-}
-
-.info-card {
-  margin-bottom: 20px;
-}
-
-.card-title {
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 32px;
-  margin-bottom: 20px;
-}
-
-.cart-desc {
-  font-size: 18px;
-  line-height: 28px;
-  margin-bottom: 30px;
-}
-
-/* === SWIPER (Slider) === */
-.swiper {
-  width: 100%;
-  height: 350px;
-}
-
-.swiper-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #f0f0f0;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  color: #51a556;
-}
-
-.swiper-pagination-bullet-active {
-  background: #51a556;
-}
-
-.card-pic {
-  width: 100%;
-}
-
-/* === FULLSCREEN IMAGE === */
-img.fullscreen-image {
-  width: 80%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-}
-
-/* === FOOTER === */
-.footer {
-  background-color: #954baa;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 14px;
-  width: 100%;
-  margin: 0;
-}
-body.home .footer {
-  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c1146747822663.58864f9b18733.jpg"); 
-  background-size: cover;       
-  background-position: center; 
-  background-repeat: no-repeat; 
-  color: white;                
-}
-
-/* === TEXT === */
-.title {
-font-family: 'Press Start 2P';
-font-style: normal;
-font-weight: 400;
-font-size: 80px;
-line-height: 100px;
-/* or 125% */
-text-align: right;
-letter-spacing: -0.05em;
-color: #FFFFFF;
-}
-
-/* === EDUCATIONAL WRAP === */
-.educational-wrap {
+.wrapnav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  align-items: stretch;
-}
-/* == Списки == */
-body.home .container ul {
-  list-style-type: disc;     
-  color: black;              
-  padding-left: 2rem;        
-}
-/* == team-cards == */
-.team-card {
-  background: linear-gradient(to bottom, rgba(149, 75, 170, 0.65), rgba(255, 255, 255, 0.65));
-  border-radius: 20px;
   padding: 20px;
-  width: 260px;
+  background-image: url("фонгол.jpg")
+}
+.imgnav{
+  width: 150px;
+  height: 150px;
+  display: block;
+  border-radius: 100%;
+  margin: 0 20%;
+}
+h3{
+  font-family: "Press Start 2P", system-ui;
   text-align: center;
   color: black;
-  font-family: "Tektur", sans-serif;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
-  backdrop-filter: blur(6px);
-  display: block;
+  padding: 0; 
+  margin:  5px 0;
+}
+.name{
+  margin:0;
+}
+a{
+  color: #000;
   text-decoration: none;
-  color: inherit;
-}
-
-.team-card:hover {
-  transform: scale(1.05);
-}
-.team-cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  padding: 20px 0;
-  background: none;
-  border-radius: 0;
-}
-
-.team-card img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  border: 4px solid white;
 }
