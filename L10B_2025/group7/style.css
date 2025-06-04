@@ -1,9 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap');More actions
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap');
+
+@keyframes moveAndFade {
+    0% {
+        transform: translate(0, 0) scale(0.8) rotate(0deg);
+        opacity: 0.1;
+    }
+    25% {
+        opacity: 0.15;
+    }
+    50% {
+        transform: translate(100vw, 100vh) scale(1.2) rotate(180deg);
+        opacity: 0.2;
+    }
+    75% {
+        opacity: 0.1;
+    }
+    100% {
+        transform: translate(0, 0) scale(0.8) rotate(360deg);
+        opacity: 0.15;
+    }
+}
+
+.animated-background {
+    position: relative;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.animated-background::before,
+.animated-background::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(45deg, #f0e0a0 25%, transparent 25%, transparent 75%, #f0e0a0 75%, #f0e0a0),
+                      linear-gradient(-45deg, #f0e0a0 25%, transparent 25%, transparent 75%, #f0e0a0 75%, #f0e0a0);
+    background-size: 20px 20px;
+    background-repeat: round;
+    top: -50px;
+    left: -50px;
+    opacity: 0.1;
+    z-index: -1;
+    animation: moveAndFade 25s linear infinite alternate;
+}
+
+.animated-background::after {
+    width: 150px;
+    height: 150px;
+    top: auto;
+    left: auto;
+    bottom: -50px;
+    right: -50px;
+    animation: moveAndFade 30s linear infinite alternate-reverse;
+}
 
 body {
     font-family: 'Courier', Courier;
-    background-color: #FFFBDE;
-    background-color: #fffbde;
+    background-color: #FFFFFF;
     margin: 0;
     padding: 0;
     color: #333;
@@ -311,14 +364,14 @@ footer a:hover {
     color: #222;
 }
 
-.cards-container {
+.intro-cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    justify-content: space-around; /* Changed from center to space-around */
-    padding: 25px 0;
-    max-width: 1400px;
-    margin: 0 auto 60px auto;
+    padding: 25px;
+    max-width: 1200px;
+    margin: 30px auto 60px auto;
+    justify-content: center;
 }
 
 .card {
@@ -332,6 +385,7 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: left;
 }
 
 .card:hover {
@@ -347,6 +401,7 @@ footer a:hover {
     border-left: none;
     padding-left: 0;
     margin-top: 0;
+    text-align: left;
 }
 
 .card p {
@@ -356,6 +411,7 @@ footer a:hover {
     flex-grow: 1;
     margin-bottom: 25px;
     line-height: 1.6;
+    text-align: left;
 }
 
 .btn {
@@ -377,24 +433,6 @@ footer a:hover {
     background-color: #e0c340;
     border-color: #ccac35;
     color: #222;
-}
-
-.intro-card-text {
-    text-align: left;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.intro-card-text h2 {
-    text-align: left;
-    padding-left: 0px;
-}
-
-.intro-card-text p {
-    text-align: left;
-    padding-left: 0px;
 }
 
 .icon-circle {
@@ -760,7 +798,7 @@ footer a:hover {
 .youtube-player {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     margin-top: 20px;
@@ -824,21 +862,21 @@ footer a:hover {
     transform: translate(-50%, -50%) scale(1.1);
 }
 
-.guide-section-title { /* New class for guide sections */
+.guide-section-title { 
     font-family: 'Roboto', sans-serif;
     font-size: 38px;
     color: #a08c30;
     margin-top: 40px;
     margin-bottom: 25px;
     text-align: center;
-    border-left: none; /* Remove left border for center alignment */
-    padding-left: 0; /* Remove padding for center alignment */
+    border-left: none;
+    padding-left: 0;
 }
 
 
 @media (max-width: 1200px) {
-    .cards-container {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .intro-cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }
 
@@ -916,7 +954,7 @@ footer a:hover {
         font-size: 16px;
     }
 
-    .cards-container {
+    .intro-cards-grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         margin-bottom: 40px;
     }
