@@ -279,6 +279,9 @@ body.home .container ul {
   color: black;              
   padding-left: 2rem;        
 }
+body.home .sidebar {
+  height: 75vh; 
+}
 /* == team-cards == */
 .team-card {
   background: linear-gradient(to bottom, rgba(149, 75, 170, 0.65), rgba(255, 255, 255, 0.65));
