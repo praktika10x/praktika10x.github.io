@@ -19,7 +19,7 @@ h1 {
 }
      
 h3{
-    font-family: Beautiful2;
+    font-family: "Balsamiq Sans";
     width:150px;
           color:white;
           background:lightgray;
@@ -80,12 +80,26 @@ h3{
     
     
 }
-@font-face {
-font-family: Beautiful;
-src: url(Beautiful Valentine.otf)
+.balsamiq-sans-regular {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@font-face {
-font-family: Beautiful2;
-src: url("https://codehs.com/uploads/90617795cd106861eb3eca7429e0c98f")
+.balsamiq-sans-bold {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.balsamiq-sans-regular-italic {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.balsamiq-sans-bold-italic {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
