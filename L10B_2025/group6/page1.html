@@ -5,89 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloud Robotics Engineer</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            background-image: url('img/mainbackground.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
+        * {
             box-sizing: border-box;
         }
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 40px 30px;
-            border-radius: 15px;
-            margin-top: 40px;
-            margin-bottom: 40px;
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #e0f7fa 0%, #e0f7fa 70%, #d3d3d3 100%);
         }
 
-        h1 {
-            color: #2c3e50;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+        }
+
+        .content {
+            max-width: 1000px;
+            background-color: #ffffff;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
-            color: #34495e;
+            color: #2c3e50;
             margin-top: 30px;
         }
 
-        p {
-            line-height: 1.6;
+        p, li {
             color: #333;
+            line-height: 1.6;
         }
 
-        a.button {
+        ul {
+            padding-left: 20px;
+        }
+
+        .btn-back {
             display: inline-block;
             margin-top: 30px;
-            padding: 10px 20px;
-            background-color: #2c3e50;
-            color: white;
+            padding: 10px 25px;
+            background-color: #34495e;
+            color: #fff;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background-color: #2c3e50;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Cloud Robotics Engineer</h1>
-        <p>Cloud Robotics Engineer — це фахівець, який працює на перетині хмарних обчислень і робототехніки. Його основна мета — забезпечити взаємодію роботизованих систем із хмарною інфраструктурою для підвищення їх ефективності, масштабованості та інтелектуальних можливостей.</p>
+    </header>
 
-        <h2>Основні обов’язки:</h2>
+    <div class="content">
+        <p><strong>Cloud Robotics Engineer</strong> — це інженер, який поєднує робототехніку та хмарні обчислення для створення високоефективних, інтелектуальних і масштабованих рішень. Такий спеціаліст дозволяє роботам взаємодіяти із хмарною інфраструктурою для обміну даними, аналітики та керування.</p>
+
+        <h2>Основні обов’язки</h2>
         <ul>
-            <li>Розробка та впровадження архітектури для інтеграції роботів із хмарними платформами (AWS, Azure, GCP).</li>
-            <li>Побудова систем дистанційного керування роботами через хмару.</li>
-            <li>Забезпечення обміну даними між роботами та хмарними аналітичними сервісами.</li>
-            <li>Оптимізація використання обчислювальних ресурсів між локальними та хмарними вузлами.</li>
-            <li>Захист передачі даних, автентифікація та авторизація роботів у хмарній мережі.</li>
+            <li>Розробка архітектури для зв'язку роботів із хмарними сервісами (AWS, GCP, Azure).</li>
+            <li>Інтеграція з аналітичними платформами для обробки даних у реальному часі.</li>
+            <li>Налаштування безпечної передачі даних і автентифікації роботів у мережі.</li>
+            <li>Застосування DevOps та CI/CD-практик у розгортанні рішень.</li>
+            <li>Оптимізація роботи через балансування між локальними й хмарними обчисленнями.</li>
         </ul>
 
-        <h2>Необхідні навички:</h2>
+        <h2>Необхідні навички</h2>
         <ul>
-            <li>Добре розуміння хмарних технологій (особливо PaaS, SaaS, IaaS).</li>
-            <li>Знання робототехнічних платформ, таких як ROS (Robot Operating System).</li>
-            <li>Вміння працювати з REST API, MQTT, WebSocket.</li>
-            <li>Досвід у DevOps-практиках та CI/CD-пайплайнах.</li>
-            <li>Базові знання ML/AI для інтеграції інтелектуальної поведінки роботів.</li>
+            <li>Знання хмарних технологій (IaaS, PaaS, SaaS).</li>
+            <li>Досвід роботи з ROS, Gazebo або подібними симуляторами.</li>
+            <li>Розуміння мережевих протоколів: MQTT, REST, WebSocket.</li>
+            <li>Розуміння DevOps-інструментів: Jenkins, GitHub Actions, Docker, Kubernetes.</li>
+            <li>Базові навички у сфері штучного інтелекту та машинного навчання.</li>
         </ul>
 
-        <h2>Приклади використання:</h2>
-        <p>Cloud Robotics Engineer може розробляти системи автономної доставки, де дрони або мобільні платформи отримують маршрути з хмари, передають телеметрію у режимі реального часу, а вся логіка маршрутизації виконується на потужних серверах.</p>
+        <h2>Де використовується</h2>
+        <p>Ця професія актуальна у галузях логістики, виробництва, сільського господарства, охорони здоров’я та розумних міст. Наприклад, дрони, які отримують маршрути з хмари, або автономні візки на складах, які оптимізують свій шлях на основі аналітики в режимі реального часу.</p>
 
-        <h2>Інструменти та платформи:</h2>
+        <h2>Популярні платформи</h2>
         <ul>
             <li>Google Cloud Robotics</li>
             <li>Amazon RoboMaker</li>
-            <li>Microsoft Azure IoT</li>
-            <li>Docker, Kubernetes для оркестрації контейнерів</li>
-            <li>Grafana, Prometheus для моніторингу</li>
+            <li>Microsoft Azure Robotics та IoT Hub</li>
+            <li>Docker, Kubernetes</li>
+            <li>Grafana, Prometheus</li>
         </ul>
 
-        <a class="button" href="index.html">Назад на головну</a>
+        <a href="index.html" class="btn-back">Назад на головну</a>
     </div>
 </body>
 </html>
