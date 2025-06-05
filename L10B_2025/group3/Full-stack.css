@@ -250,7 +250,11 @@ img.fullscreen-image {
 .card p strong {
   font-size: 40px;
 }
-. color {
-    background: linear-gradient(180deg, rgba(255, 170, 0, 0.5) 19.23%, rgba(151, 71, 255, 0.5) 88.46%);
-    width: 100%;
+.color {
+ background: linear-gradient(180deg, rgba(255, 170, 0, 0.5) 19.23%, rgba(151, 71, 255, 0.5) 88.46%);
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin: 40px 0;
 }
+
+
