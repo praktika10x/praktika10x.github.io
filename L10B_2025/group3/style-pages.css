@@ -7,7 +7,7 @@
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
- 
+
 .press-start-2p-regular {
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
@@ -105,7 +105,7 @@ p {
   flex-wrap: wrap;
   justify-content: center; 
   padding: 20px;
-  gap: 10px; /* відступи між картками */
+  gap: 20px; /* відступи між картками */
 }
 
 .card {
@@ -131,8 +131,8 @@ p {
 }
 
 .card_educational {
-  width: 100%;
-  max-width: 550px;
+  width: 20%;
+  max-width: 25%;
   background-color: #fff;
 }
 
