@@ -105,7 +105,6 @@ p {
   flex-wrap: wrap;
   padding: 20px;
   justify-content: space-evenly;
-  flex-direction: left;
 }
 
 .card {
