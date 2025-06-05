@@ -1,14 +1,13 @@
-/* Styles specific to Cybersecurity Analyst page (and similar profession pages) */
 
 .profession-page .container {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1.5s ease-out; /* Global fadeIn for container */
+    animation: fadeIn 1.5s ease-out; 
 }
 
-/* Headings for profession pages */
+
 .profession-page h1 {
     font-size: 3em;
     color: #333;
@@ -32,16 +31,16 @@
     animation: fadeIn 1.5s ease-out;
 }
 
-/* Paragraphs in profession pages */
+
 .profession-page p {
     font-size: 1.1em;
     line-height: 1.8;
     color: #666;
     margin-bottom: 20px;
-    text-align: justify; /* Justify text for paragraphs */
+    text-align: justify; 
 }
 
-/* Cards for roadmap */
+
 .profession-page .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -57,7 +56,7 @@
     text-align: center;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     border: 1px solid #eee;
-    overflow: hidden; /* For icon scaling */
+    overflow: hidden;
 }
 
 .profession-page .card:hover {
@@ -93,7 +92,7 @@
     font-size: 1.6em;
     color: #444;
     margin-bottom: 15px;
-    border-bottom: none; /* Override global h2 border */
+    border-bottom: none; 
 }
 
 .profession-page .card p {
@@ -101,7 +100,7 @@
     color: #777;
 }
 
-/* Lists for tools and deliverables */
+
 .profession-page ul {
     list-style: none;
     padding: 0;
@@ -123,7 +122,7 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Image Placeholder for salary/demand graphs */
+
 .profession-page .image-placeholder {
     display: flex;
     flex-direction: column;
@@ -143,7 +142,7 @@
     transform: scale(1.05);
 }
 
-/* Slider for educational institutions */
+
 .profession-page .slider-container {
     position: relative;
     width: 100%;
