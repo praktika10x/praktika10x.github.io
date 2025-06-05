@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500;600;700;800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -12,7 +12,8 @@ html {
 }
 
 body {
-  font-family: 'Tektur', sans-serif;
+  font-family: 'Jura', sans-serif;
+  font-weight: 500;
   background-color: #0a0a0a;
   color: #ffffff;
   line-height: 1.5;
@@ -29,25 +30,27 @@ body.light-theme {
 
 /* Background overlay */
 body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('https://cdn.discordapp.com/attachments/1266156981450838171/1379850180379148469/678f118d0688b52c1d5d0cf820adbdfb93a522a6.png?ex=6841bd1f&is=68406b9f&hm=41f0d42f71123383a26a0f1f403e4896e68d9eee69f1a1bff947b57b40f9a4bd&');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  opacity: 0.3;
-  z-index: -1;
-  pointer-events: none;
-}
-
-body.light-theme::before {
-  opacity: 0.1;
-}
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cdn.discordapp.com/attachments/1266156981450838171/1379850180379148469/678f118d0688b52c1d5d0cf820adbdfb93a522a6.png?ex=6841bd1f&is=68406b9f&hm=41f0d42f71123383a26a0f1f403e4896e68d9eee69f1a1bff947b57b40f9a4bd&');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.3;
+    z-index: -1;
+    pointer-events: none;
+    transition: background-image 0.3s ease, opacity 0.3s ease;
+  }
+  
+  body.light-theme::before {
+    background-image: url('lightthemebg.png');
+    opacity: 0.1;
+  }
 
 /* Header */
 .site-header {
@@ -94,8 +97,9 @@ body.light-theme .site-header {
   border-radius: 25px;
   background-color: #ffffff;
   color: #000000;
-  font-size: 1rem;
-  font-family: 'Tektur', sans-serif;
+  font-size: 1.1rem;
+  font-family: 'Jura', sans-serif;
+  font-weight: 500;
   outline: none;
   transition: all 0.3s ease;
 }
@@ -213,11 +217,6 @@ body.light-theme .menu-icon {
   z-index: 1;
 }
 
-/* Dark theme background (GIF) */
-.hero-background.dark-bg {
-  background: url('https://cdn.discordapp.com/attachments/1266156981450838171/1379836116936691772/5f2c8c4b013ed26c6804691dbc8acb4ef66923ed.gif?ex=6841b006&is=68405e86&hm=0d4d2e783eeddd62b9afac4118c65a5ec33d950736ed6ed27164ea96c4d67ec9&') center/cover no-repeat;
-  display: block;
-}
 
 /* Light theme background (Video) */
 .hero-background.light-bg {
@@ -283,9 +282,9 @@ body.light-theme .definition-section {
 }
 
 .definition-title {
-  font-family: 'Tektur', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-family: 'Jura', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
   color: #ffffff;
   margin-bottom: 2rem;
   text-align: center;
@@ -317,9 +316,9 @@ body.light-theme .definition-text {
 }
 
 .definition-text p {
-  font-family: 'Tektur', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.95);
   text-align: left;
@@ -332,7 +331,7 @@ body.light-theme .definition-text p {
 
 .highlight {
   color: #b794f6;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 body.light-theme .highlight {
@@ -356,9 +355,9 @@ body.light-theme .professions-section {
 }
 
 .professions-title {
-  font-family: 'Tektur', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-family: 'Jura', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
   color: #ffffff;
   margin-bottom: 3rem;
   text-align: center;
@@ -448,9 +447,9 @@ body.light-theme .profession-icon {
 }
 
 .profession-info h4 {
-  font-family: 'Tektur', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
   color: #ffffff;
   margin-bottom: 0.5rem;
   line-height: 1.3;
@@ -467,9 +466,9 @@ body.light-theme .profession-info h4 {
 }
 
 .profession-info li {
-  font-family: 'Tektur', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-family: 'Jura', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.4;
   margin-bottom: 0.3rem;
@@ -539,9 +538,9 @@ body.light-theme .table-section {
 .job-market-title,
 .roadmap-title,
 .table-title {
-  font-family: 'Tektur', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-family: 'Jura', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
   color: #ffffff;
   margin-bottom: 2rem;
   text-align: center;
@@ -615,9 +614,9 @@ body.light-theme .motion-description {
 }
 
 .motion-description p {
-  font-family: 'Tektur', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.95);
   transition: color 0.3s ease;
@@ -654,9 +653,9 @@ body.light-theme .skills-list {
 }
 
 .skills-list li {
-  font-family: 'Tektur', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.95);
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -724,9 +723,9 @@ body.light-theme .tool-text {
 }
 
 .tool-text p {
-  font-family: 'Tektur', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.95);
   line-height: 1.4;
   text-align: center;
@@ -793,9 +792,9 @@ body.light-theme .motion-create-info {
 }
 
 .motion-create-text li {
-  font-family: 'Tektur', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.95);
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -965,9 +964,9 @@ body.light-theme .demand-info {
 
 .salary-info h4,
 .demand-info h4 {
-  font-family: 'Tektur', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
   color: #ffffff;
   margin-bottom: 0.5rem;
   transition: color 0.3s ease;
@@ -986,9 +985,9 @@ body.light-theme .demand-info h4 {
 
 .salary-info li,
 .demand-info li {
-  font-family: 'Tektur', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.95);
   line-height: 1.6;
   margin-bottom: 0.5rem;
@@ -1048,9 +1047,9 @@ body.light-theme .roadmap-info {
 }
 
 .roadmap-step h4 {
-  font-family: 'Tektur', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
   color: #ffffff;
   margin-bottom: 0.5rem;
   transition: color 0.3s ease;
@@ -1067,9 +1066,9 @@ body.light-theme .roadmap-step h4 {
 }
 
 .roadmap-step li {
-  font-family: 'Tektur', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 400;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.95);
   line-height: 1.5;
   margin-bottom: 0.5rem;
@@ -1100,7 +1099,7 @@ body.light-theme .roadmap-step li::before {
 }
 
 .sub-list li {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -1126,523 +1125,555 @@ body.light-theme .sub-list li::before {
 }
 
 body.light-theme .roadmap-note {
-    background: rgba(209, 173, 255, 0.5);
+  background: rgba(209, 173, 255, 0.5);
+}
+
+.roadmap-note p {
+  font-family: 'Jura', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+body.light-theme .roadmap-note p {
+  color: #333333;
+}
+
+/* Table Section */
+.comparison-table {
+  display: flex;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.table-column {
+  flex: 1;
+  background: rgba(67, 5, 144, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(67, 5, 144, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(67, 5, 144, 0.3);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+body.light-theme .table-column {
+  background: #D1ADFF;
+  border: 1px solid rgba(209, 173, 255, 0.5);
+  box-shadow: 
+    0 12px 40px rgba(171, 130, 255, 0.3),
+    0 8px 25px rgba(209, 173, 255, 0.2);
+}
+
+.column-header {
+  background: rgba(67, 5, 144, 1);
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+body.light-theme .column-header {
+  background: rgba(171, 130, 255, 1);
+  color: #ffffff;
+}
+
+.column-content {
+  padding: 1.5rem;
+}
+
+.table-item {
+  margin-bottom: 1.5rem;
+}
+
+.table-item:last-child {
+  margin-bottom: 0;
+}
+
+.table-item h5 {
+  font-family: 'Jura', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+body.light-theme .table-item h5 {
+  color: #333333;
+}
+
+.table-item p {
+  font-family: 'Jura', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+body.light-theme .table-item p {
+  color: rgba(51, 51, 51, 0.9);
+}
+
+/* Home Button in Footer */
+.home-button {
+  font-family: 'Inter', sans-serif;
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(67, 5, 144, 0.8), rgba(139, 69, 19, 0.6));
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(67, 5, 144, 0.5);
+  box-shadow: 0 4px 15px rgba(67, 5, 144, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.home-button:hover {
+  background: linear-gradient(135deg, rgba(67, 5, 144, 1), rgba(139, 69, 19, 0.8));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(67, 5, 144, 0.4);
+  color: #ffffff;
+}
+
+.home-button:active {
+  transform: translateY(0);
+}
+
+body.light-theme .home-button {
+  background: linear-gradient(135deg, rgba(209, 173, 255, 0.8), rgba(195, 151, 253, 0.6));
+  color: #333333;
+  border: 1px solid rgba(209, 173, 255, 0.5);
+  box-shadow: 
+    0 8px 25px rgba(171, 130, 255, 0.4),
+    0 4px 15px rgba(209, 173, 255, 0.3);
+}
+
+body.light-theme .home-button:hover {
+  background: linear-gradient(135deg, rgba(209, 173, 255, 1), rgba(195, 151, 253, 0.8));
+  box-shadow: 
+    0 10px 30px rgba(171, 130, 255, 0.5),
+    0 6px 20px rgba(209, 173, 255, 0.4);
+  color: #333333;
+}
+
+/* Footer Styles */
+.site-footer {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, rgba(67, 5, 144, 0.95), rgba(10, 10, 10, 0.95));
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(67, 5, 144, 0.3);
+  color: #ffffff;
+  padding: 3rem 0 0;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+}
+
+body.light-theme .site-footer {
+  background: linear-gradient(135deg, rgba(209, 173, 255, 0.95), rgba(228, 228, 255, 0.95));
+  border-top: 1px solid rgba(209, 173, 255, 0.3);
+  color: #333333;
+  box-shadow: 0 -8px 25px rgba(171, 130, 255, 0.2);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 0 2rem 2rem;
+}
+
+.footer-section h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+body.light-theme .footer-section h4 {
+  color: #333333;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.footer-logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.footer-logo-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+body.light-theme .footer-logo-text {
+  color: #333333;
+}
+
+.footer-description {
+  font-family: 'Inter', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  max-width: 300px;
+  transition: color 0.3s ease;
+}
+
+body.light-theme .footer-description {
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  font-family: 'Inter', sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: #b794f6;
+}
+
+body.light-theme .footer-links a {
+  color: rgba(51, 51, 51, 0.7);
+}
+
+body.light-theme .footer-links a:hover {
+  color: #8B5CF6;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(67, 5, 144, 0.3);
+  padding: 1.5rem 0;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+body.light-theme .footer-bottom {
+  border-top: 1px solid rgba(209, 173, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.footer-bottom p {
+  font-family: 'Inter', sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+body.light-theme .footer-bottom p {
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: rgba(67, 5, 144, 0.6);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: rgba(67, 5, 144, 0.9);
+  transform: translateY(-2px);
+}
+
+body.light-theme .social-link {
+  background: rgba(209, 173, 255, 0.6);
+  box-shadow: 0 4px 10px rgba(171, 130, 255, 0.3);
+}
+
+body.light-theme .social-link:hover {
+  background: rgba(209, 173, 255, 0.9);
+  box-shadow: 0 6px 15px rgba(171, 130, 255, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body::before {
+    background-attachment: scroll;
   }
   
-  .roadmap-note p {
-    font-family: 'Tektur', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.95);
-    font-style: italic;
-    transition: color 0.3s ease;
-  }
-  
-  body.light-theme .roadmap-note p {
-    color: #333333;
-  }
-  
-  /* Table Section */
-  .comparison-table {
-    display: flex;
+  .site-header {
+    flex-direction: column;
     gap: 1rem;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  .table-column {
-    flex: 1;
-    background: rgba(67, 5, 144, 0.8);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(67, 5, 144, 0.9);
-    border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(67, 5, 144, 0.3);
-    overflow: hidden;
-    transition: all 0.3s ease;
-  }
-  
-  body.light-theme .table-column {
-    background: #D1ADFF;
-    border: 1px solid rgba(209, 173, 255, 0.5);
-    box-shadow: 
-      0 12px 40px rgba(171, 130, 255, 0.3),
-      0 8px 25px rgba(209, 173, 255, 0.2);
-  }
-  
-  .column-header {
-    background: rgba(67, 5, 144, 1);
     padding: 1rem;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff;
-    transition: background-color 0.3s ease;
   }
   
-  body.light-theme .column-header {
-    background: rgba(171, 130, 255, 1);
-    color: #ffffff;
+  .search-container {
+    margin: 0;
+    max-width: none;
+    width: 100%;
   }
   
-  .column-content {
+  .main-title {
+    font-size: 1.3rem;
+  }
+  
+  .sub-title {
+    font-size: 1rem;
+  }
+  
+  .hero-content {
+    padding: 2rem 1rem;
+  }
+  
+  .definition-section,
+  .professions-section,
+  .motion-designer-section,
+  .skills-section,
+  .tools-section,
+  .motion-create-section,
+  .examples-section,
+  .job-market-section,
+  .roadmap-section,
+  .table-section {
+    padding: 2rem 1rem;
+  }
+  
+  .definition-text {
+    max-width: 95%;
     padding: 1.5rem;
   }
   
-  .table-item {
-    margin-bottom: 1.5rem;
+  .definition-text p {
+    font-size: 1.1rem;
   }
   
-  .table-item:last-child {
-    margin-bottom: 0;
+  .definition-title {
+    font-size: 1.7rem;
   }
   
-  .table-item h5 {
-    font-family: 'Tektur', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #ffffff;
-    margin-bottom: 0.5rem;
-    transition: color 0.3s ease;
+  .professions-title,
+  .motion-title,
+  .skills-title,
+  .tools-title,
+  .motion-create-title,
+  .examples-title,
+  .job-market-title,
+  .roadmap-title,
+  .table-title {
+    font-size: 1.7rem;
   }
   
-  body.light-theme .table-item h5 {
-    color: #333333;
+  .profession-info {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
   }
   
-  .table-item p {
-    font-family: 'Tektur', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 1.4;
-    transition: color 0.3s ease;
+  .skills-list,
+  .motion-create-info,
+  .roadmap-info {
+    max-width: 95%;
   }
   
-  body.light-theme .table-item p {
-    color: rgba(51, 51, 51, 0.9);
+  .motion-detail {
+    flex-direction: column;
+    gap: 1.5rem;
   }
   
-  /* Home Button in Footer */
-  .home-button {
-    font-family: 'Inter', sans-serif;
-    display: inline-block;
-    background: linear-gradient(135deg, rgba(67, 5, 144, 0.8), rgba(139, 69, 19, 0.6));
-    color: #ffffff;
-    padding: 0.75rem 1.5rem;
-    border-radius: 25px;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-top: 1rem;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(67, 5, 144, 0.5);
-    box-shadow: 0 4px 15px rgba(67, 5, 144, 0.3);
-    backdrop-filter: blur(10px);
+  .motion-gif {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
   }
   
-  .home-button:hover {
-    background: linear-gradient(135deg, rgba(67, 5, 144, 1), rgba(139, 69, 19, 0.8));
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(67, 5, 144, 0.4);
-    color: #ffffff;
+  .motion-description {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
   }
   
-  .home-button:active {
-    transform: translateY(0);
+  .tool-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    max-width: none;
   }
   
-  body.light-theme .home-button {
-    background: linear-gradient(135deg, rgba(209, 173, 255, 0.8), rgba(195, 151, 253, 0.6));
-    color: #333333;
-    border: 1px solid rgba(209, 173, 255, 0.5);
-    box-shadow: 
-      0 8px 25px rgba(171, 130, 255, 0.4),
-      0 4px 15px rgba(209, 173, 255, 0.3);
+  .tool-text {
+    width: 100%;
+    height: auto;
+    min-height: 100px;
   }
   
-  body.light-theme .home-button:hover {
-    background: linear-gradient(135deg, rgba(209, 173, 255, 1), rgba(195, 151, 253, 0.8));
-    box-shadow: 
-      0 10px 30px rgba(171, 130, 255, 0.5),
-      0 6px 20px rgba(209, 173, 255, 0.4);
-    color: #333333;
+  .examples-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    margin-right: 0;
   }
   
-  /* Footer Styles */
-  .site-footer {
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, rgba(67, 5, 144, 0.95), rgba(10, 10, 10, 0.95));
-    backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(67, 5, 144, 0.3);
-    color: #ffffff;
-    padding: 3rem 0 0;
-    margin-top: 2rem;
-    transition: all 0.3s ease;
+  .example-gif.large,
+  .example-gif.small {
+    grid-column: 1;
+    grid-row: auto;
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    margin: 0 auto;
   }
   
-  body.light-theme .site-footer {
-    background: linear-gradient(135deg, rgba(209, 173, 255, 0.95), rgba(228, 228, 255, 0.95));
-    border-top: 1px solid rgba(209, 173, 255, 0.3);
-    color: #333333;
-    box-shadow: 0 -8px 25px rgba(171, 130, 255, 0.2);
+  .char-image:nth-child(2),
+  .char-image:nth-child(3),
+  .char-image:nth-child(4),
+  .char-image:nth-child(5) {
+    grid-column: 1;
+    grid-row: auto;
+    margin: 0 auto;
+  }
+  
+  .comparison-table {
+    flex-direction: column;
+  }
+  
+  /* На мобильных все карточки одинаково */
+  .profession-card {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .profession-card:nth-child(odd) .profession-icon,
+  .profession-card:nth-child(even) .profession-icon {
+    margin: 0;
+  }
+  
+  .profession-icon {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .profession-icon img {
+    width: 100px;
+    height: 100px;
   }
   
   .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 0 2rem 2rem;
-  }
-  
-  .footer-section h4 {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.2rem;
-    color: #ffffff;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    transition: color 0.3s ease;
-  }
-  
-  body.light-theme .footer-section h4 {
-    color: #333333;
-  }
-  
-  .footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-  }
-  
-  .footer-logo-img {
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-  }
-  
-  .footer-logo-text {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #ffffff;
-    transition: color 0.3s ease;
-  }
-  
-  body.light-theme .footer-logo-text {
-    color: #333333;
-  }
-  
-  .footer-description {
-    font-family: 'Inter', sans-serif;
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.6;
-    max-width: 300px;
-    transition: color 0.3s ease;
-  }
-  
-  body.light-theme .footer-description {
-    color: rgba(51, 51, 51, 0.8);
-  }
-  
-  .footer-links {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-links li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .footer-links a {
-    font-family: 'Inter', sans-serif;
-    color: rgba(255, 255, 255, 0.7);
-    text-decoration: none;
-    transition: color 0.3s ease;
-    font-size: 0.95rem;
-  }
-  
-  .footer-links a:hover {
-    color: #b794f6;
-  }
-  
-  body.light-theme .footer-links a {
-    color: rgba(51, 51, 51, 0.7);
-  }
-  
-  body.light-theme .footer-links a:hover {
-    color: #8B5CF6;
-  }
-  
-  .footer-bottom {
-    border-top: 1px solid rgba(67, 5, 144, 0.3);
-    padding: 1.5rem 0;
-    background: rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-  }
-  
-  body.light-theme .footer-bottom {
-    border-top: 1px solid rgba(209, 173, 255, 0.3);
-    background: rgba(255, 255, 255, 0.2);
+    padding: 0 1rem 2rem;
   }
   
   .footer-bottom-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-  }
-  
-  .footer-bottom p {
-    font-family: 'Inter', sans-serif;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
-  }
-  
-  body.light-theme .footer-bottom p {
-    color: rgba(51, 51, 51, 0.6);
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+    text-align: center;
   }
   
   .footer-social {
-    display: flex;
-    gap: 1rem;
+    justify-content: center;
   }
   
-  .social-link {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background: rgba(67, 5, 144, 0.6);
-    border-radius: 50%;
+  .home-button {
+    display: block;
     text-align: center;
-    line-height: 35px;
-    text-decoration: none;
+    max-width: 200px;
+    margin: 1rem auto 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
     font-size: 1rem;
-    transition: all 0.3s ease;
   }
   
-  .social-link:hover {
-    background: rgba(67, 5, 144, 0.9);
-    transform: translateY(-2px);
+  .sub-title {
+    font-size: 0.8rem;
   }
   
-  body.light-theme .social-link {
-    background: rgba(209, 173, 255, 0.6);
-    box-shadow: 0 4px 10px rgba(171, 130, 255, 0.3);
+  .profession-icon {
+    width: 120px;
+    height: 120px;
   }
   
-  body.light-theme .social-link:hover {
-    background: rgba(209, 173, 255, 0.9);
-    box-shadow: 0 6px 15px rgba(171, 130, 255, 0.4);
+  .profession-icon img {
+    width: 80px;
+    height: 80px;
   }
   
-  /* Responsive */
-  @media (max-width: 768px) {
-    body::before {
-      background-attachment: scroll;
-    }
-    
-    .site-header {
-      flex-direction: column;
-      gap: 1rem;
-      padding: 1rem;
-    }
-    
-    .search-container {
-      margin: 0;
-      max-width: none;
-      width: 100%;
-    }
-    
-    .main-title {
-      font-size: 1.3rem;
-    }
-    
-    .sub-title {
-      font-size: 1rem;
-    }
-    
-    .hero-content {
-      padding: 2rem 1rem;
-    }
-    
-    .definition-section,
-    .professions-section,
-    .motion-designer-section,
-    .skills-section,
-    .tools-section,
-    .motion-create-section,
-    .examples-section,
-    .job-market-section,
-    .roadmap-section,
-    .table-section {
-      padding: 2rem 1rem;
-    }
-    
-    .definition-text {
-      max-width: 95%;
-      padding: 1.5rem;
-    }
-    
-    .definition-text p {
-      font-size: 1rem;
-    }
-    
-    .profession-info {
-      max-width: none;
-      margin-left: 0;
-      margin-right: 0;
-    }
-    
-    .skills-list,
-    .motion-create-info,
-    .roadmap-info {
-      max-width: 95%;
-    }
-    
-    .motion-detail {
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-    
-    .motion-gif {
-      width: 100%;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    
-    .motion-description {
-      max-width: none;
-      margin-left: 0;
-      margin-right: 0;
-    }
-    
-    .tool-item {
-      flex-direction: column;
-      text-align: center;
-      gap: 1rem;
-      max-width: none;
-    }
-    
-    .tool-text {
-      width: 100%;
-      height: auto;
-      min-height: 100px;
-    }
-    
-    .examples-grid {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      gap: 1rem;
-      margin-right: 0;
-    }
-    
-    .example-gif.large,
-    .example-gif.small {
-      grid-column: 1;
-      grid-row: auto;
-      width: 100%;
-      max-width: 400px;
-      height: 200px;
-      margin: 0 auto;
-    }
-    
-    .char-image:nth-child(2),
-    .char-image:nth-child(3),
-    .char-image:nth-child(4),
-    .char-image:nth-child(5) {
-      grid-column: 1;
-      grid-row: auto;
-      margin: 0 auto;
-    }
-    
-    .comparison-table {
-      flex-direction: column;
-    }
-    
-    /* На мобильных все карточки одинаково */
-    .profession-card {
-      flex-direction: column;
-      gap: 1rem;
-      align-items: center;
-    }
-    
-    .profession-card:nth-child(odd) .profession-icon,
-    .profession-card:nth-child(even) .profession-icon {
-      margin: 0;
-    }
-    
-    .profession-icon {
-      width: 150px;
-      height: 150px;
-    }
-    
-    .profession-icon img {
-      width: 100px;
-      height: 100px;
-    }
-    
-    .footer-content {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      padding: 0 1rem 2rem;
-    }
-    
-    .footer-bottom-content {
-      flex-direction: column;
-      gap: 1rem;
-      padding: 0 1rem;
-      text-align: center;
-    }
-    
-    .footer-social {
-      justify-content: center;
-    }
-    
-    .home-button {
-      display: block;
-      text-align: center;
-      max-width: 200px;
-      margin: 1rem auto 0;
-    }
+  .definition-text p {
+    font-size: 1rem;
   }
   
-  @media (max-width: 480px) {
-    .main-title {
-      font-size: 1rem;
-    }
-    
-    .sub-title {
-      font-size: 0.8rem;
-    }
-    
-    .profession-icon {
-      width: 120px;
-      height: 120px;
-    }
-    
-    .profession-icon img {
-      width: 80px;
-      height: 80px;
-    }
-    
-    .definition-text p {
-      font-size: 0.9rem;
-    }
-    
-    .site-footer {
-      padding: 2rem 0 0;
-    }
-    
-    .footer-content {
-      padding: 0 1rem 1.5rem;
-    }
-    
-    .footer-bottom {
-      padding: 1rem 0;
-    }
+  .definition-title {
+    font-size: 1.5rem;
   }
+  
+  .professions-title,
+  .motion-title,
+  .skills-title,
+  .tools-title,
+  .motion-create-title,
+  .examples-title,
+  .job-market-title,
+  .roadmap-title,
+  .table-title {
+    font-size: 1.5rem;
+  }
+  
+  .site-footer {
+    padding: 2rem 0 0;
+  }
+  
+  .footer-content {
+    padding: 0 1rem 1.5rem;
+  }
+  
+  .footer-bottom {
+    padding: 1rem 0;
+  }
+}
