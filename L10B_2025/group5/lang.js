@@ -50,7 +50,47 @@ const langArr = {
     "sources": {
         "ua": "Джерела",
         "en": "Sources",
-    }
+    },
+    "navigation": {
+        "ua": "Навігація",
+        "en": "Navigation",
+    },
+    "introduction": {
+        "ua": "Вступ",
+        "en": "Introduction",
+    },
+    "responsibilities": {
+        "ua": "Основні обов’язки",
+        "en": "Main Responsibilities",
+    },
+    "path": {
+        "ua": "Шлях до професії",
+        "en": "Path to the Profession",
+    },
+    "skills": {
+        "ua": "Навички",
+        "en": "Skills",
+    },
+    "demand": {
+        "ua": "Затребуваність",
+        "en": "Demand",
+    },
+    "salaries": {
+        "ua": "Зарплати",
+        "en": "Salaries",
+    },
+    "tools": {
+        "ua": "Популярні інструменти",
+        "en": "Popular Tools",
+    },
+    "prospects": {
+        "ua": "Перспективи",
+        "en": "Prospects",
+    },
+    "education": {
+        "ua": "Освіта",
+        "en": "Education",
+    },
 };
 
 const allLang = ['ua', 'en'];
@@ -88,7 +128,7 @@ window.addEventListener("hashchange", changeLanguage);
 const hamburger_icon = document.querySelector('.hamburger-icon');
 if (hamburger_icon) {
     hamburger_icon.addEventListener('click', () => {
-        const mobile_nav = document.querySelector('.mobile-menu');
+    const mobile_nav = document.querySelector('.mobile-menu');
         if (mobile_nav) {
             mobile_nav.classList.toggle('mobile-menu-active');
             hamburger_icon.classList.toggle('hamburger-icon-active');
