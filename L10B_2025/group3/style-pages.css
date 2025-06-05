@@ -131,7 +131,7 @@ p {
 }
 
 .card_educational {
-  width: 20%;
+  max-width: 25%;
   background-color: #fff;
 }
 
