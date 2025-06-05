@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
 body{ 
     max-width:1200px;
     margin:auto;
@@ -69,6 +72,7 @@ h1{
     top: 0;
     height:40px;
     width:330px;
+	font-family:"Rubik Bubbles";
 }
 .balsamiq-sans-regular {
   font-family: "Balsamiq Sans", sans-serif;
@@ -100,3 +104,9 @@ h1{
     flex-wrap: nowrap | wrap | wrap-reverse
           justify-content: flex-start | flex-end | center | space-between | space-around
 }
+.rubik-bubbles-regular {
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
