@@ -1,87 +1,360 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Data-Analys</title>
-	<link href="Data_Analyst.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Information</title>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400&family=Rubik+Dirt&family=Geologica:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="Логотип">
+        </div>
+        <span class="data-napryam">Data-напрям</span>
+        <nav>
+          <ul>
+            <li>
+              <a href="#proj">Навігація <span class="categories-list-triangle"> ◀️</span></a>
+              <ul>
+                <li><a href="#intro">Вступ</a></li>
+                <li><a href="#duties">Основні обов’язки</a></li>
+                <li><a href="#path">Шлях до професії</a></li>
+                <li><a href="#skills">Навички</a></li>
+                <li><a href="#demand">Затребуваність</a></li>
+                <li><a href="#salary">Зарплати</a></li>
+                <li><a href="#sample">Зразок продукції</a></li>
+                <li><a href="#career">Перспективи</a></li>
+                <li><a href="#education">Освіта</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#proj">Професії <span class="categories-list-triangle"> ◀️</span></a>
+              <ul>
+                <li><a href="Data_Analyst.html">Data Analyst</a></li>
+                <li><a href="ML_Engineer.html">ML Engineer</a></li>
+                <li><a href="MLOps_Engineer.html">MLOps Engineer</a></li>
+              </ul>
+            </li>
+            <li><a href="#general" >Головна</a></li>
+          </ul>
+        </nav>
+    </header>
 
-<body id="general">
-	
-	<header>
-		
-		<div class="logo">
-			<img src="photos/logo.png" alt="logo">
-		</div>
-		
-		<nav>
-			
-			<ul>
-				<li>
-					<a href="#proj">Навігація <span class="categories-list-triangle"> ◀</span></a>
-					<ul>
-				              <li><a href="#">Вступ</a></li>
-				              <li><a href="#">Основні обов’язки</a></li>
-							  <li><a href="#">Шлях до професії</a></li>
-							  <li><a href="#">Навички</a></li>
-							  <li><a href="#">Затребуваність</a></li>
-							  <li><a href="#">Зарплати</a></li>
-				              <li><a href="#">Зразок продукції</a></li>
-							  <li><a href="#">Перспективи</a></li>
-							  <li><a href="#">Освіта</a></li>
-				    </ul>
-				</li>
-				<li>
-					<a href="#proj" >Професії <span class="categories-list-triangle"> ◀</span></a>
-					<ul>
-				              <li><a href="Data_Analyst.html">Data Analyst</a></li>
-				              <li><a href="ML_Engineer.html">ML Engineer</a></li>
-				              <li><a href="MLOps_Engineer.html">MLOps Engineer</a></li>
-				    </ul>
-				</li>
-				<li><a href="index.html" class="active">Головна</a></li>
-			</ul>
-		
-		</nav>
-	
-	</header>
+    <section id="intro" class="intro ">
+        <div class="intro-center">
+            <div class="intro-text">
+                Data Analyst (аналітик даних) — це спеціаліст, який працює з інформацією: шукає, збирає та аналізує дані, щоб знайти закономірності та допомогти приймати обґрунтовані рішення. Його робота схожа на розслідування — потрібно знайти зв’язки між різними показниками, зрозуміти причини та наслідки, помітити тренди. Часто аналітик так глибоко заглиблюється в дані, що починає бачити за ними реальні історії.
+            </div>
+            <div class="intro-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ywZXpfdqg1o?si=Ga2Lr38WV1TYFoUW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
 
+    <section id="duties" class="duties ">
+        <h1>🎯Основні обов'язки</h1>
+        <div class="duties-list">
+            <div class="duty">Зібрати дані з різних джерел, очистити їх і привести до єдиного формату, щоб потім легко було працювати.</div>
+            <div class="duty">Аналіз даних за допомогою Excel, SQL, Python тощо, дослідити дані, виявити закономірності, залежності та тренди.</div>
+            <div class="duty">Перетворити сухі цифри на зрозумілі графіки, дашборди та звіти (Tableau, Power BI, Looker) для швидкого сприйняття.</div>
+            <div class="duty">Розслідувати «історії», що ховаються за даними, та формувати рекомендації для прийняття бізнес-рішень.</div>
+        </div>
+    </section>
 
-	<main>
+    <section id="path" class="path">
+        <h1>Шлях до професії</h1>
+        <div class="path-cards">
+            <div class="path-card flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <span>1</span>
+                        <div>Освіта</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-text">
+                            Отримайте диплом у сфері даних (математика, статистика, ІТ, економіка) та пройдіть онлайн-курси з Data Analytics. Вивчіть <b>Python</b>, <b>SQL</b>, а також інструменти візуалізації — <b>Tableau, Power BI</b>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="path-card flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <span>2</span>
+                        <div>Практика</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-text">
+                            Набирайтесь досвіду через стажування, власні проєкти або роботу Junior-аналітиком. Створіть портфоліо з кейсами.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="path-card flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <span>3</span>
+                        <div>Розвиток</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-text">
+                            Відвідуйте події з аналітики, вивчайте нові інструменти й спеціалізуйтеся у вибраній галузі (наприклад, бізнес-аналітика).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	</main>
+    <section id="skills" class="skills">
+    <h1>⚙ Які навички потрібні аналітику даних?</h1>
+    <div class="skills-cards-new">
+        <div class="skills-main-text">
+            Найважливіше для аналітика — це вміння аналізувати. Потрібно розуміти базову статистику, виявляти реальні зв’язки між даними й не плутати їх із випадковими збігами. Ці навички можна вивчити й розвивати.
+        </div>
+        <div class="skills-flip-cards">
+            <div class="skills-flip-card skills-flip-card-1">
+                <div class="skills-flip-card-inner">
+                    <div class="skills-flip-card-front">
+                        Технічні навички<br>(Hard Skills)
+                    </div>
+                    <div class="skills-flip-card-back">
+                        <ul>
+                            <li>Excel</li>
+                            <li>SQL</li>
+                            <li>Python</li>
+                            <li>Tableau, Power BI, Looker</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-flip-card skills-flip-card-2">
+                <div class="skills-flip-card-inner">
+                    <div class="skills-flip-card-front">
+                        Особисті якості<br>(Soft Skills)
+                    </div>
+                    <div class="skills-flip-card-back">
+                        <ul>
+                            <li>Системність</li>
+                            <li>Аналітичний підхід</li>
+                            <li>Критичне мислення</li>
+                            <li>Уважність до деталей</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+    <section id="demand" class="demand ">
+        <h1>🔥Затребуваність</h1>
+        <div class="demand-content">
+            <div class="demand-img-block">
+                <img src="img/static 1.png" alt="Volume of data created and replicated worldwide">
+                <div class="demand-title">
+                    Зростання обсягу даних у світі. (<a href="https://www.red-gate.com/blog/database-development/whats-the-real-story-behind-the-explosive-growth-of-data" target="_blank">Джерело</a>)
+                </div>
+            </div>
+            <div class="demand-info">
+                <div class="demand-desc">
+                    Діаграма демонструє стрімке зростання обсягу даних у світі. З кожним роком організаціям потрібно все більше фахівців, здатних аналізувати, інтерпретувати й перетворювати ці дані на практичні рішення. Саме тому попит на професію Data Analyst невпинно зростає.
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<footer>
-		<div class="footer-left">
-			<h2>Створили</h2>
-			<div class="footer-authors">
-			<div class="footer-author-block">
-				<img src="photos/photo_Bogdan.png" alt="Бебих Богдан">
-				<h3>Бебих<br>Богдан</h3>
-			</div>
-			<div class="footer-author-block">
-				<img src="photos/photo_Artem.png" alt="Іваниcь Артем">
-				<h3>Іваниcь<br>Артем</h3>
-			</div>
-			<div class="footer-author-block">
-				<img src="photos/photo_Misha2.png" alt="Пигина Михайло">
-				<h3>Пигина<br>Михайло</h3>
-			</div>
-			</div>
-		</div>
+    <section id="salary" class="salary ">
+        <h1>💵 Зарплати Data Analyst в Україні (2025)</h1>
+        <table class="salary-table">
+            <thead>
+                <tr>
+                    <th>Рівень досвіду</th>
+                    <th>Середня зарплата<br>(USD/міс)</th>
+                    <th>Діапазон зарплат<br>(USD/міс)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Junior</td>
+                    <td>$400–600</td>
+                    <td>$400–700</td>
+                </tr>
+                <tr>
+                    <td>Middle</td>
+                    <td>$1,200–1,600</td>
+                    <td>$1,000–2,000</td>
+                </tr>
+                <tr>
+                    <td>Senior</td>
+                    <td>$2,500–3,500</td>
+                    <td>$2,000–4,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-		<div class="sourses-lang">
-			<ul class="change-lang">
-			<li><img src="photos/ua_flag.png" alt="uk"><button>uk</button></li>
-			<li><img src="photos/en_flag.png" alt="en"><button>en</button></li>
-			</ul>
-			<button class="sourses">Джерела</button>
-		</div>
-	</footer>
+    <section id="sample" class="sample ">
+        <h1>💼Зразок продукції</h1>
+        <div class="dashboard">
+            <div class="dashboard-row">
+                <div class="dashboard-card">
+                    <div class="dashboard-title">Продажі</div>
+                    <div class="dashboard-text">
+                        Аналіз даних про продаж, замовлення, ціни, знижки, та інші параметри, щоб визначити, які товари та послуги користуються найбільшим попитом, які канали продажу ефективні, та які стратегії продажу приносять найбільший прибуток.
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="dashboard-title">Маркетинг</div>
+                    <div class="dashboard-text">
+                        Аналіз даних про ефективність рекламних кампаній, аналіз поведінки клієнтів на сайті, та аналіз даних про залучення та утримання клієнтів, щоб оптимізувати маркетингові зусилля та підвищити ROI.
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-row">
+                <div class="dashboard-card">
+                    <div class="dashboard-title">Поведінка клієнтів</div>
+                    <div class="dashboard-text">
+                        Аналіз даних про відвідування сайту, поведінку в мобільних додатках, закупівлі та інші параметри, щоб зрозуміти потреби клієнтів та персоналізувати досвід.
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="dashboard-title">Внутрішні процеси</div>
+                    <div class="dashboard-text">
+                        Аналіз даних про роботу співробітників, ефективність роботи відділів, та інші параметри, щоб оптимізувати процеси та підвищити ефективність роботи
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	</main>
-	<script src="lang.js"></script>
+    <section id="career" class="career ">
+        <h1>📈Перспективи кар’єри</h1>
+        <div class="career-sequence">
+            <div class="career-block career-block-data">
+                <span class="career-emoji">🧩</span> Data Analyst
+            </div>
+            <img class="career-arrow-vertical" src="img/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA0L3JtMTg5My1lbGVtZW50LTAwMS5wbmc-removebg-preview 1.png" alt="arrow" />
+            <div class="career-block career-block-senior">
+                <span class="career-emoji">💼</span> Senior Analyst
+            </div>
+            <img class="career-arrow-vertical" src="img/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA0L3JtMTg5My1lbGVtZW50LTAwMS5wbmc-removebg-preview 1.png" alt="arrow" />
+            <div class="career-block career-block-roles">
+                <span class="career-emoji">🔍</span> Перехід у суміжні ролі:
+                <ul>
+                    <li>Data Scientist</li>
+                    <li>BI Developer</li>
+                    <li>Product Analyst</li>
+                    <li>Data Engineer</li>
+                    <li>Machine Learning Specialist</li>
+                </ul>
+            </div>
+            <img class="career-arrow-vertical" src="img/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA0L3JtMTg5My1lbGVtZW50LTAwMS5wbmc-removebg-preview 1.png" alt="arrow" />
+            <div class="career-block career-block-lead">
+                <span class="career-emoji">🧠</span> Team Lead /<br>Head of Analytics
+            </div>
+            <img class="career-arrow-vertical" src="img/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA0L3JtMTg5My1lbGVtZW50LTAwMS5wbmc-removebg-preview 1.png" alt="arrow" />
+            <div class="career-block career-block-cdo">
+                <span class="career-emoji">🏆</span> Chief Data Officer (CDO)
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <h1>📖Де отримати освіту?</h1>
+        <table class="salary-table education-table">
+            <thead>
+                <tr>
+                    <th>Місто</th>
+                    <th>Заклад / Курс</th>
+                    <th>Тип навчання</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Київ</td>
+                    <td>
+                        <a href="https://kpi.ua/" target="_blank">
+                            Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"
+                        </a>
+                    </td>
+                    <td>ВНЗ</td>
+                </tr>
+                <tr>
+                    <td>Київ</td>
+                    <td>
+                        <a href="https://www.univ.kiev.ua/" target="_blank">
+                            Київський національний університет імені Тараса Шевченка
+                        </a>
+                    </td>
+                    <td>ВНЗ</td>
+                </tr>
+                <tr>
+                    <td>Львів</td>
+                    <td>
+                        <a href="https://lnu.edu.ua/" target="_blank">
+                            Львівський національний університет імені Івана Франка
+                        </a>
+                    </td>
+                    <td>ВНЗ</td>
+                </tr>
+                <tr>
+                    <td>Онлайн</td>
+                    <td>
+                        <a href="https://dan-it.com.ua/uk/courses/data-analyst/" target="_blank">
+                            Курс Data Analyst від DAN.IT
+                        </a>
+                    </td>
+                    <td>Онлайн-курс</td>
+                </tr>
+                <tr>
+                    <td>Онлайн</td>
+                    <td>
+                        <a href="https://apps.ucu.edu.ua/data-analytics/" target="_blank">
+                            Сертифікаційна програма "Аналіз Даних" від УКУ
+                        </a>
+                    </td>
+                    <td>Онлайн-курс</td>
+                </tr>
+                <tr>
+                    <td>Онлайн</td>
+                    <td>
+                        <a href="https://datalovesyou.com/big-products/analytics-course" target="_blank">
+                            Курс «Аналітик даних в ІТ» від Data Loves Academy
+                        </a>
+                    </td>
+                    <td>Онлайн-курс</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+<footer>
+  <h2>Створили</h2>
+  <div class="footer-authors">
+    <div class="footer-author-block">
+      <img src="img/photo_Bogdan.jpg" alt="Бебих Богдан">
+      <h3>Бебих<br>Богдан</h3>
+    </div>
+    <div class="footer-author-block">
+      <img src="img/photo_Artem.jpg" alt="Іваниcь Артем">
+      <h3>Іваниcь<br>Артем</h3>
+    </div>
+    <div class="footer-author-block">
+      <img src="img/photo_Misha.jpg" alt="Пигина Михайло">
+      <h3>Пигина<br>Михайло</h3>
+    </div>
+  </div>
+  <div class="sourses-lang">
+    <ul class="change-lang" style="margin-right:auto;">
+      <li><img src="img/ua_flag.png" alt="uk"><button data-lang="uk">uk</button></li>
+      <li><img src="img/en_flag.png" alt="en"><button data-lang="en">en</button></li>
+    </ul>
+    <button class="sourses" style="margin-left:auto;">Джерела</button>
+  </div>
+</footer>
+    
 </body>
 </html>

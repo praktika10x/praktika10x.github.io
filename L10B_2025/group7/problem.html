@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <title>Повідомити про проблему - Safe WEB squad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="logo-bar">
+        <div class="logo-left">
+            <img src="https://i.postimg.cc/3RcBwN6j/image.jpg" alt="лого" class="logo-img" />
+            <span class="logo-text">Safe WEB squad</span>
+        </div>
+        <div class="language-switcher">
+            <a href="#">UA</a> | <a href="#">EN</a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">Головна</a>
+        <a href="project.html">Про проєкт</a>
+        <a href="profesiyi.html">Професії</a>
+        <a href="dovidka.html">Довідникова інформація</a>
+        
+        
+    </div>
+
+    <div class="container report-problem-container">
+        <h1>Повідомити про проблему</h1>
+        <p class="intro-paragraph">Якщо ви зіткнулися з будь-якою онлайн-загрозою, шахрайством, кібератакою, або помітили неприйнятний контент, будь ласка, заповніть форму нижче. Ваше повідомлення допоможе нам покращити безпеку в Інтернеті.</p>
+
+        <form action="#" method="POST" class="problem-report-form">
+            <div class="form-group">
+                <label for="name">Ваше ім'я (необов'язково):</label>
+                <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я">
+            </div>
+            <div class="form-group">
+                <label for="email">Ваша електронна пошта (необов'язково):</label>
+                <input type="email" id="email" name="email" placeholder="Введіть вашу електронну пошту">
+            </div>
+            <div class="form-group">
+                <label for="problem-type">Тип проблеми:</label>
+                <select id="problem-type" name="problem_type" required>
+                    <option value="">Оберіть тип проблеми</option>
+                    <option value="scam">Онлайн-шахрайство</option>
+                    <option value="cyberattack">Кібератака</option>
+                    <option value="inappropriate-content">Неприйнятний контент</option>
+                    <option value="privacy-violation">Порушення приватності</option>
+                    <option value="other">Інше</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Детальний опис проблеми:</label>
+                <textarea id="description" name="description" rows="8" placeholder="Опишіть проблему якомога детальніше, включаючи посилання, скріншоти або іншу відповідну інформацію." required></textarea>
+            </div>
+            <button type="submit" class="btn submit-btn">Надіслати повідомлення</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Контакти: info@safewebsquad.ua | Телефон: +380 44 123 4567</p>
+        <p>© 2025 Safe WEB squad. Всі права захищено.</p>
+    </footer>
+
+</body>
+</html>

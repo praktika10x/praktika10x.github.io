@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap');
 
+@keyframes backgroundPan {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(to bottom right, #f8f8f8, #ffffff);
+    background: linear-gradient(135deg, #fffbde, #f0f0c0, #fffbde);
+    background-size: 200% 200%;
+    animation: backgroundPan 30s linear infinite alternate;
     margin: 0;
     padding: 0;
     color: #333;
@@ -229,15 +240,14 @@ footer a:hover {
     color: #ccac35;
 }
 
-
 .profesiyi-container {
     display: grid;
-    
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 30px; /* Consistent gap between cards */
-    padding: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px; /* Збільшений відступ з усіх сторін */
     max-width: 1200px;
     margin: 30px auto;
+    justify-content: center;
 }
 
 .prof-card {
@@ -311,14 +321,14 @@ footer a:hover {
     color: #222;
 }
 
-
-.cards-container.profesiyi-container { 
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    justify-content: center;
-    padding: 25px 20px; 
-    max-width: 1200px; 
-    margin: 30px auto; 
+    justify-content: space-around;
+    padding: 25px 0;
+    max-width: 1400px;
+    margin: 0 auto 60px auto;
 }
 
 .card {
@@ -379,6 +389,24 @@ footer a:hover {
     color: #222;
 }
 
+.intro-card-text {
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.intro-card-text h2 {
+    text-align: left;
+    padding-left: 0px;
+}
+
+.intro-card-text p {
+    text-align: left;
+    padding-left: 0px;
+}
+
 .icon-circle {
     width: 90px;
     height: 90px;
@@ -387,7 +415,7 @@ footer a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 25px auto;
+    margin: 0 0 25px 0;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
@@ -421,8 +449,7 @@ footer a:hover {
     z-index: 0;
 }
 
-.hero h1,
-.hero p {
+.hero h1, .hero p {
     position: relative;
     z-index: 1;
 }
@@ -432,7 +459,6 @@ footer a:hover {
     margin: 40px auto;
     text-align: center;
     padding: 0 20px;
-    margin-bottom: 60px;
 }
 
 .intro-section h2 {
@@ -540,17 +566,6 @@ footer a:hover {
     line-height: 1.7;
     color: #555;
 }
-
-
-section {
-    margin-bottom: 60px;
-}
-
-
-main section:last-of-type {
-    margin-bottom: 80px;
-}
-
 
 .news-carousel-container {
     position: relative;
@@ -819,9 +834,133 @@ main section:last-of-type {
     transform: translate(-50%, -50%) scale(1.1);
 }
 
+.guide-section-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 38px;
+    color: #a08c30;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    text-align: center;
+    border-left: none;
+    padding-left: 0;
+}
+
+.report-problem-container {
+    padding: 40px;
+    background-color: #ffffff;
+    border: 1px solid #f0e0a0;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.report-problem-container h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.report-problem-container .intro-paragraph {
+    font-size: 19px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.problem-report-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.form-group label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    padding: 14px 18px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #333;
+    background-color: #fcfcfc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #a08c30;
+    box-shadow: 0 0 0 4px rgba(247, 208, 78, 0.4);
+    background-color: #ffffff;
+    outline: none;
+}
+
+.form-group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M287%2C114.7L159.2%2C242.5c-4.4%2C4.4-11.4%2C4.4-15.8%2C0L5.4%2C114.7c-4.4-4.4-4.4-11.4%2C0-15.8c4.4-4.4%2C11.4-4.4%2C15.8%2C0l135.2%2C135.2L271.2%2C98.9c4.4-4.4%2C11.4-4.4%2C15.8%2C0C291.4%2C103.3%2C291.4%2C110.3%2C287%2C114.7z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 15px;
+    padding-right: 40px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    align-self: center;
+    margin-top: 35px;
+    padding: 18px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #f7d04e;
+    color: #333;
+    border: 2px solid #ccac35;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+    background-color: #e0c340;
+    border-color: #a08c30;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ccac35;
+    border-color: #a08c30;
+}
+
+
 @media (max-width: 1200px) {
     .cards-container {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted for slightly smaller cards */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
 
@@ -842,12 +981,10 @@ main section:last-of-type {
     .news-cards-wrapper::-webkit-scrollbar {
         height: 8px;
     }
-
     .news-cards-wrapper::-webkit-scrollbar-thumb {
         background-color: #e0c340;
         border-radius: 10px;
     }
-
     .news-cards-wrapper::-webkit-scrollbar-track {
         background-color: #f0e0a0;
     }
@@ -857,11 +994,9 @@ main section:last-of-type {
         margin: 15px 10px;
         transform: none;
     }
-
     .prev-btn {
         order: 1;
     }
-
     .next-btn {
         order: 2;
     }
@@ -906,15 +1041,40 @@ main section:last-of-type {
     .cards-container {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         margin-bottom: 40px;
-        padding: 25px 20px;
     }
 
     .image-text-block {
         margin-bottom: 40px;
     }
 
-    section {
-        margin-bottom: 40px;
+    .report-problem-container {
+        padding: 30px;
+        margin: 30px auto;
+    }
+
+    .report-problem-container h1 {
+        font-size: 38px;
+    }
+
+    .report-problem-container .intro-paragraph {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 15px;
+        padding: 10px 12px;
+    }
+
+    .submit-btn {
+        padding: 12px 25px;
+        font-size: 16px;
     }
 }
 
@@ -923,17 +1083,15 @@ main section:last-of-type {
         min-width: 90%;
         margin: 0 5%;
     }
-
     .news-cards-wrapper {
         padding: 0 10px;
     }
+}
 
-    .cards-container {
-        grid-template-columns: 1fr;
-        padding: 25px 15px;
-    }
-
-    .card {
-        width: auto;
-    }
+.hero h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    color: #FFFFFF;
 }

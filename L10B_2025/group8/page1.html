@@ -3,74 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="style.css" rel="stylesheet" />
-  <title>2D графіка</title>
+  <link href="style-page1.css" rel="stylesheet" />
+  <title>2D графіка — Комп'ютерна графіка</title>
 </head>
 <body>
   <header class="site-header">
-    <a href="index.html" class="nav-link back-btn">← Назад</a>
     <div class="header-left">
       <img src="images.jpg" alt="Логотип Політ" class="logo" />
-      <span class="site-title">Комп'ютерна графіка</span>
+    </div>
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Пошук...">
+      <button class="search-button">🔍</button>
     </div>
     <nav class="nav-links">
-      <span class="site-title-small">2D графіка</span>
+      <button class="theme-toggle" id="themeToggle">🌓</button>
+      <div class="menu-icon">≡</div>
     </nav>
   </header>
 
-  <div class="banner">
-    <h1>Що таке 2D графiка?</h1>
-  </div>
-
   <main class="main-content">
-    <section class="section-box">
-      <div class="panel">
-        <p>
-          Комп'ютерна 2D-графіка — комп'ютерне покоління цифрових зображень — головним чином складається з двовимірних моделей (таких як геометричні 2D-моделі, текст і цифрові зображення) і методів, визначених для них. Термін може також позначати галузь інформатики, яка включає як методи, так і самі моделі.
-        </p>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-background dark-bg"></div>
+      
+      <video class="hero-background light-bg" autoplay muted loop playsinline>
+        <source src="https://cdn.discordapp.com/attachments/1266156981450838171/1380078541726810184/VID_20250605_095847_557.mp4?ex=684291cc&is=6841404c&hm=f7d35224870806127ef7ab4c5de87cb27ab57d3494344983ec4f41479171f43d&" type="video/mp4">
+      </video>
+      
+      <div class="hero-content">
+        <h1 class="main-title">Комп'ютерна графіка</h1>
+        <h2 class="sub-title">2D графіка</h2>
       </div>
     </section>
 
-    <!-- Приклади професій -->
-    <section class="section-box">
-      <div class="panel">
-        <h3 class="professions-title">Приклади професій:</h3>
-        <div class="examples-list">
-          <div class="example-item">
-            <img src="artist.png" alt="2D Artist" class="example-icon"/>
-            <div class="example-text">
+    <section class="definition-section">
+      <div class="definition-content">
+        <h3 class="definition-title">Що таке 2D графіка</h3>
+        <div class="definition-text">
+          <p>Комп'ютерна 2D-графіка — <span class="highlight">комп'ютерне покоління цифрових зображень</span> — головним чином складається з двовимірних моделей (таких як геометричні 2D-моделі, текст і цифрові зображення) і методів, визначених для них. Термін може також позначати галузь <span class="highlight">інформатики</span>, яка включає як методи, так і самі моделі.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="professions-section">
+      <div class="professions-content">
+        <h3 class="professions-title">приклади професій:</h3>
+        
+        <div class="profession-cards">
+          <div class="profession-card">
+            <div class="profession-icon">
+              <img src="image1.png" alt="2D-художник" />
+            </div>
+            <div class="profession-info">
               <h4>1. 2D-художник (2D Artist)</h4>
               <ul>
-                <li>Створює концепт-арт, персонажів, фони, ілюстрації для ігор, анімацій, коміксів.</li>
+                <li>Створює концепт-арт, персонажів, фони, ілюстрації для ігор, анімації, коміксів.</li>
                 <li>Використовує програми: Adobe Photoshop, Krita, Clip Studio Paint.</li>
               </ul>
             </div>
           </div>
-          <div class="example-item">
-            <img src="illustrator.png" alt="Ілюстратор" class="example-icon"/>
-            <div class="example-text">
+
+          <div class="profession-card">
+            <div class="profession-icon">
+              <img src="image2.png" alt="Ілюстратор" />
+            </div>
+            <div class="profession-info">
               <h4>2. Ілюстратор</h4>
               <ul>
                 <li>Малює зображення для книг, реклами, маркетингу, мобільних застосунків.</li>
               </ul>
             </div>
           </div>
-          <div class="example-item">
-            <img src="motion.png" alt="Motion-дизайнер" class="example-icon"/>
-            <div class="example-text">
+
+          <div class="profession-card">
+            <div class="profession-icon">
+              <img src="image3.png" alt="Motion-дизайнер" />
+            </div>
+            <div class="profession-info">
               <h4>3. Motion-дизайнер</h4>
               <ul>
-                <li>Motion-дизайнер або відеодизайнер створює анімовану графіку. Він «змушує» рухатися статичні об’єкти, придумує анімацію для логотипів, оживляє фотографії та ілюстрації.</li>
-                <li>Робить титри до фільмів, заставки, анімації для презентацій, інфографіки, рекламу, трейлери, тизери тощо.</li>
+                <li>Створює анімовану графіку, заставки, рекламні ролики.</li>
+                <li>Програми: After Effects, Adobe Animate.</li>
               </ul>
             </div>
           </div>
-          <div class="example-item">
-            <img src="uiux.png" alt="UI/UX-дизайнер" class="example-icon"/>
-            <div class="example-text">
+
+          <div class="profession-card">
+            <div class="profession-icon">
+              <img src="image4.png" alt="UI/UX-дизайнер" />
+            </div>
+            <div class="profession-info">
               <h4>4. UI/UX-дизайнер</h4>
               <ul>
-                <li>Розробляє інтерфейси користувача (2D-графіка) для сайтів, ігор, додатків.</li>
+                <li>Розробляє інтерфейси і користувацька (2D-графіка) для сайтів, ігор, додатків.</li>
                 <li>Програми: Figma, Adobe XD, Sketch.</li>
               </ul>
             </div>
@@ -79,131 +104,334 @@
       </div>
     </section>
 
-    <!-- Motion-дизайнер -->
-    <section class="section-box">
-      <div class="panel">
-        <h3 class="section-heading">Motion-дизайнер</h3>
-        <p>
-          Motion-дизайнер – це фахівець, який створює динамічні графічні елементи…
-        </p>
-        <img src="motion-sample.gif" alt="Motion sample" class="motion-sample"/>
+    <section class="motion-designer-section">
+      <div class="motion-content">
+        <h3 class="motion-title">Motion-дизайнер</h3>
+        
+        <div class="motion-detail">
+          <div class="motion-gif">
+            <img src="https://cdn.discordapp.com/attachments/1266156981450838171/1379848600627974307/38f1c8db564f8c5c4b791d251f7ca61a72a6c985_1.gif?ex=6841bba6&is=68406a26&hm=41b87608d342378e0b2b78ffb23a80efa02835c47ffe810f7f218eb982b9856f&" alt="Motion дизайн анімація" loading="lazy" />
+          </div>
+          <div class="motion-description">
+            <p>Motion-дизайнер або відеодизайнер займається створенням анімованої графіки. Він «анімує» рухається статичні об'єкти. Наприклад, придумує анімацію для логотипів і шрифтів, зображає анімації та фотографії та створює статичні об'єкти в рухомі. Робить титри до фільмів, заставки для передач, анімовані презентації та інфографіки, рекламні ролики, трейлери, тизери та багато іншого.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Специфічні знання та вимоги до фахівця -->
-    <section class="section-box">
-      <div class="panel">
-        <h3>Специфічні знання та вимоги до фахівця</h3>
-        <ul class="requirements-list">
-          <li>Знання композиції (вміння розташовувати графічні об’єкти у кадрі), типографіки, теорії кольору.</li>
-          <li>Знання основ сценарного мистецтва.</li>
-          <li>Творче мислення, вміння генерувати нові ідеї та нестандартні рішення.</li>
-          <li>Володіння програмами для графіки та анімації: After Effects, Premiere Pro, Photoshop, Illustrator.</li>
-          <li>Уміння працювати в команді.</li>
-        </ul>
+    <section class="skills-section">
+      <div class="skills-content">
+        <h3 class="skills-title">специфічні знання та вимоги до фахівця</h3>
+        
+        <div class="skills-list">
+          <ul>
+            <li>Знання композиції (вміння грамотно розташовувати графічні об'єкти в кадрі), типографіки (підбір шрифтів, оформлення текстів), теорії кольору (потрібна, щоб підбирати оптимальну колірну гамму).</li>
+            <li>Знання основ сценарного мистецтва.</li>
+            <li>Творче мислення, вміння генерувати нові ідеї, знаходити нестандартні рішення.</li>
+            <li>Володіння комп'ютерними програмами для створення й обробки графіки, відео, анімації. Приклади програм: Adobe After Effects, Adobe Premiere Pro, Adobe Photoshop, Adobe Illustrator та інші.</li>
+            <li>Уміння працювати в команді.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <!-- Інструменти розробника -->
-    <section class="section-box">
-      <div class="panel">
-        <h3>Інструменти розробника</h3>
-        <div class="tools-box">
-          <div class="tools-text">
+    <section class="tools-section">
+      <div class="tools-content">
+        <h3 class="tools-title">інструменти розробника</h3>
+        
+        <div class="tools-grid">
+          <div class="tool-item">
+            <div class="tool-text">
+              <p>Adobe After Effects (основний)<br>Adobe Illustrator, Photoshop</p>
+            </div>
+            <div class="tool-icon">
+              <img src="photoshop.png" alt="Adobe Photoshop" />
+            </div>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-text">
+              <p>Cinema 4D, Blender (для 3D-анімації)</p>
+            </div>
+            <div class="tool-icon">
+              <img src="cinema4d.png" alt="Cinema 4D" />
+            </div>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-text">
+              <p>Figma (іноді)</p>
+            </div>
+            <div class="tool-icon">
+              <img src="figma.png" alt="Figma" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="motion-create-section">
+      <div class="motion-create-content">
+        <h3 class="motion-create-title">Що розробляють Motion-дизайнери?</h3>
+        
+        <div class="motion-create-info">
+          <div class="motion-create-text">
             <ul>
-              <li>Adobe After Effects (основний), Illustrator, Photoshop</li>
-              <li>Cinema 4D, Blender (для 3D-анімації)</li>
-              <li>Figma (іноді)</li>
+              <li>Трейлери, рекламні відео</li>
+              <li>Логотипи в русі (логотип-анімація)</li>
+              <li>Проморолики для Instagram, YouTube, TikTok</li>
             </ul>
           </div>
-          <div class="tools-logos">
-            <img src="ae-logo.png" alt="After Effects"/>
-            <img src="ps-logo.png" alt="Photoshop"/>
-            <img src="c4d-logo.png" alt="Cinema 4D"/>
-            <img src="figma-logo.png" alt="Figma"/>
+        </div>
+      </div>
+    </section>
+
+    <section class="examples-section">
+      <div class="examples-content">
+        <h3 class="examples-title">зразки</h3>
+        
+        <div class="examples-grid">
+          <div class="example-gif large">
+            <img src="https://cdn.discordapp.com/attachments/1266156981450838171/1379853975226028162/c3b6b03117cf4684add734224d3b087a45b46fe5.gif?ex=6841c0a8&is=68406f28&hm=07d0c6ab164fae09d890e8dd82a458771f703587fa5f91ea9d85a2b4eb9164a9&" alt="Motion дизайн приклад" loading="lazy" />
+          </div>
+          <div class="char-image">
+            <img src="char1.png" alt="Персонаж 1" />
+          </div>
+          <div class="char-image">
+            <img src="char2.png" alt="Персонаж 2" />
+          </div>
+          <div class="char-image">
+            <img src="char4.png" alt="Персонаж 4" />
+          </div>
+          <div class="char-image">
+            <img src="char3.png" alt="Персонаж 3" />
+          </div>
+          <div class="example-gif small">
+            <img src="motion2.gif" alt="Motion дизайн приклад 2" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div style="display:none; align-items:center; justify-content:center; width:100%; height:100%; background:rgba(67,5,144,0.5); color:#fff; text-align:center; font-size:0.8rem;">
+              Motion Animation<br>Example 2
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Що розробляють Motion-дизайнери? -->
-    <section class="section-box">
-      <div class="panel">
-        <h3>Що розробляють Motion-дизайнери?</h3>
-        <ul class="develop-list">
-          <li>Трейлери, рекламні відео</li>
-          <li>Логотипи в русі (логотип-анімація)</li>
-          <li>Проморолики для Instagram, YouTube, TikTok</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Зразки -->
-    <section class="section-box">
-      <div class="panel">
-        <h3>зразки</h3>
-        <div class="samples-grid">
-          <div class="sample-large"></div>
-          <div class="sample-small"></div>
-          <div class="sample-small"></div>
-          <div class="sample-small"></div>
-          <div class="sample-small"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Ринок праці -->
-    <section class="section-box">
-      <div class="panel">
-        <h3>Ринок праці</h3>
-        <div class="market-grid">
-          <div class="market-item">
+    <section class="job-market-section">
+      <div class="job-market-content">
+        <h3 class="job-market-title">Ринок праці</h3>
+        
+        <div class="job-market-grid">
+          <div class="salary-info">
             <h4>Зарплата (середня в Україні):</h4>
             <ul>
-              <li>Junior: $400–800</li>
-              <li>Middle: $1000–1500</li>
+              <li>Junior: $400-800</li>
+              <li>Middle: $1000-1500</li>
               <li>Senior: $2000+</li>
             </ul>
           </div>
-          <div class="market-item">
+          
+          <div class="demand-info">
             <h4>Затребуваність:</h4>
             <ul>
-              <li>Висока. Потрібні у продакшн-студіях, digital-агенціях, мобільних застосунках, маркетингу.</li>
+              <li>Висока. Постійно потрібні у продакшн-студіях, діджитал-агенціях, мобільних застосунках, маркетингу.</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Освіта -->
-    <section class="section-box">
-      <div class="panel">
-        <h3>Освіта</h3>
-        <div class="edu-grid">
-          <div class="edu-item">
-            Спеціальності: Графічний дизайн, Медіа-мистецтво, Мультимедіа
-          </div>
-          <div class="edu-item">
-            ЗВО: КНУТД, НДУ “Політехнік”, Львівська академія мистецтв
+    <section class="roadmap-section">
+      <div class="roadmap-content">
+        <h3 class="roadmap-title">Motion-дизайнер – Roadmap (6-18 міс)</h3>
+        
+        <div class="roadmap-info">
+          <div class="roadmap-steps">
+            <div class="roadmap-step">
+              <h4>1. Базовий старт (1-2 міс.)</h4>
+              <ul>
+                <li>Вивчити композицію, типографіку, колір, ритм</li>
+                <li>Ознайомитися з After Effects (через YouTube/курси)</li>
+                <li>Створити прості анімації: логотип, текст, фрейм</li>
+              </ul>
+            </div>
+            
+            <div class="roadmap-step">
+              <h4>2. Освоїти програми (2-4 міс.)</h4>
+              <ul>
+                <li>Поглиблене вивчення Adobe After Effects (motion, easing, маски)</li>
+                <li>Знайомство з Cinema 4D або Blender (3D-елементи в motion)</li>
+                <li>Основи звукодизайну (саунд-дизайн + синхронізація)</li>
+                <li>Створити прості відеоролики (15-30 сек.)</li>
+              </ul>
+            </div>
+            
+            <div class="roadmap-step">
+              <h4>3. Практика та портфоліо (3-6 міс.)</h4>
+              <ul>
+                <li>Створити:
+                  <ul class="sub-list">
+                    <li>-Заставку YouTube/логотип-анімацію</li>
+                    <li>-Рекламний ролик (motion ad)</li>
+                    <li>-Анімацію мобільного інтерфейсу</li>
+                  </ul>
+                </li>
+                <li>Опублікувати на Behance, Dribbble, Instagram</li>
+              </ul>
+            </div>
+            
+            <div class="roadmap-step">
+              <h4>4. Робота / фріланс (після 6 міс.)</h4>
+              <ul>
+                <li>Реєстрація на фріланс-біржах (Upwork, Fiverr, Freelancehunt)</li>
+                <li>Виконання перших замовлень</li>
+              </ul>
+            </div>
+            
+            <div class="roadmap-note">
+              <p>Подальше навчання (motion design у 3D, VFX, експерименти)</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Таблиця -->
-    <section class="section-box">
-      <div class="panel">
-        <h3>Таблиця</h3>
-        <div class="table-controls">
-          <button class="tbl-btn">−</button>
-          <button class="tbl-btn">+</button>
-        </div>
-        <div class="table-placeholder">
-          <!-- Тут буде докладна таблиця -->
+    <section class="table-section">
+      <div class="table-content">
+        <h3 class="table-title">Таблиця</h3>
+        
+        <div class="comparison-table">
+          <div class="table-column pros">
+            <div class="column-header">+</div>
+            <div class="column-content">
+              <div class="table-item">
+                <h5>Креативна робота:</h5>
+                <p>поєднання графіки, анімації та відео.</p>
+              </div>
+              
+              <div class="table-item">
+                <h5>Затребуваність:</h5>
+                <p>потрібен в рекламі, іграх, соціальних мережах.</p>
+              </div>
+              
+              <div class="table-item">
+                <h5>Гнучкість:</h5>
+                <p>можливість фрілансу та віддаленої роботи.</p>
+              </div>
+              
+              <div class="table-item">
+                <h5>Можливість самовираження:</h5>
+                <p>створення унікальних візуальних історій.</p>
+              </div>
+              
+              <div class="table-item">
+                <h5>Постійне навчання:</h5>
+                <p>необхідно слідкувати за новими трендами та технологіями.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="table-column cons">
+            <div class="column-header">-</div>
+            <div class="column-content">
+              <div class="table-item">
+                <h5>Висока конкуренція:</h5>
+                <p>багато фахівців на ринку.</p>
+              </div>
+              
+              <div class="table-item">
+                <h5>Стресові дедлайни:</h5>
+                <p>часто працюють у стислі терміни.</p>
+              </div>
+              
+              <div class="table-item">
+                <h5>Обмеження творчості:</h5>
+                <p>клієнти можуть диктувати стиль та напрямок роботи.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
   </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="images.jpg" alt="Логотип Політ" class="footer-logo-img" />
+          <span class="footer-logo-text">Комп'ютерна графіка</span>
+        </div>
+        <p class="footer-description">
+          Вивчайте комп'ютерну графіку разом з нами. Від основ до професійного рівня.
+        </p>
+        <a href="index.html" class="home-button">
+          🏠 На початок
+        </a>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Розділи</h4>
+        <ul class="footer-links">
+          <li><a href="page1.html">2D графіка</a></li>
+          <li><a href="page2.html">3D графіка</a></li>
+          <li><a href="page3.html">VR/AR технології</a></li>
+          <li><a href="dzherela.html">Джерела</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Проект</h4>
+        <ul class="footer-links">
+          <li><a href="#definition">Визначення</a></li>
+          <li><a href="#professions">Професії</a></li>
+          <li>Група 8, Л-10В</li>
+          <li>Ліцей "Політ"</li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Автори</h4>
+        <ul class="footer-links">
+          <li>Галущенко Ольга</li>
+          <li>Артюх Софія</li>
+          <li>Скакун Владислав</li>
+          <li>2025 рік</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p>&copy; 2025 Комп'ютерна графіка. Проект учнів ліцею "Політ".</p>
+        <div class="footer-social">
+          <a href="#" class="social-link">📘</a>
+          <a href="#" class="social-link">📷</a>
+          <a href="#" class="social-link">🐦</a>
+          <a href="#" class="social-link">💼</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      body.classList.add(savedTheme);
+    }
+
+    themeToggle.addEventListener('click', () => {
+      if (body.classList.contains('light-theme')) {
+        body.classList.remove('light-theme');
+        localStorage.setItem('theme', '');
+      } else {
+        body.classList.add('light-theme');
+        localStorage.setItem('theme', 'light-theme');
+      }
+    });
+  </script>
 </body>
 </html>

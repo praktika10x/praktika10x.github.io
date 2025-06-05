@@ -1,98 +1,112 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Full-stack Developer</title>
-  <style>
-    body {
-      font-family: sans-serif;
-    }
-  </style>
-	<link rel="stylesheet" href="Style.css">
-</head>
-<body class="internal">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Full-stack Developer</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="Full-stack.css" />
+	    <link rel="stylesheet" href="Style.css" />
+    </head>
+    <body class="internal">
         <div class="header">
             <div class="header-logo">
                 <img src="Project-img/SVG/ПроектЛого.svg" class="eniac" />
             </div>
-		
-<ul class="nav-links">
-   <li> <a href="#essence">Сутність професії</a> </li>
-   <li>  <a href="#knowledge">Специфічні знання та вимоги</a> </li>
-   <li> <a href="#tools">Основні інструменти</a> </li>
-   <li><a href="#product">Продукти</a></li>
-   <li> <a href="#demand">Затребуваність</a></li>
-   <li> <a href="#salary">Заробітня плата</a></li>
-   <li>  <a href="#educational">Заклади освіти</a></li>
-</ul>
-
+            <ul class="nav-links">
+               <li> <a href="#essence">Сутність професії</a> </li>
+               <li>  <a href="#knowledge">Специфічні знання та вимоги</a> </li>
+               <li> <a href="#tools">Основні інструменти</a> </li>
+               <li><a href="#product">Продукти</a></li>
+               <li> <a href="#demand">Затребуваність</a></li>
+               <li> <a href="#salary">Заробітня плата</a></li>
+               <li>  <a href="#educational">Заклади освіти</a></li>
+            </ul>
         </div>
-	
-  <p><h1>Сутність професії</h1> </p>
-<p id="essence">Full stack developer – це універсальний спеціаліст, який може розробляти як Back-end, так і Front-end
+        <div class="intro">
+            <h1>Full-stack Developer</h1>
+          <section class="main">
+                <h2 id="essence">Сутність професії</h2>
+    <p>Full stack developer – це універсальний спеціаліст, який може розробляти як Back-end, так і Front-end
 компоненти вебпродуктів. Також він має достатні знання для роботи з серверами, базами даних, 
 операційними системами та PaaS.</p>
-<p id="knowledge">Специфічні знання та вимоги до фахівця</p>
- <h1>Frontend (клієнтська частина):</h1>
+    <h2 id="knowledge">Специфічні знання та вимоги до фахівця</h2>
+    <h3>Frontend (клієнтська частина):</h3>
     <ul>
-	<li>HTML, CSS, JavaScript</li>
-	<li>React.js / Vue.js / Angular</li>
-	<li>Адаптивна верстка (Flexbox, Grid)</li>
-	<li>Axios / Fetch / REST API</li>
-	<li>Bootstrap / Tailwind CSS</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React.js / Vue.js / Angular</li>
+      <li>Адаптивна верстка (Flexbox, Grid)</li>
+      <li>Axios / Fetch / REST API</li>
+      <li>Bootstrap / Tailwind CSS</li>
     </ul>
- <h1>Backend </h1>
-	<ul>
-	<li>Node.js (Express), Django, Spring Boot, Laravel</li>
-	<li>REST API, авторизація (JWT, OAuth)</li>
-	<li>MVC-архітектура</li>
-	<li>Обробка запитів, помилок, валідація</li>
-        </ul>
- <h1>Бази даних:</h1>
-<ul>	
-	<li>SQL (PostgreSQL, MySQL)</li>
-	<li>NoSQL (MongoDB)</li>
-	<li>ORM (Sequelize, Mongoose, Django ORM)</li>
-</ul>
- <h1>DevOps та інструменти:</h1>
-	<ul type="round">
-	<li>Git + GitHub</li>
-	<li>Docker</li>
-	<li>CI/CD (GitHub Actions, Jenkins)</li>
-	<li>Хмара: AWS / Firebase / Heroku</li>
-        </ul>
- <h1>Інше:</h1>
-	<ul>
-	<li>Тестування (Jest, Cypress)</li>
-	<li>Figma / Postman</li>
-	<li>Збирачі (Webpack, Vite)</li>
-	</ul>
+    <h3>Backend</h3>
+    <ul>
+      <li>Node.js (Express), Django, Spring Boot, Laravel</li>
+      <li>REST API, авторизація (JWT, OAuth)</li>
+      <li>MVC-архітектура</li>
+      <li>Обробка запитів, помилок, валідація</li>
+    </ul>
+    <h3>Бази даних:</h3>
+    <ul>
+      <li>SQL (PostgreSQL, MySQL)</li>
+      <li>NoSQL (MongoDB)</li>
+      <li>ORM (Sequelize, Mongoose, Django ORM)</li>
+    </ul>
+    <h3>DevOps та інструменти:</h3>
+    <ul>
+      <li>Git + GitHub</li>
+      <li>Docker</li>
+      <li>CI/CD (GitHub Actions, Jenkins)</li>
+      <li>Хмара: AWS / Firebase / Heroku</li>
+    </ul>
+    <h3>Інше:</h3>
+    <ul>
+      <li>Тестування (Jest, Cypress)</li>
+      <li>Figma / Postman</li>
+      <li>Збирачі (Webpack, Vite)</li>
+    </ul>
+              
+    <!-- Слайдер інструментів -->
+    <section id="tools">
+      <h2>Основні інструменти:</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide info-card">
+            <h3 class="card-title">Редактор коду</h3>
+            <p class="cart-desc">VS Code</p>
+          </div>
+          <div class="swiper-slide info-card">
+            <h3 class="card-title">Контроль версій</h3>
+            <p class="cart-desc">Git + GitHub</p>
+          </div>
+          <div class="swiper-slide info-card">
+            <h3 class="card-title">Frontend</h3>
+            <p class="cart-desc">React / Vue / Angular, HTML, CSS, JS, Tailwind, Bootstrap, Webpack, Vite, Figma</p>
+          </div>
+          <div class="swiper-slide info-card">
+            <h3 class="card-title">Backend</h3>
+            <p class="cart-desc">Node.js / Django / Laravel, PostgreSQL / MongoDB, Postman</p>
+          </div>
+          <div class="swiper-slide info-card">
+            <h3 class="card-title">DevOps</h3>
+            <p class="cart-desc">Docker, GitHub Actions, Heroku / AWS / Vercel</p>
+          </div>
+          <div class="swiper-slide info-card">
+            <h3 class="card-title">Тестування</h3>
+            <p class="cart-desc">Jest / Cypress</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
 
-
-	
-<p id="tools">Основні інструменти:</p>
- Редактор коду:
-	VS Code
- Контроль версій:
-	Git + GitHub
- Frontend:
-	React / Vue / Angular
-	HTML, CSS, JavaScript
-	Tailwind CSS, Bootstrap
-	Webpack / Vite
-	Figma (дизайн)
- Backend:
-	Node.js + Express / Django / Laravel
-	PostgreSQL / MongoDB
-	Postman (тест API)
- DevOps:
-	Docker
-	GitHub Actions (CI/CD)
-	Heroku / Vercel / AWS (деплой)
- Тестування:
-	Jest / Cypress
-  <div class="wrap">
+    <!-- Продукти -->
+   <div class="wrap">
     <div class="card">       
       <img src="https://cdn.freebiesupply.com/logos/large/2x/airbnb-2-logo-png-transparent.png" alt="Airbnb logo">
       <p id="product">
@@ -123,39 +137,24 @@
 	  <p>на червень 2025</p>
   </div>	
 </div>
-<h1 class="section-title" id="educational">Заклади освіти</h1>
 
-<div class="wrap wrap-educational">
-  <div class="card card-educational">
-    <p><strong>КПІ ім. Ігоря Сікорського</strong></p>
-    <p>Київ</p>
-    <p>державна</p>
-    <p>від 16 600 грн</p>
-    <p>денна, заочна</p>
-    <p>бакалавр, магістр, PhD, доктор наук</p>
-    <p>20 000+ студ</p>
-  </div>
 
-  <div class="card card-educational">
-    <p><strong>НУ «Львівська політехніка»</strong></p>
-    <p>Львів</p>
-    <p>державна</p>
-    <p>від 6 400 до 26 000 грн</p>
-    <p>денна, заочна</p>
-    <p>молодший спеціаліст, бакалавр, магістр</p>
-    <p>близько 35 000 студ.</p>
-  </div>
-
-  <div class="card card-educational">
-    <p><strong>Одеська політехніка</strong></p>
-    <p>Одеса</p>
-    <p>державна</p>
-    <p>від 18 000 до 40 000 грн</p>
-    <p>денна, заочна, дистанційна</p>
-    <p>бакалавр, магістр, PhD</p>
-    <p>приблизно 15 000 студ.</p>
-  </div>
-</div>
+    <h2 class="section-title" id="educational">Заклади освіти</h2>
+    <section class="wrap">
+      <div class="card card-educational">
+        <p><strong>КПІ ім. Ігоря Сікорського</strong></p>
+        <p>Київ, державна, денна/заочна, від 16 600 грн</p>
+      </div>
+      <div class="card card-educational">
+        <p><strong>НУ «Львівська політехніка»</strong></p>
+        <p>Львів, державна, денна/заочна, від 6 400 грн</p>
+      </div>
+      <div class="card card-educational">
+        <p><strong>Одеська політехніка</strong></p>
+        <p>Одеса, державна, дистанційна, від 18 000 грн</p>
+      </div>
+    </section>
+  </main>
 
 	<footer class="footer">
             <p>Пропонуємо для ознайомлення</p>
@@ -185,3 +184,22 @@
   </a>	
 </div>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    });
+  </script>
+</body>
+</html>
