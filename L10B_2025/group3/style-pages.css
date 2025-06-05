@@ -109,7 +109,6 @@ p {
 }
 
 .card {
-  display: grid;
   width: 250px;
   background-color: #f9cdda;
   border: 2px solid lightgray;
