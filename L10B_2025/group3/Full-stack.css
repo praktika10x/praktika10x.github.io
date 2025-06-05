@@ -145,17 +145,6 @@ ul{
  font-size: 30px;
 }
 
-.card {
-  width: 350px;
-  background-color: #f9cdda;
-  border: 2px solid lightgray;
-  border-radius: 15px;
-  padding: 15px;
-  text-align: center;
-  color: #333;
-  box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
 
 .card:hover {
   transform: translateY(-5px);
