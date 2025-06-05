@@ -92,9 +92,9 @@ html {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* --- Page-specific styles --- */
 
-/* Home Page Specifics */
+
+
 .home-page .hero {
     position: relative;
     padding: 100px 20px;
@@ -157,7 +157,7 @@ html {
     margin-top: 50px;
 }
 
-/* Project Page Specifics */
+
 .project-page .container {
     width: 90%;
     max-width: 1000px;
@@ -231,7 +231,7 @@ html {
     border-radius: 50%;
 }
 
-/* Sources Page Specifics */
+
 .sources-page .container {
     width: 90%;
     max-width: 1000px;
@@ -324,7 +324,7 @@ html {
     font-weight: 600;
 }
 
-/* --- General Content Elements (applied if no specific page class overrides) --- */
+
 h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 52px;
@@ -457,7 +457,7 @@ dl dd {
     color: #222;
 }
 
-/* Footer styles */
+
 footer {
     background-color: #f7d04e;
     color: #333;
@@ -498,7 +498,7 @@ footer .team-info {
     transform: scale(1.1);
 }
 
-/* --- Media Queries --- */
+
 
 @media (max-width: 1200px) {
     .home-page .rounded-block-container {
