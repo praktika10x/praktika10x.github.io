@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap');
 
-
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333333; 
+    color: #333333;
     line-height: 1.6;
-    background-image: url('https://img.freepik.com/premium-photo/abstract-yellow-background-web-design-templates-product-studio-with-smooth-gradient-color_570543-9094.jpg'); /* Keep original background */
+    background-image: url('https://img.freepik.com/premium-photo/abstract-yellow-background-web-design-templates-product-studio-with-smooth-gradient-color_570543-9094.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -18,9 +17,8 @@ html {
     scroll-behavior: smooth;
 }
 
-
 .logo-bar {
-    background-color: #2C3E50; 
+    background-color: #2C3E50;
     padding: 15px 30px;
     display: flex;
     align-items: center;
@@ -52,14 +50,14 @@ html {
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
     font-weight: 700;
-    color: #ECF0F1; 
+    color: #ECF0F1;
     text-transform: uppercase;
     letter-spacing: 1.2px;
 }
 
 .language-switcher a {
     font-family: 'Open Sans', sans-serif;
-    color: #ECF0F1; 
+    color: #ECF0F1;
     text-decoration: none;
     font-weight: bold;
     padding: 8px 12px;
@@ -70,8 +68,8 @@ html {
 }
 
 .language-switcher a:hover {
-    color: #2C3E50; /* Darker on hover */
-    background-color: #BDC3C7; 
+    color: #2C3E50;
+    background-color: #BDC3C7;
 }
 
 .nav {
@@ -80,7 +78,7 @@ html {
 }
 
 .nav a {
-    color: #ECF0F1; 
+    color: #ECF0F1;
     text-decoration: none;
     margin: 0 10px;
     font-weight: 600;
@@ -96,18 +94,17 @@ html {
 
 .nav a:hover,
 .nav a.active {
-    background-color: #3498DB; 
+    background-color: #3498DB;
     border-color: #3498DB;
-    color: #FFFFFF; 
+    color: #FFFFFF;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
-
 h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 56px;
-    color: #2C3E50; 
+    color: #2C3E50;
     text-align: left;
     margin-bottom: 40px;
 }
@@ -127,7 +124,7 @@ h2 {
 h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
-    color: #34495E; 
+    color: #34495E;
     margin-bottom: 25px;
     margin-top: 35px;
     text-align: left;
@@ -158,11 +155,10 @@ li {
     text-align: left;
 }
 
-
 .btn {
     align-self: flex-start;
-    background-color: #3498DB; 
-    color: #FFFFFF; 
+    background-color: #3498DB;
+    color: #FFFFFF;
     padding: 14px 25px;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
@@ -176,7 +172,7 @@ li {
 }
 
 .btn:hover {
-    background-color: #2980B9; 
+    background-color: #2980B9;
     border-color: #2980B9;
     color: #FFFFFF;
     transform: translateY(-2px);
@@ -187,10 +183,9 @@ li {
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-
 footer {
-    background-color: #2C3E50; 
-    color: #ECF0F1; 
+    background-color: #2C3E50;
+    color: #ECF0F1;
     padding: 30px;
     margin-top: 60px;
     font-family: 'Open Sans', sans-serif;
@@ -206,7 +201,7 @@ footer .team-info {
     margin-bottom: 0;
     text-align: left;
     flex-grow: 1;
-    color: #BDC3C7; 
+    color: #BDC3C7;
 }
 
 .sources-emoji {
@@ -215,8 +210,8 @@ footer .team-info {
     align-items: center;
     font-size: 2em;
     text-decoration: none;
-    color: #FFFFFF; 
-    background-color: #3498DB; 
+    color: #FFFFFF;
+    background-color: #3498DB;
     border-radius: 50%;
     width: 55px;
     height: 55px;
@@ -225,11 +220,10 @@ footer .team-info {
 }
 
 .sources-emoji:hover {
-    background-color: #2980B9; 
+    background-color: #2980B9;
     transform: scale(1.15) rotate(5deg);
 }
 
-/* --- Animations --- */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -306,7 +300,6 @@ footer .team-info {
     }
 }
 
-
 .fade-in-text {
     animation: fadeIn 1.5s ease-out;
 }
@@ -353,7 +346,6 @@ footer .team-info {
 .slider-container.slide-in-left {
     animation: slideInLeft 1s ease-out forwards;
 }
-
 
 
 .home-page .hero {
@@ -413,13 +405,13 @@ footer .team-info {
     padding-left: 0;
     text-align: center;
     font-size: 48px;
-    color: #2C3E50; 
+    color: #2C3E50;
     margin-bottom: 20px;
 }
 
 .home-page .intro-section p {
     font-size: 20px;
-    color: #555555; 
+    color: #555555;
     line-height: 1.8;
     text-align: center;
 }
@@ -462,7 +454,7 @@ footer .team-info {
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
     margin-bottom: 20px;
-    color: #3498DB; 
+    color: #3498DB;
     border-left: none;
     padding-left: 0;
     margin-top: 0;
@@ -480,7 +472,6 @@ footer .team-info {
 }
 
 
-
 .project-page .container,
 .sources-page .container,
 .profession-page .container {
@@ -493,9 +484,8 @@ footer .team-info {
     border-radius: 20px;
     box-sizing: border-box;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1.5s ease-out; 
+    animation: fadeIn 1.5s ease-out;
 }
-
 
 .project-page .hero,
 .profession-page .hero {
@@ -546,22 +536,21 @@ footer .team-info {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-
 .profession-page h1 {
-    font-size: 3em; 
-    color: #2C3E50; 
+    font-size: 3em;
+    color: #2C3E50;
     text-align: center;
     margin-bottom: 40px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border-bottom: 3px solid #3498DB; 
+    border-bottom: 3px solid #3498DB;
     padding-bottom: 15px;
     animation: slideInFromTop 1s ease-out;
 }
 
 .profession-page h2 {
-    font-size: 2.2em; 
-    color: #34495E; 
+    font-size: 2.2em;
+    color: #34495E;
     margin-top: 50px;
     margin-bottom: 25px;
     text-align: center;
@@ -575,7 +564,7 @@ footer .team-info {
     line-height: 1.8;
     color: #666;
     margin-bottom: 20px;
-    text-align: justify; 
+    text-align: justify;
 }
 
 .profession-page .cards-container {
@@ -604,7 +593,7 @@ footer .team-info {
 .profession-page .icon-circle {
     width: 80px;
     height: 80px;
-    background-color: #3498DB; 
+    background-color: #3498DB;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -628,13 +617,13 @@ footer .team-info {
 
 .profession-page .card h2 {
     font-size: 1.6em;
-    color: #4A6C8C; 
+    color: #4A6C8C;
     margin-bottom: 15px;
-    border-bottom: none; 
+    border-bottom: none;
 }
 
 .profession-page .card p {
-    font-size: 1em; 
+    font-size: 1em;
     color: #777;
 }
 
@@ -646,7 +635,7 @@ footer .team-info {
 
 .profession-page ul li {
     background-color: #f9f9f9;
-    border-left: 5px solid #3498DB; 
+    border-left: 5px solid #3498DB;
     margin-bottom: 10px;
     padding: 15px 20px;
     border-radius: 8px;
@@ -659,10 +648,9 @@ footer .team-info {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-
 .project-page h2 {
     color: #2C3E50;
-    border-left: 10px solid #3498DB; 
+    border-left: 10px solid #3498DB;
     padding-left: 25px;
     margin-bottom: 30px;
 }
@@ -716,7 +704,7 @@ footer .team-info {
 .project-page .card h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
-    color: #3498DB; 
+    color: #3498DB;
     margin-bottom: 15px;
     border-left: none;
     padding-left: 0;
@@ -734,7 +722,7 @@ footer .team-info {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #3498DB; 
+    background-color: #3498DB;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -754,9 +742,8 @@ footer .team-info {
     object-fit: contain;
     border-radius: 50%;
     padding: 10px;
-    filter: invert(1); 
+    filter: invert(1);
 }
-
 
 
 .sources-page .sources-section {
@@ -815,7 +802,6 @@ footer .team-info {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 .image-placeholder {
     display: flex;
     flex-direction: column;
@@ -828,13 +814,12 @@ footer .team-info {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.5s ease-out; 
+    transition: transform 0.5s ease-out;
 }
 
 .image-placeholder img:hover {
     transform: scale(1.05);
 }
-
 
 .slider-container {
     position: relative;
@@ -842,7 +827,7 @@ footer .team-info {
     max-width: 900px;
     margin: 40px auto;
     overflow: hidden;
-    border: 3px solid #27AE60; 
+    border: 3px solid #27AE60;
     border-radius: 20px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     background-color: #E8F5E9;
@@ -868,12 +853,12 @@ footer .team-info {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 250px; 
+    height: 250px;
 }
 
 .slide h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 2.2em; 
+    font-size: 2.2em;
     color: #229954;
     margin-top: 0;
     margin-bottom: 15px;
@@ -882,7 +867,7 @@ footer .team-info {
 
 .slide p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em; 
+    font-size: 1.2em;
     color: #555;
     line-height: 1.6;
     text-align: center;
@@ -897,18 +882,18 @@ footer .team-info {
     color: #FFFFFF;
     border: none;
     padding: 15px 22px;
-    font-size: 28px; 
+    font-size: 28px;
     cursor: pointer;
     border-radius: 50%;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     z-index: 10;
     opacity: 0.9;
 }
 
 .prev-btn:hover,
 .next-btn:hover {
-    background-color: #2ECC71; 
+    background-color: #2ECC71;
     color: #FFFFFF;
     transform: translateY(-50%) scale(1.1);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
@@ -924,7 +909,6 @@ footer .team-info {
 }
 
 
-
 @media (max-width: 1200px) {
     .home-page .rounded-block-container {
         max-width: 95%;
@@ -936,7 +920,7 @@ footer .team-info {
     }
     .project-page .container,
     .sources-page .container,
-    .profession-page .container { 
+    .profession-page .container {
         padding: 30px;
     }
     h1 {
@@ -952,12 +936,12 @@ footer .team-info {
     li {
         font-size: 18px;
     }
-    .profession-page h1 { font-size: 2.5em; } 
-    .profession-page h2 { font-size: 1.8em; } 
-    .profession-page .card h2 { font-size: 1.4em; } 
-    .profession-page .slide h3 { font-size: 1.8em; } 
-    .profession-page .slide p { font-size: 1em; } 
-    .slider-container { max-width: 700px; padding: 15px; } 
+    .profession-page h1 { font-size: 2.5em; }
+    .profession-page h2 { font-size: 1.8em; }
+    .profession-page .card h2 { font-size: 1.4em; }
+    .profession-page .slide h3 { font-size: 1.8em; }
+    .profession-page .slide p { font-size: 1em; }
+    .slider-container { max-width: 700px; padding: 15px; }
 }
 
 @media (max-width: 768px) {
@@ -1034,7 +1018,7 @@ footer .team-info {
         flex-direction: column;
         align-items: center;
         gap: 25px;
-        display: flex; 
+        display: flex;
     }
     .project-page .card,
     .profession-page .card {
@@ -1046,13 +1030,13 @@ footer .team-info {
     .project-page .card h2 {
         font-size: 24px;
     }
-    .profession-page .card h2 { font-size: 1.4em; } 
+    .profession-page .card h2 { font-size: 1.4em; }
 
     .project-page .icon-circle {
         width: 80px;
         height: 80px;
     }
-    .profession-page .icon-circle { width: 70px; height: 70px; } 
+    .profession-page .icon-circle { width: 70px; height: 70px; }
 
     .sources-page .sources-section h3 {
         font-size: 32px;
@@ -1123,22 +1107,21 @@ footer .team-info {
     li {
         font-size: 17px;
     }
-    
     .slider-container {
         max-width: 95%;
         margin: 30px auto;
-        padding: 10px; 
+        padding: 10px;
         border-radius: 15px;
     }
     .slide {
-        height: 200px; 
+        height: 200px;
         padding: 20px;
     }
     .slide h3 {
-        font-size: 1.5em; 
+        font-size: 1.5em;
     }
     .slide p {
-        font-size: 0.95em; 
+        font-size: 0.95em;
     }
     .prev-btn,
     .next-btn {
@@ -1175,13 +1158,13 @@ footer .team-info {
         font-size: 14px;
     }
     .project-page .card,
-    .profession-page .card { 
+    .profession-page .card {
         padding: 20px;
     }
     .project-page .card h2 {
         font-size: 22px;
     }
-    .profession-page .card h2 { font-size: 1.3em; } 
+    .profession-page .card h2 { font-size: 1.3em; }
 
     .sources-page .sources-section h3 {
         font-size: 24px;
@@ -1207,28 +1190,27 @@ footer .team-info {
         height: 40px;
         font-size: 1.4em;
     }
-
     .slider-container {
         max-width: 100%;
         margin: 20px auto;
         border-radius: 10px;
     }
     .slide {
-        height: 180px; 
+        height: 180px;
         padding: 15px;
     }
     .slide h3 {
-        font-size: 1.3em; 
+        font-size: 1.3em;
     }
     .slide p {
-        font-size: 0.85em; 
+        font-size: 0.85em;
     }
     .prev-btn,
     .next-btn {
         padding: 8px 12px;
         font-size: 20px;
         left: 5px;
-        right: 5px; 
+        right: 5px;
     }
     .image-placeholder {
         gap: 20px;
