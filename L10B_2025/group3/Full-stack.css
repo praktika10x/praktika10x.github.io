@@ -205,3 +205,29 @@ img.fullscreen-image {
 .nav-links li a:hover {
   color: #ffcc00;
 }
+
+.swiper {
+    width: 100%;
+    height: 300px;
+    margin: 30px;
+}
+
+.swiper-slide {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 100%;
+ text-align: center;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: #954BAA;
+}
+
+.swiper-pagination-bullet-active {
+    background: #954BAA;
+}
