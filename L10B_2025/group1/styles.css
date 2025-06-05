@@ -122,6 +122,6 @@ h1{
 	background: skyblue;
           color: black;
 	transition: 1s;
-	scale: 1.1
+	transform: scale(2, 0.5);
 	transition: 1s;
 }
