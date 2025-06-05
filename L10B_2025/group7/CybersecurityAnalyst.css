@@ -1,3 +1,4 @@
+
 .info-blocks-container {
     display: flex;
     flex-wrap: wrap;
@@ -5,6 +6,7 @@
     gap: 30px;
     margin-top: 40px;
 }
+
 
 .info-block {
     background-color: #FFFFFF;
@@ -32,7 +34,6 @@
 .animated-section.is-visible .info-block:nth-child(2) { animation-delay: 0.2s; }
 .animated-section.is-visible .info-block:nth-child(3) { animation-delay: 0.3s; }
 .animated-section.is-visible .info-block:nth-child(4) { animation-delay: 0.4s; }
-
 
 .info-block:hover {
     transform: translateY(-8px);
@@ -81,6 +82,7 @@
     transform: rotate(10deg) scale(1.1);
 }
 
+/* --- Tools Grid Styles --- */
 .tools-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -166,6 +168,7 @@
     transform: scale(1.1);
 }
 
+
 .product-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -248,6 +251,7 @@
     transform: rotate(-5deg) scale(1.05);
 }
 
+
 .slider-image {
     max-width: 100%;
     height: auto;
@@ -322,6 +326,85 @@
     transform: translateY(-2px);
 }
 
+
+@keyframes bounceIn {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+    20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        -webkit-transform: scale3d(.97, .97, .97);
+        transform: scale3d(.97, .97, .97);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* --- Responsive Styles --- */
 @media (max-width: 768px) {
     .info-block,
     .tool-item,
