@@ -110,7 +110,7 @@ h1{
   font-weight: 400;
   font-style: normal;
 }
-.Silka{
+.Silka a{
 	font-size: 30px;
 	padding: 10px 20px;
           border-radius: 10px;
@@ -118,7 +118,7 @@ h1{
 	text-decoration: none;
 	text-align:centre;
 }
-.Silka:hover{
+.Silka a:hover{
 	background: skyblue;
           color: black;
 	transition: 1s;
