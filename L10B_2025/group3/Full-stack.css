@@ -179,7 +179,7 @@ img.fullscreen-image {
 }
 .nav-links {
   display: flex;
-  justify-content: flex-end;
+  justify-content: right;
   align-items: center;
   gap: 20px;
   list-style: none;
