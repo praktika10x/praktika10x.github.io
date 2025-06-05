@@ -82,7 +82,6 @@
     transform: rotate(10deg) scale(1.1);
 }
 
-/* --- Tools Grid Styles --- */
 .tools-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
