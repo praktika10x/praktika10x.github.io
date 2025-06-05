@@ -1,14 +1,12 @@
-from urllib import request
-
 from django.shortcuts import render
 
 def index(request):
     return render(request, 'main/index.html')
-def index(NLP):
+def NLP(request):
     return render(request, 'main/page1.html')
-def index(CV):
+def CV(request):
     return render(request, 'main/page2.html')
-def index(DL):
+def DL(request):
     return render(request, 'main/page3.html')
-def index(AR):
+def AR(request):
     return render(request, 'main/page4.html')
