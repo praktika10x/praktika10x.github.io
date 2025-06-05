@@ -103,12 +103,13 @@ p {
 .wrap {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; 
   padding: 20px;
-  justify-content: space-evenly;
+  gap: 20px; /* відступи між картками */
 }
 
 .card {
-  width: 15%;
+  width: 350px;
   background-color: #f9cdda;
   border: 2px solid lightgray;
   border-radius: 15px;
@@ -117,7 +118,6 @@ p {
   color: #333;
   box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
   transition: transform 0.3s, box-shadow 0.3s;
-  margin:20px;
 }
 
 .card:hover {
