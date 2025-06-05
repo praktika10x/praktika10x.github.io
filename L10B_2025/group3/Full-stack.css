@@ -55,8 +55,12 @@ h1 {
     padding-bottom: 30px;
 }
 h3{
-    font-family: "Tektur", sans-serif;
+  font-family: "Tektur", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin:50px 0 0 0;
 }
+
 
 .subtitle {
     font-family: "Tektur", sans-serif;
@@ -176,24 +180,22 @@ img.fullscreen-image {
   width: 100%;
   margin: 0;
 }
+.navdiv{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
 .nav-links {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   align-items: center;
   gap: 20px;
   list-style: none;
   padding: 0;
   margin: 0;
-}
-.info-card {
-  text-align: center;
-  padding: 20px;
+  width: 1300px;
 }
 
-.card-title
- {
-  text-align: center;
-}
 .nav-links li a {
   text-decoration: none;
   color: #ffffff;
@@ -204,6 +206,15 @@ img.fullscreen-image {
 
 .nav-links li a:hover {
   color: #ffcc00;
+}
+.info-card {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-title
+ {
+  text-align: center;
 }
 
 .swiper {
