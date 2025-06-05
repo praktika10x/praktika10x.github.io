@@ -6,7 +6,6 @@ html, body {
   height: 100%;
 }
 
-
 /* === BODY === */
 body {
   background-color: #f4f4f4;
@@ -138,6 +137,10 @@ ul{
   box-shadow: 6px 8px 8px 0 rgba(38, 19, 116, 0.45);
   background: linear-gradient(180deg, rgba(149, 75, 170, 0.65) 65.38%, rgba(255, 255, 255, 0.65) 99.99%);
 }
+.cardnav:hover {
+  transition: 1s;
+  transform: scale(1.05);
+}
 .wrapnav {
   display: flex;
   flex-wrap: wrap;
@@ -218,7 +221,6 @@ a{
   box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 4px 4px 12px rgba(135, 206, 235, 0.8);

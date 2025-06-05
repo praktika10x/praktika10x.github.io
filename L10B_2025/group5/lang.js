@@ -7,7 +7,7 @@ const langArr = {
         "ua": "Професії",
         "en": "Professions",
     },
-    "border-bottom-hover": {
+    "home": {
         "ua": "Головна",
         "en": "Home",
     },
