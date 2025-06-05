@@ -131,9 +131,9 @@ p {
 }
 
 .card_educational {
-  width: 20%;
-  max-width: 25%;
-  background-color: #fff;
+  width: 400px;       
+  max-width: 100%;   
+  min-height: 240px; 
 }
 
 .card-salary {
