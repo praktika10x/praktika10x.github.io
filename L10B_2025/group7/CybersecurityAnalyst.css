@@ -1,6 +1,4 @@
-/* Custom styles for CybersecurityAnalyst.html */
 
-/* Ensure the hero section in project page is consistent with main page structure */
 .project-page .hero {
     position: relative;
     padding: 120px 20px;
@@ -17,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://i.gifer.com/bJk.gif') no-repeat center center/cover; /* Placeholder, adjust if needed */
+    background: url('https://i.gifer.com/bJk.gif') no-repeat center center/cover;
     z-index: 0;
     filter: brightness(50%);
     transform: scale(1.05);
@@ -45,7 +43,7 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* General Page Styling Enhancements */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -103,7 +101,7 @@ ul li:hover {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Card Styling for Roadmap */
+
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -148,14 +146,14 @@ ul li:hover {
     max-width: 60%;
     max-height: 60%;
     display: block;
-    border-radius: 50%; /* If your icons are square */
+    border-radius: 50%; 
 }
 
 .card h2 {
     font-size: 1.6em;
     color: #444;
     margin-bottom: 15px;
-    border-bottom: none; /* Remove section H2 border */
+    border-bottom: none; 
 }
 
 .card p {
@@ -163,12 +161,12 @@ ul li:hover {
     color: #777;
 }
 
-/* Image Placeholder for salary and demand */
+
 .image-placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px; /* Space between images */
+    gap: 30px;
     margin: 40px 0;
 }
 
@@ -176,31 +174,31 @@ ul li:hover {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.5s ease-out; /* Animation for images */
+    transition: transform 0.5s ease-out; 
 }
 
 .image-placeholder img:hover {
     transform: scale(1.05);
 }
 
-/* Slider Specific Styles */
+
 .slider-container {
     position: relative;
     width: 100%;
-    max-width: 900px; /* Increased max-width for better view */
+    max-width: 900px;
     margin: 40px auto;
     overflow: hidden;
-    border: 3px solid #4CAF50; /* A bit more prominent border */
-    border-radius: 20px; /* More rounded corners */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Stronger shadow */
-    background-color: #E8F5E9; /* Light green background */
-    padding: 20px; /* Inner padding */
-    box-sizing: border-box; /* Include padding in width */
+    border: 3px solid #4CAF50; 
+    border-radius: 20px; 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); 
+    background-color: #E8F5E9;
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 
 .slider-wrapper {
     display: flex;
-    transition: transform 0.8s ease-in-out; /* Smoother transition */
+    transition: transform 0.8s ease-in-out;
 }
 
 .slide {
@@ -208,21 +206,21 @@ ul li:hover {
     box-sizing: border-box;
     padding: 30px;
     text-align: center;
-    background-color: #FFFFFF; /* White background for each slide */
+    background-color: #FFFFFF; 
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    margin: 0 10px; /* Space between slides if multiple were visible */
+    margin: 0 10px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 250px; /* Fixed height for slides */
+    height: 250px; 
 }
 
 .slide h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 2.2em; /* Larger heading */
-    color: #388E3C; /* Green heading color */
+    font-size: 2.2em; 
+    color: #388E3C; 
     margin-top: 0;
     margin-bottom: 15px;
     text-align: center;
@@ -230,7 +228,7 @@ ul li:hover {
 
 .slide p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em; /* Larger paragraph */
+    font-size: 1.2em;
     color: #555;
     line-height: 1.6;
     text-align: center;
@@ -241,11 +239,11 @@ ul li:hover {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #4CAF50; /* Green buttons */
+    background-color: #4CAF50;
     color: #FFFFFF;
     border: none;
-    padding: 15px 22px; /* Larger padding */
-    font-size: 28px; /* Larger arrows */
+    padding: 15px 22px; 
+    font-size: 28px; 
     cursor: pointer;
     border-radius: 50%;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
@@ -256,7 +254,7 @@ ul li:hover {
 
 .prev-btn:hover,
 .next-btn:hover {
-    background-color: #66BB6A; /* Lighter green on hover */
+    background-color: #66BB6A; 
     color: #FFFFFF;
     transform: translateY(-50%) scale(1.1);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
@@ -264,15 +262,15 @@ ul li:hover {
 }
 
 .prev-btn {
-    left: 15px; /* Slightly more inside */
+    left: 15px; 
 }
 
 .next-btn {
-    right: 15px; /* Slightly more inside */
+    right: 15px; 
 }
 
 
-/* Animations */
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -338,14 +336,14 @@ ul li:hover {
     }
 }
 
-/* Applying animations */
+
 .fade-in-text {
     animation: fadeIn 1.5s ease-out;
 }
 
 .animated-section {
-    opacity: 0; /* Hidden by default, JavaScript will reveal */
-    transform: translateY(20px); /* Slightly move down */
+    opacity: 0; 
+    transform: translateY(20px); 
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 .animated-section.is-visible {
