@@ -108,7 +108,7 @@ p {
   gap: 20px; /* відступи між картками */
 }
 
-.card:not(.card_educational) {
+.card {
   width: 350px;
   background-color: #f9cdda;
   border: 2px solid lightgray;
@@ -131,7 +131,7 @@ p {
 }
 
 .card_educational {
-  width: 400px;       
+  width: 500px;       
   max-width: 100%;   
   background-color: #f9cdda;
   border: 2px solid lightgray;
