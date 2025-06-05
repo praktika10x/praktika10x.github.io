@@ -20,6 +20,7 @@
     align-items: center;
     box-sizing: border-box;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .header-logo {
@@ -196,6 +197,7 @@ ul{
   padding: 0;
   margin: 0;
   width: 1200px;
+  flex-wrap: nowrap;
 }
 
 .nav-links li a {
