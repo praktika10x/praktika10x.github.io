@@ -135,7 +135,6 @@ ul{
 .card-salary {
   background-color: #f5bb47;
 }
-
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -143,26 +142,6 @@ ul{
   margin-bottom: 40px;
   cursor: pointer;
 }
-
-.card-size {
-  grid-column: span 2;
-}
-
-.info-cards {
-  display: grid;
-  grid-column-gap: 55px;
-  padding: 0 100px;
-}
- .nav-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .info-card {
   margin-bottom: 20px;
 }
@@ -178,4 +157,41 @@ ul{
   font-size: 18px;
   line-height: 28px;
   margin-bottom: 30px;
+}
+img.fullscreen-image {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.footer {
+  background-color: #954baa;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  width: 100%;
+  margin: 0;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+  font-family: "Tektur", sans-serif;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
 }
