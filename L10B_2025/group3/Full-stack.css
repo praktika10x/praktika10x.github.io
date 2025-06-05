@@ -1,256 +1,252 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tektur:wght@400..900&display=swap");
-    .tektur-<uniquifier > {
-        font-family: "Tektur", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
-        font-variation-settings: "wdth" 100;
-    }
-    .press-start-2p-regular {
-        font-family: "Press Start 2P", system-ui;
-        font-weight: 400;
-        font-style: normal;
-    }
-    /*Header style start*/
-    .header {
-        width: 100%;
-        height: 70px;
-        background-color: #261374;
-        display: flex;
-        align-items: center;
-        box-sizing: border-box;
-    }
 
-    .header-logo {
-        height: 55px;
-        padding-left: 20px;
-    }
+/* Загальні налаштування */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
 
-    .eniac {
-        height: 55px;
-    }
+.tektur-<uniquifier> {
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
 
-    body {
-        margin: 0;
-    }
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
-    .intro {
-        background: url(фон2.jpg) no-repeat center;
-        background-size: cover;
-        padding-top: 70px;
-        width: 100%;
-        height: 450px;
-    }
+/* Хедер */
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: #261374;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
 
-    h1 {
-        font-family: "Press Start 2P", system-ui;
-        font-weight: 400;
-        font-style: normal;
-        color: white;
-        font-size: 140px;
-        line-height: 160px;
-        margin: 0;
-        text-align: center;
-        padding-bottom: 30px;
-    }
+.header-logo {
+  height: 55px;
+  padding-left: 20px;
+}
+
+.eniac {
+  height: 55px;
+}
+
+/* Контент */
+.intro {
+  background: url(фон2.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 70px;
+  width: 100%;
+  height: 450px;
+}
+
+h1 {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 140px;
+  line-height: 160px;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 30px;
+}
 ul{
   font-family: "Comic_Sans_MS", cursive;
   margin: 20px 25% ;
  font-size: 30px;
 }
-
-    .subtitle {
-        font-family: "Tektur", sans-serif;
-        font-weight: 64;
-        font-style: normal;
-        color: white;
-        font-size: 64px;
-        line-height: 40px;
-        margin: 0;
-        text-align: center;
-    }
-
-    .main {
-        padding: 50px;
-    }
-
-    h2 {
-        font-family: "Tektur", sans-serif;
-        font-weight: 64;
-        font-style: normal;
-        color: #261374;
-        font-size: 64px;
-        line-height: 40px;
-        margin: 0;
-        padding-bottom: 35px;
-    }
-
-    h2:not(.subtitle)::after {
-        display: block;
-        content: "";
-        width: 35%;
-        height: 4px;
-        background-color: #ee46a5;
-        margin-top: 15px;
-        border-radius: 3px;
-    }
-
-    p {
-        margin: 0px 70px 30px 70px;
-        font-family: "Comic Sans MS", cursive, sans-serif;
-        font-size: 24px;
-    }
-
-    .wrap {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; 
-      padding: 20px;
-      gap: 20px; /* відступи між картками */
-    }
-
-    .card {
-      width: 350px;
-      background-color: #f9cdda;
-      border: 2px solid lightgray;
-      border-radius: 15px;
-      padding: 15px;
-      text-align: center;
-      color: #333;
-      box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .card-link{
-        width: 350px;
-         background: linear-gradient(180deg, rgb(255, 218, 143) 99.98%, rgba(255, 255, 255, 0.65) 99.99%);
-          border: 2px solid lightgray;
-          border-radius: 15px;
-          padding: 15px;
-          text-align: center;
-          color: #000;
-          box-shadow: 2px 2px 8px rgba(38, 19, 116, 0.45);
-          transition: transform 0.3s, box-shadow 0.3s;
-    }
-    
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 4px 4px 12px rgba(135, 206, 235, 0.8);
-    }
-
-    .card img {
-      width: 80px;
-      margin-bottom: 10px;
-    }
-
-    .card.card_educational {
-      width: 400px;       
-      max-width: 100%;   
-      min-height: 240px; 
-      background-color: #f9cdda;
-      border: 2px solid lightgray;
-      border-radius: 15px;
-      padding: 15px;
-      text-align: center;
-      color: #333;
-      box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-.card.card_educational:nth-child(even){
-    box-shadow: 6px 8px 8px 0 rgba(38, 19, 116, 0.45);
-    background: linear-gradient(180deg, rgb(255, 218, 143) 99.98%, rgba(255, 255, 255, 0.65) 99.99%);
+.subtitle {
+  font-family: "Tektur", sans-serif;
+  font-weight: 64;
+  font-style: normal;
+  color: white;
+  font-size: 64px;
+  line-height: 40px;
+  margin: 0;
+  text-align: center;
 }
-    .card.card-salary {
-      background-color: #f5bb47;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      justify-content: center;
-    }
-    .info-card {
-      margin-bottom: 20px;
-    }
 
-    .card-title {
-      font-weight: 500;
-      font-size: 25px;
-      line-height: 32px;
-      margin-bottom: 20px;
-    }
+.main {
+  padding: 70px 50px 50px; /* Відступ зверху як у хедера */
+}
 
-    .cart-desc {
-      font-size: 18px;
-      line-height: 28px;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    img.fullscreen-image {
-      width: 80%;
-      height: auto;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto;
-    }
-    .footer {
-      background-color: #954baa;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-      font-size: 14px;
-      width: 100%;
-      margin: 0;
-    }
-    .navdiv{
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
-    }
-    .nav-links {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
+h2 {
+  font-family: "Tektur", sans-serif;
+  font-weight: 64;
+  font-style: normal;
+  color: #261374;
+  font-size: 64px;
+  line-height: 40px;
+  margin: 0;
+  padding-bottom: 35px;
+}
 
-    .nav-links li a {
-      text-decoration: none;
-      color: #ffffff;
-      font-size: 1.1rem;
-      transition: color 0.3s;
-      font-family: "Tektur", sans-serif;
-    }
+h2:not(.subtitle)::after {
+  display: block;
+  content: "";
+  width: 35%;
+  height: 4px;
+  background-color: #ee46a5;
+  margin-top: 15px;
+  border-radius: 3px;
+}
 
-    .nav-links li a:hover {
-      color: #ffcc00;
-    }
+p {
+  margin: 0px 70px 30px 70px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 24px;
+}
 
-    .swiper {
-        width: 100%;
-        height: 300px;
-        margin: 30px;
-    }
+/* Картки */
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
 
-    .swiper-slide {
-        padding: 20px 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        max-width: 100%;
-        text-align: center;
-    }
+.card {
+  width: 350px;
+  background-color: #f9cdda;
+  border: 2px solid lightgray;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  color: #333;
+  box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-    .swiper-button-prev::after,
-    .swiper-button-next::after {
-        color: #954BAA;
-    }
-    .swiper-pagination-bullet-active {
-        background: #954BAA;
-    }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 12px rgba(135, 206, 235, 0.8);
+}
 
+.card img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.card.card_educational {
+  width: 400px;
+  max-width: 100%;
+  min-height: 240px;
+  background-color: #f9cdda;
+  border: 2px solid lightgray;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  color: #333;
+  box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card.card_educational:nth-child(even) {
+  box-shadow: 6px 8px 8px 0 rgba(38, 19, 116, 0.45);
+  background: linear-gradient(180deg, rgb(255, 218, 143) 99.98%, rgba(255, 255, 255, 0.65) 99.99%);
+}
+
+.card.card-salary {
+  background-color: #f5bb47;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+}
+
+.info-card {
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.cart-desc {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+img.fullscreen-image {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Навігація */
+.navdiv {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+  font-family: "Tektur", sans-serif;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+/* Слайдер */
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin: 30px;
+}
+
+.swiper-slide {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: center;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #954BAA;
+}
+
+.swiper-pagination-bullet-active {
+  background: #954BAA;
+}
+
+/* Блок із градієнтом */
 .color {
   width: 100%;
   background: linear-gradient(to bottom, rgba(255, 170, 0, 0.5), rgba(151, 71, 255, 0.5));
@@ -268,4 +264,35 @@ ul{
   gap: 40px;
   flex-wrap: wrap;
   width: 100%;
+}
+
+/* Футер */
+.footer {
+  width: 100%;
+  background: #954baa;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.card-footer-link {
+  background-color: #f5bb47;
+  border: 2px solid lightgray;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  color: #000;
+  box-shadow: 2px 2px 8px rgba(38, 19, 116, 0.45);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 350px;
+  display: block;
+  text-decoration: none;
+  font-family: "Tektur", sans-serif;
+}
+
+.card-footer-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 12px rgba(38, 19, 116, 0.7);
 }
