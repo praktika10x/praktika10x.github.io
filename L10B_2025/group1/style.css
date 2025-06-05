@@ -7,7 +7,7 @@ h1 {
     margin: 0 auto 10px;
     font-family: Beautiful;
     color: steelblue;
-    background: gray;
+    background: lightgreen;
     text-shadow: 2px 2px 5px darkblue;
     text-align: left;
     position: relative;
@@ -19,6 +19,7 @@ h1 {
 }
      
 h3{
+    font-family: Beautiful2;
     width:150px;
           color:white;
           background:lightgray;
@@ -81,5 +82,10 @@ h3{
 }
 @font-face {
 font-family: Beautiful;
-src: url("Beautiful Valentine.otf")
+src: url(Beautiful Valentine.otf)
+}
+
+@font-face {
+font-family: Beautiful2;
+src: url("https://codehs.com/uploads/90617795cd106861eb3eca7429e0c98f")
 }

@@ -283,3 +283,11 @@ a{
   line-height: 28px;
   margin-bottom: 30px;
 }
+ .navbar {
+   position: sticky;
+   top: 0;
+ }
+.cardnav:hover {
+  transition: 1s;
+  transform: scale(1.05);
+}
