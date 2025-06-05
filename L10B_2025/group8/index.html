@@ -16,13 +16,19 @@
       <button class="search-button">🔍</button>
     </div>
     <nav class="nav-links">
+      <button class="theme-toggle" id="themeToggle">🌓</button>
       <div class="menu-icon">≡</div>
     </nav>
   </header>
 
   <main class="main-content">
-    <!-- Hero Section with animated background -->
     <section class="hero-section">
+      <div class="hero-background dark-bg"></div>
+      
+      <video class="hero-background light-bg" autoplay muted loop playsinline>
+        <source src="https://cdn.discordapp.com/attachments/1266156981450838171/1380078541726810184/VID_20250605_095847_557.mp4?ex=684291cc&is=6841404c&hm=f7d35224870806127ef7ab4c5de87cb27ab57d3494344983ec4f41479171f43d&" type="video/mp4">
+      </video>
+      
       <h1 class="hero-title">Комп'ютерна<br>графіка</h1>
       <div class="project-info">
         <p>
@@ -34,10 +40,8 @@
       </div>
     </section>
 
-    <!-- Separator line -->
     <div class="section-separator"></div>
 
-    <!-- Definition Section -->
     <section class="definition-section">
       <div class="definition-content">
         <h2 class="definition-title">Що таке комп'ютерна графіка?</h2>
@@ -47,10 +51,8 @@
       </div>
     </section>
 
-    <!-- Separator line -->
     <div class="section-separator"></div>
 
-    <!-- Professions Section -->
     <section class="professions-section">
       <div class="professions-content">
         <h3 class="professions-title">Професії в цій галузі</h3>
@@ -136,5 +138,25 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      body.classList.add(savedTheme);
+    }
+
+    themeToggle.addEventListener('click', () => {
+      if (body.classList.contains('light-theme')) {
+        body.classList.remove('light-theme');
+        localStorage.setItem('theme', '');
+      } else {
+        body.classList.add('light-theme');
+        localStorage.setItem('theme', 'light-theme');
+      }
+    });
+  </script>
 </body>
 </html>
