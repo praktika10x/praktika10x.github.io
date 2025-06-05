@@ -1,38 +1,49 @@
 {% load static %}
 
 
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AI Професії</title>
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
 </head>
 <body>
-  <header>
-    <h1>Штучний інтелект</h1>
+  <header id="header" class="animated-gradient">
+    <h1 id="title">Штучний інтелект</h1>
   </header>
+
   <main>
-    <section class="info">
-      <h2>Що таке штучний інтелект?</h2>
-      <p>Штучний інтелект — це галузь комп'ютерних наук, що займається створенням систем, які можуть виконувати завдання, що потребують людського інтелекту.</p>
+    <section class="info-section">
+      <div class="info-text">
+        <h2>Ласкаво просимо у світ ШІ</h2>
+        <p>Світ змінюється, і ШІ вже сьогодні відіграє ключову роль у трансформації бізнесу, науки, медицини, освіти та інших галузей. Це не просто тренд — це новий етап розвитку людства, який відкриває безліч кар’єрних можливостей для тих, хто готовий діяти на передовій інновацій.<br><br>
+          Наш сайт створено для студентів, які шукають напрям розвитку, та спеціалістів, які прагнуть поглибити свої знання або змінити професійний вектор. Ви дізнаєтесь про актуальні професії в сфері ШІ — від інженерів машинного навчання до фахівців із генеративного ШІ, аналітики даних, науковців з етики штучного інтелекту тощо.<br><br>
+          Ми зібрали практичну інформацію, рекомендації щодо навчання, інструменти для професійного росту та реальні історії успіху. Якщо ви хочете залишатися конкурентоспроможними у світі, який змінюється щодня — ви в правильному місці.</p>
+      </div>
+      <div class="info-image">
+        <img src="test1.jpg" alt="AI Illustration">
+      </div>
     </section>
 
     <section class="cards">
-      <div class="card">
+      <a href="page1.html"><div class="card">
         <h3>NLP Engineer</h3>
-        <p>опис</p>
-      </div>
-      <div class="card">
+        <p>Працює з обробкою природної мови, аналізом текстів та чат-ботами.</p>
+      </div></a>
+      <a href="page2.html"><div class="card">
         <h3>Computer Vision Engineer</h3>
-        <p>опис</p>
-      </div>
-      <div class="card">
-        <h3>Deep Learn Engineer</h3>
-        <p>опис</p>
-      </div>
+        <p>Створює системи, які розпізнають об’єкти, обличчя та сцени.</p>
+      </div></a>
+      <a href="page3.html"><div class="card">
+        <h3>Deep Learning Engineer</h3>
+        <p>Будує глибокі нейронні мережі для розпізнавання мови, зображень та ін.</p>
+      </div></a>
+      <a href="page4.html"><div class="card">
+        <h3>AI Researcher</h3>
+        <p>Досліджує нові підходи та алгоритми в штучному інтелекті.</p>
+      </div></a>
     </section>
   </main>
 
@@ -44,8 +55,8 @@
       </div>
       <div>
         <h4>Контакти</h4>
-        <p>Email: peter.d.bakun@gmail.com</p>
-        <p>Телефон: +380 68 228 1338</p>
+        <p>Email: k.grechka2026@pu.org.ua</p>
+        <p>Телефон: +380 67 916 7737</p>
       </div>
       <div>
         <h4>Зміна теми</h4>
@@ -58,6 +69,11 @@
     function toggleTheme() {
       document.body.classList.toggle('dark');
     }
+
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('shrink', window.scrollY > 50);
+    });
   </script>
 </body>
 </html>
