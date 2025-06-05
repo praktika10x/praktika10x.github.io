@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="Deploy V1">
-      <change beforePath="$PROJECT_DIR$/AI_Profession/main/static/main/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-    </list>
+    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="Deploy V1" />
     <list id="f1ab00e0-7278-4685-bbc4-952ba86327f0" name="don't commit" comment="" />
     <list id="2022e4c7-dfdd-48fb-b1e4-4f61ac093540" name="to commit" comment="to commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749111315139</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Deploy V1">
+      <option name="closed" value="true" />
+      <created>1749112026514</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1749112026514</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
