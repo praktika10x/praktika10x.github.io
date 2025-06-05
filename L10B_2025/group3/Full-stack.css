@@ -21,9 +21,8 @@
     box-sizing: border-box;
     justify-content: space-between;
     flex-wrap: nowrap;
-    position: fixed;
+    position: sticky;
     top: 0;
-    z-index: 1000;
 }
 .header-logo {
     height: 55px;
