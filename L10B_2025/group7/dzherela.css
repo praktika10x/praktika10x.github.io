@@ -1,11 +1,11 @@
-/* Styles specific to the Sources Page (dzherela.html) */
+
 
 .sources-page .container {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1.5s ease-out; /* Global fadeIn for container */
+    animation: fadeIn 1.5s ease-out; 
 }
 
 .sources-page .sources-section h3 {
@@ -59,7 +59,7 @@
 .sources-page .source-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center items in the list */
+    justify-content: center; 
     gap: 25px;
     padding: 0;
     list-style: none;
@@ -69,15 +69,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px; /* Fixed width for source logos */
-    height: 120px; /* Fixed height for source logos */
+    width: 120px; 
+    height: 120px; 
     background-color: #FFFFFF;
-    border-radius: 50%; /* Make them circular */
+    border-radius: 50%; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex-shrink: 0; /* Prevent shrinking */
-    overflow: hidden; /* Hide overflow for circular shape */
-    padding: 10px; /* Inner padding for image */
+    flex-shrink: 0; 
+    overflow: hidden; 
+    padding: 10px; 
 }
 
 .sources-page .source-item:hover {
@@ -86,14 +86,14 @@
 }
 
 .sources-page .source-item img {
-    max-width: 80%; /* Adjust image size within the circle */
+    max-width: 80%; 
     max-height: 80%;
     display: block;
-    object-fit: contain; /* Ensure image fits without cropping */
-    border-radius: 0; /* Keep original image shape */
+    object-fit: contain; 
+    border-radius: 0; 
 }
 
-/* Animations (if any specific to sources page, otherwise rely on global) */
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -110,7 +110,7 @@
     }
 }
 
-/* Responsive adjustments for Sources Page */
+
 @media (max-width: 992px) {
     .sources-page .container {
         padding: 30px;
