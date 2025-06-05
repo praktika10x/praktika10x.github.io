@@ -141,14 +141,7 @@ ul{
   transition: 1s;
   transform: scale(1.05);
 }
-.wrapnav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  background-image: url("фонгол.jpg")
-}
+
 .imgnav{
   width: 150px;
   height: 150px;
