@@ -1,20 +1,3 @@
-const change-lang-ua-button = document.querySelector('.change-lang-ua');
-const change-lang-en-button = document.querySelector('.change-lang-en');
-
-change-lang-ua-button.addEventListener('click', () => {
-   change-lang-ua-button.classList.add('change-lang-ua-active');
-   change-lang-en-button.classList.remove('change-lang-en-active');
-}
-});
-
-change-lang-en-button.addEventListener('click', () => {
-   change-lang-en-button.classList.add('change-lang-en-active');
-   change-lang-ua-button.classList.remove('change-lang-ua-active');
-}
-});
-
-
-
 const changeLangUaButton = document.querySelector('.change-lang-ua');
 const changeLangEnButton = document.querySelector('.change-lang-en');
 
@@ -342,6 +325,294 @@ const langArr = {
     "gen_prof": {
         "ua": "Калейдоскоп професій",
         "en": "Career Kaleidoscope"
+    },
+    "header-data-napryam": {
+    "ua": "Data-напрям",
+    "en": "Data Field"
+    },
+    "nav-main": {
+        "ua": "Навігація",
+        "en": "Navigation"
+    },
+    "nav-href1": {
+        "ua": "Вступ",
+        "en": "Introduction"
+    },
+    "nav-href2": {
+        "ua": "Основні обов’язки",
+        "en": "Main Responsibilities"
+    },
+    "nav-href3": {
+        "ua": "Шлях до професії",
+        "en": "Path to the Profession"
+    },
+    "nav-href4": {
+        "ua": "Навички",
+        "en": "Skills"
+    },
+    "nav-href5": {
+        "ua": "Затребуваність",
+        "en": "Demand"
+    },
+    "nav-href6": {
+        "ua": "Зарплати",
+        "en": "Salaries"
+    },
+    "nav-href7": {
+        "ua": "Зразок продукції",
+        "en": "Work Sample"
+    },
+    "nav-href8": {
+        "ua": "Перспективи",
+        "en": "Career Outlook"
+    },
+    "nav-href9": {
+        "ua": "Освіта",
+        "en": "Education"
+    },
+    "nav-professions": {
+        "ua": "Професії",
+        "en": "Professions"
+    },
+    "nav-profession1": {
+        "ua": "Data Analyst",
+        "en": "Data Analyst"
+    },
+    "nav-profession2": {
+        "ua": "ML Engineer",
+        "en": "ML Engineer"
+    },
+    "nav-profession3": {
+        "ua": "MLOps Engineer",
+        "en": "MLOps Engineer"
+    },
+    "nav-mainpage": {
+        "ua": "Головна",
+        "en": "Main Page"
+    },
+    "Analyst-intro-text": {
+    "ua": "Data Analyst (аналітик даних) — це спеціаліст, який працює з інформацією: шукає, збирає та аналізує дані, щоб знайти закономірності та допомогти приймати обґрунтовані рішення. Його робота схожа на розслідування — потрібно знайти зв’язки між різними показниками, зрозуміти причини та наслідки, помітити тренди. Часто аналітик так глибоко заглиблюється в дані, що починає бачити за ними реальні історії.",
+    "en": "A Data Analyst is a specialist who works with information: searches, collects, and analyzes data to find patterns and help make informed decisions. Their work is similar to an investigation — they look for links between various indicators, understand causes and effects, and notice trends. Often, analysts delve so deeply into the data that they begin to see real stories behind the numbers."
+    },
+    "Analyst-duties-title": {
+        "ua": "🎯Основні обов'язки",
+        "en": "🎯Key Responsibilities"
+    },
+    "Analyst-duty1": {
+        "ua": "Зібрати дані з різних джерел, очистити їх і привести до єдиного формату, щоб потім легко було працювати.",
+        "en": "Collect data from various sources, clean it, and standardize it for easy processing."
+    },
+    "Analyst-duty2": {
+        "ua": "Аналіз даних за допомогою Excel, SQL, Python тощо, дослідити дані, виявити закономірності, залежності та тренди.",
+        "en": "Analyze data using Excel, SQL, Python, etc., explore patterns, dependencies, and trends."
+    },
+    "Analyst-duty3": {
+        "ua": "Перетворити сухі цифри на зрозумілі графіки, дашборди та звіти (Tableau, Power BI, Looker) для швидкого сприйняття.",
+        "en": "Turn raw numbers into clear graphs, dashboards, and reports (Tableau, Power BI, Looker) for better perception."
+    },
+    "Analyst-duty4": {
+        "ua": "Розслідувати «історії», що ховаються за даними, та формувати рекомендації для прийняття бізнес-рішень.",
+        "en": "Investigate the 'stories' hidden in data and form recommendations for business decisions."
+    },
+    "Analyst-path-title": {
+        "ua": "Шлях до професії",
+        "en": "Path to the Profession"
+    },
+    "Analyst-path1-title": {
+        "ua": "Освіта",
+        "en": "Education"
+    },
+    "Analyst-path1-text": {
+        "ua": "Отримайте диплом у сфері даних (математика, статистика, ІТ, економіка) та пройдіть онлайн-курси з Data Analytics. Вивчіть <b>Python</b>, <b>SQL</b>, а також інструменти візуалізації — <b>Tableau, Power BI</b>.",
+        "en": "Get a degree in data-related fields (math, statistics, IT, economics) and take online courses in Data Analytics. Learn <b>Python</b>, <b>SQL</b>, and visualization tools — <b>Tableau, Power BI</b>."
+    },
+    "Analyst-path2-title": {
+        "ua": "Практика",
+        "en": "Practice"
+    },
+    "Analyst-path2-text": {
+        "ua": "Набирайтесь досвіду через стажування, власні проєкти або роботу Junior-аналітиком. Створіть портфоліо з кейсами.",
+        "en": "Gain experience through internships, personal projects, or work as a junior analyst. Create a portfolio with cases."
+    },
+    "Analyst-path3-title": {
+        "ua": "Розвиток",
+        "en": "Growth"
+    },
+    "Analyst-path3-text": {
+        "ua": "Відвідуйте події з аналітики, вивчайте нові інструменти й спеціалізуйтеся у вибраній галузі (наприклад, бізнес-аналітика).",
+        "en": "Attend analytics events, learn new tools, and specialize in your chosen field (e.g., business analytics)."
+    },
+    "Analyst-skills-title": {
+        "ua": "⚙ Які навички потрібні аналітику даних?"
+    },
+    "Analyst-skills-main-text": {
+        "ua": "Найважливіше для аналітика — це вміння аналізувати. Потрібно розуміти базову статистику, виявляти реальні зв’язки між даними й не плутати їх із випадковими збігами. Ці навички можна вивчити й розвивати.",
+        "en": "The most important thing for an analyst is the ability to analyze. You need to understand basic statistics, identify real relationships between data, and not confuse them with coincidences. These skills can be learned and developed."
+    },
+    "Analyst-skills-hard-title": {
+        "ua": "Технічні навички<br>(Hard Skills)",
+        "en": "Technical Skills<br>(Hard Skills)"
+    },
+    "Analyst-skills-soft-title": {
+        "ua": "Особисті якості<br>(Soft Skills)",
+        "en": "Personal Qualities<br>(Soft Skills)"
+    },
+    "Analyst-skills-soft-list": {
+        "ua": ["Системність", "Аналітичний підхід", "Критичне мислення", "Уважність до деталей"],
+        "en": ["Systematic thinking", "Analytical mindset", "Critical thinking", "Attention to detail"]
+    },
+    "Analyst-demand-title": {
+        "ua": "🔥Затребуваність",
+        "en": "🔥Demand"
+    },
+    "Analyst-demand-chart-title": {
+        "ua": "Зростання обсягу даних у світі. (<a href=\"https://www.red-gate.com/blog/database-development/whats-the-real-story-behind-the-explosive-growth-of-data\" target=\"_blank\">Джерело</a>)",
+        "en": "Growth of global data volume. (<a href=\"https://www.red-gate.com/blog/database-development/whats-the-real-story-behind-the-explosive-growth-of-data\" target=\"_blank\">Source</a>)"
+    },
+    "Analyst-demand-desc": {
+        "ua": "Діаграма демонструє стрімке зростання обсягу даних у світі. З кожним роком організаціям потрібно все більше фахівців, здатних аналізувати, інтерпретувати й перетворювати ці дані на практичні рішення. Саме тому попит на професію Data Analyst невпинно зростає.",
+        "en": "The chart shows the rapid growth of data volume globally. Every year, organizations need more professionals who can analyze, interpret, and turn this data into practical solutions. That's why demand for the Data Analyst profession is constantly growing."
+    },
+    "Analyst-salary-title": {
+        "ua": "💵 Зарплати Data Analyst в Україні (2025)",
+        "en": "💵 Data Analyst Salaries in Ukraine (2025)"
+    },
+    "Analyst-salary-table-head-level": {
+        "ua": "Рівень досвіду",
+        "en": "Experience Level"
+    },
+    "Analyst-salary-table-head-average": {
+        "ua": "Середня зарплата<br>(USD/міс)",
+        "en": "Average Salary<br>(USD/month)"
+    },
+    "Analyst-salary-table-head-range": {
+        "ua": "Діапазон зарплат<br>(USD/міс)",
+        "en": "Salary Range<br>(USD/month)"
+    },
+    "Analyst-sample-title": {
+        "ua": "💼Зразок продукції",
+        "en": "💼Sample Work"
+    },
+    "Analyst-sample-sales-title": {
+        "ua": "Продажі",
+        "en": "Sales"
+    },
+    "Analyst-sample-sales-text": {
+        "ua": "Аналіз даних про продаж, замовлення, ціни, знижки, та інші параметри, щоб визначити, які товари та послуги користуються найбільшим попитом, які канали продажу ефективні, та які стратегії продажу приносять найбільший прибуток.",
+        "en": "Analysis of sales data, orders, prices, discounts, and other parameters to identify popular products and services, effective sales channels, and the most profitable sales strategies."
+    },
+    "Analyst-sample-marketing-title": {
+        "ua": "Маркетинг",
+        "en": "Marketing"
+    },
+    "Analyst-sample-marketing-text": {
+        "ua": "Аналіз даних про ефективність рекламних кампаній, аналіз поведінки клієнтів на сайті, та аналіз даних про залучення та утримання клієнтів, щоб оптимізувати маркетингові зусилля та підвищити ROI.",
+        "en": "Analysis of data on advertising campaign effectiveness, user behavior on the website, and customer acquisition and retention data to optimize marketing efforts and improve ROI."
+    },
+    "Analyst-sample-behavior-title": {
+        "ua": "Поведінка клієнтів",
+        "en": "Customer Behavior"
+    },
+    "Analyst-sample-behavior-text": {
+        "ua": "Аналіз даних про відвідування сайту, поведінку в мобільних додатках, закупівлі та інші параметри, щоб зрозуміти потреби клієнтів та персоналізувати досвід.",
+        "en": "Analysis of website visits, mobile app behavior, purchases, and other parameters to understand customer needs and personalize the experience."
+    },
+    "Analyst-sample-process-title": {
+        "ua": "Внутрішні процеси",
+        "en": "Internal Processes"
+    },
+    "Analyst-sample-process-text": {
+        "ua": "Аналіз даних про роботу співробітників, ефективність роботи відділів, та інші параметри, щоб оптимізувати процеси та підвищити ефективність роботи.",
+        "en": "Analysis of employee performance, department efficiency, and other data to optimize processes and improve work effectiveness."
+    },
+
+    "Analyst-career-title": {
+        "ua": "📈Перспективи кар’єри",
+        "en": "📈Career Prospects"
+    },
+    "Analyst-career-step-1": {
+        "ua": "🧩 Data Analyst",
+        "en": "🧩 Data Analyst"
+    },
+    "Analyst-career-step-2": {
+        "ua": "💼 Senior Analyst",
+        "en": "💼 Senior Analyst"
+    },
+    "Analyst-career-step-3-title": {
+        "ua": "🔍 Перехід у суміжні ролі:",
+        "en": "🔍 Transition into related roles:"
+    },
+    "Analyst-career-step-3-roles": {
+        "ua": "Data Scientist, BI Developer, Product Analyst, Data Engineer, Machine Learning Specialist",
+        "en": "Data Scientist, BI Developer, Product Analyst, Data Engineer, Machine Learning Specialist"
+    },
+    "Analyst-career-step-4": {
+        "ua": "🧠 Team Lead / Head of Analytics",
+        "en": "🧠 Team Lead / Head of Analytics"
+    },
+    "Analyst-career-step-5": {
+        "ua": "🏆 Chief Data Officer (CDO)",
+        "en": "🏆 Chief Data Officer (CDO)"
+    },
+    "Analyst-education-title": {
+        "ua": "📖 Де отримати освіту?",
+        "en": "📖 Where to Study?"
+    },
+    "Analyst-education-table-head-city": {
+        "ua": "Місто",
+        "en": "City"
+    },
+    "Analyst-education-table-head-institution": {
+        "ua": "Заклад / Курс",
+        "en": "Institution / Course"
+    },
+    "Analyst-education-table-head-type": {
+        "ua": "Тип навчання",
+        "en": "Type"
+    },
+    "Analyst-education-city-kyiv": {
+        "ua": "Київ",
+        "en": "Kyiv"
+    },
+    "Analyst-education-city-lviv": {
+        "ua": "Львів",
+        "en": "Lviv"
+    },
+    "Analyst-education-city-online": {
+        "ua": "Онлайн",
+        "en": "Online"
+    },
+    "Analyst-education-kpi": {
+        "ua": "Національний технічний університет України \"Київський політехнічний інститут імені Ігоря Сікорського\"",
+        "en": "National Technical University of Ukraine 'Igor Sikorsky Kyiv Polytechnic Institute'"
+    },
+    "Analyst-education-knu": {
+        "ua": "Київський національний університет імені Тараса Шевченка",
+        "en": "Taras Shevchenko National University of Kyiv"
+    },
+    "Analyst-education-lnu": {
+        "ua": "Львівський національний університет імені Івана Франка",
+        "en": "Ivan Franko National University of Lviv"
+    },
+    "Analyst-education-danit": {
+        "ua": "Курс Data Analyst від DAN.IT",
+        "en": "Data Analyst Course by DAN.IT"
+    },
+    "Analyst-education-ucu": {
+        "ua": "Сертифікаційна програма \"Аналіз Даних\" від УКУ",
+        "en": "Data Analytics Certification Program by UCU"
+    },
+    "Analyst-education-dla": {
+        "ua": "Курс «Аналітик даних в ІТ» від Data Loves Academy",
+        "en": "Data Analyst in IT Course by Data Loves Academy"
+    },
+    "Analyst-education-type-university": {
+        "ua": "Університет",
+        "en": "University"
+    },
+    "Analyst-education-type-online": {
+        "ua": "Онлайн-курс",
+        "en": "Online course"
     }
 };
 
