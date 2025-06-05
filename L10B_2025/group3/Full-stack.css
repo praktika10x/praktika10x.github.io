@@ -292,6 +292,9 @@ img.fullscreen-image {
   padding: 60px 40px;
   box-sizing: border-box;
   margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .color .wrap {
@@ -299,4 +302,5 @@ img.fullscreen-image {
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
+  width: 100%;
 }
