@@ -550,7 +550,7 @@ footer .sourses:hover {
 }
 
 @media (max-width: 350px) {
-    .main-title {
+    .lng-main-title {
         font-size: 1.2rem;
     }
 }
