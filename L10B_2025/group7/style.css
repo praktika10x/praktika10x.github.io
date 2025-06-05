@@ -80,7 +80,7 @@ html {
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 15px; 
+    font-size: 15px;    
 }
 
 .nav a:hover,
@@ -206,28 +206,36 @@ footer {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
-    display: flex; 
+    display: flex;
     justify-content: space-between; 
-    align-items: center; 
+    align-items: center;
     flex-wrap: wrap;
 }
 
 footer .team-info {
-    margin-bottom: 0; 
+    margin-bottom: 0;
     text-align: left; 
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
 .sources-emoji {
-    font-size: 2.5em; 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em; 
     text-decoration: none;
-    margin-left: auto; 
     color: #333;
-    transition: transform 0.2s ease-in-out;
+    background-color: #f0c940; 
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px; 
+    margin-left: auto; 
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
 }
 
 .sources-emoji:hover {
-    transform: scale(1.2); /* Збільшення смайлика при наведенні */
+    background-color: #e0b830; 
+    transform: scale(1.1); 
 }
 
 
@@ -414,18 +422,18 @@ footer .team-info {
     }
 
     footer .team-info {
-        width: 100%; 
+        width: 100%;    
         text-align: left;
         margin-bottom: 10px;
     }
 
     .sources-emoji {
-        margin-left: 0; 
-        align-self: flex-end; 
+        margin-left: 0;    
+        align-self: flex-end;    
     }
     
     .source-item {
-        flex-basis: calc(50% - 25px); 
+        flex-basis: calc(50% - 25px);    
     }
 }
 
