@@ -67,38 +67,4 @@ document.addEventListener('DOMContentLoaded', () => {
         sliderContainer.addEventListener('mouseenter', stopAutoSlide);
         sliderContainer.addEventListener('mouseleave', startAutoSlide);
     }
-
-    const animatedSections = document.querySelectorAll('.animated-section');
-    const fadeInText = document.querySelector('.fade-in-text');
-
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
-
-    const sectionObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-
-                if (entry.target.querySelector('.cards-container') ||
-                    entry.target.querySelector('.info-blocks-container') ||
-                    entry.target.querySelector('.tools-grid') ||
-                    entry.target.querySelector('.product-gallery')) {
-
-                    const elementsWithDelay = entry.target.querySelectorAll('[class*="delay-"]');
-                    elementsWithDelay.forEach((el, index) => {
-                        el.style.transitionDelay = `${index * 0.1}s`;
-                    });
-                }
-                
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    animatedSections.forEach(section => {
-        sectionObserver.observe(section);
-    });
 });
