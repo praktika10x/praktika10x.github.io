@@ -1,15 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const sliderWrapper = document.querySelector('.slider-wrapper');
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
     const sliderContainer = document.getElementById('sliderContainer');
 
-    let currentIndex = 0;
-    let autoSlideInterval;
-    const autoSlideDelay = 5000;
+    if (sliderContainer) {
+        const sliderWrapper = sliderContainer.querySelector('.slider-wrapper');
+        const slides = sliderWrapper.querySelectorAll('.slide');
+        const prevBtn = sliderContainer.querySelector('.prev-btn');
+        const nextBtn = sliderContainer.querySelector('.next-btn');
 
-    if (sliderWrapper && prevBtn && nextBtn && sliderContainer) {
-        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+        let autoSlideInterval;
+        const autoSlideDelay = 5000;
+
         const totalSlides = slides.length;
 
         if (totalSlides <= 1) {
@@ -43,16 +44,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         const startAutoSlide = () => {
-             autoSlideInterval = setInterval(goToNextSlide, autoSlideDelay);
+            stopAutoSlide();
+            autoSlideInterval = setInterval(goToNextSlide, autoSlideDelay);
         };
 
         const stopAutoSlide = () => {
-             clearInterval(autoSlideInterval);
+            clearInterval(autoSlideInterval);
         };
 
         const resetAutoSlide = () => {
-             stopAutoSlide();
-             startAutoSlide();
+            stopAutoSlide();
+            startAutoSlide();
         };
 
         startAutoSlide();
@@ -64,21 +66,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const animatedSections = document.querySelectorAll('.animated-section');
-    const cards = document.querySelectorAll('.cards-container .card');
-    const images = document.querySelectorAll('.image-placeholder img');
-    const slider = document.querySelector('.slider-container');
-    const fadeInLists = document.querySelectorAll('.fade-in-list');
-
+    const fadeInText = document.querySelector('.fade-in-text');
 
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
     };
 
     const sectionObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('is-visible');
+
+                if (fadeInText && !fadeInText.classList.contains('is-visible')) {
+                    fadeInText.style.animationPlayState = 'running';
+                    fadeInText.classList.add('is-visible');
+                }
+
                 observer.unobserve(entry.target);
             }
         });
@@ -88,55 +93,19 @@ document.addEventListener('DOMContentLoaded', () => {
         sectionObserver.observe(section);
     });
 
-    const cardObserver = new IntersectionObserver((entries, observer) => {
+    const h1Observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.closest('.animated-section').classList.add('is-visible');
+                if (fadeInText) {
+                    fadeInText.style.animationPlayState = 'running';
+                    fadeInText.classList.add('is-visible');
+                }
                 observer.unobserve(entry.target);
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.1 });
 
-    if (cards.length > 0) {
-        cards.forEach(card => cardObserver.observe(card));
-    }
-
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.closest('.animated-section').classList.add('is-visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    if (images.length > 0) {
-        images.forEach(image => imageObserver.observe(image));
-    }
-
-    const listObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.closest('.animated-section').classList.add('is-visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    if (fadeInLists.length > 0) {
-        fadeInLists.forEach(list => listObserver.observe(list));
-    }
-
-    const sliderElementObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.closest('.animated-section').classList.add('is-visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    if (slider) {
-        sliderElementObserver.observe(slider);
+    if (fadeInText) {
+        h1Observer.observe(fadeInText);
     }
 });
