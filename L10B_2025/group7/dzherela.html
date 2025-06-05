@@ -6,65 +6,6 @@
     <title>Джерела - Safe WEB squad</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .source-item span {
-            display: none;
-        }
-
-        .source-item {
-            justify-content: center;
-            padding: 10px;
-        }
-
-        .source-list {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .source-item img {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            object-fit: contain;
-            background-color: #FFFFFF;
-            padding: 5px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .source-item:hover img {
-            transform: scale(1.1);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .source-item:hover {
-            background-color: transparent;
-            box-shadow: none;
-            transform: none;
-        }
-
-        @media (max-width: 768px) {
-            .source-item img {
-                width: 60px;
-                height: 60px;
-            }
-            .source-list {
-                gap: 10px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .source-item img {
-                width: 50px;
-                height: 50px;
-            }
-            .source-list {
-                gap: 8px;
-            }
-        }
-    </style>
 </head>
 <body class="sources-page">
 
@@ -88,132 +29,52 @@
             <h3>Джерела інформації та матеріалів</h3>
             <div class="sources-content">
                 <article class="source-category">
-                    <h4>Дизайн, який ми намагалися повторити:</h4>
+                    <h4>Дизайн</h4>
                     <ul class="source-list">
-                        <li>
-                            <a href="https://stopfraud.gov.ua/" target="_blank" class="source-item">
-                                <img src="https://stopfraud.gov.ua/dist/img/logo/logo_ua.svg" alt="Логотип КіберБрама">
-                            </a>
-                        </li>
+                        <li class="source-item"><a href="https://stopfraud.gov.ua/" target="_blank"><img src="https://stopfraud.gov.ua/dist/img/logo/logo_ua.svg" alt="stopfraud.gov.ua"></a></li>
                     </ul>
                 </article>
 
                 <article class="source-category">
-                    <h4>Інформаційне наповнення:</h4>
+                    <h4>Інформація</h4>
                     <ul class="source-list">
-                        <li>
-                            <a href="https://chatgpt.com/" target="_blank" class="source-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png" alt="Логотип ChatGPT">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://allmarathons-lp-ua.goit.global/" target="_blank" class="source-item">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQzzEmFaFgvUAivGEyV3HJ6DV_b0k1rNAh2eTSjBjglAdCYprjpB2EuMqJwjgqBAqj5EI&usqp=CAU" alt="Логотип GoIT">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.uopeople.edu/" target="_blank" class="source-item">
-                                <img src="https://www.uopeople.edu/wp-content/uploads/2022/05/logo-uop.webp" alt="Логотип University of the People">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.forbes.com/" target="_blank" class="source-item">
-                                <img src="https://s.dou.ua/CACHE/images/img/static/companies/Forbes-logo/a58c2a171e174fa5311d1b327255b774.jpg" alt="Логотип Forbes">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://resume.io/resume-templates/ats?cq_plac=&cq_net=x&cq_pos=&cq_med=&cq_plt=gp&ga_utm_source=google&utm_medium=ppc&utm_campaign=18327605904&utm_adgroup=&utm_custom=Resume.io|EU.MISC|Pmax|NB&utm_content=&utm_term=&matchtype=&device=c&location=9190395&gad_source=1&gad_campaignid=18327608877&gbraid=0AAAAAD1WYJKY0o_6hhdVHvts0W9PHp4BP&gclid=Cj0KCQjwgIXCBhDBARIsAELC9ZhUC_6bmDRFppRZ3gHA-fzYVmBSJJRdcfV9L3FA8BPs25FoCxiVR9MaAgNaEALw_wcB" target="_blank" class="source-item">
-                                <img src="https://s3.resume.io/uploads/country/logo_default/2/black.svg" alt="Логотип Resume.io">
-                            </a>
-                        </li>
+                        <li class="source-item"><a href="https://chatgpt.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png" alt="ChatGPT"></a></li>
+                        <li class="source-item"><a href="https://allmarathons-lp-ua.goit.global/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQzzEmFaFgvUAivGEyV3HJ6DV_b0k1rNAh2eTSjBjglAdCYprjpB2EuMqJwjgqBAqj5EI&usqp=CAU" alt="GoIT"></a></li>
+                        <li class="source-item"><a href="https://www.uopeople.edu/" target="_blank"><img src="https://www.uopeople.edu/wp-content/uploads/2022/05/logo-uop.webp" alt="UoPeople"></a></li>
+                        <li class="source-item"><a href="https://www.forbes.com/" target="_blank"><img src="https://s.dou.ua/CACHE/images/img/static/companies/Forbes-logo/a58c2a171e174fa5311d1b327255b774.jpg" alt="Forbes"></a></li>
+                        <li class="source-item"><a href="https://resume.io/" target="_blank"><img src="https://s3.resume.io/uploads/country/logo_default/2/black.svg" alt="Resume.io"></a></li>
                     </ul>
                 </article>
 
                 <article class="source-category">
-                    <h4>Фотографії:</h4>
+                    <h4>Фото</h4>
                     <ul class="source-list">
-                        <li>
-                            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsch24.edu.vn.ua%2F%25D0%25BA%25D1%2596%25D0%25B1%25D0%25B5%25D1%2580%25D0%25B1%25D0%25B5%25D0%25BA%25D0%25B0%2F&psig=AOvVaw2LeudrGro-AejRtZhia_kI&ust=1749196310899000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwidlaaX5tmNAxXg_gIHHXoTAQwQjB16BAgAEAg" target="_blank" class="source-item">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZS_QnIzqX1zNL5dnzp0OLDlue8DhGiauxog&s" alt="Зображення з sch24.edu.vn.ua">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://hub.kyivstar.ua/articles/ostanni-trendy-kiberbezpeky" target="_blank" class="source-item">
-                                <img src="https://cdn.kyivstar.ua/kyivstar-hub/header_logo.svg" alt="Логотип Kyivstar">
-                            </a>
-                        </li>
+                        <li class="source-item"><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsch24.edu.vn.ua%2F%25D0%25BA%25D1%2596%25D0%25B1%25D0%25B5%25D1%2594%25D1%2580%25D0%25B1%25D0%25B5%25D0%25BA%25D0%25B0%2F&psig=AOvVaw2LeudrGro-AejRtZhia_kI&ust=1749196310899000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwidlaaX5tmNAxXg_gIHHXoTAQwQjB16BAgAEAg" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZS_QnIzqX1zNL5dnzp0OLDlue8DhGiauxog&s" alt="sch24.edu.vn.ua"></a></li>
+                        <li class="source-item"><a href="https://hub.kyivstar.ua/" target="_blank"><img src="https://cdn.kyivstar.ua/kyivstar-hub/header_logo.svg" alt="Kyivstar"></a></li>
                     </ul>
                 </article>
 
                 <article class="source-category">
-                    <h4>Графіки, вакансії, інша інформація про професії:</h4>
+                    <h4>Графіки, відомості про зарплати, затребуваність,інформація</h4>
                     <ul class="source-list">
-                        <li>
-                            <a href="https://sharifstudy.com/en/" target="_blank" class="source-item">
-                                <img src="https://sharifstudy.com/en/wp-content/uploads/2024/06/SP1-LOGO.png" alt="Логотип Sharif Study">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.uopeople.edu/" target="_blank" class="source-item">
-                                <img src="https://www.uopeople.edu/wp-content/uploads/2022/05/logo-uop.webp" alt="Логотип University of the People">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://resume.io/resume-templates/ats?cq_plac=&cq_net=x&cq_pos=&cq_med=&cq_plt=gp&ga_utm_source=google&utm_medium=ppc&utm_campaign=18327605904&utm_adgroup=&utm_custom=Resume.io|EU.MISC|Pmax|NB&utm_content=&utm_term=&matchtype=&device=c&location=9190395&gad_source=1&gad_campaignid=18327608877&gbraid=0AAAAAD1WYJKY0o_6hhdVHvts0W9PHp4BP&gclid=Cj0KCQjwgIXCBhDBARIsAELC9ZhUC_6bmDRFppRZ3gHA-fzYVmBSJJRdcfV9L3FA8BPs25FoCxiVR9MaAgNaEALw_wcB" target="_blank" class="source-item">
-                                <img src="https://s3.resume.io/uploads/country/logo_default/2/black.svg" alt="Логотип Resume.io">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.edstellar.com/" target="_blank" class="source-item">
-                                <img src="https://cdn.prod.website-files.com/6482a3cf7db698c2a80cc5e6/66c2ce6ee9d04908dc5e7eea_139%20x%2050%20(1).svg" alt="Логотип Edstellar">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwjE_5H8p9qNAxXTo4MHHS4EGTQYABAAGgJlZg&co=1&gclid=Cj0KCQjwgIXCBhDBARIsAELC9ZhJI0WxsVnV3574vbKFVGn_oGeqjApuYaFrf6tIMdN3i63ZbqbRmv8aAjqLEALw_wcB&category=acrcp_v1_48&sig=AOD64_1uxcnz8AZqMj8shaZGud2nWChlDQ&q&adurl&ved=2ahUKEwi65Yz8p9qNAxU9gf0HHcJXHCEQ0Qx6BAgMEAE" target="_blank" class="source-item">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMO9PEb14lYr8lmI6PstuU_W8Ei1SDSGuezQ&s" alt="Логотип Google Ads">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.work.ua/" target="_blank" class="source-item">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPYJoQdeTNpwQaKO0MDtOQa-8QFHohyneL5g&s" alt="Логотип Work.ua">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://business.olx.ua/robota/" target="_blank" class="source-item">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAxIOp8UmlxzQTwg2tuZsb7y9r4LHTwJZ79g&s" alt="Логотип OLX.ua">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://nasbu.edu.ua/ua/16-informaciya-dlya-abituriyntiv-navchannya" target="_blank" class="source-item">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-CdlH32Z4DrlQSenMwn96HZCErz8XgwWjqQ&s" alt="Логотип NASBU">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://knu.ua/" target="_blank" class="source-item">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9cbRSoB5BlohBReQhgJzMEUjulWM_zFrrA&s" alt="Логотип KNU">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://kpi.ua/" target="_blank" class="source-item">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8C2nw5ZnzDKPNVpeyVK2w3OU1ThXQSCP4Rg&s" alt="Логотип KPI">
-                            </a>
-                        </li>
+                        <li class="source-item"><a href="https://sharifstudy.com/en/" target="_blank"><img src="https://sharifstudy.com/en/wp-content/uploads/2024/06/SP1-LOGO.png" alt="Sharif Study"></a></li>
+                        <li class="source-item"><a href="https://www.uopeople.edu/" target="_blank"><img src="https://www.uopeople.edu/wp-content/uploads/2022/05/logo-uop.webp" alt="UoPeople"></a></li>
+                        <li class="source-item"><a href="https://resume.io/" target="_blank"><img src="https://s3.resume.io/uploads/country/logo_default/2/black.svg" alt="Resume.io"></a></li>
+                        <li class="source-item"><a href="https://www.edstellar.com/" target="_blank"><img src="https://cdn.prod.website-files.com/6482a3cf7db698c2a80cc5e6/66c2ce6ee9d04908dc5e7eea_139%20x%2050%20(1).svg" alt="Edstellar"></a></li>
+                        <li class="source-item"><a href="https://ads.google.com/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMO9PEb14lYr8lmI6PstuU_W8Ei1SDSGuezQ&s" alt="Google Ads"></a></li>
+                        <li class="source-item"><a href="https://www.work.ua/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPYJoQdeTNpwQaKO0MDtOQa-8QFHohyneL5g&s" alt="Work.ua"></a></li>
+                        <li class="source-item"><a href="https://business.olx.ua/robota/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAxIOp8UmlxzQTwg2tuZsb7y9r4LHTwJZ79g&s" alt="OLX.ua"></a></li>
+                        <li class="source-item"><a href="https://nasbu.edu.ua/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-CdlH32Z4DrlQSenMwn96HZCErz8XgwWjqQ&s" alt="NASBU"></a></li>
+                        <li class="source-item"><a href="https://knu.ua/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9cbRSoB5BlohBReQhgJzMEUjulWM_zFrrA&s" alt="KNU"></a></li>
+                        <li class="source-item"><a href="https://kpi.ua/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8C2nw5ZnzDKPNVpeyVK2w3OU1ThXQSCP4Rg&s" alt="KPI"></a></li>
                     </ul>
                 </article>
 
                 <article class="source-category">
-                    <h4>Візуальна та інженерна частина (деякі складні анімації та скрипти):</h4>
+                    <h4>Деякі складні анімації та Java Skript</h4>
                     <ul class="source-list">
-                        <li>
-                            <a href="https://gemini.google.com/app?hl=uk" target="_blank" class="source-item">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST5YMnjHpExZe2FfpiWjrOiHSvy_5IT5u7tA&s" alt="Логотип Gemini">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://chatgpt.com/" target="_blank" class="source-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png" alt="Логотип ChatGPT">
-                            </a>
-                        </li>
+                        <li class="source-item"><a href="https://gemini.google.com/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST5YMnjHpExZe2FfpiWjrOiHSvy_5IT5u7tA&s" alt="Gemini"></a></li>
+                        <li class="source-item"><a href="https://chatgpt.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png" alt="ChatGPT"></a></li>
                     </ul>
                 </article>
             </div>
