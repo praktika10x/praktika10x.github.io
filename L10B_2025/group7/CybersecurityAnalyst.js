@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let currentIndex = 0;
         let autoSlideInterval;
-        const autoSlideDelay = 5000;
+        const autoSlideDelay = 6000;
 
         const totalSlides = slides.length;
 
@@ -33,15 +33,19 @@ document.addEventListener('DOMContentLoaded', () => {
             updateSliderPosition();
         };
 
-        nextBtn.addEventListener('click', () => {
-            goToNextSlide();
-            resetAutoSlide();
-        });
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                goToNextSlide();
+                resetAutoSlide();
+            });
+        }
 
-        prevBtn.addEventListener('click', () => {
-            goToPrevSlide();
-            resetAutoSlide();
-        });
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                goToPrevSlide();
+                resetAutoSlide();
+            });
+        }
 
         const startAutoSlide = () => {
             stopAutoSlide();
@@ -78,10 +82,17 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('is-visible');
 
-                if (entry.target === fadeInText) {
-                    fadeInText.style.animationPlayState = 'running';
-                }
+                if (entry.target.querySelector('.cards-container') ||
+                    entry.target.querySelector('.info-blocks-container') ||
+                    entry.target.querySelector('.tools-grid') ||
+                    entry.target.querySelector('.product-gallery')) {
 
+                    const elementsWithDelay = entry.target.querySelectorAll('[class*="delay-"]');
+                    elementsWithDelay.forEach((el, index) => {
+                        el.style.transitionDelay = `${index * 0.1}s`;
+                    });
+                }
+                
                 observer.unobserve(entry.target);
             }
         });
