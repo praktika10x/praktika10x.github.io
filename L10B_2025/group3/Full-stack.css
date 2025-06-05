@@ -40,7 +40,7 @@ body {
     background-size: cover;
     padding-top: 70px;
     width: 100%;
-    height: 650px;
+    height: 550px;
 }
 
 h1 {
@@ -164,13 +164,15 @@ ul{
   margin-bottom: 30px;
   text-align: center;
 }
-img.fullscreen-image {
-  width: 80%;
+.fullscreen-image {
+  width: 95%;
+  max-width: 1200px; 
   height: auto;
   object-fit: cover;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
 }
+
 .footer {
   background-color: #954baa;
   color: #fff;
@@ -193,7 +195,7 @@ img.fullscreen-image {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 1300px;
+  width: 1200px;
 }
 
 .nav-links li a {
