@@ -164,13 +164,12 @@ ul{
   margin-bottom: 30px;
   text-align: center;
 }
-.fullscreen-image {
-  width: 95%;
-  max-width: 1200px; 
+img.fullscreen-image {
+  width: 80%;
   height: auto;
   object-fit: cover;
   display: block;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 .footer {
