@@ -2,10 +2,10 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #F5F5F5; 
+    background-color: #F5F5F5;
     margin: 0;
     padding: 0;
-    color: #222222; 
+    color: #222222;
     line-height: 1.6;
 }
 
@@ -14,7 +14,7 @@ html {
 }
 
 .logo-bar {
-    background-color: #FFD700; 
+    background-color: #FFD700;
     padding: 15px 30px;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@ html {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 .logo-img:hover {
@@ -46,14 +46,14 @@ html {
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
     font-weight: 700;
-    color: #222222; 
+    color: #222222;
     text-transform: uppercase;
     letter-spacing: 1.2px;
 }
 
 .language-switcher a {
     font-family: 'Open Sans', sans-serif;
-    color: #222222; 
+    color: #222222;
     text-decoration: none;
     font-weight: bold;
     padding: 8px 12px;
@@ -65,7 +65,7 @@ html {
 
 .language-switcher a:hover {
     color: #444444;
-    background-color: #FFFACD; 
+    background-color: #FFFACD;
 }
 
 .nav {
@@ -81,7 +81,7 @@ html {
     padding: 12px 20px;
     border: 2px solid transparent;
     border-radius: 30px;
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* All transitions */
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
@@ -90,22 +90,33 @@ html {
 
 .nav a:hover,
 .nav a.active {
-    background-color: #FFFACD; 
-    border-color: #FFD700; 
-    color: #222222; 
-    transform: translateY(-3px); 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); 
+    background-color: #FFFACD;
+    border-color: #FFD700;
+    color: #222222;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
-
 
 .home-page .hero {
     position: relative;
-    padding: 120px 20px; 
+    padding: 120px 20px;
     text-align: center;
-    color: #FFFFFF; 
-    background: url('https://github.com/praktika10x/praktika10x.github.io/blob/main/L10B_2025/group7/3.png?raw=true') no-repeat center center/cover;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5); 
-    margin-bottom: 50px; 
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.home-page .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.gifer.com/bJk.gif') no-repeat center center/cover;
+    z-index: 0;
+    filter: brightness(50%);
+    transform: scale(1.05);
 }
 
 .home-page .hero-content {
@@ -113,43 +124,43 @@ html {
     z-index: 1;
     max-width: 1000px;
     margin: 0 auto;
-    animation: fadeIn 1.5s ease-out; 
+    animation: fadeIn 1.5s ease-out;
 }
 
 .home-page .hero h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 65px; 
+    font-size: 65px;
     margin-bottom: 30px;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); 
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
     color: #FFFFFF;
 }
 
 .home-page .hero p {
-    font-size: 22px; 
-    color: #F0F0F0; 
+    font-size: 22px;
+    color: #F0F0F0;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .home-page .intro-section {
-    max-width: 900px; 
-    margin: 60px auto; 
+    max-width: 900px;
+    margin: 60px auto;
     padding: 0 30px;
-    text-align: center; 
-    animation: slideInUp 1s ease-out; 
+    text-align: center;
+    animation: slideInUp 1s ease-out;
 }
 
 .home-page .intro-section h2 {
     border-left: none;
     padding-left: 0;
     text-align: center;
-    font-size: 48px; 
-    color: #222222; 
+    font-size: 48px;
+    color: #222222;
     margin-bottom: 20px;
 }
 
 .home-page .intro-section p {
     font-size: 20px;
-    color: #444444; 
+    color: #444444;
     line-height: 1.8;
     text-align: center;
 }
@@ -158,9 +169,9 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px; 
-    max-width: 1300px; 
-    margin: 50px auto; 
+    gap: 40px;
+    max-width: 1300px;
+    margin: 50px auto;
     padding: 0 20px;
 }
 
@@ -168,34 +179,33 @@ html {
     margin-top: 70px;
 }
 
-
 .project-page .container {
     width: 90%;
-    max-width: 1100px; 
-    margin: 40px auto; 
-    background-color: #FFFFFF; 
-    padding: 40px; 
-    border: 1px solid #EEEEEE; 
-    border-radius: 20px; 
+    max-width: 1100px;
+    margin: 40px auto;
+    background-color: #FFFFFF;
+    padding: 40px;
+    border: 1px solid #EEEEEE;
+    border-radius: 20px;
     box-sizing: border-box;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project-page h2 {
-    color: #222222; 
-    border-left: 10px solid #FFD700; 
+    color: #222222;
+    border-left: 10px solid #FFD700;
     padding-left: 25px;
     margin-bottom: 30px;
 }
 
 .project-page h3 {
-    color: #222222; 
+    color: #222222;
     margin-top: 40px;
     margin-bottom: 25px;
 }
 
 .project-page p {
-    color: #444444; 
+    color: #444444;
 }
 
 .project-page ul {
@@ -204,7 +214,7 @@ html {
 }
 
 .project-page li {
-    color: #444444; 
+    color: #444444;
     margin-bottom: 12px;
 }
 
@@ -212,15 +222,15 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px; 
+    gap: 30px;
     margin-top: 30px;
 }
 
 .project-page .card {
-    background-color: #FFFFFF; 
-    border: 1px solid #EEEEEE; 
-    border-radius: 15px; 
-    padding: 30px; 
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 15px;
+    padding: 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     flex: 1;
     min-width: 300px;
@@ -230,14 +240,14 @@ html {
 }
 
 .project-page .card:hover {
-    transform: translateY(-8px); 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .project-page .card h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 28px; 
-    color: #FFD700; 
+    font-size: 28px;
+    color: #FFD700;
     margin-bottom: 15px;
     border-left: none;
     padding-left: 0;
@@ -245,15 +255,15 @@ html {
 
 .project-page .card p {
     font-size: 17px;
-    color: #666666; 
+    color: #666666;
     text-align: center;
 }
 
 .project-page .icon-circle {
-    width: 100px; 
-    height: 100px; 
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    background-color: #FFD700; 
+    background-color: #FFD700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -270,11 +280,10 @@ html {
 .project-page .icon-circle img {
     width: 100%;
     height: 100%;
-    object-fit: contain; 
+    object-fit: contain;
     border-radius: 50%;
-    padding: 10px; 
+    padding: 10px;
 }
-
 
 .sources-page .container {
     width: 90%;
@@ -294,9 +303,9 @@ html {
 
 .sources-page .sources-section h3 {
     text-align: center;
-    font-size: 40px; 
-    color: #222222; 
-    margin-bottom: 45px; 
+    font-size: 40px;
+    color: #222222;
+    margin-bottom: 45px;
     border-left: none;
     padding-left: 0;
 }
@@ -305,14 +314,14 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px; 
+    gap: 40px;
 }
 
 .sources-page .source-category {
-    background-color: #FFFFFF; 
-    border: 1px solid #EEEEEE; 
-    border-radius: 15px; 
-    padding: 30px; 
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 15px;
+    padding: 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     flex: 1;
     min-width: 300px;
@@ -321,15 +330,15 @@ html {
 }
 
 .sources-page .source-category:hover {
-    transform: translateY(-8px); 
+    transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .sources-page .source-category h4 {
     font-family: 'Roboto', sans-serif;
-    font-size: 26px; 
-    color: #FFD700; 
-    margin-bottom: 25px; 
+    font-size: 26px;
+    color: #FFD700;
+    margin-bottom: 25px;
     text-align: center;
 }
 
@@ -344,24 +353,24 @@ html {
     align-items: center;
     gap: 20px;
     padding: 15px 20px;
-    border: 1px solid #FFD700; 
-    border-radius: 10px; 
+    border: 1px solid #FFD700;
+    border-radius: 10px;
     text-decoration: none;
-    color: #222222; 
-    background-color: #FFFACD; 
+    color: #222222;
+    background-color: #FFFACD;
     transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 .sources-page .source-item:hover {
-    background-color: #FFD700; 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12); 
-    transform: translateY(-5px); 
+    background-color: #FFD700;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
 }
 
 .sources-page .source-item img {
     width: 60px;
-    height: 60px; 
-    border-radius: 10px; 
+    height: 60px;
+    border-radius: 10px;
     object-fit: contain;
     border: 1px solid #EEEEEE;
     background-color: #FFFFFF;
@@ -370,26 +379,24 @@ html {
 
 .sources-page .source-item span {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px; 
-    font-weight: 700; 
+    font-size: 18px;
+    font-weight: 700;
     color: #222222;
 }
 
-
-
 h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 56px; 
-    color: #222222; 
+    font-size: 56px;
+    color: #222222;
     text-align: left;
     margin-bottom: 40px;
 }
 
 h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 40px; 
-    color: #222222; 
-    border-left: 10px solid #FFD700; 
+    font-size: 40px;
+    color: #222222;
+    border-left: 10px solid #FFD700;
     padding-left: 25px;
     margin-bottom: 30px;
     margin-top: 40px;
@@ -399,7 +406,7 @@ h2 {
 
 h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 32px; 
+    font-size: 32px;
     color: #222222;
     margin-bottom: 25px;
     margin-top: 35px;
@@ -408,10 +415,10 @@ h3 {
 
 p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 19px; 
+    font-size: 19px;
     line-height: 1.8;
     margin-bottom: 20px;
-    color: #444444; 
+    color: #444444;
     text-align: left;
 }
 
@@ -419,15 +426,15 @@ ul {
     list-style-type: disc;
     padding-left: 30px;
     margin-bottom: 20px;
-    color: #444444; 
+    color: #444444;
     text-align: left;
 }
 
 li {
     font-family: 'Open Sans', sans-serif;
-    font-size: 19px; 
+    font-size: 19px;
     margin-bottom: 12px;
-    color: #444444; 
+    color: #444444;
     text-align: left;
 }
 
@@ -436,8 +443,8 @@ dl dt {
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 10px;
-    color: #444444; 
-    font-size: 20px; 
+    color: #444444;
+    font-size: 20px;
     text-align: left;
 }
 
@@ -446,14 +453,14 @@ dl dd {
     margin-left: 30px;
     margin-bottom: 15px;
     font-size: 18px;
-    color: #666666; 
+    color: #666666;
     text-align: left;
 }
 
 .rounded-block {
-    background-color: #FFFFFF; 
-    border: 2px solid #FFD700; 
-    border-radius: 20px; 
+    background-color: #FFFFFF;
+    border: 2px solid #FFD700;
+    border-radius: 20px;
     padding: 35px;
     box-sizing: border-box;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
@@ -462,19 +469,19 @@ dl dd {
     flex-direction: column;
     justify-content: space-between;
     width: calc(50% - 45px);
-    min-width: 320px; 
+    min-width: 320px;
 }
 
 .rounded-block:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
 .rounded-block h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 32px; 
+    font-size: 32px;
     margin-bottom: 20px;
-    color: #FFD700; 
+    color: #FFD700;
     border-left: none;
     padding-left: 0;
     margin-top: 0;
@@ -484,7 +491,7 @@ dl dd {
 .rounded-block p {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    color: #444444; 
+    color: #444444;
     flex-grow: 1;
     margin-bottom: 30px;
     line-height: 1.7;
@@ -493,9 +500,9 @@ dl dd {
 
 .btn {
     align-self: flex-start;
-    background-color: #FFD700; 
-    color: #222222; 
-    padding: 14px 25px; 
+    background-color: #FFD700;
+    color: #222222;
+    padding: 14px 25px;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -508,22 +515,22 @@ dl dd {
 }
 
 .btn:hover {
-    background-color: #FFFACD; 
+    background-color: #FFFACD;
     border-color: #FFD700;
-    color: #444444; 
-    transform: translateY(-2px); 
+    color: #444444;
+    transform: translateY(-2px);
 }
 
 .btn:active {
-    transform: translateY(0); 
+    transform: translateY(0);
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 footer {
-    background-color: #222222; 
+    background-color: #222222;
     color: #F5F5F5;
-    padding: 30px; 
-    margin-top: 60px; 
+    padding: 30px;
+    margin-top: 60px;
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
@@ -537,41 +544,48 @@ footer .team-info {
     margin-bottom: 0;
     text-align: left;
     flex-grow: 1;
-    color: #CCCCCC; 
+    color: #CCCCCC;
 }
 
 .sources-emoji {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em; 
+    font-size: 2em;
     text-decoration: none;
-    color: #222222; 
-    background-color: #FFD700; 
+    color: #222222;
+    background-color: #FFD700;
     border-radius: 50%;
     width: 55px;
-    height: 55px; 
+    height: 55px;
     margin-left: auto;
     transition: background-color 0.3s ease, transform 0.2s ease-in-out;
 }
 
 .sources-emoji:hover {
-    background-color: #FFFACD; 
-    transform: scale(1.15) rotate(5deg); 
+    background-color: #FFFACD;
+    transform: scale(1.15) rotate(5deg);
 }
 
-
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideInUp {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
-
-
 
 @media (max-width: 1200px) {
     .home-page .rounded-block-container {
@@ -589,10 +603,21 @@ footer .team-info {
     .sources-page .container {
         padding: 30px;
     }
-    h1 { font-size: 50px; }
-    h2 { font-size: 36px; }
-    h3 { font-size: 30px; }
-    p, li, dl dt, dl dd { font-size: 18px; }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    p,
+    li,
+    dl dt,
+    dl dd {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -630,7 +655,6 @@ footer .team-info {
         width: 100%;
         text-align: right;
     }
-
     .home-page .hero {
         padding: 80px 15px;
     }
@@ -658,7 +682,6 @@ footer .team-info {
         min-width: unset;
         padding: 25px;
     }
-
     .project-page .container,
     .sources-page .container {
         width: 95%;
@@ -700,7 +723,6 @@ footer .team-info {
     .sources-page .source-item span {
         font-size: 16px;
     }
-
     footer {
         flex-direction: column;
         align-items: flex-start;
@@ -719,11 +741,26 @@ footer .team-info {
         height: 45px;
         font-size: 1.4em;
     }
-
-    h1 { font-size: 40px; margin-bottom: 30px; }
-    h2 { font-size: 32px; padding-left: 15px; margin-bottom: 25px;}
-    h3 { font-size: 26px; margin-bottom: 20px;}
-    p, ul, li, dl dt, dl dd { font-size: 17px; }
+    h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    h2 {
+        font-size: 32px;
+        padding-left: 15px;
+        margin-bottom: 25px;
+    }
+    h3 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    p,
+    ul,
+    li,
+    dl dt,
+    dl dd {
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 480px) {
