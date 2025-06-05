@@ -108,7 +108,28 @@ const langArr = {
         "ua": "Освіта",
         "en": "Education",
     },
+    "MLOPS-section1-textp":{
+				"ua": "MLOps Engineer — це фахівець, який поєднує знання в галузях машинного навчання, розробки програмного забезпечення та DevOps для забезпечення ефективного впровадження та підтримки моделей машинного навчання в продуктивному середовищі. Він виступає мостом між командами Data Science та IT-операцій, забезпечуючи безперервну інтеграцію та доставку моделей."
+        "en": "n MLOps Engineer is a specialist who combines expertise in machine learning, software development, and DevOps to ensure the efficient deployment and maintenance of machine learning models in a production environment. They act as a bridge between Data Science and IT operations teams, enabling continuous integration and delivery of models."
+      },
+      "MLOPS-section2-responsibilities-р1": {
+        "ua": "Забезпечення безперебійного впровадження моделей машинного навчання в продуктивне середовище та їх оптимізація для стабільної роботи.",
+        "en": "Ensuring smooth deployment of machine learning models into production environments and optimizing them for stable performance."
+    },
+    "MLOPS-section2-responsibilities-р2": {
+        "ua": "Створення та підтримка CI/CD-пайплайнів для автоматизованого тестування, валідації та розгортання моделей.",
+        "en": "Creating and maintaining CI/CD pipelines for automated testing, validation, and deployment of models."
+    },
+    "MLOPS-section2-responsibilities-р3": {
+        "ua": "Впровадження систем моніторингу для відстеження метрик моделей, виявлення дрейфу даних та забезпечення їхньої актуальності.",
+        "en": "Implementing monitoring systems to track model metrics, detect data drift, and ensure their relevance."
+    },
+    "MLOPS-section2-responsibilities-р4": {
+        "ua": "Забезпечення версіонування моделей та даних для відтворюваності та відповідності вимогам регуляторів.",
+        "en": "Ensuring version control for models and data to support reproducibility and compliance with regulatory requirements."
+    }
 };
+
 
 const allLang = ['ua', 'en'];
 
@@ -128,6 +149,7 @@ function changeLanguage() {
     if (!allLang.includes(hash)) {
         hash = 'ua';
         location.hash = hash;
+        window.location.reload();
     }
 
     for (let key in langArr) {
@@ -140,8 +162,6 @@ function changeLanguage() {
 
 window.addEventListener("load", changeLanguage);
 window.addEventListener("hashchange", changeLanguage);
-
-
 
 
 const hamburger_icon = document.querySelector('.hamburger-icon');
