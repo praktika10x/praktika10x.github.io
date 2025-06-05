@@ -144,3 +144,53 @@ footer .sourses:hover, footer .gen_prof:hover {
     background-color: #5a00eb;
 }
 footer .sourses a {text-decoration: none;}
+
+
+.mobile-menu {
+    position: absolute;
+    top: 100%;       
+    left: -400%;         
+    transform: none;
+    
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*transform: translateX(-50%);*/
+    background-color: #8055f7;
+    width: 150px; 
+    z-index: 1000;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    padding: 0;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu li a {
+    font-size: 18px;
+}
+
+
+.mobile-menu-active {
+    display: block;
+    pointer-events: auto;
+}
+
+.hamburger-icon-active {
+    color: #bebebe !important;
+}
+
+
+.mobile-menu-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+
+.hamburger-icon:hover {
+    cursor: pointer;
+}
+
