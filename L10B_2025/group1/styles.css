@@ -112,4 +112,14 @@ h1{
 }
 .Silka{
 	font-size: 30px;
-
+	padding: 10px 20px;
+          border-radius: 10px;
+          border: 2px grey solid;
+}
+.Silka:hover{
+	background: skyblue;
+          color: black;
+	transition: 1s;
+	scale: 1.1
+	transition: 1s;
+}
