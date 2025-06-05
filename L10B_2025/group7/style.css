@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Jersey+15&display=swap');
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -52,7 +53,7 @@ html {
 }
 
 .language-switcher a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gabriela', serif;
     color: #222222;
     text-decoration: none;
     font-weight: bold;
@@ -83,7 +84,7 @@ html {
     border-radius: 30px;
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     display: inline-block;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gabriela', serif;
     text-transform: uppercase;
     font-size: 15px;
 }
@@ -128,7 +129,7 @@ html {
 }
 
 .home-page .hero h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Jersey 15', sans-serif;
     font-size: 65px;
     margin-bottom: 30px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
@@ -139,6 +140,7 @@ html {
     font-size: 22px;
     color: #F0F0F0;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-family: 'Gabriela', serif;
 }
 
 .home-page .intro-section {
@@ -156,6 +158,7 @@ html {
     font-size: 48px;
     color: #222222;
     margin-bottom: 20px;
+    font-family: 'Jersey 15', sans-serif;
 }
 
 .home-page .intro-section p {
@@ -163,6 +166,7 @@ html {
     color: #444444;
     line-height: 1.8;
     text-align: center;
+    font-family: 'Gabriela', serif;
 }
 
 .home-page .rounded-block-container {
@@ -196,16 +200,19 @@ html {
     border-left: 10px solid #FFD700;
     padding-left: 25px;
     margin-bottom: 30px;
+    font-family: 'Jersey 15', sans-serif;
 }
 
 .project-page h3 {
     color: #222222;
     margin-top: 40px;
     margin-bottom: 25px;
+    font-family: 'Jersey 15', sans-serif;
 }
 
 .project-page p {
     color: #444444;
+    font-family: 'Gabriela', serif;
 }
 
 .project-page ul {
@@ -216,6 +223,7 @@ html {
 .project-page li {
     color: #444444;
     margin-bottom: 12px;
+    font-family: 'Gabriela', serif;
 }
 
 .project-page .cards-container {
@@ -245,7 +253,7 @@ html {
 }
 
 .project-page .card h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Jersey 15', sans-serif;
     font-size: 28px;
     color: #FFD700;
     margin-bottom: 15px;
@@ -257,6 +265,7 @@ html {
     font-size: 17px;
     color: #666666;
     text-align: center;
+    font-family: 'Gabriela', serif;
 }
 
 .project-page .icon-circle {
@@ -308,6 +317,7 @@ html {
     margin-bottom: 45px;
     border-left: none;
     padding-left: 0;
+    font-family: 'Jersey 15', sans-serif;
 }
 
 .sources-page .sources-content {
@@ -335,7 +345,7 @@ html {
 }
 
 .sources-page .source-category h4 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Jersey 15', sans-serif;
     font-size: 26px;
     color: #FFD700;
     margin-bottom: 25px;
@@ -378,14 +388,14 @@ html {
 }
 
 .sources-page .source-item span {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gabriela', serif;
     font-size: 18px;
     font-weight: 700;
     color: #222222;
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Jersey 15', sans-serif;
     font-size: 56px;
     color: #222222;
     text-align: left;
@@ -393,7 +403,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Jersey 15', sans-serif;
     font-size: 40px;
     color: #222222;
     border-left: 10px solid #FFD700;
@@ -405,7 +415,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Jersey 15', sans-serif;
     font-size: 32px;
     color: #222222;
     margin-bottom: 25px;
@@ -414,7 +424,7 @@ h3 {
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gabriela', serif;
     font-size: 19px;
     line-height: 1.8;
     margin-bottom: 20px;
@@ -431,7 +441,7 @@ ul {
 }
 
 li {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gabriela', serif;
     font-size: 19px;
     margin-bottom: 12px;
     color: #444444;
@@ -439,7 +449,7 @@ li {
 }
 
 dl dt {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gabriela', serif;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -449,7 +459,7 @@ dl dt {
 }
 
 dl dd {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gabriela', serif;
     margin-left: 30px;
     margin-bottom: 15px;
     font-size: 18px;
@@ -478,7 +488,7 @@ dl dd {
 }
 
 .rounded-block h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Jersey 15', sans-serif;
     font-size: 32px;
     margin-bottom: 20px;
     color: #FFD700;
@@ -489,7 +499,7 @@ dl dd {
 }
 
 .rounded-block p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gabriela', serif;
     font-size: 18px;
     color: #444444;
     flex-grow: 1;
@@ -504,7 +514,7 @@ dl dd {
     color: #222222;
     padding: 14px 25px;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gabriela', serif;
     font-weight: bold;
     border-radius: 30px;
     border: 2px solid transparent;
@@ -531,7 +541,7 @@ footer {
     color: #F5F5F5;
     padding: 30px;
     margin-top: 60px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gabriela', serif;
     font-size: 17px;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -560,12 +570,47 @@ footer .team-info {
     height: 55px;
     margin-left: auto;
     transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    font-family: 'Jersey 15', sans-serif;
 }
 
 .sources-emoji:hover {
     background-color: #FFFACD;
     transform: scale(1.15) rotate(5deg);
 }
+
+.content-section {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease-out, max-height 1.2s ease-out;
+}
+
+.content-section.visible {
+    opacity: 1;
+    max-height: 2000px;
+}
+
+.image-placeholder {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.image-placeholder.visible-image {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.details-button {
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.details-button.hidden-button {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+}
+
 
 @keyframes fadeIn {
     from {
@@ -670,6 +715,9 @@ footer .team-info {
     }
     .home-page .intro-section h2 {
         font-size: 36px;
+    }
+    .home-page .intro-section p {
+        font-size: 18px;
     }
     .home-page .rounded-block-container {
         flex-direction: column;
