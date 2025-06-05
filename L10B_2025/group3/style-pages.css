@@ -151,6 +151,7 @@ p {
   font-size: 18px;
   line-height: 28px;
   margin-bottom: 30px;
+  text-alighn: center;
 }
 img.fullscreen-image {
   width: 80%;
