@@ -14,6 +14,23 @@ html {
     scroll-behavior: smooth;
 }
 
+.soc-card:hover {
+    transform: translateY(-5px);
+}
+
+.soc-prev-btn:hover, .soc-next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary:hover {
+    background-color: #e6c200;
+}
+
 body:not(.soc-analyst-page):not(.cybersecurity-analyst-page) {
     background-image: url('https://itc.ua/wp-content/uploads/2015/10/0qmm-dYUnrhKWsgmClbLEvBSfpfJUngkZtPxgiqMiNw.jpg');
     background-size: cover;
@@ -141,6 +158,37 @@ ul {
     margin: 0;
 }
 
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: custom-counter;
+}
+
+ol li {
+    counter-increment: custom-counter;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+    background-color: rgba(50, 50, 50, 0.7);
+    padding: 12px 15px 12px 50px;
+    border-left: 4px solid #007bff;
+    border-radius: 5px;
+    position: relative;
+}
+
+ol li::before {
+    content: counter(custom-counter) ". ";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFD700;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
 li {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
@@ -175,10 +223,6 @@ li {
     transition: transform 0.3s ease;
 }
 
-.soc-card:hover {
-    transform: translateY(-5px);
-}
-
 .soc-card .soc-icon-circle {
     width: 70px;
     height: 70px;
@@ -207,7 +251,10 @@ li {
     color: #c0c0c0;
 }
 
-.tools-list li, .products-list li {
+.tools-list li,
+.products-list li,
+.sample-products-list li,
+.education-list li {
     background-color: rgba(50, 50, 50, 0.7);
     margin-bottom: 10px;
     padding: 12px 15px;
@@ -215,7 +262,10 @@ li {
     border-radius: 5px;
 }
 
-.tools-list li::before, .products-list li::before {
+.tools-list li::before,
+.products-list li::before,
+.sample-products-list li::before,
+.education-list li::before {
     content: '⚡';
     margin-right: 10px;
     color: #FFD700;
@@ -229,12 +279,98 @@ li {
     margin-top: 25px;
 }
 
-.gallery-img, .gif-embed {
-    border-radius: 8px;
+.image-gallery img {
     max-width: calc(50% - 10px);
     height: auto;
     object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
+
+.image-frame-rounded {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.image-frame-circle {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.image-frame-square {
+    border-radius: 0;
+    border: 3px solid #00BFFF;
+    box-shadow: 0 4px 12px rgba(0, 191, 255, 0.3);
+}
+
+.image-frame-polaroid {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: rotate(3deg);
+    position: relative;
+    max-width: calc(50% - 10px - 20px);
+    height: auto;
+    object-fit: contain;
+}
+.image-frame-polaroid img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.image-frame-polaroid:hover {
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+
+.anim-fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.anim-slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+.anim-slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideInRight 1s ease-out forwards;
+}
+
+.anim-scale-in {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: scaleIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
 
 .soc-slider-container {
     position: relative;
@@ -281,6 +417,7 @@ li {
     cursor: pointer;
     border-radius: 50%;
     font-size: 1.5em;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .soc-prev-btn {
@@ -365,6 +502,13 @@ blockquote {
     background-color: rgba(0, 191, 255, 0.2);
     color: #FFD700;
     font-weight: 700;
+}
+
+.footnote {
+    font-size: 0.85em;
+    color: #a0a0a0;
+    text-align: right;
+    margin-top: 10px;
 }
 
 .form-group {
@@ -462,12 +606,26 @@ a:hover {
         width: 25px;
         height: 25px;
     }
-    .tools-list li, .products-list li {
+    .tools-list li, .products-list li, .roadmap-list li, .sample-products-list li, .education-list li {
         padding: 8px;
         font-size: 0.8em;
     }
-    .gallery-img, .gif-embed {
+    ol li::before {
+        left: 8px;
+        font-size: 0.9em;
+    }
+    ol li {
+        padding-left: 40px;
+    }
+    .image-gallery img {
         max-width: 100%;
+    }
+    .image-frame-circle {
+        width: 150px;
+        height: 150px;
+    }
+    .image-frame-polaroid {
+        max-width: calc(100% - 20px);
     }
     .soc-slide h3 {
         font-size: 1em;
@@ -482,6 +640,10 @@ a:hover {
     footer {
         padding: 10px;
         font-size: 0.75em;
+    }
+    .data-table th, .data-table td {
+        font-size: 0.8em;
+        padding: 8px 10px;
     }
 }
 
@@ -533,8 +695,19 @@ a:hover {
     .soc-card p {
         font-size: 0.85em;
     }
-    .gallery-img, .gif-embed {
+    .image-gallery img {
         max-width: calc(100% - 10px);
+    }
+    .image-frame-circle {
+        width: 200px;
+        height: 200px;
+    }
+    .image-frame-polaroid {
+        max-width: calc(100% - 20px);
+    }
+    .data-table th, .data-table td {
+        font-size: 0.85em;
+        padding: 10px 12px;
     }
 }
 
@@ -576,7 +749,11 @@ a:hover {
     .soc-card p {
         font-size: 0.9em;
     }
-    .gallery-img, .gif-embed {
+    .image-gallery img {
         max-width: calc(50% - 10px);
+    }
+    .image-frame-circle {
+        width: 220px;
+        height: 220px;
     }
 }
