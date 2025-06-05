@@ -206,3 +206,33 @@ a{
   text-decoration: none;
 }
 
+.card {
+  width: 250px;
+  background-color: #f9cdda;
+  border: 2px solid lightgray;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  color: #333;
+  box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 12px rgba(135, 206, 235, 0.8);
+}
+
+.card img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.card_educational {
+  background-color: #fff;
+  min-height: 240px;
+}
+
+.card-salary {
+  background-color: #f5bb47;
+}
