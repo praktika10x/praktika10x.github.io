@@ -151,7 +151,7 @@ h2 {
     margin-bottom: 25px;
     margin-top: 35px;
     line-height: 1.2;
-    text-align: left; 
+    text-align: left;
 }
 
 h3 {
@@ -160,7 +160,7 @@ h3 {
     color: #333;
     margin-bottom: 20px;
     margin-top: 30px;
-    text-align: left; 
+    text-align: left;
 }
 
 p {
@@ -168,21 +168,21 @@ p {
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 18px;
-    text-align: left; 
+    text-align: left;
 }
 
 ul {
     list-style-type: disc;
     padding-left: 30px;
     margin-bottom: 18px;
-    text-align: left; 
+    text-align: left;
 }
 
 li {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     margin-bottom: 10px;
-    text-align: left; 
+    text-align: left;
 }
 
 dl dt {
@@ -192,7 +192,7 @@ dl dt {
     margin-bottom: 8px;
     color: #555;
     font-size: 19px;
-    text-align: left; 
+    text-align: left;
 }
 
 dl dd {
@@ -200,7 +200,7 @@ dl dd {
     margin-left: 25px;
     margin-bottom: 12px;
     font-size: 17px;
-    text-align: left; 
+    text-align: left;
 }
 
 footer {
@@ -355,7 +355,7 @@ footer a:hover {
     flex-grow: 1;
     margin-bottom: 25px;
     line-height: 1.6;
-    text-align: left; 
+    text-align: left;
 }
 
 .btn {
@@ -366,11 +366,12 @@ footer a:hover {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 30px; 
     border: 2px solid transparent;
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
     text-transform: uppercase;
     font-size: 16px;
+    display: inline-block; 
 }
 
 .btn:hover {
@@ -418,8 +419,9 @@ footer a:hover {
 .intro-section {
     max-width: 800px;
     margin: 40px auto;
-    text-align: left; 
     padding: 0 20px;
+    padding-left: 50px; 
+    text-align: left;
 }
 
 .intro-section h2 {
@@ -435,7 +437,7 @@ footer a:hover {
     font-size: 20px;
     color: #555;
     line-height: 1.7;
-    text-align: left; 
+    text-align: left;
 }
 
 .image-text-block {
@@ -475,7 +477,7 @@ footer a:hover {
     font-size: 32px;
     color: #333;
     margin-top: 0;
-    text-align: left; 
+    text-align: left;
 }
 
 .image-text-block .text-wrapper p,
@@ -483,7 +485,7 @@ footer a:hover {
     font-size: 18px;
     line-height: 1.7;
     color: #555;
-    text-align: left; 
+    text-align: left;
 }
 
 .container hr {
@@ -508,6 +510,10 @@ footer a:hover {
     .image-text-block {
         margin-bottom: 40px;
     }
+
+    .intro-section {
+        padding-left: 20px; 
+    }
 }
 
 .source-list-item {
@@ -530,13 +536,13 @@ footer a:hover {
     border: none;
     border-top: 1px solid #f0e0a0;
     margin: 20px 0;
-    width: 100%; 
+    width: 100%;
 }
 
 
 .rounded-block-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); 
     gap: 30px;
     padding: 40px;
     max-width: 1200px;
@@ -551,7 +557,10 @@ footer a:hover {
     box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left; 
+    text-align: left;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
 }
 
 .rounded-block:hover {
@@ -572,4 +581,12 @@ footer a:hover {
     font-size: 16px;
     color: #555;
     line-height: 1.7;
+    flex-grow: 1; 
+    margin-bottom: 20px; 
+}
+
+
+.rounded-block .btn {
+    align-self: flex-start; 
+    margin-top: auto; 
 }
