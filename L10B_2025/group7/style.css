@@ -6,7 +6,7 @@ body {
     padding: 0;
     color: #333333;
     line-height: 1.6;
-    background-image: url('https://img.freepik.com/premium-photo/abstract-yellow-background-web-design-templates-product-studio-with-smooth-gradient-color_570543-9094.jpg');
+    background-color: hsl(47, 100%, 96%);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@ html {
 }
 
 .logo-bar {
-    background-color: #2C3E50;
+    background-color: #222222;
     padding: 15px 30px;
     display: flex;
     align-items: center;
@@ -50,14 +50,14 @@ html {
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
     font-weight: 700;
-    color: #ECF0F1;
+    color: #FFFFFF;
     text-transform: uppercase;
     letter-spacing: 1.2px;
 }
 
 .language-switcher a {
     font-family: 'Open Sans', sans-serif;
-    color: #ECF0F1;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
     padding: 8px 12px;
@@ -68,8 +68,8 @@ html {
 }
 
 .language-switcher a:hover {
-    color: #2C3E50;
-    background-color: #BDC3C7;
+    color: #222222;
+    background-color: #D3D3D3;
 }
 
 .nav {
@@ -78,7 +78,7 @@ html {
 }
 
 .nav a {
-    color: #ECF0F1;
+    color: #FFFFFF;
     text-decoration: none;
     margin: 0 10px;
     font-weight: 600;
@@ -94,9 +94,9 @@ html {
 
 .nav a:hover,
 .nav a.active {
-    background-color: #3498DB;
-    border-color: #3498DB;
-    color: #FFFFFF;
+    background-color: #FFD700;
+    border-color: #FFD700;
+    color: #333333;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
@@ -104,7 +104,7 @@ html {
 h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 56px;
-    color: #2C3E50;
+    color: #000000;
     text-align: left;
     margin-bottom: 40px;
 }
@@ -112,8 +112,8 @@ h1 {
 h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
-    color: #2C3E50;
-    border-left: 10px solid #3498DB;
+    color: #000000;
+    border-left: 10px solid #FFD700;
     padding-left: 25px;
     margin-bottom: 30px;
     margin-top: 40px;
@@ -124,7 +124,7 @@ h2 {
 h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
-    color: #34495E;
+    color: #333333;
     margin-bottom: 25px;
     margin-top: 35px;
     text-align: left;
@@ -157,8 +157,8 @@ li {
 
 .btn {
     align-self: flex-start;
-    background-color: #3498DB;
-    color: #FFFFFF;
+    background-color: #FFD700;
+    color: #333333;
     padding: 14px 25px;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
@@ -172,9 +172,9 @@ li {
 }
 
 .btn:hover {
-    background-color: #2980B9;
-    border-color: #2980B9;
-    color: #FFFFFF;
+    background-color: #E6C200;
+    border-color: #E6C200;
+    color: #333333;
     transform: translateY(-2px);
 }
 
@@ -184,8 +184,8 @@ li {
 }
 
 footer {
-    background-color: #2C3E50;
-    color: #ECF0F1;
+    background-color: #222222;
+    color: #FFFFFF;
     padding: 30px;
     margin-top: 60px;
     font-family: 'Open Sans', sans-serif;
@@ -201,7 +201,7 @@ footer .team-info {
     margin-bottom: 0;
     text-align: left;
     flex-grow: 1;
-    color: #BDC3C7;
+    color: #D3D3D3;
 }
 
 .sources-emoji {
@@ -210,8 +210,8 @@ footer .team-info {
     align-items: center;
     font-size: 2em;
     text-decoration: none;
-    color: #FFFFFF;
-    background-color: #3498DB;
+    color: #333333;
+    background-color: #FFD700;
     border-radius: 50%;
     width: 55px;
     height: 55px;
@@ -220,7 +220,7 @@ footer .team-info {
 }
 
 .sources-emoji:hover {
-    background-color: #2980B9;
+    background-color: #E6C200;
     transform: scale(1.15) rotate(5deg);
 }
 
@@ -272,9 +272,9 @@ footer .team-info {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://i.gifer.com/bJk.gif') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x500/333333/FFD700?text=Hero+Background') no-repeat center center/cover;
     z-index: 0;
-    filter: brightness(50%);
+    filter: none;
     transform: scale(1.05);
 }
 
@@ -311,7 +311,7 @@ footer .team-info {
     padding-left: 0;
     text-align: center;
     font-size: 48px;
-    color: #2C3E50;
+    color: #000000;
     margin-bottom: 20px;
 }
 
@@ -323,7 +323,7 @@ footer .team-info {
 }
 
 .home-page .rounded-block-container {
-    display: flex; /* Використання Flexbox */
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
@@ -338,7 +338,7 @@ footer .team-info {
 
 .rounded-block {
     background-color: #FFFFFF;
-    border: 2px solid #3498DB;
+    border: 2px solid #E0E0E0;
     border-radius: 20px;
     padding: 35px;
     box-sizing: border-box;
@@ -360,7 +360,7 @@ footer .team-info {
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
     margin-bottom: 20px;
-    color: #3498DB;
+    color: #FFD700;
     border-left: none;
     padding-left: 0;
     margin-top: 0;
@@ -385,7 +385,7 @@ footer .team-info {
     margin: 40px auto;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 40px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid #E0E0E0;
     border-radius: 20px;
     box-sizing: border-box;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -409,9 +409,9 @@ footer .team-info {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://i.gifer.com/bJk.gif') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x500/333333/FFD700?text=Hero+Background') no-repeat center center/cover;
     z-index: 0;
-    filter: brightness(50%);
+    filter: none;
     transform: scale(1.05);
 }
 
@@ -441,22 +441,22 @@ footer .team-info {
 
 .profession-page h1 {
     font-size: 3em;
-    color: #2C3E50;
+    color: #000000;
     text-align: center;
     margin-bottom: 40px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border-bottom: 3px solid #3498DB;
+    border-bottom: 3px solid #FFD700;
     padding-bottom: 15px;
 }
 
 .profession-page h2 {
     font-size: 2.2em;
-    color: #34495E;
+    color: #333333;
     margin-top: 50px;
     margin-bottom: 25px;
     text-align: center;
-    border-bottom: 2px dashed #3498DB;
+    border-bottom: 2px dashed #FFD700;
     padding-bottom: 10px;
 }
 
@@ -469,20 +469,20 @@ footer .team-info {
 }
 
 .profession-page .cards-container {
-    display: grid; 
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 40px;
 }
 
 .profession-page .card {
-    background-color: #fff;
+    background-color: #FFFFFF;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     padding: 30px;
     text-align: center;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
-    border: 1px solid #eee;
+    border: 1px solid #E0E0E0;
     overflow: hidden;
 }
 
@@ -494,7 +494,7 @@ footer .team-info {
 .profession-page .icon-circle {
     width: 80px;
     height: 80px;
-    background-color: #3498DB;
+    background-color: #FFD700;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -513,12 +513,12 @@ footer .team-info {
     max-height: 60%;
     display: block;
     border-radius: 50%;
-    filter: invert(1);
+    filter: invert(0);
 }
 
 .profession-page .card h2 {
     font-size: 1.6em;
-    color: #4A6C8C;
+    color: #333333;
     margin-bottom: 15px;
     border-bottom: none;
 }
@@ -535,8 +535,8 @@ footer .team-info {
 }
 
 .profession-page ul li {
-    background-color: #f9f9f9;
-    border-left: 5px solid #3498DB;
+    background-color: #F8F8F8;
+    border-left: 5px solid #FFD700;
     margin-bottom: 10px;
     padding: 15px 20px;
     border-radius: 8px;
@@ -550,14 +550,14 @@ footer .team-info {
 }
 
 .project-page h2 {
-    color: #2C3E50;
-    border-left: 10px solid #3498DB;
+    color: #000000;
+    border-left: 10px solid #FFD700;
     padding-left: 25px;
     margin-bottom: 30px;
 }
 
 .project-page h3 {
-    color: #34495E;
+    color: #333333;
     margin-top: 40px;
     margin-bottom: 25px;
 }
@@ -586,7 +586,7 @@ footer .team-info {
 
 .project-page .card {
     background-color: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    border: 1px solid #E0E0E0;
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -606,7 +606,7 @@ footer .team-info {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #3498DB;
+    background-color: #FFD700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -626,7 +626,7 @@ footer .team-info {
     object-fit: contain;
     border-radius: 50%;
     padding: 10px;
-    filter: invert(1);
+    filter: invert(0);
 }
 
 .sources-page .sources-section {
@@ -636,21 +636,21 @@ footer .team-info {
 .sources-page .sources-section h3 {
     text-align: center;
     font-size: 28px;
-    color: #2C3E50;
+    color: #000000;
     margin-bottom: 30px;
     border-left: none;
     padding-left: 0;
 }
 
 .sources-page .sources-content {
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
 }
 
 .sources-page .source-list {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -686,7 +686,7 @@ footer .team-info {
 }
 
 .image-placeholder {
-    display: flex; /* Використання Flexbox */
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
@@ -694,7 +694,7 @@ footer .team-info {
 }
 
 .image-placeholder img {
-    border: 1px solid #ddd;
+    border: 1px solid #E0E0E0;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.5s ease-out;
@@ -710,10 +710,10 @@ footer .team-info {
     max-width: 900px;
     margin: 40px auto;
     overflow: hidden;
-    border: 3px solid #27AE60;
+    border: 3px solid #FFD700;
     border-radius: 20px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    background-color: #E8F5E9;
+    background-color: #FFFACD;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -742,7 +742,7 @@ footer .team-info {
 .slide h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 2.2em;
-    color: #229954;
+    color: #E6C200;
     margin-top: 0;
     margin-bottom: 15px;
     text-align: center;
@@ -761,8 +761,8 @@ footer .team-info {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #27AE60;
-    color: #FFFFFF;
+    background-color: #FFD700;
+    color: #333333;
     border: none;
     padding: 15px 22px;
     font-size: 28px;
@@ -776,8 +776,8 @@ footer .team-info {
 
 .prev-btn:hover,
 .next-btn:hover {
-    background-color: #2ECC71;
-    color: #FFFFFF;
+    background-color: #E6C200;
+    color: #333333;
     transform: translateY(-50%) scale(1.1);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     opacity: 1;
