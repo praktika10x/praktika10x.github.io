@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap'); /* Додайте цей рядок */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap'); 
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -150,8 +150,8 @@ html {
     padding-left: 0;
     text-align: center;
     font-size: 48px;
-    color: #FFFFFF; /* Зробіть текст білим */
-    font-family: 'Jersey 15', sans-serif; /* Встановіть шрифт Jersey 15 */
+    color: #FFFFFF; 
+    font-family: 'Jersey 15', sans-serif; 
     margin-bottom: 20px;
 }
 
