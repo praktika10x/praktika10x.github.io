@@ -1262,9 +1262,8 @@ footer .sourses:hover {
     padding: 8px 14px;
     margin-top: 8px;
   }
-}
-
-  .career-sequence {
+  
+    .career-sequence {
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
@@ -1294,6 +1293,9 @@ footer .sourses:hover {
     filter: drop-shadow(0 2px 8px rgba(30,42,94,0.18));
   }
 }
+  
+}
+
 
 @media (min-width: 1101px) {
   .career-sequence {
