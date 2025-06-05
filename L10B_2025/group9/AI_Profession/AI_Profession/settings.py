@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-&imuuo(o$)ad-!_-(2wdeep7$+5yu(vxt%#tolml4&ta12+)1^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['praktika10x-github-io.onrender.com']
+ALLOWED_HOSTS = ['praktika10x-github-io.onrender.com',
+                 '127.0.0.1']
 
 
 # Application definition

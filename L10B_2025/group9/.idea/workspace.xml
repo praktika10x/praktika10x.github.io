@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="CSS linked">
+    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="Deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" afterDir="false" />
     </list>
@@ -107,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749032167116</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Deploy">
+      <option name="closed" value="true" />
+      <created>1749110557622</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1749110557622</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +160,7 @@
     <MESSAGE value="to commit" />
     <MESSAGE value="Restart V5" />
     <MESSAGE value="CSS linked" />
-    <option name="LAST_COMMIT_MESSAGE" value="CSS linked" />
+    <MESSAGE value="Deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deploy" />
   </component>
 </project>
