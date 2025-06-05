@@ -27,7 +27,13 @@ td{
           padding:10px;
           font-size:16px;
       }
-      .wrap{
+h3{
+	font-family: "Balsamiq Sans";
+}
+p{
+	font-family: "Balsamiq Sans";
+}
+	.wrap{
           width: 1200px;
           margin: auto;
           display: flex;
