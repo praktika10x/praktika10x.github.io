@@ -35,7 +35,7 @@ const langArr = {
         "ua": "Автори",
         "en": "Authors",
     },
-    "author-name1": {
+    "authors-name1": {
         "ua": "Бебих Богдан",
         "en": "Bebykh Bohdan",
     },
