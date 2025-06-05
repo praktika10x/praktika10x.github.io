@@ -88,43 +88,6 @@
         
     </footer>
 
-    <script>
-        const newsCardsWrapper = document.querySelector('.news-cards-wrapper');
-        const prevBtn = document.querySelector('.prev-btn');
-        const nextBtn = document.querySelector('.next-btn');
-        const newsCards = document.querySelectorAll('.news-card');
-
-        let currentIndex = 0;
-
-        function updateCarousel() {
-            if (newsCards.length === 0) return;
-            const cardWidth = newsCards[0].offsetWidth;
-            const gap = parseFloat(getComputedStyle(newsCardsWrapper).gap) || 30;
-            const cardWidthAdjusted = newsCards[0].offsetWidth;
-            const totalShift = currentIndex * (cardWidthAdjusted + gap);
-            newsCardsWrapper.style.transform = `translateX(${-totalShift}px)`;
-        }
-
-        nextBtn.addEventListener('click', () => {
-            if (currentIndex < newsCards.length - 1) {
-                currentIndex++;
-            } else {
-                currentIndex = 0; // Loop back to the beginning
-            }
-            updateCarousel();
-        });
-
-        prevBtn.addEventListener('click', () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-            } else {
-                currentIndex = newsCards.length - 1; // Loop to the end
-            }
-            updateCarousel();
-        });
-
-        window.addEventListener('resize', updateCarousel);
-        updateCarousel(); // Initial call to set correct position on load
-    </script>
+   
 </body>
 </html>
