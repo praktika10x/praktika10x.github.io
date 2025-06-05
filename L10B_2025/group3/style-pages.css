@@ -147,6 +147,7 @@ p {
 .card-salary {
   background-color: #f5bb47;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
 }
 .cards {
   display: grid;
