@@ -1,0 +1,243 @@
+/* Styles specific to the Project Page (project.html) */
+
+.project-page .container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-out; /* Global fadeIn for container */
+}
+
+/* Headings for project page */
+.project-page h2 {
+    font-size: 2.8em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-left: 5px solid #FFD700; /* Distinct border style */
+    padding-left: 15px;
+    padding-bottom: 0; /* Remove bottom padding from global h2 */
+    border-bottom: none; /* Remove bottom border from global h2 */
+    text-align: left; /* Align to left */
+}
+
+.project-page section h3 {
+    font-size: 2.2em;
+    color: #555;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 2px dashed #FFD700;
+    padding-bottom: 10px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Paragraphs in project page */
+.project-page p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: justify; /* Justify text for paragraphs */
+}
+
+/* Cards for team and resources */
+.project-page .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted min-width for project cards */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-page .card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid #eee;
+}
+
+.project-page .card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-page .card h2 {
+    font-size: 1.6em;
+    color: #444;
+    margin-bottom: 15px;
+    border-bottom: none; /* Override global h2 border */
+}
+
+.project-page .card p {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Icon for tips section */
+.project-page .icon-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project-page .icon-circle img {
+    max-width: 80%; /* Adjust image size in icon circle */
+    max-height: 80%;
+    display: block;
+    border-radius: 0; /* Keep original image shape */
+}
+
+.project-page .icon-circle:hover {
+    transform: scale(1.1);
+}
+
+/* List for tips section */
+.project-page ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.project-page ul li {
+    background-color: #f9f9f9;
+    border-left: 5px solid #FFD700;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-page ul li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Button for resources */
+.project-page .btn {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #222222;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px;
+}
+
+.project-page .btn:hover {
+    background-color: #e6c200;
+    transform: translateY(-2px);
+}
+
+/* Animations for project page */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive adjustments for Project Page */
+@media (max-width: 992px) {
+    .project-page .container {
+        padding: 30px;
+    }
+    .project-page h2 {
+        font-size: 2.2em;
+    }
+    .project-page section h3 {
+        font-size: 1.8em;
+    }
+    .project-page .cards-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+    .project-page .card {
+        padding: 25px;
+    }
+    .project-page .icon-circle {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-page .container {
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .project-page h2 {
+        font-size: 2em;
+        padding-left: 10px;
+    }
+    .project-page section h3 {
+        font-size: 1.6em;
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+    .project-page p {
+        font-size: 1em;
+    }
+    .project-page .cards-container {
+        grid-template-columns: 1fr; /* Stack cards vertically */
+        gap: 20px;
+    }
+    .project-page .card {
+        padding: 20px;
+    }
+    .project-page .card h2 {
+        font-size: 1.4em;
+    }
+    .project-page .icon-circle {
+        width: 70px;
+        height: 70px;
+        margin: 15px auto 25px;
+    }
+    .project-page ul li {
+        padding: 12px 18px;
+    }
+    .project-page .btn {
+        padding: 8px 18px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-page .container {
+        padding: 15px;
+    }
+    .project-page h2 {
+        font-size: 1.6em;
+        margin-bottom: 25px;
+    }
+    .project-page section h3 {
+        font-size: 1.4em;
+        margin-top: 30px;
+    }
+    .project-page p {
+        font-size: 0.9em;
+    }
+    .project-page .card {
+        padding: 15px;
+    }
+    .project-page .icon-circle {
+        width: 60px;
+        height: 60px;
+    }
+    .project-page ul li {
+        font-size: 0.9em;
+    }
+}
