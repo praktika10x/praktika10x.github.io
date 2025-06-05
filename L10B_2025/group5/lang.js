@@ -16,8 +16,8 @@ const langArr = {
         "en": "Description of the Data-field",
     },
     "description-text": {
-        "ua": "Data-напрям — це сучасна і дико цікава сфера ІТ, де з сирих даних витягують максимум користі...",
-        "en": "The data field is a modern and incredibly exciting area of IT...",
+        "ua": "Data-напрям — це сучасна і дико цікава сфера ІТ, де з сирих даних витягують максимум користі. Тут збирають, зберігають, чистять і аналізують дані, щоб робити прогнози, приймати розумні рішення або навіть автоматизують процеси. Це мікс програмування, статистики, аналітики й машинного навчання — усе, щоб перетворити цифри на знання, що реально допомагають бізнесу, науці чи технологіям.",
+        "en": "The Data field is a modern and incredibly exciting area of IT where raw data is transformed into valuable insights. It involves collecting, storing, cleaning, and analyzing data to make predictions, support smart decision-making, or even automate processes. It’s a mix of programming, statistics, analytics, and machine learning — all aimed at turning numbers into knowledge that truly benefits business, science, or technology.",
     },
     "analyst-desc": {
         "ua": "Аналізує дані, створює звіти та дашборди для підтримки бізнес-рішень.",
