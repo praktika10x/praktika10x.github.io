@@ -197,7 +197,6 @@ ul{
   padding: 0;
   margin: 0;
   width: 1200px;
-  flex-wrap: nowrap;
 }
 
 .nav-links li a {
@@ -245,11 +244,4 @@ ul{
 
 .swiper-pagination-bullet-active {
     background: #954BAA;
-}
-.wrap {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
 }
