@@ -3,15 +3,196 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <title>Frontend для чайників</title>
-        <link rel="stylesheet" href="Style.css">
+        <title>Frontend Developer</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="Full-stack.css" />
+        <link rel="stylesheet" href="Style.css" />
+      <link rel="stylesheet" href="style-pages.css" />
     </head>
-    <body>
-        <ul>
-            <li><a href="index.html">Головна</a></li>
-            <li><a href="Beckend-index.html">Backend Developer</a></li>
-            <li><a href="Frontend.html">Frontend Developer</a></li>
-            <li><a href="Full-stack Developer.html">Full-stack Developer</a></li>
-        </ul>
-    </body>
+    <body class="badyy">
+      <div class="header">
+            <div class="header-logo">
+                <img src="Project-img/SVG/ПроектЛого.svg" class="eniac" />
+            </div>
+            <div class="navdiv"><ul class="nav-links">
+               <li> <a href="#essence">Сутність професії</a> </li>
+               <li>  <a href="#knowledge">Специфічні знання та вимоги</a> </li>
+               <li> <a href="#tools">Основні інструменти</a> </li>
+               <li><a href="#product">Продукти</a></li>
+               <li> <a href="#demand">Затребуваність</a></li>
+               <li> <a href="#salary">Заробітня плата</a></li>
+               <li>  <a href="#educational">Заклади освіти</a></li>
+            </ul></div>
+        </div>
+        <div class="intro">
+            <h1  style="margin-bottom: 20%;">Frontend Developer</h1>
+          <section class="main">
+                <h2 id="essence">Сутність професії</h2>
+    <p>FrontEnd розробник створює видиму для користувача частину веб-сторінки і його головне завдання – точно передати у верстанні те, що створив дизайнер, а також реалізувати логіку користувача.<br>Для того, щоб стати FrontEnd розробником, не потрібні знання математики. Опанувати спеціальність Ви зможете за 3-6 місяців, залежно від того, скільки часу будете приділяти теорії та кодингу
+</p>
+    <h2 id="knowledge">Специфічні знання та вимоги до фахівця</h2>
+    <h3>Технічні навички:</h3>
+    <ul>
+      <li>HTML5 — структура вебсторінок.</li>
+      <li>CSS3 — стилізація, Flexbox, Grid, анімації.	</li>
+      <li>JavaScript (ES6+) — основна мова програмування.</li>
+      <li>Axios / Fetch / REST API</li>
+    </ul>
+    <h3>Набори готових інструментів, бібліотек і правил(фреймворки):</h3>
+    <ul>
+      <li>React — популярна бібліотека для створення інтерфейсів.</li>
+      <li>Next.js — React-фреймворк для серверного рендерингу та статичних сайтів .</li>
+    </ul>
+    <h3>CSS-фреймворки:</h3>
+    <ul>
+      <li>Tailwind CSS — утилітарний CSS-фреймворк для швидкої розробки .</li>
+    </ul>
+    <h3>Системи контролю версій:</h3>
+    <ul>
+      <li>Git + GitHub — для відстеження змін у коді та співпраці з командою.</li>
+    </ul>
+    <h3>М'які навички:</h3>
+    <ul>
+      <li>Вміння працювати в команді.</li>
+      <li>Комунікабельність для взаємодії з дизайнерами та бекенд-розробниками..</li>
+      <li>Увага до деталей та орієнтація на користувача</li>
+    </ul>
+
+    <!-- Слайдер інструментів -->
+    <section id="tools">
+      <h2>Основні інструменти:</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide info-card">
+            <h3 class="card-title">Visual Studio Code</h3>
+            <p class="cart-desc">Популярний редактор з багатим набором плагінів . </p>
+          </div>
+          <div class="swiper-slide info-card">
+            <h3 class="card-title">Figma</h3>
+            <p class="cart-desc">Для створення прототипів та дизайну інтерфейсів .</p>
+          </div>
+          <div class="swiper-slide info-card">
+            <h3 class="card-title">Jest</h3>
+            <p class="cart-desc">Для юніт-тестування JavaScript-коду.</p>
+          </div>
+          <div class="swiper-slide info-card">
+            <h3 class="card-title">Cypress</h3>
+            <p class="cart-desc">Для енд-ту-енд тестування вебдодатків .</p>
+          </div>
+          <div class="swiper-slide info-card">
+            <h3 class="card-title">Lighthouse</h3>
+            <p class="cart-desc">Для аудиту продуктивності та доступності вебсторінок .</p>
+          </div>
+          <div class="swiper-slide info-card">
+            <h3 class="card-title">GitHub </h3>
+            <p class="cart-desc">Для хостингу та спільної роботи над кодом.</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!-- Продукти -->
+   <div class="wrap">
+    <div class="card">       
+      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fcalcom&psig=AOvVaw0XNdC3StCcDL5hbX6Bq7ZZ&ust=1749205281854000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCu2M2H2o0DFQAAAAAdAAAAABAE" alt="Cal logo">
+      <p id="product">
+        <strong>Cal.com</strong><br>
+        Це відкрита платформа для онлайн-планування, яка дозволяє організовувати зустрічі та події з повною кастомізацією, відкритим кодом і можливістю хостингу чи використання хмарного сервісу.
+      </p>
+    </div>
+
+    <div class="card">       
+      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fmadremezcal%2F&psig=AOvVaw13vOJbVeJjPvs6jdAlBK5H&ust=1749205761309000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIjvnrOJ2o0DFQAAAAAdAAAAABAE">
+      <p>
+        <strong>Madre Mezcal</strong><br>
+        Це бренд, що об'єднує мексиканські традиції, природу та сучасний дизайн. На сайті представлена продукція ручної роботи, одяг, книги та аксесуари з акцентом на екологічність і культурну спадщину Мексики.
+      </p>
+    </div>
+      <div class="card">       
+      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.crunchbase.com%2Forganization%2Ffey&psig=AOvVaw1MyOEEQN3GvcYQcaMeF1fV&ust=1749206225550000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDq3Y-L2o0DFQAAAAAdAAAAABAE">
+      <p>
+        <strong>Fey</strong><br>
+         Це сучасна платформа для фінансових досліджень, яка об'єднує реальний час, інтелектуальні інструменти та інтуїтивно зрозумілий інтерфейс, допомагаючи інвесторам приймати обґрунтовані рішення. 
+      </p>
+    </div>
+ </div>
+    <p id="demand"><img src="фотофронт.jpg" class="fullscreen-image"></p>
+<div class="wrap">
+  <div class="card card-salary">
+      <p id="salary">36 500 грн</p>
+      <p>на червень 2025</p>
+  </div>	
+</div>
+
+<div class="card color">
+    <h2 class="section-title" id="educational">Заклади освіти</h2>
+    <section class="wrap">
+      <div class="card card-educational">
+        <p><strong>Міжрегіональна Академія управління персоналом(МАУП)</strong></p>
+        <p>Київ, приватна, денна/заочна, від 6 000 грн</p>
+      </div>
+      <div class="card card-educational">
+        <p><strong>Український державний університет науки і технологій(УДУНТ)</strong></p>
+        <p>Дніпро, державна, денна/заочна, від 10 500 грн</p>
+      </div>
+      <div class="card card-educational">
+        <p><strong>IT STEP University</strong></p>
+        <p>Львів, приватна, денна/заочна, від 50 000 грн</p>
+      </div>
+</div>
+    </section>
+  </main>
+
+    <footer class="footer">
+            <p>Пропонуємо для ознайомлення</p>
+<div class="wrap">
+  <a href="Frontend.html" class="card card-link">
+    <div>
+      <p>Frontend розробник</p>
+    </div>
+  </a>
+
+  <a href="Beckend-index.html" class="card card-link">
+    <div>
+      <p>Beckend розробник</p>
+    </div>
+  </a>
+
+  <a href="Full-stack Developer.html" class="card card-link">
+    <div>
+      <p>Full-stack розробник</p>
+    </div>
+  </a>
+
+  <a href="index.html" class="card card-link">
+    <div>
+      <p>На головну</p>
+    </div>
+  </a>	
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    });
+  </script>
+</body>
 </html>
