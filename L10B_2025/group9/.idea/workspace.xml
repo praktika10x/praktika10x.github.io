@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="Deploy V1" />
-    <list id="f1ab00e0-7278-4685-bbc4-952ba86327f0" name="don't commit" comment="" />
+    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="Fron Update 1">
+      <change afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" afterDir="false" />
+    </list>
+    <list id="f1ab00e0-7278-4685-bbc4-952ba86327f0" name="don't commit" comment="">
+      <change beforePath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" afterDir="false" />
+    </list>
     <list id="2022e4c7-dfdd-48fb-b1e4-4f61ac093540" name="to commit" comment="to commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,18 +33,25 @@
   "associatedIndex": -1
 }]]></component>
   <component name="ProjectId" id="2xzocPcKcyOh6vkaS8CfuaQ3b8G" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Peter Bakun/Documents/GitHub/praktika10x.github.io/L10B_2025/group9/AI_Profession/main/static/main/img"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Peter Bakun\Documents\GitHub\praktika10x.github.io\L10B_2025\group9\AI_Profession\main\static\main\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Peter Bakun\Documents\GitHub\praktika10x.github.io\L10B_2025\group9\AI_Profession" />
       <recent name="C:\Users\Peter Bakun\Documents\GitHub\praktika10x.github.io\L10B_2025\group9\main\static\main\img" />
@@ -136,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749112026514</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fron Update 1">
+      <option name="closed" value="true" />
+      <created>1749112280693</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1749112280693</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +204,7 @@
     <MESSAGE value="CSS linked" />
     <MESSAGE value="Deploy" />
     <MESSAGE value="Deploy V1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deploy V1" />
+    <MESSAGE value="Fron Update 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fron Update 1" />
   </component>
 </project>
