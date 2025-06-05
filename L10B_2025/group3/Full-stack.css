@@ -250,3 +250,6 @@ img.fullscreen-image {
 .card p strong {
   font-size: 40px;
 }
+.card color {
+    background: linear-gradient(180deg, rgba(255, 170, 0, 0.5) 19.23%, rgba(151, 71, 255, 0.5) 88.46%);
+}

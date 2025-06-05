@@ -27,6 +27,31 @@ body.light-theme {
   color: #333333;
 }
 
+/* Background overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cdn.discordapp.com/attachments/1266156981450838171/1379850180379148469/678f118d0688b52c1d5d0cf820adbdfb93a522a6.png?ex=6841bd1f&is=68406b9f&hm=41f0d42f71123383a26a0f1f403e4896e68d9eee69f1a1bff947b57b40f9a4bd&');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.3;
+    z-index: -1;
+    pointer-events: none;
+    transition: background-image 0.3s ease, opacity 0.3s ease;
+  }
+  
+  body.light-theme::before {
+    background-image: url('lightthemebg.png');
+    opacity: 0.1;
+  }
+
+
 /* Header */
 .site-header {
   display: flex;
@@ -191,20 +216,6 @@ body.light-theme .menu-icon {
   width: 100%;
   height: 100%;
   z-index: 1;
-}
-
-/* Dark theme background (GIF) */
-.hero-background.dark-bg {
-  background: url('https://cdn.discordapp.com/attachments/1266156981450838171/1379836116936691772/5f2c8c4b013ed26c6804691dbc8acb4ef66923ed.gif?ex=6841b006&is=68405e86&hm=0d4d2e783eeddd62b9afac4118c65a5ec33d950736ed6ed27164ea96c4d67ec9&') center/cover no-repeat;
-  display: block;
-}
-
-/* Light theme background (gradient) */
-.hero-background.light-bg {
-  background: linear-gradient(45deg, #E4E4FF, #D1ADFF, #C3A7FF, #B794F6);
-  background-size: 400% 400%;
-  animation: gradientShift 6s ease infinite;
-  display: none;
 }
 
 body.light-theme .hero-background.dark-bg {
