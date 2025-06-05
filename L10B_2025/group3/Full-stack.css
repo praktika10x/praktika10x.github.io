@@ -20,11 +20,29 @@
     align-items: center;
     box-sizing: border-box;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    /*flex-wrap: nowrap;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1000;*/
 }
+.nav-btn {
+      background-color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 1vw 1vw;
+      font-size: 0.85vw;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .nav-btn:hover {
+      transform: scale(1.10);
+    }
+    
+    .nav-btn.main:hover {
+      background-color: #4cbded;
+      transform: scale(1.10);
+    }
 .header-logo {
     height: 55px;
     padding-left: 20px;
