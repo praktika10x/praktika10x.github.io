@@ -229,14 +229,13 @@ img.fullscreen-image {
     align-items: center;
     box-sizing: border-box;
     max-width: 100%;
- text-align: center;
+    text-align: center;
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
     color: #954BAA;
 }
-More actions
 .swiper-pagination-bullet-active {
     background: #954BAA;
 }
