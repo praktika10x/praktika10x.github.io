@@ -1,101 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
 
-:root {
-    --ocean-blue: #0077b6;
-    --sea-green: #2a9d8f;
-    --light-teal: #8ecae6;
-    --mint-cream: #f1faee;
-    --sky-blue: #48cae4;
-    --deep-teal: #1d3557;
+body{ 
+    max-width:1200px;
+    margin:auto;
+    background: honeydew;
 }
-
-body { 
-    max-width: 1200px;
-    margin: 0 auto;
-    background: var(--mint-cream);
-    font-family: "Balsamiq Sans", sans-serif;
-    color: var(--deep-teal);
-    line-height: 1.6;
-    padding: 20px;
+p{
+    font-family: "Balsamiq Sans";
+    color: darkslategray;
 }
-
 h1 {
-    margin: 20px auto;
+    margin: 0 auto 10px;
     color: white;
-    background: linear-gradient(to right, var(--ocean-blue), var(--sea-green));
-    text-shadow: 1px 1px 3px var(--deep-teal);
+    background: mediumseagreen;
+    text-shadow: 2px 2px 5px darkgreen;
     text-align: center;
-    padding: 15px;
-    width: 80%;
-    border-radius: 15px;
-    font-family: "Rubik Bubbles", cursive;
-    font-size: 2.2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 0;
+    top: 0;
+    height:40px;
+    width:300px;
+    grid-column:1/2;grid-row:1/2; 
+    font-family:"Rubik Bubbles";
 }
      
-h3 {
-    font-family: "Balsamiq Sans", sans-serif;
-    width: fit-content;
-    color: white;
-    background: var(--sea-green);
-    text-align: center;
-    padding: 10px 25px;
-    margin: 25px auto;
-    border-radius: 20px;
-    font-size: 1.3rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+h3{
+    font-family: "Balsamiq Sans";
+    width:150px;
+    color:white;
+    background: cadetblue;
+    text-align:center;
+    padding:10px 10px;
+    margin:auto;
+    border-radius: 10px;
 }
-
-.text {
-    width: 300px;
-    min-height: 375px;
-    border: 2px solid var(--light-teal);
-    border-radius: 15px;
+.text{
+    width:300px;
+    height:375px;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+    float:left;
+    box-shadow: 2px 2px 5px lightblue;
+    padding:30px;
+    font-size:18px;
+    grid-column:1/2; grid-row:2/3;
     background: white;
-    box-shadow: 0 4px 8px var(--light-teal);
-    padding: 25px;
-    font-size: 1rem;
-    margin: 15px;
-    transition: transform 0.3s ease;
 }
-
-.text:hover {
-    transform: translateY(-5px);
-}
-
-.card {
-    width: 220px;
-    min-height: 280px;
-    border: 2px solid var(--sky-blue);
-    border-radius: 15px;
+.card{
+    width:200px;
+    height:250px;
+    border: 2px solid mediumaquamarine;
+    border-radius: 10px;
+    float:left;
+    margin:50px;
+    box-shadow: 2px 2px 5px paleturquoise;
+    padding:10px;
+    font-size:16px;
     background: white;
-    box-shadow: 0 4px 8px var(--light-teal);
-    padding: 20px;
-    font-size: 0.9rem;
-    margin: 20px;
-    transition: all 0.3s ease;
+}
+.cards{
+    float:center;
+    margin:auto;
+    width:90%;
+    flex-wrap: nowrap | wrap | wrap-reverse;
+    justify-content: flex-start | flex-end | center | space-between | space-around;
+}
+.p1{
+    float:center;
+    grid-column:2/3; grid-row:2/3;
+}
+.r1{
+    float:right;
+    top: -30px;
+    grid-column:3/4; grid-row:2/3;
+}
+.wrap{
+    display:grid;
+    repeat(3, 1fr);
+    justify-content:space-evenly;
+}
+.sayt{
+    margin:auto;
+    width:90%;
 }
 
-.card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 12px var(--sky-blue);
+/* Font classes (без изменений) */
+.balsamiq-sans-regular {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin: 30px auto;
-    width: 90%;
+.balsamiq-sans-bold {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-.wrap {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin: 30px 0;
+.balsamiq-sans-regular-italic {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.balsamiq-sans-bold-italic {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.rubik-bubbles-regular {
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .Silka {
@@ -104,36 +122,19 @@ h3 {
     padding: 20px;
     width: 100%;
 }
-
-.Silka a {
-    font-size: 1.5rem;
-    padding: 12px 30px;
-    border-radius: 30px;
-    border: none;
+.Silka a{
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid teal;
     text-decoration: none;
-    text-align: center;
+    text-align:center;
     color: white;
-    background: linear-gradient(to right, var(--ocean-blue), var(--sea-green));
-    display: inline-block;
-    transition: all 0.4s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: mediumturquoise;
 }
-
-.Silka a:hover {
-    background: linear-gradient(to right, var(--sea-green), var(--ocean-blue));
+.Silka a:hover{
+    background: turquoise;
+    color: black;
+    transition: 1s;
     transform: scale(1.05);
-    box-shadow: 0 6px 12px var(--sky-blue);
-}
-
-/* Font classes */
-.balsamiq-sans-regular {
-    font-family: "Balsamiq Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.rubik-bubbles-regular {
-    font-family: "Rubik Bubbles", cursive;
-    font-weight: 400;
-    font-style: normal;
 }
