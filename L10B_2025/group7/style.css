@@ -684,8 +684,7 @@ footer .team-info {
         padding: 25px;
         margin: 25px auto;
     }
-    .project-page .cards-container,
-    .sources-page .sources-content {
+    .project-page .cards-container {
         flex-direction: column;
         align-items: center;
         gap: 25px;
@@ -708,20 +707,33 @@ footer .team-info {
     }
     .sources-page .source-category {
         min-width: unset;
-        width: 90%;
-        max-width: 300px; 
-        padding: 15px; 
+        width: 90%; 
+        max-width: none; 
+        padding: 0; 
+        background-color: transparent; 
+        border: none; 
+        box-shadow: none; 
+    }
+    .sources-page .source-category:hover {
+        transform: none;
+        box-shadow: none;
     }
     .sources-page .source-category h4 {
-        font-size: 18px; 
+        font-size: 22px; 
+        margin-bottom: 15px;
     }
     .sources-page .source-list {
-        gap: 8px; 
+        gap: 10px; 
+        justify-content: flex-start; 
+        padding-left: 0; 
+    }
+    .sources-page .source-item {
+        margin: 0;
     }
     .sources-page .source-item img {
-        width: 40px; 
-        height: 40px; 
-        padding: 3px;
+        width: 60px; 
+        height: 60px;
+        padding: 5px;
     }
     footer {
         flex-direction: column;
@@ -794,23 +806,20 @@ footer .team-info {
         font-size: 22px;
     }
     .sources-page .sources-section h3 {
-        font-size: 24px; 
+        font-size: 24px;
         margin-bottom: 20px;
     }
-    .sources-page .source-category {
-        max-width: 250px;
-        padding: 10px; 
-    }
     .sources-page .source-category h4 {
-        font-size: 16px; 
+        font-size: 18px;
+        margin-bottom: 10px;
     }
     .sources-page .source-list {
-        gap: 5px; 
+        gap: 8px; 
     }
     .sources-page .source-item img {
-        width: 35px; 
-        height: 35px; 
-        padding: 2px;
+        width: 50px; 
+        height: 50px;
+        padding: 4px;
     }
     footer {
         font-size: 14px;
