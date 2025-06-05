@@ -146,16 +146,42 @@
 
         <div class="soc-section">
             <h2>Заклади освіти в Україні</h2>
-            <p>Отримати освіту у сфері кібербезпеки, що є гарною базою для SOC Analyst, можна в багатьох українських університетах:</p>
-            <ul class="education-list">
-                <li>Національний технічний університет України «Київський політехнічний інститут імені Ігоря Сікорського» (КПІ) - спеціальність "Кібербезпека".</li>
-                <li>Львівська політехніка - спеціальності "Безпека інформаційних і комунікаційних систем", "Кібербезпека".</li>
-                <li>Харківський національний університет радіоелектроніки (ХНУРЕ) - спеціальність "Кібербезпека".</li>
-                <li>Національний авіаційний університет (НАУ) - спеціальність "Кібербезпека".</li>
-                <li>Київський національний університет імені Тараса Шевченка - спеціальність "Кібербезпека".</li>
-                <li>Державний університет телекомунікацій - спеціальність "Кібербезпека".</li>
-            </ul>
-            <p>Це лише деякі з провідних закладів, що готують фахівців у цій галузі.</p>
+            <div id="educationSliderContainer" class="education-slider-container">
+                <div class="education-slider-wrapper">
+                    <div class="education-slide">
+                        <img src="https://kpi.ua/files/images/general/header-logo.svg" alt="КПІ ім. Ігоря Сікорського" class="education-img">
+                        <h3>Національний технічний університет України «Київський політехнічний інститут імені Ігоря Сікорського» (КПІ)</h3>
+                        <p>Спеціальність "Кібербезпека".</p>
+                    </div>
+                    <div class="education-slide">
+                        <img src="https://lpnu.ua/sites/default/files/styles/default_image_large/public/zastupni/logo_0.png?itok=97J-XJ4z" alt="Львівська політехніка" class="education-img">
+                        <h3>Національний університет «Львівська політехніка»</h3>
+                        <p>Спеціальності "Безпека інформаційних і комунікаційних систем", "Кібербезпека".</p>
+                    </div>
+                    <div class="education-slide">
+                        <img src="https://nure.ua/wp-content/themes/nure/assets/images/logo.png" alt="ХНУРЕ" class="education-img">
+                        <h3>Харківський національний університет радіоелектроніки (ХНУРЕ)</h3>
+                        <p>Спеціальність "Кібербезпека".</p>
+                    </div>
+                    <div class="education-slide">
+                        <img src="https://er.nau.edu.ua/bitstream/NAU/57120/1/Logo.png" alt="НАУ" class="education-img">
+                        <h3>Національний авіаційний університет (НАУ)</h3>
+                        <p>Спеціальність "Кібербезпека".</p>
+                    </div>
+                    <div class="education-slide">
+                        <img src="https://www.univ.kiev.ua/images/stories/logo_header.png" alt="КНУ ім. Т. Шевченка" class="education-img">
+                        <h3>Київський національний університет імені Тараса Шевченка</h3>
+                        <p>Спеціальність "Кібербезпека".</p>
+                    </div>
+                    <div class="education-slide">
+                        <img src="https://www.dut.edu.ua/images/logo_small.svg" alt="ДУТ" class="education-img">
+                        <h3>Державний університет телекомунікацій</h3>
+                        <p>Спеціальність "Кібербезпека".</p>
+                    </div>
+                </div>
+                <button class="education-prev-btn">&lt;</button>
+                <button class="education-next-btn">&gt;</button>
+            </div>
         </div>
 
         <div class="soc-section section-alt-background">
@@ -183,21 +209,67 @@
                 <button class="soc-next-btn">&gt;</button>
             </div>
         </div>
-
-        <h2>Галерея</h2>
-        <div class="image-gallery">
-            <img src="https://i.postimg.cc/Dy0h2m3Q/soc1.jpg" alt="SOC Analyst робоче місце" class="image-frame-rounded anim-scale-in">
-            <img src="https://i.postimg.cc/mD8k4g2h/soc2.jpg" alt="Команда SOC" class="image-frame-circle anim-slide-in-right">
-            <img src="https://i.postimg.cc/d163351X/soc3.jpg" alt="Моніторинг дашбордів" class="image-frame-square anim-slide-in-left">
-            <img src="https://i.postimg.cc/85z1X73d/soc4.jpg" alt="Реагування на інцидент" class="image-frame-polaroid anim-fade-in">
-        </div>
     </div>
 
     <footer>
-        <p class="team-info">Контакти: bbuhikalo@gmail.com | © 2025 Safe WEB squad. | Всі права захищено.</p>
+        <p class="team-info">Контакти: bbuhikalo@gmail.com |  © 2025 Safe WEB squad. | Всі права захищено.</p>
         <a href="dzherela.html" class="sources-emoji">📝</a>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const educationSliderWrapper = document.querySelector('.education-slider-wrapper');
+            const educationPrevBtn = document.querySelector('.education-prev-btn');
+            const educationNextBtn = document.querySelector('.education-next-btn');
+            let educationCurrentIndex = 0;
+
+            if (educationSliderWrapper) {
+                const slides = educationSliderWrapper.children;
+                const totalSlides = slides.length;
+
+                function updateEducationSlider() {
+                    const offset = -educationCurrentIndex * 100;
+                    educationSliderWrapper.style.transform = `translateX(${offset}%)`;
+                }
+
+                educationNextBtn.addEventListener('click', function() {
+                    educationCurrentIndex = (educationCurrentIndex + 1) % totalSlides;
+                    updateEducationSlider();
+                });
+
+                educationPrevBtn.addEventListener('click', function() {
+                    educationCurrentIndex = (educationCurrentIndex - 1 + totalSlides) % totalSlides;
+                    updateEducationSlider();
+                });
+            }
+
+            // Existing SOC Slider functionality
+            const socSliderWrapper = document.querySelector('.soc-slider-wrapper');
+            const socPrevBtn = document.querySelector('.soc-prev-btn');
+            const socNextBtn = document.querySelector('.soc-next-btn');
+            let socCurrentIndex = 0;
+
+            if (socSliderWrapper) {
+                const socSlides = socSliderWrapper.children;
+                const socTotalSlides = socSlides.length;
+
+                function updateSocSlider() {
+                    const offset = -socCurrentIndex * 100;
+                    socSliderWrapper.style.transform = `translateX(${offset}%)`;
+                }
+
+                socNextBtn.addEventListener('click', function() {
+                    socCurrentIndex = (socCurrentIndex + 1) % socTotalSlides;
+                    updateSocSlider();
+                });
+
+                socPrevBtn.addEventListener('click', function() {
+                    socCurrentIndex = (socCurrentIndex - 1 + socTotalSlides) % socTotalSlides;
+                    updateSocSlider();
+                });
+            }
+        });
+    </script>
 </body>
 </html>
