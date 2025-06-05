@@ -167,22 +167,7 @@ a{
   color: #000;
   text-decoration: none;
 }
-.nav{
-  position: fixed;
-  margin: 0;
-  left: -300px; 
-  width: 20%;
-  height: 69.6%;
-  background-color: #261374;
-  padding: 20px 10px;
-  transition: left 0.3s ease;
-  z-index: 1000;
-  list-style: none;
-  align-items: start;
-}
-.nav:hover{
-  left: 0;
-}
+
 /*КАРТИ ГОЛОВНА*/
 .cardnav{
   height: 320px;
