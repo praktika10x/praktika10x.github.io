@@ -539,6 +539,254 @@ footer .team-info {
     }
 }
 
+
+.roadmap-step {
+    background-color: #FFFACD;
+    border-left: 5px solid #FFD700;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.roadmap-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.roadmap-step-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #222222;
+    font-weight: 700;
+}
+
+.roadmap-step-header .toggle-icon {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.roadmap-step-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
+    padding-top: 0;
+}
+
+.roadmap-step.active .roadmap-step-content {
+    max-height: 500px;
+    opacity: 1;
+    padding-top: 15px;
+}
+
+.roadmap-step.active .roadmap-step-header .toggle-icon {
+    transform: rotate(90deg);
+}
+
+.roadmap-step h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #222222;
+}
+
+.roadmap-step ul {
+    list-style-type: circle;
+    padding-left: 25px;
+}
+
+.roadmap-step li {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+/* Slider */
+.slider-container {
+    position: relative;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 30px;
+}
+
+.slider-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.slider-item h3 {
+    color: #FFD700;
+    margin-bottom: 20px;
+    border-left: none;
+    padding-left: 0;
+    text-align: center;
+    font-size: 28px;
+}
+
+.slider-item ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    columns: 2; 
+    column-gap: 30px;
+}
+
+.slider-item li {
+    background-color: #F8F8F8;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #EEEEEE;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: left;
+    break-inside: avoid-column; 
+}
+
+.slider-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slider-button {
+    background-color: #FFD700;
+    color: #222222;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.slider-button:hover {
+    background-color: #FFFACD;
+    transform: translateY(-2px);
+}
+
+
+.salary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.salary-table th, .salary-table td {
+    border: 1px solid #EEEEEE;
+    padding: 15px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.salary-table th {
+    background-color: #FFD700;
+    color: #222222;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.salary-table tbody tr:nth-child(odd) {
+    background-color: #FFFACD;
+}
+
+.salary-table tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+.salary-table tbody tr:hover {
+    background-color: #FFECC7;
+    transform: scale(1.01);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.education-logos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.university-card {
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.university-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.university-logo-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+    border: 3px solid #FFD700;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.university-logo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px; 
+}
+
+.university-card h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #222222;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.university-card p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
 @media (max-width: 1200px) {
     .home-page .rounded-block-container {
         max-width: 95%;
@@ -724,6 +972,16 @@ footer .team-info {
     li {
         font-size: 17px;
     }
+
+    
+    .slider-item ul {
+        columns: 1; 
+    }
+
+    .university-card {
+        width: 90%; 
+        max-width: 300px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -779,5 +1037,36 @@ footer .team-info {
         width: 40px;
         height: 40px;
         font-size: 1.4em;
+    }
+
+    .roadmap-step-header {
+        font-size: 20px;
+    }
+    .roadmap-step ul li {
+        font-size: 16px;
+    }
+    .slider-item h3 {
+        font-size: 24px;
+    }
+    .slider-item li {
+        font-size: 15px;
+    }
+    .slider-button {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+    .salary-table th, .salary-table td {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .university-card {
+        padding: 15px;
+    }
+    .university-logo-circle {
+        width: 100px;
+        height: 100px;
+    }
+    .university-card h4 {
+        font-size: 18px;
     }
 }
