@@ -8,6 +8,13 @@ body {
   margin: 0;
   background: #6c63b5;
   font-family: 'Geologica', Arial, sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h1, h2 {
@@ -242,11 +249,12 @@ nav ul li:hover .categories-list-triangle {
 
 .duties {
   position: relative;
-  background: url('img/ofisni-praczivniki-finansovi-grafiki-2-1 1.png') no-repeat center center;
+  background: url('img/ofisni-praczivniki-finansovi-grafiki-2-1 1.png') no-repeat center;
   background-size: cover;
   color: #fff;
-  padding: 40px;
+  padding: 0px;
   z-index: 1;
+  
 }
 .duties::before {
   content: "";
@@ -261,6 +269,7 @@ nav ul li:hover .categories-list-triangle {
 }
 .duties-list {
   position: relative;
+  
   min-height: 520px;
 }
 .duty {
@@ -274,11 +283,10 @@ nav ul li:hover .categories-list-triangle {
   line-height: 1.25;
   box-shadow: 0 4px 24px rgba(0,0,0,0.10);
   padding: 28px 32px;
+  display:flex;
+  flex-direction:row;
 }
-.duty:nth-child(1) { top: 30px; left: 40px; width: 700px; }
-.duty:nth-child(2) { top: 110px; right: 40px; width: 800px; }
-.duty:nth-child(3) { top: 260px; left: 40px; width: 900px; }
-.duty:nth-child(4) { top: 390px; right: 40px; width: 700px; }
+
 
 .path {
   position: relative;
@@ -523,6 +531,7 @@ nav ul li:hover .categories-list-triangle {
   margin-top: 0;
   display: block;
   text-align: center;
+  align-items: center;
 }
 .demand-title a {
   color: #99c8ff;
@@ -661,12 +670,13 @@ nav ul li:hover .categories-list-triangle {
   align-items: center;
   justify-content: flex-start;
   gap: 24px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin: 0 auto;
   max-width: 100vw;
   overflow-x: unset;
   padding-bottom: 16px;
 }
+
 .career-block,
 .career-sequence .career-block {
   background: #232c5e;
@@ -688,7 +698,7 @@ nav ul li:hover .categories-list-triangle {
 .career-block-roles,
 .career-sequence .career-block-roles {
   font-size: 1.15rem;
-  align-items: flex-start;
+  align-items: center;
   text-align: left;
   min-width: 260px;
   max-width: 340px;
@@ -699,7 +709,7 @@ nav ul li:hover .categories-list-triangle {
   font-size: 2.2rem;
   margin-right: 0;
   margin-bottom: 12px;
-  display: block;
+  display: flex;
 }
 .career-arrow-vertical {
   width: 64px;
@@ -827,7 +837,7 @@ footer h2 {
     line-height: 1.2;
 }
 
-.sourses-lang {
+.sources-lang {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -879,7 +889,7 @@ footer h2 {
     text-decoration: underline;
 }
 
-footer .sourses {
+footer .sources {
     background-color: #9B86BD;
     font-family: 'Rubik Dirt', sans-serif;
     color: #55679C;
@@ -894,7 +904,7 @@ footer .sourses {
     transition: background-color 0.3s;
 }
 
-footer .sourses:hover {
+footer .sources:hover {
     background-color: #b191e4;
 }
 
@@ -1023,8 +1033,8 @@ footer .sourses:hover {
     height: 260px;
   }
   .skills-main-text {
-    width: 95vw;
-    font-size: 26px;
+    width: 80vw;
+    font-size: 25px;
   }
   .skills-flip-cards {
     flex-direction: column;
@@ -1075,6 +1085,7 @@ footer .sourses:hover {
     margin: 0 auto;
     box-sizing: border-box;
     word-break: break-word;
+    position: static;
   }
   .career-sequence {
     gap: 18px;
@@ -1088,6 +1099,10 @@ footer .sourses:hover {
     width: 95vw;
     font-size: 1.2rem;
     padding: 18px 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .career-arrow-vertical {
     width: 40px;
@@ -1095,7 +1110,7 @@ footer .sourses:hover {
   }
 
   .salary-table {
-    width: 86vw;
+    width: 80vw;
     font-size: 18px;
     padding: 10px;
     margin: 0 auto;
@@ -1113,8 +1128,8 @@ footer .sourses:hover {
     padding: 8px;
   }
   .demand-img-block img {
-    width: 90vw;
-    max-width: 98vw;
+    width: 80vw;
+    max-width: 80vw;
     min-width: 100px;
   }
   .demand-title,
@@ -1155,6 +1170,28 @@ footer .sourses:hover {
     display: block;
   }
 
+  .career-sequence {
+    gap: 18px;
+  }
+  .career-block,
+  .career-sequence .career-block,
+  .career-block-roles,
+  .career-sequence .career-block-roles {
+    min-width: 180px;
+    max-width: 95vw;
+    width: 95vw;
+    font-size: 1.2rem;
+    padding: 18px 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .career-arrow-vertical {
+    width: 40px;
+    height: 56px;
+  }
+
   .duty {
     position: static;
     width: 70vw;
@@ -1167,12 +1204,15 @@ footer .sourses:hover {
     margin: 0 auto 18px auto;
     box-sizing: border-box;
     word-break: break-word;
+    display:flex;
+    flex-direction:row;
   }
   .data-napryam {
     font-size: 22px;
     margin: 0 auto;
     text-align: center;
     display: block;
+    
   }
   .header nav {
     width: 100%;
@@ -1246,7 +1286,7 @@ footer .sourses:hover {
   .footer-left {
     gap: 14px;
   }
-  .sourses-lang {
+  .sources-lang {
     gap: 16px;
     margin-top: 18px;
   }
@@ -1262,12 +1302,93 @@ footer .sourses:hover {
     padding: 8px 14px;
     margin-top: 8px;
   }
+  
+.career-sequence {
+   display:flex;
+   flex-direction: column;
+   align-items: stretch;
+   align-items: center;
+   justify-content: center;
+   gap: 0;
+   position: relative;
+   width: auto;
+   max-width: none;
+   margin: 0 auto;
+   overflow-x: unset;
+   padding-bottom: 16px;
+
+  }
+.career-sequence .career-block,
+.career-sequence .career-block-roles {
+    margin: 0;
+    min-width: 260px;
+    max-width: 340px;
+    width: 320px;
+    align-self: stretch;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .career-sequence .career-arrow-vertical {
+    width: 64px;
+    height: 64px;
+    margin: 0 24px;
+    transform: rotate(180deg);
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 2px 8px rgba(30,42,94,0.18));
+    
 }
+  .duties {
+  position: relative;
+  background: url('img/ofisni-praczivniki-finansovi-grafiki-2-1 1.png') no-repeat center;
+  background-size: cover;
+  color: #fff;
+  padding: 0px;
+  z-index: 1;
+}
+.duties::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(67, 61, 139, 0.7);
+  z-index: 2;
+}
+.duties > * {
+  position: relative;
+  z-index: 3;
+}
+.duties-list {
+  position: relative;
+  min-height: 520px;
+}
+.duty {
+  position: absolute;
+  background: #1E2A5E;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  box-sizing: border-box;
+  line-height: 1;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 20px 32px;
+  }
+   
+  
+}
+
 
 @media (min-width: 1101px) {
   .career-sequence {
-    flex-direction: row;
+    display:flex;
+    flex-direction: column;
     align-items: stretch;
+    align-items: center;
     justify-content: center;
     gap: 0;
     position: relative;
@@ -1284,6 +1405,10 @@ footer .sourses:hover {
     max-width: 340px;
     width: 320px;
     align-self: stretch;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .career-sequence .career-arrow-vertical {
     width: 64px;
@@ -1291,7 +1416,48 @@ footer .sourses:hover {
     margin: 0 24px;
     transform: rotate(180deg);
     align-self: center;
-    display: block;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     filter: drop-shadow(0 2px 8px rgba(30,42,94,0.18));
   }
+  
+  .duties {
+  position: relative;
+  background: url('img/ofisni-praczivniki-finansovi-grafiki-2-1 1.png') no-repeat center;
+  background-size: cover;
+  color: #fff;
+  padding: 0px;
+  z-index: 1;
+}
+.duties::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(67, 61, 139, 0.7);
+  z-index: 2;
+}
+.duties > * {
+  position: relative;
+  z-index: 3;
+}
+.duties-list {
+  position: relative;
+  min-height: 520px;
+  
+}
+.duty {
+  position: absolute;
+  background: #1E2A5E;
+  border-radius: 30px;
+  font-size: 28;
+  font-weight: 700;
+  color: #fff;
+  box-sizing: border-box;
+  line-height: 1.25;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 28px 32px;
+  }
+  
 }
