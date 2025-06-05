@@ -109,7 +109,6 @@ p {
 }
 
 .card {
-  width: 350px;
   background-color: #f9cdda;
   border: 2px solid lightgray;
   border-radius: 15px;
@@ -118,6 +117,9 @@ p {
   color: #333;
   box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
   transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:not(.card_educational) {
+    width: 350px;
 }
 
 .card-link{
