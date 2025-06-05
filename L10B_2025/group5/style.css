@@ -247,6 +247,7 @@ nav ul li:hover .categories-list-triangle {
   color: #fff;
   padding: 0px;
   z-index: 1;
+  
 }
 .duties::before {
   content: "";
@@ -261,6 +262,7 @@ nav ul li:hover .categories-list-triangle {
 }
 .duties-list {
   position: relative;
+  
   min-height: 520px;
 }
 .duty {
@@ -274,11 +276,10 @@ nav ul li:hover .categories-list-triangle {
   line-height: 1.25;
   box-shadow: 0 4px 24px rgba(0,0,0,0.10);
   padding: 28px 32px;
+  display:flex;
+  flex-direction:row;
 }
-.duty:nth-child(1) { top: 30px; left: 40px; width: 700px; }
-.duty:nth-child(2) { top: 110px; right: 40px; width: 800px; }
-.duty:nth-child(3) { top: 260px; left: 40px; width: 900px; }
-.duty:nth-child(4) { top: 390px; right: 40px; width: 700px; }
+
 
 .path {
   position: relative;
@@ -1075,6 +1076,7 @@ footer .sourses:hover {
     margin: 0 auto;
     box-sizing: border-box;
     word-break: break-word;
+    position: static;
   }
   .career-sequence {
     gap: 18px;
@@ -1167,12 +1169,15 @@ footer .sourses:hover {
     margin: 0 auto 18px auto;
     box-sizing: border-box;
     word-break: break-word;
+    display:flex;
+    flex-direction:row;
   }
   .data-napryam {
     font-size: 22px;
     margin: 0 auto;
     text-align: center;
     display: block;
+    
   }
   .header nav {
     width: 100%;
@@ -1263,17 +1268,17 @@ footer .sourses:hover {
     margin-top: 8px;
   }
   
-    .career-sequence {
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: center;
-    gap: 0;
-    position: relative;
-    width: auto;
-    max-width: none;
-    margin: 0 auto;
-    overflow-x: unset;
-    padding-bottom: 16px;
+   .career-sequence {
+   flex-direction: row;
+   align-items: stretch;
+   justify-content: center;
+   gap: 0;
+   position: relative;
+   width: auto;
+   max-width: none;
+   margin: 0 auto;
+   overflow-x: unset;
+   padding-bottom: 16px;
   }
   .career-sequence .career-block,
   .career-sequence .career-block-roles {
@@ -1291,8 +1296,44 @@ footer .sourses:hover {
     align-self: center;
     display: block;
     filter: drop-shadow(0 2px 8px rgba(30,42,94,0.18));
-  }
+    
 }
+  .duties {
+  position: relative;
+  background: url('img/ofisni-praczivniki-finansovi-grafiki-2-1 1.png') no-repeat center;
+  background-size: cover;
+  color: #fff;
+  padding: 0px;
+  z-index: 1;
+}
+.duties::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(67, 61, 139, 0.7);
+  z-index: 2;
+}
+.duties > * {
+  position: relative;
+  z-index: 3;
+}
+.duties-list {
+  position: relative;
+  min-height: 520px;
+}
+.duty {
+  position: absolute;
+  background: #1E2A5E;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  box-sizing: border-box;
+  line-height: 1;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 20px 32px;
+  }
+   
   
 }
 
@@ -1327,4 +1368,42 @@ footer .sourses:hover {
     display: block;
     filter: drop-shadow(0 2px 8px rgba(30,42,94,0.18));
   }
+  
+  .duties {
+  position: relative;
+  background: url('img/ofisni-praczivniki-finansovi-grafiki-2-1 1.png') no-repeat center;
+  background-size: cover;
+  color: #fff;
+  padding: 0px;
+  z-index: 1;
+}
+.duties::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(67, 61, 139, 0.7);
+  z-index: 2;
+}
+.duties > * {
+  position: relative;
+  z-index: 3;
+}
+.duties-list {
+  position: relative;
+  min-height: 520px;
+  
+}
+.duty {
+  position: absolute;
+  background: #1E2A5E;
+  border-radius: 30px;
+  font-size: 28;
+  font-weight: 700;
+  color: #fff;
+  box-sizing: border-box;
+  line-height: 1.25;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 28px 32px;
+  }
+  
 }
