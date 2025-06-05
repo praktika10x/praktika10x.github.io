@@ -39,7 +39,7 @@ body {
 }
 
 .intro {
-    background: url(/Project-img/SVG/Bg-Back.jpg) no-repeat center;
+    background: url(Project-img/SVG/Bg-Back.jpg) no-repeat center;
     background-size: cover;
     padding-top: 70px;
     width: 100%;
