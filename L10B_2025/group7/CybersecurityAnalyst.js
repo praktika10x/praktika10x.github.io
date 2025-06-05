@@ -1,34 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Slider functionality
     const sliderWrapper = document.querySelector('.slider-wrapper');
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
+    const sliderContainer = document.getElementById('sliderContainer');
+
     let currentIndex = 0;
     let autoSlideInterval;
+    const autoSlideDelay = 5000;
 
-    if (sliderWrapper && prevBtn && nextBtn) {
+    if (sliderWrapper && prevBtn && nextBtn && sliderContainer) {
         const slides = document.querySelectorAll('.slide');
         const totalSlides = slides.length;
+
+        if (totalSlides <= 1) {
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'none';
+            return;
+        }
 
         function updateSliderPosition() {
             sliderWrapper.style.transform = `translateX(${-currentIndex * 100}%)`;
         }
 
         const goToNextSlide = () => {
-            if (currentIndex < totalSlides - 1) {
-                currentIndex++;
-            } else {
-                currentIndex = 0; // Loop back to the first slide
-            }
+            currentIndex = (currentIndex + 1) % totalSlides;
             updateSliderPosition();
         };
 
         const goToPrevSlide = () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-            } else {
-                currentIndex = totalSlides - 1; // Loop back to the last slide
-            }
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
             updateSliderPosition();
         };
 
@@ -42,43 +42,101 @@ document.addEventListener('DOMContentLoaded', () => {
             resetAutoSlide();
         });
 
-        // Auto-play functionality (uncomment to activate)
-        // const startAutoSlide = () => {
-        //     autoSlideInterval = setInterval(goToNextSlide, 5000); // Change slide every 5 seconds
-        // };
+        const startAutoSlide = () => {
+             autoSlideInterval = setInterval(goToNextSlide, autoSlideDelay);
+        };
 
-        // const stopAutoSlide = () => {
-        //     clearInterval(autoSlideInterval);
-        // };
+        const stopAutoSlide = () => {
+             clearInterval(autoSlideInterval);
+        };
 
-        // const resetAutoSlide = () => {
-        //     stopAutoSlide();
-        //     startAutoSlide();
-        // };
+        const resetAutoSlide = () => {
+             stopAutoSlide();
+             startAutoSlide();
+        };
 
-        // startAutoSlide(); // Start auto-slide on page load
+        startAutoSlide();
 
-        // Optional: Pause auto-slide on hover
-        // sliderContainer.addEventListener('mouseenter', stopAutoSlide);
-        // sliderContainer.addEventListener('mouseleave', startAutoSlide);
+        sliderContainer.addEventListener('mouseenter', stopAutoSlide);
+        sliderContainer.addEventListener('mouseleave', startAutoSlide);
+
+        updateSliderPosition();
     }
 
-    // Animation on scroll functionality (Intersection Observer)
     const animatedSections = document.querySelectorAll('.animated-section');
+    const cards = document.querySelectorAll('.cards-container .card');
+    const images = document.querySelectorAll('.image-placeholder img');
+    const slider = document.querySelector('.slider-container');
+    const fadeInLists = document.querySelectorAll('.fade-in-list');
 
-    const observer = new IntersectionObserver((entries, observer) => {
+
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const sectionObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target); // Stop observing once animated
+                observer.unobserve(entry.target);
             }
         });
-    }, {
-        threshold: 0.1, // Trigger when 10% of the element is visible
-        rootMargin: '0px 0px -50px 0px' // Start animation a bit before it's fully in view
-    });
+    }, observerOptions);
 
     animatedSections.forEach(section => {
-        observer.observe(section);
+        sectionObserver.observe(section);
     });
+
+    const cardObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.closest('.animated-section').classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    if (cards.length > 0) {
+        cards.forEach(card => cardObserver.observe(card));
+    }
+
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.closest('.animated-section').classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    if (images.length > 0) {
+        images.forEach(image => imageObserver.observe(image));
+    }
+
+    const listObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.closest('.animated-section').classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    if (fadeInLists.length > 0) {
+        fadeInLists.forEach(list => listObserver.observe(list));
+    }
+
+    const sliderElementObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.closest('.animated-section').classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    if (slider) {
+        sliderElementObserver.observe(slider);
+    }
 });
