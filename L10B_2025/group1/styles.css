@@ -1,9 +1,9 @@
 table, th, td {
 	        border: 1px solid black;
-	        font-size:30px
+	        font-size:18px
 	    }
 	    table {
-	        width: 80%;
+	        width: 90%;
 	        
 	        margin: auto;
 	    }
@@ -19,7 +19,7 @@ table, th, td {
           font-size:16px;
       }
       .wrap{
-          width: 1000px;
+          width: 1200px;
           margin: auto;
           display: flex;
           justify-content: space-evenly;}
@@ -31,7 +31,7 @@ table, th, td {
          background: lightgrey;
               display: flex;
           justify-content: center;
-          font-size:30px
+          font-size:18px
           }
           h2{
     font-family: "Balsamiq Sans";
