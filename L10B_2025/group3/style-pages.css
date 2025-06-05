@@ -105,7 +105,7 @@ p {
   flex-wrap: wrap;
   justify-content: center; 
   padding: 20px;
-  gap: 20px; /* відступи між картками */
+  gap: 10px; /* відступи між картками */
 }
 
 .card {
@@ -131,7 +131,6 @@ p {
 }
 
 .card_educational {
-  .card_educational {
   width: 100%;
   max-width: 550px;
   background-color: #fff;
