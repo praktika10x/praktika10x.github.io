@@ -16,6 +16,7 @@
       <button class="search-button">🔍</button>
     </div>
     <nav class="nav-links">
+      <button class="theme-toggle" id="themeToggle">🌓</button>
       <div class="menu-icon">≡</div>
     </nav>
   </header>
@@ -23,9 +24,12 @@
   <main class="main-content">
     <!-- Hero Section -->
     <section class="hero-section">
-      <video class="hero-background" autoplay muted loop playsinline>
-        <source src="gradient.mp4" type="video/mp4">
-        <img src="https://cdn.discordapp.com/attachments/1266156981450838171/1379836116936691772/5f2c8c4b013ed26c6804691dbc8acb4ef66923ed.gif" alt="Background gradient">
+      <!-- Dark theme background (GIF) -->
+      <div class="hero-background dark-bg"></div>
+      
+      <!-- Light theme background (Video) -->
+      <video class="hero-background light-bg" autoplay muted loop playsinline>
+        <source src="https://cdn.discordapp.com/attachments/1266156981450838171/1380078541726810184/VID_20250605_095847_557.mp4?ex=684291cc&is=6841404c&hm=f7d35224870806127ef7ab4c5de87cb27ab57d3494344983ec4f41479171f43d&" type="video/mp4">
       </video>
       
       <div class="hero-content">
@@ -421,5 +425,27 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      body.classList.add(savedTheme);
+    }
+
+    themeToggle.addEventListener('click', () => {
+      if (body.classList.contains('light-theme')) {
+        body.classList.remove('light-theme');
+        localStorage.setItem('theme', '');
+      } else {
+        body.classList.add('light-theme');
+        localStorage.setItem('theme', 'light-theme');
+      }
+    });
+  </script>
 </body>
 </html>
