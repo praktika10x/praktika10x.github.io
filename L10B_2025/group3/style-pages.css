@@ -201,6 +201,8 @@ img.fullscreen-image {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: auto;
+    max-width: 100%;
 }
 
 .swiper-slide * {
