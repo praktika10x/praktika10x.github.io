@@ -81,27 +81,6 @@
       line-height: 1.6;
       margin-bottom: 16px;
     }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .links a {
-      background-color: #0077b6;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background-color 0.3s;
-    }
-
-    .links a:hover {
-      background-color: #023e8a;
-    }
-
     footer {
       background-color: #023e8a;
       color: white;
@@ -113,6 +92,32 @@
       margin: 6px 0;
       font-size: 15px;
     }
+.button-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: flex-start; /* вирівнює кнопки зліва */
+}
+
+.button-links a {
+  display: inline-block;
+  background-color: #0077b6;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  min-width: 220px; /* ширина кнопок — можна змінити за потреби */
+  text-align: center;
+}
+
+.button-links a:hover {
+  background-color: #023e8a;
+}
+
+
   </style>
 </head>
 <body>
@@ -183,11 +188,16 @@
     </section>
 
     <section class="links">
-      <h2>Перейти на сторінки:</h2>
-      <p><a href="page1.html">Cloud Robotics Engineer</a></p>
-      <p><a href="page2.html">IoT Developer</a></p>
-      <p><a href="page3.html">Robotic DevOps Engineer</a></p>
-    </section>
+  <h2>Перейти на сторінки:</h2>
+  <div class="button-links">
+    <a href="page1.html">Cloud Robotics Engineer</a>
+    <a href="page2.html">IoT Developer</a>
+    <a href="page3.html">Robotic DevOps Engineer</a>
+  </div>
+</section>
+
+
+
     
         <section>
       <h2>Джерела інформації</h2>
