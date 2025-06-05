@@ -270,6 +270,15 @@ a{
   grid-column-gap: 55px;
   padding: 0 100px;
 }
+ .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 .info-card {
   margin-bottom: 20px;
