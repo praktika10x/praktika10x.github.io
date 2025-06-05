@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500;600;700;800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -12,7 +12,8 @@ html {
 }
 
 body {
-  font-family: 'Tektur', sans-serif;
+  font-family: 'Jura', sans-serif;
+  font-weight: 500;
   background-color: #0a0a0a;
   color: #ffffff;
   line-height: 1.5;
@@ -71,8 +72,9 @@ body.light-theme .site-header {
   border-radius: 25px;
   background-color: #ffffff;
   color: #000000;
-  font-size: 1rem;
-  font-family: 'Tektur', sans-serif;
+  font-size: 1.1rem;
+  font-family: 'Jura', sans-serif;
+  font-weight: 500;
   outline: none;
   transition: all 0.3s ease;
 }
@@ -289,9 +291,9 @@ body.light-theme .project-info::before {
 }
 
 .project-info p {
-  font-family: 'Tektur', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.98);
   text-align: center;
@@ -326,9 +328,9 @@ body.light-theme .definition-section {
 }
 
 .definition-title {
-  font-family: 'Tektur', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-family: 'Jura', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
   color: #ffffff;
   margin-bottom: 2rem;
   text-align: center;
@@ -340,15 +342,15 @@ body.light-theme .definition-title {
 }
 
 .definition-text {
-  font-family: 'Tektur', sans-serif;
+  font-family: 'Jura', sans-serif;
   background: rgba(147, 51, 234, 0.2);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(147, 51, 234, 0.3);
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(147, 51, 234, 0.1);
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.1rem;
+  font-weight: 500;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.95);
   max-width: 800px;
@@ -383,10 +385,10 @@ body.light-theme .professions-section {
 }
 
 .professions-title {
-  font-family: 'Tektur', sans-serif;
+  font-family: 'Jura', sans-serif;
   text-align: center;
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 3rem;
   color: #ffffff;
   transition: color 0.3s ease;
@@ -463,9 +465,9 @@ body.light-theme .prof-icon-container::before {
 }
 
 .prof-card h4 {
-  font-family: 'Tektur', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
   color: #ffffff;
   line-height: 1.3;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -735,11 +737,20 @@ body.light-theme .social-link:hover {
   }
   
   .project-info p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   
   .definition-text {
     max-width: 95%;
+    font-size: 1rem;
+  }
+  
+  .definition-title {
+    font-size: 1.7rem;
+  }
+  
+  .professions-title {
+    font-size: 1.7rem;
   }
   
   .section-separator {
@@ -802,7 +813,15 @@ body.light-theme .social-link:hover {
   }
   
   .project-info p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+  }
+  
+  .definition-title {
+    font-size: 1.5rem;
+  }
+  
+  .professions-title {
+    font-size: 1.5rem;
   }
   
   .prof-icon-container {
@@ -816,7 +835,7 @@ body.light-theme .social-link:hover {
   }
   
   .prof-card h4 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   
   .site-footer {
