@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const totalSlides = slides.length;
 
         if (totalSlides <= 1) {
-            prevBtn.style.display = 'none';
-            nextBtn.style.display = 'none';
+            if (prevBtn) prevBtn.style.display = 'none';
+            if (nextBtn) nextBtn.style.display = 'none';
             return;
         }
 
@@ -57,12 +57,11 @@ document.addEventListener('DOMContentLoaded', () => {
             startAutoSlide();
         };
 
+        updateSliderPosition();
         startAutoSlide();
 
         sliderContainer.addEventListener('mouseenter', stopAutoSlide);
         sliderContainer.addEventListener('mouseleave', startAutoSlide);
-
-        updateSliderPosition();
     }
 
     const animatedSections = document.querySelectorAll('.animated-section');
@@ -79,9 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('is-visible');
 
-                if (fadeInText && !fadeInText.classList.contains('is-visible')) {
+                if (entry.target === fadeInText) {
                     fadeInText.style.animationPlayState = 'running';
-                    fadeInText.classList.add('is-visible');
                 }
 
                 observer.unobserve(entry.target);
@@ -92,20 +90,4 @@ document.addEventListener('DOMContentLoaded', () => {
     animatedSections.forEach(section => {
         sectionObserver.observe(section);
     });
-
-    const h1Observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                if (fadeInText) {
-                    fadeInText.style.animationPlayState = 'running';
-                    fadeInText.classList.add('is-visible');
-                }
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
-
-    if (fadeInText) {
-        h1Observer.observe(fadeInText);
-    }
 });
