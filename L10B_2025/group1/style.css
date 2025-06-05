@@ -1,8 +1,7 @@
 body{ 
     max-width:1200px;
     margin:auto;
-    padding:20px;
-    
+
 }
 h1 {
     margin: 0 auto 10px;
@@ -54,45 +53,29 @@ h3{
 }
 .cards{
     float:center;
+    margin:auto;
+    width:90%;
     flex-wrap: nowrap | wrap | wrap-reverse
           justify-content: flex-start | flex-end | center | space-between | space-around
 }
 .p1{
     float:center;
-    margin:20px;
     grid-column:2/3; grid-row:2/3;
 }
 .r1{
     float:right;
-    margin:20px;
     top: -30px;
     grid-column:3/4; grid-row:2/3;
 }
 .wrap{
     display:grid;
     repeat(3, 1fr)
+
     justify-content:space-evenly;
 }
-         
-}
-.card{
-          width:200px;
-          height:250px;
-          border: 2px grey solid;
-          border-radius: 10px;
-          float:left;
-          margin:50px;
-          box-shadow:2px 2px 5px DeepSkyblue;
-          padding:10px;
-          font-size:16px;
-}
-
-.sample{
-    float:center;
-    margin:20px;
-}
-.roadmap{
-    float:right;
-    margin:20px;
-    top: -30px;
+.sayt{
+    margin:auto;
+    width:90%;
+    
+    
 }
