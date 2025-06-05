@@ -1,15 +1,15 @@
-const change-lang-ua-button = document.querySelector('.change-lang-ua')
-const change-lang-en-button = document.querySelector('.change-lang-en')
+const change-lang-ua-button = document.querySelector('.change-lang-ua');
+const change-lang-en-button = document.querySelector('.change-lang-en');
 
 change-lang-ua-button.addEventListener('click', () => {
-   change-lang-ua-button.classList.add('change-lang-ua-active')
-   change-lang-en-button.classList.remove('change-lang-en-active')
+   change-lang-ua-button.classList.add('change-lang-ua-active');
+   change-lang-en-button.classList.remove('change-lang-en-active');
 }
 });
 
 change-lang-en-button.addEventListener('click', () => {
-   change-lang-en-button.classList.add('change-lang-en-active')
-   change-lang-ua-button.classList.remove('change-lang-ua-active')
+   change-lang-en-button.classList.add('change-lang-en-active');
+   change-lang-ua-button.classList.remove('change-lang-ua-active');
 }
 });
 
