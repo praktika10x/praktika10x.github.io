@@ -1,10 +1,10 @@
-/* Styles specific to the Home Page (index.html) */
+
 
 .home-page {
-    /* Background color for home page if needed, otherwise inherit from global */
+   
 }
 
-/* Hero Section */
+
 .hero {
     position: relative;
     padding: 120px 20px;
@@ -49,18 +49,18 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* Intro Section */
+
 .intro-section {
     max-width: 900px;
     margin: 50px auto;
     padding: 30px;
-    background-color: #FFFACD; /* Light yellow background */
+    background-color: #FFFACD; 
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     text-align: center;
     transform: translateY(20px);
     opacity: 0;
-    animation: fadeInUp 1s ease-out forwards; /* Apply animation on load */
+    animation: fadeInUp 1s ease-out forwards; 
 }
 
 .intro-section.fade-in {
@@ -103,14 +103,14 @@
     padding: 0 15px;
 }
 
-/* Rounded Block Containers for Professions */
+
 .rounded-block-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
     margin: 60px auto;
-    max-width: 1200px; /* Ensure it doesn't span too wide */
+    max-width: 1200px;
 }
 
 .rounded-block {
@@ -165,7 +165,7 @@
 }
 
 
-/* Animations for home page */
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -183,7 +183,7 @@
 }
 
 
-/* Responsive adjustments for Home Page */
+
 @media (max-width: 1200px) {
     .hero h1 {
         font-size: 55px;
@@ -225,7 +225,7 @@
     }
     .rounded-block {
         padding: 30px;
-        min-width: unset; /* Allow flexibility */
+        min-width: unset; 
         max-width: 450px;
     }
     .rounded-block h3 {
@@ -259,16 +259,16 @@
     }
     .intro-text {
         font-size: 1em;
-        text-align: left; /* Align text left on smaller screens for better readability */
+        text-align: left; 
     }
     .rounded-block-container {
-        flex-direction: column; /* Stack blocks vertically */
+        flex-direction: column;
         align-items: center;
         gap: 25px;
         margin: 40px auto;
     }
     .rounded-block {
-        width: 90%; /* Take up more width */
+        width: 90%; 
         max-width: 400px;
         padding: 25px;
     }
