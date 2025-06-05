@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="Front Update 2">
-      <change afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI_Profession/AI_Profession/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI_Profession/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI_Profession/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/views.py" afterDir="false" />
+    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="New page V1">
+      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" afterDir="false" />
     </list>
     <list id="f1ab00e0-7278-4685-bbc4-952ba86327f0" name="don't commit" comment="">
       <change beforePath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" afterDir="false" />
@@ -35,16 +27,6 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py">
-      <ranges>
-        <range start1="11" end1="12" start2="11" end2="11" changelist="f1ab00e0-7278-4685-bbc4-952ba86327f0" />
-        <range start1="18" end1="19" start2="17" end2="17" changelist="30317e9a-2a98-4141-80d1-1e2a451f9c8c" />
-        <range start1="27" end1="28" start2="25" end2="29" changelist="30317e9a-2a98-4141-80d1-1e2a451f9c8c" />
-        <range start1="53" end1="56" start2="54" end2="54" changelist="f1ab00e0-7278-4685-bbc4-952ba86327f0" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": -1
@@ -183,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749113022735</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="New page V1">
+      <option name="closed" value="true" />
+      <created>1749113945957</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1749113945957</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,6 +222,7 @@
     <MESSAGE value="Deploy V1" />
     <MESSAGE value="Fron Update 1" />
     <MESSAGE value="Front Update 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Front Update 2" />
+    <MESSAGE value="New page V1" />
+    <option name="LAST_COMMIT_MESSAGE" value="New page V1" />
   </component>
 </project>
