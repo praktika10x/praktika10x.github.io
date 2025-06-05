@@ -39,11 +39,11 @@ html {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease-in-out;
 }
 
 .logo-img:hover {
-    transform: scale(1.05);
+    transform: rotate(10deg) scale(1.1);
 }
 
 .logo-text {
@@ -97,8 +97,8 @@ html {
     background-color: #FFFACD;
     border-color: #FFD700;
     color: #222222;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .home-page .hero {
@@ -119,8 +119,13 @@ html {
     height: 100%;
     background: url('https://i.gifer.com/bJk.gif') no-repeat center center/cover;
     z-index: 0;
-    filter: brightness(50%);
+    filter: brightness(60%) saturate(120%);
     transform: scale(1.05);
+    transition: filter 0.5s ease;
+}
+
+.home-page .hero:hover::before {
+    filter: brightness(70%) saturate(130%);
 }
 
 .home-page .hero-content {
@@ -241,6 +246,8 @@ html {
     max-width: 480px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 .project-page .card:hover {
@@ -474,7 +481,8 @@ li {
     background-color: #FFFACD;
     border-color: #FFD700;
     color: #444444;
-    transform: translateY(-2px);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .btn:active {
@@ -541,6 +549,100 @@ footer .team-info {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animated-section.is-visible h2 {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.animated-section.is-visible p,
+.animated-section.is-visible ul,
+.animated-section.is-visible li {
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+.cards-container .card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animated-section.is-visible .card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animated-section.is-visible .card.delay-1 { animation-delay: 0.1s; }
+.animated-section.is-visible .card.delay-2 { animation-delay: 0.2s; }
+.animated-section.is-visible .card.delay-3 { animation-delay: 0.3s; }
+.animated-section.is-visible .card.delay-4 { animation-delay: 0.4s; }
+.animated-section.is-visible .card.delay-5 { animation-delay: 0.5s; }
+
+.image-placeholder img {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animated-section.is-visible .image-placeholder img:first-child {
+    animation: scaleIn 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+.animated-section.is-visible .image-placeholder img:last-child {
+    animation: scaleIn 1s ease-out forwards;
+    animation-delay: 0.6s;
+}
+
+.slider-container {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animated-section.is-visible .slider-container {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in-text {
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 0.5s;
 }
 
 @media (max-width: 1200px) {
@@ -804,8 +906,13 @@ footer .team-info {
     height: 100%;
     background: url('https://i.gifer.com/bJk.gif') no-repeat center center/cover;
     z-index: 0;
-    filter: brightness(50%);
+    filter: brightness(60%) saturate(120%);
     transform: scale(1.05);
+    transition: filter 0.5s ease;
+}
+
+.project-page .hero:hover::before {
+    filter: brightness(70%) saturate(130%);
 }
 
 .project-page .hero-content {
