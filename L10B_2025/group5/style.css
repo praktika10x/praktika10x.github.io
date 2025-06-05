@@ -242,10 +242,10 @@ nav ul li:hover .categories-list-triangle {
 
 .duties {
   position: relative;
-  background: url('img/ofisni-praczivniki-finansovi-grafiki-2-1 1.png') no-repeat center center;
+  background: url('img/ofisni-praczivniki-finansovi-grafiki-2-1 1.png') no-repeat center;
   background-size: cover;
   color: #fff;
-  padding: 40px;
+  padding: 0px;
   z-index: 1;
 }
 .duties::before {
@@ -1023,8 +1023,8 @@ footer .sourses:hover {
     height: 260px;
   }
   .skills-main-text {
-    width: 95vw;
-    font-size: 26px;
+    width: 80vw;
+    font-size: 25px;
   }
   .skills-flip-cards {
     flex-direction: column;
@@ -1095,7 +1095,7 @@ footer .sourses:hover {
   }
 
   .salary-table {
-    width: 86vw;
+    width: 80vw;
     font-size: 18px;
     padding: 10px;
     margin: 0 auto;
@@ -1113,8 +1113,8 @@ footer .sourses:hover {
     padding: 8px;
   }
   .demand-img-block img {
-    width: 90vw;
-    max-width: 98vw;
+    width: 80vw;
+    max-width: 80vw;
     min-width: 100px;
   }
   .demand-title,
