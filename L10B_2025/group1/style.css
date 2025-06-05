@@ -19,6 +19,7 @@ h1 {
 }
      
 h3{
+    font-family: Beautiful2;
     width:150px;
           color:white;
           background:lightgray;
@@ -82,4 +83,9 @@ h3{
 @font-face {
 font-family: Beautiful;
 src: url(Beautiful Valentine.otf)
+}
+
+@font-face {
+font-family: Beautiful2;
+src: url("https://codehs.com/uploads/90617795cd106861eb3eca7429e0c98f")
 }
