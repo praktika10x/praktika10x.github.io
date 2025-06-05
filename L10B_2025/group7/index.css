@@ -1,0 +1,315 @@
+/* Styles specific to the Home Page (index.html) */
+
+.home-page {
+    /* Background color for home page if needed, otherwise inherit from global */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    padding: 120px 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.gifer.com/bJk.gif') no-repeat center center/cover;
+    z-index: 0;
+    filter: brightness(50%);
+    transform: scale(1.05);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.hero h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 65px;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    color: #FFFFFF;
+}
+
+.hero p {
+    font-size: 22px;
+    color: #F0F0F0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Intro Section */
+.intro-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #FFFACD; /* Light yellow background */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards; /* Apply animation on load */
+}
+
+.intro-section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.intro-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.8em;
+    color: #444;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.intro-heading::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #FFD700;
+    border-radius: 2px;
+}
+
+.intro-divider {
+    border: none;
+    border-top: 2px solid #FFD700;
+    width: 60%;
+    margin: 25px auto 30px;
+}
+
+.intro-text {
+    font-size: 1.15em;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    padding: 0 15px;
+}
+
+/* Rounded Block Containers for Professions */
+.rounded-block-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px auto;
+    max-width: 1200px; /* Ensure it doesn't span too wide */
+}
+
+.rounded-block {
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+    border: 1px solid #e0e0e0;
+}
+
+.rounded-block:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.rounded-block h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.rounded-block p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.rounded-block .btn {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #222222;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-block .btn:hover {
+    background-color: #e6c200;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Animations for home page */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive adjustments for Home Page */
+@media (max-width: 1200px) {
+    .hero h1 {
+        font-size: 55px;
+    }
+    .hero p {
+        font-size: 20px;
+    }
+    .intro-section {
+        margin: 40px auto;
+        padding: 25px;
+    }
+    .intro-heading {
+        font-size: 2.5em;
+    }
+    .intro-text {
+        font-size: 1.05em;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        padding: 100px 15px;
+    }
+    .hero h1 {
+        font-size: 48px;
+    }
+    .hero p {
+        font-size: 18px;
+    }
+    .intro-section {
+        margin: 30px auto;
+        padding: 20px;
+    }
+    .intro-heading {
+        font-size: 2.2em;
+    }
+    .rounded-block-container {
+        gap: 30px;
+    }
+    .rounded-block {
+        padding: 30px;
+        min-width: unset; /* Allow flexibility */
+        max-width: 450px;
+    }
+    .rounded-block h3 {
+        font-size: 1.8em;
+    }
+    .rounded-block p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-page .hero {
+        padding: 80px 15px;
+    }
+    .home-page .hero h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .home-page .hero p {
+        font-size: 16px;
+    }
+    .intro-section {
+        margin: 25px auto;
+        padding: 15px;
+    }
+    .intro-heading {
+        font-size: 2em;
+    }
+    .intro-heading::after {
+        width: 60px;
+    }
+    .intro-text {
+        font-size: 1em;
+        text-align: left; /* Align text left on smaller screens for better readability */
+    }
+    .rounded-block-container {
+        flex-direction: column; /* Stack blocks vertically */
+        align-items: center;
+        gap: 25px;
+        margin: 40px auto;
+    }
+    .rounded-block {
+        width: 90%; /* Take up more width */
+        max-width: 400px;
+        padding: 25px;
+    }
+    .rounded-block h3 {
+        font-size: 1.6em;
+    }
+    .rounded-block p {
+        font-size: 0.95em;
+    }
+    .rounded-block .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-page .hero {
+        padding: 60px 10px;
+    }
+    .home-page .hero h1 {
+        font-size: 30px;
+    }
+    .home-page .hero p {
+        font-size: 14px;
+    }
+    .intro-section {
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .intro-heading {
+        font-size: 1.6em;
+    }
+    .intro-text {
+        font-size: 0.9em;
+    }
+    .rounded-block {
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .rounded-block h3 {
+        font-size: 1.4em;
+    }
+}
