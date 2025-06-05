@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tektur:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tektur:wght@400..900&display=swap");More actions
 
 .tektur-<uniquifier > {
     font-family: "Tektur", sans-serif;
@@ -109,6 +109,7 @@ p {
 }
 
 .card {
+.card:not(.card_educational) {
   width: 350px;
   background-color: #f9cdda;
   border: 2px solid lightgray;
@@ -131,8 +132,9 @@ p {
 }
 
 .card_educational {
-  width: 500px;       
+  width: 400px;       
   max-width: 100%;   
+  min-height: 240px; 
   background-color: #f9cdda;
   border: 2px solid lightgray;
   border-radius: 15px;
@@ -235,7 +237,7 @@ img.fullscreen-image {
 .swiper-button-next::after {
     color: #954BAA;
 }
-
+More actions
 .swiper-pagination-bullet-active {
     background: #954BAA;
 }
