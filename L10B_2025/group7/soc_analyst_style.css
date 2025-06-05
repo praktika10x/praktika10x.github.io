@@ -1,0 +1,348 @@
+/* Фонове зображення для сторінки SOC Analyst */
+body.soc-analyst-page {
+    background-image: url('https://img.freepik.com/premium-photo/abstract-black-yellow-gradient-plain-studio-background_570543-161.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* Щоб фон не прокручувався */
+    background-position: center;
+    color: #e0e0e0; /* Змінюємо колір тексту для кращої читабельності на темному фоні */
+}
+
+/* Колір заголовків для кращої читабельності */
+.soc-analyst-page h1,
+.soc-analyst-page h2 {
+    color: #FFD700; /* Золотистий колір для контрасту */
+    border-bottom-color: #FFD700;
+}
+
+/* Загальні стилі для контейнера та секцій */
+.container {
+    background-color: rgba(34, 34, 34, 0.9); /* Трохи прозорий темний фон для контейнера */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.soc-section {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: rgba(45, 45, 45, 0.85); /* Трохи темніший фон для секцій */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-out, box-shadow 0.5s ease-out; /* Анімація при наведенні */
+}
+
+.soc-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Анімації */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInBottom {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes popIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes flashEffect {
+    0% { filter: brightness(1); }
+    50% { filter: brightness(1.2); }
+    100% { filter: brightness(1); }
+}
+
+/* Застосування анімацій */
+.fade-in-heading {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.soc-section.slide-in-bottom {
+    animation: slideInBottom 0.8s ease-out forwards;
+    opacity: 0; /* Приховати елементи до початку анімації */
+}
+.soc-section.fade-in-left {
+    animation: slideInLeft 0.8s ease-out forwards;
+    opacity: 0;
+}
+.soc-section.slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+    opacity: 0;
+}
+.soc-section.fade-in-up {
+    animation: slideInBottom 0.8s ease-out forwards; /* Перевикористання slideInBottom */
+    opacity: 0;
+}
+.soc-section.scale-in {
+    animation: scaleIn 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+/* Картки Roadmap */
+.soc-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.soc-card {
+    background-color: rgba(60, 60, 60, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, background-color 0.3s ease-out;
+    opacity: 0; /* Приховати картки до початку анімації */
+}
+
+.soc-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    background-color: rgba(75, 75, 75, 0.95);
+}
+
+.soc-card .soc-icon-circle {
+    width: 70px;
+    height: 70px;
+    background-color: #0056b3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.soc-card:hover .soc-icon-circle {
+    background-color: #FFD700; /* Зміна кольору іконки при наведенні */
+}
+
+.soc-card .soc-icon-circle img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1); /* Зробити іконки білими */
+    margin: 0; /* Скидаємо зовнішні відступи */
+}
+
+.soc-card h3 {
+    color: #FFD700;
+    margin-top: 10px;
+    font-size: 1.3em;
+}
+
+.soc-card p {
+    font-size: 0.95em;
+    color: #c0c0c0;
+}
+
+/* Анімація для карток */
+.soc-card.pop-in {
+    animation: popIn 0.6s ease-out forwards;
+}
+
+/* Затримка анімації для карток */
+.soc-card.delay-1 { animation-delay: 0.2s; }
+.soc-card.delay-2 { animation-delay: 0.4s; }
+.soc-card.delay-3 { animation-delay: 0.6s; }
+.soc-card.delay-4 { animation-delay: 0.8s; }
+.soc-card.delay-5 { animation-delay: 1.0s; }
+
+/* Списки інструментів та продукції */
+.tools-list li, .products-list li {
+    background-color: rgba(50, 50, 50, 0.7);
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-left: 4px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    list-style-type: none; /* Прибираємо стандартні маркери */
+    position: relative;
+    padding-left: 30px; /* Місце для кастомного маркера */
+}
+
+.tools-list li:hover, .products-list li:hover {
+    background-color: rgba(65, 65, 65, 0.8);
+    transform: translateX(5px);
+}
+
+.tools-list li::before, .products-list li::before {
+    content: '⚡'; /* Унікальний символ для маркера */
+    position: absolute;
+    left: 10px;
+    color: #FFD700; /* Золотистий колір для блискавки */
+    font-size: 1.1em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Анімація для списків */
+.fade-in-list li {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+}
+.fade-in-list li:nth-child(1) { animation-delay: 0.1s; }
+.fade-in-list li:nth-child(2) { animation-delay: 0.2s; }
+.fade-in-list li:nth-child(3) { animation-delay: 0.3s; }
+.fade-in-list li:nth-child(4) { animation-delay: 0.4s; }
+.fade-in-list li:nth-child(5) { animation-delay: 0.5s; }
+.fade-in-list li:nth-child(6) { animation-delay: 0.6s; }
+.fade-in-list li:nth-child(7) { animation-delay: 0.7s; }
+.fade-in-list li:nth-child(8) { animation-delay: 0.8s; }
+.fade-in-list li:nth-child(9) { animation-delay: 0.9s; }
+.fade-in-list li:nth-child(10) { animation-delay: 1.0s; } /* Додано, якщо більше елементів */
+
+
+/* Галерея зображень та GIF */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.gallery-img, .gif-embed {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-img:hover, .gif-embed:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Анімація для зображень */
+.gallery-img.zoom-in, .gif-embed.slide-in-top {
+    opacity: 0;
+}
+.gallery-img.zoom-in {
+    animation: scaleIn 0.7s ease-out forwards;
+}
+.gallery-img.zoom-in.delay-1 { animation-delay: 0.3s; }
+.gif-embed.slide-in-top {
+    animation: slideInBottom 0.7s ease-out forwards; /* Перевикористання slideInBottom */
+    animation-delay: 0.6s;
+}
+
+/* Слайдер університетів */
+.soc-slider-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    background-color: rgba(55, 55, 55, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+}
+
+.soc-slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.soc-slide {
+    min-width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.soc-slide h3 {
+    color: #00BFFF; /* Глибокий синій для заголовків слайдів */
+    margin-bottom: 10px;
+}
+
+.soc-prev-btn, .soc-next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.soc-prev-btn:hover, .soc-next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.soc-prev-btn {
+    left: 10px;
+}
+
+.soc-next-btn {
+    right: 10px;
+}
+
+/* Анімація для слайдера */
+.soc-slider-container.fade-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+}
+
+/* Footer стилі */
+footer {
+    background-color: rgba(20, 20, 20, 0.95);
+    color: #a0a0a0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    font-size: 0.9em;
+}
+
+.team-info {
+    margin-bottom: 10px;
+}
+
+.sources-emoji {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #FFD700;
+    transition: transform 0.2s ease-in-out;
+    display: inline-block;
+}
+
+.sources-emoji:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .soc-cards-container {
+        grid-template-columns: 1fr;
+    }
+    .image-gallery {
+        flex-direction: column;
+    }
+}
