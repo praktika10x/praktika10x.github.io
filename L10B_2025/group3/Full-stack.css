@@ -246,3 +246,10 @@ ul{
 .swiper-pagination-bullet-active {
     background: #954BAA;
 }
+.wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
