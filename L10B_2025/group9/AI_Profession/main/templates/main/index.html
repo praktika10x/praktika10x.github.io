@@ -1,6 +1,5 @@
 {% load static %}
 
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -11,16 +10,21 @@
 </head>
 <body>
   <header id="header" class="animated-gradient">
+    <div class="theme-switch-wrapper">
+      <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
+        <div class="switch-thumb"></div>
+        <span class="icon sun"><img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема"></span>
+        <span class="icon moon"><img src="{% static 'main/img/moon.png' %}" alt="Темна тема"></span>
+      </div>
+    </div>
     <h1 id="title">Штучний інтелект</h1>
   </header>
 
   <main>
     <section class="info-section">
       <div class="info-text">
-        <h2>Ласкаво просимо у світ ШІ</h2>
-        <p>Світ змінюється, і ШІ вже сьогодні відіграє ключову роль у трансформації бізнесу, науки, медицини, освіти та інших галузей. Це не просто тренд — це новий етап розвитку людства, який відкриває безліч кар’єрних можливостей для тих, хто готовий діяти на передовій інновацій.<br><br>
-          Наш сайт створено для студентів, які шукають напрям розвитку, та спеціалістів, які прагнуть поглибити свої знання або змінити професійний вектор. Ви дізнаєтесь про актуальні професії в сфері ШІ — від інженерів машинного навчання до фахівців із генеративного ШІ, аналітики даних, науковців з етики штучного інтелекту тощо.<br><br>
-          Ми зібрали практичну інформацію, рекомендації щодо навчання, інструменти для професійного росту та реальні історії успіху. Якщо ви хочете залишатися конкурентоспроможними у світі, який змінюється щодня — ви в правильному місці.</p>
+        <h2 align="center">Ласкаво просимо у світ ШІ</h2>
+        <p>Світ змінюється, і ШІ вже сьогодні відіграє ключову роль у трансформації бізнесу, науки, медицини, освіти та інших галузей...</p>
       </div>
       <div class="info-image">
         <img src="{% static 'main/img/IndexImage.jpg' %}" alt="AI Illustration">
@@ -30,19 +34,19 @@
     <section class="cards">
       <a href="page1"><div class="card">
         <h3>NLP Engineer</h3>
-        <p>Працює з обробкою природної мови, аналізом текстів та чат-ботами.</p>
+        <p>Працює з обробкою природної мови...</p>
       </div></a>
       <a href="page2"><div class="card">
         <h3>Computer Vision Engineer</h3>
-        <p>Створює системи, які розпізнають об’єкти, обличчя та сцени.</p>
+        <p>Створює системи, які розпізнають об’єкти...</p>
       </div></a>
       <a href="page3"><div class="card">
         <h3>Deep Learning Engineer</h3>
-        <p>Будує глибокі нейронні мережі для розпізнавання мови, зображень та ін.</p>
+        <p>Будує глибокі нейронні мережі...</p>
       </div></a>
       <a href="page4"><div class="card">
         <h3>AI Researcher</h3>
-        <p>Досліджує нові підходи та алгоритми в штучному інтелекті.</p>
+        <p>Досліджує нові підходи...</p>
       </div></a>
     </section>
   </main>
@@ -55,15 +59,21 @@
       </div>
       <div>
         <h4>Контакти</h4>
-        <p>Email: k.grechka2026@pu.org.ua</p>
-        <p>Телефон: +380 67 916 7737</p>
+        <p>Email: peter.d.bakun@gmail.com</p>
+        <p>Телефон: +380 68 228 1337</p>
       </div>
-      <div>
-        <h4>Зміна теми</h4>
-        <button class="theme-toggle" onclick="toggleTheme()">Світлий/Темний</button>
+      <div class="theme-switch-wrapper">
+      <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
+        <div class="switch-thumb"></div>
+        <span class="icon sun"><img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема"></span>
+        <span class="icon moon"><img src="{% static 'main/img/moon.png' %}" alt="Темна тема"></span>
       </div>
     </div>
+    </div>
   </footer>
-  <script src="{% static 'main/js/script.js' %}"></script>
+
+ <script src="{% static 'main/js/script.js' %}"></script>
+
 </body>
 </html>
+
