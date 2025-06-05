@@ -69,7 +69,7 @@ h1 {
     text-align: center;
 }
 
-.main {
+.main:not(.color) {
     padding: 50px;
 }
 
