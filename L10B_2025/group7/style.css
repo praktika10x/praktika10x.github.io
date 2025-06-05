@@ -251,6 +251,8 @@ html {
     margin-bottom: 15px;
     border-left: none;
     padding-left: 0;
+    margin-top: 0;
+    text-align: center;
 }
 
 .project-page .card p {
@@ -315,33 +317,6 @@ html {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-}
-
-.sources-page .source-category {
-    background-color: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    flex-direction: column;
-    align-items: center;
-    min-width: auto;
-    max-width: 200px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    text-align: center;
-}
-
-.sources-page .source-category:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
-}
-
-.sources-page .source-category h4 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    color: #FFD700;
-    margin-bottom: 10px;
-    text-align: center;
 }
 
 .sources-page .source-list {
@@ -431,25 +406,6 @@ li {
     font-size: 19px;
     margin-bottom: 12px;
     color: #444444;
-    text-align: left;
-}
-
-dl dt {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #444444;
-    font-size: 20px;
-    text-align: left;
-}
-
-dl dd {
-    font-family: 'Open Sans', sans-serif;
-    margin-left: 30px;
-    margin-bottom: 15px;
-    font-size: 18px;
-    color: #666666;
     text-align: left;
 }
 
@@ -592,11 +548,10 @@ footer .team-info {
         width: calc(50% - 35px);
         min-width: 280px;
     }
-    .sources-page .source-category {
-        min-width: 280px;
-    }
-    .project-page .container,
     .sources-page .container {
+        padding: 30px;
+    }
+    .project-page .container {
         padding: 30px;
     }
     h1 {
@@ -609,9 +564,7 @@ footer .team-info {
         font-size: 30px;
     }
     p,
-    li,
-    dl dt,
-    dl dd {
+    li {
         font-size: 18px;
     }
 }
@@ -705,33 +658,33 @@ footer .team-info {
     .sources-page .sources-section h3 {
         font-size: 32px;
     }
-    .sources-page .source-category {
+    .sources-page .source-group {
         min-width: unset;
-        width: 90%; 
-        max-width: none; 
-        padding: 0; 
-        background-color: transparent; 
-        border: none; 
-        box-shadow: none; 
+        width: 90%;
+        max-width: none;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
     }
-    .sources-page .source-category:hover {
+    .sources-page .source-group:hover {
         transform: none;
         box-shadow: none;
     }
-    .sources-page .source-category h4 {
-        font-size: 22px; 
+    .sources-page .source-group h4 {
+        font-size: 22px;
         margin-bottom: 15px;
     }
     .sources-page .source-list {
-        gap: 10px; 
-        justify-content: flex-start; 
-        padding-left: 0; 
+        gap: 10px;
+        justify-content: flex-start;
+        padding-left: 0;
     }
     .sources-page .source-item {
         margin: 0;
     }
     .sources-page .source-item img {
-        width: 60px; 
+        width: 60px;
         height: 60px;
         padding: 5px;
     }
@@ -768,9 +721,7 @@ footer .team-info {
     }
     p,
     ul,
-    li,
-    dl dt,
-    dl dd {
+    li {
         font-size: 17px;
     }
 }
@@ -809,15 +760,15 @@ footer .team-info {
         font-size: 24px;
         margin-bottom: 20px;
     }
-    .sources-page .source-category h4 {
+    .sources-page .source-group h4 {
         font-size: 18px;
         margin-bottom: 10px;
     }
     .sources-page .source-list {
-        gap: 8px; 
+        gap: 8px;
     }
     .sources-page .source-item img {
-        width: 50px; 
+        width: 50px;
         height: 50px;
         padding: 4px;
     }
