@@ -243,3 +243,11 @@ img.fullscreen-image {
 .swiper-pagination-bullet-active {
     background: #954BAA;
 }
+
+.card p {
+  font-size: 36px; 
+  line-height: 1.6; 
+}
+.card p strong {
+  font-size: 40px;
+}
