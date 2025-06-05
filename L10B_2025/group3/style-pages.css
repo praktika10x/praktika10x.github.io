@@ -256,6 +256,10 @@ img.fullscreen-image {
   background: linear-gradient(to bottom, rgba(255, 170, 0, 0.5), rgba(151, 71, 255, 0.5));
   padding: 60px 40px;
   box-sizing: border-box;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .color .wrap {
@@ -263,4 +267,5 @@ img.fullscreen-image {
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
+  width: 100%;
 }
