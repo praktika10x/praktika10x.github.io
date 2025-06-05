@@ -113,3 +113,23 @@ h3{
   font-weight: 400;
   font-style: normal;
 }
+.Silka {
+     text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    width: 100%;}
+.Silka a{
+	font-size: 30px;
+	padding: 10px 20px;
+          border-radius: 10px;
+          border: 2px grey solid;
+	text-decoration: none;
+	text-align:center;
+}
+.Silka a:hover{
+	background: skyblue;
+          color: black;
+	transition: 1s;
+	transform: scale(1.05);
+	transition: 1s;
+}
