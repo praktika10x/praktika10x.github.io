@@ -218,20 +218,6 @@ body.light-theme .menu-icon {
   z-index: 1;
 }
 
-/* Dark theme background (GIF) */
-.hero-background.dark-bg {
-  background: url('https://cdn.discordapp.com/attachments/1266156981450838171/1379836116936691772/5f2c8c4b013ed26c6804691dbc8acb4ef66923ed.gif?ex=6841b006&is=68405e86&hm=0d4d2e783eeddd62b9afac4118c65a5ec33d950736ed6ed27164ea96c4d67ec9&') center/cover no-repeat;
-  display: block;
-}
-
-/* Light theme background (gradient) */
-.hero-background.light-bg {
-  background: linear-gradient(45deg, #E4E4FF, #D1ADFF, #C3A7FF, #B794F6);
-  background-size: 400% 400%;
-  animation: gradientShift 6s ease infinite;
-  display: none;
-}
-
 body.light-theme .hero-background.dark-bg {
   display: none;
 }
