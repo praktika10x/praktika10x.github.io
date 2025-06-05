@@ -5,70 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IoT Developer</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            background-image: url('img/mainbackground.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
+        * {
             box-sizing: border-box;
         }
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 40px 30px;
-            border-radius: 15px;
-            margin-top: 40px;
-            margin-bottom: 40px;
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #e0f7fa 0%, #e0f7fa 70%, #d3d3d3 100%);
         }
 
-        h1 {
-            color: #2c3e50;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+        }
+
+        .content {
+            max-width: 1000px;
+            background-color: #ffffff;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
-            color: #34495e;
+            color: #2c3e50;
             margin-top: 30px;
         }
 
-        p {
-            line-height: 1.6;
+        p, li {
             color: #333;
+            line-height: 1.6;
         }
 
-        a.button {
+        ul {
+            padding-left: 20px;
+        }
+
+        .btn-back {
             display: inline-block;
             margin-top: 30px;
-            padding: 10px 20px;
-            background-color: #2c3e50;
-            color: white;
+            padding: 10px 25px;
+            background-color: #34495e;
+            color: #fff;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background-color: #2c3e50;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>IoT Developer(MQTT, CoAP, Edge computing)</h1>
-        <div class="info-box">
-            <p><strong>IoT Developer(MQTT, CoAP, Edge computing)</strong> — це спеціаліст, який створює апаратні та програмні рішення для пристроїв, що з'єднуються через інтернет, обмінюються даними та реагують на зовнішній світ.</p>
-            <ul>Завдання IoT-розробника:
-              <li>програмування вбудованих пристроїв (мікроконтролери, датчики);</li>
-              <li>налаштування мережевого зв’язку (Wi-Fi, ZigBee, LoRa, NB-IoT тощо);</li>
-              <li>реалізація протоколів обміну даними (наприклад, MQTT, CoAP);</li>
-              <li>збір, обробка та передача даних (локально чи в хмару);</li>
-            </ul>
-          <p><strong>MQTT</strong> — легковагий мережевий протокол для обміну повідомленнями між пристроями, розроблений для роботи в умовах обмежених ресурсів (низька швидкість, нестабільне з'єднання).</p>
-          <p><strong>CoAP </strong>— це протокол прикладного рівня для обмежених пристроїв, подібний до HTTP, але легший і працює поверх UDP.</p>
-          <p><strong>Edge computing</strong>— концепція, при якій обробка даних виконується ближче до джерела їх виникнення, а не в централізованій хмарі.</p>
-            <img src="img/robotics-demo.jpg" alt="Cloud Robotics Demo" class="image">
-        </div>
-        <a class="button" href="index.html">Повернутись на головну</a>
+    <header>
+        <h1>IoT Developer</h1>
+    </header>
+
+    <div class="content">
+        <p><strong>IoT Developer</strong> — це фахівець, який створює, налаштовує та підтримує пристрої та системи Інтернету речей (Internet of Things), забезпечуючи їхню ефективну взаємодію з мережами, хмарними сервісами та кінцевими користувачами.</p>
+
+        <h2>Основні обов’язки</h2>
+        <ul>
+            <li>Розробка прошивок для мікроконтролерів та IoT-плат (ESP32, STM32, Raspberry Pi).</li>
+            <li>Інтеграція пристроїв з хмарними платформами (AWS IoT, Azure IoT Hub, Google Cloud IoT).</li>
+            <li>Забезпечення захищеного обміну даними між пристроями та сервером.</li>
+            <li>Налагодження сенсорів, протоколів зв’язку (MQTT, CoAP, HTTP, LoRaWAN).</li>
+            <li>Моніторинг та оновлення програмного забезпечення пристроїв.</li>
+        </ul>
+
+        <h2>Необхідні навички</h2>
+        <ul>
+            <li>Знання мов C/C++, Python або JavaScript (Node.js).</li>
+            <li>Досвід роботи з IoT-платами та сенсорами.</li>
+            <li>Розуміння мережевих протоколів та архітектури IoT-систем.</li>
+            <li>Навички роботи з хмарними платформами та API.</li>
+            <li>Знання принципів кібербезпеки для вбудованих пристроїв.</li>
+        </ul>
+
+        <h2>Де використовується</h2>
+        <p>IoT-розробники працюють у сферах розумного дому, промислової автоматизації, сільського господарства, енергетики, охорони здоров’я. Наприклад, створення систем моніторингу температури в реальному часі або керування освітленням через мобільний застосунок.</p>
+
+        <h2>Популярні платформи</h2>
+        <ul>
+            <li>Arduino, ESPHome</li>
+            <li>Raspberry Pi, Node-RED</li>
+            <li>AWS IoT Core, Azure IoT Hub, Google Cloud IoT</li>
+            <li>ThingsBoard, Blynk</li>
+            <li>MQTT Broker (Mosquitto), InfluxDB, Grafana</li>
+        </ul>
+
+        <a href="index.html" class="btn-back">Назад на головну</a>
     </div>
 </body>
 </html>
