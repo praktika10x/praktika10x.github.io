@@ -99,3 +99,93 @@ p {
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 24px;
 }
+[⚠️ Suspicious Content] .card {
+  width: 250px;
+  background-color: #f9cdda;
+  border: 2px solid lightgray;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  color: #333;
+  box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 12px rgba(135, 206, 235, 0.8);
+}
+
+.card img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.card_educational {
+  background-color: #fff;
+  min-height: 240px;
+}
+
+.card-salary {
+  background-color: #f5bb47;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.info-card {
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.cart-desc {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+img.fullscreen-image {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.footer {
+  background-color: #954baa;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  width: 100%;
+  margin: 0;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+  font-family: "Tektur", sans-serif;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
