@@ -130,7 +130,7 @@ p {
   margin-bottom: 10px;
 }
 
-.card_educational {
+.card.card_educational {
   width: 400px;       
   max-width: 100%;   
   min-height: 240px; 
