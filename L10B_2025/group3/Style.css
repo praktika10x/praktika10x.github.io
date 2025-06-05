@@ -218,7 +218,6 @@ a{
   box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 4px 4px 12px rgba(135, 206, 235, 0.8);
