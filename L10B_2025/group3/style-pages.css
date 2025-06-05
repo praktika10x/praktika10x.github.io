@@ -102,8 +102,8 @@ p {
 
 .wrap {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
+  grid-gap: 20px;
   padding: 20px;
   justify-content: center;
 }
