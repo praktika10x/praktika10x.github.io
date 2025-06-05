@@ -18,7 +18,7 @@ h1 {
     left: 0;
     top: 0;
     height:40px;
-    width:500px;
+    width:650px;
     grid-column:1/2;grid-row:1/2; 
     font-family:"Rubik Bubbles";
 }
