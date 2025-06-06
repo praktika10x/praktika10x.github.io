@@ -6,7 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const slides = sliderWrapper.querySelectorAll('.slide');
         const prevBtn = sliderContainer.querySelector('.prev-btn');
         const nextBtn = sliderContainer.querySelector('.next-btn');
-        const dotsContainer = sliderContainer.querySelector('.slider-dots');
+        const dotsContainer = document.createElement('div');
+        dotsContainer.classList.add('slider-dots');
+        sliderContainer.appendChild(dotsContainer);
+
 
         let currentIndex = 0;
         let autoSlideInterval;
@@ -14,40 +17,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const totalSlides = slides.length;
 
-        
+
         if (totalSlides <= 1) {
             if (prevBtn) prevBtn.style.display = 'none';
             if (nextBtn) nextBtn.style.display = 'none';
             if (dotsContainer) dotsContainer.style.display = 'none';
-            return; 
+            return;
         }
 
-        
+
         function updateSliderPosition() {
             sliderWrapper.style.transform = `translateX(${-currentIndex * 100}%)`;
             updateDots();
         }
 
-        
+
         const goToNextSlide = () => {
             currentIndex = (currentIndex + 1) % totalSlides;
             updateSliderPosition();
         };
 
-        
+
         const goToPrevSlide = () => {
             currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
             updateSliderPosition();
         };
 
-        
+
         const goToSlide = (index) => {
             currentIndex = index;
             updateSliderPosition();
-            resetAutoSlide(); 
+            resetAutoSlide();
         };
 
-        
+
         if (nextBtn) {
             nextBtn.addEventListener('click', () => {
                 goToNextSlide();
@@ -62,9 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-       
+
         const startAutoSlide = () => {
-            stopAutoSlide(); 
+            stopAutoSlide();
             autoSlideInterval = setInterval(goToNextSlide, autoSlideDelay);
         };
 
@@ -77,10 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
             startAutoSlide();
         };
 
-        
-        function createDots() {
-            if (!dotsContainer) return;
 
+        function createDots() {
             for (let i = 0; i < totalSlides; i++) {
                 const dot = document.createElement('span');
                 dot.classList.add('slider-dot');
@@ -90,10 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        
-        function updateDots() {
-            if (!dotsContainer) return;
 
+        function updateDots() {
             dotsContainer.querySelectorAll('.slider-dot').forEach((dot, index) => {
                 if (index === currentIndex) {
                     dot.classList.add('active');
@@ -103,41 +102,41 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-       
+
         updateSliderPosition();
         createDots();
         startAutoSlide();
 
-        
+
         sliderContainer.addEventListener('mouseenter', stopAutoSlide);
         sliderContainer.addEventListener('mouseleave', startAutoSlide);
     }
 
-    
+
     const animatedSections = document.querySelectorAll('.animated-section');
 
     const observerOptions = {
-        root: null, 
+        root: null,
         rootMargin: '0px',
-        threshold: 0.1 
+        threshold: 0.1
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('is-visible');
-                
+
                 if (entry.target.classList.contains('fade-in-text')) {
                     entry.target.style.animationPlayState = 'running';
                 }
-                observer.unobserve(entry.target); 
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    
+
     animatedSections.forEach(section => {
         observer.observe(section);
     });
-   
+
 });
