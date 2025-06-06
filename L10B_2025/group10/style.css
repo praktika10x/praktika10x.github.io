@@ -279,4 +279,130 @@ a {
 }
 
 /*Інженер з прикладної криптографії*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans Condensed", sans-serif;
+  background-color: #061737;
+  color: white;
+}
+
+.imgb {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.navigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0e234e;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu-n ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-n ul li a {
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-icon img {
+  height: 30px;
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #ffc107;
+  margin: 30px 0;
+}
+
+.content {
+  background-color: #1d3569;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.content p {
+  font-weight: bold;
+}
+
+.content ol li a {
+  color: #82ccdd;
+  text-decoration: none;
+}
+
+.content ol li a:hover {
+  text-decoration: underline;
+}
+
+.appl1, .appl2, .apll3, .apll4, .apll5 {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  padding: 20px;
+  background-color: #1d3569;
+  border-radius: 12px;
+}
+
+h4 {
+  color: #ffc107;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.highlight-box {
+  background-color: #24396c;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.home {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.home a {
+  background-color: #ffc107;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .menu-n ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon img {
+    display: block;
+  }
+
+  .menu-n {
+    display: none;
+  }
+
+  #menu-1:checked ~ .menu-n {
+    display: block;
+  }
+}
 
