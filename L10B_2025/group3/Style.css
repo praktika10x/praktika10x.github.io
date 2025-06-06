@@ -264,24 +264,24 @@ a{
   }
 
   .pnav {
-    font-size: 20px;
+    font-size: 80px;
     text-align: center;
-    grid-column: 1 / -1; /* розтягнути на всю ширину */
+    grid-column: 2 / 3 span; 
     margin: 0;
   }
 
   .logonav {
-    width: 80%;
+    width: 30%;
     justify-self: center;
-    grid-column: 1 / -1;
+    grid-column: 2 / 3 span;
   }
 
     .header-logo {
-        height: 35px;
+        height: 15px;
         padding-left: 20px;
     }
 
     .eniac {
-        height: 35px;
+        height: 15px;
     }
   }
