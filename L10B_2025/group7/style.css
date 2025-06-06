@@ -967,9 +967,6 @@ footer .team-info {
         width: calc(50% - 35px);
         min-width: 280px;
     }
-    .sources-page .container {
-        padding: 30px;
-    }
     .project-page .container {
         padding: 30px;
     }
@@ -1060,8 +1057,7 @@ footer .team-info {
         min-width: unset;
         padding: 25px;
     }
-    .project-page .container,
-    .sources-page .container {
+    .project-page .container {
         width: 95%;
         padding: 25px;
         margin: 25px auto;
@@ -1083,39 +1079,6 @@ footer .team-info {
     .project-page .icon-circle {
         width: 80px;
         height: 80px;
-    }
-    .sources-page .sources-section h3 {
-        font-size: 32px;
-    }
-    .sources-page .source-group {
-        min-width: unset;
-        width: 90%;
-        max-width: none;
-        padding: 0;
-        background-color: transparent;
-        border: none;
-        box-shadow: none;
-    }
-    .sources-page .source-group:hover {
-        transform: none;
-        box-shadow: none;
-    }
-    .sources-page .source-group h4 {
-        font-size: 22px;
-        margin-bottom: 15px;
-    }
-    .sources-page .source-list {
-        gap: 10px;
-        justify-content: flex-start;
-        padding-left: 0;
-    }
-    .sources-page .source-item {
-        margin: 0;
-    }
-    .sources-page .source-item img {
-        width: 60px;
-        height: 60px;
-        padding: 5px;
     }
     footer {
         flex-direction: column;
@@ -1194,22 +1157,6 @@ footer .team-info {
     }
     .project-page .card h3 {
         font-size: 22px;
-    }
-    .sources-page .sources-section h3 {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-    .sources-page .source-group h4 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-    .sources-page .source-list {
-        gap: 8px;
-    }
-    .sources-page .source-item img {
-        width: 50px;
-        height: 50px;
-        padding: 4px;
     }
     footer {
         font-size: 14px;
