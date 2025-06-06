@@ -113,7 +113,7 @@ p {
     color: #fff;
 }
 
-.highlight-box {
+.highlight-box { /* Цей клас не використовується у вашому HTML, але залишив його з оригінального CSS */
     background-color: rgba(255, 215, 0, 0.2);
     border-left: 5px solid #FFD700;
     padding: 20px;
@@ -124,20 +124,7 @@ p {
     box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
 }
 
-.soc-section {
-    padding: 30px 0;
-    margin-bottom: 30px;
-}
-
-.section-alt-background {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 40px 0;
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
+/* SOC Cards (Roadmap section) */
 .soc-cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -156,6 +143,8 @@ p {
     min-width: 280px;
     max-width: 350px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; /* Для анімації */
+    transform: translateY(20px); /* Для анімації */
 }
 
 .soc-card:hover {
@@ -178,7 +167,7 @@ p {
 .soc-icon-circle img {
     width: 50px;
     height: 50px;
-    filter: invert(0%);
+    filter: invert(0%); /* Ensure icons are black or retain original color */
 }
 
 .soc-card h3 {
@@ -193,167 +182,251 @@ p {
     color: #f0f0f0;
 }
 
-.skills-list, .roadmap-list, .sample-products-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
+/* Info Blocks (Основні обов'язки) */
+.info-blocks-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 15px;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
 }
 
-.skills-list li, .roadmap-list li, .sample-products-list li {
-    background-color: #333;
-    border: 1px solid #FFD700;
-    border-radius: 5px;
-    padding: 15px 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    transition: transform 0.2s ease, background-color 0.2s ease;
-    flex: 1 1 calc(33% - 20px);
+.info-block {
+    background-color: #333; /* Змінено на темний фон для відповідності загальному стилю */
+    border: 2px solid #FFD700;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 6px 18px rgba(255, 215, 0, 0.1); /* Жовтий відтінок тіні */
+    flex: 1;
     min-width: 280px;
+    max-width: 450px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; /* Для анімації */
+    transform: translateY(20px); /* Для анімації */
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.skills-list li:hover, .roadmap-list li:hover, .sample-products-list li:hover {
-    transform: translateX(5px);
-    background-color: #555;
+.info-block:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.2); /* Інтенсивніша жовта тінь на hover */
 }
 
-.skills-list li span, .roadmap-list li span, .sample-products-list li span {
-    flex-grow: 1;
-}
-
-.skills-list li:before {
-    content: '⭐';
-    margin-right: 15px;
-    font-size: 1.2em;
+.info-block h3 {
+    font-size: 1.5em; /* Використання em для кращої адаптивності */
     color: #FFD700;
-}
-
-.roadmap-list li:before {
-    content: '➡️';
-    margin-right: 15px;
-    font-size: 1.2em;
-    color: #FFD700;
-}
-
-.sample-products-list li:before {
-    content: '📄';
-    margin-right: 15px;
-    font-size: 1.2em;
-    color: #fff;
-}
-
-.tools-with-images-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.tools-with-images-list li {
-    background-color: #333;
-    border: 1px solid #FFD700;
-    border-radius: 5px;
+    margin-top: 15px;
     margin-bottom: 15px;
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    text-align: center;
 }
 
-.tools-with-images-list li:hover {
-    transform: translateX(5px);
-    background-color: #555;
-}
-
-.tools-with-images-list li img {
-    height: 40px;
-    width: auto;
-    margin-right: 20px;
-    filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(255, 215, 0, 0.7));
-}
-
-.tools-with-images-list li div {
+.info-block p {
+    font-size: 0.95em;
     color: #f0f0f0;
+    line-height: 1.6;
 }
 
-.tools-with-images-list li strong {
-    color: #FFD700;
-    margin-right: 5px;
-}
-
-.data-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 30px 0;
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
-    border-radius: 8px;
+.block-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000; /* Чорний текст на жовтому фоні */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
     overflow: hidden;
 }
 
-.data-table th, .data-table td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #555;
-    color: #f0f0f0;
+.block-icon:hover {
+    transform: rotate(10deg) scale(1.1);
 }
 
-.data-table th {
-    background-color: #FFD700;
-    color: #000;
-    font-weight: 600;
-    text-transform: uppercase;
+/* Tools Grid (Інструменти розробника) */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
 }
 
-.data-table tr:nth-child(even) {
-    background-color: #333;
-}
-
-.data-table tbody tr:hover {
-    background-color: #555;
-}
-
-.footnote {
-    font-size: 0.9em;
-    color: #bbb;
+.tool-item {
+    background-color: #333; /* Змінено на темний фон */
+    border: 1px solid #FFD700; /* Жовта рамка */
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.1); /* Жовтий відтінок тіні */
     text-align: center;
-    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; /* Для анімації */
+    transform: translateY(20px); /* Для анімації */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.soc-slider-container, .education-slider-container {
+.tool-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2); /* Інтенсивніша жовта тінь на hover */
+}
+
+.tool-item h3 {
+    font-size: 1.3em;
+    color: #FFD700;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tool-item p {
+    font-size: 0.9em;
+    color: #f0f0f0;
+    line-height: 1.5;
+}
+
+.tool-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.tool-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Product Gallery (Зразки продукції) */
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.product-item {
+    background-color: #333; /* Змінено на темний фон */
+    border: 1px solid #FFD700; /* Жовта рамка */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.1); /* Жовтий відтінок тіні */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; /* Для анімації */
+    transform: scale(0.9); /* Для анімації */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2); /* Інтенсивніша жовта тінь на hover */
+}
+
+.product-item h3 {
+    font-size: 1.4em;
+    color: #FFD700;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.product-item p {
+    font-size: 0.9em;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.product-icon { /* Замість .product-image з оригінального HTML */
+    width: 80px; /* Зменшено розмір для компактності */
+    height: 80px;
+    border-radius: 50%; /* Зроблено круглим */
+    background-color: #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px; /* Зменшено розмір шрифту */
+    font-weight: bold;
+    color: #000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-icon:hover {
+    transform: rotate(-5deg) scale(1.05);
+}
+
+/* Salary and Demand section */
+.image-placeholder {
+    opacity: 0; /* Для анімації */
+    transform: scale(0.9); /* Для анімації */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.image-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2); /* Жовта тінь */
+}
+
+/* Education Slider */
+.education-slider-container {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 800px; /* Збільшено max-width для кращого вигляду */
     margin: 40px auto;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3); /* Жовта тінь для слайдера */
+    opacity: 0; /* Для анімації */
+    transform: translateY(20px); /* Для анімації */
 }
 
-.soc-slider-wrapper, .education-slider-wrapper {
+.education-slider-wrapper {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
-.soc-slide, .education-slide {
+.education-slide {
     min-width: 100%;
     box-sizing: border-box;
     padding: 30px;
-    background-color: #333;
+    background-color: #333; /* Темний фон для слайдів */
     text-align: center;
     color: #f0f0f0;
 }
 
-.soc-slide h3, .education-slide h3 {
-    color: #FFD700;
+.education-slide h3 {
+    color: #FFD700; /* Жовтий заголовок у слайдах */
     font-size: 1.7em;
     margin-bottom: 15px;
 }
 
-.soc-slide p, .education-slide p {
+.education-slide p {
     font-size: 1.1em;
     color: #e0e0e0;
 }
@@ -365,16 +438,16 @@ p {
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-    background-color: #fff;
+    background-color: #fff; /* Білий фон для логотипів університетів */
     padding: 10px;
 }
 
-.soc-prev-btn, .soc-next-btn, .education-prev-btn, .education-next-btn {
+.education-prev-btn, .education-next-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 215, 0, 0.6);
-    color: #000;
+    background-color: rgba(255, 215, 0, 0.6); /* Напівпрозорі жовті кнопки */
+    color: #000; /* Чорні стрілки */
     border: none;
     padding: 12px 18px;
     cursor: pointer;
@@ -384,17 +457,33 @@ p {
     z-index: 10;
 }
 
-.soc-prev-btn, .education-prev-btn {
+.education-prev-btn {
     left: 10px;
 }
 
-.soc-next-btn, .education-next-btn {
+.education-next-btn {
     right: 10px;
 }
 
-.soc-prev-btn:hover, .soc-next-btn:hover, .education-prev-btn:hover, .education-next-btn:hover {
-    background-color: #FFD700;
+.education-prev-btn:hover, .education-next-btn:hover {
+    background-color: #FFD700; /* Суцільний жовтий на hover */
 }
+
+.btn { /* Стиль для кнопок у слайдері */
+    display: inline-block;
+    background-color: #FFD700;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FFEA00;
+}
+
 
 footer {
     background-color: #000;
@@ -404,7 +493,7 @@ footer {
     margin-top: 50px;
     font-size: 0.9em;
     position: relative;
-    box-shadow: 0 -2px 10px rgba(255, 255, 0, 0.4);
+    box-shadow: 0 -2px 10px rgba(255, 215, 0, 0.4);
 }
 
 .team-info {
@@ -425,9 +514,130 @@ footer {
     transform: rotate(10deg) scale(1.1);
 }
 
+/* Анімації */
+.animated-section.is-visible .fade-in-text,
+.animated-section.is-visible .soc-card,
+.animated-section.is-visible .info-block,
+.animated-section.is-visible .tool-item,
+.animated-section.is-visible .product-item,
+.animated-section.is-visible .image-placeholder,
+.animated-section.is-visible .education-slider-container {
+    opacity: 1;
+    transform: none;
+}
+
+.animated-section.is-visible .soc-card:nth-child(1) { animation: fadeInUp 0.7s forwards 0.1s; }
+.animated-section.is-visible .soc-card:nth-child(2) { animation: fadeInUp 0.7s forwards 0.2s; }
+.animated-section.is-visible .soc-card:nth-child(3) { animation: fadeInUp 0.7s forwards 0.3s; }
+.animated-section.is-visible .soc-card:nth-child(4) { animation: fadeInUp 0.7s forwards 0.4s; }
+.animated-section.is-visible .soc-card:nth-child(5) { animation: fadeInUp 0.7s forwards 0.5s; }
+.animated-section.is-visible .soc-card:nth-child(6) { animation: fadeInUp 0.7s forwards 0.6s; }
+
+.animated-section.is-visible .info-block:nth-child(1) { animation: fadeInUp 0.7s forwards 0.1s; }
+.animated-section.is-visible .info-block:nth-child(2) { animation: fadeInUp 0.7s forwards 0.2s; }
+.animated-section.is-visible .info-block:nth-child(3) { animation: fadeInUp 0.7s forwards 0.3s; }
+.animated-section.is-visible .info-block:nth-child(4) { animation: fadeInUp 0.7s forwards 0.4s; }
+
+.animated-section.is-visible .tool-item:nth-child(1) { animation: fadeInUp 0.7s forwards 0.1s; }
+.animated-section.is-visible .tool-item:nth-child(2) { animation: fadeInUp 0.7s forwards 0.17s; }
+.animated-section.is-visible .tool-item:nth-child(3) { animation: fadeInUp 0.7s forwards 0.24s; }
+.animated-section.is-visible .tool-item:nth-child(4) { animation: fadeInUp 0.7s forwards 0.31s; }
+.animated-section.is-visible .tool-item:nth-child(5) { animation: fadeInUp 0.7s forwards 0.38s; }
+.animated-section.is-visible .tool-item:nth-child(6) { animation: fadeInUp 0.7s forwards 0.45s; }
+.animated-section.is-visible .tool-item:nth-child(7) { animation: fadeInUp 0.7s forwards 0.52s; }
+.animated-section.is-visible .tool-item:nth-child(8) { animation: fadeInUp 0.7s forwards 0.59s; }
+.animated-section.is-visible .tool-item:nth-child(9) { animation: fadeInUp 0.7s forwards 0.66s; }
+
+.animated-section.is-visible .product-item:nth-child(1) { animation: scaleIn 0.8s forwards 0.1s; }
+.animated-section.is-visible .product-item:nth-child(2) { animation: scaleIn 0.8s forwards 0.2s; }
+.animated-section.is-visible .product-item:nth-child(3) { animation: scaleIn 0.8s forwards 0.3s; }
+.animated-section.is-visible .product-item:nth-child(4) { animation: scaleIn 0.8s forwards 0.4s; }
+.animated-section.is-visible .product-item:nth-child(5) { animation: scaleIn 0.8s forwards 0.5s; }
+.animated-section.is-visible .product-item:nth-child(6) { animation: scaleIn 0.8s forwards 0.6s; }
+
+.animated-section.is-visible .image-placeholder {
+    animation: bounceIn 1s forwards 0.5s;
+}
+
+.animated-section.is-visible .education-slider-container {
+    animation: fadeInUp 1s forwards 0.2s; /* Затримка для слайдера */
+}
+
+@keyframes bounceIn {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+    20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        -webkit-transform: scale3d(.97, .97, .97);
+        transform: scale3d(.97, .97, .97);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Адаптивність */
 @media (max-width: 992px) {
-    .skills-list li, .roadmap-list li, .sample-products-list li {
-        flex: 1 1 calc(50% - 15px);
+    .soc-cards-container, .info-blocks-container, .tools-grid, .product-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    .soc-card, .info-block, .tool-item, .product-item {
+        max-width: none; /* Дозволяє елементам займати більше місця при меншій кількості колонок */
+        flex: 1 1 calc(50% - 20px); /* 2 елементи в ряд */
     }
 }
 
@@ -435,11 +645,12 @@ footer {
     .logo-bar {
         flex-direction: column;
         text-align: center;
+        padding: 10px;
     }
 
     .logo-left {
         flex-direction: column;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     .logo-img {
@@ -447,27 +658,40 @@ footer {
         margin-bottom: 10px;
     }
 
+    .logo-text {
+        font-size: 1.6em;
+    }
+
     .nav {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
         margin-top: 10px;
     }
 
     .nav a {
         margin-left: 0;
+        padding: 5px 0;
     }
 
     .language-switcher {
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     h1 {
         font-size: 2em;
+        margin-top: 25px;
+        margin-bottom: 20px;
     }
 
     h2 {
-        font-size: 1.6em;
+        font-size: 1.8em;
+        margin-top: 30px;
+        padding-bottom: 8px;
+    }
+
+    h3 {
+        font-size: 1.5em;
     }
 
     .container {
@@ -475,47 +699,126 @@ footer {
         padding: 0 15px;
     }
 
-    .soc-card {
+    .soc-cards-container, .info-blocks-container, .tools-grid, .product-gallery {
+        grid-template-columns: 1fr; /* 1 елемент в ряд */
+        gap: 20px;
+    }
+
+    .soc-card, .info-block, .tool-item, .product-item {
+        min-width: unset;
+        width: 100%;
+        max-width: 450px; /* Обмеження ширини для центрованих блоків */
+        margin-left: auto;
+        margin-right: auto;
         padding: 20px;
     }
 
-    .data-table th, .data-table td {
-        padding: 10px;
+    .info-block h3, .tool-item h3, .product-item h3 {
+        font-size: 1.3em;
+    }
+
+    .info-block p, .tool-item p, .product-item p {
         font-size: 0.9em;
     }
 
-    .soc-prev-btn, .soc-next-btn, .education-prev-btn, .education-next-btn {
-        padding: 8px 12px;
-        font-size: 1.2em;
+    .block-icon, .tool-icon, .product-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
     }
 
-    .skills-list li, .roadmap-list li, .sample-products-list li, .tools-with-images-list li {
-        flex: 1 1 100%;
+    .image-placeholder {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .image-placeholder img {
+        max-width: 90%;
+    }
+
+    .education-slider-container {
         max-width: 100%;
-        margin-right: 0;
+        margin: 30px auto;
     }
-
-    .tools-with-images-list li img {
-        height: 30px;
-        margin-right: 10px;
+    .education-slide {
+        padding: 25px 20px;
+    }
+    .education-slide h3 {
+        font-size: 1.5em;
+    }
+    .education-slide p {
+        font-size: 1em;
+    }
+    .education-slide .education-img {
+        height: 120px;
+    }
+    .education-prev-btn, .education-next-btn {
+        padding: 10px 15px;
+        font-size: 1.2em;
     }
 }
 
 @media (max-width: 480px) {
     .logo-text {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     h1 {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     h2 {
         font-size: 1.4em;
     }
 
-    .soc-card {
-        min-width: unset;
-        width: 100%;
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .soc-card, .info-block, .tool-item, .product-item {
+        padding: 15px;
+    }
+
+    .soc-card h3, .info-block h3, .tool-item h3, .product-item h3 {
+        font-size: 1.1em;
+    }
+
+    .soc-card p, .info-block p, .tool-item p, .product-item p {
+        font-size: 0.85em;
+    }
+
+    .block-icon, .tool-icon, .product-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .education-slide h3 {
+        font-size: 1.3em;
+    }
+    .education-slide p {
+        font-size: 0.9em;
+    }
+    .education-slide .education-img {
+        height: 100px;
+    }
+    .education-prev-btn, .education-next-btn {
+        padding: 8px 12px;
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.8em;
+    }
+    .sources-emoji {
+        font-size: 1.5em;
+        right: 10px;
+        bottom: 10px;
     }
 }
