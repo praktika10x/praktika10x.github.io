@@ -17,13 +17,13 @@
             </div>
             <div class="navdiv">
                 <ul class="nav-links">
-                   <li> <a href="#essence">Сутність професії</a> </li>
-                   <li>  <a href="#knowledge">Специфічні знання та вимоги</a> </li>
-                   <li> <a href="#tools">Основні інструменти</a> </li>
-                   <li><a href="#product">Продукти</a></li>
-                   <li> <a href="#demand">Затребуваність</a></li>
-                   <li> <a href="#salary">Заробітня плата</a></li>
-                   <li>  <a href="#educational">Заклади освіти</a></li>
+                   <li> <a href="#essence" onclick="scrollToTop(event)">Сутність професії</a> </li>
+                   <li>  <a href="#knowledge" onclick="scrollToTop(event)">Специфічні знання та вимоги</a> </li>
+                   <li> <a href="#tools" onclick="scrollToTop(event)">Основні інструменти</a> </li>
+                   <li><a href="#product" onclick="scrollToTop(event)">Продукти</a></li>
+                   <li> <a href="#demand" onclick="scrollToTop(event)">Затребуваність</a></li>
+                   <li> <a href="#salary" onclick="scrollToTop(event)">Заробітня плата</a></li>
+                   <li>  <a href="#educational" onclick="scrollToTop(event)">Заклади освіти</a></li>
                 </ul>
             </div>
         </div>
@@ -209,6 +209,10 @@
             </div>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
          <script>
+             function scrollToTop(event) {
+                    event.preventDefault();
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                }
           document.addEventListener('DOMContentLoaded', function () {
             const swiper = new Swiper('.swiper', {
               direction: 'horizontal',
