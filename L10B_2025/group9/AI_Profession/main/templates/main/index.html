@@ -23,8 +23,15 @@
   <main>
     <section class="info-section">
       <div class="info-text">
-        <h2 align="center">Ласкаво просимо у світ ШІ</h2>
-        <p>Світ змінюється, і ШІ вже сьогодні відіграє ключову роль у трансформації бізнесу, науки, медицини, освіти та інших галузей...</p>
+        <h2>Ласкаво просимо у світ ШІ</h2>
+        <p>
+          Світ змінюється, і ШІ вже сьогодні відіграє ключову роль у трансформації бізнесу, науки, медицини, освіти та інших галузей.
+          Це не просто тренд — це новий етап розвитку людства, який відкриває безліч кар’єрних можливостей.
+          <br><br>
+          Наш сайт створено для студентів та спеціалістів, які хочуть розвиватись у сфері ШІ — від інженерів машинного навчання до аналітиків даних.
+          <br><br>
+          Ми зібрали практичну інформацію, інструменти для професійного росту та реальні історії успіху.
+        </p>
       </div>
       <div class="info-image">
         <img src="{% static 'main/img/IndexImage.jpg' %}" alt="AI Illustration">
@@ -52,28 +59,34 @@
   </main>
 
   <footer>
-    <div class="footer-content">
-      <div>
-        <h4>Автори сайту</h4>
-        <p>П. Бакун К. Гречка Б.Підгорний</p>
-      </div>
-      <div>
-        <h4>Контакти</h4>
-        <p>Email: peter.d.bakun@gmail.com</p>
-        <p>Телефон: +380 68 228 1337</p>
-      </div>
-      <div class="theme-switch-wrapper">
-      <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
-        <div class="switch-thumb"></div>
-        <span class="icon sun"><img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема"></span>
-        <span class="icon moon"><img src="{% static 'main/img/moon.png' %}" alt="Темна тема"></span>
-      </div>
-    </div>
-    </div>
-  </footer>
+  <!-- Лівий блок -->
+  <div>
+    <h4>Автори сайту</h4>
+    <p>П. Бакун, К. Гречка, Б. Підгорний</p>
+  </div>
 
- <script src="{% static 'main/js/script.js' %}"></script>
+  <!-- Центральний блок -->
+  <div>
+    <h4>Контакти</h4>
+    <p>Email: peter.d.bakun@gmail.com</p>
+    <p>Телефон: +380 68 228 1337</p>
+  </div>
 
+  <!-- Правий блок -->
+  <div class="footer-theme">
+    <h4>Тема</h4>
+    <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
+      <div class="switch-thumb"></div>
+      <span class="icon sun">
+        <img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема">
+      </span>
+      <span class="icon moon">
+        <img src="{% static 'main/img/moon.png' %}" alt="Темна тема">
+      </span>
+    </div>
+  </div>
+</footer>
+
+  <script src="{% static 'main/js/script.js' %}"></script>
 </body>
 </html>
-

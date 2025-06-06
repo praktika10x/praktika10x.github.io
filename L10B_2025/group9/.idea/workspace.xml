@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="New page V1">
-      <change afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/img/black_sun.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/img/moon.png" afterDir="false" />
+    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="New page V2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AI_Profession/main/static/main/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" afterDir="false" />
@@ -32,7 +30,11 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": -1
 }]]></component>
   <component name="ProjectId" id="2xzocPcKcyOh6vkaS8CfuaQ3b8G" />
@@ -43,15 +45,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Peter Bakun/Documents/GitHub/praktika10x.github.io/L10B_2025/group9/AI_Profession/main/static/main/img"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Peter Bakun/Documents/GitHub/praktika10x.github.io/L10B_2025/group9/AI_Profession/main/static/main/img&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Peter Bakun\Documents\GitHub\praktika10x.github.io\L10B_2025\group9\AI_Profession\main\static\main\img" />
@@ -202,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749114948421</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="New page V2">
+      <option name="closed" value="true" />
+      <created>1749116502039</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1749116502039</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,6 +262,7 @@
     <MESSAGE value="Fron Update 1" />
     <MESSAGE value="Front Update 2" />
     <MESSAGE value="New page V1" />
-    <option name="LAST_COMMIT_MESSAGE" value="New page V1" />
+    <MESSAGE value="New page V2" />
+    <option name="LAST_COMMIT_MESSAGE" value="New page V2" />
   </component>
 </project>
