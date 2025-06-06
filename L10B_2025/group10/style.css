@@ -471,3 +471,22 @@ body {
 .navigator {
   background-color: #0a0f3c !important;
 }
+
+body > div:not(.navigator):not(.content):not(.appl1):not(.appl2):not(.apll3):not(.apll4):not(.apll5):not(.home) {
+  display: none !important;
+}
+
+/* Додатково: фіксація кольору фону */
+body {
+  background-color: #ffffff !important;
+}
+
+/* Перевизначення кольорів навігації */
+.navigator {
+  background-color: #0a0f3c !important;
+}
+
+.content {
+  background-color: #152850 !important;
+  color: #ffffff !important;
+}
