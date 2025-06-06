@@ -169,6 +169,7 @@ h2:not(.subtitle)::after {
   padding: 15px;
   box-shadow: 6px 8px 8px 0 rgba(38, 19, 116, 0.45);
   background: linear-gradient(180deg, rgba(149, 75, 170, 0.65) 65.38%, rgba(255, 255, 255, 0.65) 99.99%);
+  align-items: center;
 }
 .wrapnav {
   display: flex;
