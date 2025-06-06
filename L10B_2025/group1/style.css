@@ -1,52 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+body{ 
+    max-width:1200px;
+    margin:auto;
 
-body {
-    max-width: 1200px;
-    margin: auto;
-    background: azure;
 }
-
-p {
+p{
     font-family: "Balsamiq Sans";
-    color: darkslategray;
 }
-
 h1 {
     margin: 0 auto 10px;
-    color: white;
-    background: mediumseagreen;
-    text-shadow: 2px 2px 5px darkcyan;
+    color: steelblue;
+    background: lightgreen;
+    text-shadow: 2px 2px 5px darkblue;
     text-align: center;
     position: relative;
     left: 0;
     top: 0;
-    height: 40px;
-    width: 300px;
-    font-family: "Rubik Bubbles";
+    height:40px;
+    width:300px;
+    grid-column:1/2;grid-row:1/2; 
+    font-family:"Rubik Bubbles";
 }
-
-h3 {
+     
+h3{
     font-family: "Balsamiq Sans";
-    width: 150px;
-    color: white;
-    background: cadetblue;
-    text-align: center;
-    padding: 10px 10px;
-    margin: auto;
-    border-radius: 10px;
+    width:150px;
+          color:white;
+          background:lightgray;
+          text-align:center;
+          padding:10px 10px;
+          margin:auto;
+          border-radius: 10px;
 }
-
-.text {
-    width: 300px;
-    height: 375px;
-    border: 2px solid lightseagreen;
-    border-radius: 10px;
-    float: left;
-    box-shadow: 2px 2px 5px lightskyblue;
-    padding: 30px;
-    font-size: 18px;
-    background: white;
+.text{
+    width:300px;
+          height:370px;
+          border: 2px grey solid;
+          border-radius: 10px;
+          float:left;
+          box-shadow:2px 2px 5px DeepSkyblue;
+          padding:30px;
+          font-size:18px;
+          grid-column:1/2; grid-row:2/3;
+         
+}
+.card{
+          width:200px;
+          height:250px;
+          border: 2px grey solid;
+          border-radius: 10px;
+          float:left;
+          margin:50px;
+          box-shadow:2px 2px 5px DeepSkyblue;
+          padding:10px;
+          font-size:16px;
+          
+}
+.cards{
+    float:center;
+    margin:auto;
+    width:90%;
+    flex-wrap: nowrap | wrap | wrap-reverse
+    justify-content: flex-start | flex-end | center | space-between | space-around
 }
 .p1{
     float:center;
@@ -59,33 +75,43 @@ h3 {
 }
 .wrap{
     display:grid;
-    repeat(3, 1fr);
+    repeat(3, 1fr)
+
     justify-content:space-evenly;
 }
 .sayt{
     margin:auto;
     width:90%;
+    
+    
+}
+.balsamiq-sans-regular {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.card {
-    width: 200px;
-    height: 250px;
-    border: 2px solid mediumaquamarine;
-    border-radius: 10px;
-    float: left;
-    margin: 50px;
-    box-shadow: 2px 2px 5px powderblue;
-    padding: 10px;
-    font-size: 16px;
-    background: white;
+.balsamiq-sans-bold {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-.cards {
-    float: center;
-    margin: auto;
-    width: 90%;
-    flex-wrap: wrap;
-    justify-content: center;
+.balsamiq-sans-regular-italic {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.balsamiq-sans-bold-italic {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.rubik-bubbles-regular {
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .Silka {
@@ -113,33 +139,3 @@ h3 {
     transform: scale(1.05);
 }
 
-/* Классы шрифтов */
-.balsamiq-sans-regular {
-    font-family: "Balsamiq Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.balsamiq-sans-bold {
-    font-family: "Balsamiq Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.balsamiq-sans-regular-italic {
-    font-family: "Balsamiq Sans", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.balsamiq-sans-bold-italic {
-    font-family: "Balsamiq Sans", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.rubik-bubbles-regular {
-    font-family: "Rubik Bubbles", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
