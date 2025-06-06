@@ -19,12 +19,14 @@ ul{
     }
     /*Header style start*/
     .header {
-        width: 100%;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
         height: 70px;
         background-color: #261374;
-        display: flex;
-        align-items: center;
-        box-sizing: border-box;
     }
     .header-logo {
         height: 55px;
@@ -37,6 +39,8 @@ ul{
 
     body {
         margin: 0;
+        max-width: 100%;
+        overflow-x: hidden;
     }
     .intro {
         background: url(фон2.jpg) no-repeat center;
@@ -179,16 +183,19 @@ img.fullscreen-image {
       display: block;
       margin: 0 auto;
 }
-    .footer {
+.footer {
       background-color: #954baa;
       color: #fff;
       text-align: center;
       padding: 20px 0;
       font-size: 14px;
-      width: 100%;
-      margin: 0;
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
     }
-
 /*+*/
 
 
