@@ -1,29 +1,46 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const sliderContainer = document.getElementById('socSliderContainer');
+    const animatedSections = document.querySelectorAll('.animated-section');
 
-    if (sliderContainer) {
-        const sliderWrapper = sliderContainer.querySelector('.soc-slider-wrapper');
-        const slides = sliderContainer.querySelectorAll('.soc-slide');
-        const prevBtn = sliderContainer.querySelector('.soc-prev-btn');
-        const nextBtn = sliderContainer.querySelector('.soc-next-btn');
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
 
-        let currentIndex = 0;
-
-        const updateSlider = () => {
-            const offset = -currentIndex * 100;
-            sliderWrapper.style.transform = translateX(${offset}%);
-        };
-
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
-            updateSlider();
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
         });
+    }, observerOptions);
 
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
-            updateSlider();
-        });
+    animatedSections.forEach(section => {
+        observer.observe(section);
+    });
 
-        updateSlider();
-    }
+    const sliderWrapper = document.querySelector('.education-slider-wrapper');
+    const slides = document.querySelectorAll('.education-slide');
+    const prevBtn = document.querySelector('.education-prev-btn');
+    const nextBtn = document.querySelector('.education-next-btn');
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+
+    const updateSliderPosition = () => {
+        sliderWrapper.style.transform = `translateX(${-currentIndex * 100}%)`;
+    };
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalSlides - 1;
+        updateSliderPosition();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex < totalSlides - 1) ? currentIndex + 1 : 0;
+        updateSliderPosition();
+    });
+
+    window.addEventListener('resize', updateSliderPosition);
 });
