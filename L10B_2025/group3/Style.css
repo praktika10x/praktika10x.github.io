@@ -125,46 +125,14 @@ p{
 ul{
   font-family: "Comic_Sans_MS", cursive;
   margin: 20px 25% ;
-  
+
 }
 
 /*КАРТИ ГОЛОВНА*/
-.cardnav{
-  height: 320px;
-  width: 250px;
-  border-radius: 15px;
-  padding: 15px;
-  box-shadow: 6px 8px 8px 0 rgba(38, 19, 116, 0.45);
-  background: linear-gradient(180deg, rgba(149, 75, 170, 0.65) 65.38%, rgba(255, 255, 255, 0.65) 99.99%);
-}
 .cardnav:hover {
   transition: 1s;
   transform: scale(1.05);
 }
-
-.imgnav{
-  width: 150px;
-  height: 150px;
-  display: block;
-  border-radius: 100%;
-  margin: 0 20%;
-}
-.namenav{
-  font-family: "Press Start 2P", system-ui;
-  text-align: center;
-  color: black;
-  padding: 0; 
-  margin:  5px 0;
-}
-.name{
-  margin:0;
-}
-a{
-  color: #000;
-  text-decoration: none;
-}
-
-/*КАРТИ ГОЛОВНА*/
 .cardnav{
   height: 320px;
   width: 250px;
@@ -232,7 +200,7 @@ a{
   font-weight: 500;
   font-size: 25px;
   line-height: 32px;
-  margin-bottom: 20px;
+  margin:0 0 0 20px  ;
 }
 
 .cart-desc {
