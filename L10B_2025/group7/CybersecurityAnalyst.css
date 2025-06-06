@@ -251,7 +251,7 @@ section p {
 
 .обов'язок-row {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 30px;
     background-color: #fcfcfc;
     border-radius: 15px;
@@ -269,17 +269,25 @@ section p {
     flex-direction: row-reverse;
 }
 
-.обов'язок-item {
-    flex: 1;
-    min-width: 300px;
-}
-
+.обов'язок-item,
 .гіфка-item {
     flex: 1;
-    min-width: 300px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 0;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    text-align: center;
+}
+
+
+.гіфка-item {
+    background-color: #fcfcfc;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .гіфка-item img {
@@ -299,8 +307,8 @@ section p {
 }
 
 .info-block .block-icon {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     background-color: #e0f2f7;
     border-radius: 50%;
     display: flex;
@@ -325,7 +333,9 @@ section p {
 .info-block p {
     font-size: 1em;
     color: #666;
+    text-align: justify;
 }
+
 
 .tools-list {
     list-style: none;
@@ -348,6 +358,7 @@ section p {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     opacity: 0;
     transform: translateY(20px);
+    text-align: left;
 }
 
 .animated-section.is-visible .tool-item {
@@ -370,16 +381,18 @@ section p {
 }
 
 .tool-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
 }
 
 .tool-item span {
     font-size: 16px;
     color: #333;
+    flex-grow: 1;
 }
 
 .product-gallery {
@@ -448,22 +461,22 @@ section p {
 }
 
 .image-placeholder img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .slider-container.fixed-width {
-    max-width: 900px; /* Збільшена ширина */
-    background-color: #fff; /* Білий фон */
+    max-width: 1000px;
+    background-color: transparent;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     margin: 30px auto;
     overflow: hidden;
     position: relative;
-    height: 380px; /* Збільшена висота */
+    height: 450px;
 }
 
 .slider-container.fixed-width .slider-wrapper {
@@ -481,25 +494,27 @@ section p {
     align-items: center;
     text-align: center;
     justify-content: center;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .slider-container.fixed-width .slider-logo {
-    max-width: 120px; /* Зменшений розмір логотипу */
-    max-height: 80px; /* Зменшений розмір логотипу */
-    height: auto;
-    margin-bottom: 15px;
-    object-fit: contain;
+    display: none;
 }
 
 .slider-container.fixed-width h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-bottom: 10px;
-    color: #222;
+    color: #fff;
 }
 
 .slider-container.fixed-width p {
-    font-size: 1em;
-    color: #666;
+    font-size: 1.1em;
+    color: #fff;
     margin-bottom: 15px;
 }
 
@@ -546,7 +561,7 @@ section p {
     display: inline-block;
     width: 10px;
     height: 10px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
@@ -608,7 +623,6 @@ footer .team-info {
 }
 
 
-/* Animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -644,10 +658,9 @@ footer .team-info {
 
 .fade-in-text {
     animation: fadeInText 1.5s ease-out forwards;
-    animation-play-state: paused; /* Controlled by JS */
+    animation-play-state: paused;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     .container {
         padding: 0 15px;
@@ -678,6 +691,7 @@ footer .team-info {
 
     .обов'язок-row {
         flex-direction: column;
+        align-items: center;
         text-align: center;
         gap: 20px;
         padding: 20px;
@@ -686,11 +700,12 @@ footer .team-info {
     .обов'язок-row.reversed {
         flex-direction: column;
     }
-
+    
     .обов'язок-item,
     .гіфка-item {
-        min-width: unset;
         width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
     }
 
     .гіфка-item img {
@@ -706,24 +721,19 @@ footer .team-info {
         max-width: 100%;
         margin: 30px 15px;
         padding: 15px;
-        height: auto; /* Дозволяє висоті адаптуватися */
+        height: 400px;
     }
 
     .slider-container.fixed-width .slide {
         padding: 15px;
     }
 
-    .slider-container.fixed-width .slider-logo {
-        max-width: 100px;
-        max-height: 70px;
-    }
-
     .slider-container.fixed-width h3 {
-        font-size: 1.3em;
+        font-size: 1.6em;
     }
 
     .slider-container.fixed-width p {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .slider-container.fixed-width .prev-btn,
@@ -808,9 +818,14 @@ footer .team-info {
         padding: 20px;
     }
 
-    .icon-circle, .product-icon, .info-block .block-icon, .tool-icon {
+    .icon-circle, .product-icon, .info-block .block-icon {
         width: 60px;
         height: 60px;
+    }
+
+    .tool-icon {
+        width: 50px;
+        height: 50px;
     }
 
     .icon-circle img, .info-block .block-icon img {
@@ -833,19 +848,15 @@ footer .team-info {
     .slider-container.fixed-width {
         padding: 10px;
         margin: 20px 10px;
-    }
-
-    .slider-container.fixed-width .slider-logo {
-        max-width: 80px;
-        max-height: 50px;
+        height: 350px;
     }
 
     .slider-container.fixed-width h3 {
-        font-size: 1.1em;
+        font-size: 1.4em;
     }
 
     .slider-container.fixed-width p {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 
     .slider-container.fixed-width .prev-btn,
