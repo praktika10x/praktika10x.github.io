@@ -1,9 +1,9 @@
     @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tektur:wght@400..900&display=swap");
 
-    .tektur-<uniquifier > {
+    .tektur {
         font-family: "Tektur", sans-serif;
         font-optical-sizing: auto;
-        font-weight: <weight>;
+        font-weight: 400;
         font-style: normal;
         font-variation-settings: "wdth" 100;
     }
@@ -45,11 +45,7 @@
         width: 100%;
         height: 450px;
     }
-ul{
-  font-family: "Comic_Sans_MS", cursive;
-  margin: 20px 25% ;
- font-size: 30px;
-}
+
     h1 {
         font-family: "Press Start 2P", system-ui;
         font-weight: 400;
@@ -82,10 +78,10 @@ ul{
         font-weight: 64;
         font-style: normal;
         color: #261374;
-        font-size: 64px;
+        font-size: 50px;
         line-height: 40px;
-        margin: 0;
-        padding-bottom: 35px;
+        margin: 15px 25%;
+        padding-top: 55px;
     }
 
     h2:not(.subtitle)::after {
@@ -99,10 +95,13 @@ ul{
     }
 
     p {
-        margin: 0px 70px 30px 70px;
+       margin: 20px 25% ;
         font-family: "Comic Sans MS", cursive, sans-serif;
-        font-size: 24px;
+        font-size: 20px;
     }
+.pprod{
+  margin: 0px 70px 30px 70px;
+}
 
     .wrap {
       display: flex;
@@ -120,7 +119,7 @@ ul{
       padding: 15px;
       text-align: center;
       color: #333;
-      box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
+      box-shadow: 2px 2px 8px rgb(90, 0, 102, 0.8);
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
@@ -139,7 +138,7 @@ ul{
 
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 4px 4px 12px rgba(135, 206, 235, 0.8);
+      box-shadow: 4px 4px 12px rgb(90, 0, 102, 0.8);
     }
 
     .card img {
@@ -157,13 +156,10 @@ ul{
       padding: 15px;
       text-align: center;
       color: #333;
-      box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
+      box-shadow: 2px 2px 8px rgb(90, 0, 102, 0.8);
       transition: transform 0.3s, box-shadow 0.3s;
     }
-.card.card_educational:nth-child(even){
-    box-shadow: 6px 8px 8px 0 rgba(38, 19, 116, 0.45);
-    background: linear-gradient(180deg, rgb(255, 218, 143) 99.98%, rgba(255, 255, 255, 0.65) 99.99%);
-}
+
     .card.card-salary {
       background-color: #f5bb47;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -177,7 +173,7 @@ ul{
       font-weight: 500;
       font-size: 25px;
       line-height: 32px;
-      margin-bottom: 20px;
+      margin:0 0 0 20px  ;
     }
 
     .cart-desc {
@@ -186,13 +182,19 @@ ul{
       margin-bottom: 30px;
       text-align: center;
     }
-    img.fullscreen-image {
-      width: 80%;
-      height: auto;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto;
-    }
+.graf{
+     display: flex;
+      justify-content: center;
+      align-items: center;    
+      height: 100vh;
+}
+img.fullscreen-image {
+    width: 60vw;
+    height: auto;
+    display: block;
+    margin: 0;
+    
+}
     .footer {
       background-color: #954baa;
       color: #fff;
