@@ -1,94 +1,37 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const sliderContainer = document.getElementById('sliderContainer');
-
-    if (sliderContainer) {
-        const sliderWrapper = sliderContainer.querySelector('.slider-wrapper');
-        const slides = sliderWrapper.querySelectorAll('.slide');
-        const prevBtn = sliderContainer.querySelector('.prev-btn');
-        const nextBtn = sliderContainer.querySelector('.next-btn');
-
-        let currentIndex = 0;
-        let autoSlideInterval;
-        const autoSlideDelay = 6000;
-
-        const totalSlides = slides.length;
-
-        if (totalSlides <= 1) {
-            if (prevBtn) prevBtn.style.display = 'none';
-            if (nextBtn) nextBtn.style.display = 'none';
-            return;
-        }
-
-        function updateSliderPosition() {
-            sliderWrapper.style.transform = `translateX(${-currentIndex * 100}%)`;
-        }
-
-        const goToNextSlide = () => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            updateSliderPosition();
-        };
-
-        const goToPrevSlide = () => {
-            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-            updateSliderPosition();
-        };
-
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => {
-                goToNextSlide();
-                resetAutoSlide();
-            });
-        }
-
-        if (prevBtn) {
-            prevBtn.addEventListener('click', () => {
-                goToPrevSlide();
-                resetAutoSlide();
-            });
-        }
-
-        const startAutoSlide = () => {
-            stopAutoSlide();
-            autoSlideInterval = setInterval(goToNextSlide, autoSlideDelay);
-        };
-
-        const stopAutoSlide = () => {
-            clearInterval(autoSlideInterval);
-        };
-
-        const resetAutoSlide = () => {
-            stopAutoSlide();
-            startAutoSlide();
-        };
-
-        updateSliderPosition();
-        startAutoSlide();
-
-        sliderContainer.addEventListener('mouseenter', stopAutoSlide);
-        sliderContainer.addEventListener('mouseleave', startAutoSlide);
+document.addEventListener('DOMContentLoaded', function() {
+    const sliderContainer = document.getElementById('socSliderContainer');
+    if (!sliderContainer) {
+        return;
     }
 
-    const animatedSections = document.querySelectorAll('.animated-section');
+    const sliderWrapper = sliderContainer.querySelector('.soc-slider-wrapper');
+    const slides = sliderWrapper.querySelectorAll('.soc-slide');
+    const prevBtn = sliderContainer.querySelector('.soc-prev-btn');
+    const nextBtn = sliderContainer.querySelector('.soc-next-btn');
 
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
+    let currentIndex = 0;
+    const totalSlides = slides.length;
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                if (entry.target.classList.contains('fade-in-text')) {
-                    entry.target.style.animationPlayState = 'running';
-                }
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
+    function updateSliderPosition() {
+        const offset = -currentIndex * 100;
+        sliderWrapper.style.transform = `translateX(${offset}%)`;
+    }
 
-    animatedSections.forEach(section => {
-        observer.observe(section);
-    });
+    function showNextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSliderPosition();
+    }
+
+    function showPrevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSliderPosition();
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener('click', showPrevSlide);
+    }
+
+    if (nextBtn) {
+        nextBtn.addEventListener('click', showNextSlide);
+    }
 });
