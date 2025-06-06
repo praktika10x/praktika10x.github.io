@@ -178,10 +178,11 @@ h3{
     }
 
 img.fullscreen-image {
-  width: 60vw;
-  height: auto;
-  display: block;
-  margin: 0 ;
+  width: 80%;Add commentMore actions
+      height: auto;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
 }
     .footer {
       background-color: #954baa;
