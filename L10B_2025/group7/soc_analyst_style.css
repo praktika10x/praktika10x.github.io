@@ -1,31 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap');
 
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f7f6;
+    background-color: #f8f8f8;
     color: #333;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: url('https://www.5.ua/media/pictures/original/93304.JPG?t=1498579915'); 
+    background-image: url('https://libertas.mk/wp-content/uploads/2024/09/20240926155821_big_730x400_16.webp');
     background-size: cover;
-    background-position: center; 
-    background-attachment: fixed; 
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .container {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
-    background-color: rgba(255, 255, 255, 0.9); 
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
-    color: #2c3e50; 
+    color: #000000;
     text-align: center;
     margin-bottom: 25px;
 }
@@ -34,12 +35,13 @@ h1 {
     font-size: 2.8em;
     margin-top: 40px;
     margin-bottom: 30px;
-    color: #2980b9; 
+    color: #FFD700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 h2 {
     font-size: 2.2em;
-    border-bottom: 2px solid #3498db;
+    border-bottom: 2px solid #FFD700;
     padding-bottom: 10px;
     display: inline-block;
     position: relative;
@@ -61,10 +63,10 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2c3e50; 
+    background-color: #000000;
     padding: 15px 20px;
     color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
 .logo-left {
@@ -77,19 +79,19 @@ p {
     width: auto;
     margin-right: 15px;
     border-radius: 50%;
-    border: 2px solid #3498db;
+    border: 2px solid #FFD700;
 }
 
 .logo-text {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8em;
     font-weight: 700;
-    color: #ecf0f1;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    color: #FFD700;
+    text-shadow: 1px 1px 3px rgba(255,255,255,0.3);
 }
 
 .nav a {
-    color: #ecf0f1;
+    color: #FFFFFF;
     text-decoration: none;
     margin-left: 25px;
     font-weight: 600;
@@ -97,12 +99,12 @@ p {
 }
 
 .nav a:hover {
-    color: #3498db;
+    color: #FFD700;
     transform: translateY(-2px);
 }
 
 .language-switcher a {
-    color: #ecf0f1;
+    color: #FFFFFF;
     text-decoration: none;
     margin-left: 10px;
     font-weight: 600;
@@ -110,19 +112,18 @@ p {
 }
 
 .language-switcher a:hover {
-    color: #3498db;
+    color: #FFD700;
 }
 
-
 .highlight-box {
-    background-color: #d3eaf7;
-    border-left: 5px solid #3498db; 
+    background-color: #FFFACD;
+    border-left: 5px solid #FFD700;
     padding: 20px;
     margin: 30px 0;
     border-radius: 8px;
     font-size: 1.1em;
     color: #2c3e50;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .soc-section {
@@ -131,7 +132,7 @@ p {
 }
 
 .section-alt-background {
-    background-color: #eaf3f8;
+    background-color: #f2f2f2;
     padding: 40px 0;
     margin-left: -20px;
     margin-right: -20px;
@@ -161,29 +162,29 @@ p {
 
 .soc-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 .soc-icon-circle {
     width: 80px;
     height: 80px;
-    background-color: #3498db;
+    background-color: #FFD700;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto 20px auto;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 .soc-icon-circle img {
     width: 50px;
     height: 50px;
-    filter: invert(100%);
+    filter: none;
 }
 
 .soc-card h3 {
-    color: #2c3e50;
+    color: #000000;
     margin-top: 10px;
     margin-bottom: 15px;
     font-size: 1.5em;
@@ -201,14 +202,14 @@ p {
 }
 
 .tools-list li, .roadmap-list li, .products-list li, .sample-products-list li, .education-list li {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
+    background-color: #FFFFFF;
+    border: 1px solid #FFD700;
     border-radius: 5px;
     margin-bottom: 10px;
     padding: 15px 20px;
     display: flex;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transition: transform 0.2s ease;
 }
 
@@ -217,15 +218,17 @@ p {
 }
 
 .roadmap-list li:before, .education-list li:before {
-    content: '✅';
+    content: '★';
     margin-right: 15px;
     font-size: 1.2em;
+    color: #FFD700;
 }
 
 .tools-list li:before, .products-list li:before, .sample-products-list li:before {
-    content: '➡️'; 
+    content: '➡️';
     margin-right: 15px;
     font-size: 1.2em;
+    color: #000000;
 }
 
 .data-table {
@@ -244,18 +247,18 @@ p {
 }
 
 .data-table th {
-    background-color: #3498db;
-    color: white;
+    background-color: #000000;
+    color: #FFD700;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .data-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #fdfdfd;
 }
 
 .data-table tbody tr:hover {
-    background-color: #e0f2f7;
+    background-color: #FFFBEA;
 }
 
 .footnote {
@@ -272,7 +275,7 @@ p {
     margin: 40px auto;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 .soc-slider-wrapper {
@@ -289,9 +292,10 @@ p {
 }
 
 .soc-slide h3 {
-    color: #2980b9;
+    color: #FFD700;
     font-size: 1.7em;
     margin-bottom: 15px;
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.3);
 }
 
 .soc-slide p {
@@ -303,7 +307,7 @@ p {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     border: none;
     padding: 12px 18px;
@@ -323,56 +327,9 @@ p {
 }
 
 .soc-prev-btn:hover, .soc-next-btn:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
-.image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
-    justify-items: center;
-}
-
-.image-gallery img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border: 5px solid #ecf0f1;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.image-gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-}
-
-.image-frame-rounded {
-    border-radius: 15px;
-}
-
-.image-frame-circle {
-    border-radius: 50%;
-}
-
-.image-frame-square {
-    border-radius: 0;
-}
-
-.image-frame-polaroid {
-    background-color: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
-    transform: rotate(3deg);
-}
-
-.image-frame-polaroid:hover {
-    transform: rotate(0deg) scale(1.05);
-}
-
-/* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -399,13 +356,14 @@ p {
 .anim-scale-in { animation: scaleIn 1s ease-out forwards; }
 
 footer {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: #000000;
+    color: #FFFFFF;
     text-align: center;
     padding: 20px;
     margin-top: 50px;
     font-size: 0.9em;
     position: relative;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.4);
 }
 
 .team-info {
@@ -415,7 +373,7 @@ footer {
 .sources-emoji {
     font-size: 1.8em;
     text-decoration: none;
-    color: white;
+    color: #FFD700;
     position: absolute;
     right: 20px;
     bottom: 15px;
@@ -423,7 +381,7 @@ footer {
 }
 
 .sources-emoji:hover {
-    transform: rotate(10deg) scale(1.1);
+    transform: rotate(15deg) scale(1.2);
 }
 
 @media (max-width: 992px) {
@@ -446,11 +404,6 @@ footer {
 
     .soc-card {
         max-width: 90%;
-    }
-
-    .image-gallery {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 15px;
     }
 }
 
@@ -512,13 +465,10 @@ footer {
         font-size: 1.2em;
     }
 
-    .image-gallery {
-        grid-template-columns: 1fr;
-    }
-
-    .image-gallery img {
-        height: auto;
-        max-width: 90%;
+    body {
+        background-attachment: scroll;
+        background-size: contain;
+        background-repeat: repeat;
     }
 }
 
@@ -536,7 +486,7 @@ footer {
     }
 
     .soc-card {
-        min-width: unset; 
+        min-width: unset;
         width: 100%;
     }
 }
