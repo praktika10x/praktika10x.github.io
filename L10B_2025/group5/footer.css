@@ -246,6 +246,11 @@ footer .sourses a {text-decoration: none;}
 .text-field {
     width: 85%;
 }
+
+.sourses-lang {
+  justify-content: center;
+  align-items: center;
+} 
 }
 
 @media (max-width: 350px) {
