@@ -1,93 +1,103 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.roadmap-flashcard-inner, .deliverable-item').forEach(card => {
+    let lastScrollTop = 0;
+    const logoBar = document.querySelector('.logo-bar');
+    if (logoBar) {
+        window.addEventListener('scroll', () => {
+            let st = window.pageYOffset || document.documentElement.scrollTop;
+            if (st > lastScrollTop && st > logoBar.offsetHeight) {
+                logoBar.classList.add('hidden-top-bar');
+            } else {
+                logoBar.classList.remove('hidden-top-bar');
+            }
+            lastScrollTop = st <= 0 ? 0 : st;
+        });
+    }
+
+    function initializeSlider(containerSelector) {
+        const container = document.querySelector(containerSelector);
+        if (!container) return;
+
+        const wrapper = container.querySelector(`${containerSelector}-wrapper`);
+        const slides = container.querySelectorAll(`${containerSelector} .soc-slide, ${containerSelector} .education-slide`);
+        const prevBtn = container.querySelector(`${containerSelector.replace('-container', '')}-prev-btn`);
+        const nextBtn = container.querySelector(`${containerSelector.replace('-container', '')}-next-btn`);
+        const dotsContainer = container.querySelector(`${containerSelector.replace('-container', '')}-dots`);
+
+        let currentIndex = 0;
+        let slideInterval;
+
+        const totalSlides = slides.length;
+
+        function updateSlider() {
+            wrapper.style.transform = `translateX(${-currentIndex * 100}%)`;
+            updateDots();
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateSlider();
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        }
+
+        function createDots() {
+            if (!dotsContainer) return;
+            dotsContainer.innerHTML = '';
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement('span');
+                dot.classList.add('soc-dot');
+                if (i === currentIndex) {
+                    dot.classList.add('active');
+                }
+                dot.addEventListener('click', () => goToSlide(i));
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        function updateDots() {
+            if (!dotsContainer) return;
+            const dots = dotsContainer.querySelectorAll('.soc-dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        prevBtn.addEventListener('click', () => {
+            clearInterval(slideInterval);
+            prevSlide();
+            startAutoSlide();
+        });
+        nextBtn.addEventListener('click', () => {
+            clearInterval(slideInterval);
+            nextSlide();
+            startAutoSlide();
+        });
+
+        function startAutoSlide() {
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        createDots();
+        updateSlider();
+        startAutoSlide();
+    }
+
+    initializeSlider('.soc-slider-container');
+    initializeSlider('.tools-slider-container');
+    initializeSlider('.education-slider-container');
+
+    const flashcards = document.querySelectorAll('.roadmap-flashcard');
+    flashcards.forEach(card => {
         card.addEventListener('click', () => {
             card.classList.toggle('is-flipped');
         });
     });
-
-    const heroSection = document.querySelector('.hero-section');
-    if (heroSection) {
-        for (let i = 0; i < 6; i++) {
-            const circle = document.createElement('div');
-            circle.classList.add('floating-circle', `circle-${i + 1}`);
-            heroSection.appendChild(circle);
-        }
-    }
-
-    let lastScrollY = window.scrollY;
-    const logoBar = document.querySelector('.logo-bar');
-    const scrollThreshold = 100;
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > lastScrollY && window.scrollY > scrollThreshold) {
-            logoBar.classList.add('hidden-top-bar');
-        } else if (window.scrollY < lastScrollY || window.scrollY <= scrollThreshold) {
-            logoBar.classList.remove('hidden-top-bar');
-        }
-        lastScrollY = window.scrollY;
-    });
-
-    logoBar.addEventListener('mouseenter', () => {
-        logoBar.classList.remove('hidden-top-bar');
-    });
-
-    logoBar.addEventListener('mouseleave', () => {
-        if (window.scrollY > scrollThreshold) {
-            logoBar.classList.add('hidden-top-bar');
-        }
-    });
-
-    function setupSlider(containerId) {
-        const container = document.getElementById(containerId);
-        if (!container) return;
-
-        const wrapper = container.querySelector('.ir-slider-wrapper');
-        const slides = wrapper.querySelectorAll('.ir-slide');
-        const prevBtn = container.querySelector(`[data-slider="${containerId}"][class*="prev"]`);
-        const nextBtn = container.querySelector(`[data-slider="${containerId}"][class*="next"]`);
-        const dotsContainer = container.querySelector('.ir-slider-dots');
-
-        let currentIndex = 0;
-
-        function updateSlider() {
-            const offset = -currentIndex * slides[0].offsetWidth;
-            wrapper.style.transform = `translateX(${offset}px)`;
-            updateDots();
-        }
-
-        function updateDots() {
-            dotsContainer.innerHTML = '';
-            slides.forEach((_, idx) => {
-                const dot = document.createElement('span');
-                dot.classList.add('ir-slider-dot');
-                if (idx === currentIndex) {
-                    dot.classList.add('active');
-                }
-                dot.addEventListener('click', () => {
-                    currentIndex = idx;
-                    updateSlider();
-                });
-                dotsContainer.appendChild(dot);
-            });
-        }
-
-        if (prevBtn) {
-            prevBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
-                updateSlider();
-            });
-        }
-
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
-                updateSlider();
-            });
-        }
-
-        if (slides.length > 0) {
-            updateSlider();
-            window.addEventListener('resize', updateSlider);
-        }
-    }
 });
