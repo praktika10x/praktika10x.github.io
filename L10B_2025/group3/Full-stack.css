@@ -232,8 +232,7 @@ img.fullscreen-image {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        box-sizing: border-box;
-        max-width: 80%;
+        box-sizing: border-box;;
         text-align: center;
     }
 
