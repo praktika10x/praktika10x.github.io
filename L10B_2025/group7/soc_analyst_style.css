@@ -3,8 +3,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #222;
-    color: #f0f0f0;
+    background-color: #000;
+    color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-image: url('https://www.5.ua/media/pictures/original/93304.JPG?t=1498579915');
@@ -19,7 +19,7 @@ body {
     padding: 0 20px;
     background-color: rgba(0, 0, 0, 0.85);
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(255, 255, 0, 0.3);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
 }
 
 h1, h2, h3 {
@@ -54,7 +54,7 @@ h3 {
 
 p {
     margin-bottom: 15px;
-    color: #e0e0e0; 
+    color: #f0f0f0;
 }
 
 .logo-bar {
@@ -64,7 +64,7 @@ p {
     background-color: #000;
     padding: 15px 20px;
     color: #FFD700;
-    box-shadow: 0 2px 10px rgba(255, 255, 0, 0.4); 
+    box-shadow: 0 2px 10px rgba(255, 255, 0, 0.4);
 }
 
 .logo-left {
@@ -97,7 +97,7 @@ p {
 }
 
 .nav a:hover {
-    color: #fff; 
+    color: #fff;
     transform: translateY(-2px);
 }
 
@@ -149,7 +149,7 @@ p {
 .soc-card {
     background-color: #333;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.15); 
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.15);
     padding: 25px;
     text-align: center;
     flex: 1;
@@ -166,7 +166,7 @@ p {
 .soc-icon-circle {
     width: 80px;
     height: 80px;
-    background-color: #FFD700; 
+    background-color: #FFD700;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -193,17 +193,70 @@ p {
     color: #f0f0f0;
 }
 
-.tools-list, .roadmap-list, .products-list, .sample-products-list {
+.skills-list, .roadmap-list, .sample-products-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.skills-list li, .roadmap-list li, .sample-products-list li {
+    background-color: #333;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    flex: 1 1 calc(33% - 20px);
+    min-width: 280px;
+    display: flex;
+    align-items: center;
+}
+
+.skills-list li:hover, .roadmap-list li:hover, .sample-products-list li:hover {
+    transform: translateX(5px);
+    background-color: #555;
+}
+
+.skills-list li span, .roadmap-list li span, .sample-products-list li span {
+    flex-grow: 1;
+}
+
+.skills-list li:before {
+    content: '⭐';
+    margin-right: 15px;
+    font-size: 1.2em;
+    color: #FFD700;
+}
+
+.roadmap-list li:before {
+    content: '➡️';
+    margin-right: 15px;
+    font-size: 1.2em;
+    color: #FFD700;
+}
+
+.sample-products-list li:before {
+    content: '📄';
+    margin-right: 15px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.tools-with-images-list {
     list-style: none;
     padding: 0;
     margin-top: 20px;
 }
 
-.tools-list li, .roadmap-list li, .products-list li, .sample-products-list li {
-    background-color: #333; 
+.tools-with-images-list li {
+    background-color: #333;
     border: 1px solid #FFD700;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding: 15px 20px;
     display: flex;
     align-items: center;
@@ -211,29 +264,32 @@ p {
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.tools-list li:hover, .roadmap-list li:hover, .products-list li:hover, .sample-products-list li:hover {
+.tools-with-images-list li:hover {
     transform: translateX(5px);
-    background-color: #444;
+    background-color: #555;
 }
 
-.roadmap-list li:before {
-    content: '✅';
-    margin-right: 15px;
-    font-size: 1.2em;
+.tools-with-images-list li img {
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
+    filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(255, 215, 0, 0.7));
 }
 
-.tools-list li:before, .products-list li:before, .sample-products-list li:before {
-    content: '➡️'; 
+.tools-with-images-list li div {
+    color: #f0f0f0;
+}
+
+.tools-with-images-list li strong {
     color: #FFD700;
-    margin-right: 15px;
-    font-size: 1.2em;
+    margin-right: 5px;
 }
 
 .data-table {
     width: 100%;
     border-collapse: collapse;
     margin: 30px 0;
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2); 
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
     border-radius: 8px;
     overflow: hidden;
 }
@@ -241,23 +297,23 @@ p {
 .data-table th, .data-table td {
     padding: 15px;
     text-align: left;
-    border-bottom: 1px solid #555; 
+    border-bottom: 1px solid #555;
     color: #f0f0f0;
 }
 
 .data-table th {
-    background-color: #FFD700; 
-    color: #000; 
+    background-color: #FFD700;
+    color: #000;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .data-table tr:nth-child(even) {
-    background-color: #333; 
+    background-color: #333;
 }
 
 .data-table tbody tr:hover {
-    background-color: #555; 
+    background-color: #555;
 }
 
 .footnote {
@@ -286,7 +342,7 @@ p {
     min-width: 100%;
     box-sizing: border-box;
     padding: 30px;
-    background-color: #333; 
+    background-color: #333;
     text-align: center;
     color: #f0f0f0;
 }
@@ -309,16 +365,15 @@ p {
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-    background-color: #000; 
-    padding: 10px; 
+    background-color: #fff;
+    padding: 10px;
 }
-
 
 .soc-prev-btn, .soc-next-btn, .education-prev-btn, .education-next-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 215, 0, 0.6); 
+    background-color: rgba(255, 215, 0, 0.6);
     color: #000;
     border: none;
     padding: 12px 18px;
@@ -341,10 +396,9 @@ p {
     background-color: #FFD700;
 }
 
-
 footer {
-    background-color: #000; 
-    color: #FFD700; 
+    background-color: #000;
+    color: #FFD700;
     text-align: center;
     padding: 20px;
     margin-top: 50px;
@@ -372,25 +426,8 @@ footer {
 }
 
 @media (max-width: 992px) {
-    h1 {
-        font-size: 2.4em;
-    }
-
-    h2 {
-        font-size: 1.9em;
-    }
-
-    .nav a {
-        margin-left: 15px;
-    }
-
-    .soc-cards-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .soc-card {
-        max-width: 90%;
+    .skills-list li, .roadmap-list li, .sample-products-list li {
+        flex: 1 1 calc(50% - 15px);
     }
 }
 
@@ -450,6 +487,17 @@ footer {
     .soc-prev-btn, .soc-next-btn, .education-prev-btn, .education-next-btn {
         padding: 8px 12px;
         font-size: 1.2em;
+    }
+
+    .skills-list li, .roadmap-list li, .sample-products-list li, .tools-with-images-list li {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .tools-with-images-list li img {
+        height: 30px;
+        margin-right: 10px;
     }
 }
 
