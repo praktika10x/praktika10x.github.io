@@ -268,7 +268,6 @@ a{
   .headerhome > .ulnav {
       grid-column: 1 / span 1;
       grid-row: 1 / span 6;
-      width: 100%;
       height: 100vh;
       list-style: none;
       margin: 0 10px;
@@ -283,12 +282,13 @@ a{
     }
 
   .anav {
+    display: flex;
     margin: 10px 0; /* менше відступів */
     font-size: 10px; /* зменшений текст */
   }
 
   .pnav {
-    font-size: 80px;
+    font-size: 45px;
     text-align: center;
     grid-column: 2 / 3 span; 
     margin: 0;
