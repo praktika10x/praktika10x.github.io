@@ -205,8 +205,8 @@ p {
 .soc-icon-circle img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    filter: brightness(0) invert(1);
+    object-fit: contain;
+    filter: none;
 }
 
 .soc-card h3 {
@@ -418,8 +418,8 @@ p {
 .tools-slider-container .soc-slide .soc-icon-circle img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    filter: brightness(0) invert(1);
+    object-fit: contain;
+    filter: none;
 }
 
 .education-slide img {
@@ -629,10 +629,8 @@ p {
         height: 70px;
     }
     .soc-icon-circle img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(0) invert(1);
+        width: 45px;
+        height: 45px;
     }
     .soc-card h3 {
         font-size: 1.3em;
