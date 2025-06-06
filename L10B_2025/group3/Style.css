@@ -127,6 +127,27 @@ ul{
   margin: 20px 25% ;
 
 }
+h2 {
+        font-family: Tektur, sans-serif;
+        font-weight: 64;
+        font-style: normal;
+        color: #261374;
+        font-size: 50px;
+        line-height: 40px;
+        margin: 15px 10%;
+        padding-top: 55px;
+      text-align: left;
+    }
+
+    h2:not(.subtitle)::after {
+        display: block;
+        content: "";
+        width: 35%;
+        height: 4px;
+        background-color: #ee46a5;
+        margin: 15px 0 0 0;
+        border-radius: 3px;
+    }
 
 /*КАРТИ ГОЛОВНА*/
 .cardnav:hover {
