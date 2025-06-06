@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const animatedSections = document.querySelectorAll('.animated-section');
+    const animatedSections = document.querySelectorAll('.info-section');
 
     const observerOptions = {
         root: null,
@@ -11,12 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('is-visible');
-                if (entry.target.classList.contains('hero-section')) {
-                    const heroText = entry.target.querySelector('.fade-in-text');
-                    if (heroText) {
-                        heroText.style.animationPlayState = 'running';
-                    }
-                }
                 observer.unobserve(entry.target);
             }
         });
