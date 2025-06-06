@@ -6,49 +6,65 @@ document.addEventListener('DOMContentLoaded', () => {
         const slides = sliderWrapper.querySelectorAll('.slide');
         const prevBtn = sliderContainer.querySelector('.prev-btn');
         const nextBtn = sliderContainer.querySelector('.next-btn');
+        const dotsContainer = sliderContainer.querySelector('.slider-dots'); 
 
         let currentIndex = 0;
         let autoSlideInterval;
-        const autoSlideDelay = 6000;
+        const autoSlideDelay = 6000; д
 
         const totalSlides = slides.length;
 
+        
         if (totalSlides <= 1) {
             if (prevBtn) prevBtn.style.display = 'none';
             if (nextBtn) nextBtn.style.display = 'none';
+            if (dotsContainer) dotsContainer.style.display = 'none';
             return;
         }
 
+        
         function updateSliderPosition() {
             sliderWrapper.style.transform = `translateX(${-currentIndex * 100}%)`;
+            updateDots(); 
         }
 
+        
         const goToNextSlide = () => {
             currentIndex = (currentIndex + 1) % totalSlides;
             updateSliderPosition();
         };
 
+        
         const goToPrevSlide = () => {
             currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
             updateSliderPosition();
         };
 
+        
+        const goToSlide = (index) => {
+            currentIndex = index;
+            updateSliderPosition();
+            resetAutoSlide(); 
+        };
+
+        
         if (nextBtn) {
             nextBtn.addEventListener('click', () => {
                 goToNextSlide();
-                resetAutoSlide();
+                resetAutoSlide(); 
             });
         }
 
         if (prevBtn) {
             prevBtn.addEventListener('click', () => {
                 goToPrevSlide();
-                resetAutoSlide();
+                resetAutoSlide(); 
             });
         }
 
+        
         const startAutoSlide = () => {
-            stopAutoSlide();
+            stopAutoSlide(); 
             autoSlideInterval = setInterval(goToNextSlide, autoSlideDelay);
         };
 
@@ -61,44 +77,39 @@ document.addEventListener('DOMContentLoaded', () => {
             startAutoSlide();
         };
 
-        updateSliderPosition();
-        startAutoSlide();
+        
+        function createDots() {
+            if (!dotsContainer) return;
 
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement('span');
+                dot.classList.add('slider-dot');
+                dot.setAttribute('data-slide-index', i);
+                dot.addEventListener('click', () => goToSlide(i));
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+       
+        function updateDots() {
+            if (!dotsContainer) return;
+
+            dotsContainer.querySelectorAll('.slider-dot').forEach((dot, index) => {
+                if (index === currentIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+       
+        updateSliderPosition();
+        createDots(); 
+        startAutoSlide(); 
+
+        
         sliderContainer.addEventListener('mouseenter', stopAutoSlide);
         sliderContainer.addEventListener('mouseleave', startAutoSlide);
     }
-
-    const animatedSections = document.querySelectorAll('.animated-section');
-    const fadeInText = document.querySelector('.fade-in-text');
-
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
-
-    const sectionObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-
-                if (entry.target.querySelector('.cards-container') ||
-                    entry.target.querySelector('.info-blocks-container') ||
-                    entry.target.querySelector('.tools-grid') ||
-                    entry.target.querySelector('.product-gallery')) {
-
-                    const elementsWithDelay = entry.target.querySelectorAll('[class*="delay-"]');
-                    elementsWithDelay.forEach((el, index) => {
-                        el.style.transitionDelay = `${index * 0.1}s`;
-                    });
-                }
-                
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    animatedSections.forEach(section => {
-        sectionObserver.observe(section);
-    });
 });
