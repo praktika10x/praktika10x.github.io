@@ -179,7 +179,7 @@ h2:not(.subtitle)::after {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height:40%;
+  height:60%;
 }
 .imgnav{
   width: 150px;
