@@ -245,14 +245,6 @@ a{
 /*Медіазапити*/
 
 @media (max-width: 768px) {
-  .header {
-        width: 100%;
-        height: 50px;
-        background-color: #261374;
-        display: flex;
-        align-items: center;
-        box-sizing: border-box;
-  }
 
   .headerhome{
       width: 100%;
@@ -276,14 +268,11 @@ a{
   }
     .nav {
         width: 100%;
-        height: 20px;
+        height: 50px;
         background-color: #261374;
-        color: white;
-        grid-column: 1 / -1;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 12px 20px;
+        box-sizing: border-box;
     }
 
   .anav {
