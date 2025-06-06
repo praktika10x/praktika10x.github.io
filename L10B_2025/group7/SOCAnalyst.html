@@ -6,6 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="soc_analyst_style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .example-block {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .example-block img {
+            max-width: 80px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .example-block h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .example-block p {
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body class="soc-analyst-page">
 
@@ -392,28 +416,25 @@
 
         <div class="soc-section">
             <h2>Приклади робочого процесу</h2>
-            <div id="socSliderContainer" class="soc-slider-container">
-                <div class="soc-slider-wrapper">
-                    <div class="soc-slide">
-                        <h3>Виявлення аномалії</h3>
-                        <p>Отримано сповіщення від SIEM про велику кількість невдалих спроб входу з невідомої IP-адреси на сервери компанії.</p>
-                    </div>
-                    <div class="soc-slide">
-                        <h3>Аналіз та верифікація</h3>
-                        <p>SOC Analyst перевіряє логи, географічне розташування IP-адреси, шукає інформацію про неї в базах Threat Intelligence. Визначає, чи є це шкідливою активністю (наприклад, брутфорс атака).</p>
-                    </div>
-                    <div class="soc-slide">
-                        <h3>Реагування</h3>
-                        <p>Якщо активність підтверджується як шкідлива, SOC Analyst блокує IP-адресу на фаєрволі, ізолює уражені системи (якщо необхідно) та повідомляє відповідні команди для подальшого розслідування.</p>
-                    </div>
-                    <div class="soc-slide">
-                        <h3>Документування та рекомендації</h3>
-                        <p>Інцидент детально документується, а також надаються рекомендації щодо покращення політик безпеки або налаштувань систем для запобігання подібним інцидентам у майбутньому.</p>
-                    </div>
-                </div>
-                <button class="soc-prev-btn" data-slider="socSliderContainer"><</button>
-                <button class="soc-next-btn" data-slider="socSliderContainer">></button>
-                <div class="soc-slider-dots"></div>
+            <div class="example-block">
+                <img src="https://cdn-icons-png.flaticon.com/512/1925/1925134.png" alt="Виявлення аномалії">
+                <h3>Виявлення аномалії</h3>
+                <p>Отримано сповіщення від SIEM про велику кількість невдалих спроб входу з невідомої IP-адреси на сервери компанії.</p>
+            </div>
+            <div class="example-block">
+                <img src="https://cdn-icons-png.flaticon.com/512/6567/6567206.png" alt="Аналіз та верифікація">
+                <h3>Аналіз та верифікація</h3>
+                <p>SOC Analyst перевіряє логи, географічне розташування IP-адреси, шукає інформацію про неї в базах Threat Intelligence. Визначає, чи є це шкідливою активністю (наприклад, брутфорс атака).</p>
+            </div>
+            <div class="example-block">
+                <img src="https://cdn-icons-png.flaticon.com/512/8099/8099632.png" alt="Реагування">
+                <h3>Реагування</h3>
+                <p>Якщо активність підтверджується як шкідлива, SOC Analyst блокує IP-адресу на фаєрволі, ізолює уражені системи (якщо необхідно) та повідомляє відповідні команди для подальшого розслідування.</p>
+            </div>
+            <div class="example-block">
+                <img src="https://cdn-icons-png.flaticon.com/512/4496/4496393.png" alt="Документування та рекомендації">
+                <h3>Документування та рекомендації</h3>
+                <p>Інцидент детально документується, а також надаються рекомендації щодо покращення політик безпеки або налаштувань систем для запобігання подібним інцидентам у майбутньому.</p>
             </div>
         </div>
     </div>
