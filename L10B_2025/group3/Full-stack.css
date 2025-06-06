@@ -74,9 +74,6 @@ ul{
         text-align: center;
     }
 
-    .main {
-        padding: 50px;
-    }
 
 h3{
   font-family: Tektur, sans-serif;
@@ -275,4 +272,7 @@ img.fullscreen-image {
   gap: 40px;
   flex-wrap: wrap;
   width: 100%;
+}
+.section-title{
+    margin-top:0;
 }
