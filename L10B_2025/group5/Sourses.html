@@ -6,6 +6,7 @@
 	<title>Sourses</title>
 	<link href="Sourses.css" rel="stylesheet">
 	<link href="footer.css" rel="stylesheet">
+	<link href="header-prof.css" rel="stylesheet">
 </head>
 
 <body id="general">
@@ -16,9 +17,9 @@
 			<img src="photos/logo.png" alt="logo">
 		</div>
 		
-		<nav>
+		<nav id="desktop-nav">
 			
-			<ul>
+			<ul class="desktop-menu">
 				<li>
 					<a href="#proj">Навігація <span class="categories-list-triangle"> ◀</span></a>
 					<ul>
@@ -39,7 +40,32 @@
 			</ul>
 		
 		</nav>
-	
+		<div class="mobile-menu-wrapper">
+					<span class="material-symbols-outlined hamburger-icon">
+						dehaze
+					</span>
+			<nav id="mobile-menu-nav">
+	        	     <ul class="mobile-menu">
+			            <li>
+					<a href="#proj">Навігація <span class="categories-list-triangle"> ◀</span></a>
+					<ul>
+				              <li><a href="#MLOps_Engineer">Джерела MLOps Engineer</a></li>
+				              <li><a href="#ML_Engineer">Джерела ML Engeneer</a></li>
+				              <li><a href="#Data_Analyst">Джерела Data analyst</a></li>
+				    </ul>
+				</li>
+				<li>
+					<a href="#proj" class="action">Професії <span class="categories-list-triangle"> ◀</span></a>
+					<ul>
+				              <li><a href="Data_Analyst.html">Data Analyst</a></li>
+				              <li><a href="ML_Engineer.html">ML Engineer</a></li>
+				              <li><a href="MLOps_Engineer.html">MLOps Engineer</a></li>
+				    </ul>
+				</li>
+				<li><a href="index.html" class="active">Головна</a></li>
+			        </ul>
+	    		</nav>
+		</div>
 	</header>
 
 	
