@@ -312,7 +312,7 @@ a{
     margin: 10px 10% ;
     }
   
-    ul{
+    ul:not(.nav){
       font-family: "Comic_Sans_MS", cursive;
       margin: 10px 15% ;
     
