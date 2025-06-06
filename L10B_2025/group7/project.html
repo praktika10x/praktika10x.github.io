@@ -16,7 +16,6 @@
             <div class="nav">
                 <a href="index.html">Головна</a>
                 <a href="project.html" class="active">Про проєкт</a>
-               
             </div>
         </div>
         <div class="language-switcher">
@@ -24,62 +23,68 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container animated-section">
+        <div class="decorative-element shape-1"></div>
+        <div class="decorative-element shape-2"></div>
+        <div class="decorative-element shape-3"></div>
+        <div class="decorative-element shape-4"></div>
+        <div class="decorative-element shape-5"></div>
+        
         <h2>Інформація про проєкт</h2>
         <p>Цей проєкт створено для ознайомлення з професіями в галузі кібербезпека. Ми прагнемо зробити складну інформацію доступною та цікавою для всіх вікових категорій, допомогти молоді визначитися з кар’єрним шляхом та підвищити загальну обізнаність про безпеку в інтернеті.</p>
 
-        <section>
+        <section class="animated-section">
             <h3>Місія Safe WEB squad</h3>
             <p>Наша місія — формувати безпечне цифрове середовище, поширюючи знання про кібербезпеку, сучасні технології та можливості працевлаштування у цій сфері.</p>
         </section>
 
-        <section>
+        <section class="animated-section">
             <h3>Команда проєкту</h3>
             <div class="cards-container">
-                <div class="card">
+                <div class="card delay-1">
                     <h2>Богдан Бухикало</h2>
                     <p>Відповідальний за систему сайту, переходи, сторінки, створення HTML-структури та верстка сторінок </p>
                 </div>
-                <div class="card">
+                <div class="card delay-2">
                     <h2>Дмитро Шепель</h2>
                     <p>Відповідальний за дизайн: шрифти, кольори, оформлення, логотип, банери, створення HTML-структури та верстка сторінок</p>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section class="animated-section">
             <h3>Основні поради для користувачів</h3>
-            <div class="icon-circle">
-                <img src="large_Stattya_pro_kiberbezpeku_fa7c34f287.png" alt="Tips Icon" />
+            <div class="icon-circle delay-3">
+                <img src="https://i.postimg.cc/tJn4N2QZ/large-Stattya-pro-kiberbezpeku-fa7c34f287.png" alt="Tips Icon" />
             </div>
             <ul>
-                <li>Використовуйте складні паролі і змінюйте їх регулярно.</li>
-                <li>Не відкривайте підозрілі листи або вкладення.</li>
-                <li>Оновлюйте операційну систему та програмне забезпечення.</li>
-                <li>Активуйте двофакторну автентифікацію там, де можливо.</li>
-                <li>Регулярно робіть резервні копії важливих даних.</li>
+                <li class="delay-4">Використовуйте складні паролі і змінюйте їх регулярно.</li>
+                <li class="delay-5">Не відкривайте підозрілі листи або вкладення.</li>
+                <li class="delay-6">Оновлюйте операційну систему та програмне забезпечення.</li>
+                <li class="delay-7">Активуйте двофакторну автентифікацію там, де можливо.</li>
+                <li class="delay-8">Регулярно робіть резервні копії важливих даних.</li>
             </ul>
         </section>
 
-        <section>
+        <section class="animated-section">
             <h3>Корисні ресурси</h3>
             <div class="cards-container">
-                <div class="card">
+                <div class="card delay-1">
                     <h2>CISA</h2>
                     <p>Американська агенція з кібербезпеки та безпеки інфраструктури. Офіційні новини та рекомендації.</p>
                     <a href="https://www.cisa.gov/cybersecurity" target="_blank" class="btn">Перейти</a>
                 </div>
-                <div class="card">
+                <div class="card delay-2">
                     <h2>SANS Institute</h2>
                     <p>Провідний інститут навчання кібербезпеці, сертифікації та досліджень.</p>
                     <a href="https://www.sans.org" target="_blank" class="btn">Перейти</a>
                 </div>
-                <div class="card">
+                <div class="card delay-3">
                     <h2>Cybrary</h2>
                     <p>Онлайн-платформа для вивчення кібербезпеки та IT-навичок різних рівнів.</p>
                     <a href="https://www.cybrary.it" target="_blank" class="btn">Перейти</a>
                 </div>
-                <div class="card">
+                <div class="card delay-4">
                     <h2>Krebs on Security</h2>
                     <p>Блог з актуальними новинами, аналітикою та дослідженнями у сфері безпеки.</p>
                     <a href="https://www.krebssecurity.com" target="_blank" class="btn">Перейти</a>
@@ -93,5 +98,29 @@
         <a href="dzherela.html" class="sources-emoji">📝</a>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedSections = document.querySelectorAll('.animated-section');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            animatedSections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
 </body>
 </html>
