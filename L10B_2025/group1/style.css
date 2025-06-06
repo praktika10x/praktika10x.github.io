@@ -48,6 +48,24 @@ h3 {
     font-size: 18px;
     background: white;
 }
+.p1{
+    float:center;
+    grid-column:2/3; grid-row:2/3;
+}
+.r1{
+    float:right;
+    top: -30px;
+    grid-column:3/4; grid-row:2/3;
+}
+.wrap{
+    display:grid;
+    repeat(3, 1fr);
+    justify-content:space-evenly;
+}
+.sayt{
+    margin:auto;
+    width:90%;
+}
 
 .card {
     width: 200px;
