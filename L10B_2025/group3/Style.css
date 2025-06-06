@@ -6,7 +6,29 @@
         display: flex;
         align-items: center;
         box-sizing: border-box;
-    }
+  }
+
+    .nav {
+    width: 70%;
+  }
+
+  .anav {
+    margin: 10px 0; /* менше відступів */
+    font-size: 10px; /* зменшений текст */
+  }
+
+  .pnav {
+    font-size: 40px;
+    text-align: center;
+    grid-column: 1 / -1; /* розтягнути на всю ширину */
+    margin: 0;
+  }
+
+  .logonav {
+    width: 80%;
+    justify-self: center;
+    grid-column: 1 / -1;
+  }
 
     .header-logo {
         height: 35px;
@@ -17,7 +39,6 @@
         height: 35px;
     }
   }
-}
 
 /* === RESET === */
 html, body {
