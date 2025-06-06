@@ -535,17 +535,17 @@ strong {
 }
 
 .slide {
-    min-width: calc(100% / 1.2); /* Adjust width of the slide here */
+    min-width: calc(100% / 1.2);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 20px;
-    background-color: #fff; /* Card background color to white */
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Optional: slight shadow for cards */
-    margin: 0 10px; /* Space between cards in the slider */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin: 0 10px;
 }
 
 .slider-image {
