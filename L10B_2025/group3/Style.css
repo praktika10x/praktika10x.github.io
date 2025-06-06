@@ -80,7 +80,7 @@ body {
   color: #F5BB47;
 }
 .pnav{
- justify-self: end;
+ justify-self: start;
   align-self: center;
   margin-right: 30px;
   font-family: "Press Start 2P", system-ui;
