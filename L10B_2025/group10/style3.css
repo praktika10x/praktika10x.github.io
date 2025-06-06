@@ -1,89 +1,279 @@
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #061737;
-      color: #ffffff;
-    }
+/*Адаптація*/
 
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+/*Шрифти*/
+.slackey-regular {
+  font-family: "Slackey", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.oswald-<uniquifier> {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.fira-sans-condensed-regular {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.bona-nova-sc-bold {
+  font-family: "Bona Nova SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
-    header {
-      background-color: #0e234e;
-      padding: 40px 20px;
-      text-align: left;
-      border-radius: 10px 10px 0 0;
-    }
+/*Основа*/
+body {
+   background-color: #071A41;
+   /* background: #020024;
+    background: linear-gradient(180deg, #071A41 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+https://cssgradient.io/
+*/
+}
 
-    header h1 {
-      color: #f6b93b;
-      font-size: 2.5rem;
-      margin: 0;
+.imgb {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.navigator {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.logo img {
+    width: 7vw;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    margin-top: 2vh;
+    margin-left: 1vw;
+}
+h1 {
+    font-family: "Slackey", sans-serif;
+    color: #CFC127;
+    font-size: 100px;
+    margin-top: 35vh;
     }
+    
+.content {
+    background: #3E5F8A;
+    width: 20vw;
+    height: 43vh;
+    border-radius: 10px;
+    margin: auto;
+}
+.content p {
+    font-family: "Oswald", sans-serif;
+    color: #CFC127;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 2px;
+}
+.content li {
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: #D5D5D5;
+    float: center;
+    font-size: 24px;
+    margin-top: 1.5vh;
+}
+.content a {
+   text-decoration: none;
+   color: #D5D5D5;
+}
 
-    .toc {
-      background-color: #1d3569;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
+h4 {
+    color: #CFC127;;
+    font-size: 32px;
+    margin-top: 10vh;
+    text-align: center;
+}
 
-    .toc strong {
-      display: block;
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-    }
+/*Меню*/
+.menu-box {
+    position: relative;
+    display: inline-block;
+}
+#menu-1 {
+    display: none;
+}
+.menu-icon img {
+    height: 7vh;
+    cursor: pointer;
+}
+.menu-n {
+    position: absolute;
+    top: 10vh;
+    right: 5vw;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    display: none;
+    z-index: 100;
+}
+.menu-n ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-n li {
+    margin: 10px 0;
+}
+.menu-n a {
+    font-family:"Fira Sans Condensed", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.menu-n a:hover {
+    color: #DAA520;
+}
+#menu-1 {
+    display: none;
+}
+#menu-1:checked + .menu-icon + .menu-n {
+    display: block;
+}
 
-    .toc ul {
-      list-style: decimal;
-      padding-left: 20px;
-      margin: 0;
-    }
+/*Головна*/
+.title {
+    font-family: "Pacifico", cursive;
+    color: #CFC127;
+    font-size: 100px;
+    margin-top: 35vh;      
+}
+.info {
+   font-family: "Fira Sans Condensed", sans-serif;
+   color: #FFFFFF;
+   font-size: 24px;
+   margin-top: 15vh; 
+}
+.authors {
+   font-family: "Bona Nova SC", serif;
+   color: #FFFFFF;
+   font-size: 24px;
+   margin-top: 10vh;  
+}
 
-    h2 {
-      color: #f6b93b;
-      margin-top: 30px;
-    }
+/*Криптографія*/
+.crypt1 p {
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-top: 1vh;
+    float: left;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
 
-    .highlight-box {
-      background-color: #1d3569;
-      padding: 15px;
-      border-radius: 10px;
-      margin: 15px 0;
-    }
+.crypt2 p {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-top: 1vh;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+.crypt2box {
+    width: 45vw;
+    height: 35vh;
+    background: #3E5F8A;
+    border-radius: 10px;
+    margin: auto;
+}
+.crypt2box li {
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: #FFFFFF;
+    font-size: 24px;
+    float: center;
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-top: 1vh;
+    float: left;
+    margin-left: 0.5vw;
+} 
+.crypt2box ol {
+   margin-top: 1vh; 
+}
 
-    button {
-      background-color: #f6b93b;
-      color: black;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-top: 40px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+.crypt3 {
+   display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.brain {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 38vw;
+    background: #3E5F8A;
+    border-radius: 10px;
+    margin-top: 1vh;
+}
+.brain p {
+    font-family: "Oswald", sans-serif;
+    color: #CFC127;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 2px;
+}
+.brain li {
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+.brain ul {
+    margin-bottom: 4vh;
+}
 
-    ul {
-      padding-left: 20px;
-    }
+.crypt4 p {
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: #FFFFFF;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
 
-    a {
-      color: #82ccdd;
-      text-decoration: none;
-    }
+.crypt5 dd {
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+.home {
+   margin-top: 10vh;
+}
+.home a {
+   font-family: "Fira Sans Condensed", sans-serif;
+   display: block;
+   background-color: #d4a017;
+   color: black;
+   text-decoration: none;
+   border-radius: 10px;
+   font-size: 1rem;
+   margin: 10px auto;
+   margin-top: 50px;
+   text-align: center;
+   width: 10vw;
+   height: 5vh;
+}
 
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-    }
+a {
+   text-decoration: none;
+   color: #B3867E;
+   text-align: center;
+}
