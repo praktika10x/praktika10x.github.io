@@ -155,6 +155,7 @@ h2:not(.subtitle)::after {
   border-radius: 3px;
 }
 
+
 /*КАРТИ ГОЛОВНА*/
 .cardnav:hover {
   transition: 1s;
