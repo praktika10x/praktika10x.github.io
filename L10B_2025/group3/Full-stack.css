@@ -176,14 +176,7 @@ h3{
       margin-bottom: 30px;
       text-align: center;
     }
-.graf{
-     display: flex;
-      justify-content: center;
-      align-items: center;    
-      height: 100vh;
-  margin: 0;
-  padding: 0;
-}
+
 img.fullscreen-image {
   width: 60vw;
   height: auto;
