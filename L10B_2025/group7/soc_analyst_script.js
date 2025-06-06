@@ -34,13 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-
     const singleFlashcard = document.querySelector('.flashcard-single');
 
     if (singleFlashcard) {
         const backContent = singleFlashcard.getAttribute('data-answer-content');
         const flashcardBack = singleFlashcard.querySelector('.flashcard-back-single');
-
 
         if (backContent && flashcardBack) {
             flashcardBack.innerHTML = backContent;
