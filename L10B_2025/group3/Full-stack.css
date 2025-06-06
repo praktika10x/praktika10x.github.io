@@ -199,36 +199,39 @@ img.fullscreen-image {
   border-top: 1px solid #fff;
 }
 
-.footer-content {
+.footer-columns {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  text-align: left;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 20px auto;
   padding: 0 20px;
-  max-width: 1000px;
-  margin: 0 auto 20px;
-  width: 100%;
 }
 
-.footer-content > div {
+.footer-column {
   flex: 1 1 200px;
-  margin: 10px;
+  min-width: 200px;
 }
 
-.footer-content h3 {
-  color: #f0f0f0;
+.footer-column h3 {
+  color: #4ec6ff;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
-.footer-content a {
-  display: block;
+.footer-column a,
+.footer-column p {
+  font-size: 16px;
+  margin: 4px 0;
   color: white;
-  margin: 5px 0;
+  text-decoration: none;
 }
 
-.footer-content a:hover {
+.footer-column a:hover {
   text-decoration: underline;
 }
+
 
 
     .navdiv{
