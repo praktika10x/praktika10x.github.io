@@ -1,4 +1,4 @@
-/* === RESET === */More actions
+/* === RESET === */
 html, body {
   margin: 0;
   padding: 0;
@@ -97,13 +97,11 @@ body {
   text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.50);
 }
 
-}
-.logonav{
-  width: 50%;
-  grid-column: 4 / span 1;
-  margin: 8px;
-  justify-self: end;
-}
+.logonav {
+    width: 30%;
+    justify-self: center;
+    grid-column: 1 / -1;
+    grid-row: 1; 
 .nav{
   position: fixed;
   margin: 0;
