@@ -113,7 +113,7 @@ p {
     color: #fff;
 }
 
-.highlight-box { /* Цей клас не використовується у вашому HTML, але залишив його з оригінального CSS */
+.highlight-box {
     background-color: rgba(255, 215, 0, 0.2);
     border-left: 5px solid #FFD700;
     padding: 20px;
@@ -124,7 +124,6 @@ p {
     box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
 }
 
-/* SOC Cards (Roadmap section) */
 .soc-cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -143,8 +142,8 @@ p {
     min-width: 280px;
     max-width: 350px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0; /* Для анімації */
-    transform: translateY(20px); /* Для анімації */
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 .soc-card:hover {
@@ -167,7 +166,7 @@ p {
 .soc-icon-circle img {
     width: 50px;
     height: 50px;
-    filter: invert(0%); /* Ensure icons are black or retain original color */
+    filter: invert(0%);
 }
 
 .soc-card h3 {
@@ -182,7 +181,6 @@ p {
     color: #f0f0f0;
 }
 
-/* Info Blocks (Основні обов'язки) */
 .info-blocks-container {
     display: flex;
     flex-wrap: wrap;
@@ -192,18 +190,18 @@ p {
 }
 
 .info-block {
-    background-color: #333; /* Змінено на темний фон для відповідності загальному стилю */
+    background-color: #333;
     border: 2px solid #FFD700;
     border-radius: 15px;
     padding: 30px;
-    box-shadow: 0 6px 18px rgba(255, 215, 0, 0.1); /* Жовтий відтінок тіні */
+    box-shadow: 0 6px 18px rgba(255, 215, 0, 0.1);
     flex: 1;
     min-width: 280px;
     max-width: 450px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0; /* Для анімації */
-    transform: translateY(20px); /* Для анімації */
+    opacity: 0;
+    transform: translateY(20px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,11 +210,11 @@ p {
 
 .info-block:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.2); /* Інтенсивніша жовта тінь на hover */
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.2);
 }
 
 .info-block h3 {
-    font-size: 1.5em; /* Використання em для кращої адаптивності */
+    font-size: 1.5em;
     color: #FFD700;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -239,7 +237,7 @@ p {
     align-items: center;
     font-size: 36px;
     font-weight: bold;
-    color: #000; /* Чорний текст на жовтому фоні */
+    color: #000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
     transition: transform 0.3s ease;
@@ -250,7 +248,6 @@ p {
     transform: rotate(10deg) scale(1.1);
 }
 
-/* Tools Grid (Інструменти розробника) */
 .tools-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -259,15 +256,15 @@ p {
 }
 
 .tool-item {
-    background-color: #333; /* Змінено на темний фон */
-    border: 1px solid #FFD700; /* Жовта рамка */
+    background-color: #333;
+    border: 1px solid #FFD700;
     border-radius: 15px;
     padding: 25px;
-    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.1); /* Жовтий відтінок тіні */
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0; /* Для анімації */
-    transform: translateY(20px); /* Для анімації */
+    opacity: 0;
+    transform: translateY(20px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,7 +272,7 @@ p {
 
 .tool-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2); /* Інтенсивніша жовта тінь на hover */
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2);
 }
 
 .tool-item h3 {
@@ -313,7 +310,6 @@ p {
     transform: scale(1.1);
 }
 
-/* Product Gallery (Зразки продукції) */
 .product-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -322,15 +318,15 @@ p {
 }
 
 .product-item {
-    background-color: #333; /* Змінено на темний фон */
-    border: 1px solid #FFD700; /* Жовта рамка */
+    background-color: #333;
+    border: 1px solid #FFD700;
     border-radius: 15px;
     padding: 30px;
-    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.1); /* Жовтий відтінок тіні */
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0; /* Для анімації */
-    transform: scale(0.9); /* Для анімації */
+    opacity: 0;
+    transform: scale(0.9);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -338,7 +334,7 @@ p {
 
 .product-item:hover {
     transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2); /* Інтенсивніша жовта тінь на hover */
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2);
 }
 
 .product-item h3 {
@@ -355,15 +351,15 @@ p {
     line-height: 1.6;
 }
 
-.product-icon { /* Замість .product-image з оригінального HTML */
-    width: 80px; /* Зменшено розмір для компактності */
+.product-icon {
+    width: 80px;
     height: 80px;
-    border-radius: 50%; /* Зроблено круглим */
+    border-radius: 50%;
     background-color: #FFD700;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 38px; /* Зменшено розмір шрифту */
+    font-size: 38px;
     font-weight: bold;
     color: #000;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
@@ -376,10 +372,9 @@ p {
     transform: rotate(-5deg) scale(1.05);
 }
 
-/* Salary and Demand section */
 .image-placeholder {
-    opacity: 0; /* Для анімації */
-    transform: scale(0.9); /* Для анімації */
+    opacity: 0;
+    transform: scale(0.9);
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -390,20 +385,19 @@ p {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2); /* Жовта тінь */
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
 }
 
-/* Education Slider */
 .education-slider-container {
     position: relative;
     width: 100%;
-    max-width: 800px; /* Збільшено max-width для кращого вигляду */
+    max-width: 800px;
     margin: 40px auto;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3); /* Жовта тінь для слайдера */
-    opacity: 0; /* Для анімації */
-    transform: translateY(20px); /* Для анімації */
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 .education-slider-wrapper {
@@ -415,13 +409,13 @@ p {
     min-width: 100%;
     box-sizing: border-box;
     padding: 30px;
-    background-color: #333; /* Темний фон для слайдів */
+    background-color: #333;
     text-align: center;
     color: #f0f0f0;
 }
 
 .education-slide h3 {
-    color: #FFD700; /* Жовтий заголовок у слайдах */
+    color: #FFD700;
     font-size: 1.7em;
     margin-bottom: 15px;
 }
@@ -438,7 +432,7 @@ p {
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-    background-color: #fff; /* Білий фон для логотипів університетів */
+    background-color: #fff;
     padding: 10px;
 }
 
@@ -446,8 +440,8 @@ p {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 215, 0, 0.6); /* Напівпрозорі жовті кнопки */
-    color: #000; /* Чорні стрілки */
+    background-color: rgba(255, 215, 0, 0.6);
+    color: #000;
     border: none;
     padding: 12px 18px;
     cursor: pointer;
@@ -466,10 +460,10 @@ p {
 }
 
 .education-prev-btn:hover, .education-next-btn:hover {
-    background-color: #FFD700; /* Суцільний жовтий на hover */
+    background-color: #FFD700;
 }
 
-.btn { /* Стиль для кнопок у слайдері */
+.btn {
     display: inline-block;
     background-color: #FFD700;
     color: #000;
@@ -483,7 +477,6 @@ p {
 .btn:hover {
     background-color: #FFEA00;
 }
-
 
 footer {
     background-color: #000;
@@ -514,7 +507,6 @@ footer {
     transform: rotate(10deg) scale(1.1);
 }
 
-/* Анімації */
 .animated-section.is-visible .fade-in-text,
 .animated-section.is-visible .soc-card,
 .animated-section.is-visible .info-block,
@@ -560,7 +552,7 @@ footer {
 }
 
 .animated-section.is-visible .education-slider-container {
-    animation: fadeInUp 1s forwards 0.2s; /* Затримка для слайдера */
+    animation: fadeInUp 1s forwards 0.2s;
 }
 
 @keyframes bounceIn {
@@ -628,16 +620,14 @@ footer {
     }
 }
 
-
-/* Адаптивність */
 @media (max-width: 992px) {
     .soc-cards-container, .info-blocks-container, .tools-grid, .product-gallery {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
     }
     .soc-card, .info-block, .tool-item, .product-item {
-        max-width: none; /* Дозволяє елементам займати більше місця при меншій кількості колонок */
-        flex: 1 1 calc(50% - 20px); /* 2 елементи в ряд */
+        max-width: none;
+        flex: 1 1 calc(50% - 20px);
     }
 }
 
@@ -700,14 +690,14 @@ footer {
     }
 
     .soc-cards-container, .info-blocks-container, .tools-grid, .product-gallery {
-        grid-template-columns: 1fr; /* 1 елемент в ряд */
+        grid-template-columns: 1fr;
         gap: 20px;
     }
 
     .soc-card, .info-block, .tool-item, .product-item {
         min-width: unset;
         width: 100%;
-        max-width: 450px; /* Обмеження ширини для центрованих блоків */
+        max-width: 450px;
         margin-left: auto;
         margin-right: auto;
         padding: 20px;
