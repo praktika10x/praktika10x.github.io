@@ -514,129 +514,82 @@ strong {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
-.slider-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+.university-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
     margin-top: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    padding: 20px;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.slider-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: calc(100% / 1.2);
-    box-sizing: border-box;
+.university-item {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.animated-section.is-visible .university-item {
+    animation: fadeInUp 0.7s forwards;
+}
+
+.animated-section.is-visible .university-item.delay-1 { animation-delay: 0.1s; }
+.animated-section.is-visible .university-item.delay-2 { animation-delay: 0.17s; }
+.animated-section.is-visible .university-item.delay-3 { animation-delay: 0.24s; }
+.animated-section.is-visible .university-item.delay-4 { animation-delay: 0.31s; }
+.animated-section.is-visible .university-item.delay-5 { animation-delay: 0.38s; }
+.animated-section.is-visible .university-item.delay-6 { animation-delay: 0.45s; }
+.animated-section.is-visible .university-item.delay-7 { animation-delay: 0.52s; }
+.animated-section.is-visible .university-item.delay-8 { animation-delay: 0.59s; }
+
+
+.university-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.university-item .uni-icon-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    margin: 0 10px;
-}
-
-.slider-image {
-    max-width: 120px;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 8px;
+    margin: 0 auto 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-.slide h3 {
+.university-item .uni-logo-img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.university-item h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     color: #222222;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    flex-grow: 1;
 }
 
-.slide p {
+.university-item p {
     font-size: 16px;
     color: #666666;
-    margin-bottom: 20px;
     text-align: center;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #FFD700;
-    color: #222222;
-    padding: 10px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #e6c200;
-    transform: translateY(-2px);
-}
-
-.prev-btn,
-.next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(34, 34, 34, 0.7);
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 20px;
-    transition: background-color 0.3s ease;
-    z-index: 10;
-}
-
-.prev-btn:hover,
-.next-btn:hover {
-    background-color: rgba(34, 34, 34, 0.9);
-}
-
-.prev-btn {
-    left: 10px;
-}
-
-.next-btn {
-    right: 10px;
-}
-
-.slider-dots {
-    text-align: center;
-    margin-top: 20px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.slider-dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.slider-dot.active {
-    background-color: #FFD700;
+    margin-bottom: 0;
 }
 
 footer {
@@ -762,20 +715,9 @@ footer {
 
     .cards-container,
     .info-blocks-container,
-    .product-gallery {
+    .product-gallery,
+    .university-list {
         grid-template-columns: 1fr;
-    }
-
-    .slide {
-        padding: 15px;
-    }
-
-    .slider-image {
-        max-width: 100px;
-    }
-
-    .slider-container {
-        height: 480px;
     }
 }
 
@@ -804,11 +746,8 @@ footer {
 
     .card,
     .info-block,
-    .product-item {
+    .product-item,
+    .university-item {
         padding: 20px;
-    }
-
-    .slider-container {
-        height: 520px;
     }
 }
