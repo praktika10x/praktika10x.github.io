@@ -5,19 +5,25 @@ AOS.init({
 
 function initializeSlider(containerId) {
     const sliderContainer = document.getElementById(containerId);
+    if (!sliderContainer) {
+        console.error(`Slider container with ID '${containerId}' not found.`);
+        return;
+    }
+
     const sliderWrapper = sliderContainer.querySelector(`.${containerId.replace('Container', '')}-wrapper`);
-    const slides = sliderWrapper.children;
+    const slides = sliderWrapper ? sliderWrapper.children : [];
     const prevBtn = sliderContainer.querySelector(`.${containerId.replace('Container', '')}-prev-btn`);
     const nextBtn = sliderContainer.querySelector(`.${containerId.replace('Container', '')}-next-btn`);
     const dotsContainer = sliderContainer.querySelector('.ir-slider-dots');
 
     if (!sliderWrapper || slides.length === 0) {
-        console.warn(`Slider wrapper or slides not found for container: ${containerId}`);
+        console.warn(`Slider wrapper or slides not found for container: ${containerId}. Skipping initialization.`);
         return;
     }
 
     let currentIndex = 0;
 
+    // Create dots
     if (dotsContainer) {
         for (let i = 0; i < slides.length; i++) {
             const dot = document.createElement('span');
@@ -39,6 +45,8 @@ function initializeSlider(containerId) {
     }
 
     function goToSlide(index) {
+        if (slides.length === 0) return;
+
         if (index < 0) {
             currentIndex = slides.length - 1;
         } else if (index >= slides.length) {
