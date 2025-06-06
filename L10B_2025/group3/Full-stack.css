@@ -360,3 +360,235 @@ img.fullscreen-image {
   text-align: center;
   margin: 0 auto;
 }
+
+
+@media (max-width: 768px) {
+  /* Header adjustments */
+  .header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #007bff;
+  }
+
+  .header-logo {
+    height: 40px;
+    padding-left: 0;
+    width: auto;
+    order: 2;
+  }
+
+  .eniac {
+    height: 40px;
+  }
+
+  .navdiv {
+    display: flex;
+    order: 1;
+    width: auto;
+    padding-right: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #007bff;
+    width: 100%;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .nav-links li a {
+    font-size: 14px;
+    padding: 8px 15px;
+    display: block;
+  }
+
+  /* Title adjustments */
+  h1 {
+    font-size: 40px;
+    line-height: 45px;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+  }
+
+  .intro {
+    height: 200px;
+    padding-top: 0px;
+    margin-top: 60px;
+  }
+
+  .main {
+    padding-top: 20px;
+    margin-top: 0;
+  }
+
+  /* Content adjustments */
+  h2 {
+    font-size: 28px;
+    line-height: 32px;
+    margin: 15px 5%;
+    padding-top: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
+    margin-left: 5%;
+  }
+
+  p {
+    margin: 15px 5%;
+    font-size: 16px;
+  }
+
+  ul {
+    margin: 15px 5%;
+    font-size: 16px;
+  }
+
+  /* Cards mobile layout */
+  .wrap {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .card-link {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .pprod {
+    margin: 0px 20px 20px 20px;
+  }
+
+  /* Swiper mobile adjustments */
+  .swiper {
+    width: 95%;
+    height: 250px;
+  }
+
+  .swiper-slide {
+    padding: 15px 20px;
+  }
+
+  .card-title {
+    font-size: 20px;
+    margin: 0 0 0 10px;
+  }
+
+  .cart-desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* Image adjustments */
+  img.fullscreen-image {
+    width: 95%;
+  }
+
+  .card img {
+    width: 60px;
+  }
+
+  .card.card-educational img {
+    max-height: 150px;
+  }
+
+  /* Color section mobile */
+  .color {
+    width: 100%;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+  }
+
+  .color .wrap {
+    gap: 20px;
+  }
+
+  /* Footer mobile */
+  .footer {
+    padding: 15px 0;
+  }
+
+  .footer h1 {
+    font-size: 24px !important;
+    line-height: 28px;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  .footer-column h3 {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .footer-column p {
+    font-size: 10px;
+    margin: 2px 0;
+  }
+
+  .footer-column a {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+}
+
+/* Very small mobile devices */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .intro {
+    height: 250px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p, ul {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 95%;
+    padding: 12px;
+  }
+
+  .swiper {
+    height: 220px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .cart-desc {
+    font-size: 14px;
+  }
+}
