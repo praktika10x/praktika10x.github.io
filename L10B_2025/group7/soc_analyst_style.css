@@ -335,8 +335,7 @@ p {
     transition: transform 0.5s ease-in-out;
 }
 
-.soc-slide,
-.education-slide {
+.soc-slide {
     min-width: 100%;
     box-sizing: border-box;
     padding: 20px;
@@ -394,36 +393,48 @@ p {
 .tools-slider-container .soc-slide {
     min-width: 100%;
     box-sizing: border-box;
-    padding: 0; /* Видалено внутрішній відступ */
-    background-color: transparent; /* Робить фон прозорим */
+    padding: 0;
+    background-color: transparent;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    overflow: hidden; /* Переконайтеся, що вміст не виходить за межі */
+    overflow: hidden;
 }
 
 .tools-slider-container .soc-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Зображення повністю заповнює слайд */
-    display: block; /* Видалення зайвих пробілів */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
     filter: none;
-    border-radius: 10px; /* Заокруглення кутів зображення відповідно до слайда */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin: 0 auto 20px auto;
 }
 
 .tools-slider-container .soc-slide .text-content {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 15px;
-    border-radius: 8px;
+    position: static;
+    background-color: transparent;
+    color: #333;
+    padding: 0;
+    border-radius: 0;
     z-index: 2;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.tools-slider-container .soc-slide .text-content h3 {
+    color: #000000;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.tools-slider-container .soc-slide .text-content p {
+    color: #555;
+    font-size: 1em;
 }
 
 
@@ -593,6 +604,16 @@ p {
     .sample-products-cards-container {
         grid-template-columns: 1fr;
     }
+    .tools-slider-container .soc-slide img {
+        width: 100px;
+        height: 100px;
+    }
+    .tools-slider-container .soc-slide .text-content h3 {
+        font-size: 1.3em;
+    }
+    .tools-slider-container .soc-slide .text-content p {
+        font-size: 0.9em;
+    }
 }
 
 @media (max-width: 480px) {
@@ -665,6 +686,16 @@ p {
         height: 6px;
         width: 6px;
         margin: 0 3px;
+    }
+    .tools-slider-container .soc-slide img {
+        width: 80px;
+        height: 80px;
+    }
+    .tools-slider-container .soc-slide .text-content h3 {
+        font-size: 1.1em;
+    }
+    .tools-slider-container .soc-slide .text-content p {
+        font-size: 0.85em;
     }
 }
 
