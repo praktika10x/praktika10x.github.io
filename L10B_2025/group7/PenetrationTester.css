@@ -43,7 +43,7 @@ body {
 }
 
 .nav a {
-    color: #ffffff; /* Змінено на білий */
+    color: #ffffff; 
     text-decoration: none;
     font-weight: 600;
     margin-left: 25px;
@@ -73,7 +73,7 @@ body {
 }
 
 .language-switcher a {
-    color: #ffffff; /* Змінено на білий */
+    color: #ffffff; 
     text-decoration: none;
     margin: 0 5px;
     font-weight: 600;
@@ -216,9 +216,9 @@ body {
     color: #444;
 }
 
-/* Видалено стилізацію для strong */
 
-.video-container { /* Повернуто попередній клас */
+
+.video-container { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,8 +230,8 @@ body {
 }
 
 .video-container iframe {
-    width: 800px; /* Повернуто фіксовану ширину */
-    height: 450px; /* Повернуто фіксовану висоту */
+    width: 800px;
+    height: 450px; 
     border: none;
 }
 
@@ -381,7 +381,7 @@ body {
     margin-bottom: 15px;
 }
 
-.tool-tags span { /* Змінено на span */
+.tool-tags span { 
     background-color: #e0e6f0;
     color: #3a3a3a;
     padding: 8px 15px;
@@ -392,7 +392,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.tool-tags span:hover { /* Змінено на span */
+.tool-tags span:hover { 
     background-color: #FFD700;
     color: #222;
 }
