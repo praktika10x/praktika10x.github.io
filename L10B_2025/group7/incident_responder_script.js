@@ -1,103 +1,111 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let lastScrollTop = 0;
-    const logoBar = document.querySelector('.logo-bar');
-    if (logoBar) {
-        window.addEventListener('scroll', () => {
-            let st = window.pageYOffset || document.documentElement.scrollTop;
-            if (st > lastScrollTop && st > logoBar.offsetHeight) {
-                logoBar.classList.add('hidden-top-bar');
-            } else {
-                logoBar.classList.remove('hidden-top-bar');
-            }
-            lastScrollTop = st <= 0 ? 0 : st;
-        });
-    }
 
-    function initializeSlider(containerSelector) {
-        const container = document.querySelector(containerSelector);
-        if (!container) return;
+    const initializeSlider = (containerId, autoSlideInterval = 5000) => {
+        const sliderContainer = document.getElementById(containerId);
+        if (!sliderContainer) {
+            console.warn(`Slider container with ID "${containerId}" not found.`);
+            return;
+        }
 
-        const wrapper = container.querySelector(`${containerSelector}-wrapper`);
-        const slides = container.querySelectorAll(`${containerSelector} .soc-slide, ${containerSelector} .education-slide`);
-        const prevBtn = container.querySelector(`${containerSelector.replace('-container', '')}-prev-btn`);
-        const nextBtn = container.querySelector(`${containerSelector.replace('-container', '')}-next-btn`);
-        const dotsContainer = container.querySelector(`${containerSelector.replace('-container', '')}-dots`);
+        const sliderWrapper = sliderContainer.querySelector('.ir-slider-wrapper, .education-slider-wrapper');
+        const slides = sliderWrapper.querySelectorAll('.ir-slide, .education-slide');
+        const prevBtn = sliderContainer.querySelector('.ir-prev-btn, .education-prev-btn');
+        const nextBtn = sliderContainer.querySelector('.ir-next-btn, .education-next-btn');
+        const dotsContainer = sliderContainer.querySelector('.ir-slider-dots');
 
         let currentIndex = 0;
-        let slideInterval;
-
         const totalSlides = slides.length;
+        let autoSlideTimer;
 
-        function updateSlider() {
-            wrapper.style.transform = `translateX(${-currentIndex * 100}%)`;
-            updateDots();
+        if (totalSlides === 0) {
+            console.warn(`No slides found in slider container with ID "${containerId}".`);
+            if (prevBtn) prevBtn.style.display = 'none';
+            if (nextBtn) nextBtn.style.display = 'none';
+            if (dotsContainer) dotsContainer.style.display = 'none';
+            return;
         }
 
-        function goToSlide(index) {
-            currentIndex = index;
-            updateSlider();
-        }
-
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            updateSlider();
-        }
-
-        function prevSlide() {
-            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-            updateSlider();
-        }
-
-        function createDots() {
+        const createDots = () => {
             if (!dotsContainer) return;
             dotsContainer.innerHTML = '';
             for (let i = 0; i < totalSlides; i++) {
                 const dot = document.createElement('span');
-                dot.classList.add('soc-dot');
-                if (i === currentIndex) {
-                    dot.classList.add('active');
-                }
-                dot.addEventListener('click', () => goToSlide(i));
+                dot.classList.add('ir-dot');
+                dot.dataset.index = i;
+                dot.addEventListener('click', () => {
+                    currentIndex = i;
+                    updateSliderPosition();
+                    resetAutoSlide();
+                });
                 dotsContainer.appendChild(dot);
             }
-        }
+        };
 
-        function updateDots() {
+        const updateSliderPosition = () => {
+            const offset = -currentIndex * 100;
+            sliderWrapper.style.transform = `translateX(${offset}%)`;
+            updateDots();
+        };
+
+        const updateDots = () => {
             if (!dotsContainer) return;
-            const dots = dotsContainer.querySelectorAll('.soc-dot');
+            const dots = dotsContainer.querySelectorAll('.ir-dot');
             dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentIndex);
+                if (index === currentIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
             });
+        };
+
+        const showNextSlide = () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSliderPosition();
+        };
+
+        const showPrevSlide = () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSliderPosition();
+        };
+
+        const startAutoSlide = () => {
+            if (autoSlideTimer) {
+                clearInterval(autoSlideTimer);
+            }
+            autoSlideTimer = setInterval(showNextSlide, autoSlideInterval);
+        };
+
+        const resetAutoSlide = () => {
+            clearInterval(autoSlideTimer);
+            startAutoSlide();
+        };
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                showNextSlide();
+                resetAutoSlide();
+            });
+        } else {
+            console.warn(`Next button not found for slider with ID "${containerId}".`);
         }
 
-        prevBtn.addEventListener('click', () => {
-            clearInterval(slideInterval);
-            prevSlide();
-            startAutoSlide();
-        });
-        nextBtn.addEventListener('click', () => {
-            clearInterval(slideInterval);
-            nextSlide();
-            startAutoSlide();
-        });
-
-        function startAutoSlide() {
-            slideInterval = setInterval(nextSlide, 5000);
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                showPrevSlide();
+                resetAutoSlide();
+            });
+        } else {
+            console.warn(`Previous button not found for slider with ID "${containerId}".`);
         }
 
         createDots();
-        updateSlider();
-        startAutoSlide();
-    }
+        updateSliderPosition();
+        if (autoSlideInterval > 0) {
+            startAutoSlide();
+        }
+    };
 
-    initializeSlider('.soc-slider-container');
-    initializeSlider('.tools-slider-container');
-    initializeSlider('.education-slider-container');
-
-    const flashcards = document.querySelectorAll('.roadmap-flashcard');
-    flashcards.forEach(card => {
-        card.addEventListener('click', () => {
-            card.classList.toggle('is-flipped');
-        });
-    });
+    initializeSlider('irToolsSliderContainer', 4500);
+    initializeSlider('educationSliderContainer', 5500);
 });
