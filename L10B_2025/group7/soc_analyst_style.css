@@ -384,28 +384,29 @@ footer {
     transform: rotate(15deg) scale(1.2);
 }
 
-.flashcard-single-container {
+.roadmap-flashcards-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
     margin-top: 30px;
     padding-bottom: 30px;
 }
 
-.flashcard-single {
-    width: 600px;
-    height: 400px;
+.roadmap-flashcard {
+    width: 300px;
+    height: 200px;
     perspective: 1000px;
-    cursor: pointer;
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     transition: transform 0.4s ease;
 }
 
-.flashcard-single:hover {
+.roadmap-flashcard:hover {
     transform: translateY(-10px);
 }
 
-.flashcard-inner-single {
+.roadmap-flashcard-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -415,11 +416,11 @@ footer {
     border-radius: 15px;
 }
 
-.flashcard-single.is-flipped .flashcard-inner-single {
+.roadmap-flashcard:hover .roadmap-flashcard-inner {
     transform: rotateY(180deg);
 }
 
-.flashcard-front-single, .flashcard-back-single {
+.roadmap-flashcard-front, .roadmap-flashcard-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -430,214 +431,85 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    padding: 30px;
+    padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
 }
 
-.flashcard-front-single {
+.roadmap-flashcard-front {
     background-color: #000000;
     color: #FFD700;
-    font-size: 1.6em;
+    font-size: 1.2em;
     font-weight: 700;
 }
 
-.flashcard-image {
-    max-width: 120px;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
-}
-
-.flashcard-back-single {
+.roadmap-flashcard-back {
     background-color: #FFD700;
     color: #000000;
     transform: rotateY(180deg);
-    text-align: left;
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-.flashcard-back-single h3 {
-    color: #000000;
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 1.5em;
-}
-
-.flashcard-back-single ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.flashcard-back-single ul.roadmap-detail-list li {
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 8px 0;
+    text-align: center;
     font-size: 0.95em;
-    display: list-item;
-    margin-bottom: 5px;
+    line-height: 1.4;
 }
 
-.flashcard-back-single ul.roadmap-detail-list li:before {
-    content: '✅';
-    margin-right: 10px;
-    font-size: 1.1em;
-    color: #000000;
+.roadmap-flashcard-front h3 {
+    color: #FFD700;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 1.3em; 
 }
 
-.flashcard-back-single ul.roadmap-detail-list li:hover {
-    transform: none;
+.roadmap-flashcard-back p {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
 }
+
+.roadmap-icon {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+}
+
 
 @media (max-width: 992px) {
-    h1 {
-        font-size: 2.4em;
-    }
-
-    h2 {
-        font-size: 1.9em;
-    }
-
-    .nav a {
-        margin-left: 15px;
-    }
-
-    .soc-cards-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .soc-card {
-        max-width: 90%;
+    .roadmap-flashcard {
+        width: 45%; 
+        height: 220px;
     }
 }
 
 @media (max-width: 768px) {
-    .logo-bar {
-        flex-direction: column;
-        text-align: center;
+    .roadmap-flashcard {
+        width: 90%;
+        height: 250px;
     }
-
-    .logo-left {
-        flex-direction: column;
-        margin-bottom: 15px;
+    .roadmap-icon {
+        max-width: 70px;
     }
-
-    .logo-img {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .nav {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .nav a {
-        margin-left: 0;
-    }
-
-    .language-switcher {
-        margin-top: 15px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.6em;
-    }
-
-    .container {
-        margin: 15px auto;
-        padding: 0 15px;
-    }
-
-    .soc-card {
-        padding: 20px;
-    }
-
-    .data-table th, .data-table td {
-        padding: 10px;
-        font-size: 0.9em;
-    }
-
-    .soc-prev-btn, .soc-next-btn {
-        padding: 8px 12px;
+    .roadmap-flashcard-front h3 {
         font-size: 1.2em;
     }
-
-    body {
-        background-attachment: scroll;
-        background-size: contain;
-        background-repeat: repeat;
-    }
-    
-    .flashcard-single {
-        width: 90%;
-        height: 350px;
-    }
-    .flashcard-front-single {
-        font-size: 1.4em;
-    }
-    .flashcard-image {
-        max-width: 100px;
-    }
-    .flashcard-back-single {
+    .roadmap-flashcard-back {
         font-size: 0.9em;
-    }
-    .flashcard-back-single h3 {
-        font-size: 1.3em;
-    }
-    .flashcard-back-single ul.roadmap-detail-list li {
-        padding: 6px 0;
     }
 }
 
 @media (max-width: 480px) {
-    .logo-text {
-        font-size: 1.5em;
-    }
-
-    h1 {
-        font-size: 1.8em;
-    }
-
-    h2 {
-        font-size: 1.4em;
-    }
-
-    .soc-card {
-        min-width: unset;
+    .roadmap-flashcard {
         width: 100%;
+        height: 280px;
+        padding: 15px; 
     }
-
-    .flashcard-single {
-        width: 100%;
-        height: 300px;
-        border-radius: 10px;
+    .roadmap-icon {
+        max-width: 60px;
     }
-    .flashcard-front-single {
-        font-size: 1.2em;
-        padding: 20px;
-    }
-    .flashcard-image {
-        max-width: 80px;
-        margin-bottom: 15px;
-    }
-    .flashcard-back-single {
-        font-size: 0.85em;
-        padding: 20px;
-    }
-    .flashcard-back-single h3 {
+    .roadmap-flashcard-front h3 {
         font-size: 1.1em;
+    }
+    .roadmap-flashcard-back {
+        font-size: 0.85em;
     }
 }
