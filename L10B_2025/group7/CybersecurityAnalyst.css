@@ -1,38 +1,37 @@
-
 .slider-container {
-    position: relative; 
+    position: relative;
     width: 100%;
-    max-width: 900px; 
-    margin: 40px auto; 
-    overflow: hidden; 
+    max-width: 900px;
+    margin: 40px auto;
+    overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     opacity: 1;
-    transform: none; 
-    transition: box-shadow 0.3s ease; 
+    transform: none;
+    transition: box-shadow 0.3s ease;
 }
 
 .slider-container:hover {
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
 
 .slider-wrapper {
     display: flex;
-    transition: transform 0.5s ease-in-out; 
+    transition: transform 0.5s ease-in-out;
 }
 
 
 .slide {
-    min-width: 100%; 
+    min-width: 100%;
     box-sizing: border-box;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 40px;
     text-align: center;
-    background-color: #FFFFFF; 
+    background-color: #FFFFFF;
 }
 
 .slide img {
@@ -60,26 +59,26 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     color: #FFFFFF;
     border: none;
     padding: 15px 10px;
     cursor: pointer;
     font-size: 24px;
-    border-radius: 8px; 
-    z-index: 10; 
+    border-radius: 8px;
+    z-index: 10;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px; 
-    height: 50px; 
-    line-height: 1; 
+    width: 50px;
+    height: 50px;
+    line-height: 1;
 }
 
 .slider-btn:hover {
-    background-color: rgba(0, 0, 0, 0.7); 
-    transform: translateY(-50%) scale(1.05); 
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateY(-50%) scale(1.05);
 }
 
 .slider-btn.prev-btn {
@@ -97,7 +96,7 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 10px; 
+    gap: 10px;
     z-index: 10;
 }
 
@@ -116,9 +115,9 @@
 }
 
 .slider-dot.active {
-    background-color: #FFD700; 
-    transform: scale(1.2); 
-    border: 2px solid #FFF; 
+    background-color: #FFD700;
+    transform: scale(1.2);
+    border: 2px solid #FFF;
 }
 
 
@@ -199,7 +198,7 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 50%; 
 }
 
 .block-icon:hover {
@@ -283,13 +282,87 @@
 .tool-icon img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+    object-fit: cover; 
+    border-radius: 50%; 
 }
 
 .tool-icon:hover {
     transform: scale(1.1);
 }
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.cards-container .card {
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    max-width: 380px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cards-container .card h3 {
+    font-size: 22px;
+    color: #222222;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.cards-container .card p {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.5;
+}
+
+.cards-container .icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #222222;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.cards-container .icon-circle img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
+.cards-container .icon-circle:hover {
+    transform: scale(1.1);
+}
+
 
 
 .product-gallery {
@@ -346,7 +419,7 @@
     line-height: 1.6;
 }
 
-.product-image {
+.product-icon {
     width: 120px;
     height: 120px;
     border-radius: 10px;
@@ -363,19 +436,19 @@
     transition: transform 0.3s ease;
 }
 
-.product-image img {
+.product-icon img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.product-image:hover {
+.product-icon:hover {
     transform: rotate(-5deg) scale(1.05);
 }
 
 
-.slider-image { 
+.slider-image {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -423,6 +496,45 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+
+.section-content-wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.section-content-wrapper ul li {
+    margin-bottom: 10px;
+    padding-left: 25px; 
+    position: relative;
+    font-size: 17px;
+    color: #444444;
+    line-height: 1.6;
+}
+
+
+.section-content-wrapper ul li:before {
+    content: '✔️'; 
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.disadvantages-list li:before {
+    content: '❌';
+    color: #FF5252;
+}
+*/
+
+.section-content-wrapper ul:nth-of-type(2) li:before {
+    content: '❌'; 
+    color: #FF5252; 
+}
 
 
 @keyframes bounceIn {
@@ -490,7 +602,7 @@
     }
 }
 
-@keyframes slideInLeft { 
+@keyframes slideInLeft {
     from {
         opacity: 0;
         transform: translateX(-50px);
@@ -506,7 +618,8 @@
 @media (max-width: 768px) {
     .info-block,
     .tool-item,
-    .product-item {
+    .product-item,
+    .cards-container .card { 
         min-width: unset;
         width: 90%;
         max-width: 400px;
@@ -515,18 +628,21 @@
 
     .info-block h3,
     .tool-item h3,
-    .product-item h3 {
+    .product-item h3,
+    .cards-container .card h3 { 
         font-size: 22px;
     }
 
     .info-block p,
     .tool-item p,
-    .product-item p {
+    .product-item p,
+    .cards-container .card p { 
         font-size: 15px;
     }
 
     .block-icon,
-    .tool-icon {
+    .tool-icon,
+    .cards-container .icon-circle { 
         width: 60px;
         height: 60px;
         font-size: 30px;
@@ -543,7 +659,7 @@
         align-items: center;
     }
 
-    
+
     .slider-btn {
         width: 40px;
         height: 40px;
@@ -573,24 +689,28 @@
 @media (max-width: 480px) {
     .info-block,
     .tool-item,
-    .product-item {
+    .product-item,
+    .cards-container .card {
         padding: 15px;
     }
 
     .info-block h3,
     .tool-item h3,
-    .product-item h3 {
+    .product-item h3,
+    .cards-container .card h3 { 
         font-size: 20px;
     }
 
     .info-block p,
     .tool-item p,
-    .product-item p {
+    .product-item p,
+    .cards-container .card p { 
         font-size: 14px;
     }
 
     .block-icon,
-    .tool-icon {
+    .tool-icon,
+    .cards-container .icon-circle { 
         width: 50px;
         height: 50px;
         font-size: 24px;
@@ -602,7 +722,7 @@
         font-size: 32px;
     }
 
-    
+
     .slider-btn {
         width: 35px;
         height: 35px;
@@ -628,12 +748,18 @@
     .slide p {
         font-size: 14px;
     }
+
+    
+    .section-content-wrapper ul li {
+        padding-left: 20px;
+        font-size: 15px;
+    }
 }
 
 
 
 @media (max-width: 320px) {
-    
+
     .slide {
         padding: 15px 10px;
     }
@@ -646,13 +772,8 @@
 }
 
 
-@media (max-width: 480px) {
-    
-}
-
-
 @media (min-width: 768px) and (max-width: 991px) {
-    
+
     .slider-container {
         max-width: 700px;
     }
@@ -663,7 +784,7 @@
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
-   
+
     .slider-container {
         max-width: 800px;
     }
@@ -671,7 +792,7 @@
 
 
 @media (min-width: 1200px) and (max-width: 1823px) {
-    
+
     .slider-container {
         max-width: 1000px;
     }
@@ -679,9 +800,9 @@
 
 
 @media (min-width: 1824px) {
-    
+
     .slider-container {
-        max-width: 1200px; 
+        max-width: 1200px;
     }
     .slider-btn {
         width: 60px;
