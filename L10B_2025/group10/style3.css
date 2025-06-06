@@ -1,62 +1,80 @@
 
+    :root {
+      --main-bg: #0c1c3f;
+      --section-bg: #1e2d55;
+      --highlight: #243673;
+      --accent: #ffcc00;
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom right, #000c2e, #1a1f4a);
+      background-color: var(--main-bg);
       color: white;
     }
+
     .container {
       max-width: 1000px;
       margin: 0 auto;
       padding: 20px;
     }
+
     header {
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cryptography_Icon.png/800px-Cryptography_Icon.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: right;
+      background: var(--section-bg);
       padding: 40px 20px;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-image: url('https://cdn-icons-png.flaticon.com/512/5453/5453804.png');
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 100px;
     }
+
     header h1 {
-      color: #ffcc00;
+      color: var(--accent);
+      margin: 0;
+      font-size: 32px;
     }
+
     .toc {
-      background-color: #1a2a6c;
+      background-color: var(--highlight);
       padding: 10px;
       border-radius: 10px;
       margin-bottom: 20px;
     }
+
     .toc ul {
       list-style: none;
       padding-left: 0;
+      margin: 0;
     }
+
     .toc li {
       margin: 5px 0;
     }
+
     .section {
       margin-bottom: 30px;
     }
+
     .section h2 {
-      color: #ffcc00;
+      color: var(--accent);
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
     }
+
     .highlight {
-      background-color: #243673;
+      background-color: var(--section-bg);
       padding: 10px;
       border-radius: 10px;
+      margin-top: 10px;
     }
+
     button {
-      background-color: #ffcc00;
+      background-color: var(--accent);
       color: black;
       padding: 10px 20px;
       border: none;
       border-radius: 5px;
       font-size: 16px;
       cursor: pointer;
-    }
-    .icon {
-      width: 40px;
-      vertical-align: middle;
-      margin-right: 10px;
     }
