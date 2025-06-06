@@ -196,25 +196,49 @@ img.fullscreen-image {
 
 /*+*/
 .footer-divider {
-  margin-top: 20px;
+  margin: 30px auto 20px;
+  width: 80%;
   border: none;
-  border-top: 1px solid #fff; 
+  border-top: 1px solid #fff;
 }
 
-.footer-sources {
-  font-size: 14px;
-  color: #ccc;
-  padding-top: 10px;
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  padding: 0 20px;
+  max-width: 1000px;
+  margin: 0 auto 20px;
 }
 
-.footer-sources a {
-  color: #66b2ff;
+.footer-content > div {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-content h3 {
+  color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.footer-content a {
+  display: block;
+  color: #a3d1ff;
+  margin: 5px 0;
   text-decoration: none;
 }
 
-.footer-sources a:hover {
+.footer-content a:hover {
   text-decoration: underline;
 }
+
+.footer-bottom {
+  font-size: 13px;
+  color: #eee;
+  padding-top: 10px;
+}
+
 
     .navdiv{
       width: 100%;
