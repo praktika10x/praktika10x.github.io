@@ -35,7 +35,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://cdn.discordapp.com/attachments/1266156981450838171/1379836116936691772/5f2c8c4b013ed26c6804691dbc8acb4ef66923ed.gif?ex=6841b006&is=68405e86&hm=0d4d2e783eeddd62b9afac4118c65a5ec33d950736ed6ed27164ea96c4d67ec9&');
+  background-image: url('https://cdn.discordapp.com/attachments/1266156981450838171/1379836116936691772/5f2c8c4b013ed26c6804691dbc8acb4ef66923ed.gif?ex=6843aa46&is=684258c6&hm=96f0dac67de1015b1bfd513ed065be7f5b1f0c0df3851543dfe80633542d47e2&');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,7 +47,7 @@ body::before {
 }
 
 body.light-theme::before {
-  background-image: url('https://cdn.discordapp.com/attachments/1266156981450838171/1380078541726810184/VID_20250605_095847_557.mp4?ex=684291cc&is=6841404c&hm=f7d35224870806127ef7ab4c5de87cb27ab57d3494344983ec4f41479171f43d&');
+  background-image: url('https://cdn.discordapp.com/attachments/1266156981450838171/1380516728509042718/lightthemebg.gif?ex=684429e4&is=6842d864&hm=0bdcb00691e8570e5e42b640cccf430df4189bdc3ac504b6ce373a0bc4c16363&');
   opacity: 0.2;
 }
 
@@ -217,15 +217,15 @@ body.light-theme .menu-icon {
   z-index: 1;
 }
 
-/* Dark theme background (GIF) */
+/* Dark theme background (новая гифка) */
 .hero-background.dark-bg {
-  background: url('https://cdn.discordapp.com/attachments/1266156981450838171/1379836116936691772/5f2c8c4b013ed26c6804691dbc8acb4ef66923ed.gif?ex=6841b006&is=68405e86&hm=0d4d2e783eeddd62b9afac4118c65a5ec33d950736ed6ed27164ea96c4d67ec9&') center/cover no-repeat;
+  background: url('https://cdn.discordapp.com/attachments/1266156981450838171/1379836116936691772/5f2c8c4b013ed26c6804691dbc8acb4ef66923ed.gif?ex=6843aa46&is=684258c6&hm=96f0dac67de1015b1bfd513ed065be7f5b1f0c0df3851543dfe80633542d47e2&') center/cover no-repeat;
   display: block;
 }
 
-/* Light theme background (Video/GIF) */
+/* Light theme background (новая гифка) */
 .hero-background.light-bg {
-  background: url('https://cdn.discordapp.com/attachments/1266156981450838171/1380078541726810184/VID_20250605_095847_557.mp4?ex=684291cc&is=6841404c&hm=f7d35224870806127ef7ab4c5de87cb27ab57d3494344983ec4f41479171f43d&') center/cover no-repeat;
+  background: url('https://cdn.discordapp.com/attachments/1266156981450838171/1380516728509042718/lightthemebg.gif?ex=684429e4&is=6842d864&hm=0bdcb00691e8570e5e42b640cccf430df4189bdc3ac504b6ce373a0bc4c16363&') center/cover no-repeat;
   display: none;
 }
 
