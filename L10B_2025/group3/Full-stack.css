@@ -253,7 +253,9 @@ img.fullscreen-image {
     .swiper-pagination-bullet-active {
         background: #954BAA;
     }
-
+.main {
+        padding-top: 50px;
+    }
 .color {
   width: 107.4%;
   left:-55px ;
