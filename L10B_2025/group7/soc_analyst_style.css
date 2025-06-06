@@ -405,14 +405,14 @@ p {
 }
 
 .tools-slider-container .soc-slide img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
     display: block;
     filter: none;
-    border-radius: 10px;
+    border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    margin: 0 auto 20px auto;
+    margin: 0 auto 15px auto;
 }
 
 .tools-slider-container .soc-slide .text-content {
@@ -437,6 +437,19 @@ p {
     font-size: 1em;
 }
 
+.education-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+}
 
 .education-slide img {
     position: absolute;
