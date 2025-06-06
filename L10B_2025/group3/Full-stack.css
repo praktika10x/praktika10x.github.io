@@ -252,6 +252,7 @@ img.fullscreen-image {
       font-size: 1.1rem;
       transition: color 0.3s;
       font-family: "Tektur", sans-serif;
+      margin-right: 10px;
     }
 
     .nav-links li a:hover {
@@ -305,4 +306,9 @@ img.fullscreen-image {
 }
 .section-title{
     margin-top:0;
+}
+
+#Djerela {
+  text-align: center;
+  margin: 0 auto;
 }
