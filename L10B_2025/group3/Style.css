@@ -297,6 +297,7 @@ a{
     width: 30%;
     justify-self: center;
     grid-column: 2 /span 3;
+    grid-row: 2;
   }
 
     .header-logo {
