@@ -284,4 +284,15 @@ a{
     .eniac {
         height: 15px;
     }
+  
+    p{
+    font-family: "Comic_Sans_MS", cursive;
+    margin: 10px 10% ;
+    }
+  
+    ul{
+      font-family: "Comic_Sans_MS", cursive;
+      margin: 10px 15% ;
+    
+    }
   }
