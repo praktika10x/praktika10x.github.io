@@ -27,9 +27,11 @@ ul{
     align-items: center;
     box-sizing: border-box;
     position: fixed;
-    top: 0;
-    left: 0;
     z-index: 1000;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
     .header-logo {
         height: 55px;
