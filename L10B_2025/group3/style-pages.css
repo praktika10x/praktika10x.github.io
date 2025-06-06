@@ -74,14 +74,15 @@
     }
 
     h2 {
-        font-family: "Tektur", sans-serif;
+        font-family: Tektur, sans-serif;
         font-weight: 64;
         font-style: normal;
         color: #261374;
         font-size: 50px;
         line-height: 40px;
-        margin: 15px 25%;
+        margin: 15px 10%;
         padding-top: 55px;
+      text-align: left;
     }
 
     h2:not(.subtitle)::after {
@@ -90,7 +91,7 @@
         width: 35%;
         height: 4px;
         background-color: #ee46a5;
-        margin-top: 15px;
+        margin: 15px 0 0 0;
         border-radius: 3px;
     }
 
