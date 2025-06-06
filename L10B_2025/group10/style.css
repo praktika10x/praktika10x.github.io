@@ -408,3 +408,13 @@ ul {
   }
 }
 
+body {
+  background-color: #001242;
+  background-image: url('imgb3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
