@@ -10,6 +10,8 @@ html, body {
 body {
   background-color: #f4f4f4;
   color: #000;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 /* === FONT === */
 .press-start-2p-regular {
@@ -17,7 +19,10 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
+.video-block {
+  text-align: center;
+  margin: 40px auto;
+}
 .tektur {
   font-family: "Tektur", sans-serif;
   font-optical-sizing: auto;
@@ -74,21 +79,24 @@ body {
 .nav-link .anav:hover {
   color: #F5BB47;
 }
-.pnav{
-  grid-column: 1 / span 4;
+.pnav {
+  grid-column: 2 / span 3;
   grid-row: 2 / span 5;
-  justify-self: center;
+  width: 100%;
+  justify-self: stretch;
   align-self: center;
+  text-align: right;
+  margin: 0;
+  padding-right: 30px;
   font-family: "Press Start 2P", system-ui;
   font-weight: 600;
   font-size: 100px;
   line-height: 125%;
-  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.50);
   letter-spacing: -0.05em;
-  text-align: right;
   color: #fff;
-  margin:0 30px 0 0;
+  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.50);
 }
+
 .logonav{
   width: 50%;
   grid-column: 4 / span 1;
@@ -125,10 +133,35 @@ p{
 ul{
   font-family: "Comic_Sans_MS", cursive;
   margin: 20px 25% ;
-  
+}
+h2{    
+  font-family: Tektur, sans-serif;
+  font-weight: 64;
+  font-style: normal;
+  color: #261374;
+  font-size: 50px;
+  line-height: 40px;
+  margin: 15px 10%;
+  padding-top: 55px;
+  text-align: left;
 }
 
+h2:not(.subtitle)::after {
+  display: block;
+  content: "";
+  width: 35%;
+  height: 4px;
+  background-color: #ee46a5;
+  margin: 15px 0 0 0;
+  border-radius: 3px;
+}
+
+
 /*КАРТИ ГОЛОВНА*/
+.cardnav:hover {
+  transition: 1s;
+  transform: scale(1.05);
+}
 .cardnav{
   height: 320px;
   width: 250px;
@@ -136,18 +169,18 @@ ul{
   padding: 15px;
   box-shadow: 6px 8px 8px 0 rgba(38, 19, 116, 0.45);
   background: linear-gradient(180deg, rgba(149, 75, 170, 0.65) 65.38%, rgba(255, 255, 255, 0.65) 99.99%);
-}
-.cardnav:hover {
-  transition: 1s;
-  transform: scale(1.05);
+  align-items: center;
 }
 .wrapnav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 20px;
-  background-image: url("фонгол.jpg")
+  background-image: url("фонгол.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:60%;
 }
 .imgnav{
   width: 150px;
@@ -171,82 +204,7 @@ a{
   text-decoration: none;
 }
 
-/*КАРТИ ГОЛОВНА*/
-.cardnav{
-  height: 320px;
-  width: 250px;
-  border-radius: 15px;
-  padding: 15px;
-  box-shadow: 6px 8px 8px 0 rgba(38, 19, 116, 0.45);
-  background: linear-gradient(180deg, rgba(149, 75, 170, 0.65) 65.38%, rgba(255, 255, 255, 0.65) 99.99%);
-}
-.wrapnav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  background-image: url("фонгол.jpg")
-}
-.imgnav{
-  width: 150px;
-  height: 150px;
-  display: block;
-  border-radius: 100%;
-  margin: 0 20%;
-}
-namenav{
-  font-family: "Press Start 2P", system-ui;
-  text-align: center;
-  color: black;
-  padding: 0; 
-  margin:  5px 0;
-}
-.name{
-  margin:0;
-}
-a{
-  color: #000;
-  text-decoration: none;
-}
 
-.card {
-  width: 250px;
-  background-color: #f9cdda;
-  border: 2px solid lightgray;
-  border-radius: 15px;
-  padding: 15px;
-  text-align: center;
-  color: #333;
-  box-shadow: 2px 2px 8px rgba(135, 206, 235, 0.6);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 4px 4px 12px rgba(135, 206, 235, 0.8);
-}
-
-.card img {
-  width: 80px;
-  margin-bottom: 10px;
-}
-
-.card_educational {
-  background-color: #fff;
-  min-height: 240px;
-}
-
-.card-salary {
-  background-color: #f5bb47;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  margin-bottom: 40px;
-  cursor: pointer;
-}
 
 .card-size {
   grid-column: span 2;
@@ -275,7 +233,7 @@ a{
   font-weight: 500;
   font-size: 25px;
   line-height: 32px;
-  margin-bottom: 20px;
+  margin:0 0 0 20px  ;
 }
 
 .cart-desc {
@@ -293,3 +251,173 @@ a{
 }
 
 /*кнопка*/
+
+
+
+/*Медіазапити*/
+
+@media (max-width: 768px) {
+
+  .headerhome{
+      width: 100%;
+      height: 350px;
+      background: linear-gradient(180deg, #ee46a5 0%, #f28d6c 44.23%, #f5bb47 73.08%);
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: repeat(6, 1fr);
+      position: static;
+  }
+
+  .ulnav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-family: "Press Start 2P", system-ui;
+  }
+    .nav {
+      width: 100%;
+      height: 50px;
+      background-color: #261374;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+  .anav {
+    display: flex;
+    margin: 10px 0; /* менше відступів */
+    font-size: 10px; /* зменшений текст */
+  }
+
+  .pnav {
+    font-size: 32px;
+    text-align: center;
+    grid-column: 2 /span 3; 
+    margin: 0;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin: 0 auto;
+    padding: 20px 10px;
+    color: #ffffff;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .logonav {
+    width: 30%;
+    justify-self: center;
+    grid-column: 2 /span 3;
+    grid-row: 2;
+  }
+
+    .header-logo {
+        height: 15px;
+        padding-left: 20px;
+    }
+
+    .eniac {
+        height: 15px;
+    }
+
+    p{
+    font-family: "Comic_Sans_MS", cursive;
+    margin: 10px 10% ;
+    }
+
+    ul:not(.ulnav){
+      font-family: "Comic_Sans_MS", cursive;
+      margin: 10px 15% ;
+
+    }
+
+
+
+/* Mobile adaptation */
+@media (max-width: 768px) {
+
+  .headerhome{
+      width: 100%;
+      height: 400px;
+      background: linear-gradient(180deg, #ee46a5 0%, #f28d6c 44.23%, #f5bb47 73.08%);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-template-rows: 60px 1fr;
+      position: static;
+  }
+
+  .ulnav {
+      grid-column: 1;
+      grid-row: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 5px;
+      list-style: none;
+      padding: 10px;
+      margin: 0;
+      font-family: "Press Start 2P", system-ui;
+      background-color: #261374;
+      width: 100%;
+      box-sizing: border-box;
+  }
+
+  .nav {
+    width: 100%;
+    height: 50px;
+    background-color: #261374;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .anav {
+    display: flex;
+    margin: 5px;
+    font-size: 8px;
+    padding: 5px 8px;
+  }
+
+  .pnav {
+    font-size: 32px;
+    text-align: center;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin: 0 auto;
+    padding: 20px 10px;
+    color: #ffffff;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    align-self: center;
+  }
+
+  .logonav {
+    width: 60px;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    align-self: center;
+    margin: 8px;
+  }
+
+    .header-logo {
+        height: 15px;
+        padding-left: 20px;
+    }
+
+    .eniac {
+        height: 15px;
+    }
+
+    p{
+    font-family: "Comic_Sans_MS", cursive;
+    margin: 10px 10% ;
+    }
+
+    ul:not(.ulnav){
+      font-family: "Comic_Sans_MS", cursive;
+      margin: 10px 15% ;
+
+    }
+  }

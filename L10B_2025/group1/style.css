@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
 body{ 
     max-width:1200px;
     margin:auto;
@@ -6,20 +7,21 @@ body{
 }
 p{
     font-family: "Balsamiq Sans";
+    
 }
 h1 {
     margin: 0 auto 10px;
-    font-family: Beautiful;
     color: steelblue;
     background: lightgreen;
     text-shadow: 2px 2px 5px darkblue;
-    text-align: left;
+    text-align: center;
     position: relative;
     left: 0;
     top: 0;
     height:40px;
-    width:230px;
+    width:300px;
     grid-column:1/2;grid-row:1/2; 
+    font-family:"Rubik Bubbles";
 }
      
 h3{
@@ -28,7 +30,7 @@ h3{
           color:white;
           background:lightgray;
           text-align:center;
-          padding:1px 10px;
+          padding:10px 10px;
           margin:auto;
           border-radius: 10px;
 }
@@ -40,7 +42,7 @@ h3{
           float:left;
           box-shadow:2px 2px 5px DeepSkyblue;
           padding:30px;
-          font-size:20px;
+          font-size:18px;
           grid-column:1/2; grid-row:2/3;
          
 }
@@ -61,7 +63,7 @@ h3{
     margin:auto;
     width:90%;
     flex-wrap: nowrap | wrap | wrap-reverse
-          justify-content: flex-start | flex-end | center | space-between | space-around
+    justify-content: flex-start | flex-end | center | space-between | space-around
 }
 .p1{
     float:center;
@@ -107,3 +109,34 @@ h3{
   font-weight: 700;
   font-style: italic;
 }
+.rubik-bubbles-regular {
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Silka {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    width: 100%;
+}
+
+.Silka a {
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid teal;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background: darkturquoise;
+}
+
+.Silka a:hover {
+    background: turquoise;
+    color: black;
+    transition: all 1s;
+    transform: scale(1.05);
+}
+

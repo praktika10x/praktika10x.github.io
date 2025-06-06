@@ -43,11 +43,42 @@
             border-radius: 5px;
             border-left: 3px solid lightseagreen;
         }
-        .Hyp{aling: center
-          aling: bottom
-        display: flex;
-          justify-content: space-evenly;
+        .Hyp{list-style-type: none;
+        padding: 0px;
+        text-align: center;
+        margin:20px auto;
             }
+        .Hyp li{
+        color: darkslategray;
+        display: inline-block;
+        width: 70px;
+          background: palegreen;
+          text-align: center;
+          margin: 5px;
+          padding: 5px;
+          box-shadow: 2px 2px 3px steelblue;
+          border-radius:8px;
+          }
+        .Hyp a{
+	padding: 10px 20px;
+	text-decoration: none;
+	text-align:center;
+}
+.Hyp li:hover{
+	background: skyblue;
+          color: black;
+	transition: 1s;
+	transform: scale(1.05);
+	transition: 1s;
+}
+.Dzerela li{
+    font-size: 18px;
+}
+.Dzerela li:hover{
+    transform: scale(1.05);
+	transition: 1s;
+}
+            
     </style>
 </head>
 <body>
@@ -71,8 +102,20 @@
     <div class="goal-box">
         Дослідження креативних та HR-спеціалізацій в IT, розвиток практичних навичок у обраних професіях.
     </div>
-   <div class="Hyp"><a href = "UX_Designer.html">1 </a> 
-    <a href = "UX_Designer_Osv.html">4 </a>
-    </div>
+   <ol class="Hyp">
+       <li><a href="UX_Designer.html">UX Designer</a></li>
+       <li><a href="Game_Designer.html">Game Designer</a></li>
+       <li><a href="IT_Recruiter.html">IT Recruiter</a></li>
+       <li><a href="UX_Designer_Osv.html">UX Designer Osv</a></li>
+       <li><a href="Game_Designer_Osv.html">Game Designer Osv</a></li>
+   </ol>
+<h2>Джерела</h2>
+    <ul class="Dzerela">
+        <li><a href="https://www.gempool.ie/images/uploads/4565.jpg">фото з сторінки IT Recruiter</a></li>
+        <li><a href="https://www.komarov.design/content/images/2023/07/goodbries.jpg">фото з сторінки UX Designer</a></li>
+        <li><a href="https://careertraining.ed2go.com/common/images/1/16894/game-designer-video-game-developer.jpg">фото з сторінки Game Designer</a></li>
+	<li><a href="https://www.deepseek.com/">DeepSeek</a></li>
+	<li><a href="https://openai.com/">ChatGPT</a></li>
+    </ul>
 </body>
 </html>

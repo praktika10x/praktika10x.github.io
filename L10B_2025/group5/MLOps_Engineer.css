@@ -16,150 +16,6 @@ body, html {
    scroll-behavior: smooth;
 }
 
-header {
-   top: 0;
-   left: 0;
-   height: 60px;
-   display: flex;
-   background-color: #7c93c3; 
-   color: #fff;
-   padding: 10px 5vw;
-   height: auto;
-   flex-wrap: wrap;
-}
-
-.logo-title {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.logo-title img {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  object-fit: cover;
-}
-
-.main-title {
-  font-family: 'Rubik Dirt', sans-serif;
-  font-size: 2.2rem;
-  color: #55679C;
-  margin: 0;
-  padding: 0 0 0 2px;
-  letter-spacing: 1px;
-  white-space: nowrap;
-}
-
-header ul li {margin-right: 20px; margin-top: 15px;}
-
-
-nav {
-   margin-left: auto;
-   margin-right: 0;
-}
-
-nav a {
-   color: #fff;
-   text-decoration: none;
-   font-weight: 700;
-   font-size: 22px; 
-   cursor: pointer;
-   transition: color 0.3s ease;
-}
-
-nav a:hover {
-   color: #bebebe;
-}  
-
-nav ul  {
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-}
-
-nav ul li ul {
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #8055f7;
-    width: 150px; 
-    z-index: 1000;
-    border-radius: 10px;
-    text-align: center;
-    margin: 0;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-    padding: 0;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-}
-
-nav ul li:hover ul,
-nav ul li:focus-within ul {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-
-nav ul li ul li {
-    margin: 0;
-    width: 100%;
-}
-
-nav ul li ul li a {
-    display: block;
-    padding: 20px 0;
-    color: #fff;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    margin: 0;
-    font-size: 16px; 
-    font-weight: 700;
-    font-family: 'Balsamiq Sans', sans-serif;
-    transition: color 0.2s;
-}
-
-nav ul li ul li:hover {
-    background-color: #5b3aff;
-    border-radius: 10px;
-}
-
-nav ul li:hover .categories-list-triangle {
-    transform: rotate(-90deg);
-}
-
-.border-bottom-hover {
-    transition: border 0.1s ease;
-}
-
-.border-bottom-hover:hover {
-    border-bottom: 3px solid #433D8B;
-}
-
-
-.categories-list-triangle {
-    transition: transform 0.3s ease;
-    display: inline-block;
-}
-
-
 
 .section1 {
    display: flex;
@@ -687,27 +543,33 @@ nav ul li:hover .categories-list-triangle {
     width: 100%;
 }
 .section8 img {
+    flex: 0 0 200px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
     background: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin-right: 32px;
+    margin: 0 40px;
     transition: transform 0.3s ease;
 }
-.section8 img:hover {
-    transform: scale(1.2);
-}
+
 .section8 .text-field_ul {
+    flex: 2;
+    list-style: disc inside;
+    text-align: left;
+    font-size: 20px;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
     gap: 12px;
     padding: 0;
-    margin: 0;
     width: 100%;
+}
+.section8 img:hover {
+    transform: scale(1.2);
 }
 .section8 .text-field_ul li {
     font-family: 'Geologica', sans-serif;
@@ -797,159 +659,6 @@ nav ul li:hover .categories-list-triangle {
     margin-bottom: 12px;
 }
 
-
-
-
-
-
-
-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #2E236C;
-    padding: 20px 5vw;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    gap: 20px;
-    
-}
-
-.footer-left {
-    display: flex;
-    justify-self: flex-end;
-    flex-direction: column;
-    gap: 10px;
-}
-
-footer h2 {
-    font-family: 'Rubik Dirt', sans-serif;
-    color: #fff;
-    font-size: 30px;
-    align-self: flex-start;
-    margin-bottom: 20px;
-}
-
-.footer-authors {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-
-.footer-authors img {
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
-.footer-authors img:hover {
-    transform: scale(1.1);
-}
-
-
-.footer-author-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-}
-
-.footer-author-block img {
-    width: 200px;
-    height: 220px;
-    border-radius: 12px;
-    object-fit: cover;
-    background: #fff;
-}
-
-.footer-author-block h3 {
-    font-family: 'Balsamiq Sans', sans-serif;
-    color: #fff;
-    font-size: 20px;
-    margin-top: 8px;
-    text-align: center;
-    width: 100px;
-    font-weight: normal;
-    line-height: 1.2;
-}
-
-.sourses-lang {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 100%;
-    margin-top: 24px;
-    gap: 24px;
-}
-
-.change-lang {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin: 0;
-    padding: 0;
-}
-
-.change-lang li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.change-lang img {
-    width: 25px;
-    height: 30px;
-    border-radius: 50%;
-    object-fit: cover;
-    background: #fff;
-}
-
-.change-lang button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    font-family: 'Rubik Dirt', sans-serif;
-    font-size: 20px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-}
-
-.change-lang button:active,
-.change-lang button:focus {
-    text-decoration: underline;
-}
-
-footer .sourses {
-    background-color: #9B86BD;
-    font-family: 'Rubik Dirt', sans-serif;
-    color: #55679C;
-    border: none;
-    padding: 10px 22px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-footer .sourses:hover {
-    background-color: #5a00eb;
-}
-
-footer .sourses a {text-decoration: none;}
 
 @media (max-width: 1200px) {
   .section4,

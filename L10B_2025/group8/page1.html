@@ -10,19 +10,38 @@
   <header class="site-header">
     <div class="header-left">
       <img src="images.jpg" alt="Логотип Політ" class="logo" />
-    </div>
-    <div class="search-container">
-      <input type="text" class="search-input" placeholder="Пошук...">
-      <button class="search-button">🔍</button>
+      <span class="site-title">2D графіка</span>
     </div>
     <nav class="nav-links">
       <button class="theme-toggle" id="themeToggle">🌓</button>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
+    
+    <!-- Navigation Menu -->
+    <div class="nav-menu" id="navMenu">
+      <div class="nav-menu-content">
+        <a href="#hero" class="nav-menu-link">2D графіка</a>
+        <a href="#definition" class="nav-menu-link">Що таке 2D графіка</a>
+        <a href="#professions" class="nav-menu-link">Приклади професій</a>
+        <a href="#motion-designer" class="nav-menu-link">Motion-дизайнер</a>
+        <a href="#skills" class="nav-menu-link">Специфічні знання</a>
+        <a href="#tools" class="nav-menu-link">Інструменти розробника</a>
+        <a href="#motion-create" class="nav-menu-link">Що розробляють</a>
+        <a href="#examples" class="nav-menu-link">Зразки</a>
+        <a href="#job-market" class="nav-menu-link">Ринок праці</a>
+        <a href="#roadmap" class="nav-menu-link">Roadmap</a>
+        <a href="#table" class="nav-menu-link">Таблиця</a>
+      </div>
+    </div>
   </header>
 
   <main class="main-content">
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section" id="hero">
       <div class="hero-background dark-bg"></div>
       
       <div class="hero-content">
@@ -31,7 +50,7 @@
       </div>
     </section>
 
-    <section class="definition-section">
+    <section class="definition-section" id="definition">
       <div class="definition-content">
         <h3 class="definition-title">Що таке 2D графіка</h3>
         <div class="definition-text">
@@ -40,7 +59,7 @@
       </div>
     </section>
 
-    <section class="professions-section">
+    <section class="professions-section" id="professions">
       <div class="professions-content">
         <h3 class="professions-title">Приклади професій:</h3>
         
@@ -99,13 +118,13 @@
       </div>
     </section>
 
-    <section class="motion-designer-section">
+    <section class="motion-designer-section" id="motion-designer">
       <div class="motion-content">
         <h3 class="motion-title">Motion-дизайнер</h3>
         
         <div class="motion-detail">
           <div class="motion-gif">
-            <img src="https://cdn.discordapp.com/attachments/1266156981450838171/1379848600627974307/38f1c8db564f8c5c4b791d251f7ca61a72a6c985_1.gif?ex=6841bba6&is=68406a26&hm=41b87608d342378e0b2b78ffb23a80efa02835c47ffe810f7f218eb982b9856f&" alt="Motion дизайн анімація" loading="lazy" />
+            <img src="https://cdn.discordapp.com/attachments/1266156981450838171/1380529823067144255/38f1c8db564f8c5c4b791d251f7ca61a72a6c985_1.gif?ex=68443616&is=6842e496&hm=848b97689fcee7fb926e50cd53390033f125b78a5169764f3bab044a5803e52e&" alt="Motion дизайн анімація" loading="lazy" />
           </div>
           <div class="motion-description">
             <p>Motion-дизайнер або відеодизайнер займається створенням анімованої графіки. Він «анімує» рухається статичні об'єкти. Наприклад, придумує анімацію для логотипів і шрифтів, зображає анімації та фотографії та створює статичні об'єкти в рухомі. Робить титри до фільмів, заставки для передач, анімовані презентації та інфографіки, рекламні ролики, трейлери, тизери та багато іншого.</p>
@@ -114,7 +133,7 @@
       </div>
     </section>
 
-    <section class="skills-section">
+    <section class="skills-section" id="skills">
       <div class="skills-content">
         <h3 class="skills-title">Специфічні знання та вимоги до фахівця</h3>
         
@@ -130,7 +149,7 @@
       </div>
     </section>
 
-    <section class="tools-section">
+    <section class="tools-section" id="tools">
       <div class="tools-content">
         <h3 class="tools-title">Інструменти розробника</h3>
         
@@ -165,7 +184,7 @@
       </div>
     </section>
 
-    <section class="motion-create-section">
+    <section class="motion-create-section" id="motion-create">
       <div class="motion-create-content">
         <h3 class="motion-create-title">Що розробляють Motion-дизайнери?</h3>
         
@@ -181,7 +200,7 @@
       </div>
     </section>
 
-    <section class="examples-section">
+    <section class="examples-section" id="examples">
       <div class="examples-content">
         <h3 class="examples-title">зразки</h3>
         
@@ -211,7 +230,7 @@
       </div>
     </section>
 
-    <section class="job-market-section">
+    <section class="job-market-section" id="job-market">
       <div class="job-market-content">
         <h3 class="job-market-title">Ринок праці</h3>
         
@@ -235,7 +254,7 @@
       </div>
     </section>
 
-    <section class="roadmap-section">
+    <section class="roadmap-section" id="roadmap">
       <div class="roadmap-content">
         <h3 class="roadmap-title">Motion-дизайнер – Roadmap (6-18 міс)</h3>
         
@@ -290,7 +309,7 @@
       </div>
     </section>
 
-    <section class="table-section">
+    <section class="table-section" id="table">
       <div class="table-content">
         <h3 class="table-title">Таблиця</h3>
         
@@ -378,8 +397,6 @@
       <div class="footer-section">
         <h4>Проект</h4>
         <ul class="footer-links">
-          <li><a href="#definition">Визначення</a></li>
-          <li><a href="#professions">Професії</a></li>
           <li>Група 8, Л-10В</li>
           <li>Ліцей "Політ"</li>
         </ul>
@@ -404,6 +421,7 @@
   </footer>
 
   <script>
+    // Theme toggle functionality
     const themeToggle = document.getElementById('themeToggle');
     const body = document.body;
 
@@ -419,6 +437,57 @@
       } else {
         body.classList.add('light-theme');
         localStorage.setItem('theme', 'light-theme');
+      }
+    });
+
+    // Navigation menu functionality
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+    const navMenuLinks = document.querySelectorAll('.nav-menu-link');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      body.classList.toggle('menu-open');
+    });
+
+    // Close menu when clicking on links
+    navMenuLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+          // Close menu
+          menuToggle.classList.remove('active');
+          navMenu.classList.remove('active');
+          body.classList.remove('menu-open');
+          
+          // Smooth scroll to section
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+        body.classList.remove('menu-open');
+      }
+    });
+
+    // Close menu on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+        body.classList.remove('menu-open');
       }
     });
   </script>

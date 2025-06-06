@@ -10,20 +10,39 @@
   <header class="site-header">
     <div class="header-left">
       <img src="images.jpg" alt="Логотип Політ" class="logo" />
-    </div>
-    <div class="search-container">
-      <input type="text" class="search-input" placeholder="Пошук...">
-      <button class="search-button">🔍</button>
+      <span class="site-title">3D графіка</span>
     </div>
     <nav class="nav-links">
       <button class="theme-toggle" id="themeToggle">🌓</button>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
+    
+    <!-- Navigation Menu -->
+    <div class="nav-menu" id="navMenu">
+      <div class="nav-menu-content">
+        <a href="#hero" class="nav-menu-link">3D графіка</a>
+        <a href="#definition" class="nav-menu-link">Що таке 3D графіка</a>
+        <a href="#professions" class="nav-menu-link">Приклади професій</a>
+        <a href="#motion-designer" class="nav-menu-link">3D-моделер</a>
+        <a href="#skills" class="nav-menu-link">Специфічні знання</a>
+        <a href="#tools" class="nav-menu-link">Інструменти розробника</a>
+        <a href="#motion-create" class="nav-menu-link">Що розробляють</a>
+        <a href="#examples" class="nav-menu-link">Зразки</a>
+        <a href="#job-market" class="nav-menu-link">Ринок праці</a>
+        <a href="#education" class="nav-menu-link">Освіта</a>
+        <a href="#roadmap" class="nav-menu-link">Roadmap</a>
+        <a href="#table" class="nav-menu-link">Таблиця</a>
+      </div>
+    </div>
   </header>
 
   <main class="main-content">
     <!-- Hero Section -->
-    <section class="hero-section">
-      
+    <section class="hero-section" id="hero">
       <div class="hero-content">
         <h1 class="main-title">Комп'ютерна графіка</h1>
         <h2 class="sub-title">3D графіка</h2>
@@ -31,7 +50,7 @@
     </section>
 
     <!-- Definition Section -->
-    <section class="definition-section">
+    <section class="definition-section" id="definition">
       <div class="definition-content">
         <h3 class="definition-title">Що таке 3D графіка</h3>
         <div class="definition-text">
@@ -41,7 +60,7 @@
     </section>
 
     <!-- Professions Section -->
-    <section class="professions-section">
+    <section class="professions-section" id="professions">
       <div class="professions-content">
         <h3 class="professions-title">Приклади професій:</h3>
         
@@ -88,7 +107,7 @@
     </section>
 
     <!-- 3D Modeler Detail Section -->
-    <section class="motion-designer-section">
+    <section class="motion-designer-section" id="motion-designer">
       <div class="motion-content">
         <h3 class="motion-title">3D-моделер</h3>
         
@@ -104,7 +123,7 @@
     </section>
 
     <!-- Skills and Requirements Section -->
-    <section class="skills-section">
+    <section class="skills-section" id="skills">
       <div class="skills-content">
         <h3 class="skills-title">Специфічні знання та вимоги до фахівця</h3>
         
@@ -121,7 +140,7 @@
     </section>
 
     <!-- Tools Section -->
-    <section class="tools-section">
+    <section class="tools-section" id="tools">
       <div class="tools-content">
         <h3 class="tools-title">Інструменти розробника</h3>
         
@@ -157,7 +176,7 @@
     </section>
 
     <!-- What 3D Modelers Create Section -->
-    <section class="motion-create-section">
+    <section class="motion-create-section" id="motion-create">
       <div class="motion-create-content">
         <h3 class="motion-create-title">Що розробляють 3D-моделери?</h3>
         
@@ -174,7 +193,7 @@
     </section>
 
     <!-- Examples Section -->
-    <section class="examples-section">
+    <section class="examples-section" id="examples">
       <div class="examples-content">
         <h3 class="examples-title">зразки</h3>
         
@@ -202,7 +221,7 @@
     </section>
 
     <!-- Job Market Section -->
-    <section class="job-market-section">
+    <section class="job-market-section" id="job-market">
       <div class="job-market-content">
         <h3 class="job-market-title">Ринок праці</h3>
         
@@ -228,7 +247,7 @@
     </section>
 
     <!-- Education Section -->
-    <section class="roadmap-section">
+    <section class="roadmap-section" id="education">
       <div class="roadmap-content">
         <h3 class="roadmap-title">Освіта</h3>
         
@@ -249,7 +268,7 @@
     </section>
 
     <!-- 3D Modeler Roadmap Section -->
-    <section class="roadmap-section">
+    <section class="roadmap-section" id="roadmap">
       <div class="roadmap-content">
         <h3 class="roadmap-title">3D-моделер – Roadmap (8-24 міс)</h3>
         
@@ -295,7 +314,7 @@
     </section>
 
     <!-- Comparison Table Section -->
-    <section class="table-section">
+    <section class="table-section" id="table">
       <div class="table-content">
         <h3 class="table-title">Таблиця</h3>
         
@@ -378,9 +397,6 @@
       <div class="footer-section">
         <h4>Ресурси</h4>
         <ul class="footer-links">
-          <li><a href="#examples">Приклади робіт</a></li>
-          <li><a href="#roadmap">Roadmap</a></li>
-          <li><a href="#job-market">Ринок праці</a></li>
           <li><a href="dzherela.html">Джерела</a></li>
         </ul>
       </div>
@@ -421,6 +437,57 @@
       } else {
         body.classList.add('light-theme');
         localStorage.setItem('theme', 'light-theme');
+      }
+    });
+
+    // Navigation menu functionality
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+    const navMenuLinks = document.querySelectorAll('.nav-menu-link');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      body.classList.toggle('menu-open');
+    });
+
+    // Close menu when clicking on links
+    navMenuLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+          // Close menu
+          menuToggle.classList.remove('active');
+          navMenu.classList.remove('active');
+          body.classList.remove('menu-open');
+          
+          // Smooth scroll to section
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+        body.classList.remove('menu-open');
+      }
+    });
+
+    // Close menu on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+        body.classList.remove('menu-open');
       }
     });
   </script>

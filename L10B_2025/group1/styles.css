@@ -1,38 +1,145 @@
-table, th, td {
-	        border: 1px solid black;
-	        font-size:30px
-	    }
-	    table {
-	        width: 80%;
-	        
-	        margin: auto;
-	    }
-	    .card {
-          width: 250px;
-          height: 410px;
-          border: 2px grey solid;
-          border-radius:10px;
-          float:left;
-          margin: 10px;
-          padding: 20px;
-         background: lightgrey;
-         font-size:30px;
-      }
-      .wrap{
-          width: 1000px;
-          margin: auto;
-          display: flex;
-          justify-content: space-evenly;}
-          .bum {
-              aling: center
-          height: 30px;
-          border: 2px grey solid;
-          border-radius:10px;
-         background: lightgrey;
-              display: flex;
-          justify-content: center;
-          font-size:30px
-          }
-          h2{font-size:50px;
-              text-align: center;
-          }
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
+body { 
+    max-width: 1200px;
+    margin: auto;
+    background: mintcream;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+table, td, th {
+    border: 2px solid teal;
+    border-collapse: collapse;
+}
+
+table {
+    padding: 20px;
+    width: 90%;
+    margin: 40px auto;
+    background: white;
+    box-shadow: 0 4px 8px lightblue;
+}
+
+th {
+    font-family: "Balsamiq Sans";
+    font-size: 20px;
+    background: dodgerblue;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    font-family: "Balsamiq Sans";
+    font-size: 18px;
+    padding: 10px;
+    background: azure;
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: 2px 2px 8px paleturquoise;
+    padding: 15px;
+    font-size: 16px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px aquamarine;
+}
+
+h1 {
+    margin: 20px auto;
+    font-family: "Rubik Bubbles";
+    color: white;
+    background: linear-gradient(to right, royalblue, mediumseagreen);
+    text-shadow: 2px 2px 4px darkblue;
+    text-align: center;
+    padding: 15px;
+    width: 80%;
+    border-radius: 15px;
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-family: "Balsamiq Sans";
+    color: white;
+    background: steelblue;
+    text-align: center;
+    padding: 12px 25px;
+    margin: 20px auto;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+h3 {
+    font-family: "Balsamiq Sans";
+    font-size: 20px;
+    color: white;
+    background: cadetblue;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+p {
+    font-family: "Balsamiq Sans";
+    color: darkslategray;
+}
+
+.wrap {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+    width: 90%;
+    gap: 20px;
+}
+
+.Silka {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    width: 100%;
+}
+
+.Silka a {
+    font-size: 1.5rem;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    background: seagreen;
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+
+.Silka a:hover {
+    background: mediumaquamarine;
+    transform: scale(1.05);
+    color: black;
+}
+
+.balsamiq-sans-regular {
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.rubik-bubbles-regular {
+    font-family: "Rubik Bubbles", cursive;
+}

@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sourses</title>
 	<link href="Sourses.css" rel="stylesheet">
+	<link href="footer.css" rel="stylesheet">
+	<link href="header-prof.css" rel="stylesheet">
 </head>
 
 <body id="general">
@@ -15,9 +17,9 @@
 			<img src="photos/logo.png" alt="logo">
 		</div>
 		
-		<nav>
+		<nav id="desktop-nav">
 			
-			<ul>
+			<ul class="desktop-menu">
 				<li>
 					<a href="#proj">Навігація <span class="categories-list-triangle"> ◀</span></a>
 					<ul>
@@ -38,7 +40,32 @@
 			</ul>
 		
 		</nav>
-	
+		<div class="mobile-menu-wrapper">
+					<span class="material-symbols-outlined hamburger-icon">
+						dehaze
+					</span>
+			<nav id="mobile-menu-nav">
+	        	     <ul class="mobile-menu">
+			            <li>
+					<a href="#proj">Навігація <span class="categories-list-triangle"> ◀</span></a>
+					<ul>
+				              <li><a href="#MLOps_Engineer">Джерела MLOps Engineer</a></li>
+				              <li><a href="#ML_Engineer">Джерела ML Engeneer</a></li>
+				              <li><a href="#Data_Analyst">Джерела Data analyst</a></li>
+				    </ul>
+				</li>
+				<li>
+					<a href="#proj" class="action">Професії <span class="categories-list-triangle"> ◀</span></a>
+					<ul>
+				              <li><a href="Data_Analyst.html">Data Analyst</a></li>
+				              <li><a href="ML_Engineer.html">ML Engineer</a></li>
+				              <li><a href="MLOps_Engineer.html">MLOps Engineer</a></li>
+				    </ul>
+				</li>
+				<li><a href="index.html" class="active">Головна</a></li>
+			        </ul>
+	    		</nav>
+		</div>
 	</header>
 
 	
@@ -83,29 +110,30 @@
 
 	<footer>
 		<div class="footer-left">
-			<h2>Створили</h2>
+			<h2 class="lnggg-authors">Автори</h2>
 			<div class="footer-authors">
 			<div class="footer-author-block">
 				<img src="photos/photo_Bogdan.png" alt="Бебих Богдан">
-				<h3>Бебих<br>Богдан</h3>
+				<h3 class="lnggg-authors-name1">Бебих<br>Богдан</h3>
 			</div>
 			<div class="footer-author-block">
 				<img src="photos/photo_Artem.png" alt="Іваниcь Артем">
-				<h3>Іваниcь<br>Артем</h3>
+				<h3 class="lnggg-authors-name2">Іваниcь<br>Артем</h3>
 			</div>
 			<div class="footer-author-block">
-				<img src="photos/photo_Misha.png" alt="Пигина Михайло">
-				<h3>Пигина<br>Михайло</h3>
+				<img src="photos/photo_Misha2.png" alt="Пигина Михайло">
+				<h3 class="lnggg-authors-name3">Пигина<br>Михайло</h3>
 			</div>
 			</div>
 		</div>
 
 		<div class="sourses-lang">
 			<ul class="change-lang">
-			<li><img src="photos/ua_flag.png" alt="uk"><button>uk</button></li>
-			<li><img src="photos/en_flag.png" alt="en"><button>en</button></li>
+			<li><img src="photos/ua_flag.png" alt="uk" ><button class="change-lang-ua" data-lang="ua">ua</button></li>
+			<li><img src="photos/en_flag.png" alt="en"><button class="change-lang-en" data-lang="en">en</button></li>
 			</ul>
-			<button class="sourses">Джерела</button>
+			<a class="lnggg-gen_prof gen_prof sourses" href="../../index.html">Калейдоскоп професій</a>
+			<a class="lnggg-sourses sourses" href="Sourses.html">Джерела</a>
 		</div>
 	</footer>
 
