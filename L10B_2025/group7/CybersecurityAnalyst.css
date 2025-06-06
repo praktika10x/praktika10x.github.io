@@ -452,6 +452,12 @@ strong {
     object-fit: contain;
 }
 
+.slider-emoji {
+    font-size: 70px;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
 .slide h3 {
     font-size: 24px;
     color: #222222;
@@ -765,13 +771,8 @@ section ul:last-of-type li::before {
     .slide p {
         font-size: 14px;
     }
-    .slider-image {
-        max-width: 70px;
-        max-height: 70px;
-    }
-
-    .gif-container {
-        max-width: 95%;
+    .slider-emoji {
+        font-size: 60px;
     }
 }
 
@@ -829,9 +830,8 @@ section ul:last-of-type li::before {
     .slide p {
         font-size: 13px;
     }
-    .slider-image {
-        max-width: 60px;
-        max-height: 60px;
+    .slider-emoji {
+        font-size: 50px;
     }
 }
 
