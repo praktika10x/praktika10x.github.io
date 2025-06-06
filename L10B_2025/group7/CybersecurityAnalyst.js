@@ -99,4 +99,36 @@ document.addEventListener('DOMContentLoaded', () => {
         sliderContainer.addEventListener('mouseenter', stopAutoSlide);
         sliderContainer.addEventListener('mouseleave', startAutoSlide);
     }
+
+    const animatedElements = document.querySelectorAll('.animated-section, .card, .info-block, .tool-item, .product-item, .slider-container');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+
+                if (entry.target.tagName === 'H1' && entry.target.classList.contains('fade-in-text')) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+
+                if (entry.target.classList.contains('animated-section')) {
+                    const children = entry.target.querySelectorAll('.delay-1, .delay-2, .delay-3, .delay-4, .delay-5, .delay-6, .delay-7, .delay-8, .delay-9');
+                    children.forEach(child => {
+                        child.classList.add('is-visible');
+                    });
+                }
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    animatedElements.forEach(element => {
+        observer.observe(element);
+    });
 });
