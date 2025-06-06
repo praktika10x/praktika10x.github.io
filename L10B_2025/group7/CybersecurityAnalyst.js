@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function updateSliderPosition() {
-            sliderWrapper.style.transform = `translateX(${-currentIndex * 100}%)`;
+            sliderWrapper.style.transform = translateX(${-currentIndex * 100}%);
             updateDots();
         }
 
