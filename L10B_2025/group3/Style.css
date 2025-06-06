@@ -175,8 +175,8 @@ h2:not(.subtitle)::after {
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  background-image: url("фонгол.jpg")
-  ackground-size: cover;
+  background-image: url("фонгол.jpg");
+  иackground-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
