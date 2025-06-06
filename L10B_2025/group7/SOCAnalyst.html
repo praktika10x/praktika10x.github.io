@@ -156,13 +156,37 @@
         <div class="soc-section section-alt-background">
             <h2>Інструменти, які використовує SOC Analyst</h2>
             <p>У своїй повсякденній роботі SOC Analyst активно використовує різноманітні інструменти:</p>
-            <ul class="products-list">
-                <li>**SIEM (Security Information and Event Management):** Для централізованого збору та аналізу журналів подій з різних джерел (наприклад, Splunk, IBM QRadar, Microsoft Sentinel, Elastic SIEM).</li>
-                <li>**IDS/IPS (Intrusion Detection/Prevention Systems):** Для виявлення та запобігання вторгнень (наприклад, Snort, Suricata).</li>
-                <li>**Endpoint Detection and Response (EDR):** Для моніторингу та реагування на кінцевих точках (наприклад, CrowdStrike, SentinelOne, Microsoft Defender for Endpoint).</li>
-                <li>**Threat Intelligence Platforms (TIP):** Для агрегації та аналізу інформації про загрози (наприклад, Recorded Future, Anomali).</li>
-                <li>**Vulnerability Scanners:** Для виявлення вразливостей (наприклад, Nessus, OpenVAS).</li>
-            </ul>
+            <div id="toolsSliderContainer" class="soc-slider-container">
+                <div class="soc-slider-wrapper">
+                    <div class="soc-slide">
+                        <div class="soc-icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/2920/2920317.png" alt="SIEM Icon"></div>
+                        <h3>SIEM</h3>
+                        <p>Для централізованого збору та аналізу журналів подій з різних джерел (наприклад, Splunk, IBM QRadar, Microsoft Sentinel, Elastic SIEM).</p>
+                    </div>
+                    <div class="soc-slide">
+                        <div class="soc-icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/2884/2884501.png" alt="IDS/IPS Icon"></div>
+                        <h3>IDS/IPS</h3>
+                        <p>Для виявлення та запобігання вторгнень (наприклад, Snort, Suricata).</p>
+                    </div>
+                    <div class="soc-slide">
+                        <div class="soc-icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/3056/3056354.png" alt="EDR Icon"></div>
+                        <h3>EDR</h3>
+                        <p>Для моніторингу та реагування на кінцевих точках (наприклад, CrowdStrike, SentinelOne, Microsoft Defender for Endpoint).</p>
+                    </div>
+                    <div class="soc-slide">
+                        <div class="soc-icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/3673/3673004.png" alt="TIP Icon"></div>
+                        <h3>Threat Intelligence Platforms</h3>
+                        <p>Для агрегації та аналізу інформації про загрози (наприклад, Recorded Future, Anomali).</p>
+                    </div>
+                    <div class="soc-slide">
+                        <div class="soc-icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/2760/2760824.png" alt="Vulnerability Scanner Icon"></div>
+                        <h3>Vulnerability Scanners</h3>
+                        <p>Для виявлення вразливостей (наприклад, Nessus, OpenVAS).</p>
+                    </div>
+                </div>
+                <button class="soc-prev-btn" data-slider="toolsSliderContainer">&lt;</button>
+                <button class="soc-next-btn" data-slider="toolsSliderContainer">&gt;</button>
+            </div>
         </div>
 
         <div class="soc-section">
@@ -296,8 +320,8 @@
                         <p>Інцидент детально документується, а також надаються рекомендації щодо покращення політик безпеки або налаштувань систем для запобігання подібним інцидентам у майбутньому.</p>
                     </div>
                 </div>
-                <button class="soc-prev-btn"><</button>
-                <button class="soc-next-btn">></button>
+                <button class="soc-prev-btn" data-slider="socSliderContainer">&lt;</button>
+                <button class="soc-next-btn" data-slider="socSliderContainer">&gt;</button>
             </div>
         </div>
     </div>
