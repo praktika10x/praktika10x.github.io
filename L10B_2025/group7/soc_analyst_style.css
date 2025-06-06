@@ -191,6 +191,7 @@ p {
 }
 
 .soc-icon-circle {
+    /* This rule is kept to allow the original design for other .soc-icon-circle elements if they exist */
     width: 80px;
     height: 80px;
     background-color: #FFD700;
@@ -202,12 +203,29 @@ p {
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
-.soc-icon-circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0) invert(1);
+/* Specific styling for images within .soc-card to make them rounded, larger, and remove yellow circles */
+.soc-card .soc-icon-circle img {
+    width: 120px; /* Increased size */
+    height: 120px; /* Increased size */
+    object-fit: cover; /* Ensures image covers the area */
+    border-radius: 50%; /* Makes image rounded */
+    margin: 0; /* Remove margin from the image itself, let parent handle */
+    filter: none; /* Ensure no unwanted filters are applied */
+    box-shadow: none; /* Remove shadow if inherited from parent .soc-icon-circle */
+    border: none; /* Explicitly remove any border */
 }
+
+/* Also apply to direct images if they are used without .soc-icon-circle wrapper in skills */
+.soc-card img {
+    width: 120px; /* Increased size */
+    height: 120px; /* Increased size */
+    object-fit: cover; /* Ensures image covers the area */
+    border-radius: 50%; /* Makes image rounded */
+    margin: 0 auto 20px auto; /* Centered and spacing */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Added subtle shadow for direct images */
+    border: none; /* Remove any border */
+}
+
 
 .soc-card h3 {
     color: #000000;
@@ -418,8 +436,8 @@ p {
 .tools-slider-container .soc-slide .soc-icon-circle img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    filter: brightness(0) invert(1);
+    object-fit: contain;
+    filter: none;
 }
 
 .education-slide img {
@@ -624,15 +642,12 @@ p {
         padding: 20px;
         min-width: 100%;
     }
-    .soc-icon-circle {
-        width: 70px;
-        height: 70px;
-    }
-    .soc-icon-circle img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(0) invert(1);
+    /* Adjusted for smaller screens */
+    .soc-card .soc-icon-circle img,
+    .soc-card img {
+        width: 90px; /* Adjusted size for mobile */
+        height: 90px; /* Adjusted size for mobile */
+        margin-bottom: 15px; /* Adjust spacing */
     }
     .soc-card h3 {
         font-size: 1.3em;
