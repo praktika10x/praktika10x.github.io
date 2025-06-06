@@ -255,7 +255,8 @@ a{
   }
 
     .nav {
-    width: 70%;
+    width: 100%;
+    haight: 20px;
   }
 
   .anav {
