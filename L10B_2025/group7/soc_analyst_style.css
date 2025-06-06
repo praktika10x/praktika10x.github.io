@@ -384,6 +384,116 @@ footer {
     transform: rotate(15deg) scale(1.2);
 }
 
+.flashcard-single-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.flashcard-single {
+    width: 600px;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+}
+
+.flashcard-single:hover {
+    transform: translateY(-10px);
+}
+
+.flashcard-inner-single {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 15px;
+}
+
+.flashcard-single.is-flipped .flashcard-inner-single {
+    transform: rotateY(180deg);
+}
+
+.flashcard-front-single, .flashcard-back-single {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.flashcard-front-single {
+    background-color: #000000;
+    color: #FFD700;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.flashcard-image {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.flashcard-back-single {
+    background-color: #FFD700;
+    color: #000000;
+    transform: rotateY(180deg);
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.flashcard-back-single h3 {
+    color: #000000;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.flashcard-back-single ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flashcard-back-single ul.roadmap-detail-list li {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 8px 0;
+    font-size: 0.95em;
+    display: list-item;
+    margin-bottom: 5px;
+}
+
+.flashcard-back-single ul.roadmap-detail-list li:before {
+    content: '✅';
+    margin-right: 10px;
+    font-size: 1.1em;
+    color: #000000;
+}
+
+.flashcard-back-single ul.roadmap-detail-list li:hover {
+    transform: none;
+}
+
 @media (max-width: 992px) {
     h1 {
         font-size: 2.4em;
@@ -470,6 +580,26 @@ footer {
         background-size: contain;
         background-repeat: repeat;
     }
+    
+    .flashcard-single {
+        width: 90%;
+        height: 350px;
+    }
+    .flashcard-front-single {
+        font-size: 1.4em;
+    }
+    .flashcard-image {
+        max-width: 100px;
+    }
+    .flashcard-back-single {
+        font-size: 0.9em;
+    }
+    .flashcard-back-single h3 {
+        font-size: 1.3em;
+    }
+    .flashcard-back-single ul.roadmap-detail-list li {
+        padding: 6px 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -488,5 +618,26 @@ footer {
     .soc-card {
         min-width: unset;
         width: 100%;
+    }
+
+    .flashcard-single {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+    }
+    .flashcard-front-single {
+        font-size: 1.2em;
+        padding: 20px;
+    }
+    .flashcard-image {
+        max-width: 80px;
+        margin-bottom: 15px;
+    }
+    .flashcard-back-single {
+        font-size: 0.85em;
+        padding: 20px;
+    }
+    .flashcard-back-single h3 {
+        font-size: 1.1em;
     }
 }
