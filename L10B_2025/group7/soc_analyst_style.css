@@ -90,6 +90,11 @@ p {
     text-shadow: 1px 1px 3px rgba(255,255,255,0.3);
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+}
+
 .nav a {
     color: #FFFFFF;
     text-decoration: none;
@@ -198,8 +203,9 @@ p {
 }
 
 .soc-icon-circle img {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     filter: none;
 }
 
@@ -384,6 +390,19 @@ p {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+.tools-slider-container .soc-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
 .tools-slider-container .soc-slide .soc-icon-circle {
     width: 80px;
     height: 80px;
@@ -397,8 +416,9 @@ p {
 }
 
 .tools-slider-container .soc-slide .soc-icon-circle img {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     filter: none;
 }
 
@@ -466,6 +486,56 @@ p {
     border-color: #FFD700;
 }
 
+.sample-products-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.sample-product-card {
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sample-product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.sample-product-card:nth-child(1) {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4e3C6fJ6J_k-J-G0jC8W4B7R3Z9m5X0R3uA&s');
+}
+
+.sample-product-card:nth-child(2) {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.pinimg.com/736x/8e/31/5d/8e315dd9e2f52d5b6b8b0e8d0d5b5b0e.jpg');
+}
+
+.sample-product-card:nth-child(3) {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://w7.pngwing.com/pngs/454/349/png-transparent-document-security-computer-security-computer-software-protection-report-cdr-angle-text.png');
+}
+
+.sample-product-card:nth-child(4) {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://static.vecteezy.com/system/resources/previews/007/357/151/non_2x/security-protection-icon-computer-data-safety-and-internet-network-confidentiality-sign-design-free-vector.jpg');
+}
+
 @media (max-width: 768px) {
     .container {
         margin: 10px auto;
@@ -514,6 +584,9 @@ p {
     .soc-dot {
         height: 8px;
         width: 8px;
+    }
+    .sample-products-cards-container {
+        grid-template-columns: 1fr;
     }
 }
 
