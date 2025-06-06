@@ -419,3 +419,6 @@ body {
   color: white;
 }
 
+.black-overlay {
+  display: none;
+}
