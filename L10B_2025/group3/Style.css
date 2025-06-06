@@ -1,44 +1,3 @@
-@media (max-width: 768px) {
-  .header {
-        width: 100%;
-        height: 50px;
-        background-color: #261374;
-        display: flex;
-        align-items: center;
-        box-sizing: border-box;
-  }
-
-    .nav {
-    width: 70%;
-  }
-
-  .anav {
-    margin: 10px 0; /* менше відступів */
-    font-size: 10px; /* зменшений текст */
-  }
-
-  .pnav {
-    font-size: 20px;
-    text-align: center;
-    grid-column: 1 / -1; /* розтягнути на всю ширину */
-    margin: 0;
-  }
-
-  .logonav {
-    width: 80%;
-    justify-self: center;
-    grid-column: 1 / -1;
-  }
-
-    .header-logo {
-        height: 35px;
-        padding-left: 20px;
-    }
-
-    .eniac {
-        height: 35px;
-    }
-  }
 
 /* === RESET === */
 html, body {
@@ -281,3 +240,48 @@ a{
 }
 
 /*кнопка*/
+
+
+
+/*Медіазапити*/
+@media (max-width: 768px) {
+  .header {
+        width: 100%;
+        height: 50px;
+        background-color: #261374;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+  }
+
+    .nav {
+    width: 70%;
+  }
+
+  .anav {
+    margin: 10px 0; /* менше відступів */
+    font-size: 10px; /* зменшений текст */
+  }
+
+  .pnav {
+    font-size: 20px;
+    text-align: center;
+    grid-column: 1 / -1; /* розтягнути на всю ширину */
+    margin: 0;
+  }
+
+  .logonav {
+    width: 80%;
+    justify-self: center;
+    grid-column: 1 / -1;
+  }
+
+    .header-logo {
+        height: 35px;
+        padding-left: 20px;
+    }
+
+    .eniac {
+        height: 35px;
+    }
+  }
