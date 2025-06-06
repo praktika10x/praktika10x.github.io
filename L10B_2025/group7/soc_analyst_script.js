@@ -33,19 +33,4 @@ document.addEventListener('DOMContentLoaded', function() {
             nextBtn.addEventListener('click', showNextSlide);
         }
     }
-
-    const singleFlashcard = document.querySelector('.flashcard-single');
-
-    if (singleFlashcard) {
-        const backContent = singleFlashcard.getAttribute('data-answer-content');
-        const flashcardBack = singleFlashcard.querySelector('.flashcard-back-single');
-
-        if (backContent && flashcardBack) {
-            flashcardBack.innerHTML = backContent;
-        }
-
-        singleFlashcard.addEventListener('click', function() {
-            this.classList.toggle('is-flipped');
-        });
-    }
 });
