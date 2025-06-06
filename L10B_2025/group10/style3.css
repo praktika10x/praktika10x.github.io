@@ -1,0 +1,63 @@
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #000c2e, #1a1f4a);
+      color: white;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cryptography_Icon.png/800px-Cryptography_Icon.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    header h1 {
+      color: #ffcc00;
+    }
+    .toc {
+      background-color: #1a2a6c;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .toc ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .toc li {
+      margin: 5px 0;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h2 {
+      color: #ffcc00;
+    }
+    .highlight {
+      background-color: #243673;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    button {
+      background-color: #ffcc00;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .icon {
+      width: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  </style>
