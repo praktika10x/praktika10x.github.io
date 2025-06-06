@@ -262,12 +262,14 @@ strong {
     align-items: center;
     margin: 0 auto 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
 }
 
 .card .icon-circle img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .card h3 {
@@ -340,8 +342,8 @@ strong {
 }
 
 .info-block.with-gif {
-    flex-direction: row;
-    text-align: left;
+    flex-direction: column;
+    text-align: center;
     display: flex;
     align-items: center;
 }
@@ -349,23 +351,31 @@ strong {
 .info-block.with-gif .block-icon {
     width: 80px;
     height: 80px;
-    margin-right: 15px;
-    margin-bottom: 0;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 .info-block.with-gif h3 {
     margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .info-block.with-gif p {
     margin-top: 5px;
+    text-align: center;
 }
 
 .info-block.with-gif .gif-icon {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 50%;
 }
+
 
 .tools-grid {
     display: none;
@@ -536,6 +546,10 @@ strong {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     padding: 20px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slider-wrapper {
@@ -554,7 +568,7 @@ strong {
 }
 
 .slider-image {
-    max-width: 150px;
+    max-width: 120px;
     height: auto;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -623,6 +637,10 @@ strong {
 .slider-dots {
     text-align: center;
     margin-top: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .slider-dot {
@@ -772,7 +790,11 @@ footer {
     }
 
     .slider-image {
-        max-width: 120px;
+        max-width: 100px;
+    }
+
+    .slider-container {
+        height: 480px;
     }
 }
 
@@ -803,5 +825,9 @@ footer {
     .info-block,
     .product-item {
         padding: 20px;
+    }
+
+    .slider-container {
+        height: 520px;
     }
 }
