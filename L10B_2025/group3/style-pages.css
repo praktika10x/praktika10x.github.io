@@ -43,7 +43,7 @@ ul{
         overflow-x: hidden;
     }
     .intro {
-        background: url(фон2.jpg) no-repeat center;
+        background: url(.jpg) no-repeat center;
         background-size: cover;
         padding-top: 70px;
         width: 100%;
@@ -177,7 +177,7 @@ h3{
     }
 
 img.fullscreen-image {
-  width: 80%;
+      width: 80%;
       height: auto;
       object-fit: cover;
       display: block;
@@ -196,12 +196,7 @@ img.fullscreen-image {
       margin-left: -50vw;
       margin-right: -50vw;
     }
-/*+*/
-
-
-
-
-    .navdiv{
+.navdiv{
       width: 100%;
       display: flex;
       justify-content: flex-end;
