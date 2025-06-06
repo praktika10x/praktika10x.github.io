@@ -196,8 +196,8 @@ img.fullscreen-image {
 /*+*/
 .footer-divider {
   margin: 30px auto 20px;
-  width: 80%;
   border: none;
+  width: 80%;
   border-top: 1px solid #fff;
 }
 
@@ -209,6 +209,7 @@ img.fullscreen-image {
   padding: 0 20px;
   max-width: 1000px;
   margin: 0 auto 20px;
+  width: 100%;
 }
 
 .footer-content > div {
@@ -223,9 +224,8 @@ img.fullscreen-image {
 
 .footer-content a {
   display: block;
-  color: #a3d1ff;
+  color: white;
   margin: 5px 0;
-  text-decoration: none;
 }
 
 .footer-content a:hover {
