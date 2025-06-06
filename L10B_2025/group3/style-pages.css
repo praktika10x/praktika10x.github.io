@@ -253,8 +253,7 @@ img.fullscreen-image {
     }
 
 .color {
-  width: 107.4%;
-  position: relative;
+  width: 100%;
   background: linear-gradient(to bottom, rgba(255, 170, 0, 0.5), rgba(151, 71, 255, 0.5));
   padding: 60px 40px;
   box-sizing: border-box;
