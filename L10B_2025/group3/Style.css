@@ -289,14 +289,14 @@ a{
   .pnav {
     font-size: 45px;
     text-align: center;
-    grid-column: 2 / 3 span; 
+    grid-column: 2 /span 3; 
     margin: 0;
   }
 
   .logonav {
     width: 30%;
     justify-self: center;
-    grid-column: 2 / 3 span;
+    grid-column: 2 /span 3;
   }
 
     .header-logo {
