@@ -179,11 +179,6 @@
       margin-bottom: 30px;
       text-align: center;
     }
-.graf{
-     display: flex;
-      justify-content: center;
-      align-items: center;    
-      height: 100vh;
 }
 img.fullscreen-image {
     width: 60vw;
