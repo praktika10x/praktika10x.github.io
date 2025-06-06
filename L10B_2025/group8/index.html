@@ -10,22 +10,33 @@
   <header class="site-header">
     <div class="header-left">
       <img src="images.jpg" alt="Логотип Політ" class="logo" />
-    </div>
-    <div class="search-container">
-      <input type="text" class="search-input" placeholder="Пошук...">
-      <button class="search-button">🔍</button>
+      <span class="site-title">Комп'ютерна графіка</span>
     </div>
     <nav class="nav-links">
       <button class="theme-toggle" id="themeToggle">🌓</button>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
+    
+    <!-- Navigation Menu -->
+    <div class="nav-menu" id="navMenu">
+      <div class="nav-menu-content">
+        <a href="#hero" class="nav-menu-link" data-section="hero">Комп'ютерна графіка</a>
+        <a href="#definition" class="nav-menu-link" data-section="definition">Що таке комп'ютерна графіка?</a>
+        <a href="#professions" class="nav-menu-link" data-section="professions">Професії в цій галузі</a>
+      </div>
+    </div>
   </header>
 
   <main class="main-content">
-    <section class="hero-section">
+    <section class="hero-section" id="hero">
       <div class="hero-background dark-bg"></div>
       
       <video class="hero-background light-bg" autoplay muted loop playsinline>
-        <source src="https://cdn.discordapp.com/attachments/1266156981450838171/1380078541726810184/VID_20250605_095847_557.mp4?ex=684291cc&is=6841404c&hm=f7d35224870806127ef7ab4c5de87cb27ab57d3494344983ec4f41479171f43d&" type="video/mp4">
+        <source src="https://cdn.discordapp.com/attachments/1266156981450838171/1380078541726810184/VID_20250605_095847_557.mp4?ex=6843e34c&is=684291cc&hm=f5caee3c260ab363f52861d9f29b20c8a681b8949ab9c581e8a9eab9f2f466a6&" type="video/mp4">
       </video>
       
       <h1 class="hero-title">Комп'ютерна<br>графіка</h1>
@@ -42,8 +53,8 @@
     <!-- Separator line -->
     <div class="section-separator"></div>
 
-    <!-- Definition Section -->
-    <section class="definition-section">
+
+    <section class="definition-section" id="definition">
       <div class="definition-content">
         <h2 class="definition-title">Що таке комп'ютерна графіка?</h2>
         <p class="definition-text">
@@ -52,11 +63,10 @@
       </div>
     </section>
 
-    <!-- Separator line -->
+  
     <div class="section-separator"></div>
 
-    <!-- Professions Section -->
-    <section class="professions-section">
+    <section class="professions-section" id="professions">
       <div class="professions-content">
         <h3 class="professions-title">Професії в цій галузі</h3>
         <div class="prof-grid">
@@ -147,6 +157,51 @@
       } else {
         body.classList.add('light-theme');
         localStorage.setItem('theme', 'light-theme');
+      }
+    });
+
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+    const navMenuLinks = document.querySelectorAll('.nav-menu-link');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      body.classList.toggle('menu-open');
+    });
+
+    navMenuLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+          menuToggle.classList.remove('active');
+          navMenu.classList.remove('active');
+          body.classList.remove('menu-open');
+          
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+        body.classList.remove('menu-open');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+        body.classList.remove('menu-open');
       }
     });
   </script>
