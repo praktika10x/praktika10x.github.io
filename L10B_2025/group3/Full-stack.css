@@ -193,6 +193,29 @@ img.fullscreen-image {
       width: 100%;
       margin: 0;
     }
+
+/*+*/
+.footer-divider {
+  margin-top: 20px;
+  border: none;
+  border-top: 1px solid #fff; 
+}
+
+.footer-sources {
+  font-size: 14px;
+  color: #ccc;
+  padding-top: 10px;
+}
+
+.footer-sources a {
+  color: #66b2ff;
+  text-decoration: none;
+}
+
+.footer-sources a:hover {
+  text-decoration: underline;
+}
+
     .navdiv{
       width: 100%;
       display: flex;
