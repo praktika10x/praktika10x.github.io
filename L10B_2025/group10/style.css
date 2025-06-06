@@ -447,3 +447,27 @@ h4 {
     display: none;
   }
 }
+
+body > div:empty {
+  display: none !important;
+}
+
+/* Якщо є конкретний клас, наприклад .overlay або .background */
+.overlay,
+.background,
+.unwanted-banner {
+  display: none !important;
+  visibility: hidden !important;
+  background: transparent !important;
+  position: static !important;
+}
+
+/* Фон сайту */
+body {
+  background-color: #ffffff !important;
+}
+
+/* Навігація */
+.navigator {
+  background-color: #0a0f3c !important;
+}
