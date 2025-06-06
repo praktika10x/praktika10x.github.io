@@ -29,6 +29,8 @@ ul{
         height: 70px;
         background-color: #261374;
         justify-content: space-between; 
+         display: flex;
+        align-items: center;
     }
     .header-logo {
         height: 55px;
@@ -45,7 +47,7 @@ ul{
         overflow-x: hidden;
     }
     .intro {
-        background: url(фон2.jpg) no-repeat center;
+        background: url(лілінфон.webp) no-repeat center;
         background-size: cover;
         padding-top: 70px;
         width: 100%;
