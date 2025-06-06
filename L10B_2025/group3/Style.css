@@ -335,198 +335,87 @@ a{
 
 /* Mobile adaptation */
 @media (max-width: 768px) {
-  /* Header adjustments */
-  .header {
-    height: 60px;
-    flex-direction: column;
-    padding: 10px;
+
+  .headerhome{
+      width: 100%;
+      height: 400px;
+      background: linear-gradient(180deg, #ee46a5 0%, #f28d6c 44.23%, #f5bb47 73.08%);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-template-rows: 60px 1fr;
+      position: static;
   }
 
-  .header-logo {
-    height: 40px;
-    padding-left: 10px;
-    width: auto;
+  .ulnav {
+      grid-column: 1;
+      grid-row: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 5px;
+      list-style: none;
+      padding: 10px;
+      margin: 0;
+      font-family: "Press Start 2P", system-ui;
+      background-color: #261374;
+      width: 100%;
+      box-sizing: border-box;
   }
 
-  .eniac {
-    height: 40px;
-  }
-
-  .navdiv {
-    display: none; /* Hide navigation on mobile */
-  }
-
-  /* Title adjustments */
-  h1 {
-    font-size: 40px;
-    line-height: 45px;
-    padding: 20px 10px;
-    margin-bottom: 20px;
-  }
-
-  .intro {
-    height: 300px;
-    padding-top: 60px;
-  }
-
-  /* Content adjustments */
-  h2 {
-    font-size: 28px;
-    line-height: 32px;
-    margin: 15px 5%;
-    padding-top: 30px;
-  }
-
-  h3 {
-    font-size: 22px;
-    margin-left: 5%;
-  }
-
-  p {
-    margin: 15px 5%;
-    font-size: 16px;
-  }
-
-  ul {
-    margin: 15px 5%;
-    font-size: 16px;
-  }
-
-  /* Cards mobile layout */
-  .wrap {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    gap: 15px;
-  }
-
-  .card {
-    width: 90%;
-    max-width: 350px;
-    margin: 0 auto;
-  }
-
-  .card-link {
-    width: 90%;
-    max-width: 350px;
-  }
-
-  .pprod {
-    margin: 0px 20px 20px 20px;
-  }
-
-  /* Swiper mobile adjustments */
-  .swiper {
-    width: 95%;
-    height: 250px;
-  }
-
-  .swiper-slide {
-    padding: 15px 20px;
-  }
-
-  .card-title {
-    font-size: 20px;
-    margin: 0 0 0 10px;
-  }
-
-  .cart-desc {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  /* Image adjustments */
-  img.fullscreen-image {
-    width: 95%;
-  }
-
-  .card img {
-    width: 60px;
-  }
-
-  .card.card-educational img {
-    max-height: 150px;
-  }
-
-  /* Color section mobile */
-  .color {
+  .nav {
     width: 100%;
-    padding: 30px 20px;
-    margin-bottom: 40px;
+    height: 50px;
+    background-color: #261374;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
   }
 
-  .color .wrap {
-    gap: 20px;
+  .anav {
+    display: flex;
+    margin: 5px;
+    font-size: 8px;
+    padding: 5px 8px;
   }
 
-  /* Footer mobile */
-  .footer {
-    padding: 15px 0;
+  .pnav {
+    font-size: 32px;
+    text-align: center;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin: 0 auto;
+    padding: 20px 10px;
+    color: #ffffff;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    align-self: center;
   }
 
-  .footer h1 {
-    font-size: 24px !important;
-    line-height: 28px;
-    padding: 15px 10px;
+  .logonav {
+    width: 60px;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    align-self: center;
+    margin: 8px;
   }
 
-  .footer-container {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 0 15px;
-  }
+    .header-logo {
+        height: 15px;
+        padding-left: 20px;
+    }
 
-  .footer-column h3 {
-    font-size: 14px;
-  }
+    .eniac {
+        height: 15px;
+    }
 
-  .footer-column p {
-    font-size: 11px;
-  }
+    p{
+    font-family: "Comic_Sans_MS", cursive;
+    margin: 10px 10% ;
+    }
 
-  .footer-column a {
-    font-size: 11px;
-  }
-}
+    ul:not(.ulnav){
+      font-family: "Comic_Sans_MS", cursive;
+      margin: 10px 15% ;
 
-/* Very small mobile devices */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 28px;
-    line-height: 32px;
+    }
   }
-
-  .intro {
-    height: 250px;
-  }
-
-  h2 {
-    font-size: 24px;
-    line-height: 28px;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-
-  p, ul {
-    font-size: 14px;
-  }
-
-  .card {
-    width: 95%;
-    padding: 12px;
-  }
-
-  .swiper {
-    height: 220px;
-  }
-
-  .card-title {
-    font-size: 18px;
-  }
-
-  .cart-desc {
-    font-size: 14px;
-  }
-}
