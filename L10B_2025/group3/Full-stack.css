@@ -223,7 +223,7 @@ img.fullscreen-image {
     .swiper {
         width: 80%;
         height: 300px;
-        margin: 30px;
+        margin: auto;
     }
 
     .swiper-slide {
