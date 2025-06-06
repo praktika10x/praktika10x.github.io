@@ -279,113 +279,171 @@ a {
 }
 
 /*Інженер з прикладної криптографії*/
+/* 🌐 Скидання стилів */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0;
   font-family: "Fira Sans Condensed", sans-serif;
-  background: url('bg.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
+  background-color: #f0f4f8;
+  color: #222;
+  line-height: 1.6;
+  padding-bottom: 60px;
 }
 
-h1, h4 {
-  font-family: "Oswald", sans-serif;
-  text-align: center;
-  color: #fff;
-}
-
-a {
-  color: #00ccff;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-/* Навігація */
+/* 🧭 Меню навігації */
 .navigator {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 10px 20px;
+  background-color: #0a0f3c;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
 .logo img {
-  height: 50px;
+  height: 40px;
 }
+
 .menu-icon img {
   width: 30px;
   cursor: pointer;
 }
+
+.menu-n {
+  display: none;
+  width: 100%;
+}
+
+#menu-1:checked ~ .menu-n {
+  display: block;
+}
+
 .menu-n ul {
   list-style: none;
-  margin: 0;
   padding: 0;
-  display: flex;
-  gap: 15px;
+  background-color: #0a0f3c;
 }
+
 .menu-n li {
-  display: inline-block;
+  border-top: 1px solid #fff2;
 }
+
 .menu-n a {
-  font-weight: bold;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
   color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-/* Контент */
+.menu-n a:hover {
+  background-color: #1c2360;
+}
+
+/* 🖋️ Заголовок */
+h1 {
+  text-align: center;
+  font-family: "Slackey", cursive;
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin: 1.5rem 0;
+}
+
+/* 📑 Контент */
 .content {
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 700px;
-  border-radius: 10px;
+  background-color: #152850;
+  color: white;
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  border-radius: 12px;
+  font-family: "Oswald", sans-serif;
 }
 
+.content p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.content ol {
+  margin-left: 1.5rem;
+}
+
+.content a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* 🔹 Стилі секцій */
 .appl1, .appl2, .apll3, .apll4, .apll5 {
-  background-color: rgba(255, 255, 255, 0.05);
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 700px;
-  border-radius: 10px;
+  max-width: 800px;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background-color: white;
+  border-left: 5px solid #0a0f3c;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+h4 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #0a0f3c;
 }
 
 .highlight-box {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 10px;
-  margin: 10px 0;
-  border-left: 5px solid #00ccff;
+  background-color: #eef2f5;
+  padding: 0.75rem;
+  border-left: 4px solid #4CAF50;
+  margin-top: 1rem;
+  border-radius: 5px;
 }
 
-/* Кнопка додому */
+/* 🏠 Кнопка повернення */
 .home {
   text-align: center;
-  margin: 40px;
-}
-.home a {
-  background-color: #00ccff;
-  color: #000;
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-weight: bold;
-}
-.home a:hover {
-  background-color: #009fcc;
+  margin: 2rem;
 }
 
-/* Мобільне меню */
-#menu-1 {
-  display: none;
+.home a {
+  background-color: #0a0f3c;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
-.menu-n {
-  display: flex;
+
+.home a:hover {
+  background-color: #1c2360;
 }
-@media (max-width: 768px) {
+
+/* 📱 Мобільна адаптація */
+@media (min-width: 768px) {
   .menu-n {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
+    display: block !important;
+    width: auto;
   }
-  #menu-1:checked ~ .menu-n {
+
+  .menu-n ul {
     display: flex;
+    gap: 1rem;
+  }
+
+  #menu-1,
+  .menu-icon {
+    display: none;
   }
 }
