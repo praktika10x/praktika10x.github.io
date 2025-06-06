@@ -192,34 +192,20 @@ img.fullscreen-image {
     }
 
 /*+*/
-.footer-columns {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  flex-wrap: wrap;
-  text-align: center;
-  padding: 30px 20px;
+footer > div {
+  flex: 1 1 200px; /* Кожен блок займає мінімум 200px, і може рости */
+  margin: 10px;
 }
 
-.footer-column {
-  flex: 1 1 200px;
-  max-width: 250px;
-}
-
-.footer-column h3 {
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.footer-column a,
-.footer-column p {
-  font-size: 16px;
-  color: #fff;
-  margin: 5px 0;
+footer h4,
+footer p,
+footer a,
+footer li {
+  color: white; /* Гарантує білий колір для тексту, посилань, списків */
   text-decoration: none;
 }
 
-.footer-column a:hover {
+footer a:hover {
   text-decoration: underline;
 }
 .footer-divider {
