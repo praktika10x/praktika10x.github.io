@@ -15,6 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const autoSlideDelay = 6000;
         const totalSlides = slides.length;
 
+        slides.forEach(slide => {
+            const backgroundImage = slide.getAttribute('data-background-image');
+            if (backgroundImage) {
+                slide.style.backgroundImage = `url('${backgroundImage}')`;
+            }
+        });
+
         if (totalSlides <= 1) {
             if (prevBtn) prevBtn.style.display = 'none';
             if (nextBtn) nextBtn.style.display = 'none';
@@ -98,29 +105,4 @@ document.addEventListener('DOMContentLoaded', () => {
         sliderContainer.addEventListener('mouseenter', stopAutoSlide);
         sliderContainer.addEventListener('mouseleave', startAutoSlide);
     }
-
-    const animatedSections = document.querySelectorAll('.animated-section');
-
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-
-                if (entry.target.classList.contains('fade-in-text')) {
-                    entry.target.style.animationPlayState = 'running';
-                }
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    animatedSections.forEach(section => {
-        observer.observe(section);
-    });
 });
