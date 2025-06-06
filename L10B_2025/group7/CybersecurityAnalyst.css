@@ -1,7 +1,7 @@
 .slider-container {
     position: relative;
     width: 100%;
-    max-width: 900px;
+    max-width: 700px; 
     margin: 40px auto;
     overflow: hidden;
     border-radius: 15px;
@@ -35,7 +35,8 @@
 }
 
 .slide img {
-    max-width: 100%;
+    max-width: 120px; 
+    max-height: 120px; 
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -151,7 +152,7 @@
 
 
 .animated-section.is-visible .info-block {
-    animation: bounceIn 0.8s forwards;
+    animation: fadeInUp 0.8s forwards;
 }
 .animated-section.is-visible .info-block:nth-child(1) { animation-delay: 0.1s; }
 .animated-section.is-visible .info-block:nth-child(2) { animation-delay: 0.2s; }
@@ -195,9 +196,9 @@
 }
 
 .block-icon img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
     border-radius: 50%; 
 }
 
@@ -280,8 +281,8 @@
 }
 
 .tool-icon img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%; 
+    height: 100%; 
     object-fit: cover; 
     border-radius: 50%; 
 }
@@ -353,8 +354,8 @@
 }
 
 .cards-container .icon-circle img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%; 
+    height: 100%; 
     object-fit: cover; 
     border-radius: 50%; 
 }
@@ -449,7 +450,8 @@
 
 
 .slider-image {
-    max-width: 100%;
+    max-width: 80px; 
+    max-height: 80px; 
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -486,7 +488,7 @@
     flex-wrap: wrap;
 }
 .animated-section.is-visible .image-placeholder {
-    animation: bounceIn 1s forwards;
+    animation: fadeInUp 1s forwards;
     animation-delay: 0.5s;
 }
 .image-placeholder img {
@@ -498,7 +500,7 @@
 
 
 .section-content-wrapper ul {
-    list-style: none;
+    list-style: none; 
     padding: 0;
     margin: 20px 0;
     text-align: left;
@@ -506,7 +508,7 @@
 
 .section-content-wrapper ul li {
     margin-bottom: 10px;
-    padding-left: 25px; 
+    padding-left: 25px;
     position: relative;
     font-size: 17px;
     color: #444444;
@@ -529,7 +531,7 @@
     content: '❌';
     color: #FF5252;
 }
-*/
+
 
 .section-content-wrapper ul:nth-of-type(2) li:before {
     content: '❌'; 
@@ -537,7 +539,7 @@
 }
 
 
-@keyframes bounceIn {
+@keyframes bounceIn { 
     0%, 20%, 40%, 60%, 80%, 100% {
         -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
         transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -684,20 +686,27 @@
     .slide p {
         font-size: 16px;
     }
+    .slider-image {
+        max-width: 70px; 
+        max-height: 70px; 
+    }
+    .slider-container {
+        max-width: 90%; 
+    }
 }
 
 @media (max-width: 480px) {
     .info-block,
     .tool-item,
     .product-item,
-    .cards-container .card {
+    .cards-container .card { 
         padding: 15px;
     }
 
     .info-block h3,
     .tool-item h3,
     .product-item h3,
-    .cards-container .card h3 { 
+    .cards-container .card h3 {
         font-size: 20px;
     }
 
@@ -749,10 +758,16 @@
         font-size: 14px;
     }
 
-    
     .section-content-wrapper ul li {
         padding-left: 20px;
         font-size: 15px;
+    }
+    .slider-image {
+        max-width: 60px; 
+        max-height: 60px;
+    }
+    .slider-container {
+        max-width: 95%; 
     }
 }
 
@@ -775,10 +790,14 @@
 @media (min-width: 768px) and (max-width: 991px) {
 
     .slider-container {
-        max-width: 700px;
+        max-width: 600px; 
     }
     .slide {
         padding: 35px;
+    }
+    .slider-image {
+        max-width: 90px; 
+        max-height: 90px;
     }
 }
 
@@ -786,7 +805,11 @@
 @media (min-width: 992px) and (max-width: 1199px) {
 
     .slider-container {
-        max-width: 800px;
+        max-width: 700px; 
+    }
+    .slider-image {
+        max-width: 100px; 
+        max-height: 100px;
     }
 }
 
@@ -794,7 +817,11 @@
 @media (min-width: 1200px) and (max-width: 1823px) {
 
     .slider-container {
-        max-width: 1000px;
+        max-width: 800px; 
+    }
+    .slider-image {
+        max-width: 110px; 
+        max-height: 110px;
     }
 }
 
@@ -802,7 +829,7 @@
 @media (min-width: 1824px) {
 
     .slider-container {
-        max-width: 1200px;
+        max-width: 900px; 
     }
     .slider-btn {
         width: 60px;
@@ -812,5 +839,9 @@
     .slider-dot {
         width: 15px;
         height: 15px;
+    }
+    .slider-image {
+        max-width: 120px; 
+        max-height: 120px;
     }
 }
