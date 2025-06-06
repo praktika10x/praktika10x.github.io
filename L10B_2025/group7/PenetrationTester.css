@@ -43,7 +43,7 @@ body {
 }
 
 .nav a {
-    color: #fff;
+    color: #ffffff; /* Змінено на білий */
     text-decoration: none;
     font-weight: 600;
     margin-left: 25px;
@@ -73,7 +73,7 @@ body {
 }
 
 .language-switcher a {
-    color: #fff;
+    color: #ffffff; /* Змінено на білий */
     text-decoration: none;
     margin: 0 5px;
     font-weight: 600;
@@ -216,36 +216,30 @@ body {
     color: #444;
 }
 
-strong {
-    color: #FFD700;
-}
+/* Видалено стилізацію для strong */
 
-.video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
+.video-container { /* Повернуто попередній клас */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+    background-color: #000;
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    margin-bottom: 25px;
+    overflow: hidden;
 }
 
-.video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
+.video-container iframe {
+    width: 800px; /* Повернуто фіксовану ширину */
+    height: 450px; /* Повернуто фіксовану висоту */
+    border: none;
 }
 
 .video-description {
     font-size: 17px;
     color: #666;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .roadmap-grid {
@@ -346,22 +340,31 @@ strong {
     text-align: center;
 }
 
-.tools-category {
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.tool-card {
     background-color: #f8fbfd;
     border: 1px solid #e0e6f0;
     border-radius: 12px;
     padding: 25px;
-    margin-bottom: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.tools-category:hover {
+.tool-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.tools-category h3 {
+.tool-card h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     color: #FFD700;
@@ -378,22 +381,23 @@ strong {
     margin-bottom: 15px;
 }
 
-.tool-tags span {
+.tool-tags span { /* Змінено на span */
     background-color: #e0e6f0;
     color: #3a3a3a;
     padding: 8px 15px;
     border-radius: 20px;
     font-size: 15px;
     font-weight: 600;
+    text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.tool-tags span:hover {
+.tool-tags span:hover { /* Змінено на span */
     background-color: #FFD700;
     color: #222;
 }
 
-.tools-category p {
+.tool-card p {
     font-size: 17px;
     color: #555;
     margin-bottom: 0;
@@ -448,6 +452,53 @@ strong {
     color: #555;
 }
 
+.salary-table-container {
+    margin: 30px 0;
+    background-color: #f8fbfd;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+}
+
+.salary-table-container h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #222222;
+    text-align: center;
+    padding: 20px 20px 0;
+    margin-bottom: 20px;
+}
+
+.salary-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.salary-table-container th, .salary-table-container td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e6f0;
+}
+
+.salary-table-container th {
+    background-color: #FFD700;
+    color: #222222;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.salary-table-container td {
+    background-color: #fff;
+    color: #555;
+    font-size: 17px;
+}
+
+.salary-table-container tbody tr:hover {
+    background-color: #f0f5fa;
+}
+
 .salary-image {
     text-align: center;
     margin: 30px 0;
@@ -468,8 +519,8 @@ strong {
 }
 
 .university-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 30px;
 }
@@ -480,8 +531,9 @@ strong {
     border-radius: 15px;
     padding: 25px;
     display: flex;
-    align-items: flex-start;
-    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -491,16 +543,32 @@ strong {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-.university-logo {
-    width: 100px;
-    height: 100px;
-    min-width: 100px;
-    object-fit: contain;
-    border-radius: 8px;
-    border: 2px solid #e0e6f0;
-    padding: 5px;
+.university-logo-wrapper {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #FFD700;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.university-logo {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.university-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .university-details h3 {
@@ -534,7 +602,7 @@ strong {
     transform: translateY(-2px);
 }
 
-.pros-cons-grid {
+.pros-cons-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -559,6 +627,10 @@ strong {
     font-size: 26px;
     text-align: center;
     margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .pros-card h3 {
@@ -567,6 +639,11 @@ strong {
 
 .cons-card h3 {
     color: #dc3545;
+}
+
+.pros-card .emoji, .cons-card .emoji {
+    font-size: 30px;
+    line-height: 1;
 }
 
 .pros-card ul, .cons-card ul {
@@ -633,7 +710,7 @@ footer {
     .info-section h2 {
         font-size: 32px;
     }
-    .roadmap-grid, .duties-grid, .products-list {
+    .roadmap-grid, .duties-grid, .products-list, .tools-grid, .university-list {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
     .university-item {
@@ -641,10 +718,10 @@ footer {
         align-items: center;
         text-align: center;
     }
-    .university-logo {
+    .university-logo-wrapper {
         margin-bottom: 15px;
     }
-    .pros-cons-grid {
+    .pros-cons-container {
         grid-template-columns: 1fr;
     }
 }
@@ -694,11 +771,25 @@ footer {
     .info-section h2 {
         font-size: 28px;
     }
-    .content-block p, .roadmap-item p, .duty-item p, .tools-category p, .product-card p, .university-details p, .pros-card li, .cons-card li {
+    .content-block p, .roadmap-item p, .duty-item p, .tool-card p, .product-card p, .university-details p, .pros-card li, .cons-card li {
         font-size: 16px;
     }
-    .roadmap-grid, .duties-grid, .products-list {
+    .roadmap-grid, .duties-grid, .products-list, .tools-grid, .university-list {
         grid-template-columns: 1fr;
+    }
+    .salary-table-container th, .salary-table-container td {
+        padding: 12px;
+        font-size: 15px;
+    }
+    .pros-card h3, .cons-card h3 {
+        font-size: 22px;
+    }
+    .pros-card .emoji, .cons-card .emoji {
+        font-size: 25px;
+    }
+    .video-container iframe { /* Адаптивність для відео */
+        width: 100%;
+        height: 200px; /* Можна скоригувати за потребою */
     }
 }
 
@@ -712,7 +803,7 @@ footer {
     .info-section h2 {
         font-size: 24px;
     }
-    .roadmap-item h3, .duty-item h3, .tools-category h3, .product-card h3, .university-details h3 {
+    .roadmap-item h3, .duty-item h3, .tool-card h3, .product-card h3, .university-details h3 {
         font-size: 20px;
     }
     .logo-text {
@@ -726,9 +817,12 @@ footer {
         width: 80px;
         height: 80px;
     }
-    .university-logo {
-        width: 80px;
-        height: 80px;
-        min-width: 80px;
+    .university-logo-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+    .salary-table-container th, .salary-table-container td {
+        padding: 10px;
+        font-size: 14px;
     }
 }
