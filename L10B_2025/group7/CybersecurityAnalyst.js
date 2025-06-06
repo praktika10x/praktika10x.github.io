@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sliderContainer.addEventListener('mouseleave', startAutoSlide);
     }
 
-    const animatedElements = document.querySelectorAll('.animated-section, .card, .info-block, .tool-item, .product-item, .slider-container');
+    const animatedElements = document.querySelectorAll('.animated-section, .card, .info-block-item, .tool-item, .product-item, .slider-container');
 
     const observerOptions = {
         root: null,
