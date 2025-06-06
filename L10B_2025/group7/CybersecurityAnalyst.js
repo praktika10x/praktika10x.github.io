@@ -10,17 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
         dotsContainer.classList.add('slider-dots');
         sliderContainer.appendChild(dotsContainer);
 
+
         let currentIndex = 0;
         let autoSlideInterval;
         const autoSlideDelay = 6000;
+
         const totalSlides = slides.length;
 
-        slides.forEach(slide => {
-            const backgroundImage = slide.getAttribute('data-background-image');
-            if (backgroundImage) {
-                slide.style.backgroundImage = `url('${backgroundImage}')`;
-            }
-        });
 
         if (totalSlides <= 1) {
             if (prevBtn) prevBtn.style.display = 'none';
@@ -29,26 +25,31 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+
         function updateSliderPosition() {
             sliderWrapper.style.transform = `translateX(${-currentIndex * 100}%)`;
             updateDots();
         }
+
 
         const goToNextSlide = () => {
             currentIndex = (currentIndex + 1) % totalSlides;
             updateSliderPosition();
         };
 
+
         const goToPrevSlide = () => {
             currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
             updateSliderPosition();
         };
+
 
         const goToSlide = (index) => {
             currentIndex = index;
             updateSliderPosition();
             resetAutoSlide();
         };
+
 
         if (nextBtn) {
             nextBtn.addEventListener('click', () => {
@@ -64,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
+
         const startAutoSlide = () => {
             stopAutoSlide();
             autoSlideInterval = setInterval(goToNextSlide, autoSlideDelay);
@@ -78,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             startAutoSlide();
         };
 
+
         function createDots() {
             for (let i = 0; i < totalSlides; i++) {
                 const dot = document.createElement('span');
@@ -87,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 dotsContainer.appendChild(dot);
             }
         }
+
 
         function updateDots() {
             dotsContainer.querySelectorAll('.slider-dot').forEach((dot, index) => {
@@ -98,11 +102,41 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
+
         updateSliderPosition();
         createDots();
         startAutoSlide();
 
+
         sliderContainer.addEventListener('mouseenter', stopAutoSlide);
         sliderContainer.addEventListener('mouseleave', startAutoSlide);
     }
+
+
+    const animatedSections = document.querySelectorAll('.animated-section');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+
+                if (entry.target.classList.contains('fade-in-text')) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+
+    animatedSections.forEach(section => {
+        observer.observe(section);
+    });
+
 });
