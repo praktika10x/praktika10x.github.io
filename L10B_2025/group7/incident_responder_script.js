@@ -1,110 +1,71 @@
-incident_responder_script.js
+AOS.init({
+    duration: 800,
+    once: true
+});
+
+function initializeSlider(containerId) {
+    const sliderContainer = document.getElementById(containerId);
+    const sliderWrapper = sliderContainer.querySelector(`.${containerId.replace('Container', '')}-wrapper`);
+    const slides = sliderWrapper.children;
+    const prevBtn = sliderContainer.querySelector(`.${containerId.replace('Container', '')}-prev-btn`);
+    const nextBtn = sliderContainer.querySelector(`.${containerId.replace('Container', '')}-next-btn`);
+    const dotsContainer = sliderContainer.querySelector('.ir-slider-dots');
+
+    if (!sliderWrapper || slides.length === 0) {
+        console.warn(`Slider wrapper or slides not found for container: ${containerId}`);
+        return;
+    }
+
+    let currentIndex = 0;
+
+    if (dotsContainer) {
+        for (let i = 0; i < slides.length; i++) {
+            const dot = document.createElement('span');
+            dot.classList.add('ir-slider-dot');
+            dot.addEventListener('click', () => {
+                goToSlide(i);
+            });
+            dotsContainer.appendChild(dot);
+        }
+    }
+
+    function updateDots() {
+        if (dotsContainer) {
+            const dots = dotsContainer.children;
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.toggle('active', i === currentIndex);
+            }
+        }
+    }
+
+    function goToSlide(index) {
+        if (index < 0) {
+            currentIndex = slides.length - 1;
+        } else if (index >= slides.length) {
+            currentIndex = 0;
+        } else {
+            currentIndex = index;
+        }
+        sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+        updateDots();
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            goToSlide(currentIndex - 1);
+        });
+    }
+
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            goToSlide(currentIndex + 1);
+        });
+    }
+
+    goToSlide(0);
+}
 
 document.addEventListener('DOMContentLoaded', () => {
-
-    const initializeSlider = (containerId, autoSlideInterval = 5000) => {
-        const sliderContainer = document.getElementById(containerId);
-        if (!sliderContainer) {
-            console.warn(`Slider container with ID "${containerId}" not found.`);
-            return;
-        }
-
-        const sliderWrapper = sliderContainer.querySelector('.ir-slider-wrapper, .education-slider-wrapper');
-        const slides = sliderWrapper.querySelectorAll('.ir-slide, .education-slide');
-        const prevBtn = sliderContainer.querySelector('.ir-prev-btn, .education-prev-btn');
-        const nextBtn = sliderContainer.querySelector('.ir-next-btn, .education-next-btn');
-        const dotsContainer = sliderContainer.querySelector('.ir-slider-dots');
-
-        let currentIndex = 0;
-        const totalSlides = slides.length;
-        let autoSlideTimer;
-
-        if (totalSlides === 0) {
-            console.warn(`No slides found in slider container with ID "${containerId}".`);
-            if (prevBtn) prevBtn.style.display = 'none';
-            if (nextBtn) nextBtn.style.display = 'none';
-            if (dotsContainer) dotsContainer.style.display = 'none';
-            return;
-        }
-
-        const createDots = () => {
-            if (!dotsContainer) return;
-            dotsContainer.innerHTML = '';
-            for (let i = 0; i < totalSlides; i++) {
-                const dot = document.createElement('span');
-                dot.classList.add('ir-dot');
-                dot.dataset.index = i;
-                dot.addEventListener('click', () => {
-                    currentIndex = i;
-                    updateSliderPosition();
-                    resetAutoSlide();
-                });
-                dotsContainer.appendChild(dot);
-            }
-        };
-
-        const updateSliderPosition = () => {
-            const offset = -currentIndex * 100;
-            sliderWrapper.style.transform = `translateX(${offset}%)`;
-            updateDots();
-        };
-
-        const updateDots = () => {
-            if (!dotsContainer) return;
-            const dots = dotsContainer.querySelectorAll('.ir-dot');
-            dots.forEach((dot, index) => {
-                if (index === currentIndex) {
-                    dot.classList.add('active');
-                } else {
-                    dot.classList.remove('active');
-                }
-            });
-        };
-
-        const showNextSlide = () => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            updateSliderPosition();
-        };
-
-        const showPrevSlide = () => {
-            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-            updateSliderPosition();
-        };
-
-        const startAutoSlide = () => {
-            if (autoSlideTimer) {
-                clearInterval(autoSlideTimer);
-            }
-            autoSlideTimer = setInterval(showNextSlide, autoSlideInterval);
-        };
-
-        const resetAutoSlide = () => {
-            clearInterval(autoSlideTimer);
-            startAutoSlide();
-        };
-
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => {
-                showNextSlide();
-                resetAutoSlide();
-            });
-        }
-
-        if (prevBtn) {
-            prevBtn.addEventListener('click', () => {
-                showPrevSlide();
-                resetAutoSlide();
-            });
-        }
-
-        createDots();
-        updateSliderPosition();
-        if (autoSlideInterval > 0) {
-            startAutoSlide();
-        }
-    };
-
-    initializeSlider('toolsSliderContainer', 4000); 
-    initializeSlider('educationSliderContainer', 6000);
-
+    initializeSlider('toolsSliderContainer');
+    initializeSlider('educationSliderContainer');
 });
