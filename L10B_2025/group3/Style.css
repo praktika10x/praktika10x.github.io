@@ -428,34 +428,37 @@ Mobile adaptation
 
 /* Mobile adaptation */
 @media (max-width: 768px) {
-  .headerhome{
-      width: 100%;
-      height: 350px;
-      background: linear-gradient(180deg, #ee46a5 0%, #f28d6c 44.23%, #f5bb47 73.08%);
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-template-rows: 60px 1fr;
-      position: static;
+  .headerhome {
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(180deg, #ee46a5 0%, #f28d6c 44.23%, #f5bb47 73.08%);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 60px 1fr;
+    position: static;
   }
 
   .ulnav {
-      grid-column: 1;
-      grid-row: 1;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 3px;
-      list-style: none;
-      padding: 5px;
-      margin: 0;
-      font-family: "Press Start 2P", system-ui;
-      background-color: #261374;
-      width: 100%;
-      box-sizing: border-box;
-      flex-wrap: wrap;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3px;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    font-family: "Press Start 2P", system-ui;
+    background-color: #261374;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    height: auto;
   }
 
   .nav {
+    position: static;
+    left: auto;
     width: 100%;
     height: auto;
     min-height: 60px;
@@ -463,16 +466,26 @@ Mobile adaptation
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    padding: 5px;
+    transition: none;
+  }
+
+  .nav:hover {
+    left: auto;
   }
 
   .anav {
     display: block;
     margin: 2px;
-    font-size: 7px;
+    font-size: 8px !important;
     padding: 4px 6px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    background-color: #261374;
+    color: #ffffff;
+    border-radius: 3px;
+    text-decoration: none;
   }
 
   .nav-link .anav {
@@ -482,20 +495,24 @@ Mobile adaptation
     margin: 2px;
   }
 
+  .nav-link .anav:hover {
+    color: #F5BB47;
+  }
+
   .pnav {
-    grid-column: 1 / span 4;
-    grid-row: 1 / span 4;
+    grid-column: 1 / -1;
+    grid-row: 2;
     justify-self: center;
     align-self: center;
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 125%;
     text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.50);
     letter-spacing: -0.05em;
-    text-align: right;
+    text-align: center;
     color: #fff;
-    margin: 0 30px 0 0;
+    margin: 20px 10px;
   }
 
   .logonav {
@@ -518,42 +535,58 @@ Mobile adaptation
     margin: 10px 5%;
   }
 
-  .video-block iframe {
+  .video-block iframe,
+  iframe {
     width: 100%;
     height: 200px;
-    max-width: 350px;
+    max-width: 320px;
   }
 
   /* Картки команди */
   .wrapnav {
-    padding: 20px 0;
+    padding: 20px 10px;
     gap: 15px;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    justify-content: center;
+    background-image: url("фонгол.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    min-height: 50%;
   }
 
   .cardnav {
     height: auto;
     width: 280px;
-    max-width: 90vw;
+    max-width: 90%;
     padding: 12px;
     margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 6px 8px 8px 0 rgba(38, 19, 116, 0.45);
+    background: linear-gradient(180deg, rgba(149, 75, 170, 0.65) 65.38%, rgba(255, 255, 255, 0.65) 99.99%);
+  }
+
+  .cardnav:hover {
+    transition: 0.3s;
+    transform: scale(1.02);
   }
 
   .imgnav {
     width: 120px;
     height: 120px;
     margin: 0 auto 10px auto;
+    display: block;
+    border-radius: 100%;
   }
 
   .namenav {
-    font-size: 10px;
+    font-size: 9px;
     margin: 8px 0;
     line-height: 1.2;
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    color: black;
+    padding: 0;
   }
 
   .name {
@@ -564,9 +597,25 @@ Mobile adaptation
 
   /* Заголовки */
   h2 {
-    font-size: 32px;
-    margin: 10px 5%;
-    line-height: 1.1;
+    font-family: Tektur, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #261374;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 15px 5%;
+    padding-top: 35px;
+    text-align: left;
+  }
+
+  h2:not(.subtitle)::after {
+    display: block;
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: #ee46a5;
+    margin: 10px 0 0 0;
+    border-radius: 3px;
   }
 
   /* Текст */
@@ -574,38 +623,82 @@ Mobile adaptation
     font-family: "Comic_Sans_MS", cursive;
     margin: 15px 5%;
     font-size: 16px;
+    line-height: 1.4;
   }
 
   ul:not(.ulnav) {
     font-family: "Comic_Sans_MS", cursive;
-    margin: 15px 10%;
+    margin: 15px 8%;
     font-size: 16px;
+    line-height: 1.4;
   }
 
   span {
+    font-family: "Tektur", sans-serif;
     font-size: 18px;
+    font-weight: 550;
+    color: #261374;
   }
-  
-  .pnav {
-    font-size: 30px;
-    text-align: center;
-    margin: 20px 10px;
-    font-weight: 100;
+
+  /* Картки інформації */
+  .info-cards {
+    display: block;
+    padding: 0 20px;
   }
-  
-  h2{    
-  font-family: Tektur, sans-serif;
-  font-weight: 64;
-  font-style: normal;
-  color: #261374;
-  font-size: 20px;
-  line-height: 30px;
-  margin: 15px 5%;
-  padding-top: 55px;
-  text-align: left;
+
+  .info-card {
+    margin-bottom: 30px;
+  }
+
+  .card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 0 0 10px;
+  }
+
+  .cart-desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
 }
 
-  iframe {
-    width:300px;
+/* Tablet adaptation */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .headerhome {
+    height: 60vh;
+  }
+
+  .pnav {
+    font-size: 70px;
+  }
+
+  .wrapnav {
+    gap: 15px;
+    padding: 30px 20px;
+  }
+
+  .cardnav {
+    width: 220px;
+    height: 300px;
+  }
+
+  .imgnav {
+    width: 130px;
+    height: 130px;
+  }
+
+  h2 {
+    font-size: 40px;
+    margin: 15px 8%;
+  }
+
+  p, ul:not(.ulnav) {
+    margin: 20px 15%;
+  }
+
+  .info-cards {
+    padding: 0 60px;
   }
 }
