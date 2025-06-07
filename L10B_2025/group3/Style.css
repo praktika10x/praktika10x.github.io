@@ -120,15 +120,16 @@ body {
 .nav:hover{
   left: 0;
 }
-.nav-links {
-  position: absolute;
-  top: 15%;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-}
 
+.nav-links {
+    display: flex;
+    flex-direction: column; /* Встановити вертикальне розташування */
+    align-items: flex-start; /* Вирівняти елементи по лівому краю */
+    gap: 10px; /* Відстань між елементами */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 .ulnav {
   display: flex;
   justify-content: center;
