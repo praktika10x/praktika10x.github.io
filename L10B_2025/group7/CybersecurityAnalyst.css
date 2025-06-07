@@ -26,7 +26,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 2px solid #FFD700;
+    border-bottom: 2px solid #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,14 +43,14 @@ body {
     width: 40px;
     margin-right: 10px;
     border-radius: 50%;
-    border: 2px solid #FFD700;
+    border: 2px solid #FFFFFF;
 }
 
 .logo-text {
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     font-weight: 700;
-    color: #FFD700;
+    color: #FFFFFF;
 }
 
 .nav {
@@ -67,11 +67,11 @@ body {
 }
 
 .nav a:hover {
-    color: #FFD700;
+    color: #CCCCCC;
 }
 
 .nav a.active {
-    color: #FFD700;
+    color: #FFFFFF;
 }
 
 .nav a.active::after {
@@ -81,7 +81,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 3px;
-    background-color: #FFD700;
+    background-color: #FFFFFF;
     border-radius: 2px;
 }
 
@@ -98,7 +98,7 @@ body {
 }
 
 .language-switcher a:hover {
-    color: #FFD700;
+    color: #CCCCCC;
 }
 
 .hero-section {
@@ -117,16 +117,16 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 40px;
     border-radius: 10px;
-    border: 2px solid #FFD700;
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 .hero-content h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 3.5em;
-    color: #FFD700;
+    color: #FFFFFF;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hero-description {
@@ -147,24 +147,24 @@ body {
 }
 
 .btn-primary {
-    background-color: #FFD700;
+    background-color: #CCCCCC;
     color: #000000;
-    border: 2px solid #FFD700;
+    border: 2px solid #CCCCCC;
 }
 
 .btn-primary:hover {
-    background-color: #FFEA61;
+    background-color: #FFFFFF;
     transform: translateY(-3px);
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: #FFD700;
-    border: 2px solid #FFD700;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
 }
 
 .btn-secondary:hover {
-    background-color: #FFD700;
+    background-color: #FFFFFF;
     color: #000000;
     transform: translateY(-3px);
 }
@@ -194,12 +194,12 @@ section:last-of-type {
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 3.5em;
-    color: #FFD700;
+    color: #FFFFFF;
     text-align: center;
     margin-bottom: 30px;
     position: relative;
     padding-bottom: 15px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 h1::after {
@@ -210,14 +210,14 @@ h1::after {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background-color: #FFD700;
+    background-color: #FFFFFF;
     border-radius: 2px;
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5em;
-    color: #FFD700;
+    color: #FFFFFF;
     text-align: center;
     margin-bottom: 30px;
     position: relative;
@@ -230,7 +230,7 @@ h2::after {
     display: block;
     width: 80px;
     height: 4px;
-    background-color: #FFD700;
+    background-color: #FFFFFF;
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -252,7 +252,7 @@ h2::after {
     border-radius: 10px;
     box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
     margin-bottom: 20px;
-    border: 1px solid rgba(255, 215, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 p {
@@ -265,7 +265,7 @@ p {
 }
 
 strong {
-    color: #FFD700;
+    color: #FFFFFF;
 }
 
 .decorative-element {
@@ -279,7 +279,7 @@ strong {
     left: 10px;
     width: 100px;
     height: 100px;
-    background-color: #FFD700;
+    background-color: #CCCCCC;
     border-radius: 50%;
 }
 
@@ -330,11 +330,11 @@ strong {
 
 .card {
     background-color: #000000;
-    border: 2px solid #FFD700;
+    border: 2px solid #FFFFFF;
     border-radius: 10px;
     padding: 30px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0;
     transform: translateY(20px);
@@ -353,14 +353,14 @@ strong {
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
 }
 
 .card .icon-circle {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #FFD700;
+    background-color: #CCCCCC;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -374,13 +374,13 @@ strong {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    filter: invert(100%) sepia(100%) saturate(700%) hue-rotate(0deg) brightness(150%) contrast(100%);
+    filter: none;
 }
 
 .card h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6em;
-    color: #FFD700;
+    color: #FFFFFF;
     margin-bottom: 15px;
 }
 
@@ -400,7 +400,7 @@ strong {
 
 .info-block {
     background-color: #000000;
-    border: 1px solid rgba(255, 215, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
     padding: 25px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
@@ -424,7 +424,7 @@ strong {
 
 .info-block:hover {
     transform: translateY(-5px);
-    border-color: #FFD700;
+    border-color: #FFFFFF;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -444,13 +444,13 @@ strong {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    filter: invert(100%) sepia(100%) saturate(700%) hue-rotate(0deg) brightness(150%) contrast(100%);
+    filter: none;
 }
 
 .info-block h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4em;
-    color: #FFD700;
+    color: #FFFFFF;
     margin-bottom: 10px;
     margin-top: 0;
 }
@@ -476,7 +476,7 @@ strong {
 
 .tools-list .tool-item {
     background-color: #000000;
-    border: 1px solid rgba(255, 215, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 15px;
     padding: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -512,13 +512,13 @@ strong {
     height: 50px;
     min-width: 50px;
     border-radius: 50%;
-    background-color: #FFD700;
+    background-color: #CCCCCC;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
     font-weight: bold;
-    color: #222222;
+    color: #333333;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     margin-right: 15px;
     transition: transform 0.3s ease;
@@ -530,7 +530,7 @@ strong {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    filter: invert(100%) sepia(100%) saturate(700%) hue-rotate(0deg) brightness(150%) contrast(100%);
+    filter: none;
 }
 
 .tools-list .tool-item .tool-icon:hover {
@@ -540,7 +540,7 @@ strong {
 .tools-list .tool-item .tool-text h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    color: #FFD700;
+    color: #FFFFFF;
     margin-top: 0;
     margin-bottom: 5px;
     text-align: left;
@@ -563,11 +563,11 @@ strong {
 
 .product-item {
     background-color: #000000;
-    border: 2px solid #FFD700;
+    border: 2px solid #FFFFFF;
     border-radius: 10px;
     padding: 25px;
     text-align: left;
-    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0;
     transform: translateY(20px);
@@ -586,29 +586,29 @@ strong {
 
 .product-item:hover {
     transform: translateY(-8px);
-    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
 }
 
 .product-item .product-icon {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: #FFD700;
+    background-color: #CCCCCC;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto 20px;
     font-size: 40px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    filter: invert(100%) sepia(100%) saturate(700%) hue-rotate(0deg) brightness(150%) contrast(100%);
+    filter: none;
 }
 
 .product-item h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
-    color: #FFD700;
+    color: #FFFFFF;
     margin-bottom: 15px;
-    border-bottom: 1px dashed rgba(255, 215, 0, 0.3);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
     padding-bottom: 10px;
     text-align: left;
 }
@@ -629,8 +629,8 @@ strong {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
-    border: 2px solid #FFD700;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    border: 2px solid #FFFFFF;
 }
 
 .university-list {
@@ -643,7 +643,7 @@ strong {
 
 .university-item {
     background-color: #000000;
-    border: 2px solid #FFD700;
+    border: 2px solid #FFFFFF;
     border-radius: 10px;
     padding: 30px;
     text-align: center;
@@ -655,7 +655,7 @@ strong {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
 }
 
 .animated-section.is-visible .university-item {
@@ -673,14 +673,14 @@ strong {
 
 .university-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
 }
 
 .university-item .uni-icon-circle {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-color: #FFD700;
+    background-color: #CCCCCC;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -694,13 +694,13 @@ strong {
     max-height: 90%;
     object-fit: contain;
     border-radius: 50%;
-    filter: invert(100%) sepia(100%) saturate(700%) hue-rotate(0deg) brightness(150%) contrast(100%);
+    filter: none;
 }
 
 .university-item h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6em;
-    color: #FFD700;
+    color: #FFFFFF;
     margin-bottom: 15px;
     flex-grow: 1;
 }
@@ -719,7 +719,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     margin-top: 50px;
-    border-top: 2px solid #FFD700;
+    border-top: 2px solid #FFFFFF;
     position: relative;
     z-index: 1;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
@@ -749,7 +749,7 @@ footer p {
     transform: translateY(-50%);
     font-size: 24px;
     text-decoration: none;
-    color: #FFD700;
+    color: #FFFFFF;
 }
 
 .sources-emoji:hover {
@@ -757,14 +757,14 @@ footer p {
 }
 
 .sources-link {
-    color: #FFD700;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .sources-link:hover {
-    color: #FFEA61;
+    color: #CCCCCC;
 }
 
 .animated-section {
@@ -922,8 +922,8 @@ footer p {
     margin: 40px auto;
     overflow: hidden;
     border-radius: 10px;
-    border: 2px solid #FFD700;
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -947,13 +947,13 @@ footer p {
     width: 100px;
     height: 100px;
     margin-bottom: 20px;
-    filter: invert(100%) sepia(100%) saturate(700%) hue-rotate(0deg) brightness(150%) contrast(100%);
+    filter: none;
 }
 
 .ir-slide h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
-    color: #FFD700;
+    color: #FFFFFF;
     margin-bottom: 15px;
 }
 
@@ -968,7 +968,7 @@ footer p {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 215, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     color: #000000;
     border: none;
     padding: 10px 15px;
@@ -988,7 +988,7 @@ footer p {
 }
 
 .ir-prev-btn:hover, .ir-next-btn:hover, .edu-prev-btn:hover, .edu-next-btn:hover {
-    background-color: #FFD700;
+    background-color: #FFFFFF;
     color: #000000;
 }
 
@@ -1008,12 +1008,12 @@ footer p {
     margin: 0 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, border-color 0.3s ease;
-    border: 1px solid rgba(255, 215, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .ir-dot.active, .edu-dot.active {
-    background-color: #FFD700;
-    border-color: #FFD700;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
 }
 
 .roadmap-flashcards-container {
@@ -1048,14 +1048,14 @@ footer p {
 }
 
 .flashcard-front {
-    background-color: #FFD700;
+    background-color: #CCCCCC;
     color: #000000;
 }
 
 .flashcard-back {
     background-color: #000000;
     color: #FFFFFF;
-    border: 2px solid #FFD700;
+    border: 2px solid #FFFFFF;
     transform: rotateY(180deg);
     padding: 20px;
     text-align: center;
@@ -1079,14 +1079,14 @@ footer p {
 }
 
 .data-table th, .data-table td {
-    border: 1px solid #FFD700;
+    border: 1px solid #FFFFFF;
     padding: 15px;
     text-align: left;
     color: #FFFFFF;
 }
 
 .data-table thead {
-    background-color: #FFD700;
+    background-color: #CCCCCC;
     color: #000000;
     font-weight: 700;
 }
@@ -1096,7 +1096,7 @@ footer p {
 }
 
 .data-table tbody tr:hover {
-    background-color: rgba(255, 215, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 .footnote {
@@ -1111,13 +1111,13 @@ footer p {
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
-    border: 1px solid rgba(255, 215, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     text-align: center;
 }
 
 .demand-info h3 {
     font-family: 'Montserrat', sans-serif;
-    color: #FFD700;
+    color: #FFFFFF;
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -1141,8 +1141,8 @@ footer p {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
-    border: 2px solid #FFD700;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    border: 2px solid #FFFFFF;
 }
 
 .image-caption {
