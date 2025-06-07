@@ -110,12 +110,6 @@ body {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
 }
-
-.nav-link {
-  width: 100%; 
-  box-sizing: border-box;
-}
-
 .nav-link .anav {
   display: block;
   padding: 8px 16px;
@@ -126,8 +120,7 @@ body {
   font-family: "Press Start 2P", system-ui;
   margin: 20px 0; 
   box-sizing: border-box;
-  word-wrap: break-word; 
-  white-space: nowrap; 
+  white-space: normal; 
   overflow: hidden; 
 }
 
