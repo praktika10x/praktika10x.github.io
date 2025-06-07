@@ -360,13 +360,12 @@ strong {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #000000;
+    background-color: #CCCCCC;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto 20px;
-    box-shadow: 0 0 10px #FFD700;
-    border: 2px solid #FFD700;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     overflow: hidden;
 }
 
@@ -375,7 +374,7 @@ strong {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    filter: brightness(0) invert(1);
+    filter: none;
 }
 
 .card h3 {
@@ -438,9 +437,6 @@ strong {
     align-items: center;
     overflow: hidden;
     border-radius: 50%;
-    background-color: #000000;
-    box-shadow: 0 0 10px #FFD700;
-    border: 2px solid #FFD700;
 }
 
 .info-block .gif-icon {
@@ -448,7 +444,7 @@ strong {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    filter: brightness(0) invert(1);
+    filter: none;
 }
 
 .info-block h3 {
@@ -516,15 +512,14 @@ strong {
     height: 50px;
     min-width: 50px;
     border-radius: 50%;
-    background-color: #000000;
+    background-color: #CCCCCC;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
     font-weight: bold;
-    color: #FFFFFF;
-    box-shadow: 0 0 10px #FFD700;
-    border: 2px solid #FFD700;
+    color: #333333;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     margin-right: 15px;
     transition: transform 0.3s ease;
     overflow: hidden;
@@ -535,7 +530,7 @@ strong {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    filter: brightness(0) invert(1);
+    filter: none;
 }
 
 .tools-list .tool-item .tool-icon:hover {
@@ -598,14 +593,13 @@ strong {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: #000000;
+    background-color: #CCCCCC;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto 20px;
     font-size: 40px;
-    box-shadow: 0 0 10px #FFD700;
-    border: 2px solid #FFD700;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     filter: none;
 }
 
@@ -686,13 +680,12 @@ strong {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-color: #000000;
+    background-color: #CCCCCC;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto 20px;
-    box-shadow: 0 0 10px #FFD700;
-    border: 2px solid #FFD700;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
@@ -701,7 +694,7 @@ strong {
     max-height: 90%;
     object-fit: contain;
     border-radius: 50%;
-    filter: brightness(0) invert(1);
+    filter: none;
 }
 
 .university-item h3 {
