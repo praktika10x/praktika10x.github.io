@@ -407,10 +407,10 @@ p {
 .tools-slider-container .soc-slide img {
     width: 100px;
     height: 100px;
-    object-fit: contain;
+    object-fit: cover;
     display: block;
     filter: none;
-    border-radius: 50%;
+    border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     margin: 0 auto 15px auto;
 }
@@ -876,6 +876,10 @@ footer {
     .roadmap-flashcard-back {
         font-size: 0.9em;
     }
+    .tools-slider-container .soc-slide img {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -893,4 +897,151 @@ footer {
     .roadmap-flashcard-back {
         font-size: 0.85em;
     }
+    .tools-slider-container .soc-slide img {
+        width: 80px; 
+        height: 80px;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.anim-fade-in { animation: fadeIn 1s ease-out forwards; }
+.anim-slide-in-left { animation: slideInLeft 1s ease-out forwards; }
+.anim-slide-in-right { animation: slideInRight 1s ease-out forwards; }
+.anim-scale-in { animation: scaleIn 1s ease-out forwards; }
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.9em;
+    position: relative;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.4);
+}
+
+.team-info {
+    margin-bottom: 10px;
+}
+
+.sources-emoji {
+    font-size: 1.8em;
+    text-decoration: none;
+    color: #FFD700;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.sources-emoji:hover {
+    transform: rotate(15deg) scale(1.2);
+}
+
+.roadmap-flashcards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.roadmap-flashcard {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+}
+
+.roadmap-flashcard:hover {
+    transform: translateY(-10px);
+}
+
+.roadmap-flashcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 15px;
+}
+
+.roadmap-flashcard:hover .roadmap-flashcard-inner {
+    transform: rotateY(180deg);
+}
+
+.roadmap-flashcard-front, .roadmap-flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.roadmap-flashcard-front {
+    background-color: #000000;
+    color: #FFD700;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.roadmap-flashcard-back {
+    background-color: #FFD700;
+    color: #000000;
+    transform: rotateY(180deg);
+    text-align: center;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.roadmap-flashcard-front h3 {
+    color: #FFD700;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 1.3em;
+}
+
+.roadmap-flashcard-back p {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.roadmap-icon {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
 }
