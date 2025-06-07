@@ -213,10 +213,10 @@ body {
 }
 
 .intro {
-  background-image: url(фон2.jpg);
+  background-image: url(лілінфон.webp);
 }
 .intro2 {
-  background-image: url(фул1.png);
+  background-image: url(фон2.jpg);
 }
 
 /* === TYPOGRAPHY === */
@@ -236,7 +236,7 @@ h2 {
   font-family: Tektur, sans-serif;
   font-weight: 64;
   font-style: normal;
-  color: #261374;
+  color: var(--h2-color);
   font-size: 50px;
   line-height: 40px;
   margin: 15px 10%;
@@ -262,7 +262,7 @@ h3 {
   letter-spacing: 0em;
   text-align: left;
   margin-left: 20%;
-  color: #000;
+  color: var(--text-color);
 }
 
 .subtitle {
@@ -280,13 +280,14 @@ span {
   font-family: "Tektur", sans-serif;
   font-size: 20px;
   font-weight: 550;
-  color: #261374;
+  color: var(--h2-color);
 }
 
 p {
   font-family: "Comic_Sans_MS", cursive;
   margin: 20px 25%;
   font-size: 20px;
+  color: var(--text-color);
 }
 
 ul {
@@ -336,7 +337,7 @@ a {
 
 .card {
   width: 350px;
-  background-color: #f9cdda;
+  background-color: var(--card-color);
   border: 2px solid lightgray;
   border-radius: 15px;
   padding: 15px;
@@ -353,7 +354,7 @@ a {
 
 .card-link {
   width: 350px;
-  background: linear-gradient(180deg, rgb(255, 218, 143) 99.98%, rgba(255, 255, 255, 0.65) 99.99%);
+  background:var(--card-link-color);
   border: 2px solid lightgray;
   border-radius: 15px;
   padding: 15px;
