@@ -2,8 +2,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    color: #f0f0f0; 
-    background-color: #1a1a1a; 
+    color: #f0f0f0;
+    background-color: #1a1a1a;
     position: relative;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -22,61 +22,6 @@ body {
     background-size: cover;
     opacity: 0.2;
     filter: brightness(0.7);
-}
-
-.logo-bar {
-    background-color: rgba(17, 17, 17, 0.9);
-    color: #f0f0f0;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
-
-.logo-left {
-    display: flex;
-    align-items: center;
-}
-
-.logo-img {
-    height: 40px;
-    margin-right: 10px;
-    border-radius: 50%;
-}
-
-.logo-text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: #f0f0f0;
-}
-
-.nav a {
-    color: #f0f0f0;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.nav a:hover, .nav a.active {
-    color: #ffd700;
-}
-
-.language-switcher a {
-    color: #f0f0f0;
-    text-decoration: none;
-    margin-left: 10px;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.language-switcher a:hover {
-    color: #ffd700; 
 }
 
 .hero-section {
@@ -143,10 +88,10 @@ body {
 .info-section h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 2.5em;
-    color: #f0f0f0; 
+    color: #f0f0f0;
     margin-bottom: 20px;
     text-align: center;
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.5); 
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
 }
 
 .content-block p {
@@ -154,12 +99,12 @@ body {
     line-height: 1.8;
     margin-bottom: 15px;
     text-align: justify;
-    color: #f0f0f0; 
+    color: #f0f0f0;
 }
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; 
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -180,7 +125,7 @@ body {
 .video-description {
     font-style: italic;
     text-align: center;
-    color: #ccc; 
+    color: #ccc;
     margin-top: 10px;
 }
 
@@ -214,8 +159,8 @@ body {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-color: #ffd700; 
-    color: #1a1a1a; 
+    background-color: #ffd700;
+    color: #1a1a1a;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -227,7 +172,7 @@ body {
 }
 
 .roadmap-item h3 {
-    color: #f0f0f0; 
+    color: #f0f0f0;
     font-size: 1.6em;
     margin-bottom: 10px;
 }
@@ -243,7 +188,7 @@ body {
 }
 
 .duty-item {
-    background-color: #333; 
+    background-color: #333;
     padding: 25px;
     border-radius: 8px;
     text-align: center;
@@ -262,12 +207,12 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
-    border: 3px solid #ffd700; 
+    border: 3px solid #ffd700;
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
 }
 
 .duty-item h3 {
-    color: #f0f0f0; 
+    color: #f0f0f0;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -283,7 +228,7 @@ body {
 }
 
 .tool-card {
-    background-color: #333; 
+    background-color: #333;
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
@@ -296,7 +241,7 @@ body {
 }
 
 .tool-card h3 {
-    color: #f0f0f0; 
+    color: #f0f0f0;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -307,8 +252,8 @@ body {
 
 .tool-tags span {
     display: inline-block;
-    background-color: #ffd700; 
-    color: #1a1a1a; 
+    background-color: #ffd700;
+    color: #1a1a1a;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.9em;
@@ -328,7 +273,7 @@ body {
 }
 
 .product-card {
-    background-color: #333; 
+    background-color: #333;
     padding: 25px;
     border-radius: 8px;
     text-align: center;
@@ -344,7 +289,7 @@ body {
 .product-icon {
     font-size: 3em;
     margin-bottom: 15px;
-    color: #ffd700; 
+    color: #ffd700;
 }
 
 .product-card h3 {
@@ -390,8 +335,8 @@ table th, table td {
 }
 
 table th {
-    background-color: #ffd700; 
-    color: #1a1a1a; 
+    background-color: #ffd700;
+    color: #1a1a1a;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -480,8 +425,8 @@ table tr:hover {
 
 .btn-secondary {
     display: inline-block;
-    background-color: #ffd700; 
-    color: #1a1a1a; 
+    background-color: #ffd700;
+    color: #1a1a1a;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -490,7 +435,7 @@ table tr:hover {
 }
 
 .btn-secondary:hover {
-    background-color: #e6c200; 
+    background-color: #e6c200;
     transform: translateY(-2px);
 }
 
@@ -549,44 +494,14 @@ table tr:hover {
     content: '✅';
     position: absolute;
     left: 0;
-    color: #ffd700; 
+    color: #ffd700;
 }
 
 .cons-card li::before {
     content: '❌';
     position: absolute;
     left: 0;
-    color: #f0f0f0; 
-}
-footer {
-    background-color: rgba(17, 17, 17, 0.9);
     color: #f0f0f0;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    position: relative;
-    z-index: 1;
-}
-
-.team-info {
-    font-size: 0.9em;
-    margin: 0;
-}
-
-.sources-emoji {
-    font-size: 1.5em;
-    text-decoration: none;
-    color: #f0f0f0;
-    transition: color 0.3s ease;
-}
-
-.sources-emoji:hover {
-    color: #ffd700;
 }
 
 @keyframes fadeIn {
@@ -601,26 +516,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .logo-bar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav {
-        margin-top: 10px;
-    }
-
-    .nav a {
-        margin-left: 0;
-        margin-right: 15px;
-        margin-bottom: 5px;
-    }
-
-    .language-switcher {
-        margin-top: 10px;
-        align-self: flex-end;
-    }
-
     .hero-content h1 {
         font-size: 2.5em;
     }
@@ -653,13 +548,5 @@ footer {
 
     .hero-subtitle {
         font-size: 1em;
-    }
-
-    .logo-text {
-        font-size: 20px;
-    }
-
-    .nav a {
-        font-size: 0.9em;
     }
 }
