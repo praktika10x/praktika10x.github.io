@@ -254,8 +254,8 @@ a{
 /*кнопка*/
 
 
+/* 
 
-/*Медіазапити*/
 
 @media (max-width: 768px) {
 
@@ -336,7 +336,7 @@ a{
 
 
 
-/* Mobile adaptation 
+Mobile adaptation 
 @media (max-width: 768px) {
 
   .headerhome{
