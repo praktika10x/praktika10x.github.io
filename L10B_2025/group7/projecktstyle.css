@@ -18,93 +18,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.logo-bar {
-    background-color: #FFD700;
-    padding: 15px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo-left {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.logo-img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.4s ease-in-out;
-}
-
-.logo-img:hover {
-    transform: rotate(10deg) scale(1.1);
-}
-
-.logo-text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    color: #222222;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-}
-
-.language-switcher a {
-    font-family: 'Open Sans', sans-serif;
-    color: #222222;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 12px;
-    cursor: pointer;
-    user-select: none;
-    transition: color 0.3s ease, background-color 0.3s ease;
-    border-radius: 5px;
-}
-
-.language-switcher a:hover {
-    color: #444444;
-    background-color: #FFFACD;
-}
-
-.nav {
-    text-align: center;
-    margin: 0;
-}
-
-.nav a {
-    color: #222222;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: 600;
-    padding: 12px 20px;
-    border: 2px solid transparent;
-    border-radius: 30px;
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    display: inline-block;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 15px;
-}
-
-.nav a:hover,
-.nav a.active {
-    background-color: #FFFACD;
-    border-color: #FFD700;
-    color: #222222;
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
 .home-page .hero {
     position: relative;
     padding: 120px 20px;
@@ -220,7 +133,7 @@ html {
 .shape-2 {
     width: 200px;
     height: 80px;
-    background: linear-gradient(90deg, #FFD700, #FFFACD);
+    background: linear-gradient(90deg, #FFD700, #FFA500);
     border-radius: 50% 0 50% 0 / 100% 0 100% 0;
     bottom: -40px;
     left: -80px;
@@ -771,49 +684,6 @@ li {
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    background-color: #222222;
-    color: #F5F5F5;
-    padding: 30px;
-    margin-top: 60px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-footer .team-info {
-    margin-bottom: 0;
-    text-align: left;
-    flex-grow: 1;
-    color: #CCCCCC;
-}
-
-.sources-emoji {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    text-decoration: none;
-    color: #222222;
-    background-color: #FFD700;
-    border-radius: 50%;
-    width: 55px;
-    height: 55px;
-    margin-left: auto;
-    transition: background-color 0.3s ease, transform 0.2s ease-in-out, box-shadow 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.sources-emoji:hover {
-    background-color: #FFFACD;
-    transform: scale(1.15) rotate(5deg);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -916,15 +786,41 @@ footer .team-info {
     transform: translateY(0);
 }
 
-.animated-section.is-visible .delay-1 { animation-delay: 0.1s; }
-.animated-section.is-visible .delay-2 { animation-delay: 0.2s; }
-.animated-section.is-visible .delay-3 { animation-delay: 0.3s; }
-.animated-section.is-visible .delay-4 { animation-delay: 0.4s; }
-.animated-section.is-visible .delay-5 { animation-delay: 0.5s; }
-.animated-section.is-visible .delay-6 { animation-delay: 0.6s; }
-.animated-section.is-visible .delay-7 { animation-delay: 0.7s; }
-.animated-section.is-visible .delay-8 { animation-delay: 0.8s; }
-.animated-section.is-visible .delay-9 { animation-delay: 0.9s; }
+.animated-section.is-visible .delay-1 {
+    animation-delay: 0.1s;
+}
+
+.animated-section.is-visible .delay-2 {
+    animation-delay: 0.2s;
+}
+
+.animated-section.is-visible .delay-3 {
+    animation-delay: 0.3s;
+}
+
+.animated-section.is-visible .delay-4 {
+    animation-delay: 0.4s;
+}
+
+.animated-section.is-visible .delay-5 {
+    animation-delay: 0.5s;
+}
+
+.animated-section.is-visible .delay-6 {
+    animation-delay: 0.6s;
+}
+
+.animated-section.is-visible .delay-7 {
+    animation-delay: 0.7s;
+}
+
+.animated-section.is-visible .delay-8 {
+    animation-delay: 0.8s;
+}
+
+.animated-section.is-visible .delay-9 {
+    animation-delay: 0.9s;
+}
 
 .image-placeholder img {
     opacity: 0;
@@ -964,31 +860,40 @@ footer .team-info {
         max-width: 95%;
         gap: 30px;
     }
+
     .home-page .rounded-block {
         width: calc(50% - 35px);
         min-width: 280px;
     }
+
     .project-page .container {
         padding: 30px;
     }
+
     h1 {
         font-size: 50px;
     }
+
     h2 {
         font-size: 36px;
     }
+
     h3 {
         font-size: 30px;
     }
+
     p,
     li {
         font-size: 18px;
     }
+
     .slider-container {
         max-width: 800px;
         padding: 15px;
     }
-    .prev-btn, .next-btn {
+
+    .prev-btn,
+    .next-btn {
         padding: 12px 18px;
         font-size: 28px;
         left: -15px;
@@ -997,132 +902,98 @@ footer .team-info {
 }
 
 @media (max-width: 768px) {
-    .logo-bar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px 20px;
-    }
-    .logo-left {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        width: 100%;
-    }
-    .logo-text {
-        font-size: 24px;
-    }
-    .nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-        padding-top: 15px;
-        width: 100%;
-        text-align: left;
-    }
-    .nav a {
-        margin: 0;
-        width: calc(100% - 20px);
-        text-align: left;
-        padding: 10px;
-    }
-    .language-switcher {
-        align-self: flex-start;
-        margin-top: 15px;
-        width: 100%;
-        text-align: right;
-    }
     .home-page .hero {
         padding: 80px 15px;
     }
+
     .home-page .hero h1 {
         font-size: 45px;
     }
+
     .home-page .hero p {
         font-size: 18px;
     }
+
     .home-page .intro-section {
         padding: 0 15px;
         margin: 40px auto;
     }
+
     .home-page .intro-section h2 {
         font-size: 36px;
     }
+
     .home-page .rounded-block-container {
         flex-direction: column;
         align-items: center;
         gap: 25px;
         margin-bottom: 30px;
     }
+
     .home-page .rounded-block {
         width: 90%;
         min-width: unset;
         padding: 25px;
     }
+
     .project-page .container {
         width: 95%;
         padding: 25px;
         margin: 25px auto;
     }
+
     .project-page .cards-container {
         flex-direction: column;
         align-items: center;
         gap: 25px;
     }
+
     .project-page .card {
         width: 90%;
         max-width: 400px;
         min-width: unset;
         padding: 25px;
     }
+
     .project-page .card h3 {
         font-size: 24px;
     }
+
     .project-page .icon-circle {
         width: 80px;
         height: 80px;
     }
-    footer {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        padding: 20px;
-    }
-    footer .team-info {
-        width: 100%;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-    .sources-emoji {
-        margin-left: 0;
-        align-self: flex-end;
-        width: 45px;
-        height: 45px;
-        font-size: 1.4em;
-    }
+
     h1 {
         font-size: 40px;
         margin-bottom: 30px;
     }
+
     h2 {
         font-size: 32px;
         padding-left: 15px;
         margin-bottom: 25px;
     }
+
     h3 {
         font-size: 26px;
         margin-bottom: 20px;
     }
+
     p,
     ul,
     li {
         font-size: 17px;
     }
-    .prev-btn, .next-btn {
+
+    .prev-btn,
+    .next-btn {
         padding: 10px 14px;
         font-size: 24px;
         left: -10px;
         right: -10px;
     }
+
     .slider-image {
         width: 200px;
         height: 120px;
@@ -1133,53 +1004,45 @@ footer .team-info {
     .home-page .hero h1 {
         font-size: 35px;
     }
+
     .home-page .hero p {
         font-size: 16px;
     }
+
     .home-page .intro-section h2 {
         font-size: 30px;
     }
-    .logo-text {
-        font-size: 20px;
-    }
-    .nav a {
-        font-size: 14px;
-        padding: 8px;
-    }
-    .language-switcher {
-        font-size: 14px;
-    }
+
     .btn {
         padding: 10px 18px;
         font-size: 14px;
     }
+
     .project-page .card {
         padding: 20px;
     }
+
     .project-page .card h3 {
         font-size: 22px;
     }
-    footer {
-        font-size: 14px;
-    }
-    .sources-emoji {
-        width: 40px;
-        height: 40px;
-        font-size: 1.4em;
-    }
-    .prev-btn, .next-btn {
+
+    .prev-btn,
+    .next-btn {
         padding: 8px 10px;
         font-size: 20px;
         left: 5px;
         right: 5px;
     }
+
     .slider-container {
         padding: 10px;
         border-radius: 15px;
     }
+
     .slide {
         padding: 15px;
     }
+
     .slider-image {
         width: 180px;
         height: 100px;
