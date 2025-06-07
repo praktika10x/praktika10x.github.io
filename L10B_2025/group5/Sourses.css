@@ -104,6 +104,11 @@ body, html {
 }
 
 
+.current {
+  box-shadow: 0 8px 12px rgba(255, 255, 255, 0.236) !important;
+  color: #1E2A5E !important;
+}
+
 
 @media (max-width: 768px) {
     .sourses1 h3, .sourses2 h3, .sourses3 h3 {
