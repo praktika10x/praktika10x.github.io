@@ -47,7 +47,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-content">
       <div class="footer-section">
@@ -100,11 +99,9 @@
   </footer>
 
   <script>
-    // Theme toggle functionality
     const themeToggle = document.getElementById('themeToggle');
     const body = document.body;
 
-    // Check for saved theme preference
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
       body.classList.add(savedTheme);
