@@ -4,10 +4,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000; /* Загальний фон тепер чорний */
-    color: #ffffff; /* Загальний текст тепер білий */
+    background-color: #000000; 
+    color: #ffffff; 
     line-height: 1.6;
-    background-image: url('шлях_до_вашої_гіфки.gif'); /* Замініть на шлях до вашої GIF-ки */
+    background-image: url('шлях_до_вашої_гіфки.gif'); 
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -243,7 +243,7 @@ body {
     text-align: center;
     font-style: italic;
     margin-top: 20px;
-    color: #ffffff; /* Опис відео тепер білий */
+    color: #ffffff; 
 }
 
 .roadmap-grid {
@@ -285,7 +285,7 @@ body {
     position: absolute;
     top: -20px;
     left: 20px;
-    border: 3px solid #000000; /* Колір рамки кроку тепер чорний */
+    border: 3px solid #000000; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -316,8 +316,7 @@ body {
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #ffffff; /* Текст в duty-item тепер білий */
-}
+    color: #ffffff; 
 
 .duty-item:hover {
     transform: translateY(-5px);
@@ -343,7 +342,7 @@ body {
 
 .duty-item p {
     font-size: 0.95em;
-    color: #ffffff; /* Текст параграфа в duty-item тепер білий */
+    color: #ffffff;
 }
 
 .tools-grid {
@@ -359,7 +358,7 @@ body {
     border-bottom: 4px solid #FFD700;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #ffffff; /* Текст в tool-card тепер білий */
+    color: #ffffff; 
 }
 
 .tool-card:hover {
@@ -392,7 +391,7 @@ body {
 
 .tool-card p {
     font-size: 0.95em;
-    color: #ffffff; /* Текст параграфа в tool-card тепер білий */
+    color: #ffffff; 
 }
 
 .products-list {
@@ -408,7 +407,7 @@ body {
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #ffffff; /* Текст в product-card тепер білий */
+    color: #ffffff; 
 }
 
 .product-card:hover {
@@ -432,7 +431,7 @@ body {
 
 .product-card p {
     font-size: 0.95em;
-    color: #ffffff; /* Текст параграфа в product-card тепер білий */
+    color: #ffffff; 
 }
 
 .salary-table-container {
@@ -463,7 +462,7 @@ body {
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid #333;
-    color: #ffffff; /* Текст таблиці тепер білий */
+    color: #ffffff; 
 }
 
 .salary-table-container th {
@@ -496,7 +495,7 @@ body {
 
 .image-caption {
     font-style: italic;
-    color: #ffffff; /* Підпис зображення тепер білий */
+    color: #ffffff; 
     margin-top: 10px;
 }
 
@@ -515,7 +514,7 @@ body {
     display: flex;
     align-items: flex-start;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #ffffff; /* Текст в university-item тепер білий */
+    color: #ffffff; 
 }
 
 .university-item:hover {
@@ -548,7 +547,7 @@ body {
 
 .university-details p {
     font-size: 0.95em;
-    color: #ffffff; /* Текст параграфа в university-details тепер білий */
+    color: #ffffff;
     margin-bottom: 8px;
 }
 
@@ -587,7 +586,7 @@ body {
     min-width: 350px;
     max-width: 550px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #ffffff; /* Текст в pros/cons-card тепер білий */
+    color: #ffffff; 
 }
 
 .pros-card:hover,
