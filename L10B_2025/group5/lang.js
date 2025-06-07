@@ -635,7 +635,7 @@ function changeLanguage() {
     if (!allLang.includes(hash)) {
         hash = 'ua';
         location.hash = hash;
-        window.location.reload();
+        //window.location.reload();
     }
 
     for (let key in langArr) {
