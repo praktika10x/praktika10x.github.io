@@ -273,7 +273,7 @@ body {
 .btn {
     background-color: #954baa;
     color: white;
-    padding: 12px 50px;
+    padding: 12px 24px;
     font-size: 16px;
     font-family: "Tektur", sans-serif;
     border: none;
@@ -283,7 +283,8 @@ body {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     box-sizing: border-box; 
     position: fixed;
-    top: 90vh; 
+    top: 90vh;
+    justify-content: center;
   }
 
   .btn:hover {
