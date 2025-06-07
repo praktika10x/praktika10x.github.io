@@ -583,4 +583,10 @@ Mobile adaptation
   span {
     font-size: 18px;
   }
+  
+  .pnav {
+    font-size: 60px;
+    text-align: center;
+    margin: 20px 10px;
+  }
 }
