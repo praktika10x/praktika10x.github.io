@@ -277,145 +277,147 @@ a {
 }
 
 /* Прикладний криптографічний інженер*/
-/* Базові стилі */
-body {
-    font-family: "Fira Sans Condensed", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f6f8;
-    color: #333;
+.appl1 p {
+   font-family: "Fira Sans Condensed", sans-serif;
+   color: #FFFFFF;
+   font-size: 24px;
+   display: flex;
+   justify-content: center; 
 }
-
-h1 {
-    font-family: "Slackey", cursive;
-    font-size: 2.5em;
+.appl2 li {
+   font-family: "Fira Sans Condensed", sans-serif;
+   color: #FFFFFF;
+   font-size: 24px;
+}
+.apll3 {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+.apll3 div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 35vh;
+    width: 35vw;
+    background: #3E5F8A;
+    border-radius: 10px;
+    margin-top: 1vh;
+}
+.apll3 p {
+   font-family: "Fira Sans Condensed", sans-serif;
+   color: #FFFFFF;
+   font-size: 24px;
+   
+}
+.apll3 strong {
+   font-family: "Oswald", sans-serif;
+    color: #CFC127;
     text-align: center;
-    color: #00587a;
-    margin-top: 1rem;
+    font-size: 32px;
+    margin-bottom: 1px;
+    margin: auto;
+}
+.apll4 p {
+   font-family: "Fira Sans Condensed", sans-serif;
+   color: #FFFFFF;
+   font-size: 24px; 
+   margin-left: 5vw;
+}
+.apll5 p {
+   font-family: "Fira Sans Condensed", sans-serif;
+   color: #FFFFFF;
+   font-size: 24px; 
+   margin-left: 5vw; 
+}
+.apll5 li {
+   font-family: "Fira Sans Condensed", sans-serif;
+   color: #FFFFFF;
+   font-size: 24px; 
+   margin-left: 5vw;  
 }
 
-h4 {
-    font-family: "Oswald", sans-serif;
-    font-size: 1.5em;
-    margin-top: 1.5rem;
-    color: #00334e;
-}
-
-p, li, strong {
-    font-size: 1em;
-    line-height: 1.6;
-}
-
-/* Навігація */
+/*Адаптація*/
+@media (max-width: 700px) {
+  h1, .title {
+    font-size: 48px;
+    text-align: center;
+    margin-top: 20vh;
+  }
 .navigator {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    background-color: #00334e;
-    padding: 10px 20px;
-    color: white;
+    align-items: center; 
+    padding: 1vh 5vw;
+    height: auto;
+    min-height: 10vh; 
+    overflow: visible; 
+    position: relative; 
+    z-index: 10;        
 }
-
-.navigator .logo img {
-    height: 40px;
+.logo {
+    margin-top: 1vh;
 }
-
-.menu-box {
-    position: relative;
+.logo img {
+    width: 20vw;
+    margin-left: 0;
 }
-
-.menu-icon img {
-    height: 30px;
-    cursor: pointer;
-}
-
 .menu-n {
-    display: none;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    background-color: #00334e;
-    border-radius: 5px;
-    overflow: hidden;
+    top: 8vh;
+    right: 2vw;
+    width: 80vw;
+  }
+.menu-n a {
+    font-size: 1rem;
+  }
+.menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
 }
-
-.menu-n ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.menu-icon img {
+  height: 6vh;
+  max-height: 50px;
+  object-fit: contain;
 }
-
-.menu-n li a {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
+.menu-box {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
-
-.menu-n li a:hover {
-    background-color: #00587a;
-}
-
-#menu-1:checked ~ .menu-n {
-    display: block;
-}
-
-/* Контент */
-.content {
-    padding: 20px;
-    background-color: #ffffff;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.content ol {
-    padding-left: 20px;
-}
-
-.content a {
-    color: #007acc;
-    text-decoration: none;
-}
-
-.content a:hover {
-    text-decoration: underline;
-}
-
-/* Блоки інформації */
-.appl1, .appl2, .apll3, .apll4, .apll5 {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px;
-    border-left: 5px solid #00587a;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-}
-
-.highlight-box {
-    background-color: #e8f4f8;
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-/* Кнопка "На головну" */
-.home {
-    text-align: center;
-    margin: 40px 0;
-}
-
 .home a {
-    display: inline-block;
-    padding: 10px 25px;
-    background-color: #00587a;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    width: 60vw;
+    height: 6vh;
+    font-size: 1rem;
+  }
+.content, .crypt2box, .brain, .apll3 div {
+    width: 90vw;
+    height: auto;
+    padding: 1rem;
 }
-
-.home a:hover {
-    background-color: #007acc;
+.content p,.brain p,.apll3 p,.crypt2box li,.crypt4 p,.crypt4 a,.appl1 p,.appl2 li,.apll5 li,.apll5 p,.apll4 p,.info,.authors,.crypt1 p,.crypt2 p,.crypt5 dd {
+    font-size: 18px;
+    text-align: center;
+  }
+.crypt3 {
+    flex-direction: column;
+    align-items: center;
+  }
+.apll3 {
+    flex-direction: column;
+    align-items: center;
+  }
+.crypt1 p,.crypt2 p {
+    margin: 1vh 5vw;
+    float: none;
+  }
+.crypt2box li {
+    float: none;
+    margin-left: 0;
+  }
+.brain li {
+    text-align: center;
+  }
 }
-
