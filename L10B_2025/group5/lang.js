@@ -39,12 +39,12 @@ const langArr = {
         "en": "Analyzes data, creates reports and dashboards to support business decisions.",
     },
     "ml-desc": {
-        "ua": "Розробляє та впроваджує ML-моделі для прогнозування й автоматизації.",
-        "en": "Develops and implements ML models for prediction and automation.",
+        "ua": "Розробляє, тренує та впроваджує моделі машинного навчання для вирішення прикладних завдань.",
+        "en": "Develops, trains and implements ML models for handling applied tasks",
     },
     "mlops-desc": {
-        "ua": "Відповідає за автоматизацію, масштабування й стабільну роботу ML-моделей у продакшені.",
-        "en": "Responsible for automation, scaling, and stable operation of ML models in production.",
+        "ua": "Відповідає за автоматизацію, масштабування, підтримку і стабільну роботу ML-моделей у продакшені.",
+        "en": "Responsible for automation, scaling, support and stable operation of ML models in production.",
     },
     "authors": {
         "ua": "Автори",
