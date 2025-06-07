@@ -8,371 +8,10 @@
     <link rel="stylesheet" href="CybersecurityAnalyst.css" />
     <link rel="stylesheet" href="index.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            font-family: 'Roboto', sans-serif;
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            font-family: 'Roboto', sans-serif;
-            color: #34495e;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            margin-bottom: 15px;
-            color: #555;
-        }
-
-        strong {
-            color: #2c3e50;
-        }
-
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
-
-        ul li {
-            margin-bottom: 8px;
-            color: #555;
-        }
-
-        .cards-container, .info-blocks-container, .tools-list, .product-gallery, .university-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            margin-bottom: 30px;
-        }
-
-        .card, .info-block, .tool-item, .product-item, .university-item {
-            background-color: #ecf0f1;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-            text-align: center;
-            flex: 1 1 calc(33% - 40px);
-            box-sizing: border-box;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover, .info-block:hover, .tool-item:hover, .product-item:hover, .university-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .card h3, .info-block h3, .tool-item h3, .product-item h3, .university-item h3 {
-            color: #34495e;
-            margin-top: 15px;
-            margin-bottom: 10px;
-        }
-
-        .icon-circle, .tool-icon, .product-icon, .uni-icon-circle {
-            width: 70px;
-            height: 70px;
-            background-color: #3498db;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 15px auto;
-            color: white;
-            font-size: 30px;
-        }
-
-        .icon-circle img, .gif-container img, .tool-icon img, .uni-icon-circle img {
-            max-width: 100%;
-            max-height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .info-block.with-gif .gif-container {
-            width: 100px;
-            height: 100px;
-            margin: 0 auto 15px auto;
-            border-radius: 50%;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .info-block.with-gif .gif-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .tool-item {
-            display: flex;
-            align-items: center;
-            text-align: left;
-            flex: 1 1 calc(48% - 20px);
-        }
-
-        .tool-item .tool-icon {
-            flex-shrink: 0;
-            margin-right: 15px;
-            margin-bottom: 0;
-        }
-
-        .tool-item .tool-text {
-            flex-grow: 1;
-        }
-
-        .product-item .product-icon span {
-            font-size: 40px;
-            line-height: 1;
-        }
-
-        .university-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .university-item:hover {
-            color: #3498db;
-        }
-
-        .university-item .uni-logo-img {
-            border-radius: 0;
-            object-fit: contain;
-        }
-
-        .image-placeholder img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        #fullScreenVideoBackground {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -1;
-            background-size: cover;
-        }
-
-        .project-page {
-            position: relative;
-            z-index: 1;
-        }
-
-        .logo-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 100;
-        }
-
-        .logo-left {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo-img {
-            height: 40px;
-            margin-right: 10px;
-        }
-
-        .logo-text {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-
-        .nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 600;
-        }
-
-        .language-switcher a {
-            color: white;
-            text-decoration: none;
-            margin: 0 5px;
-        }
-
-        footer {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin-top: 40px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .footer-bottom-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-top: 15px;
-        }
-
-        .team-members {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .team-member {
-            text-align: center;
-        }
-
-        .team-member-img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            margin-bottom: 5px;
-            border: 2px solid #3498db;
-        }
-
-        .lyceum-info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .lyceum-logo {
-            height: 80px;
-            margin-top: 10px;
-        }
-
-        .sources-btn {
-            background-color: #3498db;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .sources-btn:hover {
-            background-color: #2980b9;
-        }
-
-        .team-info {
-            flex-basis: 100%;
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #ddd;
-        }
-
-        .animated-section {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        .animated-section.fade-in {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .delay-1 { transition-delay: 0.1s; }
-        .delay-2 { transition-delay: 0.2s; }
-        .delay-3 { transition-delay: 0.3s; }
-        .delay-4 { transition-delay: 0.4s; }
-        .delay-5 { transition-delay: 0.5s; }
-        .delay-6 { transition-delay: 0.6s; }
-        .delay-7 { transition-delay: 0.7s; }
-        .delay-8 { transition-delay: 0.8s; }
-        .delay-9 { transition-delay: 0.9s; }
-
-        @media (max-width: 768px) {
-            .card, .info-block, .tool-item, .product-item, .university-item {
-                flex: 1 1 calc(50% - 20px);
-            }
-            .tool-item {
-                flex-direction: column;
-                text-align: center;
-            }
-            .tool-item .tool-icon {
-                margin: 0 auto 15px auto;
-            }
-            .footer-bottom-row {
-                flex-direction: column;
-                gap: 20px;
-            }
-            .team-members {
-                order: 2;
-            }
-            .lyceum-info {
-                order: 1;
-            }
-            .sources-btn {
-                order: 3;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .card, .info-block, .tool-item, .product-item, .university-item {
-                flex: 1 1 100%;
-            }
-            .nav {
-                display: none;
-            }
-            .logo-bar {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .language-switcher {
-                margin-top: 10px;
-            }
-        }
-    </style>
 </head>
 <body class="project-page">
 
-    <header class="logo-bar">
+ <header class="logo-bar">
         <div class="logo-left">
             <img src="https://i.postimg.cc/3RcBwN6j/image.jpg" alt="лого" class="logo-img" />
             <span class="logo-text">Safe WEB squad</span>
@@ -386,19 +25,15 @@
         </div>
     </header>
 
-    <video autoplay muted loop id="fullScreenVideoBackground">
-        <source src="https://v1.pinimg.com/videos/mc/720p/00/f1/16/00f116593c4df7a0919e117965bf1293.mp4" type="video/mp4">
-    </video>
-
     <div class="container">
-        <h1 class="fade-in-text animated-section" style="color:black;">Cybersecurity Analyst: Захисник Цифрового Світу</h1>
+        <h1 class="fade-in-text animated-section">Cybersecurity Analyst: Захисник Цифрового Світу</h1>
 
         <section class="animated-section">
             <h2>Сутність професії</h2>
             <div class="section-content-wrapper">
-                <p style="color:black;"><strong>Аналітик з кібербезпеки</strong> (Cybersecurity Analyst) – це фахівець, який відіграє ключову роль у захисті інформаційних систем, мереж та даних організації від кіберзагроз. Його основна місія – виявляти вразливості, запобігати кібератакам, реагувати на інциденти безпеки та впроваджувати ефективні заходи захисту. Ця професія вимагає глибоких знань у сфері IT, а також постійного навчання та адаптації до нових викликів.</p>
+                <p><strong>Аналітик з кібербезпеки</strong> (Cybersecurity Analyst) – це фахівець, який відіграє ключову роль у захисті інформаційних систем, мереж та даних організації від кіберзагроз. Його основна місія – виявляти вразливості, запобігати кібератакам, реагувати на інциденти безпеки та впроваджувати ефективні заходи захисту. Ця професія вимагає глибоких знань у сфері IT, а також постійного навчання та адаптації до нових викликів.</p>
                 <p>Аналітики з кібербезпеки працюють у різних галузях – від фінансових установ та державних організацій до технологічних компаній та медичних закладів. Вони можуть входити до складу команд SOC (Security Operations Center), займатися аналізом загроз, аудитом безпеки або брати участь у розробці стратегій захисту.</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/S2gXwDk6z48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kVnvIBNiC58?si=LByE73w24lwuHVcm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <div class="decorative-element shape-1"></div>
             </div>
         </section>
@@ -603,8 +238,8 @@
             <h2>Заробітна плата та Затребуваність на ринку праці</h2>
             <div class="section-content-wrapper">
                 <p>Професія Cybersecurity Analyst є однією з найбільш затребуваних та високооплачуваних у сфері IT. Зростання кількості кібератак, постійні зміни в регуляторних вимогах та усвідомлення критичної важливості захисту даних призводять до постійного, експоненціального збільшення попиту на кваліфікованих фахівців по всьому світу.</p>
-                <p style="color:black;"><strong>Затребуваність:</strong> За даними різних аналітичних агенцій (наприклад, Cybersecurity Ventures, ISC²), кількість незаповнених вакансій у сфері кібербезпеки продовжує зростати. Прогнозується, що до 2025 року глобальний дефіцит фахівців з кібербезпеки сягне кількох мільйонів. Це створює величезні можливості для нових фахівців, які входять у цю сферу.</p>
-                <p style="color:black;"><strong>Заробітна плата:</strong> Заробітна плата значно варіюється залежно від рівня досвіду (Junior, Middle, Senior), наявності сертифікацій, спеціалізації (наприклад, SOC Analyst, Incident Responder, Threat Intelligence Analyst), регіону та розміру компанії. Однак, у цілому, вона залишається на дуже високому рівні, відображаючи цінність та критичну важливість цієї спеціалізації для сучасного бізнесу та держави. Наприклад, початківці можуть розраховувати на конкурентну зарплату, а досвідчені фахівці можуть отримувати значно вищі доходи.</p>
+                <p><strong>Затребуваність:</strong> За даними різних аналітичних агенцій (наприклад, Cybersecurity Ventures, ISC²), кількість незаповнених вакансій у сфері кібербезпеки продовжує зростати. Прогнозується, що до 2025 року глобальний дефіцит фахівців з кібербезпеки сягне кількох мільйонів. Це створює величезні можливості для нових фахівців, які входять у цю сферу.</p>
+                <p><strong>Заробітна плата:</strong> Заробітна плата значно варіюється залежно від рівня досвіду (Junior, Middle, Senior), наявності сертифікацій, спеціалізації (наприклад, SOC Analyst, Incident Responder, Threat Intelligence Analyst), регіону та розміру компанії. Однак, у цілому, вона залишається на дуже високому рівні, відображаючи цінність та критичну важливість цієї спеціалізації для сучасного бізнесу та держави. Наприклад, початківці можуть розраховувати на конкурентну зарплату, а досвідчені фахівці можуть отримувати значно вищі доходи.</p>
                 <div class="image-placeholder">
                     <img src="https://habrastorage.org/getpro/habr/upload_files/c72/17b/eb2/c7217beb2fb9d81971da064369f72fb5.jpeg" alt="Графік зарплат Cybersecurity Analyst">
                 </div>
@@ -674,27 +309,27 @@
             <h2>Плюси і мінуси професії фахівця з кібербезпеки</h2>
             <div class="section-content-wrapper">
                 <ul>
-                    <li style="color:black;"><strong>Затребуваність на ринку праці.</strong> Кількість кібератак в Україні та світі зростає, тож попит на спеціалістів із кібербезпеки теж збільшуватиметься. Вже зараз дефіцит таких профі становить близько 3,4 млн людей. При цьому 43% власників бізнесів вважають, що їхня компанія стане жертвою кіберзлочинців у найближчі 2 роки.</li>
-                    <li style="color:black;"><strong>Високі зарплати.</strong> Cybersecurity Specialist в Україні заробляє в середньому $1900.</li>
-                    <li style="color:black;"><strong>Гнучкий графік, віддалена робота та фриланс.</strong> Сам знаєш, наскільки це зручно.</li>
-                    <li style="color:black;"><strong>Інтелектуальне задоволення і соціальна значущість.</strong> Фахівці з кібербезпеки вирішують справді важливі та складні завдання.</li>
-                    <li style="color:black;"><strong>Саморозвиток.</strong> У цій сфері постійно з’являється щось нове, тому потрібно тримати руку на пульсі подій.</li>
-                    <li style="color:black;"><strong>Можливість працювати в різних компаніях і країнах.</strong> Такі навички цінуються скрізь.</li>
-                    <li style="color:black;"><strong>Своєрідна творчість.</strong> Щоб створити унікальну систему безпеки, знадобиться креативний підхід.</li>
+                    <li><strong>Затребуваність на ринку праці.</strong> Кількість кібератак в Україні та світі зростає, тож попит на спеціалістів із кібербезпеки теж збільшуватиметься. Вже зараз дефіцит таких профі становить близько 3,4 млн людей. При цьому 43% власників бізнесів вважають, що їхня компанія стане жертвою кіберзлочинців у найближчі 2 роки.</li>
+                    <li><strong>Високі зарплати.</strong> Cybersecurity Specialist в Україні заробляє в середньому $1900.</li>
+                    <li><strong>Гнучкий графік, віддалена робота та фриланс.</strong> Сам знаєш, наскільки це зручно.</li>
+                    <li><strong>Інтелектуальне задоволення і соціальна значущість.</strong> Фахівці з кібербезпеки вирішують справді важливі та складні завдання.</li>
+                    <li><strong>Саморозвиток.</strong> У цій сфері постійно з’являється щось нове, тому потрібно тримати руку на пульсі подій.</li>
+                    <li><strong>Можливість працювати в різних компаніях і країнах.</strong> Такі навички цінуються скрізь.</li>
+                    <li><strong>Своєрідна творчість.</strong> Щоб створити унікальну систему безпеки, знадобиться креативний підхід.</li>
                 </ul>
                 <p>Головні недоліки:</p>
                 <ul>
-                    <li style="color:black;"><strong>Високий рівень відповідальності.</strong> Помилки фахівців з кібербезпеки можуть призвести до серйозних наслідків для компанії: витік даних, фінансові втрати тощо.</li>
-                    <li style="color:black;"><strong>Стрес і вигорання.</strong> Іноді фахівці з кібербезпеки відповідають за захист критично важливих інформаційних систем і мереж. Потрібно бути уважним і зібраним, а ще швидко реагувати на загрози, що виникають та про які ніхто не попереджає (сюрприз). Це збільшує ймовірність вигорання.</li>
-                    <li style="color:black;"><strong>Постійне навчання.</strong> Кіберзагрози змінюються, і доводиться вчитися з ними боротися. Не всім це подобається.</li>
-                    <li style="color:black;"><strong>Необхідність дотримання суворих протоколів і стандартів.</strong> Не найкраща робота для тих, хто любить хаос.</li>
+                    <li><strong>Високий рівень відповідальності.</strong> Помилки фахівців з кібербезпеки можуть призвести до серйозних наслідків для компанії: витік даних, фінансові втрати тощо.</li>
+                    <li><strong>Стрес і вигорання.</strong> Іноді фахівці з кібербезпеки відповідають за захист критично важливих інформаційних систем і мереж. Потрібно бути уважним і зібраним, а ще швидко реагувати на загрози, що виникають та про які ніхто не попереджає (сюрприз). Це збільшує ймовірність вигорання.</li>
+                    <li><strong>Постійне навчання.</strong> Кіберзагрози змінюються, і доводиться вчитися з ними боротися. Не всім це подобається.</li>
+                    <li><strong>Необхідність дотримання суворих протоколів і стандартів.</strong> Не найкраща робота для тих, хто любить хаос.</li>
                 </ul>
             </div>
         </section>
 
     </div>
 
-    <footer>
+   <footer>
         <div class="footer-bottom-row">
             <div class="team-members">
                 <div class="team-member">
@@ -712,37 +347,20 @@
             </div>
             <div class="lyceum-info">
                <a href="https://praktika10x.github.io/">
+                   </div>
+                   
+        <p class="team-info">© 2025 Safe WEB squad. Всі права захищено. <br> Тема проєкту: "Кібербезпека" <br> Проєкт створено учнями групи Л-10В Наукового ліцею "Політ":</p>
+        
+            
+
                     <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/%D0%93%D0%B5%D1%80%D0%B1_%D0%BB%D1%96%D1%86%D0%B5%D1%8E_%C2%AB%D0%9F%D0%BE%D0%BB%D1%96%D1%82%C2%BB_%282022%29.png" alt="Логотип ліцею 'Політ'" class="lyceum-logo">
                 </a>
-            </div>
-            <p class="team-info">© 2025 Safe WEB squad. Всі права захищено. <br> Тема проєкту: "Кібербезпека" <br> Проєкт створено учнями групи Л-10В Наукового ліцею "Політ":</p>
+           
             <a href="dzherela.html" class="sources-btn">ДЖЕРЕЛА <span class="sources-emoji">📝</span></a>
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const animatedSections = document.querySelectorAll('.animated-section');
 
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            };
-
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
-
-            animatedSections.forEach(section => {
-                observer.observe(section);
-            });
-        });
-    </script>
+    <script src="CybersecurityAnalyst.js"></script>
 </body>
 </html>
