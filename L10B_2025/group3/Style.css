@@ -602,4 +602,8 @@ Mobile adaptation
   padding-top: 55px;
   text-align: left;
 }
+
+  iframe {
+    width:300px;
+  }
 }
