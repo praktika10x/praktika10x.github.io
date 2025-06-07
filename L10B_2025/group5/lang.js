@@ -67,8 +67,8 @@ const langArr = {
         "en": "Sources",
     },
     "navigation": {
-        "ua": "Навігація",
-        "en": "Navigation",
+        "ua": "Навігація ‎‎<span class='categories-list-triangle'> ◀</span>",
+        "en": "Navigation ‎‎<span class='categories-list-triangle'> ◀</span>",
     },
     "introduction": {
         "ua": "Вступ",
@@ -331,8 +331,8 @@ const langArr = {
     "en": "Data Field"
     },
     "nav-main": {
-        "ua": "Навігація",
-        "en": "Navigation"
+        "ua": "Навігація ‎‎<span class='categories-list-triangle'> ◀</span>",
+        "en": "Navigation ‎‎<span class='categories-list-triangle'> ◀</span>"
     },
     "nav-href1": {
         "ua": "Вступ",
