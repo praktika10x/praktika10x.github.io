@@ -617,37 +617,53 @@ const langArr = {
 };
 
 
+
 const allLang = ['ua', 'en'];
+const changeLangUaButton = document.querySelector('.change-lang-ua');
+const changeLangEnButton = document.querySelector('.change-lang-en');
+
 
 document.querySelectorAll('.change-lang button').forEach(button => {
     button.addEventListener('click', (event) => {
         const lang = event.target.dataset.lang;
         if (allLang.includes(lang)) {
-            location.hash = lang;
-            changeLanguage();
+            localStorage.setItem('site-lang', lang);
+            changeLanguage(lang);
         }
     });
 });
 
-function changeLanguage() {
-    let hash = window.location.hash.substr(1);
 
-    if (!allLang.includes(hash)) {
-        hash = 'ua';
-        location.hash = hash;
-        //window.location.reload();
-    }
+function changeLanguage(lang) {
+    if (!allLang.includes(lang)) lang = 'ua';
 
     for (let key in langArr) {
         const elements = document.querySelectorAll('.lng-' + key);
         elements.forEach(el => {
-            el.innerHTML = langArr[key][hash];
+            el.innerHTML = langArr[key][lang];
         });
+    }
+
+    
+    if (lang === 'ua') {
+        changeLangUaButton.classList.add('change-lang-ua-active');
+        changeLangEnButton.classList.remove('change-lang-en-active');
+    } else {
+        changeLangEnButton.classList.add('change-lang-en-active');
+        changeLangUaButton.classList.remove('change-lang-ua-active');
     }
 }
 
-window.addEventListener("load", changeLanguage);
-window.addEventListener("hashchange", changeLanguage);
+
+window.addEventListener("load", () => {
+    const savedLang = localStorage.getItem('site-lang') || 'ua';
+    changeLanguage(savedLang);
+});
+
+
+
+
+
 
 
 const hamburger_icon = document.querySelector('.hamburger-icon');
