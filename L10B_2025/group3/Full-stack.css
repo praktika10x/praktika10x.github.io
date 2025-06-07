@@ -287,11 +287,11 @@ img.fullscreen-image {
       justify-content: flex-end;
     }
    .nav-links {
-  display: flex; /* Включає flexbox для вирівнювання */
-  justify-content: center; /* Центрує навігаційні елементи по горизонталі */
-  align-items: center; /* Центрує елементи по вертикалі */
-  gap: 20px; /* Відстань між кожним елементом */
-  list-style: none; /* Прибирає маркери списку */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px;
+  list-style: none;
   padding: 0;
   margin: 10% 0 0 0; 
 }
