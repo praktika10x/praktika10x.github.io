@@ -919,7 +919,7 @@ footer {
 
 .roadmap-flashcard-back {
     background-color: #FFD700;
-    color: #000000; /* Змінено на чорний колір */
+    color: #000000;
     transform: rotateY(180deg);
     text-align: center;
     font-size: 0.95em;
@@ -937,7 +937,7 @@ footer {
     margin: 0;
     padding: 0;
     font-size: 1em;
-    color: #000000; /* Додано для параграфів на звороті */
+    color: #000000;
 }
 
 .roadmap-icon {
