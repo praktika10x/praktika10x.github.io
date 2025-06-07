@@ -66,16 +66,15 @@ body {
   width: auto;
 }
 
-.navdiv {
+.navdiv{
+  width: 100%;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
-
 .nav-links {
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   list-style: none;
   padding: 0;
@@ -88,13 +87,11 @@ body {
   font-size: 1.1rem;
   transition: color 0.3s;
   font-family: "Tektur", sans-serif;
-  padding: 5px 10px;
 }
 
 .nav-links li a:hover {
   color: #ffcc00;
 }
-
 /* === SIDE NAVIGATION === */
 .nav {
   position: fixed;
