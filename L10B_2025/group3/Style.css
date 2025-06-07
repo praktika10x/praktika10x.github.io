@@ -291,7 +291,7 @@ a{
   .anav {
     display: flex;
     margin: 10px 0; /* менше відступів */
-    font-size: 10px; /* зменшений текст */
+    font-size: 10px; /* зменшений текст 
   }
 
   .pnav {
