@@ -1,111 +1,109 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
 
-    const initializeSlider = (containerId, autoSlideInterval = 5000) => {
-        const sliderContainer = document.getElementById(containerId);
-        if (!sliderContainer) {
-            console.warn(`Slider container with ID "${containerId}" not found.`);
-            return;
+    const flashcards = document.querySelectorAll('.flashcard');
+    flashcards.forEach(card => {
+        card.addEventListener('click', function() {
+            this.classList.toggle('flipped');
+        });
+    });
+
+    const irSliderContainer = document.getElementById('irToolsSliderContainer');
+    if (irSliderContainer) {
+        const irSliderWrapper = irSliderContainer.querySelector('.ir-slider-wrapper');
+        const irSlides = irSliderContainer.querySelectorAll('.ir-slide');
+        const irPrevBtn = irSliderContainer.querySelector('.ir-prev-btn');
+        const irNextBtn = irSliderContainer.querySelector('.ir-next-btn');
+        const irSliderDotsContainer = irSliderContainer.querySelector('.ir-slider-dots');
+
+        let irCurrentSlide = 0;
+        const irSlideCount = irSlides.length;
+
+        function updateIrSlider() {
+            irSliderWrapper.style.transform = `translateX(-${irCurrentSlide * 100}%)`;
+            updateIrDots();
         }
 
-        const sliderWrapper = sliderContainer.querySelector('.ir-slider-wrapper, .education-slider-wrapper');
-        const slides = sliderWrapper.querySelectorAll('.ir-slide, .education-slide');
-        const prevBtn = sliderContainer.querySelector('.ir-prev-btn, .education-prev-btn');
-        const nextBtn = sliderContainer.querySelector('.ir-next-btn, .education-next-btn');
-        const dotsContainer = sliderContainer.querySelector('.ir-slider-dots');
-
-        let currentIndex = 0;
-        const totalSlides = slides.length;
-        let autoSlideTimer;
-
-        if (totalSlides === 0) {
-            console.warn(`No slides found in slider container with ID "${containerId}".`);
-            if (prevBtn) prevBtn.style.display = 'none';
-            if (nextBtn) nextBtn.style.display = 'none';
-            if (dotsContainer) dotsContainer.style.display = 'none';
-            return;
+        function nextIrSlide() {
+            irCurrentSlide = (irCurrentSlide + 1) % irSlideCount;
+            updateIrSlider();
         }
 
-        const createDots = () => {
-            if (!dotsContainer) return;
-            dotsContainer.innerHTML = '';
-            for (let i = 0; i < totalSlides; i++) {
-                const dot = document.createElement('span');
+        function prevIrSlide() {
+            irCurrentSlide = (irCurrentSlide - 1 + irSlideCount) % irSlideCount;
+            updateIrSlider();
+        }
+
+        function updateIrDots() {
+            irSliderDotsContainer.innerHTML = '';
+            for (let i = 0; i < irSlideCount; i++) {
+                const dot = document.createElement('div');
                 dot.classList.add('ir-dot');
-                dot.dataset.index = i;
-                dot.addEventListener('click', () => {
-                    currentIndex = i;
-                    updateSliderPosition();
-                    resetAutoSlide();
-                });
-                dotsContainer.appendChild(dot);
-            }
-        };
-
-        const updateSliderPosition = () => {
-            const offset = -currentIndex * 100;
-            sliderWrapper.style.transform = `translateX(${offset}%)`;
-            updateDots();
-        };
-
-        const updateDots = () => {
-            if (!dotsContainer) return;
-            const dots = dotsContainer.querySelectorAll('.ir-dot');
-            dots.forEach((dot, index) => {
-                if (index === currentIndex) {
+                if (i === irCurrentSlide) {
                     dot.classList.add('active');
-                } else {
-                    dot.classList.remove('active');
                 }
-            });
-        };
-
-        const showNextSlide = () => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            updateSliderPosition();
-        };
-
-        const showPrevSlide = () => {
-            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-            updateSliderPosition();
-        };
-
-        const startAutoSlide = () => {
-            if (autoSlideTimer) {
-                clearInterval(autoSlideTimer);
+                dot.addEventListener('click', () => {
+                    irCurrentSlide = i;
+                    updateIrSlider();
+                });
+                irSliderDotsContainer.appendChild(dot);
             }
-            autoSlideTimer = setInterval(showNextSlide, autoSlideInterval);
-        };
-
-        const resetAutoSlide = () => {
-            clearInterval(autoSlideTimer);
-            startAutoSlide();
-        };
-
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => {
-                showNextSlide();
-                resetAutoSlide();
-            });
-        } else {
-            console.warn(`Next button not found for slider with ID "${containerId}".`);
         }
 
-        if (prevBtn) {
-            prevBtn.addEventListener('click', () => {
-                showPrevSlide();
-                resetAutoSlide();
-            });
-        } else {
-            console.warn(`Previous button not found for slider with ID "${containerId}".`);
+        if (irPrevBtn && irNextBtn) {
+            irNextBtn.addEventListener('click', nextIrSlide);
+            irPrevBtn.addEventListener('click', prevIrSlide);
+            updateIrSlider();
+        }
+    }
+
+
+    const eduSliderContainer = document.getElementById('educationSliderContainer');
+    if (eduSliderContainer) {
+        const eduSliderWrapper = eduSliderContainer.querySelector('.education-slider-wrapper');
+        const eduSlides = eduSliderContainer.querySelectorAll('.education-slide');
+        const eduPrevBtn = eduSliderContainer.querySelector('.edu-prev-btn');
+        const eduNextBtn = eduSliderContainer.querySelector('.edu-next-btn');
+        const eduSliderDotsContainer = eduSliderContainer.querySelector('.edu-slider-dots');
+
+        let eduCurrentSlide = 0;
+        const eduSlideCount = eduSlides.length;
+
+        function updateEduSlider() {
+            eduSliderWrapper.style.transform = `translateX(-${eduCurrentSlide * 100}%)`;
+            updateEduDots();
         }
 
-        createDots();
-        updateSliderPosition();
-        if (autoSlideInterval > 0) {
-            startAutoSlide();
+        function nextEduSlide() {
+            eduCurrentSlide = (eduCurrentSlide + 1) % eduSlideCount;
+            updateEduSlider();
         }
-    };
 
-    initializeSlider('irToolsSliderContainer', 4500);
-    initializeSlider('educationSliderContainer', 5500);
+        function prevEduSlide() {
+            eduCurrentSlide = (eduCurrentSlide - 1 + eduSlideCount) % eduSlideCount;
+            updateEduSlider();
+        }
+
+        function updateEduDots() {
+            eduSliderDotsContainer.innerHTML = '';
+            for (let i = 0; i < eduSlideCount; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('edu-dot');
+                if (i === eduCurrentSlide) {
+                    dot.classList.add('active');
+                }
+                dot.addEventListener('click', () => {
+                    eduCurrentSlide = i;
+                    updateEduSlider();
+                });
+                eduSliderDotsContainer.appendChild(dot);
+            }
+        }
+
+        if (eduPrevBtn && eduNextBtn) {
+            eduNextBtn.addEventListener('click', nextEduSlide);
+            eduPrevBtn.addEventListener('click', prevEduSlide);
+            updateEduSlider();
+        }
+    }
+
 });
