@@ -27,7 +27,7 @@ body, html {
     margin-bottom: 24px;
     text-align: center; 
 }
-.sourses1 h3 {
+.sourses1 h3, .sourses2 h3, .sourses3 h3 {
     font-family: 'Geologica', sans-serif;
     font-size: 20px;
     margin-bottom: 24px;
