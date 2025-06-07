@@ -569,9 +569,8 @@ Mobile adaptation
   /* Текст */
   p {
     font-family: "Comic_Sans_MS", cursive;
-    margin: 15px 8%;
+    margin: 15px 5%;
     font-size: 16px;
-    line-height: 1.4;
   }
 
   ul:not(.ulnav) {
