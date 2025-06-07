@@ -134,21 +134,23 @@ span{
   font-family: "Tektur", sans-serif;
   font-size: 20px;
   font-weight: 550;
-  color: #261374;
+  color: var(--h2-color);
 }
 p{
   font-family: "Comic_Sans_MS", cursive;
   margin: 20px 25% ;
+  color: var(--text-color);
 }
 ul{
   font-family: "Comic_Sans_MS", cursive;
   margin: 20px 25% ;
+  color: var(--text-color);
 }
 h2{    
   font-family: Tektur, sans-serif;
   font-weight: 64;
   font-style: normal;
-  color: #261374;
+  color: var(--h2-color);
   font-size: 50px;
   line-height: 40px;
   margin: 15px 10%;
@@ -252,6 +254,31 @@ a{
 }
 
 /*кнопка*/
+.btn {
+    background-color: #954baa;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-family: "Tektur", sans-serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box; 
+    position: fixed;
+    top: 90vh; 
+  }
+
+  .btn:hover {
+    background-color: #7a3d8f;
+    transform: translateY(-2px);
+  }
+
+  .btn:active {
+    transform: translateY(1px);
+    background-color: #5e2d6c;
+  }
 
 
 /* 
@@ -414,6 +441,7 @@ Mobile adaptation
     p{
     font-family: "Comic_Sans_MS", cursive;
     margin: 10px 10% ;
+    color: var(--text-color);
     }
 
     ul:not(.ulnav){
@@ -600,7 +628,7 @@ Mobile adaptation
     font-family: Tektur, sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #261374;
+    color: var(--h2-color);
     font-size: 28px;
     line-height: 32px;
     margin: 15px 5%;
@@ -624,6 +652,7 @@ Mobile adaptation
     margin: 15px 5%;
     font-size: 16px;
     line-height: 1.4;
+    color: var(--text-color);
   }
 
   ul:not(.ulnav) {
@@ -631,13 +660,14 @@ Mobile adaptation
     margin: 15px 8%;
     font-size: 16px;
     line-height: 1.4;
+    color: var(--text-color);
   }
 
   span {
     font-family: "Tektur", sans-serif;
     font-size: 18px;
     font-weight: 550;
-    color: #261374;
+    color: var(--h2-color);
   }
 
   /* Картки інформації */
@@ -692,10 +722,12 @@ Mobile adaptation
   h2 {
     font-size: 40px;
     margin: 15px 8%;
+    color: var(--h2-color);
   }
 
   p, ul:not(.ulnav) {
     margin: 20px 15%;
+    color: var(--text-color);
   }
 
   .info-cards {
