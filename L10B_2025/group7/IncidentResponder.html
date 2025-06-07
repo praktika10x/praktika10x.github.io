@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="IncidentResponder.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        #fullScreenVideoBackground {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            background-size: cover;
+            filter: brightness(0.5);
+        }
+    </style>
 </head>
 <body class="ir-page">
 
@@ -170,8 +184,8 @@
                         <p>Для дослідження шкідливого програмного забезпечення (Ghidra, IDA Pro, Cuckoo Sandbox).</p>
                     </div>
                 </div>
-                <button class="ir-prev-btn">&lt;</button>
-                <button class="ir-next-btn">&gt;</button>
+                <button class="ir-prev-btn"><</button>
+                <button class="ir-next-btn">></button>
                 <div class="ir-slider-dots"></div>
             </div>
         </section>
@@ -256,58 +270,58 @@
             <p class="section-description">Отримати якісну освіту для старту кар'єри Incident Responder можна в провідних українських університетах:</p>
             <div id="educationSliderContainer" class="education-slider-container">
                 <div class="education-slider-wrapper">
-                    <div class="education-slide" style="background-image: url('https://ktpu.kpi.ua/wp-content/uploads/2016/12/89dd0d645592478b0b8933e8eb525806.jpg');">
+                    <div class="education-slide" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/NAU_Head_Building.jpg/1200px-NAU_Head_Building.jpg');">
                         <div class="text-overlay">
-                            <h4>Національний технічний університет України «Київський політехнічний інститут імені Ігоря Сікорського» (КПІ)</h4>
+                            <h4>Національний авіаційний університет (НАУ)</h4>
                             <p>Спеціальність: <b>125 – Кібербезпека</b>.</p>
-                            <a href="https://kpi.ua/" target="_blank" class="edu-link">Дізнатись більше</a>
+                            <a href="https://nau.edu.ua/" target="_blank" class="edu-link">Дізнатись більше</a>
                         </div>
                     </div>
-                    <div class="education-slide" style="background-image: url('https://lpnu.ua/sites/default/files/2022/8/2/news/20560/img1425n.jpg');">
-                         <div class="text-overlay">
-                            <h4>Національний університет "Львівська політехніка"</h4>
-                            <p>Спеціальності: <b>125 – Кібербезпека</b>, <b>172 – Телекомунікації та радіотехніка (безпека комунікацій)</b>.</p>
-                            <a href="https://lpnu.ua/" target="_blank" class="edu-link">Дізнатись більше</a>
+                    <div class="education-slide" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/22/VNTU_main_building.jpg');">
+                            <div class="text-overlay">
+                                <h4>Вінницький національний технічний університет (ВНТУ)</h4>
+                                <p>Спеціальність: <b>125 – Кібербезпека</b>.</p>
+                                <a href="https://vntu.edu.ua/" target="_blank" class="edu-link">Дізнатись більше</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="education-slide" style="background-image: url('https://s.0532.ua/section/newsInText/upload/images/news/intext/000/055/400/4c364035-d5dc-40a2-8c56-7027e33affb9_6478774026417.jpg');">
-                         <div class="text-overlay">
-                            <h4>Харківський національний університет радіоелектроніки (ХНУРЕ)</h4>
-                             <p>Спеціальність: <b>125 – Кібербезпека</b>, а також "Захист інформації в комп'ютерних системах".</p>
-                             <a href="https://nure.ua/ua" target="_blank" class="edu-link">Дізнатись більше</a>
+                        <div class="education-slide" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Odessa_National_Polytechnic_University_1.jpg/1200px-Odessa_National_Polytechnic_University_1.jpg');">
+                            <div class="text-overlay">
+                                <h4>Одеський національний політехнічний університет (ОНПУ)</h4>
+                                <p>Спеціальність: <b>125 – Кібербезпека</b> або "Інформаційна безпека".</p>
+                                <a href="https://opu.ua/uk" target="_blank" class="edu-link">Дізнатись більше</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="education-slide" style="background-image: url('https://i.ytimg.com/vi/kkfz62GJjiI/maxresdefault.jpg');">
-                         <div class="text-overlay">
-                            <h4>Київський національний університет імені Тараса Шевченка</h4>
-                             <p>Спеціальність: <b>125 – Кібербезпека</b>.</p>
-                             <a href="https://www.knu.ua/" target="_blank" class="edu-link">Дізнатись більше</a>
+                        <div class="education-slide" style="background-image: url('https://i.ytimg.com/vi/W1Rj0lBq23c/maxresdefault.jpg');">
+                            <div class="text-overlay">
+                                <h4>Черкаський державний технологічний університет (ЧДТУ)</h4>
+                                <p>Спеціальність: <b>125 – Кібербезпека</b>.</p>
+                                <a href="https://chdtu.edu.ua/" target="_blank" class="edu-link">Дізнатись більше</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="education-slide" style="background-image: url('https://dut.edu.ua/uploads/n_11191_59267196.jpg');">
-                         <div class="text-overlay">
-                            <h4>Державний університет телекомунікацій</h4>
-                             <p>Спеціальність: <b>125 – Кібербезпека</b>.</p>
-                             <a href="https://dut.edu.ua/" target="_blank" class="edu-link">Дізнатись більше</a>
+                        <div class="education-slide" style="background-image: url('https://i.ytimg.com/vi/Yv-d-k8Jj4Q/maxresdefault.jpg');">
+                            <div class="text-overlay">
+                                <h4>Сумський державний університет (СумДУ)</h4>
+                                <p>Спеціальність: <b>125 – Кібербезпека</b> або "Інформаційна безпека".</p>
+                                <a href="https://sumdu.edu.ua/uk/" target="_blank" class="edu-link">Дізнатись більше</a>
+                            </div>
                         </div>
-                    </div>
-                     <div class="education-slide" style="background-image: url('https://www.oa.edu.ua/assets/images/n/2013/big/bibl_b.jpg');">
-                         <div class="text-overlay">
-                            <h4>Національний університет "Острозька академія"</h4>
-                            <p>Спеціальність: <b>125 – Кібербезпека</b> (акцент на гуманітарні та правові аспекти).</p>
-                             <a href="https://www.oa.edu.ua/" target="_blank" class="edu-link">Дізнатись більше</a>
+                        <div class="education-slide" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/National_University_of_Shipbuilding_named_after_Admiral_Makarov_%28Admiral_Makarov_National_University_of_Shipbuilding%29%2C_Mykolaiv_%281%29.jpg/1200px-National_University_of_Shipbuilding_named_after_Admiral_Makarov_%28Admiral_Makarov_National_University_of_Shipbuilding%29%2C_Mykolaiv_%281%29.jpg');">
+                            <div class="text-overlay">
+                                <h4>Національний університет кораблебудування імені адмірала Макарова (НУК)</h4>
+                                <p>Спеціальність: <b>125 – Кібербезпека</b>.</p>
+                                <a href="https://nuos.edu.ua/" target="_blank" class="edu-link">Дізнатись більше</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="education-slide" style="background-image: url('https://dnipro.libr.dp.ua/image/catalog/MJN-Dnipro/Politekhnika/Dniprovska_politekhnika_titul.jpg');">
-                         <div class="text-overlay">
-                            <h4>Національний технічний університет "Дніпровська політехніка"</h4>
-                             <p>Спеціальність: <b>125 – Кібербезпека</b>.</p>
-                             <a href="https://nmu.org.ua/" target="_blank" class="edu-link">Дізнатись більше</a>
+                        <div class="education-slide" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Ternopil_Ivan_Puliui_National_Technical_University.jpg/1200px-Ternopil_Ivan_Puliui_National_Technical_University.jpg');">
+                            <div class="text-overlay">
+                                <h4>Тернопільський національний технічний університет імені Івана Пулюя (ТНТУ)</h4>
+                                <p>Спеціальність: <b>125 – Кібербезпека</b>.</p>
+                                <a href="https://tntu.edu.ua/" target="_blank" class="edu-link">Дізнатись більше</a>
+                            </div>
                         </div>
-                    </div>
                 </div>
-                <button class="edu-prev-btn">&lt;</button>
-                <button class="edu-next-btn">&gt;</button>
+                <button class="edu-prev-btn"><</button>
+                <button class="edu-next-btn">></button>
                 <div class="edu-slider-dots"></div>
             </div>
             <p class="section-description">Обирайте програму, яка найкраще відповідає вашим інтересам та кар'єрним цілям!</p>
