@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Деталі професії - Калейдоскоп професій</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700,600|Roboto+Mono:700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/variable.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/profession-detail.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="/" class="navbar-logo">
+        <img src="./public/logo.png" alt="Логотип">
+        <span class="navbar-logo-text">Калейдоскоп професій</span>
+      </a>
+      <div class="navbar-nav">
+        <a href="./index.html">Головна</a>
+        <a href="./authors.html">Автори</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section class="main-content">
+      <div class="title-section">
+        <h2 class="profession-title" id="professionTitle">Завантаження...</h2>
+        <div class="salary">
+          <span class="dollar">$</span>
+          <span class="amount" id="salaryAmount">0-0</span>
+        </div>
+      </div>
+
+      <p class="description" id="professionDescription">
+        Завантаження опису професії...
+      </p>
+    </section>
+
+    <div class="career-levels" id="careerLevels">
+      <!-- Career levels will be loaded here -->
+    </div>
+
+    <div class="skills" id="skillsList">
+      <!-- Skills will be loaded here -->
+    </div>
+
+    <div class="navigation">
+      <button class="nav-button" onclick="goBack()">Назад</button>
+      <button class="nav-button" onclick="goHome()">На Головну</button>
+    </div>
+  </div>
+  
+  <script src="./js/profession-detail.js"></script>
+</body>
+</html> 

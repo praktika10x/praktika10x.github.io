@@ -118,6 +118,9 @@ document.addEventListener('DOMContentLoaded', function() {
           professionCard.innerHTML = `
             <div class="profession-title">${profession.title}</div>
             <div class="profession-subtitle">${profession.subtitle}</div>
+            <button class="detail-button" onclick="showProfessionDetails('${profession.title}')">
+              Детальніше
+            </button>
           `;
           
           professionsGrid.appendChild(professionCard);
@@ -136,3 +139,9 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   });
+
+// Функция для перехода к детальной информации о профессии
+function showProfessionDetails(professionName) {
+  // Переходим на страницу детального просмотра с параметром профессии
+  window.location.href = `./profession-detail.html?profession=${encodeURIComponent(professionName)}`;
+}

@@ -1,4 +1,3 @@
-
 .results-container {
     min-height: 100vh;
     width: 100%;
@@ -65,10 +64,10 @@
     background: var(--gradient-primary);
     border-radius: var(--radius-lg);
     padding: var(--space-5);
-    min-height: 160px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
     overflow: hidden;
     box-shadow: var(--shadow-md);
@@ -97,6 +96,32 @@
     color: var(--color-text-secondary);
     line-height: 1.5;
     font-family: var(--font-family-mono);
+    margin-bottom: var(--space-4);
+  }
+
+  .detail-button {
+    width: 100%;
+    padding: var(--space-4);
+    border-radius: 15px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: var(--font-size-lg);
+    cursor: pointer;
+    transition: var(--transition-normal);
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  .detail-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px dashed white;
+  }
+  
+  .detail-button:active {
+    transform: translateY(0);
   }
   
   .salary {
@@ -201,54 +226,55 @@
   }
   
   .back-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px dashed white;
   }
   
   .no-matches {
-    grid-column: 1 / -1;
     text-align: center;
-    padding: var(--space-8);
-    color: var(--color-text-secondary);
-    font-size: var(--font-size-lg);
+    padding: var(--space-6);
     background: var(--gradient-primary);
     border-radius: var(--radius-lg);
-    border: 2px dashed white;
-    font-family: var(--font-family-mono);
-    font-weight: bold;
+    border: 2px solid white;
   }
   
+  .no-matches p {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-primary);
+    margin: 0;
+  }
   
   @media (max-width: 768px) {
     .results-header {
-      padding: var(--space-4) var(--space-3) var(--space-3);
+      padding: var(--space-4);
     }
-    
+  
     .results-header h1 {
       font-size: var(--font-size-3xl);
     }
-    
+  
     .results-intro {
       font-size: var(--font-size-md);
     }
-    
+  
     .results-content {
-      padding: var(--space-4) var(--space-3);
-    }
-    
-    .kaleidoscope {
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: var(--space-3);
-    }
-    
-    .profession-card {
-      min-height: 140px;
       padding: var(--space-4);
     }
-    
+  
+    .kaleidoscope {
+      grid-template-columns: 1fr;
+      gap: var(--space-3);
+    }
+  
+    .profession-card {
+      min-height: 180px;
+      padding: var(--space-4);
+    }
+  
     .profession-title {
       font-size: var(--font-size-xl);
     }
-    
+  
     .navigation-links {
       flex-direction: column;
       gap: var(--space-3);
@@ -259,19 +285,19 @@
     .kaleidoscope {
       grid-template-columns: 1fr;
     }
-    
+  
     .profession-card {
-      min-height: 120px;
+      min-height: 160px;
     }
-    
+  
     .navigation-links {
       flex-direction: column;
     }
-    
+  
     .back-link {
-      padding: var(--space-3) var(--space-4);
+      font-size: var(--font-size-md);
     }
-    
+  
     .results-footer {
       padding: var(--space-3);
     }
