@@ -19,7 +19,7 @@ body, html {
 
 .sourses1 div {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    flex-wrap: wrap;
    width: 100%;
    height: auto;
@@ -42,7 +42,7 @@ body, html {
 }
 .sourses2 div {
     display: flex;
-   flex-direction: row;
+   flex-direction: column;
    flex-wrap: wrap;
    width: 100%;
    height: auto;
@@ -58,7 +58,7 @@ body, html {
 
 .sourses3 div {
     display: flex;
-   flex-direction: row;
+   flex-direction: column;
    flex-wrap: wrap;
    width: 100%;
    height: auto;
