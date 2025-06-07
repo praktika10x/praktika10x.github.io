@@ -19,6 +19,20 @@
             background-size: cover;
             filter: brightness(0.5);
         }
+        .video-top-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+            padding: 20px;
+        }
+        .video-top-container iframe {
+            width: 80%;
+            height: 450px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            border: 2px solid #FFD700;
+        }
         .video-middle-container {
             display: flex;
             justify-content: center;
@@ -55,6 +69,10 @@
                 <a href="#">UA</a> | <a href="#">EN</a>
             </div>
         </div>
+    </div>
+
+    <div class="video-top-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/N9ypLLfAUsk?si=SCgpu_JgJUNKfkWC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
     <div class="hero-section">
@@ -277,10 +295,6 @@
                 </div>
             </div>
         </section>
-
-        <div class="video-middle-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/N9ypLLfAUsk?si=SCgpu_JgJUNKfkWC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
 
         <section class="section-block">
             <h2>Освітні заклади України у сфері кібербезпеки</h2>
