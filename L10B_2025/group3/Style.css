@@ -427,7 +427,7 @@ Mobile adaptation
 
 
 /* Mobile adaptation */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .headerhome{
       width: 100%;
       height: 350px;
