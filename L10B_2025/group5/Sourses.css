@@ -18,8 +18,14 @@ body, html {
 
 
 .sourses1 div {
-    background-color: #55679C;
-    color: #fff;    
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+   height: auto;
+   background-color: #55679C;
+   color: #fff;
+   
 }
 .sourses1 h1 {
     font-family: 'Balsamiq Sans', sans-serif;
@@ -35,7 +41,12 @@ body, html {
     margin-left: 30px;
 }
 .sourses2 div {
-    background-color: #504A9F;
+    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+   height: auto;
+   background-color: #504A9F;
     color: #fff;    
 }
 .sourses2 h1 {
@@ -46,7 +57,12 @@ body, html {
 }
 
 .sourses3 div {
-    background-color: #1E2A5E;
+    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+   height: auto;
+   background-color: #1E2A5E;
     color: #fff;    
 }
 .sourses3 h1 {
