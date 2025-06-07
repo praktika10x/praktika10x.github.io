@@ -40,7 +40,7 @@ body {
 /* === HEADER === */
 .headerhome{
   width: 100%;
-  height: 75vh;
+  height: 55vh;
   background: linear-gradient(180deg, #ee46a5 0%, #f28d6c 44.23%, #f5bb47 73.08%);
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
