@@ -71,8 +71,9 @@ ul{
         text-align: center;
         padding-bottom: 30px;
     }
-   
-
+   .main p {
+  font-size: 1.5rem; 
+}
     .subtitle {
         font-family: "Tektur", sans-serif;
         font-weight: 64;
@@ -169,7 +170,7 @@ h3{
       justify-content: center;
       color: white;
       font-weight: bold; 
-      font-size: 1.5rem
+      font-size: 1.25rem
       }    
 .card-salary p {
   color: white;
