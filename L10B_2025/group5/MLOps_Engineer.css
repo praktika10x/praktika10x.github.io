@@ -187,7 +187,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("img/machine-learning-engineer.jpg");
+    background-image: url("photos_MLOps/section3_bg.png");
     background-repeat: no-repeat;
     background-size: cover;      
     background-position: center;
