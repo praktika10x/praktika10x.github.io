@@ -155,16 +155,6 @@ h2:not(.subtitle)::after {
   margin: 15px 0 0 0;
   border-radius: 3px;
 }
-h3{
-  font-family: Tektur, sans-serif;
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 97%;
-  letter-spacing: 0em;
-  text-align: left;
-  margin-left: 20%;
-  color: #000
-}
 
 /*КАРТИ ГОЛОВНА*/
 .cardnav:hover {
