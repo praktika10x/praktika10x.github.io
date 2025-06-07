@@ -80,12 +80,14 @@ body {
   color: #F5BB47;
 }
 .pnav {
+  grid-column: 2 / span 3;
+  grid-row: 2 / span 4;
+  width: 100%;
+  justify-self: stretch;
   align-self: center;
   text-align: center;
   margin: 0;
-  padding-left: 10%;
   padding-right: 30px;
-  padding-top: 5%;
   font-family: "Press Start 2P", system-ui;
   font-weight: 600;
   font-size: 100px;
