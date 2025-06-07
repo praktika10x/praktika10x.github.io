@@ -91,7 +91,7 @@ body {
   list-style: none;
   align-items: start;
   box-sizing: border-box;
-}
+  display: flex}
 
 .nav:hover {
   left: 0;
@@ -269,7 +269,9 @@ a{
 body {
     background-color: var(--bkg-color);
 }
-
+.bn {
+    justify-content: center;
+  }
 .btn {
     background-color: #954baa;
     color: white;
