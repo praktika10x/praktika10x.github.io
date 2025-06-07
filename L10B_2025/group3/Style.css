@@ -483,16 +483,19 @@ Mobile adaptation
   }
 
   .pnav {
-    font-size: 28px;
-    text-align: center;
-    grid-column: 1 / -1;
-    grid-row: 2;
-    margin: 0 auto;
-    padding: 15px 10px;
-    color: #ffffff;
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 4;
+    justify-self: center;
     align-self: center;
-    line-height: 1.1;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 125%;
+    text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.50);
+    letter-spacing: -0.05em;
+    text-align: right;
+    color: #fff;
+    margin: 0 30px 0 0;
   }
 
   .logonav {
