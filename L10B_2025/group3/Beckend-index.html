@@ -32,8 +32,7 @@
             </div>
         </div>
         <div class="intro">
-            <h1>Backend-розробка</h1>
-            <h2 class="subtitle">"невидима" частина вебсайтів</h2>
+            <h1 style="margin-bottom: 10%;margin-top: 5%;">Backend-розробка</h1>
         </div>
             <section class="main">
                 <h2 id="essence">Про професію</h2>
@@ -248,6 +247,19 @@
               },
             });
           });
+                const btn = document.getElementById('themeToggle');
+                const html = document.documentElement;
+
+                const currentTheme = localStorage.getItem('theme') || 'light';
+                html.setAttribute('data-theme', currentTheme);
+                btn.textContent = currentTheme === 'light' ? '🌙' : '☀️';
+
+                btn.addEventListener('click', () => {
+                  const newTheme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+                  html.setAttribute('data-theme', newTheme);
+                  localStorage.setItem('theme', newTheme);
+                  btn.textContent = newTheme === 'light' ? '🌙' : '☀️';
+                });
         </script>
 </body>
 </html>

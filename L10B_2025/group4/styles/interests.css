@@ -1,0 +1,195 @@
+
+.interests-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+  }
+  
+  .interests-header {
+    padding: var(--space-6) var(--space-4) var(--space-4);
+    text-align: center;
+    background-color: var(--color-bg-primary);
+  }
+  
+  .interests-header h1 {
+    font-size: var(--font-size-4xl);
+    font-weight: bold;
+    margin-bottom: var(--space-4);
+    color: var(--color-text-primary);
+    line-height: 1;
+  }
+  
+  .welcome-text {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    margin: 0;
+    line-height: 1.6;
+    font-family: var(--font-family-mono);
+    font-weight: bold;
+  }
+  
+  #userNameDisplay {
+    color: var(--color-text-primary);
+    font-weight: bold;
+  }
+  
+  .interests-content {
+    flex: 1;
+    padding: var(--space-6) var(--space-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .interests-form {
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-4);
+  }
+  
+  .interest-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    border-radius: var(--radius-lg);
+    background: var(--gradient-secondary);
+    cursor: pointer;
+    border: 2px solid rgb(39, 49, 115);
+    box-sizing: border-box;
+    transition: var(--transition-normal);
+  }
+  
+  .interest-item:hover {
+    border: 2px dashed white;
+    transform: translateY(-2px);
+  }
+  
+  .interest-item input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: var(--radius-sm);
+    border: 2px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+  }
+  
+  .interest-item input[type="checkbox"]:checked {
+    background-color: white;
+  }
+  
+  .interest-item input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    font-weight: bold;
+  }
+  
+  .interest-item label {
+    cursor: pointer;
+    color: var(--color-text-primary);
+    font-weight: bold;
+    font-size: var(--font-size-md);
+    flex: 1;
+    font-family: var(--font-family-mono);
+  }
+  
+  .interest-item input[type="checkbox"]:checked + label {
+    color: var(--color-text-primary);
+    font-weight: bold;
+  }
+  
+  .interests-footer {
+    padding: var(--space-4);
+    background-color: var(--color-bg-primary);
+    border-top: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+  }
+  
+  #showResultsBtn {
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    min-width: 250px;
+  }
+  
+  .back-link {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    font-size: var(--font-size-md);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-md);
+    font-family: var(--font-family-mono);
+    font-weight: bold;
+  }
+  
+  .back-link:hover {
+    color: var(--color-text-primary);
+    text-decoration: underline;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .interests-header {
+      padding: var(--space-4) var(--space-3) var(--space-3);
+    }
+    
+    .interests-header h1 {
+      font-size: var(--font-size-3xl);
+    }
+    
+    .welcome-text {
+      font-size: var(--font-size-md);
+    }
+    
+    .interests-content {
+      padding: var(--space-4) var(--space-3);
+    }
+    
+    .interests-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-3);
+    }
+    
+    .interest-item {
+      padding: var(--space-3);
+    }
+    
+    #showResultsBtn {
+      min-width: 200px;
+      padding: var(--space-3) var(--space-6);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .interests-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .interests-footer {
+      padding: var(--space-3);
+    }
+    
+    #showResultsBtn {
+      width: 100%;
+      min-width: auto;
+    }
+  }

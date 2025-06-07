@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Результати - Калейдоскоп професій</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700,600|Roboto+Mono:700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/variable.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/results.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="/" class="navbar-logo">
+        <img src="./public/logo.png" alt="Логотип">
+        <span class="navbar-logo-text">Калейдоскоп професій</span>
+      </a>
+      <div class="navbar-nav">
+        <a href="./index.html">Головна</a>
+        <a href="./authors.html">Автори</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="results-container">
+    <div class="results-header">
+      <h1>Ваш калейдоскоп професій</h1>
+      <p class="results-intro"><span id="userNameDisplay">користувач</span>, на основі ваших інтересів ми підібрали для вас такі професії:</p>
+    </div>
+    
+    <div class="results-content">
+      <div class="kaleidoscope" id="professionsGrid">
+      </div>
+    </div>
+    
+    <div class="results-footer">
+      <div class="navigation-links">
+        <a href="./interests.html" class="back-link">← Назад до інтересів</a>
+        <a href="./index.html" class="back-link">Почати спочатку</a>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./js/results.js"></script> 
+</body>
+</html>

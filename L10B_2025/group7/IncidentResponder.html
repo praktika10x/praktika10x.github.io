@@ -4,325 +4,390 @@
     <meta charset="UTF-8" />
     <title>Safe WEB squad - Incident Responder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="incident_responder_style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="IncidentResponder.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        #fullScreenVideoBackground {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            background-size: cover;
+            filter: brightness(0.5);
+        }
+        .video-top-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+            padding: 20px;
+        }
+        .video-top-container iframe {
+            width: 80%;
+            height: 450px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            border: 2px solid #FFD700;
+        }
+        .video-middle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+            padding: 20px;
+        }
+        .video-middle-container iframe {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            border: 2px solid #FFD700;
+        }
+    </style>
 </head>
-<body class="incident-responder-page">
+<body class="ir-page">
 
-    <div class="logo-bar">
-        <div class="logo-left">
-            <img src="https://cdn-icons-png.flaticon.com/512/3289/3289969.png" alt="лого" class="logo-img" /> <span class="logo-text">Safe WEB squad</span>
+    <video autoplay muted loop id="fullScreenVideoBackground">
+        <source src="https://v1.pinimg.com/videos/mc/720p/00/f1/16/00f116593c4df7a0919e117965bf1293.mp4" type="video/mp4">
+    </video>
+
+    <div class="header-main">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="https://i.postimg.cc/3RcBwN6j/image.jpg" alt="лого" class="logo-img" />
+                <span class="logo-text">Safe WEB squad</span>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">Головна</a>
+                <a href="project.html">Про проєкт</a>
+            </nav>
+            <div class="language-switcher">
+                <a href="#">UA</a> | <a href="#">EN</a>
+            </div>
         </div>
-        <div class="nav">
-            <a href="index.html">Головна</a>
-            <a href="#ir-role">Роль IR</a>
-            <a href="#ir-process">Процес реагування</a>
-            <a href="#core-competencies">Компетенції</a>
-            <a href="#tools">Інструменти</a>
-            <a href="#education">Освіта</a>
-            <a href="#roadmap">Кар'єра</a>
-        </div>
-        <div class="language-switcher">
-            <a href="#">UA</a> | <a href="#">EN</a>
-        </div>
+    </div>
+
+    <div class="video-top-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/N9ypLLfAUsk?si=SCgpu_JgJUNKfkWC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
     <div class="hero-section">
-        <div class="hero-content" data-aos="fade-up">
-            <h1>Incident Responder: <br>Перші на лінії захисту</h1>
-            <p class="hero-highlight">Відновлення безпеки після кібератак.</p>
+        <div class="hero-content">
+            <h1>Incident Responder: Перша лінія захисту у кібервійні</h1>
+            <p class="hero-description">
+                Фахівець з реагування на інциденти (Incident Responder) – це ключова фігура, що відповідає за швидке виявлення, локалізацію та усунення наслідків кібератак. Його головна мета – мінімізувати збитки, відновити нормальну роботу систем та запобігти майбутнім інцидентам. Це динамічна та відповідальна роль, що вимагає глибоких технічних знань та вміння діяти під тиском.
+            </p>
+            <div class="cta-buttons">
+                <a href="#what-ir-does" class="btn btn-primary">Що робить IR?</a>
+                <a href="#roadmap" class="btn btn-secondary">Шлях до професії</a>
+            </div>
         </div>
     </div>
 
-    <div class="container">
-        <section id="ir-role" class="ir-section">
-            <h2 data-aos="fade-right">Роль Incident Responder'а: Страж Кібербезпеки</h2>
-            <p data-aos="fade-left">**Incident Responder (IR)**, або фахівець з реагування на інциденти, є ключовою фігурою в сучасному світі кібербезпеки. Це не просто "пожежник", який гасить полум'я, а стратегічний гравець, що запобігає, локалізує та ліквідує наслідки кібератак, мінімізуючи шкоду для організації. Їхня робота вимагає глибоких технічних знань, аналітичного мислення та здатності діяти швидко й рішуче в умовах високого тиску.</p>
-            <div class="video-container-wrapper">
-                <div class="video-container" data-aos="zoom-in">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/X2UiMLxRdhE?si=q3SWdVqJv7o45XWe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-            <p class="video-caption">Відео: "Що таке кібербезпека?" (для ілюстрації, може бути замінене)</p>
-        </section>
-        ---
+    <div class="content-wrapper">
 
-        <section id="ir-process" class="ir-section section-dark-background">
-            <h2 data-aos="fade-down">Етапи реагування на кіберінциденти</h2>
-            <p data-aos="fade-up">Процес реагування на інциденти – це систематичний підхід, який допомагає організаціям ефективно керувати кібератаками та мінімізувати їхній вплив. Він складається з кількох ключових етапів:</p>
-
-            <div class="ir-process-grid">
-                <div class="ir-process-card" data-aos="zoom-in-up">
-                    <div class="ir-icon-box">
-                        <img src="https://cdn-icons-png.flaticon.com/512/6368/6368018.png" alt="Preparation Icon">
-                    </div>
-                    <h3>Підготовка</h3>
-                    <p>Розробка планів, навчання персоналу, впровадження інструментів та технологій для майбутніх інцидентів.</p>
+        <section id="what-ir-does" class="section-block">
+            <h2>Основні завдання Incident Responder</h2>
+            <div class="grid-cards">
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3958/3958221.png" alt="Виявлення">
+                    <h3>Виявлення</h3>
+                    <p>Швидке ідентифікування кіберінцидентів через моніторинг систем, аналіз аномалій та сповіщень безпеки.</p>
                 </div>
-                <div class="ir-process-card" data-aos="zoom-in-up" data-aos-delay="100">
-                    <div class="ir-icon-box">
-                        <img src="https://i.gifer.com/origin/01/01cf27a2130db7a21622faf8f43c1c7d_w200.gif" alt="Identification Icon">
-                    </div>
-                    <h3>Ідентифікація</h3>
-                    <p>Виявлення та первинний аналіз інциденту, збір інформації про подію.</p>
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/256/3206/3206261.png" alt="Аналіз">
+                    <h3>Аналіз та розслідування</h3>
+                    <p>Глибокий аналіз інциденту для визначення його природи, масштабу, методу атаки та скомпрометованих активів.</p>
                 </div>
-                <div class="ir-process-card" data-aos="zoom-in-up" data-aos-delay="200">
-                    <div class="ir-icon-box">
-                        <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyd2d0d2NnandmeWZ3ZGZhNXBjdThpcHVram12Zm5oYngybGo3dnlueCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l3q2XB76CaWPggiNW/source.gif" alt="Containment Icon">
-                    </div>
-                    <h3>Локалізація</h3>
-                    <p>Ізоляція уражених систем для запобігання подальшому поширенню атаки.</p>
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2755/2755954.png" alt="Локалізація">
+                    <h3>Локалізація та стримування</h3>
+                    <p>Ізоляція заражених систем та мереж для запобігання подальшому поширенню атаки та мінімізації шкоди.</p>
                 </div>
-                <div class="ir-process-card" data-aos="zoom-in-up" data-aos-delay="300">
-                    <div class="ir-icon-box">
-                        <img src="https://i.gifer.com/M72a.gif" alt="Eradication Icon">
-                    </div>
-                    <h3>Ліквідація</h3>
-                    <p>Видалення зловмисного ПЗ, виправлення вразливостей та очищення систем від слідів атаки.</p>
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/256/3045/3045830.png" alt="Усунення">
+                    <h3>Усунення та відновлення</h3>
+                    <p>Видалення шкідливого ПЗ, усунення вразливостей, відновлення систем та даних до нормального стану.</p>
                 </div>
-                <div class="ir-process-card" data-aos="zoom-in-up" data-aos-delay="400">
-                    <div class="ir-icon-box">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3289/3289969.png" alt="Recovery Icon">
-                    </div>
-                    <h3>Відновлення</h3>
-                    <p>Повернення систем до нормального функціонування та перевірка їхньої працездатності.</p>
-                </div>
-                <div class="ir-process-card" data-aos="zoom-in-up" data-aos-delay="500">
-                    <div class="ir-icon-box">
-                        <img src="https://cdn-icons-png.flaticon.com/512/6368/6368018.png" alt="Lessons Learned Icon">
-                    </div>
-                    <h3>Уроки та вдосконалення</h3>
-                    <p>Аналіз інциденту, документування уроків та впровадження змін для підвищення майбутньої безпеки.</p>
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/256/2172/2172569.png" alt="Пост-інцидент">
+                    <h3>Пост-інцидентний аналіз</h3>
+                    <p>Проведення уроків, вдосконалення політик безпеки та процедур реагування для запобігання майбутнім інцидентам.</p>
                 </div>
             </div>
         </section>
-        ---
 
-        <section id="core-competencies" class="ir-section">
-            <h2 data-aos="fade-right">Ключові компетенції та інструменти Incident Responder'а</h2>
-            <p data-aos="fade-left">Для ефективного реагування на кіберінциденти фахівцям необхідно володіти широким спектром знань та практичних навичок, а також вміти працювати з різноманітними інструментами.</p>
-
-            <h3 class="centered-gold" data-aos="fade-up">Необхідні знання та навички</h3>
-            <div class="skills-flashcards-container">
-                <div class="skill-flashcard" data-aos="flip-left">
-                    <div class="skill-flashcard-inner">
-                        <div class="skill-flashcard-front">
-                            <img src="https://cdn-icons-png.flaticon.com/512/4819/4819779.png" alt="Мережі" class="flashcard-icon">
-                            <h3>Знання мережевих технологій</h3>
-                        </div>
-                        <div class="skill-flashcard-back">
-                            <p>Глибоке розуміння протоколів (TCP/IP, DNS, HTTP), топологій мереж, міжмережевих екранів, VPN та систем виявлення/запобігання вторгненням (IDS/IPS).</p>
-                        </div>
-                    </div>
+        <section class="section-block section-alt-background">
+            <h2>Навички та знання для Incident Responder</h2>
+            <p class="section-description">Для ефективного реагування на кіберінциденти потрібен широкий спектр технічних та аналітичних навичок:</p>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="https://cdn-icons-png.freepik.com/256/9321/9321648.png?semt=ais_hybrid" alt="Мережі">
+                    <h4>Глибокі знання мереж</h4>
+                    <p>TCP/IP, маршрутизація, фаєрволи, IDS/IPS, VPN, хмарні мережі.</p>
                 </div>
-                <div class="skill-flashcard" data-aos="flip-left" data-aos-delay="100">
-                    <div class="skill-flashcard-inner">
-                        <div class="skill-flashcard-front">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1055/1055375.png" alt="Операційні системи" class="flashcard-icon">
-                            <h3>ОС та файлові системи</h3>
-                        </div>
-                        <div class="skill-flashcard-back">
-                            <p>Досвід роботи з Windows, Linux/Unix, macOS, а також розуміння структури файлових систем (NTFS, EXT4, APFS).</p>
-                        </div>
-                    </div>
+                <div class="skill-item">
+                    <img src="https://2fb389abae.cbaul-cdnwnd.com/213b22f82a42503b9fb19e2fe7856d14/200000033-aea17af9b0/images%20(6).jpg" alt="ОС">
+                    <h4>Операційні системи</h4>
+                    <p>Windows (AD, Group Policy), Linux (CLI, безпека ядра), macOS.</p>
                 </div>
-                <div class="skill-flashcard" data-aos="flip-left" data-aos-delay="200">
-                    <div class="skill-flashcard-inner">
-                        <div class="skill-flashcard-front">
-                            <img src="https://cdn-icons-png.flaticon.com/512/5759/5759600.png" alt="Безпека додатків" class="flashcard-icon">
-                            <h3>Безпека додатків</h3>
-                        </div>
-                        <div class="skill-flashcard-back">
-                            <p>Знання типових вразливостей (OWASP Top 10), принципів безпечної розробки та методів захисту веб-додатків.</p>
-                        </div>
-                    </div>
+                <div class="skill-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/17076/17076602.png" alt="Криміналістика">
+                    <h4>Цифрова криміналістика</h4>
+                    <p>Аналіз образів дисків, пам'яті, артефактів шкідливого ПЗ.</p>
                 </div>
-                <div class="skill-flashcard" data-aos="flip-left" data-aos-delay="300">
-                    <div class="skill-flashcard-inner">
-                        <div class="skill-flashcard-front">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2880/2880948.png" alt="Криптографія" class="flashcard-icon">
-                            <h3>Основи криптографії</h3>
-                        </div>
-                        <div class="skill-flashcard-back">
-                            <p>Розуміння симетричного/асиметричного шифрування, хеш-функцій, цифрових підписів та PKI.</p>
-                        </div>
-                    </div>
+                <div class="skill-item">
+                    <img src="https://miro.medium.com/v2/resize:fit:768/0*3U0bK37iqcRADt0U.png" alt="SIEM/EDR">
+                    <h4>SIEM/EDR системи</h4>
+                    <p>Досвід роботи з Splunk, QRadar, Elastic, CrowdStrike, SentinelOne.</p>
                 </div>
-                <div class="skill-flashcard" data-aos="flip-left" data-aos-delay="400">
-                    <div class="skill-flashcard-inner">
-                        <div class="skill-flashcard-front">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2916/2916174.png" alt="Аналіз шкідливого ПЗ" class="flashcard-icon">
-                            <h3>Аналіз шкідливого ПЗ</h3>
-                        </div>
-                        <div class="skill-flashcard-back">
-                            <p>Навички статичного та динамічного аналізу вірусів, троянів, програм-вимагачів та іншого шкідливого програмного забезпечення.</p>
-                        </div>
-                    </div>
+                <div class="skill-item">
+                    <img src="https://cdn-icons-png.flaticon.com/256/1988/1988145.png" alt="Скриптинг">
+                    <h4>Скриптинг та автоматизація</h4>
+                    <p>Python, PowerShell, Bash для автоматизації процесів та аналізу даних.</p>
                 </div>
-                <div class="skill-flashcard" data-aos="flip-left" data-aos-delay="500">
-                    <div class="skill-flashcard-inner">
-                        <div class="skill-flashcard-front">
-                            <img src="https://cdn-icons-png.flaticon.com/512/3233/3233519.png" alt="Форензика" class="flashcard-icon">
-                            <h3>Цифрова форензика</h3>
-                        </div>
-                        <div class="skill-flashcard-back">
-                            <p>Вміння збирати, зберігати та аналізувати цифрові докази, працювати з образами дисків та пам'яті.</p>
-                        </div>
-                    </div>
+                <div class="skill-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3748/3748560.png" alt="Мислення">
+                    <h4>Аналітичне мислення</h4>
+                    <p>Здатність швидко аналізувати великі обсяги даних, приймати рішення під тиском.</p>
                 </div>
             </div>
         </section>
-        ---
 
-        <section id="tools" class="ir-section section-dark-background">
-            <h2 data-aos="fade-down">Інструменти Incident Responder'а</h2>
-            <p data-aos="fade-up">Фахівці з реагування на інциденти використовують широкий спектр інструментів для виявлення, аналізу та ліквідації загроз.</p>
+        <section id="roadmap" class="section-block">
+            <h2>Шлях до професії Incident Responder: Roadmap</h2>
+            <div class="roadmap-flashcards-container">
+                <div class="flashcard">
+                    <div class="flashcard-face flashcard-front">1. Фундаментальна освіта</div>
+                    <div class="flashcard-face flashcard-back"><p>Диплом бакалавра/магістра в комп'ютерних науках, ІТ безпеці або суміжних галузях.</p></div>
+                </div>
+                <div class="flashcard">
+                    <div class="flashcard-face flashcard-front">2. Професійні сертифікації</div>
+                    <div class="flashcard-face flashcard-back"><p>CompTIA Security+, CySA+, EC-Council CEH, SANS GIAC (GCIH, GCFA), OSCP.</p></div>
+                </div>
+                <div class="flashcard">
+                    <div class="flashcard-face flashcard-front">3. Практичний досвід</div>
+                    <div class="flashcard-face flashcard-back"><p>Робота в IT-підтримці, системному адмініструванні, SOC Analyst L1/L2.</p></div>
+                </div>
+                <div class="flashcard">
+                    <div class="flashcard-face flashcard-front">4. Спеціалізоване навчання</div>
+                    <div class="flashcard-face flashcard-back"><p>Курси з реагування на інциденти, цифрової криміналістики, аналізу шкідливого ПЗ.</p></div>
+                </div>
+                <div class="flashcard">
+                    <div class="flashcard-face flashcard-front">5. Лабораторні вправи</div>
+                    <div class="flashcard-face flashcard-back"><p>Практика в пісочницях, на платформі TryHackMe/Hack The Box, CTF змагання.</p></div>
+                </div>
+            </div>
+        </section>
 
-            <div id="toolsSliderContainer" class="ir-slider-container" data-aos="zoom-in">
+        <section class="section-block section-alt-background">
+            <h2>Інструменти Incident Responder</h2>
+            <p class="section-description">У своїй роботі фахівець з реагування на інциденти використовує різноманітний арсенал інструментів:</p>
+            <div id="irToolsSliderContainer" class="ir-slider-container">
                 <div class="ir-slider-wrapper">
                     <div class="ir-slide">
-                        <div class="ir-icon-circle">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2880/2880948.png" alt="SIEM Icon">
-                        </div>
-                        <h3>SIEM-системи</h3>
-                        <p>Централізований збір та аналіз логів з різних джерел для виявлення підозрілої активності (наприклад, Splunk, Elastic SIEM, IBM QRadar).</p>
+                        <img src="https://cybersecurityhive.com/wp-content/uploads/2019/11/header-image.png" alt="SIEM/SOAR">
+                        <h3>SIEM/SOAR</h3>
+                        <p>Для агрегації логів, виявлення аномалій, автоматизації реагування (Splunk, IBM QRadar, Microsoft Sentinel, Phantom).</p>
                     </div>
                     <div class="ir-slide">
-                        <div class="ir-icon-circle">
-                            <img src="https://cdn-icons-png.flaticon.com/512/5759/5759600.png" alt="EDR Icon">
-                        </div>
-                        <h3>EDR-рішення</h3>
-                        <p>Виявлення та реагування на загрози на кінцевих точках, моніторинг активності та блокування шкідливого ПЗ (наприклад, CrowdStrike, SentinelOne, Microsoft Defender ATP).</p>
+                        <img src="https://cybersecurityhive.com/wp-content/uploads/2020/06/endpoint-1.png" alt="Digital Forensics Tools">
+                        <h3>Digital Forensics Tools</h3>
+                        <p>Для збору та аналізу цифрових доказів (Autopsy, FTK Imager, SANS SIFT, Volatility Framework).</p>
                     </div>
                     <div class="ir-slide">
-                        <div class="ir-icon-circle">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2916/2916174.png" alt="Network Analysis Icon">
-                        </div>
-                        <h3>Інструменти мережевого аналізу</h3>
-                        <p>Аналіз мережевого трафіку для виявлення аномалій та атак (наприклад, Wireshark, tcpdump, Zeek).</p>
+                        <img src="https://www.manageengine.com/products/desktop-central/images/ues-banner.png" alt="Endpoint Security">
+                        <h3>Endpoint Security</h3>
+                        <p>EDR-рішення для моніторингу та контролю кінцевих точок (CrowdStrike, SentinelOne, Carbon Black).</p>
                     </div>
                     <div class="ir-slide">
-                        <div class="ir-icon-circle">
-                            <img src="https://cdn-icons-png.flaticon.com/512/3233/3233519.png" alt="Forensics Tools Icon">
-                        </div>
-                        <h3>Форензичні інструменти</h3>
-                        <p>Засоби для збору та аналізу цифрових доказів з дисків, пам'яті та мережі (наприклад, Autopsy, FTK Imager, Volatility Framework).</p>
+                        <img src="https://cybersecurityhive.com/wp-content/uploads/2020/06/endpoint-3.png" alt="Network Monitoring">
+                        <h3>Network Monitoring</h3>
+                        <p>Інструменти для аналізу мережевого трафіку та пакетів (Wireshark, tcpdump, Zeek).</p>
                     </div>
                     <div class="ir-slide">
-                        <div class="ir-icon-circle">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1055/1055375.png" alt="Vulnerability Scanners Icon">
-                        </div>
-                        <h3>Сканери вразливостей</h3>
-                        <p>Виявлення слабких місць у системах та додатках (наприклад, Nessus, OpenVAS, Qualys).</p>
+                        <img src="https://www.futurismtechnologies.com/wp-content/themes/futurism/cybersecurity/images/endpoint-security/endpoint-security.png" alt="Malware Analysis Tools">
+                        <h3>Malware Analysis Tools</h3>
+                        <p>Для дослідження шкідливого програмного забезпечення (Ghidra, IDA Pro, Cuckoo Sandbox).</p>
                     </div>
                 </div>
-                <button class="ir-prev-btn">&lt;</button>
-                <button class="ir-next-btn">&gt;</button>
+                <button class="ir-prev-btn"><</button>
+                <button class="ir-next-btn">></button>
                 <div class="ir-slider-dots"></div>
             </div>
         </section>
-        ---
 
-        <section id="education" class="ir-section">
-            <h2 data-aos="fade-right">Освітні заклади України для Incident Responder'а</h2>
-            <p data-aos="fade-left">Україна активно розвиває сферу кібербезпеки, і багато університетів пропонують програми, що готують майбутніх фахівців з реагування на інциденти.</p>
+        <section class="section-block">
+            <h2>Зразки продукції Incident Responder</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <h4>Звіт про інцидент</h4>
+                    <p>Детальний опис кіберінциденту, включаючи хронологію, аналіз впливу, вжиті заходи та рекомендації.</p>
+                </div>
+                <div class="product-item">
+                    <h4>Плейбуки реагування</h4>
+                    <p>Покрокові інструкції для реагування на типові види атак, що забезпечують швидке та послідовне реагування.</p>
+                </div>
+                <div class="product-item">
+                    <h4>Хеші та індикатори компрометації (IoC)</h4>
+                    <p>Технічні дані (хеші файлів, IP-адреси, домени), що використовуються для виявлення та блокування шкідливої активності.</p>
+                </div>
+                <div class="product-item">
+                    <h4>Рекомендації з покращення безпеки</h4>
+                    <p>Пропозиції щодо усунення виявлених вразливостей, зміцнення захисту та вдосконалення процесів.</p>
+                </div>
+            </div>
+        </section>
 
-            <div id="educationSliderContainer" class="education-slider-container" data-aos="zoom-in">
+        <section class="section-block section-alt-background">
+            <h2>Зарплати та затребуваність на ринку праці</h2>
+            <p class="section-description">Професія Incident Responder є надзвичайно затребуваною, оскільки кібератаки стають все більш частими та складними. Ринок праці для цих фахівців стабільний та зростаючий.</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Рівень</th>
+                        <th>Досвід</th>
+                        <th>Орієнтовна зарплата (Україна, USD/місяць)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Junior IR Analyst</td>
+                        <td>0-2 роки</td>
+                        <td>$800 - $1500</td>
+                    </tr>
+                    <tr>
+                        <td>Middle IR Analyst</td>
+                        <td>2-5 років</td>
+                        <td>$1500 - $3000</td>
+                    </tr>
+                    <tr>
+                        <td>Senior IR Analyst</td>
+                        <td>5+ років</td>
+                        <td>$3000 - $5000+</td>
+                    </tr>
+                    <tr>
+                        <td>IR Lead/Manager</td>
+                        <td>7+ років</td>
+                        <td>$4000 - $6000+</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footnote">
+                <em>Дані є орієнтовними та можуть змінюватися залежно від компанії, регіону, складності проєктів та конкретних навичок фахівця.</em>
+            </p>
+
+            <div class="demand-info">
+                <h3>Високий попит на Incident Responder</h3>
+                <p>
+                    Попит на фахівців з реагування на інциденти продовжує стрімко зростати, адже кожна організація потребує надійного захисту та швидкого відновлення після кіберінцидентів. Це створює безліч можливостей для кар'єрного зростання та стабільну зайнятість.
+                </p>
+                <div class="image-container">
+                    <img src="https://github.com/praktika10x/praktika10x.github.io/blob/main/L10B_2025/group7/file-XnMn82L4W5rSf7eUhxz4aq.png?raw=true" alt="Графік зростання попиту на фахівців з кібербезпеки" class="demand-image">
+                    <p class="image-caption">
+                        *Глобальне зростання кількості вакансій у сфері кібербезпеки.*
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <h2>Освітні заклади України у сфері кібербезпеки</h2>
+            <p class="section-description">Отримати якісну освіту для старту кар'єри Incident Responder можна в провідних українських університетах:</p>
+            <div id="educationSliderContainer" class="education-slider-container">
                 <div class="education-slider-wrapper">
-                    <div class="education-slide">
-                        <img src="https://osvita.loda.gov.ua/img/blog/pages-cover/1685102282.jpeg" alt="Національний технічний університет України Київський політехнічний інститут імені Ігоря Сікорського">
-                        <div class="text-content">
-                            <h4>Національний технічний університет України «Київський політехнічний інститут імені Ігоря Сікорського»</h4>
-                            <p>Факультет прикладної математики, кафедра безпеки інформаційних технологій.</p>
-                            <p>Програми: "Системи та технології кібербезпеки", "Управління інформаційною безпекою".</p>
+                    <div class="education-slide" style="background-image: url('https://studspravka.com.ua/assets/cache_image/images/vntu_1200x0_105.jpg');">
+                        <div class="text-overlay">
+                            <h4>Вінницький національний технічний університет (ВНТУ)</h4>
+                            <p>Спеціальність: <b>125 – Кібербезпека</b>.</p>
+                            <a href="https://vntu.edu.ua/" class="edu-link">Дізнатись більше</a>
                         </div>
                     </div>
-                    <div class="education-slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Taras_Shevchenko_National_University_of_Kyiv_main_building.jpg/2560px-Taras_Shevchenko_National_University_of_Kyiv_main_building.jpg" alt="Київський національний університет імені Тараса Шевченка">
-                        <div class="text-content">
-                            <h4>Київський національний університет імені Тараса Шевченка</h4>
-                            <p>Факультет комп'ютерних наук та кібернетики.</p>
-                            <p>Спеціальність: "Кібербезпека", "Інформаційна безпека".</p>
+                    <div class="education-slide" style="background-image: url('https://odesa.one/wp-content/uploads/sites/12/2022/07/picturepicture_160216259282541577318435_66130.jpeg');">
+                        <div class="text-overlay">
+                            <h4>Одеський національний політехнічний університет (ОНПУ)</h4>
+                            <p>Спеціальність: <b>125 – Кібербезпека</b> або "Інформаційна безпека".</p>
+                            <a href="https://opu.ua/uk" target="_blank" class="edu-link">Дізнатись більше</a>
                         </div>
                     </div>
-                    <div class="education-slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Lviv_Polytechnic_Main_Building_01.jpg/1200px-Lviv_Polytechnic_Main_Building_01.jpg" alt="Національний університет Львівська політехніка">
-                        <div class="text-content">
-                            <h4>Національний університет «Львівська політехніка»</h4>
-                            <p>Інститут комп'ютерних наук та інформаційних технологій, кафедра захисту інформації.</p>
-                            <p>Програми з кібербезпеки та інформаційної безпеки.</p>
+                    <div class="education-slide" style="background-image: url('https://chdtu.edu.ua/media/k2/items/cache/3f9bdfd7552df660f4f4300c2dcbcec3_XL.jpg');">
+                        <div class="text-overlay">
+                            <h4>Черкаський державний технологічний університет (ЧДТУ)</h4>
+                            <p>Спеціальність: <b>125 – Кібербезпека</b>.</p>
+                            <a href="https://chdtu.edu.ua/" target="_blank" class="edu-link">Дізнатись більше</a>
                         </div>
                     </div>
-                    <div class="education-slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Odesa_National_Polytechnic_University_main_building.jpg/1200px-Odesa_National_Polytechnic_University_main_building.jpg" alt="Одеський національний політехнічний університет">
-                        <div class="text-content">
-                            <h4>Одеський національний політехнічний університет</h4>
-                            <p>Інститут комп'ютерних систем, кафедра захисту інформації.</p>
-                            <p>Спеціальність: "Кібербезпека".</p>
+                    <div class="education-slide" style="background-image: url('https://www.dsnews.ua/static/storage/thumbs/414x290/5/bd/2c3e522c-d743115146db8a7624dc472c9b8b5bd5.png?v=5507_1');">
+                        <div class="text-overlay">
+                            <h4>Сумський державний університет (СумДУ)</h4>
+                            <p>Спеціальність: <b>125 – Кібербезпека</b> або "Інформаційна безпека".</p>
+                            <a href="https://sumdu.edu.ua/uk/" target="_blank" class="edu-link">Дізнатись більше</a>
                         </div>
                     </div>
-                    <div class="education-slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/National_Aerospace_University_%22Kharkiv_Aviation_Institute%22_Main_Building.jpg/1200px-National_Aerospace_University_%22Kharkiv_Aviation_Institute%22_Main_Building.jpg" alt="Національний аерокосмічний університет ім. М.Є. Жуковського ХАІ">
-                        <div class="text-content">
-                            <h4>Національний аерокосмічний університет ім. М.Є. Жуковського «Харківський авіаційний інститут»</h4>
-                            <p>Факультет радіотехнічних систем літальних апаратів, кафедра комп'ютерних систем, мереж та кібербезпеки.</p>
-                            <p>Програми з кібербезпеки.</p>
+                    <div class="education-slide" style="background-image: url('https://m.tntu.edu.ua/storage/news/00000788/IMG_1014.jpg');">
+                        <div class="text-overlay">
+                            <h4>Тернопільський національний технічний університет імені Івана Пулюя (ТНТУ)</h4>
+                            <p>Спеціальність: <b>125 – Кібербезпека</b>.</p>
+                            <a href="https://tntu.edu.ua/" target="_blank" class="edu-link">Дізнатись більше</a>
                         </div>
                     </div>
                 </div>
-                <button class="education-prev-btn">&lt;</button>
-                <button class="education-next-btn">&gt;</button>
-                <div class="ir-slider-dots"></div>
+                <button class="edu-prev-btn"><</button>
+                <button class="edu-next-btn">></button>
+                <div class="edu-slider-dots"></div>
             </div>
+            <p class="section-description">Обирайте програму, яка найкраще відповідає вашим інтересам та кар'єрним цілям!</p>
         </section>
-        ---
 
-        <section id="roadmap" class="ir-section section-dark-background">
-            <h2 data-aos="fade-down">Кар'єрний шлях Incident Responder'а</h2>
-            <p data-aos="fade-up">Кар'єра Incident Responder'а є динамічною та пропонує безліч можливостей для зростання та розвитку в галузі кібербезпеки.</p>
-            <div class="roadmap-grid">
-                <div class="roadmap-item" data-aos="zoom-in-up">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3067/3067344.png" alt="Початківець IR" class="roadmap-icon-lg">
-                    <h3>Початківець IR (Junior)</h3>
-                    <p>Допомагає старшим спеціалістам, виконує базовий аналіз логів, бере участь у простих інцидентах.</p>
-                </div>
-                <div class="roadmap-item" data-aos="zoom-in-up" data-aos-delay="100">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2870/2870233.png" alt="Досвідчений IR" class="roadmap-icon-lg">
-                    <h3>Досвідчений IR (Middle/Senior)</h3>
-                    <p>Самостійно керує інцидентами, проводить глибокий аналіз, розробляє стратегії реагування.</p>
-                </div>
-                <div class="roadmap-item" data-aos="zoom-in-up" data-aos-delay="200">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2622/2622285.png" alt="Керівник команди IR" class="roadmap-icon-lg">
-                    <h3>Керівник команди IR</h3>
-                    <p>Управляє командою, розробляє політики та процедури, взаємодіє з вищим керівництвом.</p>
-                </div>
-                <div class="roadmap-item" data-aos="zoom-in-up" data-aos-delay="300">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2721/2721183.png" alt="Консультант з кібербезпеки" class="roadmap-icon-lg">
-                    <h3>Консультант з кібербезпеки</h3>
-                    <p>Надає експертні послуги організаціям, розробляє архітектуру безпеки, проводить аудити.</p>
-                </div>
-                <div class="roadmap-item" data-aos="zoom-in-up" data-aos-delay="400">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1791/1791244.png" alt="Аналітик загроз" class="roadmap-icon-lg">
-                    <h3>Аналітик загроз / Threat Hunter</h3>
-                    <p>Проактивно шукає загрози в мережі, аналізує нові вектори атак, розробляє методи захисту.</p>
-                </div>
-                <div class="roadmap-item" data-aos="zoom-in-up" data-aos-delay="500">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2921/2921932.png" alt="CISO" class="roadmap-icon-lg">
-                    <h3>CISO (Chief Information Security Officer)</h3>
-                    <p>Вищий керівник з кібербезпеки, відповідає за загальну стратегію безпеки організації.</p>
-                </div>
-            </div>
+        <section class="section-block section-alt-background">
+            <h2>Переваги та недоліки професії Incident Responder</h2>
+            <p class="section-description">Як і будь-яка професія, роль Incident Responder має свої особливості:</p>
+            <table class="data-table advantages-disadvantages-table">
+                <thead>
+                    <tr>
+                        <th>Переваги</th>
+                        <th>Недоліки</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Високий попит на ринку праці та конкурентна заробітна плата.</td>
+                        <td>Високий рівень стресу, необхідність працювати в умовах критичного часу.</td>
+                    </tr>
+                    <tr>
+                        <td>Можливість брати участь у вирішенні реальних та важливих кіберінцидентів.</td>
+                        <td>Висока відповідальність за захист критичної інфраструктури та даних.</td>
+                    </tr>
+                    <tr>
+                        <td>Постійний розвиток, вивчення нових загроз та технологій.</td>
+                        <td>Ненормований робочий день, можлива робота у вихідні або святкові дні.</td>
+                    </tr>
+                    <tr>
+                        <td>Інтелектуально стимулююча робота, що вимагає креативного мислення.</td>
+                        <td>Необхідність постійно підвищувати кваліфікацію через швидкий розвиток кіберзагроз.</td>
+                    </tr>
+                    <tr>
+                        <td>Чіткий шлях кар'єрного зростання до керівних позицій.</td>
+                        <td>Емоційне вигорання через постійну взаємодію з наслідками атак.</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
+
     </div>
 
-    <footer>
-        <p class="team-info">© 2024 Safe WEB squad. Усі права захищено.</p>
-        <p class="team-info">Зроблено з 💛 командою "Safe WEB squad".</p>
-        <a href="sources.html" class="sources-emoji" title="Джерела інформації">📚</a>
+    <footer class="footer-ir">
+        <div class="footer-container">
+            <p>© 2025 Safe WEB squad. Всі права захищено.</p>
+            <a href="dzherela.html" class="sources-link">📝 Джерела</a>
+        </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="incident_responder_script.js"></script>
 </body>
 </html>

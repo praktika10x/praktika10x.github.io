@@ -77,14 +77,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 1vw;
-      padding: 1.7vw 2vw;
+      gap: 0.8vw;
+      padding: 0.5vw 2vw;
       backdrop-filter: blur(6px);
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
       flex-wrap: wrap;
       z-index: 1000;
       position: fixed;
-      top: -100px;
+      top: -240px;
       transition: top 0.3s;
     }
 
@@ -93,7 +93,7 @@
       color: #39b7ed;
       border: none;
       border-radius: 10px;
-      padding: 1vw 1vw;
+      padding: 0.5vw 1vw;
       font-size: 0.85vw;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -190,7 +190,7 @@
     
     /* Элементы */
     h2 {
-      color: white;
+      color: blue;
       margin: 1.5rem 0 1rem;
       font-size: 1.5rem;
       border-bottom: 2px solid var(--accent);
@@ -252,7 +252,6 @@
       padding: 2rem;
       border-radius: 16px;
       text-align: center;
-      
       box-shadow: 0 8px 25px rgba(247, 37, 133, 0.2);
     }
     
@@ -267,8 +266,22 @@
     
     /* Адаптивность */
     @media (max-width: 768px) {
-     
+
+     .section {
+        width: 95%; /* Більше місця для вмісту */
+        min-width: unset; /* Скасовуємо обмеження */
+      }
       
+     .banner {
+        width: 95%; /* Більше місця для вмісту */
+        min-width: unset; /* Скасовуємо обмеження */
+      }
+
+      .circle-nav {
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
       h1 {
         font-size: 2.2rem;
       }
@@ -302,8 +315,8 @@
         justify-content: center;
         display: flex;
         gap: 40px;
-        margin: -3em;
         margin: 15px;
+        flex-wrap: wrap;
       }
 
       .circle {
@@ -323,6 +336,7 @@
     padding: 5px;
     line-height: 1.2;
     font-style: bold;
+    
     }
 
      .circle:hover {
@@ -349,9 +363,7 @@
             justify-content: center;
             align-items: center;
             transition: transform 0.3s, background-color 0.3s;
-            
-            
-            
+       
         }
         
         .hexagon:hover {
@@ -395,6 +407,22 @@
               width: 40px;
         }
         
+        .authors-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .author-card {
+            width: 250px;
+            text-align: center;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
 
   </style>
 </head>
@@ -405,11 +433,15 @@
      <button class="nav-btn main"><a href="../../index.html"><img src="https://img.icons8.com/m_sharp/512/FFFFFF/home.png" align="left" class="domik"></a></button>
     <button class="nav-btn main" onclick="scrollToSection('header')">Головна</button>
     <button class="nav-btn" onclick="scrollToSection('qa-tester')">Тестувальник ПЗ</button>
-    <button class="nav-btn" onclick="scrollToSection('qa-engineer')">QA Інженер</button>
+  
     <button class="nav-btn" onclick="scrollToSection('automation')">Автоматизація</button>
     <button class="nav-btn" onclick="scrollToSection('tools')">Інструменти тестувальника</button>
     <button class="nav-btn" onclick="scrollToSection('miphs')">Міфи про тестування</button>
     <button class="nav-btn" onclick="scrollToSection('test-case')">Приклади тест-кейсів</button>
+    <button class="nav-btn" onclick="scrollToSection('qa-engineer')">QA Інженер</button>
+    <button class="nav-btn" onclick="scrollToSection('qa-tools')">Інструменти QA Інженера</button>
+    <button class="nav-btn" onclick="scrollToSection('qa-myths')">Міфи про QA Інженера</button>
+    <button class="nav-btn" onclick="scrollToSection('qa-example')">Приклад роботи QA Інженера</button>
      <button class="nav-btn main" onclick="scrollToSection('Djerela')">Джерела</button>
   </div>
 
@@ -421,11 +453,14 @@
       <center>
       <div class="circle-nav">
     <a href="#qa-tester" class="circle" onclick="scrollToSection('qa-tester')">Тестувальник ПЗ</a>
-    <a href="#qa-engineer" class="circle" onclick="scrollToSection('qa-engineer')">QA Інженер</a>
     <a href="#automation" class="circle" onclick="scrollToSection('automation')">Автоматизація</a>
     <a href="#tools" class="circle" onclick="scrollToSection('tools')">Інструменти</a>
     <a href="#miphs" class="circle" onclick="scrollToSection('miphs')">Міфи</a>
     <a href="#test-case" class="circle" onclick="scrollToSection('test-case')">Тест-кейси</a>
+    <a href="#qa-engineer" class="circle" onclick="scrollToSection('qa-engineer')">QA Інженер</a>
+    <a href="#qa-tools" class="circle" onclick="scrollToSection('qa-tools')">Інструменти QA Інженера</a>
+    <a href="#qa-myths" class="circle" onclick="scrollToSection('qa-myths')">Міфи про QA Інженера</a>
+    <a href="#qa-example" class="circle" onclick="scrollToSection('qa-example')">Приклад роботи QA Інженера</a>
 </div>
     </center>
     </div>
@@ -484,69 +519,6 @@
         </center>
       
     
-    
-    <!-- Секція 2 -->
-    <div class="section" id="qa-engineer" style="">
-      <div class="section-header">QA Інженер: забезпечення якості</div>
-      <div class="section-body">
-        <p>QA (Quality Assurance) Інженер — це фахівець, який займається не лише виявленням помилок, а й запобіганням їх виникнення на всіх етапах розробки ПЗ.</p>
-        
-        <h2>Відмінності від тестувальника</h2>
-        <table style="width:100%; border-collapse: collapse; margin: 1.5rem 0;">
-          <tr style="background-color: #f5f5f5;">
-            <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Критерій</th>
-            <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Тестувальник</th>
-            <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">QA Інженер</th>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;">Основна задача</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Виявлення помилок</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Запобігання помилкам</td>
-          </tr>
-          <tr style="background-color: #f5f5f5;">
-            <td style="padding: 10px; border: 1px solid #ddd;">Участь у процесі</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">На етапі тестування</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">На всіх етапах розробки</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;">Технічні навички</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Базові</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Поглиблені</td>
-          </tr>
-        </table>
-        
-        <h2>Види QA інженерів</h2>
-        
-        <h3>1. Manual QA Engineer</h3>
-        <p>Фахівець з ручного тестування, який виконує перевірки без написання коду. Основні задачі:</p>
-        <ul>
-          <li>Функціональне тестування</li>
-          <li>Юзабіліті тестування</li>
-          <li>Регресійне тестування</li>
-          <li>Санітарне тестування</li>
-        </ul>
-        
-        <h3>2. Automation QA Engineer</h3>
-        <p>Фахівець, який пише автоматичні тести для перевірки ПЗ. Використовує мови програмування та спеціальні фреймворки.</p>
-        
-        <h3>3. Performance QA Engineer</h3>
-        <p>Спеціалізується на тестуванні продуктивності системи під навантаженням.</p>
-        
-        <h3>4. Security QA Engineer</h3>
-        <p>Перевіряє систему на вразливості та проблеми безпеки.</p>
-        
-        <div class="highlight">
-          <h3>Як стати QA інженером?</h3>
-          <ol>
-            <li>Опанувати основи тестування</li>
-            <li>Вивчити основи програмування (Python/Java)</li>
-            <li>Ознайомитися з інструментами (Jira, Postman, Selenium)</li>
-            <li>Практикуватися на реальних проектах (можна стартувати з open-source)</li>
-            <li>Скласти резюме та шукати першу роботу</li>
-          </ol>
-        </div>
-      </div>
-    </div>
     
     <!-- Секція 3 -->
     <div class="section" id="automation">
@@ -694,7 +666,7 @@ public class FirstTest {
     <center>
     <div class="banner">
       <h2>Безкоштовні ресурси для навчання</h2>
-      <p>Prometheus | Coursera | ITVDN | Освіта.UA | EdEra | DOU.ua | LABA</p>
+      <p><a class="a1" href="https://prometheus.org.ua/">Prometheus</a> | <a class="a1" href="https://www.coursera.org/">Coursera</a> | <a class="a1" href="https://mate.academy/courses/parttime?utm_source=google&utm_medium=cpc&utm_campaign=GEO-UA_COMPETITORS_STAG_SEA_MatchType-All_P-TCPA_GOA&utm_content=KW_COMP_STAG_Itvdn&utm_term=kwd-314003832923_e_itvdn_g&utm_ac_id=535-801-8615&utm_id=22531686876&utm_ad_group_id=178979569603&utm_ad_id=751261499263&utm_term_id=kwd-314003832923&gad_source=1&gad_campaignid=22531686876&gbraid=0AAAAAofUWTL7Ocj0nfXjLbAs1zC8kttOS&gclid=CjwKCAjwo4rCBhAbEiwAxhJlCYtjzonn-DaByP7VNTJCYeMsnJANlWa0ygDRMHyLfJAKpUWVL9MfnRoCX0cQAvD_BwE">ITVDN</a> | <a class="a1" href="https://osvita.ua/">Освіта.UA</a> | <a class="a1" href="https://ed-era.com/">EdEra</a> | <a class="a1" href="https://dou.ua/">DOU.ua</a> | <a class="a1" href="https://laba.ua/lecture?utm_source=google&utm_medium=cpc&utm_campaign=laba&utm_content=search&utm_term=laba&gad_source=1&gad_campaignid=13824411277&gbraid=0AAAAADkc1S7d6Py4pdLDx-ia0MFzZHuAB&gclid=CjwKCAjwo4rCBhAbEiwAxhJlCX-kJMzvGQwMukAyz0J5bkLopSqXr-59-4aQ7i7Y1ookwkUsPHQo6RoCyxAQAvD_BwE">LABA</a></p>
     </div>
     </center>
     
@@ -702,7 +674,7 @@ public class FirstTest {
         <div class="section-header">Міфи про тестування</div>
         <div class="section-body">
             <h3>1. Тестувальник – це просто "рутина":</h3>
-            <p>Робота тестувальника включає не тільки ручне тестування, але й автоматизоване, аналіз тест-кейсов та виявлення непередбачуваних помилок, що вимагає творчого мислення та навичок вирішення проблем.</p>
+            <p>Робота тестувальника включає не тільки ручне тестування, але й автоматизоване, аналіз тест-кейсів та виявлення непередбачуваних помилок, що вимагає творчого мислення та навичок вирішення проблем.</p>
             <h3>2. Тестувальником може стати будь-хто:</h3>
             <p>Хоча знання програмування не є обов'язковими на початковому рівні, для успішної роботи тестувальника потрібні певні навички, такі як уважність, вміння аналізувати та відслідковувати помилки, а також знання специфіки тестуваних продуктів. </p>
             <h3>3. Тестувальник – це лише людина, що шукає помилки:</h3>
@@ -748,26 +720,261 @@ public class FirstTest {
             <h3><i>Статус:</i> Pass/Fail (вибрати після тестування)</h3>
         </div>
     </div>
+        <!-- QA Інженер -->
+    <div class="section" id="qa-engineer" style="">
+      <div class="section-header">QA Інженер: забезпечення якості</div>
+      <div class="section-body">
+        <p>QA (Quality Assurance) Інженер — це фахівець, який займається не лише виявленням помилок, а й запобіганням їх виникнення на всіх етапах розробки ПЗ. Він відповідає за весь процес забезпечення якості програмного продукту.</p>
+        
+        <h2>Основні обов'язки QA Інженера</h2>
+        
+        <h3>1. Планування процесу QA</h3>
+        <p>QA Інженер розробляє стратегію тестування, визначає методики, інструменти та підходи до забезпечення якості продукту.</p>
+        
+        <h3>2. Розробка тестової документації</h3>
+        <p>Створення тест-планів, тест-кейсів, чек-листів та іншої документації, що описує процес тестування.</p>
+        
+        <h3>3. Впровадження процесів QA</h3>
+        <p>QA Інженер впроваджує процеси забезпечення якості на всіх етапах життєвого циклу розробки ПЗ (SDLC).</p>
+        
+        <h3>4. Аналіз ризиків</h3>
+        <p>Виявлення потенційних проблем на ранніх етапах розробки та запобігання їх виникненню.</p>
+        
+        <h3>5. Взаємодія з командою</h3>
+        <p>Тісна співпраця з розробниками, продукт-менеджерами та іншими членами команди для забезпечення якості продукту.</p>
+        
+        <div class="highlight">
+          <h3>Різниця між QA Інженером і тестувальником</h3>
+          <table style="width:100%; border-collapse: collapse; margin: 1.5rem 0;">
+            <tr style="background-color: #f5f5f5;">
+              <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Критерій</th>
+              <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Тестувальник</th>
+              <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">QA Інженер</th>
+            </tr>
+            <tr>
+              <td style="padding: 10px; border: 1px solid #ddd;">Основна задача</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">Виявлення помилок</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">Запобігання помилкам</td>
+            </tr>
+            <tr style="background-color: #f5f5f5;">
+              <td style="padding: 10px; border: 1px solid #ddd;">Участь у процесі</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">На етапі тестування</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">На всіх етапах розробки</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; border: 1px solid #ddd;">Технічні навички</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">Базові</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">Поглиблені</td>
+            </tr>
+            <tr style="background-color: #f5f5f5;">
+              <td style="padding: 10px; border: 1px solid #ddd;">Відповідальність</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">За результати тестування</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">За весь процес QA</td>
+            </tr>
+          </table>
+        </div>
+        
+        <h2>Необхідні навички QA Інженера</h2>
+        <ul>
+          <li><strong>Глибокі знання процесів розробки ПЗ</strong> (SDLC, Agile, Scrum)</li>
+          <li><strong>Досвід роботи з системами відстеження помилок</strong> (Jira, Bugzilla)</li>
+          <li><strong>Знання методологій тестування</strong> (black-box, white-box, grey-box)</li>
+          <li><strong>Навички автоматизації тестування</strong> (Selenium, TestNG, PyTest)</li>
+          <li><strong>Розуміння принципів роботи баз даних</strong> (SQL, NoSQL)</li>
+          <li><strong>Знання API тестування</strong> (Postman, SoapUI, RestAssured)</li>
+          <li><strong>Вміння працювати з CI/CD системами</strong> (Jenkins, GitLab CI)</li>
+          <li><strong>Навички написання технічної документації</strong></li>
+        </ul>
+        
+        <h2>Кар'єрний ріст QA Інженера</h2>
+        <ol>
+          <li><strong>Junior QA Engineer</strong> - виконання тестових сценаріїв, написання простих тест-кейсів</li>
+          <li><strong>Middle QA Engineer</strong> - розробка тест-планів, автоматизація тестування</li>
+          <li><strong>Senior QA Engineer</strong> - планування процесів QA, наставництво</li>
+          <li><strong>QA Lead</strong> - керівництво командою тестування</li>
+          <li><strong>QA Manager</strong> - управління всіма процесами QA в компанії</li>
+        </ol>
+        
+        <div class="highlight">
+          <h3>Як стати QA Інженером?</h3>
+          <ol>
+            <li>Опануйте основи тестування ПЗ</li>
+            <li>Вивчіть основи програмування (Python/Java)</li>
+            <li>Ознайомтеся з інструментами тестування (Selenium, Postman, Jira)</li>
+            <li>Отримайте сертифікати з тестування (ISTQB, QAI)</li>
+            <li>Практикуйтеся на реальних проектах (open-source, фріланс)</li>
+            <li>Розвивайте soft skills (комунікація, аналітичне мислення)</li>
+          </ol>
+        </div>
+      </div>
+    </div>
     
+    <center>
+    <div class="banner">
+      <h3 style="color: white;">💼 QA Інженер — це стратег якості, який будує процеси для створення ідеального продукту!</h3>
+      <p>Середня зарплата Senior QA Engineer в Україні: $2500-$4000</p>
+    </div>
+    </center>
+            <!-- Інструменти QA Інженера -->
+    <div class="section" id="qa-tools">
+      <div class="section-header">Інструменти QA Інженера</div>
+      <div class="section-body">
+        <p>Сучасний QA Інженер використовує широкий спектр інструментів для ефективної роботи. Ось основні категорії:</p>
+        
+        <h2>1. Інструменти для автоматизації тестування</h2>
+        <ul>
+          <li><strong>Selenium WebDriver</strong> - стандарт для веб-автоматизації</li>
+          <li><strong>Appium</strong> - для мобільних додатків</li>
+          <li><strong>Cypress</strong> - сучасний фреймворк для end-to-end тестування</li>
+          <li><strong>Playwright</strong> - крос-браузерне тестування</li>
+        </ul>
+        
+        <h2>2. Інструменти для тестування API</h2>
+        <div class="highlight">
+          <ul>
+            <li><strong>Postman</strong> - для ручного та автоматичного тестування API</li>
+            <li><strong>Swagger</strong> - для документування та тестування API</li>
+            <li><strong>RestAssured</strong> - Java бібліотека для тестування REST API</li>
+            <li><strong>SoapUI</strong> - для тестування SOAP сервісів</li>
+          </ul>
+        </div>
+        
+        <h2>3. Системи безперервної інтеграції (CI/CD)</h2>
+        <ul>
+          <li><strong>Jenkins</strong> - найпопулярніша система CI/CD</li>
+          <li><strong>GitLab CI/CD</strong> - інтегроване рішення для GitLab</li>
+          <li><strong>GitHub Actions</strong> - CI/CD від GitHub</li>
+          <li><strong>TeamCity</strong> - CI сервер від JetBrains</li>
+        </ul>
+        
+        <h2>4. Інші корисні інструменти</h2>
+        <ul>
+          <li><strong>JIRA</strong> - відстеження помилок та управління проектами</li>
+          <li><strong>TestRail</strong> - керування тест-кейсами</li>
+          <li><strong>Allure</strong> - звітування результатів тестування</li>
+          <li><strong>Docker</strong> - контейнеризація тестових середовищ</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Міфи про QA Інженерів -->
+    <div class="section" id="qa-myths">
+      <div class="section-header">Міфи про QA Інженерів</div>
+      <div class="section-body">
+        <h3>1. QA Інженер = Тестувальник</h3>
+        <p>Насправді QA Інженер займається не лише тестуванням, а й побудовою процесів забезпечення якості на всіх етапах розробки.</p>
+        
+        <h3>2. Для QA не потрібно знати програмування</h3>
+        <p>Сучасний QA Інженер має знати мови програмування для автоматизації тестів та аналізу коду.</p>
+        
+        <h3>3. QA лише знаходить баги</h3>
+        <p>Основне завдання QA - запобігання дефектам, а не лише їх виявлення.</p>
+        
+        <h3>4. Робота QA - це нудно</h3>
+        <p>QA Інженер постійно вирішує складні задачі, працює з новими технологіями та інструментами.</p>
+        
+        <h3>5. QA не беруть участь у розробці архітектури</h3>
+        <p>Досвідчений QA бере активну участь у проектуванні системи для запобігання потенційним проблемам.</p>
+      </div>
+    </div>
+
+    <!-- Приклад роботи QA Інженера -->
+    <div class="section" id="qa-example">
+      <div class="section-header">Приклад роботи QA Інженера</div>
+      <div class="section-body">
+        <h2>Типовий робочий процес</h2>
+        
+        <h3>1. Аналіз вимог</h3>
+        <p>QA Інженер разом з розробниками аналізує технічні вимоги до нового функціоналу:</p>
+        <ul>
+          <li>Виявляє неоднозначності та ризики</li>
+          <li>Запропоновує покращення</li>
+          <li>Формує тестові сценарії</li>
+        </ul>
+        
+        <h3>2. Планування тестування</h3>
+        <p>Створення комплексного тест-плану:</p>
+        <div class="highlight">
+          <ul>
+            <li>Визначення обсягів тестування</li>
+            <li>Вибір методів тестування</li>
+            <li>Розподіл ресурсів</li>
+            <li>Оцінка часу</li>
+          </ul>
+        </div>
+        
+        <h3>3. Автоматизація тестів</h3>
+        <p>Написання автоматизованих тестів для нового функціоналу:</p>
+        <div class="code-block">
+          <pre><code>// Приклад тесту на Java з використанням Selenium
+@Test
+public void testUserRegistration() {
+    RegistrationPage regPage = new RegistrationPage(driver);
+    regPage.open();
+    regPage.fillForm("testuser", "test@email.com", "Password123");
+    regPage.submit();
+    
+    assertTrue(new DashboardPage(driver).isUserLoggedIn());
+}</code></pre>
+        </div>
+        
+        <h3>4. Інтеграція в CI/CD</h3>
+        <p>Налаштування автоматичного запуску тестів при кожному коміті:</p>
+        <ul>
+          <li>Створення пайплайну в Jenkins/GitLab CI</li>
+          <li>Налаштування нотифікацій про збої</li>
+          <li>Аналіз результатів тестування</li>
+        </ul>
+        
+        <h3>5. Аналіз результатів</h3>
+        <p>Створення звітів та рекомендацій для покращення якості продукту.</p>
+      </div>
+    </div>
+
+    <center>
+    <div class="banner">
+      <h3 style="color: white;">🔧 QA Інженер — це інженер якості, який будує мости між розробкою та бездоганним продуктом!</h3>
+      <p>Висококваліфіковані QA Інженері — це дефіцитні фахівці на сучасному IT-ринку</p>
+    </div>
+    </center>
+
     <div class="hex">
         <!-- Перший шестикутник -->
         <div class="hexagon">
             <img src="https://i.postimg.cc/05LfQsyT/83271e06-b390-4a89-bea1-de88e69a2f8d.jpg" alt="Автор 1">
-            <div class="author-name">Безпалий Володимир</div>
+            
         </div>
         
         <!-- Другий шестикутник -->
         <div class="hexagon">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCVKBxga3eIT96WEyn2RNCBAlzsnR4mPW2lQ&s" alt="Автор 2">
-            <div class="author-name">Даценко Єгор</div>
+            <img src="https://i.postimg.cc/nzyLZ6mX/photo-2025-06-06-11-33-54.jpg" alt="Автор 2">
+            
         </div>
         
         <!-- Третій шестикутник -->
         <div class="hexagon">
             <img src="https://i.postimg.cc/9X1g1MCy/923fcc2f-95fc-4846-93b2-2949d10f2ad8.jpg" alt="Автор 3">
-            <div class="author-name">Бульба Ілля</div>
+            
         </div>
     </div>
+    
+    <!-- Авторы під шестикутниками -->
+    <div class="authors-container">
+        <div class="author-card">
+            <h3>Безпалий Володимир</h3>
+            <p>Відповідав за дизайн проекту, розподіл ролей в команді, мотивацію учасників, пошук інформації та роботу з ШІ.</p>
+        </div>
+        <div class="author-card">
+            <h3>Даценко Єгор</h3>
+            <p>Відповідав за верстку сторінки, роботу з HTML/CSS, а також дослідження сфери автоматизованого тестування.</p>
+        </div>
+        <div class="author-card">
+            <h3>Бульба Ілля</h3>
+            <p>Відповідав за верстку сторінки, роботу з JavaScript, а також дослідження інструментів для тестування.</p>
+        </div>
+    </div>
+    
+
     
   </div>
 
@@ -840,14 +1047,15 @@ public class FirstTest {
     // Плавне з'явлення навігації при прокрутці
     const sticky = document.getElementById("stickyNav");
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 150) {
+      if (window.scrollY > 270) {
         sticky.style.top = "0";
       } else {
-        sticky.style.top = "-100px";
+        sticky.style.top = "-240px";
       }
     });
   </script>
 
 </body>
 </html>
+
 

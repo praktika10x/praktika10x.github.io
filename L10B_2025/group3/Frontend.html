@@ -30,7 +30,7 @@
               </div>
             
               <div class="intro1">
-                  <h1  style="margin-bottom: 10%;">Frontend Developer</h1>
+                  <h1  style="margin-bottom: 10%;margin-top: 5%;">Frontend Developer</h1>
                 <section class="main">
                       <h2 id="essence">Сутність професії</h2>
           <p>FrontEnd розробник створює видиму для користувача частину веб-сторінки і його головне завдання – точно передати у верстанні те, що створив дизайнер, а також реалізувати логіку користувача.<br>Для того, щоб стати FrontEnd розробником, не потрібні знання математики. Опанувати спеціальність Ви зможете за 3-6 місяців, залежно від того, скільки часу будете приділяти теорії та кодингу
@@ -139,7 +139,7 @@
                     <div class="card card-educational">
                         <img src="https://maup.com.ua/assets/cache/images/wmzebr4sufy-620x-739.jpg" alt="МАУП">
                       <p><strong>МАУП</strong></p>
-                      <p>Київ, приватна, Денна, заочна, дистанційна,6 000 – 25 000 грн</p>
+                      <p>Київ, приватна, Денна, заочна, дистанційна, 6 000 – 25 000 грн</p>
                     </div>
                     <div class="card card-educational">
                         <img src="https://diit.ust.edu.ua/upload/photos/shares/gallery/Gallery/summer_front_view.jpg" alt="УДУНТ">
@@ -152,7 +152,7 @@
                       <p>Львів, приватна, дистанційна, Від 50 000  грн</p>
                     </div>
                 </div>
-                  </div>>
+                  </div>
                 </section>
 <footer class="footer">
   <h1 style="font-size: 40px;">Пропонуємо для ознайомлення</h1>
@@ -221,6 +221,19 @@
               },
             });
           });
+                 const btn = document.getElementById('themeToggle');
+                const html = document.documentElement;
+
+                const currentTheme = localStorage.getItem('theme') || 'light';
+                html.setAttribute('data-theme', currentTheme);
+                btn.textContent = currentTheme === 'light' ? '🌙' : '☀️';
+
+                btn.addEventListener('click', () => {
+                  const newTheme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+                  html.setAttribute('data-theme', newTheme);
+                  localStorage.setItem('theme', newTheme);
+                  btn.textContent = newTheme === 'light' ? '🌙' : '☀️';
+                });
         </script>
       </body>
       </html>

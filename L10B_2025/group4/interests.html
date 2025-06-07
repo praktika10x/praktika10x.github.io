@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ваші інтереси - Калейдоскоп професій</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700,600|Roboto+Mono:700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/variable.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/interests.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="/" class="navbar-logo">
+        <img src="./public/logo.png" alt="Логотип">
+        <span class="navbar-logo-text">Калейдоскоп професій</span>
+      </a>
+      <div class="navbar-nav">
+        <a href="./index.html">Головна</a>
+        <a href="./authors.html">Автори</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="interests-container">
+    <div class="interests-header">
+      <h1>Ваші інтереси</h1>
+      <p class="welcome-text">Вітаємо, <span id="userNameDisplay">користувач</span>! Оберіть свої інтереси у сфері хмарних та серверних технологій:</p>
+    </div>
+    
+    <div class="interests-content">
+      <form id="interestsForm" class="interests-form">
+        <div class="interests-grid">
+          <div class="interest-item">
+            <input type="checkbox" id="virtualization" name="interests" value="virtualization">
+            <label for="virtualization">Віртуалізація</label>
+          </div>
+          
+          <div class="interest-item">
+            <input type="checkbox" id="cloudArchitecture" name="interests" value="cloudArchitecture">
+            <label for="cloudArchitecture">Хмарна архітектура</label>
+          </div>
+          
+          <div class="interest-item">
+            <input type="checkbox" id="cybersecurity" name="interests" value="cybersecurity">
+            <label for="cybersecurity">Кібербезпека</label>
+          </div>
+          
+          <div class="interest-item">
+            <input type="checkbox" id="automation" name="interests" value="automation">
+            <label for="automation">Автоматизація</label>
+          </div>
+          
+          <div class="interest-item">
+            <input type="checkbox" id="databases" name="interests" value="databases">
+            <label for="databases">Бази даних</label>
+          </div>
+          
+          <div class="interest-item">
+            <input type="checkbox" id="networking" name="interests" value="networking">
+            <label for="networking">Мережі</label>
+          </div>
+          
+          <div class="interest-item">
+            <input type="checkbox" id="monitoring" name="interests" value="monitoring">
+            <label for="monitoring">Моніторинг та аналітика</label>
+          </div>
+          
+          <div class="interest-item">
+            <input type="checkbox" id="infrastructure" name="interests" value="infrastructure">
+            <label for="infrastructure">Інфраструктура</label>
+          </div>
+          
+          <div class="interest-item">
+            <input type="checkbox" id="deployment" name="interests" value="deployment">
+            <label for="deployment">Розгортання сервісів</label>
+          </div>
+          
+          <div class="interest-item">
+            <input type="checkbox" id="backup" name="interests" value="backup">
+            <label for="backup">Резервне копіювання</label>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+    <div class="interests-footer">
+      <button type="button" class="btn-primary" id="showResultsBtn">Показати результати</button>
+      <a href="./index.html" class="back-link">← Назад</a>
+    </div>
+  </div>
+  
+  <script src="./js/interests.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+:root {
+    --color-bg-primary: #000000;
+    --color-bg-secondary: #000000;
+    --color-bg-tertiary: #1a1a1a;
+    
+    --color-primary: #2901f1;
+    --color-primary-light: #8c3fff;
+    --color-primary-dark: #030061;
+    
+    --color-secondary: #03dac6;
+    --color-secondary-light: #66fff9;
+    --color-secondary-dark: #00a896;
+    
+    --color-accent: #dd447f;
+    --color-accent-light: #ffacc8;
+    --color-accent-dark: #c74a72;
+    
+    --color-success: #00c853;
+    --color-warning: #ffab00;
+    --color-error: #ff5252;
+    
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #9dc6f4;
+    --color-text-disabled: rgba(255, 255, 255, 0.38);
+    
+    --font-family: 'Roboto', 'Arial', sans-serif;
+    --font-family-mono: 'Roboto Mono', monospace;
+    --font-size-xs: 0.75rem;  
+    --font-size-sm: 0.875rem;  
+    --font-size-md: 1rem;     
+    --font-size-lg: 1.25rem;  
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2rem;   
+    --font-size-3xl: 2.5rem;
+    --font-size-4xl: 4rem;
+    
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+    --space-7: 2.5rem;
+    --space-8: 3rem;
+    
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+    --radius-full: 9999px;
+    
+    --transition-fast: 150ms ease;
+    --transition-normal: 250ms ease;
+    --transition-slow: 350ms ease;
+    
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
+    --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+    --gradient-primary: linear-gradient(135deg, rgba(3,0,97,1) 0%, rgba(41,1,241,1) 100%);
+    --gradient-secondary: linear-gradient(135deg, rgba(221,68,127,1) 0%, rgba(41,1,241,1) 100%);
+    
+    --profession-color-1: #4338ca;  
+    --profession-color-2: #0ea5e9;  
+    --profession-color-3: #0d9488;  
+    --profession-color-4: #7c3aed;  
+    --profession-color-5: #db2777; 
+    --profession-color-6: #f59e0b; 
+    --profession-color-7: #10b981; 
+    --profession-color-8: #8b5cf6;  
+    --profession-color-9: #f43f5e;  
+    --profession-color-10: #059669;  
+    --profession-color-11: #3b82f6; 
+    --profession-color-12: #ec4899;
+    --profession-color-13: #8b5cf6;  
+    --profession-color-14: #14b8a6; 
+}

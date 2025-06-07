@@ -1,112 +1,109 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
 
-    const initializeSlider = (containerId, autoSlideInterval = 5000) => { 
-        const sliderContainer = document.getElementById(containerId);
-        if (!sliderContainer) {
-            console.warn(`Slider container with ID "${containerId}" not found.`);
-            return;
+    const flashcards = document.querySelectorAll('.roadmap-flashcard');
+    flashcards.forEach(card => {
+        card.addEventListener('click', function() {
+            this.querySelector('.roadmap-flashcard-inner').classList.toggle('flipped');
+        });
+    });
+
+    const toolsSliderContainer = document.getElementById('toolsSliderContainer');
+    if (toolsSliderContainer) {
+        const toolsSliderWrapper = toolsSliderContainer.querySelector('.soc-slider-wrapper');
+        const toolsSlides = toolsSliderContainer.querySelectorAll('.soc-slide');
+        const toolsPrevBtn = toolsSliderContainer.querySelector('.soc-prev-btn');
+        const toolsNextBtn = toolsSliderContainer.querySelector('.soc-next-btn');
+        const toolsSliderDotsContainer = toolsSliderContainer.querySelector('.soc-slider-dots');
+
+        let toolsCurrentSlide = 0;
+        const toolsSlideCount = toolsSlides.length;
+
+        function updateToolsSlider() {
+            toolsSliderWrapper.style.transform = `translateX(-${toolsCurrentSlide * 100}%)`;
+            updateToolsDots();
         }
 
-        const sliderWrapper = sliderContainer.querySelector('.soc-slider-wrapper, .education-slider-wrapper');
-        const slides = sliderWrapper.querySelectorAll('.soc-slide, .education-slide');
-        const prevBtn = sliderContainer.querySelector('.soc-prev-btn, .education-prev-btn');
-        const nextBtn = sliderContainer.querySelector('.soc-next-btn, .education-next-btn');
-        const dotsContainer = sliderContainer.querySelector('.soc-slider-dots');
-
-        let currentIndex = 0;
-        const totalSlides = slides.length;
-        let autoSlideTimer;
-
-        if (totalSlides === 0) {
-            console.warn(`No slides found in slider container with ID "${containerId}".`);
-            if (prevBtn) prevBtn.style.display = 'none';
-            if (nextBtn) nextBtn.style.display = 'none';
-            if (dotsContainer) dotsContainer.style.display = 'none';
-            return;
+        function nextToolsSlide() {
+            toolsCurrentSlide = (toolsCurrentSlide + 1) % toolsSlideCount;
+            updateToolsSlider();
         }
 
-        const createDots = () => {
-            if (!dotsContainer) return;
-            dotsContainer.innerHTML = '';
-            for (let i = 0; i < totalSlides; i++) {
-                const dot = document.createElement('span');
+        function prevToolsSlide() {
+            toolsCurrentSlide = (toolsCurrentSlide - 1 + toolsSlideCount) % toolsSlideCount;
+            updateToolsSlider();
+        }
+
+        function updateToolsDots() {
+            if (!toolsSliderDotsContainer) return;
+            toolsSliderDotsContainer.innerHTML = '';
+            for (let i = 0; i < toolsSlideCount; i++) {
+                const dot = document.createElement('div');
                 dot.classList.add('soc-dot');
-                dot.dataset.index = i;
-                dot.addEventListener('click', () => {
-                    currentIndex = i;
-                    updateSliderPosition();
-                    resetAutoSlide();
-                });
-                dotsContainer.appendChild(dot);
-            }
-        };
-
-        const updateSliderPosition = () => {
-            const offset = -currentIndex * 100;
-            sliderWrapper.style.transform = `translateX(${offset}%)`;
-            updateDots();
-        };
-
-        const updateDots = () => {
-            if (!dotsContainer) return;
-            const dots = dotsContainer.querySelectorAll('.soc-dot');
-            dots.forEach((dot, index) => {
-                if (index === currentIndex) {
+                if (i === toolsCurrentSlide) {
                     dot.classList.add('active');
-                } else {
-                    dot.classList.remove('active');
                 }
-            });
-        };
-
-        const showNextSlide = () => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            updateSliderPosition();
-        };
-
-        const showPrevSlide = () => {
-            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-            updateSliderPosition();
-        };
-
-        const startAutoSlide = () => {
-            if (autoSlideTimer) {
-                clearInterval(autoSlideTimer);
+                dot.addEventListener('click', () => {
+                    toolsCurrentSlide = i;
+                    updateToolsSlider();
+                });
+                toolsSliderDotsContainer.appendChild(dot);
             }
-            autoSlideTimer = setInterval(showNextSlide, autoSlideInterval);
-        };
-
-        const resetAutoSlide = () => {
-            clearInterval(autoSlideTimer);
-            startAutoSlide();
-        };
-
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => {
-                showNextSlide();
-                resetAutoSlide();
-            });
-        } else {
-            console.warn(`Next button not found for slider with ID "${containerId}".`);
         }
 
-        if (prevBtn) {
-            prevBtn.addEventListener('click', () => {
-                showPrevSlide();
-                resetAutoSlide();
-            });
-        } else {
-            console.warn(`Previous button not found for slider with ID "${containerId}".`);
+        if (toolsPrevBtn && toolsNextBtn) {
+            toolsNextBtn.addEventListener('click', nextToolsSlide);
+            toolsPrevBtn.addEventListener('click', prevToolsSlide);
+            updateToolsSlider();
+        }
+    }
+
+    const eduSliderContainer = document.getElementById('educationSliderContainer');
+    if (eduSliderContainer) {
+        const eduSliderWrapper = eduSliderContainer.querySelector('.education-slider-wrapper');
+        const eduSlides = eduSliderContainer.querySelectorAll('.education-slide');
+        const eduPrevBtn = eduSliderContainer.querySelector('.education-prev-btn');
+        const eduNextBtn = eduSliderContainer.querySelector('.education-next-btn');
+        const eduSliderDotsContainer = eduSliderContainer.querySelector('.soc-slider-dots');
+
+        let eduCurrentSlide = 0;
+        const eduSlideCount = eduSlides.length;
+
+        function updateEduSlider() {
+            eduSliderWrapper.style.transform = `translateX(-${eduCurrentSlide * 100}%)`;
+            updateEduDots();
         }
 
-        createDots();
-        updateSliderPosition();
-        if (autoSlideInterval > 0) { 
-            startAutoSlide();
+        function nextEduSlide() {
+            eduCurrentSlide = (eduCurrentSlide + 1) % eduSlideCount;
+            updateEduSlider();
         }
-    };
 
-    initializeSlider('toolsSliderContainer', 4000); 
-    initializeSlider('socSliderContainer', 5000); 
-    initializeSlider('educationSliderContainer', 6000);
+        function prevEduSlide() {
+            eduCurrentSlide = (eduCurrentSlide - 1 + eduSlideCount) % eduSlideCount;
+            updateEduSlider();
+        }
+
+        function updateEduDots() {
+            if (!eduSliderDotsContainer) return;
+            eduSliderDotsContainer.innerHTML = '';
+            for (let i = 0; i < eduSlideCount; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('soc-dot');
+                if (i === eduCurrentSlide) {
+                    dot.classList.add('active');
+                }
+                dot.addEventListener('click', () => {
+                    eduCurrentSlide = i;
+                    updateEduSlider();
+                });
+                eduSliderDotsContainer.appendChild(dot);
+            }
+        }
+
+        if (eduPrevBtn && eduNextBtn) {
+            eduNextBtn.addEventListener('click', nextEduSlide);
+            eduPrevBtn.addEventListener('click', prevEduSlide);
+            updateEduSlider();
+        }
+    }
 });
