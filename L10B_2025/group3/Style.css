@@ -7,8 +7,6 @@ html, body {
 }
 /* === BODY === */
 body {
-  background-color: #f4f4f4;
-  color: #000;
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -254,6 +252,24 @@ a{
 }
 
 /*кнопка*/
+[data-theme="light"] {
+    --bkg-color: #f4f4f4;;
+    --text-color: #000000;
+    --card-color: #f9cdda;
+    --h2-color:#261374;
+    --card-link-color:rgb(255, 218, 143);
+}
+
+[data-theme="dark"] {
+    --bkg-color: #261374;
+    --text-color: #ffffff;
+    --h2-color:#F5BB47;
+    --card-color:  #fbaad8;
+    --card-link-color:#F5BB47;}
+body {
+    background-color: var(--bkg-color);
+}
+
 .btn {
     background-color: #954baa;
     color: white;
