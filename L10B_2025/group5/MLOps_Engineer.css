@@ -757,6 +757,15 @@ body, html {
   }
 }
 
+@media (min-width: 1200px) {
+  .population {
+     height: 600px;
+     width: 300px;
+     font-size: 22px;
+  }
+}
+
+
 @media (max-width: 430px) {
   .text-block {
     width: 80%;
