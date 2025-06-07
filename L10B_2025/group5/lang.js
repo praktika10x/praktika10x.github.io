@@ -643,15 +643,6 @@ function changeLanguage(lang) {
             el.innerHTML = langArr[key][lang];
         });
     }
-
-    
-    if (lang === 'ua') {
-        changeLangUaButton.classList.add('change-lang-ua-active');
-        changeLangEnButton.classList.remove('change-lang-en-active');
-    } else {
-        changeLangEnButton.classList.add('change-lang-en-active');
-        changeLangUaButton.classList.remove('change-lang-ua-active');
-    }
 }
 
 
