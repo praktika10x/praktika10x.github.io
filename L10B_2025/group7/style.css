@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap');
+/* Import new fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif; /* Applied Quicksand to body for general text */
     margin: 0;
     padding: 0;
     color: #222222;
@@ -17,6 +20,27 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+/* Custom classes for specific fonts */
+.gabriela-regular {
+  font-family: "Gabriela", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quicksand-normal { /* Using a more descriptive class name for Quicksand */
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* You can adjust this weight as needed (300-700) */
+  font-style: normal;
+}
+
+.jersey-15-regular {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .logo-bar {
     background-color: #FFD700;
@@ -51,7 +75,7 @@ html {
 }
 
 .logo-text {
-    font-family: 'Roboto', sans-serif;
+    /* Font applied via jersey-15-regular class */
     font-size: 28px;
     font-weight: 700;
     color: #222222;
@@ -60,7 +84,7 @@ html {
 }
 
 .language-switcher a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif; /* Applied Quicksand */
     color: #222222;
     text-decoration: none;
     font-weight: bold;
@@ -91,7 +115,7 @@ html {
     border-radius: 30px;
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     display: inline-block;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif; /* Applied Quicksand */
     text-transform: uppercase;
     font-size: 15px;
 }
@@ -104,6 +128,103 @@ html {
     transform: translateY(-5px) scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+.hero {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-content h1, .hero-content p {
+    color: white;
+}
+
+.intro-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.intro-heading {
+    color: white;
+    /* Font applied via gabriela-regular class */
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.intro-divider {
+    width: 80px;
+    height: 4px;
+    background-color: #FFD700;
+    border: none;
+    margin: 0 auto 30px auto;
+}
+
+.intro-text {
+    color: white;
+    /* Font applied via quicksand-normal class */
+    font-size: 19px;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.rounded-block-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.rounded-block {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    max-width: 450px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rounded-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.rounded-block h3 {
+    /* Font applied via gabriela-regular class */
+    font-size: 28px;
+    color: #222222;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.rounded-block p {
+    /* Font applied via quicksand-normal class */
+    font-size: 17px;
+    color: #444444;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #222222;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif; /* Applied Quicksand */
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #FFA500;
+    color: white;
+    transform: translateY(-3px);
+}
+
 
 .project-page .container {
     width: 90%;
@@ -260,7 +381,7 @@ html {
 }
 
 .project-page .card h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Gabriela', serif; /* Applied Gabriela */
     font-size: 26px;
     color: #222222;
     margin-bottom: 15px;
@@ -271,6 +392,7 @@ html {
 }
 
 .project-page .card p {
+    font-family: 'Quicksand', sans-serif; /* Applied Quicksand */
     font-size: 17px;
     color: #666666;
     text-align: center;
@@ -352,6 +474,7 @@ html {
     margin-top: 0;
     margin-bottom: 15px;
     color: #222222;
+    font-family: 'Gabriela', serif; /* Applied Gabriela */
 }
 
 .tools-grid {
@@ -395,7 +518,7 @@ html {
 
 .tool-item .tool-icon span {
     font-weight: 700;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Gabriela', serif; /* Applied Gabriela */
 }
 
 .tool-item h3 {
@@ -403,12 +526,14 @@ html {
     margin-bottom: 10px;
     font-size: 22px;
     color: #222222;
+    font-family: 'Gabriela', serif; /* Applied Gabriela */
 }
 
 .tool-item p {
     font-size: 16px;
     color: #666666;
     line-height: 1.5;
+    font-family: 'Quicksand', sans-serif; /* Applied Quicksand */
 }
 
 .product-gallery {
@@ -453,11 +578,13 @@ html {
     margin-bottom: 10px;
     font-size: 24px;
     color: #222222;
+    font-family: 'Gabriela', serif; /* Applied Gabriela */
 }
 
 .product-item p {
     font-size: 16px;
     color: #666666;
+    font-family: 'Quicksand', sans-serif; /* Applied Quicksand */
 }
 
 .image-placeholder {
@@ -511,7 +638,7 @@ html {
 }
 
 .slide h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Gabriela', serif; /* Applied Gabriela */
     font-size: 28px;
     color: #222222;
     margin-top: 0;
@@ -520,7 +647,7 @@ html {
 }
 
 .slide p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif; /* Applied Quicksand */
     font-size: 18px;
     color: #444444;
     line-height: 1.6;
@@ -577,7 +704,7 @@ html {
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
+    /* Font applied via gabriela-regular class in HTML */
     font-size: 56px;
     color: #222222;
     text-align: left;
@@ -585,7 +712,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
+    /* Font applied via gabriela-regular class in HTML */
     font-size: 40px;
     color: #222222;
     border-left: 10px solid #FFD700;
@@ -597,7 +724,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Roboto', sans-serif;
+    /* Font applied via gabriela-regular class in HTML */
     font-size: 32px;
     color: #222222;
     margin-bottom: 25px;
@@ -606,7 +733,7 @@ h3 {
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
+    /* Font applied via quicksand-normal class in HTML */
     font-size: 19px;
     line-height: 1.8;
     margin-bottom: 20px;
@@ -620,10 +747,11 @@ ul {
     margin-bottom: 20px;
     color: #444444;
     text-align: left;
+    font-family: 'Quicksand', sans-serif; /* Applied Quicksand */
 }
 
 li {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif; /* Applied Quicksand */
     font-size: 19px;
     margin-bottom: 12px;
     color: #444444;
@@ -636,7 +764,7 @@ li {
     color: #222222;
     padding: 14px 25px;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif; /* Applied Quicksand */
     font-weight: bold;
     border-radius: 30px;
     border: 2px solid transparent;
@@ -665,7 +793,7 @@ footer {
     color: #F5F5F5;
     padding: 30px;
     margin-top: 60px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif; /* Applied Quicksand */
     font-size: 17px;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -748,7 +876,7 @@ footer .team-info {
     color: #222222;
     padding: 12px 25px;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif; /* Applied Quicksand */
     font-weight: 700;
     border-radius: 30px;
     transition: background-color 0.3s ease, transform 0.2s ease-in-out, box-shadow 0.3s ease, color 0.3s ease;
