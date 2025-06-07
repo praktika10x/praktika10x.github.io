@@ -120,15 +120,21 @@ body {
 .nav:hover{
   left: 0;
 }
+.nav-links {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
 .ulnav {
+  display: flex;
+  justify-content: center;
   list-style: none;
   padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
-  align-items: center; /* центр елементів */
+  margin: 10% 0 0 0; 
 }
 /*ТЕКСТ ГОЛОВНА*/
 span{
@@ -225,17 +231,6 @@ a{
   display: grid;
   grid-column-gap: 55px;
   padding: 0 100px;
-}
- .nav-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  text-align: center;
 }
 
 .info-card {
