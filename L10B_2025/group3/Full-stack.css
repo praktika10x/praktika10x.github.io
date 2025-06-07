@@ -201,7 +201,7 @@ body {
 }
 
 /* === INTRO SECTIONS === */
-.intro1, .intro2 {
+.intro1, .intro2, .intro {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -214,7 +214,7 @@ body {
   background-image: url(юліфон.jpg);
 }
 
-.intro2 {
+.intro {
   background-image: url(фон2.jpg);
 }
 
