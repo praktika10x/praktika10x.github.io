@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+.logo-bar {
+    background-color: #FFD700;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease-in-out;
+}
+
+.logo-img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: 700;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.language-switcher a {
+    font-family: 'Quicksand', sans-serif;
+    color: #222222;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.language-switcher a:hover {
+    color: #444444;
+    background-color: #FFFACD;
+}
+
+.nav {
+    text-align: center;
+    margin: 0;
+}
+
+.nav a {
+    color: #222222;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.nav a:hover,
+.nav a.active {
+    background-color: #FFFACD;
+    border-color: #FFD700;
+    color: #222222;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #222222;
+    color: #F5F5F5;
+    padding: 30px;
+    margin-top: 60px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .team-info {
+    margin-bottom: 0;
+    text-align: left;
+    flex-basis: 100%;
+    color: #CCCCCC;
+}
+
+.footer-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    color: #F5F5F5;
+    font-size: 15px;
+    line-height: 1.2;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #FFD700;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.team-member-img:hover {
+    transform: scale(1.1);
+    border-color: #FFFACD;
+}
+
+.lyceum-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.lyceum-logo {
+    height: 60px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.lyceum-logo:hover {
+    transform: scale(1.1);
+}
+
+.sources-btn {
+    background-color: #FFD700;
+    color: #222222;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out, box-shadow 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.sources-btn:hover {
+    background-color: #FFFACD;
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    color: #444444;
+}
+
+@media (max-width: 768px) {
+    .logo-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+    .logo-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+    .logo-text {
+        font-size: 24px;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding-top: 15px;
+        width: 100%;
+        text-align: left;
+    }
+    .nav a {
+        margin: 0;
+        width: calc(100% - 20px);
+        text-align: left;
+        padding: 10px;
+    }
+    .language-switcher {
+        align-self: flex-start;
+        margin-top: 15px;
+        width: 100%;
+        text-align: right;
+    }
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding: 20px;
+    }
+    footer .team-info {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .footer-bottom-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .team-members {
+        justify-content: flex-start;
+        width: 100%;
+        gap: 20px;
+    }
+    .lyceum-info {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .sources-btn {
+        align-self: flex-end;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 20px;
+    }
+    .nav a {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .language-switcher {
+        font-size: 14px;
+    }
+    footer {
+        font-size: 14px;
+    }
+    .sources-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
