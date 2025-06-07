@@ -17,6 +17,7 @@
                         <li class="nav-link"><a href="Beckend-index.html" class="anav">Backend Developer</a></li>
                         <li class="nav-link"><a href="Full-stack Developer.html" class="anav">Full-stack Developer</a></li>
                         <li class="nav-link"><a href="../../index.html" class="anav">Подивитися інші професії</a></li>
+                        <button class="btn" id="themeToggle">🌙</button>
                         </ul></nav>
                 <p class="pnav">Розробка програмного забезпечення</p>
                 <img src="Project-img/SVG/ПроектЛого.svg" class="logonav">
@@ -63,5 +64,33 @@
                 <p  class="name">Привіт! Я Діана, 16 років. Щоб перейти та ознайомитись з професією Full-stack Developer натисніть кнопку.</p>
             </div></a>
         </div>
+        <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                const swiper = new Swiper('.swiper', {
+                  direction: 'horizontal',
+                  loop: true,
+                  pagination: {
+                    el: '.swiper-pagination',
+                  },
+                  navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                  },
+                });
+              });
+                const btn = document.getElementById('themeToggle');
+                const html = document.documentElement;
+
+                const currentTheme = localStorage.getItem('theme') || 'light';
+                html.setAttribute('data-theme', currentTheme);
+                btn.textContent = currentTheme === 'light' ? '🌙' : '☀️';
+
+                btn.addEventListener('click', () => {
+                  const newTheme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+                  html.setAttribute('data-theme', newTheme);
+                  localStorage.setItem('theme', newTheme);
+                  btn.textContent = newTheme === 'light' ? '🌙' : '☀️';
+                });
+              </script>
     </body>
 </html>
