@@ -1,10 +1,63 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Computer Vision Engineer</title>
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
 </head>
 <body>
-<p1>Выход в город</p1>
+  <header id="header" class="animated-gradient">
+    <div class="theme-switch-wrapper">
+      <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
+        <div class="switch-thumb"></div>
+        <span class="icon sun"><img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема"></span>
+        <span class="icon moon"><img src="{% static 'main/img/moon.png' %}" alt="Темна тема"></span>
+      </div>
+    </div>
+    <h1 id="title">Computer Vision Engineer</h1>
+  </header>
+
+  <main>
+    <section class="info-section">
+      <div class="info-text">
+        <h2>Фахівець із комп’ютерного зору</h2>
+        <p>
+          Computer Vision Engineer розробляє алгоритми, що дозволяють комп’ютерам "бачити" та інтерпретувати зображення чи відео.
+          Вони працюють над задачами розпізнавання об'єктів, сегментації, трекінгу, доповненої реальності, автоматичного водіння тощо.
+          <br><br>
+          У своїй роботі використовують бібліотеки OpenCV, TensorFlow, PyTorch, YOLO, Detectron2 та сучасні нейронні мережі.
+          <br><br>
+          Ця спеціальність поєднує програмування, математику, фізику та глибоке розуміння обробки зображень.
+        </p>
+      </div>
+      <div class="info-image">
+        <img src="{% static 'main/img/computer_vision.jpg' %}" alt="Computer Vision Illustration">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <h4>Автори сайту</h4>
+      <p>П. Бакун, К. Гречка, Б. Підгорний</p>
+    </div>
+    <div>
+      <h4>Контакти</h4>
+      <p>Email: peter.d.bakun@gmail.com</p>
+      <p>Телефон: +380 68 228 1337</p>
+    </div>
+    <div class="footer-theme">
+      <h4>Тема</h4>
+      <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
+        <div class="switch-thumb"></div>
+        <span class="icon sun"><img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема"></span>
+        <span class="icon moon"><img src="{% static 'main/img/moon.png' %}" alt="Темна тема"></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{% static 'main/js/script.js' %}"></script>
 </body>
 </html>

@@ -1,10 +1,62 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deep Learning Engineer</title>
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
 </head>
 <body>
-<p1>Последний альбом</p1>
+  <header id="header" class="animated-gradient">
+    <div class="theme-switch-wrapper">
+      <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
+        <div class="switch-thumb"></div>
+        <span class="icon sun"><img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема"></span>
+        <span class="icon moon"><img src="{% static 'main/img/moon.png' %}" alt="Темна тема"></span>
+      </div>
+    </div>
+    <h1 id="title">Deep Learning Engineer</h1>
+  </header>
+
+  <main>
+    <section class="info-section">
+      <div class="info-text">
+        <h2>Інженер глибинного навчання</h2>
+        <p>
+          Deep Learning Engineer спеціалізується на створенні, навчанні та оптимізації глибоких нейронних мереж, які використовуються в задачах прогнозування, класифікації, генерації даних, розпізнавання мовлення та зображень.
+          <br><br>
+          Ці інженери використовують фреймворки PyTorch, TensorFlow, Keras, Hugging Face Transformers і GPU-обчислення для тренування моделей.
+          <br><br>
+          Ця роль вимагає знань в галузі математики, теорії оптимізації, статистики та практичного досвіду з великими наборами даних.
+        </p>
+      </div>
+      <div class="info-image">
+        <img src="{% static 'main/img/deep_learning.jpg' %}" alt="Deep Learning Illustration">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <h4>Автори сайту</h4>
+      <p>П. Бакун, К. Гречка, Б. Підгорний</p>
+    </div>
+    <div>
+      <h4>Контакти</h4>
+      <p>Email: peter.d.bakun@gmail.com</p>
+      <p>Телефон: +380 68 228 1337</p>
+    </div>
+    <div class="footer-theme">
+      <h4>Тема</h4>
+      <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
+        <div class="switch-thumb"></div>
+        <span class="icon sun"><img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема"></span>
+        <span class="icon moon"><img src="{% static 'main/img/moon.png' %}" alt="Темна тема"></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{% static 'main/js/script.js' %}"></script>
 </body>
 </html>

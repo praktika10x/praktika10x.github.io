@@ -1,10 +1,62 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Researcher</title>
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
 </head>
 <body>
-<p1>Новий альбом</p1>
+  <header id="header" class="animated-gradient">
+    <div class="theme-switch-wrapper">
+      <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
+        <div class="switch-thumb"></div>
+        <span class="icon sun"><img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема"></span>
+        <span class="icon moon"><img src="{% static 'main/img/moon.png' %}" alt="Темна тема"></span>
+      </div>
+    </div>
+    <h1 id="title">AI Researcher</h1>
+  </header>
+
+  <main>
+    <section class="info-section">
+      <div class="info-text">
+        <h2>Дослідник штучного інтелекту</h2>
+        <p>
+          AI Researcher займається створенням нових алгоритмів та моделей у сфері штучного інтелекту. Основна мета — покращення якості, продуктивності та безпеки ІІ-систем.
+          <br><br>
+          Дослідники працюють з теорією машинного навчання, генеративними моделями (наприклад, GAN чи Diffusion), reinforcement learning, а також займаються етикою ШІ.
+          <br><br>
+          Робота передбачає глибоке розуміння статистики, лінійної алгебри, теорії ймовірностей та вміння публікувати наукові результати в конференціях як NeurIPS, ICML чи ICLR.
+        </p>
+      </div>
+      <div class="info-image">
+        <img src="{% static 'main/img/ai_research.jpg' %}" alt="AI Researcher Illustration">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <h4>Автори сайту</h4>
+      <p>П. Бакун, К. Гречка, Б. Підгорний</p>
+    </div>
+    <div>
+      <h4>Контакти</h4>
+      <p>Email: peter.d.bakun@gmail.com</p>
+      <p>Телефон: +380 68 228 1337</p>
+    </div>
+    <div class="footer-theme">
+      <h4>Тема</h4>
+      <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
+        <div class="switch-thumb"></div>
+        <span class="icon sun"><img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема"></span>
+        <span class="icon moon"><img src="{% static 'main/img/moon.png' %}" alt="Темна тема"></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{% static 'main/js/script.js' %}"></script>
 </body>
 </html>

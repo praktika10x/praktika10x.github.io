@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="New page V2">
+    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="Update index.html and style.css">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AI_Profession/main/static/main/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/page2.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/page3.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/page4.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page4.html" afterDir="false" />
     </list>
     <list id="f1ab00e0-7278-4685-bbc4-952ba86327f0" name="don't commit" comment="">
       <change beforePath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" afterDir="false" />
@@ -33,10 +37,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" root0="SKIP_INSPECTION" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": -1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: -1
+}</component>
   <component name="ProjectId" id="2xzocPcKcyOh6vkaS8CfuaQ3b8G" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -212,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749116502039</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Update index.html and style.css">
+      <option name="closed" value="true" />
+      <created>1749248275169</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1749248275169</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,6 +275,7 @@
     <MESSAGE value="Front Update 2" />
     <MESSAGE value="New page V1" />
     <MESSAGE value="New page V2" />
-    <option name="LAST_COMMIT_MESSAGE" value="New page V2" />
+    <MESSAGE value="Update index.html and style.css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update index.html and style.css" />
   </component>
 </project>

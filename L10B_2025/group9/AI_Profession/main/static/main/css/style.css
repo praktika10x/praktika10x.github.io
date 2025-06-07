@@ -64,19 +64,29 @@ header.shrink {
   height: 150px;
 }
 
-h1 {
+@keyframes fadeSlideDown {
+  from {
+    transform: translateY(-80px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+h1#title {
   font-size: 4rem;
   margin: 0;
   color: white;
   transition: font-size 0.5s ease, color 0.5s ease;
+  animation: fadeSlideDown 1.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+body.dark h1#title {
+  color: #333;
 }
 
 header.shrink h1 {
   font-size: 2rem;
-}
-
-body.dark header h1 {
-  color: #333;
 }
 
 .theme-switch-wrapper {
@@ -179,7 +189,7 @@ main {
 .cards a {
   text-decoration: none;
   color: inherit;
-  flex: 1 1 calc(25% - 1rem); /* ~4 картки на ряд з урахуванням gap */
+  flex: 1 1 calc(25% - 1rem);
   min-width: 200px;
   max-width: 100%;
   box-sizing: border-box;
@@ -240,9 +250,37 @@ footer > div:nth-child(3) {
   align-items: flex-end;
 }
 
+/* Статичні текстові картки (text-card) */
+.text-card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem auto;
+  transition: none;
+  cursor: default;
+}
+
+.text-card h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.text-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Адаптивність */
 @media (max-width: 1024px) {
   .cards a {
-    flex: 1 1 calc(50% - 1rem); /* 2 картки в ряд з урахуванням gap */
+    flex: 1 1 calc(50% - 1rem);
   }
 }
 
@@ -276,6 +314,15 @@ footer > div:nth-child(3) {
     max-width: 100%;
   }
 
+  .text-card {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .text-card h2 {
+    font-size: 1.5rem;
+  }
+
   footer {
     flex-direction: column;
     align-items: center;
@@ -290,5 +337,23 @@ footer > div:nth-child(3) {
 
   .footer-theme {
     align-items: center !important;
+  }
+}
+
+.text-card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.text-card-row .text-card {
+  flex: 1 1 calc(50% - 1rem);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .text-card-row .text-card {
+    flex: 1 1 100%;
   }
 }
