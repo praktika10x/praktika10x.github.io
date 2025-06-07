@@ -1,748 +1,848 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8" />
-    <title>Cybersecurity Analyst - Safe WEB squad</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="CybersecurityAnalyst.css" />
-    <link rel="stylesheet" href="index.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap');
 
-        .container {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f6;
+    color: #333;
+    line-height: 1.6;
+}
 
-        h1 {
-            font-family: 'Roboto', sans-serif;
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 30px;
-        }
+.logo-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    color: #fff;
+    padding: 15px 5%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-        h2 {
-            font-family: 'Roboto', sans-serif;
-            color: #34495e;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
+.logo-left {
+    display: flex;
+    align-items: center;
+}
 
-        p {
-            margin-bottom: 15px;
-            color: #555;
-        }
+.logo-img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
 
-        strong {
-            color: #2c3e50;
-        }
+.logo-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFD700;
+    margin-right: 30px;
+}
 
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    position: relative;
+    padding-bottom: 5px;
+}
 
-        ul li {
-            margin-bottom: 8px;
-            color: #555;
-        }
+.nav a:hover,
+.nav a.active {
+    color: #FFD700;
+}
 
-        .cards-container, .info-blocks-container, .tools-list, .product-gallery, .university-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            margin-bottom: 30px;
-        }
+.nav a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #FFD700;
+    border-radius: 2px;
+}
 
-        .card, .info-block, .tool-item, .product-item, .university-item {
-            background-color: #ecf0f1;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-            text-align: center;
-            flex: 1 1 calc(33% - 40px);
-            box-sizing: border-box;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+.language-switcher {
+    font-size: 14px;
+}
 
-        .card:hover, .info-block:hover, .tool-item:hover, .product-item:hover, .university-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
+.language-switcher a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
 
-        .card h3, .info-block h3, .tool-item h3, .product-item h3, .university-item h3 {
-            color: #34495e;
-            margin-top: 15px;
-            margin-bottom: 10px;
-        }
+.language-switcher a:hover {
+    color: #FFD700;
+}
 
-        .icon-circle, .tool-icon, .product-icon, .uni-icon-circle {
-            width: 70px;
-            height: 70px;
-            background-color: #3498db;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 15px auto;
-            color: white;
-            font-size: 30px;
-        }
+.main-content-area {
+    padding-bottom: 50px;
+}
 
-        .icon-circle img, .gif-container img, .tool-icon img, .uni-icon-circle img {
-            max-width: 100%;
-            max-height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-        }
+.hero-section {
+    background: linear-gradient(135deg, #222222 0%, #3a3a3a 100%);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
 
-        .info-block.with-gif .gif-container {
-            width: 100px;
-            height: 100px;
-            margin: 0 auto 15px auto;
-            border-radius: 50%;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 215, 0, 0.1);
+    border-radius: 50%;
+    filter: blur(50px);
+}
 
-        .info-block.with-gif .gif-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+.hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 50%;
+    filter: blur(50px);
+}
 
-        .tool-item {
-            display: flex;
-            align-items: center;
-            text-align: left;
-            flex: 1 1 calc(48% - 20px);
-        }
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
 
-        .tool-item .tool-icon {
-            flex-shrink: 0;
-            margin-right: 15px;
-            margin-bottom: 0;
-        }
+.hero-content h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
 
-        .tool-item .tool-text {
-            flex-grow: 1;
-        }
+.hero-content p {
+    font-size: 1.3em;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
 
-        .product-item .product-icon span {
-            font-size: 40px;
-            line-height: 1;
-        }
+.fade-in-text {
+    animation: fadeIn 2s ease-in-out;
+}
 
-        .university-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            text-decoration: none;
-            color: inherit;
-        }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-        .university-item:hover {
-            color: #3498db;
-        }
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
 
-        .university-item .uni-logo-img {
-            border-radius: 0;
-            object-fit: contain;
-        }
+.info-section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        .image-placeholder img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
+.info-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
 
-        #fullScreenVideoBackground {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -1;
-            background-size: cover;
-        }
+.info-section h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2em;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
 
-        .project-page {
-            position: relative;
-            z-index: 1;
-        }
+.info-section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #FFD700;
+    border-radius: 2px;
+}
 
-        .logo-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 100;
-        }
+.content-block p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
 
-        .logo-left {
-            display: flex;
-            align-items: center;
-        }
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* Centering the video */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .logo-img {
-            height: 40px;
-            margin-right: 10px;
-        }
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 
-        .logo-text {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
+.video-description {
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+    color: #555;
+}
 
-        .nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 600;
-        }
+.roadmap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
 
-        .language-switcher a {
-            color: white;
-            text-decoration: none;
-            margin: 0 5px;
-        }
+.roadmap-item {
+    background-color: #f7f9fc;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #007bff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        footer {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin-top: 40px;
-            position: relative;
-            z-index: 1;
-        }
+.roadmap-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
 
-        .footer-bottom-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-top: 15px;
-        }
+.roadmap-step {
+    background-color: #FFD700;
+    color: #222;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
 
-        .team-members {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+.roadmap-item h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #007bff;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
 
-        .team-member {
-            text-align: center;
-        }
+.roadmap-item p {
+    font-size: 1em;
+    color: #555;
+    text-align: left;
+}
 
-        .team-member-img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            margin-bottom: 5px;
-            border: 2px solid #3498db;
-        }
+.duties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
 
-        .lyceum-info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.duty-item {
+    background-color: #f7f9fc;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        .lyceum-logo {
-            height: 80px;
-            margin-top: 10px;
-        }
+.duty-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
 
-        .sources-btn {
-            background-color: #3498db;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
+.duty-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    padding: 5px;
+}
 
-        .sources-btn:hover {
-            background-color: #2980b9;
-        }
+.duty-item h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
 
-        .team-info {
-            flex-basis: 100%;
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #ddd;
-        }
+.duty-item p {
+    font-size: 0.95em;
+    color: #555;
+}
 
-        .animated-section {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        .animated-section.fade-in {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .delay-1 { transition-delay: 0.1s; }
-        .delay-2 { transition-delay: 0.2s; }
-        .delay-3 { transition-delay: 0.3s; }
-        .delay-4 { transition-delay: 0.4s; }
-        .delay-5 { transition-delay: 0.5s; }
-        .delay-6 { transition-delay: 0.6s; }
-        .delay-7 { transition-delay: 0.7s; }
-        .delay-8 { transition-delay: 0.8s; }
-        .delay-9 { transition-delay: 0.9s; }
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
 
-        @media (max-width: 768px) {
-            .card, .info-block, .tool-item, .product-item, .university-item {
-                flex: 1 1 calc(50% - 20px);
-            }
-            .tool-item {
-                flex-direction: column;
-                text-align: center;
-            }
-            .tool-item .tool-icon {
-                margin: 0 auto 15px auto;
-            }
-            .footer-bottom-row {
-                flex-direction: column;
-                gap: 20px;
-            }
-            .team-members {
-                order: 2;
-            }
-            .lyceum-info {
-                order: 1;
-            }
-            .sources-btn {
-                order: 3;
-            }
-        }
+.tool-card {
+    background-color: #f7f9fc;
+    padding: 25px;
+    border-radius: 10px;
+    border-bottom: 4px solid #FFD700;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        @media (max-width: 480px) {
-            .card, .info-block, .tool-item, .product-item, .university-item {
-                flex: 1 1 100%;
-            }
-            .nav {
-                display: none;
-            }
-            .logo-bar {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .language-switcher {
-                margin-top: 10px;
-            }
-        }
-    </style>
-</head>
-<body class="project-page">
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
 
-    <header class="logo-bar">
-        <div class="logo-left">
-            <img src="https://i.postimg.cc/3RcBwN6j/image.jpg" alt="лого" class="logo-img" />
-            <span class="logo-text">Safe WEB squad</span>
-        </div>
-        <nav class="nav">
-            <a href="index.html" class="active">Головна</a>
-            <a href="project.html">Про проєкт</a>
-        </nav>
-        <div class="language-switcher">
-            <a href="#">UA</a> | <a href="#">EN</a>
-        </div>
-    </header>
+.tool-card h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
 
-    <video autoplay muted loop id="fullScreenVideoBackground">
-        <source src="https://v1.pinimg.com/videos/mc/720p/00/f1/16/00f116593c4df7a0919e117965bf1293.mp4" type="video/mp4">
-    </video>
+.tool-tags {
+    margin-bottom: 15px;
+}
 
-    <div class="container">
-        <h1 class="fade-in-text animated-section" style="color:black;">Cybersecurity Analyst: Захисник Цифрового Світу</h1>
+.tool-tags span {
+    display: inline-block;
+    background-color: #e0eaff;
+    color: #007bff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
 
-        <section class="animated-section">
-            <h2>Сутність професії</h2>
-            <div class="section-content-wrapper">
-                <p style="color:black;"><strong>Аналітик з кібербезпеки</strong> (Cybersecurity Analyst) – це фахівець, який відіграє ключову роль у захисті інформаційних систем, мереж та даних організації від кіберзагроз. Його основна місія – виявляти вразливості, запобігати кібератакам, реагувати на інциденти безпеки та впроваджувати ефективні заходи захисту. Ця професія вимагає глибоких знань у сфері IT, а також постійного навчання та адаптації до нових викликів.</p>
-                <p>Аналітики з кібербезпеки працюють у різних галузях – від фінансових установ та державних організацій до технологічних компаній та медичних закладів. Вони можуть входити до складу команд SOC (Security Operations Center), займатися аналізом загроз, аудитом безпеки або брати участь у розробці стратегій захисту.</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/S2gXwDk6z48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div class="decorative-element shape-1"></div>
-            </div>
-        </section>
+.tool-card p {
+    font-size: 0.95em;
+    color: #555;
+}
 
-        <section class="animated-section">
-            <h2>Шлях до професії (Roadmap)</h2>
-            <div class="cards-container">
-                <div class="card delay-1">
-                    <div class="icon-circle"><img src="https://prometheus.org.ua/wp-content/uploads/2024/09/asset-v1_EPAMJAVA1012016_T2type@assetblock@12865_65fc_4.jpg" alt="Основи програмування" /></div>
-                    <h3>Основи програмування</h3>
-                    <p>Почніть з глибокого розуміння комп'ютерних мереж, операційних систем (Windows, Linux), баз даних та основ програмування (Python, PowerShell).</p>
-                </div>
-                <div class="card delay-2">
-                    <div class="icon-circle"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsqLnGT7qef2uy0Hm_kV5Csd9Us6LlYhsMCA&s" alt="Основи безпеки" /></div>
-                    <h3>Концепції Безпеки</h3>
-                    <p>Вивчіть принципи інформаційної безпеки, криптографії, управління доступом, ризиками та відповідності нормативним вимогам.</p>
-                </div>
-                <div class="card delay-3">
-                    <div class="icon-circle"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0yZXVPNtgIofKILy4urhCvZJhr_cyjrAmYw&s" alt="Інструменти та Технології" /></div>
-                    <h3>Інструменти та Технології</h3>
-                    <p>Опануйте використання SIEM-систем, інструментів для сканування вразливостей, IDS/IPS, фаєрволів, антивірусних програм.</p>
-                </div>
-                <div class="card delay-4">
-                    <div class="icon-circle"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWKzoFQ7pOZb0ead5cHZsaCyhqGrEd9Ef9BQ&s" alt="Сертифікації" /></div>
-                    <h3>Сертифікації</h3>
-                    <p>Здобудьте визнані індустрією сертифікації, такі як CompTIA Security+, CySA+, CEH, SANS GIAC, ISC2 CISSP (для досвідчених).</p>
-                </div>
-                <div class="card delay-5">
-                    <div class="icon-circle"><img src="https://staff-capital.com/wp-content/uploads/2022/08/%D0%B4%D0%BE%D1%81%D0%B2%D1%96%D0%B4_001-870x457.jpeg" alt="Практичний Досвід" /></div>
-                    <h3>Практичний Досвід</h3>
-                    <p>Беріть участь у Bug Bounty програмах, Hack The Box, TryHackMe, створюйте власні лабораторні середовища. Отримайте досвід роботи в SOC.</p>
-                </div>
-                <div class="card delay-6">
-                    <div class="icon-circle"><img src="https://bizmag.com.ua/wp-content/uploads/2024/01/myaki-navichki-soft-skills-bizmag-com-ua.jpg" alt="М'які Навички" /></div>
-                    <h3>М'які Навички</h3>
-                    <p>Розвивайте аналітичне мислення, навички вирішення проблем, комунікації та роботи в команді.</p>
-                </div>
-            </div>
-            <div class="decorative-element shape-2"></div>
-        </section>
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
 
-        <section class="animated-section">
-            <h2>Основні обов'язки аналітика з кібербезпеки</h2>
-            <div class="info-blocks-container">
-                <div class="info-block with-gif delay-1">
-                    <div class="gif-container">
-                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM29wc3l0OHR3dnJrM3VrdjYyamplOWlodGx2aXE2cnlxMWZhanM2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JGUMPPTMRCVPbSncVF/giphy.gif" alt="Моніторинг та аналіз загроз" class="gif-icon" />
-                    </div>
-                    <h3>Моніторинг та аналіз загроз</h3>
-                    <p>Постійний моніторинг мережевого трафіку, системних логів та подій безпеки для виявлення підозрілої активності. Використання SIEM-систем для агрегації та кореляції даних.</p>
-                </div>
-                <div class="info-block with-gif delay-2">
-                    <div class="gif-container">
-                        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMml4dXgwZXVsNXNqYzlnMHo5ajB0b3JsNWR1ejVmNXZhYnF6Ym5ubSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YYW0hHizzIOrlhimPG/giphy.gif" alt="Реагування на інциденти" class="gif-icon" />
-                    </div>
-                    <h3>Реагування на інциденти</h3>
-                    <p>Розробка та виконання планів реагування на інциденти. Ізоляція заражених систем, усунення наслідків атак, проведення криміналістичного аналізу.</p>
-                </div>
-                <div class="info-block with-gif delay-3">
-                    <div class="gif-container">
-                        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExazZxMWl4YXg0M2ppcGg2OWhvOWx3Ymx5MzBxeGlscTNibGxiNW42dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ziQVZDpNBSV7G/giphy.gif" alt="Управління вразливостями" class="gif-icon" />
-                    </div>
-                    <h3>Управління вразливостями</h3>
-                    <p>Проведення регулярних сканувань на вразливості, тестування на проникнення. Оцінка ризиків та надання рекомендацій щодо їх усунення.</p>
-                </div>
-                <div class="info-block with-gif delay-4">
-                    <div class="gif-container">
-                        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGN3MHE1OXdndDBzd2l5NGJpNDk5Njcxa3VrOG5jZWJ1ZHRzYjdvbSZlcD12MV9pbnRlcm5hb19naWZfYnlfaWQmY3Q9Zw/p8UYAuBwP5BfZrTM4w/giphy.gif" alt="Розробка та впровадження політик безпеки" class="gif-icon" />
-                    </div>
-                    <h3>Розробка та впровадження політик безпеки</h3>
-                    <p>Створення та оновлення внутрішніх політик, стандартів та процедур безпеки, що відповідають галузевим вимогам та кращим практикам.</p>
-                </div>
-            </div>
-            <div class="decorative-element shape-3"></div>
-        </section>
+.product-card {
+    background-color: #f7f9fc;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        <section class="animated-section">
-            <h2>Інструменти розробника (Аналітика)</h2>
-            <div class="tools-list">
-                <div class="tool-item delay-1">
-                    <div class="tool-icon">
-                        <img src="https://softlist.com.ua/attachments/d07ecb3c-e77f-4bd6-8058-07bef78a6d0b_siem-1.webp" alt="SIEM системи" />
-                    </div>
-                    <div class="tool-text">
-                        <h3>SIEM системи</h3>
-                        <p>Splunk, ELK Stack, IBM QRadar, Microsoft Azure Sentinel. Для збору, кореляції та аналізу логів безпеки.</p>
-                    </div>
-                </div>
-                <div class="tool-item delay-2">
-                    <div class="tool-icon">
-                        <img src="https://mlfk3cv5yvnx.i.optimole.com/cb:HA53.300ea/w:auto/h:auto/q:mauto/f:best/https://www.ninjaone.com/wp-content/uploads/2024/01/ids-vs-ips.jpg" alt="IDS/IPS" />
-                    </div>
-                    <div class="tool-text">
-                        <h3>IDS/IPS</h3>
-                        <p>Snort, Suricata. Для виявлення та запобігання мережевим атакам у реальному часі.</p>
-                    </div>
-                </div>
-                <div class="tool-item delay-3">
-                    <div class="tool-icon">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLnQwGDAkJVkYFjwH7CDs2JMf_bRkjjPcWVw&s" alt="Сканери вразливостей" />
-                    </div>
-                    <div class="tool-text">
-                        <h3>Сканери вразливостей</h3>
-                        <p>Nessus, OpenVAS, Qualys. Для автоматизованого пошуку слабких місць у системах та застосунках.</p>
-                    </div>
-                </div>
-                <div class="tool-item delay-4">
-                    <div class="tool-icon">
-                        <img src="https://tehtris.com/wp-content/uploads/2022/03/XDRvsEDR.jpg" alt="EDR/XDR" />
-                    </div>
-                    <div class="tool-text">
-                        <h3>EDR/XDR</h3>
-                        <p>CrowdStrike, SentinelOne, Microsoft Defender. Для комплексного захисту кінцевих точок та розширеного виявлення загроз.</p>
-                    </div>
-                </div>
-                <div class="tool-item delay-5">
-                    <div class="tool-icon">
-                        <img src="https://gigatrans.ua/public/storage/zAVcViIoaef8JteEv7Ps.webp" alt="Фаєрволи" />
-                    </div>
-                    <div class="tool-text">
-                        <h3>Фаєрволи</h3>
-                        <p>Cisco ASA, Palo Alto Networks, Fortinet. Для контролю вхідного та вихідного мережевого трафіку.</p>
-                    </div>
-                </div>
-                <div class="tool-item delay-6">
-                    <div class="tool-icon">
-                        <img src="https://inbiz.com.ua/wp-content/uploads/2025/06/analiz-vidviduvachiv-saitu-830x830.jpg" alt="Аналіз трафіку" />
-                    </div>
-                    <div class="tool-text">
-                        <h3>Аналіз трафіку</h3>
-                        <p>Wireshark, tcpdump. Для глибокого аналізу мережевих пакетів та виявлення аномалій.</p>
-                    </div>
-                </div>
-                <div class="tool-item delay-7">
-                    <div class="tool-icon">
-                        <img src="https://web-assets.eset.com/fileadmin/ESET/INT/Pages/Features_pages/malware.png" alt="Аналіз шкідливого ПЗ" />
-                    </div>
-                    <div class="tool-text">
-                        <h3>Аналіз шкідливого ПЗ</h3>
-                        <p>Cuckoo Sandbox, Any.Run. Для безпечного дослідження поведінки вірусів та малварі.</p>
-                    </div>
-                </div>
-                <div class="tool-item delay-8">
-                    <div class="tool-icon">
-                        <img src="https://qaweb.dev/files/tickets/578/script-mova-1.jpg" alt="Скриптові мови" />
-                    </div>
-                    <div class="tool-text">
-                        <h3>Скриптові мови</h3>
-                        <p>Python, PowerShell, Bash. Для автоматизації рутинних завдань, написання експлойтів та інструментів аналізу.</p>
-                    </div>
-                </div>
-                <div class="tool-item delay-9">
-                    <div class="tool-icon">
-                        <img src="https://static.wixstatic.com/media/50456a_2618cbb34b534bf6bdecfed0760509b8~mv2.png/v1/fill/w_538,h_270,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/50456a_2618cbb34b534bf6bdecfed0760509b8~mv2.png" alt="Системи управління інцидентами" />
-                    </div>
-                    <div class="tool-text">
-                        <h3>Системи управління інцидентами</h3>
-                        <p>TheHive, Resilient. Для ефективного відстеження та управління життєвим циклом інцидентів безпеки.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="decorative-element shape-4"></div>
-        </section>
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
 
-        <section class="animated-section">
-            <h2>Зразки продукції фахівця</h2>
-            <div class="product-gallery">
-                <div class="product-item delay-1">
-                    <div class="product-icon"><span>📄</span></div>
-                    <h3>Звіти про вразливості</h3>
-                    <p>Детальний опис знайдених слабких місць, їх вплив та конкретні рекомендації щодо усунення.</p>
-                </div>
-                <div class="product-item delay-2">
-                    <div class="product-icon"><span>⚙️</span></div>
-                    <h3>Політики безпеки</h3>
-                    <p>Розробка та оновлення правил і процедур, що регулюють використання інформаційних систем та доступ до даних.</p>
-                </div>
-                <div class="product-item delay-3">
-                    <div class="product-icon"><span>🚨</span></div>
-                    <h3>Плани реагування на інциденти</h3>
-                    <p>Покрокові інструкції для команди безпеки щодо дій у разі виявлення кібератаки, від виявлення до відновлення.</p>
-                </div>
-                <div class="product-item delay-4">
-                    <div class="product-icon"><span>📊</span></div>
-                    <h3>Дашборди SIEM</h3>
-                    <p>Візуалізації, що відображають ключові показники безпеки, активність загроз та загальний стан захищеності мережі.</p>
-                </div>
-                <div class="product-item delay-5">
-                    <div class="product-icon"><span>🔍</span></div>
-                    <h3>Аналітичні звіти про загрози</h3>
-                    <p>Глибокий аналіз нових кіберзагроз, їхніх методів, тактик та потенційного впливу на організацію.</p>
-                </div>
-                <div class="product-item delay-6">
-                    <div class="product-icon"><span>✅</span></div>
-                    <h3>Аудиторські висновки</h3>
-                    <p>Звіти за результатами перевірок відповідності систем стандартам безпеки та внутрішнім політикам компанії.</p>
-                </div>
-            </div>
-        </section>
+.product-icon {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 15px;
+    color: #FFD700;
+}
 
-        <section class="animated-section">
-            <h2>Заробітна плата та Затребуваність на ринку праці</h2>
-            <div class="section-content-wrapper">
-                <p>Професія Cybersecurity Analyst є однією з найбільш затребуваних та високооплачуваних у сфері IT. Зростання кількості кібератак, постійні зміни в регуляторних вимогах та усвідомлення критичної важливості захисту даних призводять до постійного, експоненціального збільшення попиту на кваліфікованих фахівців по всьому світу.</p>
-                <p style="color:black;"><strong>Затребуваність:</strong> За даними різних аналітичних агенцій (наприклад, Cybersecurity Ventures, ISC²), кількість незаповнених вакансій у сфері кібербезпеки продовжує зростати. Прогнозується, що до 2025 року глобальний дефіцит фахівців з кібербезпеки сягне кількох мільйонів. Це створює величезні можливості для нових фахівців, які входять у цю сферу.</p>
-                <p style="color:black;"><strong>Заробітна плата:</strong> Заробітна плата значно варіюється залежно від рівня досвіду (Junior, Middle, Senior), наявності сертифікацій, спеціалізації (наприклад, SOC Analyst, Incident Responder, Threat Intelligence Analyst), регіону та розміру компанії. Однак, у цілому, вона залишається на дуже високому рівні, відображаючи цінність та критичну важливість цієї спеціалізації для сучасного бізнесу та держави. Наприклад, початківці можуть розраховувати на конкурентну зарплату, а досвідчені фахівці можуть отримувати значно вищі доходи.</p>
-                <div class="image-placeholder">
-                    <img src="https://habrastorage.org/getpro/habr/upload_files/c72/17b/eb2/c7217beb2fb9d81971da064369f72fb5.jpeg" alt="Графік зарплат Cybersecurity Analyst">
-                </div>
-                <p>Ця професія обіцяє стабільний кар'єрний ріст та постійний розвиток, оскільки кіберландшафт еволюціонує щодня.</p>
-                <div class="decorative-element shape-5"></div>
-            </div>
-        </section>
+.product-card h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
 
-        <section class="animated-section">
-            <h2>Заклади освіти та спеціальності (125 Кібербезпека та Захист Інформації)</h2>
-            <p>В Україні існує низка вищих навчальних закладів, які готують фахівців за спеціальністю 125 "Кібербезпека та Захист Інформації". Нижче представлено декілька провідних університетів:</p>
+.product-card p {
+    font-size: 0.95em;
+    color: #555;
+}
 
-            <div class="university-list">
-                <a href="https://kpi.ua/" target="_blank" class="university-item delay-1">
-                    <div class="uni-icon-circle">
-                        <img src="https://kpi.ua/files/images-page/kpi-big-logo.png" alt="Логотип КПІ" class="uni-logo-img">
-                    </div>
-                    <h3>Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського" (КПІ)</h3>
-                    <p>Один з найпрестижніших технічних університетів України, пропонує підготовку фахівців з кібербезпеки на високому рівні, з акцентом на технічні аспекти та інженерію безпеки.</p>
-                </a>
-                <a href="https://www.univ.kiev.ua/" target="_blank" class="university-item delay-2">
-                    <div class="uni-icon-circle">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDacLEfYyaNMKz4nl9eewQRijhz1kNlQKZA&s" alt="Логотип КНУ" class="uni-logo-img">
-                    </div>
-                    <h3>Київський національний університет імені Тараса Шевченка (КНУ)</h3>
-                    <p>Провідний класичний університет, який також має потужні програми з інформаційної безпеки та кіберзахисту на факультеті комп'ютерних наук та кібернетики.</p>
-                </a>
-                <a href="https://nure.ua/" target="_blank" class="university-item delay-3">
-                    <div class="uni-icon-circle">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Logo_NURE_3_Uk_27mm.jpg" alt="Логотип ХНУРЕ" class="uni-logo-img">
-                    </div>
-                    <h3>Харківський національний університет радіоелектроніки (ХНУРЕ)</h3>
-                    <p>Відомий своїми IT-спеціальностями, включаючи кафедру безпеки інформаційних технологій, що готує висококваліфікованих фахівців у сфері кібербезпеки.</p>
-                </a>
-                <a href="https://lpnu.ua/" target="_blank" class="university-item delay-4">
-                    <div class="uni-icon-circle">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Nulp_logo_ukr.svg" alt="Логотип Львівська Політехніка" class="uni-logo-img">
-                    </div>
-                    <h3>Національний університет "Львівська політехніка"</h3>
-                    <p>Інститут комп'ютерних наук та інформаційних технологій, кафедра "Безпека інформаційних технологій" пропонує сучасні освітні програми та співпрацю з галуззю.</p>
-                </a>
-                <a href="https://www.dnu.dp.ua/" target="_blank" class="university-item delay-5">
-                    <div class="uni-icon-circle">
-                        <img src="https://www.dnu.dp.ua/docs/Znak%20DNU%20100%20_a.jpg" alt="Логотип ДНУ" class="uni-logo-img">
-                    </div>
-                    <h3>Дніпровський національний університет імені Олеся Гончара (ДНУ)</h3>
-                    <p>Факультет прикладної математики, кафедра "Безпека інформаційних технологій" готує фахівців з акцентом на математичні та алгоритмічні основи кіберзахисту.</p>
-                </a>
-                <a href="https://nau.edu.ua/" target="_blank" class="university-item delay-6">
-                    <div class="uni-icon-circle">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Emblem_of_National_Aviation_University.png" alt="Логотип НАУ" class="uni-logo-img">
-                    </div>
-                    <h3>Національний авіаційний університет (НАУ)</h3>
-                    <p>Факультет кібербезпеки, комп'ютерної та програмної інженерії, спеціальність "Кібербезпека" забезпечує підготовку фахівців для захисту критичної інфраструктури.</p>
-                </a>
-                <a href="https://academy.ssu.gov.ua/" target="_blank" class="university-item delay-7">
-                    <div class="uni-icon-circle">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Logossu.png" alt="Логотип НА СБУ" class="uni-logo-img">
-                    </div>
-                    <h3>Національна Академія Служби Безпеки України (НА СБУ)</h3>
-                    <p>Готує висококваліфікованих фахівців для забезпечення державної безпеки у сфері інформаційних технологій та кіберзахисту, з урахуванням специфіки роботи спецслужб.</p>
-                </a>
-            </div>
-        </section>
+.salary-table-container {
+    margin-top: 30px;
+    overflow-x: auto;
+}
 
-        <section class="animated-section">
-            <h2>Плюси і мінуси професії фахівця з кібербезпеки</h2>
-            <div class="section-content-wrapper">
-                <ul>
-                    <li style="color:black;"><strong>Затребуваність на ринку праці.</strong> Кількість кібератак в Україні та світі зростає, тож попит на спеціалістів із кібербезпеки теж збільшуватиметься. Вже зараз дефіцит таких профі становить близько 3,4 млн людей. При цьому 43% власників бізнесів вважають, що їхня компанія стане жертвою кіберзлочинців у найближчі 2 роки.</li>
-                    <li style="color:black;"><strong>Високі зарплати.</strong> Cybersecurity Specialist в Україні заробляє в середньому $1900.</li>
-                    <li style="color:black;"><strong>Гнучкий графік, віддалена робота та фриланс.</strong> Сам знаєш, наскільки це зручно.</li>
-                    <li style="color:black;"><strong>Інтелектуальне задоволення і соціальна значущість.</strong> Фахівці з кібербезпеки вирішують справді важливі та складні завдання.</li>
-                    <li style="color:black;"><strong>Саморозвиток.</strong> У цій сфері постійно з’являється щось нове, тому потрібно тримати руку на пульсі подій.</li>
-                    <li style="color:black;"><strong>Можливість працювати в різних компаніях і країнах.</strong> Такі навички цінуються скрізь.</li>
-                    <li style="color:black;"><strong>Своєрідна творчість.</strong> Щоб створити унікальну систему безпеки, знадобиться креативний підхід.</li>
-                </ul>
-                <p>Головні недоліки:</p>
-                <ul>
-                    <li style="color:black;"><strong>Високий рівень відповідальності.</strong> Помилки фахівців з кібербезпеки можуть призвести до серйозних наслідків для компанії: витік даних, фінансові втрати тощо.</li>
-                    <li style="color:black;"><strong>Стрес і вигорання.</strong> Іноді фахівці з кібербезпеки відповідають за захист критично важливих інформаційних систем і мереж. Потрібно бути уважним і зібраним, а ще швидко реагувати на загрози, що виникають та про які ніхто не попереджає (сюрприз). Це збільшує ймовірність вигорання.</li>
-                    <li style="color:black;"><strong>Постійне навчання.</strong> Кіберзагрози змінюються, і доводиться вчитися з ними боротися. Не всім це подобається.</li>
-                    <li style="color:black;"><strong>Необхідність дотримання суворих протоколів і стандартів.</strong> Не найкраща робота для тих, хто любить хаос.</li>
-                </ul>
-            </div>
-        </section>
+.salary-table-container h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-    </div>
+.salary-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
 
-    <footer>
-        <div class="footer-bottom-row">
-            <div class="team-members">
-                <div class="team-member">
-                    <img src="https://cdn-icons-png.flaticon.com/512/345/345636.png" alt="Богдан Бухикало" class="team-member-img">
-                    <p>Бухикало Богдан</p>
-                </div>
-                <div class="team-member">
-                    <img src="https://cdn-icons-png.flaticon.com/512/345/345636.png" alt="Шепель Дмитро" class="team-member-img">
-                    <p>Шепель Дмитро</p>
-                </div>
-                <div class="team-member">
-                    <img src="https://cdn-icons-png.flaticon.com/512/345/345636.png" alt="Максимчук Богдан" class="team-member-img">
-                    <p>Максимчук Богдан</p>
-                </div>
-            </div>
-            <div class="lyceum-info">
-               <a href="https://praktika10x.github.io/">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/%D0%93%D0%B5%D1%80%D0%B1_%D0%BB%D1%96%D1%86%D0%B5%D1%8E_%C2%AB%D0%9F%D0%BE%D0%BB%D1%96%D1%82%C2%BB_%282022%29.png" alt="Логотип ліцею 'Політ'" class="lyceum-logo">
-                </a>
-            </div>
-            <p class="team-info">© 2025 Safe WEB squad. Всі права захищено. <br> Тема проєкту: "Кібербезпека" <br> Проєкт створено учнями групи Л-10В Наукового ліцею "Політ":</p>
-            <a href="dzherela.html" class="sources-btn">ДЖЕРЕЛА <span class="sources-emoji">📝</span></a>
-        </div>
-    </footer>
+.salary-table-container th,
+.salary-table-container td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const animatedSections = document.querySelectorAll('.animated-section');
+.salary-table-container th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
 
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            };
+.salary-table-container tr:nth-child(even) {
+    background-color: #eef2f6;
+}
 
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
+.salary-table-container tr:hover {
+    background-color: #e0eaff;
+}
 
-            animatedSections.forEach(section => {
-                observer.observe(section);
-            });
-        });
-    </script>
-</body>
-</html>
+.salary-image {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.salary-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    font-style: italic;
+    color: #777;
+    margin-top: 10px;
+}
+
+.university-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.university-item {
+    background-color: #f7f9fc;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.university-item:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.university-logo-wrapper {
+    flex-shrink: 0;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.university-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.university-details h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.university-details p {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #222;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #e6c200;
+    transform: translateY(-2px);
+}
+
+.pros-cons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.pros-card,
+.cons-card {
+    background-color: #f7f9fc;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 350px;
+    max-width: 550px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pros-card:hover,
+.cons-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.pros-card h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #28a745;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cons-card h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #dc3545;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pros-card ul,
+.cons-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pros-card li,
+.cons-card li {
+    font-size: 1.05em;
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.pros-card li::before {
+    content: '✅';
+    position: absolute;
+    left: 0;
+    color: #28a745;
+}
+
+.cons-card li::before {
+    content: '❌';
+    position: absolute;
+    left: 0;
+    color: #dc3545;
+}
+
+.emoji {
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #222222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.team-info {
+    font-size: 0.9em;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.sources-emoji {
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-left: 15px;
+    transition: transform 0.2s ease;
+}
+
+.sources-emoji:hover {
+    transform: scale(1.2);
+}
+
+/* Animations */
+.animated-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animated-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .logo-left {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-text {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav a {
+        margin: 0 10px 10px 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-bar {
+        flex-direction: column;
+        padding: 15px 3%;
+    }
+
+    .logo-left {
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo-text {
+        margin-bottom: 15px;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .language-switcher {
+        margin-top: 15px;
+    }
+
+    .hero-section {
+        padding: 60px 15px;
+    }
+
+    .info-section {
+        padding: 30px;
+    }
+
+    .info-section h2 {
+        font-size: 1.8em;
+    }
+
+    .roadmap-grid,
+    .duties-grid,
+    .tools-grid,
+    .products-list,
+    .university-list,
+    .pros-cons-container {
+        grid-template-columns: 1fr;
+    }
+
+    .university-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .university-logo-wrapper {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .university-details h3 {
+        text-align: center;
+    }
+
+    .university-details p {
+        text-align: center;
+    }
+
+    .btn-secondary {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .pros-card,
+    .cons-card {
+        min-width: unset;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 20px;
+    }
+
+    .nav a {
+        font-size: 0.9em;
+        margin: 0 8px 8px 8px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .info-section {
+        padding: 20px;
+    }
+
+    .info-section h2 {
+        font-size: 1.5em;
+    }
+
+    .roadmap-step {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2em;
+        top: -15px;
+        left: 15px;
+    }
+
+    .roadmap-item h3 {
+        font-size: 1.3em;
+    }
+
+    .duty-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tool-card h3,
+    .product-card h3 {
+        font-size: 1.2em;
+    }
+
+    .salary-table-container th,
+    .salary-table-container td {
+        padding: 10px;
+        font-size: 0.85em;
+    }
+
+    .university-logo {
+        width: 60px;
+        height: 60px;
+    }
+}
