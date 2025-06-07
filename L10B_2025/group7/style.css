@@ -39,6 +39,7 @@ html {
   font-style: normal;
 }
 
+
 .logo-bar {
     background-color: #FFD700;
     padding: 15px 30px;
@@ -131,7 +132,7 @@ html {
 }
 
 .hero-content h1, .hero-content p {
-    color: #000000;
+    color: white;
 }
 
 .intro-section {
@@ -140,7 +141,7 @@ html {
 }
 
 .intro-heading {
-    color: #000000;
+    color: white;
     font-size: 40px;
     margin-bottom: 20px;
 }
@@ -154,7 +155,7 @@ html {
 }
 
 .intro-text {
-    color: #000000;
+    color: white;
     font-size: 19px;
     line-height: 1.8;
     max-width: 900px;
@@ -216,6 +217,7 @@ html {
     color: white;
     transform: translateY(-3px);
 }
+
 
 .project-page .container {
     width: 90%;
