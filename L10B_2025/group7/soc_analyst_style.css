@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -25,7 +27,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Gabriela', serif;
     color: #000000;
     text-align: center;
     margin-bottom: 25px;
@@ -57,6 +59,7 @@ h3 {
 
 p {
     margin-bottom: 15px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .logo-bar {
@@ -83,7 +86,7 @@ p {
 }
 
 .logo-text {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Jersey 15', sans-serif;
     font-size: 1.8em;
     font-weight: 700;
     color: #FFD700;
@@ -101,6 +104,7 @@ p {
     margin-left: 25px;
     font-weight: 600;
     transition: color 0.3s ease, transform 0.3s ease;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .nav a:hover {
@@ -114,6 +118,7 @@ p {
     margin-left: 10px;
     font-weight: 600;
     transition: color 0.3s ease;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .language-switcher a:hover {
@@ -129,6 +134,7 @@ p {
     font-size: 1.1em;
     color: #2c3e50;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-family: 'Quicksand', sans-serif;
 }
 
 .video-container {
@@ -211,6 +217,7 @@ p {
 }
 
 .soc-card h3 {
+    font-family: 'Gabriela', serif;
     color: #000000;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -218,6 +225,7 @@ p {
 }
 
 .soc-card p {
+    font-family: 'Quicksand', sans-serif;
     font-size: 0.95em;
     color: #555;
 }
@@ -238,6 +246,7 @@ p {
     align-items: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transition: transform 0.2s ease;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .tools-list li:hover, .roadmap-list li:hover, .products-list li:hover, .sample-products-list li:hover, .education-list li:hover {
@@ -265,6 +274,7 @@ p {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     border-radius: 8px;
     overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .data-table th, .data-table td {
@@ -293,6 +303,7 @@ p {
     color: #666;
     text-align: center;
     margin-top: 20px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .image-container {
@@ -315,6 +326,7 @@ p {
     color: #666;
     margin-top: 10px;
     font-style: italic;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .soc-slider-container,
@@ -350,6 +362,7 @@ p {
 }
 
 .soc-slide h3 {
+    font-family: 'Gabriela', serif;
     color: #FFD700;
     font-size: 1.7em;
     margin-bottom: 15px;
@@ -357,6 +370,7 @@ p {
 }
 
 .soc-slide p {
+    font-family: 'Quicksand', sans-serif;
     font-size: 1.1em;
     color: #444;
 }
@@ -427,12 +441,14 @@ p {
 }
 
 .tools-slider-container .soc-slide .text-content h3 {
+    font-family: 'Gabriela', serif;
     color: #000000;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
 
 .tools-slider-container .soc-slide .text-content p {
+    font-family: 'Quicksand', sans-serif;
     color: #555;
     font-size: 1em;
 }
@@ -475,6 +491,7 @@ p {
 }
 
 .education-slide h4 {
+    font-family: 'Gabriela', serif;
     font-size: 1.8em;
     color: #FFD700;
     margin-bottom: 10px;
@@ -482,6 +499,7 @@ p {
 }
 
 .education-slide p {
+    font-family: 'Quicksand', sans-serif;
     font-size: 1.1em;
     color: #f0f0f0;
     line-height: 1.5;
@@ -542,6 +560,7 @@ p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .sample-product-card:hover {
@@ -746,6 +765,7 @@ footer {
     font-size: 0.9em;
     position: relative;
     box-shadow: 0 -2px 8px rgba(0,0,0,0.4);
+    font-family: 'Quicksand', sans-serif;
 }
 
 .team-info {
@@ -823,6 +843,7 @@ footer {
     color: #FFD700;
     font-size: 1.2em;
     font-weight: 700;
+    font-family: 'Gabriela', serif;
 }
 
 .roadmap-flashcard-back {
@@ -832,6 +853,7 @@ footer {
     text-align: center;
     font-size: 0.95em;
     line-height: 1.4;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .roadmap-flashcard-front h3 {
@@ -839,12 +861,14 @@ footer {
     margin-top: 10px;
     margin-bottom: 0;
     font-size: 1.3em;
+    font-family: 'Gabriela', serif;
 }
 
 .roadmap-flashcard-back p {
     margin: 0;
     padding: 0;
     font-size: 1em;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .roadmap-icon {
@@ -898,150 +922,7 @@ footer {
         font-size: 0.85em;
     }
     .tools-slider-container .soc-slide img {
-        width: 80px; 
+        width: 80px;
         height: 80px;
     }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideInLeft {
-    from { transform: translateX(-100px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
-}
-
-@keyframes slideInRight {
-    from { transform: translateX(100px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
-}
-
-@keyframes scaleIn {
-    from { transform: scale(0.8); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-}
-
-.anim-fade-in { animation: fadeIn 1s ease-out forwards; }
-.anim-slide-in-left { animation: slideInLeft 1s ease-out forwards; }
-.anim-slide-in-right { animation: slideInRight 1s ease-out forwards; }
-.anim-scale-in { animation: scaleIn 1s ease-out forwards; }
-
-footer {
-    background-color: #000000;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-    font-size: 0.9em;
-    position: relative;
-    box-shadow: 0 -2px 8px rgba(0,0,0,0.4);
-}
-
-.team-info {
-    margin-bottom: 10px;
-}
-
-.sources-emoji {
-    font-size: 1.8em;
-    text-decoration: none;
-    color: #FFD700;
-    position: absolute;
-    right: 20px;
-    bottom: 15px;
-    transition: transform 0.3s ease;
-}
-
-.sources-emoji:hover {
-    transform: rotate(15deg) scale(1.2);
-}
-
-.roadmap-flashcards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-    padding-bottom: 30px;
-}
-
-.roadmap-flashcard {
-    width: 300px;
-    height: 200px;
-    perspective: 1000px;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    transition: transform 0.4s ease;
-}
-
-.roadmap-flashcard:hover {
-    transform: translateY(-10px);
-}
-
-.roadmap-flashcard-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    border-radius: 15px;
-}
-
-.roadmap-flashcard:hover .roadmap-flashcard-inner {
-    transform: rotateY(180deg);
-}
-
-.roadmap-flashcard-front, .roadmap-flashcard-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
-}
-
-.roadmap-flashcard-front {
-    background-color: #000000;
-    color: #FFD700;
-    font-size: 1.2em;
-    font-weight: 700;
-}
-
-.roadmap-flashcard-back {
-    background-color: #FFD700;
-    color: #000000;
-    transform: rotateY(180deg);
-    text-align: center;
-    font-size: 0.95em;
-    line-height: 1.4;
-}
-
-.roadmap-flashcard-front h3 {
-    color: #FFD700;
-    margin-top: 10px;
-    margin-bottom: 0;
-    font-size: 1.3em;
-}
-
-.roadmap-flashcard-back p {
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
-}
-
-.roadmap-icon {
-    max-width: 80px;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
 }
