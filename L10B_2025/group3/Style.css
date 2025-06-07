@@ -100,7 +100,7 @@ body {
   margin: 8px;
   justify-self: end;
 }
-.nav{
+.nav1{
   position: fixed;
   margin: 0;
   left: -300px; 
@@ -115,11 +115,11 @@ body {
   justify-content: center; 
   align-items: center;     
 }
-.nav:hover{
+.nav1:hover{
   left: 0;
 }
 
-.nav-links {
+.nav-links1 {
     display: flex;
     flex-direction: column; /* Встановити вертикальне розташування */
     align-items: flex-start; /* Вирівняти елементи по лівому краю */
@@ -128,12 +128,30 @@ body {
     padding: 0;
     margin: 0;
 }
-.ulnav {
+.ulnav1 {
   display: flex;
   justify-content: center;
   list-style: none;
   padding: 0;
   margin: 10% 0 0 0; 
+}
+.nav {
+  width: 100%;
+  height: 50px;
+  background-color: #261374; /* Синій фон */
+  display: flex;
+  justify-content: flex-end; /* Вирівнювання по правому краю */
+  align-items: center; 
+  box-sizing: border-box;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row; /* Дозволити горизонтальне розташування */
+  gap: 20px; /* Відстань між елементами */
+  list-style: none;
+  padding: 0;
+  margin: 0 20px; /* Додати відступи по краях для дистанції */
 }
 /*ТЕКСТ ГОЛОВНА*/
 span{
