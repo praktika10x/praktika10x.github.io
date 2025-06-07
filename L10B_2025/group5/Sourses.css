@@ -29,9 +29,10 @@ body, html {
 }
 .sourses1 h3 {
     font-family: 'Geologica', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     margin-bottom: 24px;
-    text-align: left; 
+    text-align: left;
+    margin-left: 30px;
 }
 .sourses2 div {
     background-color: #504A9F;
