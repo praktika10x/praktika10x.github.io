@@ -1,68 +1,69 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    const flashcards = document.querySelectorAll('.flashcard');
+    const flashcards = document.querySelectorAll('.roadmap-flashcard');
     flashcards.forEach(card => {
         card.addEventListener('click', function() {
-            this.classList.toggle('flipped');
+            this.querySelector('.roadmap-flashcard-inner').classList.toggle('flipped');
         });
     });
 
-    const irSliderContainer = document.getElementById('irToolsSliderContainer');
-    if (irSliderContainer) {
-        const irSliderWrapper = irSliderContainer.querySelector('.ir-slider-wrapper');
-        const irSlides = irSliderContainer.querySelectorAll('.ir-slide');
-        const irPrevBtn = irSliderContainer.querySelector('.ir-prev-btn');
-        const irNextBtn = irSliderContainer.querySelector('.ir-next-btn');
-        const irSliderDotsContainer = irSliderContainer.querySelector('.ir-slider-dots');
+    const toolsSliderContainer = document.getElementById('toolsSliderContainer');
+    if (toolsSliderContainer) {
+        const toolsSliderWrapper = toolsSliderContainer.querySelector('.soc-slider-wrapper');
+        const toolsSlides = toolsSliderContainer.querySelectorAll('.soc-slide');
+        const toolsPrevBtn = toolsSliderContainer.querySelector('.soc-prev-btn');
+        const toolsNextBtn = toolsSliderContainer.querySelector('.soc-next-btn');
+        const toolsSliderDotsContainer = toolsSliderContainer.querySelector('.soc-slider-dots');
 
-        let irCurrentSlide = 0;
-        const irSlideCount = irSlides.length;
+        let toolsCurrentSlide = 0;
+        const toolsSlideCount = toolsSlides.length;
 
-        function updateIrSlider() {
-            irSliderWrapper.style.transform = `translateX(-${irCurrentSlide * 100}%)`;
-            updateIrDots();
+        function updateToolsSlider() {
+            toolsSliderWrapper.style.transform = `translateX(-${toolsCurrentSlide * 100}%)`;
+            updateToolsDots();
         }
 
-        function nextIrSlide() {
-            irCurrentSlide = (irCurrentSlide + 1) % irSlideCount;
-            updateIrSlider();
+        function nextToolsSlide() {
+            toolsCurrentSlide = (toolsCurrentSlide + 1) % toolsSlideCount;
+            updateToolsSlider();
         }
 
-        function prevIrSlide() {
-            irCurrentSlide = (irCurrentSlide - 1 + irSlideCount) % irSlideCount;
-            updateIrSlider();
+        function prevToolsSlide() {
+            toolsCurrentSlide = (toolsCurrentSlide - 1 + toolsSlideCount) % toolsSlideCount;
+            updateToolsSlider();
         }
 
-        function updateIrDots() {
-            irSliderDotsContainer.innerHTML = '';
-            for (let i = 0; i < irSlideCount; i++) {
+        function updateToolsDots() {
+            if (!toolsSliderDotsContainer) return;
+            toolsSliderDotsContainer.innerHTML = '';
+            for (let i = 0; i < toolsSlideCount; i++) {
                 const dot = document.createElement('div');
-                dot.classList.add('ir-dot');
-                if (i === irCurrentSlide) {
+                dot.classList.add('soc-dot');
+                if (i === toolsCurrentSlide) {
                     dot.classList.add('active');
                 }
                 dot.addEventListener('click', () => {
-                    irCurrentSlide = i;
-                    updateIrSlider();
+                    toolsCurrentSlide = i;
+                    updateToolsSlider();
                 });
-                irSliderDotsContainer.appendChild(dot);
+                toolsSliderDotsContainer.appendChild(dot);
             }
         }
 
-        if (irPrevBtn && irNextBtn) {
-            irNextBtn.addEventListener('click', nextIrSlide);
-            irPrevBtn.addEventListener('click', prevIrSlide);
-            updateIrSlider(); 
+        if (toolsPrevBtn && toolsNextBtn) {
+            toolsNextBtn.addEventListener('click', nextToolsSlide);
+            toolsPrevBtn.addEventListener('click', prevToolsSlide);
+            updateToolsSlider();
         }
     }
 
     const eduSliderContainer = document.getElementById('educationSliderContainer');
-    if (eduSliderContainer) { 
+    if (eduSliderContainer) {
         const eduSliderWrapper = eduSliderContainer.querySelector('.education-slider-wrapper');
         const eduSlides = eduSliderContainer.querySelectorAll('.education-slide');
-        const eduPrevBtn = eduSliderContainer.querySelector('.edu-prev-btn');
-        const eduNextBtn = eduSliderContainer.querySelector('.edu-next-btn');
-        const eduSliderDotsContainer = eduSliderContainer.querySelector('.edu-slider-dots');
+        const eduPrevBtn = eduSliderContainer.querySelector('.education-prev-btn');
+        const eduNextBtn = eduSliderContainer.querySelector('.education-next-btn');
+        const eduSliderDotsContainer = eduSliderContainer.querySelector('.soc-slider-dots');
 
         let eduCurrentSlide = 0;
         const eduSlideCount = eduSlides.length;
@@ -83,10 +84,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         function updateEduDots() {
+            if (!eduSliderDotsContainer) return;
             eduSliderDotsContainer.innerHTML = '';
             for (let i = 0; i < eduSlideCount; i++) {
                 const dot = document.createElement('div');
-                dot.classList.add('edu-dot');
+                dot.classList.add('soc-dot');
                 if (i === eduCurrentSlide) {
                     dot.classList.add('active');
                 }
@@ -104,5 +106,4 @@ document.addEventListener('DOMContentLoaded', function() {
             updateEduSlider();
         }
     }
-
 });
