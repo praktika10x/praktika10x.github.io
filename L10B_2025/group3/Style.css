@@ -65,17 +65,16 @@ body {
 }
 .nav-link .anav {
   display: block;
-  padding: 12px 20px;
-  text-align: left;
+  padding: 8px 16px;
+  text-align: left; 
   color: #ffffff;
   text-decoration: none;
   background-color: #261374;
   font-family: "Press Start 2P", system-ui;
-  margin: 0;
+  margin:20px 80px 0 0 ;
   width: 100%;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
-
 
 .nav-link .anav:hover {
   color: #F5BB47;
@@ -103,47 +102,41 @@ body {
   margin: 8px;
   justify-self: end;
 }
-.nav {
-    width: 100%;
-    height: 50px;
-    background-color: #261374; /* Синій фон */
-    display: flex;
-    justify-content: flex-end; /* Вирівнювання по правому краю */
-    align-items: center; 
-    box-sizing: border-box;
-}
-
-.links {
-    display: flex;
-    flex-direction: row; /* Дозволити горизонтальне розташування */
-    gap: 20px; /* Відстань між елементами */
-    list-style: none;
-    padding: 0;
-    margin: 0 20px; /* Додати відступи по краях для дистанції */
+.nav{
+  position: fixed;
+  margin: 0;
+  left: -300px; 
+  width: 20%;
+  height: 100vh;
+  background-color: #261374;
+  padding: 20px 10px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  list-style: none;
+  align-items: start;
+  justify-content: center; 
+  align-items: center;     
 }
 .nav:hover{
   left: 0;
 }
+
 .nav-links {
-  display: flex;
-  justify-content: center;
-  margin-top: 30%; /* Зсуває блок вниз на 30% висоти батьківського елемента */
+    display: flex;
+    flex-direction: column; /* Встановити вертикальне розташування */
+    align-items: flex-start; /* Вирівняти елементи по лівому краю */
+    gap: 10px; /* Відстань між елементами */
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-
-
 .ulnav {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 6;
   display: flex;
-  flex-direction: column; /* Розташовує посилання вертикально */
   justify-content: center;
-  align-items: flex-start; /* Щоб текст починався зліва */
   list-style: none;
-  margin: 0 10px;
   padding: 0;
-  gap: 20px; /* Відстань між пунктами */
+  margin: 10% 0 0 0; 
 }
-
 /*ТЕКСТ ГОЛОВНА*/
 span{
   font-family: "Tektur", sans-serif;
