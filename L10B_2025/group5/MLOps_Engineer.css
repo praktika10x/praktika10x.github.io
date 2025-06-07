@@ -20,14 +20,15 @@ body, html {
 .section1 {
    display: flex;
    flex-direction: row;
-   justify-content: flex-end;
+   justify-content: space-between;
    align-items: center;
    width: 100%;
    min-height: 600px;
    height: auto;
    background-color: #2219a3; 
    color: #fff;
-   padding: 20px 5vw;
+   padding: 20px 10vw;
+   padding-left: 15vw;
    gap: 20px; 
    flex-wrap: wrap;
    background-image: url('photos_MLOps/section1.png');
@@ -37,6 +38,13 @@ body, html {
    box-sizing: border-box;
    margin: 0;
    opacity: 0.80;
+}
+
+.youtube-video {
+  display: flex; 
+  align-items: center; 
+  width: 700px; 
+  height: 400px; 
 }
 
 
@@ -49,7 +57,6 @@ body, html {
    min-height: 450px;
    background-color: #504A9F;
    color: #fff;
-   margin-right: 80px; 
    margin-left: 0; 
    border-radius: 20px;
    opacity: 0.95;
@@ -62,6 +69,7 @@ body, html {
    font-size: 40px; 
    margin-bottom: 18px;
    font-family: "Balsamiq Sans", sans-serif;
+   text-align: center;
 }
 
 .text-field p {
@@ -118,7 +126,6 @@ body, html {
   font-family: 'Geologica', sans-serif;
   font-size: 16px;
   max-width: 600px;
-  flex: 1;
   text-align: left;
   box-sizing: border-box;
 }
@@ -180,7 +187,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("photos_MLOps/section3_bg.png");
+    background-image: url("img/machine-learning-engineer.jpg");
     background-repeat: no-repeat;
     background-size: cover;      
     background-position: center;
@@ -259,8 +266,9 @@ body, html {
     background: #344285;
     color: white;
     transform: rotateY(180deg);
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Geologica', sans-serif;
+    line-height: 1.5;
 }
 
 .opacity {
@@ -314,7 +322,7 @@ body, html {
     gap: 24px;
     width: 100%;
     max-width: 900px;
-    font-size: 26px;
+    font-size: 22px;
     font-family: 'Geologica', sans-serif;
     list-style: square;
 }
@@ -326,7 +334,7 @@ body, html {
     gap: 24px;
     width: 100%;
     max-width: 900px;
-    font-size: 26px;
+    font-size: 22px;
     font-family: 'Geologica', sans-serif;
 }
 
@@ -343,7 +351,8 @@ body, html {
     background-color: #1E2A5E;
     border-radius: 12px;
     padding: 30px 30px;
-    text-align: center;
+    text-align: left;
+    line-height: 1.5;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .section4 .hard-skills ul:hover,
@@ -356,54 +365,112 @@ body, html {
 
 .section5 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     background-image: url("photos_MLOps/section5_bg\(2\).png");
     background-repeat: no-repeat;
     background-size: cover;      
     background-position: center;
+    background-color: #1E2A5E;
     gap: 24px;
     color: #fff;
     opacity: 0.90;
     width: 100%;
-    height: 900px;
+    min-height: 600px;
     margin-bottom: 0;
 }
 
-.section5 h1 {
+.sections-h1 {
     font-family: 'Balsamiq Sans', sans-serif;
-    font-size: 38px;
+    display: block;
+    font-size: 2.2rem;
     margin-bottom: 24px;
     text-align: center;
     width: 100%;
+    margin-top: 60px;
 }
+
 .section5 .population {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    max-width: 900px;
-    background-color: rgba(30,42,94,0.92);
+    align-items: left;
+    max-width: 600px;
+    max-height: 450px;
+    background-color: rgba(41, 70, 196, 0.92);
     color: #fff;
     font-family: 'Geologica', sans-serif;
-    font-size: 34px;
+    font-size: 18px;
     padding: 32px 40px;
     border-radius: 16px;
     box-sizing: border-box;
     line-height: 1.5;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
+    text-align: left;
+    margin: 40px;
+
     transition: transform 0.3s ease;
 }
 .section5 .population:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 
+.population-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+
+.ua-graph-div {
+  display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-left: 100px;
+    margin: 40px;
+    margin-bottom: 60px;
+    transition: all 0.3s ease;
+}
+
+
+.world-graph-div {
+  display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-left: 100px;
+    margin: 40px;
+    margin-bottom: 60px;
+    transition: all 0.3s ease;
+}
+
+
+.demand-graph-ua {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.demand-graph-world {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.ua-graph-div:hover, .world-graph-div:hover {
+    transform: scale(1.02);
+}
 
 .section6 {
     display: block;
@@ -442,6 +509,11 @@ body, html {
   height: auto;
 }
 
+.tools-logo {
+  width: 256px;
+  height: 256px;
+}
+
 
 
 .section7 {
@@ -458,7 +530,7 @@ body, html {
 .section7 h1 {
     font-family: 'Balsamiq Sans', sans-serif;
     font-size: 38px;
-    margin-bottom: 24px;
+    margin: 50px 0;
     text-align: center;
     width: 100%;
 }
@@ -481,7 +553,7 @@ body, html {
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 900px;
     border-radius: 12px;
@@ -497,6 +569,7 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
     height: 100%;
 }
 
@@ -515,12 +588,12 @@ body, html {
     text-align: center;
 }
 .section7 div div img {transition: transform 0.3s ease;}
-.section7 div div img:hover {transform: scale(1.2);}
+.section7 div div img:hover {transform: scale(1.05);}
 
 
 .section8 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background: linear-gradient(180deg, #102E50  70%, #3f2f94 100%);
     color: #fff;
     padding: 40px 5vw;
@@ -538,7 +611,8 @@ body, html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 24px;
     width: 100%;
 }
@@ -555,25 +629,24 @@ body, html {
 }
 
 .section8 .text-field_ul {
-    flex: 2;
     list-style: disc inside;
     text-align: left;
     font-size: 20px;
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
     gap: 12px;
     padding: 0;
-    width: 100%;
+    width: 40%;
 }
 .section8 img:hover {
     transform: scale(1.2);
 }
 .section8 .text-field_ul li {
     font-family: 'Geologica', sans-serif;
-    font-size: 28px;
+    font-size: 22px;
     margin-bottom: 12px;
     text-align: right;
     width: 100%;
@@ -584,6 +657,7 @@ body, html {
 .section9 {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background: linear-gradient(180deg, #3f2f94 60%, #2E236C 100%);
@@ -604,6 +678,7 @@ body, html {
 .section9 .education-abroad {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 24px;
@@ -615,6 +690,8 @@ body, html {
 .section9 .education-abroad h2 {
     font-family: 'Geologica', sans-serif;
     font-size: 32px;   
+    color: rgb(152, 158, 249);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     margin-bottom: 16px; 
 }
 
@@ -623,13 +700,15 @@ body, html {
     font-family: 'Geologica', sans-serif;
     font-size: 28px; 
     margin-bottom: 12px; 
+    margin-top: 100px;
 }
 
 .section9 .gen {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: start;
     gap: 40px;
     width: 100%;
     max-width: 1200px;
@@ -646,6 +725,7 @@ body, html {
 .section9 .education ul li a {
     text-decoration: none;
     color: #fff;
+    transition: all 0.2s ease;
 }
 
 .section9 .education-abroad ul li a:hover,
@@ -676,14 +756,71 @@ body, html {
   }
 }
 
+@media (max-width: 430px) {
+  .text-block {
+    width: 80%;
+  }
+
+  .section2 {
+    justify-content: center;
+  }
+
+  .row.left, .row.right {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .section9 {
+    gap: 70px
+  }
+  
+  .section9 .gen {
+    flex-wrap: wrap;
+    gap: 100px;
+    
+}
+}
+
+@media (max-width: 1130px) {
+  .section8-flex-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .section8-flex-row h1 {
+    text-align: center;
+  }
+
+  .text-field_ul {
+    width: 80% !important;
+  }
+}
+
+
+@media (max-width: 1586px) {
+  .section1 {
+    justify-content: center;
+    padding: 10vw;
+  }
+  .youtube-video {
+    width: 800px;
+  }
+}
+
 
 @media (max-width: 900px) {
+  
   .section4 .skills {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+    justify-content: center;
     gap: 16px;
     max-width: 90%;
-    padding: 0 20px;
   }
   .section4 .hard-skills,
   .section4 .soft-skills {
@@ -696,46 +833,58 @@ body, html {
     padding: 18px 10px;
   }
   .section4 h2 {
-    font-size: 22px;
-    margin-bottom: 12px;
+    font-size: 28px;
+
+    color: rebeccapurple;
   }
-  .section5 .population {
-    font-size: 24px;
-    padding: 20px 10px;
-  }
+  
 }
 
 @media (max-width: 650px) {
-  .section4 .skills {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
-    padding: 0 4vw;
-  }
-  .section4 .hard-skills,
-  .section4 .soft-skills {
-    width: 100%;
-    max-width: 80%;
-    font-size: 18px;
-  }
-  .section4 .hard-skills ul,
-  .section4 .soft-skills ul {
-    font-size: 16px;
-    padding: 12px 4px;
-  }
-  .section4 h1 {
-    font-size: 24px;
-    padding: 0 4vw;
-  }
-  .section4 h2 {
-    font-size: 18px;
-    margin-bottom: 8px;
-  }
+  
   .section5 .population {
     font-size: 16px;
     padding: 12px 4px;
   }
+
+  .ua-graph-div, .world-graph-div {
+    margin: 10px 30px;
+  }
+
+
+  .education, .education-abroad {
+    justify-content: center;
+  }
+
+  .section8-flex-row {
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .text-field_ul {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .text-field_ul li {
+    text-align: center !important;
+    font-size: 20px !important;
+  }
+
 }
+
+@media (max-width: 400px) {
+  .section5 .population {
+    font-size: 12px;
+    padding: 12px 12px;
+  }
+
+  .ua-graph-div, .world-graph-div {
+    margin: 10px;
+  }
+}
+
+
 @media (max-width: 830px) {
   .bg1, .bg2 {
     background-image: none;
