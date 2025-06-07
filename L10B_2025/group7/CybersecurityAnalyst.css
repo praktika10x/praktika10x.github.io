@@ -26,7 +26,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFD700;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,14 +43,14 @@ body {
     width: 40px;
     margin-right: 10px;
     border-radius: 50%;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #FFD700;
 }
 
 .logo-text {
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #FFD700;
 }
 
 .nav {
@@ -67,7 +67,7 @@ body {
 }
 
 .nav a:hover {
-    color: #CCCCCC;
+    color: #FFD700;
 }
 
 .nav a.active {
@@ -81,7 +81,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 3px;
-    background-color: #FFFFFF;
+    background-color: #FFD700;
     border-radius: 2px;
 }
 
@@ -98,7 +98,7 @@ body {
 }
 
 .language-switcher a:hover {
-    color: #CCCCCC;
+    color: #FFD700;
 }
 
 .hero-section {
@@ -117,14 +117,14 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 40px;
     border-radius: 10px;
-    border: 2px solid #FFFFFF;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    border: 2px solid #FFD700;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
 }
 
 .hero-content h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 3.5em;
-    color: #FFFFFF;
+    color: #FFD700;
     margin-bottom: 20px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -147,9 +147,9 @@ body {
 }
 
 .btn-primary {
-    background-color: #CCCCCC;
+    background-color: #FFD700;
     color: #000000;
-    border: 2px solid #CCCCCC;
+    border: 2px solid #FFD700;
 }
 
 .btn-primary:hover {
@@ -159,12 +159,12 @@ body {
 
 .btn-secondary {
     background-color: transparent;
-    color: #FFFFFF;
-    border: 2px solid #FFFFFF;
+    color: #FFD700;
+    border: 2px solid #FFD700;
 }
 
 .btn-secondary:hover {
-    background-color: #FFFFFF;
+    background-color: #FFD700;
     color: #000000;
     transform: translateY(-3px);
 }
@@ -194,7 +194,7 @@ section:last-of-type {
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 3.5em;
-    color: #FFFFFF;
+    color: #FFD700;
     text-align: center;
     margin-bottom: 30px;
     position: relative;
@@ -210,14 +210,14 @@ h1::after {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background-color: #FFFFFF;
+    background-color: #FFD700;
     border-radius: 2px;
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5em;
-    color: #FFFFFF;
+    color: #FFD700;
     text-align: center;
     margin-bottom: 30px;
     position: relative;
@@ -230,7 +230,7 @@ h2::after {
     display: block;
     width: 80px;
     height: 4px;
-    background-color: #FFFFFF;
+    background-color: #FFD700;
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -265,7 +265,7 @@ p {
 }
 
 strong {
-    color: #FFFFFF;
+    color: #FFD700;
 }
 
 .decorative-element {
@@ -279,7 +279,7 @@ strong {
     left: 10px;
     width: 100px;
     height: 100px;
-    background-color: #CCCCCC;
+    background-color: #FFD700;
     border-radius: 50%;
 }
 
@@ -330,11 +330,11 @@ strong {
 
 .card {
     background-color: #000000;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #FFD700;
     border-radius: 10px;
     padding: 30px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0;
     transform: translateY(20px);
@@ -353,14 +353,14 @@ strong {
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
 }
 
 .card .icon-circle {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #CCCCCC;
+    background-color: #FFD700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -400,7 +400,7 @@ strong {
 
 .info-block {
     background-color: #000000;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 215, 0, 0.3);
     border-radius: 8px;
     padding: 25px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
@@ -424,7 +424,7 @@ strong {
 
 .info-block:hover {
     transform: translateY(-5px);
-    border-color: #FFFFFF;
+    border-color: #FFD700;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -450,7 +450,7 @@ strong {
 .info-block h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4em;
-    color: #FFFFFF;
+    color: #FFD700;
     margin-bottom: 10px;
     margin-top: 0;
 }
@@ -476,7 +476,7 @@ strong {
 
 .tools-list .tool-item {
     background-color: #000000;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 215, 0, 0.3);
     border-radius: 15px;
     padding: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -512,13 +512,13 @@ strong {
     height: 50px;
     min-width: 50px;
     border-radius: 50%;
-    background-color: #CCCCCC;
+    background-color: #FFD700;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
     font-weight: bold;
-    color: #333333;
+    color: #000000;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     margin-right: 15px;
     transition: transform 0.3s ease;
@@ -563,11 +563,11 @@ strong {
 
 .product-item {
     background-color: #000000;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #FFD700;
     border-radius: 10px;
     padding: 25px;
     text-align: left;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0;
     transform: translateY(20px);
@@ -586,14 +586,14 @@ strong {
 
 .product-item:hover {
     transform: translateY(-8px);
-    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
 }
 
 .product-item .product-icon {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: #CCCCCC;
+    background-color: #FFD700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -629,8 +629,8 @@ strong {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
-    border: 2px solid #FFFFFF;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+    border: 2px solid #FFD700;
 }
 
 .university-list {
@@ -643,19 +643,19 @@ strong {
 
 .university-item {
     background-color: #000000;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #FFD700;
     border-radius: 10px;
     padding: 30px;
     text-align: center;
     text-decoration: none;
-    color: #333;
+    color: #000000;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0;
     transform: translateY(20px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
 }
 
 .animated-section.is-visible .university-item {
@@ -673,14 +673,14 @@ strong {
 
 .university-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
 }
 
 .university-item .uni-icon-circle {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-color: #CCCCCC;
+    background-color: #FFD700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -719,7 +719,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     margin-top: 50px;
-    border-top: 2px solid #FFFFFF;
+    border-top: 2px solid #FFD700;
     position: relative;
     z-index: 1;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
@@ -749,7 +749,7 @@ footer p {
     transform: translateY(-50%);
     font-size: 24px;
     text-decoration: none;
-    color: #FFFFFF;
+    color: #FFD700;
 }
 
 .sources-emoji:hover {
@@ -757,14 +757,14 @@ footer p {
 }
 
 .sources-link {
-    color: #FFFFFF;
+    color: #FFD700;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .sources-link:hover {
-    color: #CCCCCC;
+    color: #FFFFFF;
 }
 
 .animated-section {
