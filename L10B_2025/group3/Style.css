@@ -174,12 +174,13 @@ h2:not(.subtitle)::after {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   background-image: url("фонгол.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height:60%;
+  height:50%;
 }
 .imgnav{
   width: 150px;
