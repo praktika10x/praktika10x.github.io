@@ -4,10 +4,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: #f0f0f0;
+    background-color: #000000; /* Загальний фон тепер чорний */
+    color: #ffffff; /* Загальний текст тепер білий */
     line-height: 1.6;
-    background-image: url('https://v1.pinimg.com/videos/mc/720p/00/f1/16/00f116593c4df7a0919e117965bf1293.mp4');
+    background-image: url('шлях_до_вашої_гіфки.gif'); /* Замініть на шлях до вашої GIF-ки */
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -180,7 +180,7 @@ body {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     margin-bottom: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #f0f0f0;
+    color: #ffffff; /* Текст в інфо-секції тепер білий */
 }
 
 .info-section:hover {
@@ -243,7 +243,7 @@ body {
     text-align: center;
     font-style: italic;
     margin-top: 20px;
-    color: #bbb;
+    color: #ffffff; /* Опис відео тепер білий */
 }
 
 .roadmap-grid {
@@ -263,7 +263,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #f0f0f0;
+    color: #ffffff; /* Текст в roadmap-item тепер білий */
 }
 
 .roadmap-item:hover {
@@ -285,7 +285,7 @@ body {
     position: absolute;
     top: -20px;
     left: 20px;
-    border: 3px solid #1a1a1a;
+    border: 3px solid #000000; /* Колір рамки кроку тепер чорний */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -299,7 +299,7 @@ body {
 
 .roadmap-item p {
     font-size: 1em;
-    color: #f0f0f0;
+    color: #ffffff; /* Текст параграфа в roadmap-item тепер білий */
     text-align: left;
 }
 
@@ -316,7 +316,7 @@ body {
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #f0f0f0;
+    color: #ffffff; /* Текст в duty-item тепер білий */
 }
 
 .duty-item:hover {
@@ -343,7 +343,7 @@ body {
 
 .duty-item p {
     font-size: 0.95em;
-    color: #f0f0f0;
+    color: #ffffff; /* Текст параграфа в duty-item тепер білий */
 }
 
 .tools-grid {
@@ -359,7 +359,7 @@ body {
     border-bottom: 4px solid #FFD700;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #f0f0f0;
+    color: #ffffff; /* Текст в tool-card тепер білий */
 }
 
 .tool-card:hover {
@@ -392,7 +392,7 @@ body {
 
 .tool-card p {
     font-size: 0.95em;
-    color: #f0f0f0;
+    color: #ffffff; /* Текст параграфа в tool-card тепер білий */
 }
 
 .products-list {
@@ -408,7 +408,7 @@ body {
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #f0f0f0;
+    color: #ffffff; /* Текст в product-card тепер білий */
 }
 
 .product-card:hover {
@@ -432,7 +432,7 @@ body {
 
 .product-card p {
     font-size: 0.95em;
-    color: #f0f0f0;
+    color: #ffffff; /* Текст параграфа в product-card тепер білий */
 }
 
 .salary-table-container {
@@ -463,7 +463,7 @@ body {
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid #333;
-    color: #f0f0f0;
+    color: #ffffff; /* Текст таблиці тепер білий */
 }
 
 .salary-table-container th {
@@ -496,7 +496,7 @@ body {
 
 .image-caption {
     font-style: italic;
-    color: #bbb;
+    color: #ffffff; /* Підпис зображення тепер білий */
     margin-top: 10px;
 }
 
@@ -515,7 +515,7 @@ body {
     display: flex;
     align-items: flex-start;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #f0f0f0;
+    color: #ffffff; /* Текст в university-item тепер білий */
 }
 
 .university-item:hover {
@@ -548,7 +548,7 @@ body {
 
 .university-details p {
     font-size: 0.95em;
-    color: #f0f0f0;
+    color: #ffffff; /* Текст параграфа в university-details тепер білий */
     margin-bottom: 8px;
 }
 
@@ -587,7 +587,7 @@ body {
     min-width: 350px;
     max-width: 550px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #f0f0f0;
+    color: #ffffff; /* Текст в pros/cons-card тепер білий */
 }
 
 .pros-card:hover,
@@ -598,7 +598,7 @@ body {
 
 .pros-card h3 {
     font-family: 'Roboto', sans-serif;
-    color: #8aff8a; 
+    color: #8aff8a;
     font-size: 1.8em;
     margin-bottom: 20px;
     text-align: center;
@@ -606,7 +606,7 @@ body {
 
 .cons-card h3 {
     font-family: 'Roboto', sans-serif;
-    color: #ff8a8a; 
+    color: #ff8a8a;
     font-size: 1.8em;
     margin-bottom: 20px;
     text-align: center;
