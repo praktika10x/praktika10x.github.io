@@ -1,15 +1,4 @@
-const changeLangUaButton = document.querySelector('.change-lang-ua');
-const changeLangEnButton = document.querySelector('.change-lang-en');
 
-changeLangUaButton.addEventListener('click', () => {
-   changeLangUaButton.classList.add('change-lang-ua-active');
-   changeLangEnButton.classList.remove('change-lang-en-active');
-});
-
-changeLangEnButton.addEventListener('click', () => {
-   changeLangEnButton.classList.add('change-lang-en-active');
-   changeLangUaButton.classList.remove('change-lang-ua-active');
-});
 
 
 
@@ -643,8 +632,16 @@ function changeLanguage(lang) {
             el.innerHTML = langArr[key][lang];
         });
     }
-}
 
+    
+    if (lang === 'ua') {
+        changeLangUaButton.classList.add('change-lang-ua-active');
+        changeLangEnButton.classList.remove('change-lang-en-active');
+    } else {
+        changeLangEnButton.classList.add('change-lang-en-active');
+        changeLangUaButton.classList.remove('change-lang-ua-active');
+    }
+}
 
 window.addEventListener("load", () => {
     const savedLang = localStorage.getItem('site-lang') || 'ua';
