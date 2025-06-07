@@ -590,4 +590,16 @@ Mobile adaptation
     margin: 20px 10px;
     font-weight: 100;
   }
+  
+  h2{    
+  font-family: Tektur, sans-serif;
+  font-weight: 64;
+  font-style: normal;
+  color: #261374;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 15px 10%;
+  padding-top: 55px;
+  text-align: left;
+}
 }
