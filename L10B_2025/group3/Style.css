@@ -65,16 +65,17 @@ body {
 }
 .nav-link .anav {
   display: block;
-  padding: 8px 16px;
-  text-align: left; 
+  padding: 12px 20px;
+  text-align: left;
   color: #ffffff;
   text-decoration: none;
   background-color: #261374;
   font-family: "Press Start 2P", system-ui;
-  margin:20px 80px 0 0 ;
+  margin: 0;
   width: 100%;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
+
 
 .nav-link .anav:hover {
   color: #F5BB47;
@@ -120,23 +121,26 @@ body {
 .nav:hover{
   left: 0;
 }
-
 .nav-links {
-    display: flex;
-    flex-direction: column; /* Встановити вертикальне розташування */
-    align-items: flex-start; /* Вирівняти елементи по лівому краю */
-    gap: 10px; /* Відстань між елементами */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.ulnav {
   display: flex;
   justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 10% 0 0 0; 
+  margin-top: 30%; /* Зсуває блок вниз на 30% висоти батьківського елемента */
 }
+
+
+.ulnav {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 6;
+  display: flex;
+  flex-direction: column; /* Розташовує посилання вертикально */
+  justify-content: center;
+  align-items: flex-start; /* Щоб текст починався зліва */
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+  gap: 20px; /* Відстань між пунктами */
+}
+
 /*ТЕКСТ ГОЛОВНА*/
 span{
   font-family: "Tektur", sans-serif;
