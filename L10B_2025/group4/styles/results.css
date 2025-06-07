@@ -1,0 +1,278 @@
+
+.results-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+  }
+  
+  .results-header {
+    padding: var(--space-6) var(--space-4) var(--space-4);
+    text-align: center;
+    background-color: var(--color-bg-primary);
+    border-bottom: 1px solid rgb(83, 115, 168);
+  }
+  
+  .results-header h1 {
+    font-size: var(--font-size-4xl);
+    font-weight: bold;
+    margin-bottom: var(--space-4);
+    color: var(--color-text-primary);
+    line-height: 1;
+  }
+  
+  .results-intro {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    margin: 0;
+    line-height: 1.6;
+    font-family: var(--font-family-mono);
+    font-weight: bold;
+  }
+  
+  #userNameDisplay {
+    color: var(--color-text-primary);
+    font-weight: bold;
+  }
+  
+  .results-content {
+    flex: 1;
+    padding: var(--space-6) var(--space-4);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 0;
+    overflow-y: auto;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.8)    
+    ),
+    url('../public/code_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .kaleidoscope {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-4);
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .profession-card {
+    background: var(--gradient-primary);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 2px solid rgb(39, 49, 115);
+    transition: var(--transition-normal);
+  }
+  
+  .profession-card:hover {
+    border: 2px dashed white;
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+  
+  .profession-title {
+    font-weight: bold;
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-3);
+    color: var(--color-text-primary);
+    line-height: 1;
+    font-family: var(--font-family);
+  }
+  
+  .profession-subtitle {
+    font-weight: bold;
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    font-family: var(--font-family-mono);
+  }
+  
+  .salary {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: var(--space-3);
+  }
+  
+  .dollar {
+    font-family: var(--font-family-mono);
+    font-weight: bold;
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-primary);
+    line-height: 1;
+  }
+  
+  .amount {
+    font-family: var(--font-family-mono);
+    font-weight: bold;
+    font-size: var(--font-size-xl);
+    color: var(--color-text-primary);
+    line-height: 1;
+  }
+  
+  .career-levels {
+    margin-top: var(--space-4);
+    padding: var(--space-3);
+    border: 2px dashed white;
+    border-radius: var(--radius-lg);
+    background: var(--gradient-primary);
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-2);
+  }
+  
+  .level {
+    flex: 1;
+    text-align: center;
+    font-family: var(--font-family-mono);
+    font-weight: bold;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    line-height: 1;
+  }
+  
+  .skills {
+    margin-top: var(--space-4);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: left;
+  }
+  
+  .skill-badge {
+    padding: 0.25rem 0.5rem;
+    background: var(--gradient-secondary);
+    border-radius: var(--radius-md);
+    font-family: var(--font-family-mono);
+    font-weight: bold;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-primary);
+    line-height: 1;
+    white-space: nowrap;
+  }
+  
+  
+  .profession-card:nth-child(odd) { 
+    background: var(--gradient-primary);
+  }
+  .profession-card:nth-child(even) { 
+    background: var(--gradient-secondary);
+  }
+  
+  .results-footer {
+    padding: var(--space-4);
+    background-color: var(--color-bg-primary);
+    border-top: 2px solid white;
+  }
+  
+  .navigation-links {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+  
+  .back-link {
+    flex: 1;
+    padding: var(--space-4);
+    border-radius: 15px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: var(--font-size-lg);
+    cursor: pointer;
+    transition: var(--transition-normal);
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .no-matches {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: var(--space-8);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-lg);
+    background: var(--gradient-primary);
+    border-radius: var(--radius-lg);
+    border: 2px dashed white;
+    font-family: var(--font-family-mono);
+    font-weight: bold;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .results-header {
+      padding: var(--space-4) var(--space-3) var(--space-3);
+    }
+    
+    .results-header h1 {
+      font-size: var(--font-size-3xl);
+    }
+    
+    .results-intro {
+      font-size: var(--font-size-md);
+    }
+    
+    .results-content {
+      padding: var(--space-4) var(--space-3);
+    }
+    
+    .kaleidoscope {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: var(--space-3);
+    }
+    
+    .profession-card {
+      min-height: 140px;
+      padding: var(--space-4);
+    }
+    
+    .profession-title {
+      font-size: var(--font-size-xl);
+    }
+    
+    .navigation-links {
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .kaleidoscope {
+      grid-template-columns: 1fr;
+    }
+    
+    .profession-card {
+      min-height: 120px;
+    }
+    
+    .navigation-links {
+      flex-direction: column;
+    }
+    
+    .back-link {
+      padding: var(--space-3) var(--space-4);
+    }
+    
+    .results-footer {
+      padding: var(--space-3);
+    }
+  }

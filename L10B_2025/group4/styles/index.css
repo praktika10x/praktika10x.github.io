@@ -1,0 +1,203 @@
+.homepage-container {
+    min-height: 100vh;
+    padding: 80px var(--space-4) var(--space-4);
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.8)    
+    ),
+    url('../public/code_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 main card5"
+      "card6 card7 card8";
+    gap: var(--space-4);
+    min-height: calc(100vh - 160px);
+    align-items: stretch;
+  }
+  
+  .profession-card {
+    background: var(--gradient-secondary);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    min-height: 140px;
+    display: flex;
+    border: 2px solid rgb(39, 49, 115);
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  .profession-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    border: 2px dashed white;
+  }
+  
+  .profession-card h3 {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-md);
+    margin-bottom: var(--space-2);
+    font-weight: bold;
+    font-family: var(--font-family-mono);
+  }
+  
+  .profession-card p {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-sm);
+    margin: 0;
+    line-height: 1.4;
+    font-family: var(--font-family-mono);
+    font-weight: bold;
+  }
+  
+  
+  .main-grid .profession-card:nth-child(1) { grid-area: card1; }
+  .main-grid .profession-card:nth-child(2) { grid-area: card2; }
+  .main-grid .profession-card:nth-child(3) { grid-area: card3; }
+  .main-grid .profession-card:nth-child(4) { grid-area: card4; }
+  .main-grid .profession-card:nth-child(6) { grid-area: card5; }
+  .main-grid .profession-card:nth-child(7) { grid-area: card6; }
+  .main-grid .profession-card:nth-child(8) { grid-area: card7; }
+  .main-grid .profession-card:nth-child(9) { grid-area: card8; }
+  
+  .central-content {
+    grid-area: main;
+    background-color: var(--color-bg-primary);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8);
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+    border: 2px solid white;
+  }
+  
+  .central-content h1 {
+    font-size: var(--font-size-4xl);
+    font-weight: bold;
+    margin-bottom: var(--space-4);
+    color: var(--color-text-primary);
+    line-height: 1;
+  }
+  
+  .central-content p {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-6);
+    line-height: 1.6;
+    font-family: var(--font-family-mono);
+    font-weight: bold;
+  }
+  
+  .central-content .btn-primary {
+    font-size: var(--font-size-xl);
+    padding: var(--space-4) var(--space-8);
+    margin: 0 auto;
+    max-width: 200px;
+  }
+  
+  .extra-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+  }
+  
+  .extra-cards .profession-card {
+    background: var(--gradient-primary);
+  }
+  
+  @media (max-width: 768px) {
+    .main-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "card1 card2"
+        "main main"
+        "card3 card4";
+      gap: var(--space-3);
+    }
+    
+    .main-grid .profession-card:nth-child(1) { grid-area: card1; }
+    .main-grid .profession-card:nth-child(2) { grid-area: card2; }
+    .main-grid .profession-card:nth-child(3) { grid-area: card3; }
+    .main-grid .profession-card:nth-child(4) { grid-area: card4; }
+    .main-grid .profession-card:nth-child(n+5) { grid-area: unset; }
+    
+    .profession-card {
+      padding: var(--space-3);
+      min-height: 120px;
+    }
+    
+    .profession-card h3 {
+      font-size: var(--font-size-sm);
+    }
+    
+    .profession-card p {
+      font-size: var(--font-size-xs);
+    }
+    
+    .central-content {
+      padding: var(--space-6);
+      min-height: 250px;
+    }
+    
+    .central-content h1 {
+      font-size: var(--font-size-3xl);
+    }
+    
+    .central-content p {
+      font-size: var(--font-size-md);
+    }
+    
+    .extra-cards {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-grid {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "card1"
+        "main"
+        "card2";
+    }
+    
+    .main-grid .profession-card:nth-child(1) { grid-area: card1; }
+    .main-grid .profession-card:nth-child(2) { grid-area: card2; }
+    .main-grid .profession-card:nth-child(n+3) { grid-area: unset; }
+    
+    .profession-card {
+      min-height: 100px;
+    }
+    
+    .central-content {
+      padding: var(--space-4);
+      min-height: 200px;
+    }
+    
+    .central-content h1 {
+      font-size: var(--font-size-2xl);
+    }
+    
+    .central-content p {
+      font-size: var(--font-size-sm);
+    }
+    
+    .extra-cards {
+      grid-template-columns: 1fr;
+    }
+  }
