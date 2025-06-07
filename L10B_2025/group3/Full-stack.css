@@ -10,8 +10,6 @@ html, body {
 
 /* === BODY === */
 body {
-  background-color: #f4f4f4;
-  color: #000;
   max-width: 100%;
   overflow-x: hidden;
   padding-top: 75px; /* Відступ для fixed header */
