@@ -663,30 +663,31 @@ li {
 footer {
     background-color: #222222;
     color: #F5F5F5;
-    padding: 20px 30px;
+    padding: 30px;
     margin-top: 60px;
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 footer .team-info {
     margin-bottom: 0;
-    text-align: center;
-    width: 100%;
+    text-align: left;
+    flex-basis: 100%;
     color: #CCCCCC;
 }
 
-.footer-content-wrapper {
+.footer-bottom-row {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -694,9 +695,8 @@ footer .team-info {
     display: flex;
     justify-content: center;
     gap: 25px;
-    flex-wrap: wrap;
     flex-grow: 1;
-    min-width: 280px; /* Додано для контролю ширини на мобільних */
+    flex-wrap: wrap;
 }
 
 .team-member {
@@ -727,17 +727,10 @@ footer .team-info {
     border-color: #FFFACD;
 }
 
-.footer-links-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
 .lyceum-info {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 15px;
 }
 
 .lyceum-logo {
@@ -775,29 +768,58 @@ footer .team-info {
     color: #444444;
 }
 
+/* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideInUp {
-    from { transform: translateY(30px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes slideInRight {
-    from { transform: translateX(50px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @keyframes scaleIn {
-    from { transform: scale(0.8); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInUp {
-    from { transform: translateY(30px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .animated-section:not(.is-visible) {
@@ -892,6 +914,7 @@ footer .team-info {
     animation-delay: 0.5s;
 }
 
+/* Media Queries for general elements */
 @media (max-width: 1200px) {
     .project-page .container {
         padding: 30px;
@@ -980,31 +1003,32 @@ footer .team-info {
         height: 80px;
     }
     footer {
-        padding: 15px 20px;
-        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding: 20px;
     }
     footer .team-info {
-        text-align: center;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
     }
-    .footer-content-wrapper {
+    .footer-bottom-row {
         flex-direction: column;
+        align-items: flex-start;
         gap: 15px;
     }
     .team-members {
-        justify-content: center;
+        justify-content: flex-start;
         width: 100%;
-        gap: 15px;
-    }
-    .footer-links-group {
-        width: 100%;
+        gap: 20px;
     }
     .lyceum-info {
         width: 100%;
-        justify-content: center;
+        justify-content: flex-start;
     }
     .sources-btn {
-        width: 100%;
-        justify-content: center;
+        align-self: flex-end;
         font-size: 14px;
         padding: 10px 20px;
     }
