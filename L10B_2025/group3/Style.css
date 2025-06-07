@@ -284,6 +284,7 @@ body {
     box-sizing: border-box; 
     position: fixed;
     top: 90vh; 
+    left:50%;
   }
 
   .btn:hover {
