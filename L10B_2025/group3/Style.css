@@ -269,9 +269,6 @@ a{
 body {
     background-color: var(--bkg-color);
 }
-.bn {
-    justify-content: center;
-  }
 .btn {
     background-color: #954baa;
     color: white;
