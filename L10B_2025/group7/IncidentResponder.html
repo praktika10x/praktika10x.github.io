@@ -19,13 +19,26 @@
             background-size: cover;
             filter: brightness(0.5);
         }
+        .video-middle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+            padding: 20px;
+        }
+        .video-middle-container iframe {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            border: 2px solid #FFD700;
+        }
     </style>
 </head>
 <body class="ir-page">
 
     <video autoplay muted loop id="fullScreenVideoBackground">
         <source src="https://v1.pinimg.com/videos/mc/720p/00/f1/16/00f116593c4df7a0919e117965bf1293.mp4" type="video/mp4">
-        Ваш браузер не підтримує тег video.
     </video>
 
     <div class="header-main">
@@ -361,6 +374,10 @@
                 </tbody>
             </table>
         </section>
+
+        <div class="video-middle-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
 
     </div>
 
