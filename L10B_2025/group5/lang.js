@@ -156,8 +156,8 @@ const langArr = {
         "en": "Development"
     },
     "MLOPS-section4-Skills-h1": {
-    "ua": "⚙ Які навички потрібні MLOps інжинеру",
-    "en": "⚙ What Skills Are Needed for an MLOps Engineer"
+    "ua": "⚙ Які навички потрібні MLOps-інженеру?",
+    "en": "⚙ What Skills Are Needed for an MLOps Engineer?"
     },
     "MLOPS-section4-Skills-h2-1": {
         "ua": "Технічні навички (Hard Skills):",
