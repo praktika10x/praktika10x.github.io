@@ -103,20 +103,23 @@ body {
   margin: 8px;
   justify-self: end;
 }
-.nav{
-  position: fixed;
-  margin: 0;
-  left: -300px; 
-  width: 20%;
-  height: 100vh;
-  background-color: #261374;
-  padding: 20px 10px;
-  transition: left 0.3s ease;
-  z-index: 1000;
-  list-style: none;
-  align-items: start;
-  justify-content: center; 
-  align-items: center;     
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: #261374; /* Синій фон */
+    display: flex;
+    justify-content: flex-end; /* Вирівнювання по правому краю */
+    align-items: center; 
+    box-sizing: border-box;
+}
+
+.links {
+    display: flex;
+    flex-direction: row; /* Дозволити горизонтальне розташування */
+    gap: 20px; /* Відстань між елементами */
+    list-style: none;
+    padding: 0;
+    margin: 0 20px; /* Додати відступи по краях для дистанції */
 }
 .nav:hover{
   left: 0;
