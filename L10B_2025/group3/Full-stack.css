@@ -217,6 +217,9 @@ body {
 .intro {
   background-image: url(фон2.jpg);
 }
+.intro2 {
+  background-image: url(фул1.png);
+}
 
 /* === TYPOGRAPHY === */
 h1 {
