@@ -371,8 +371,8 @@ const langArr = {
         "en": "Education"
     },
     "nav-professions": {
-        "ua": "Професії",
-        "en": "Professions"
+        "ua": "Професії ‎‎<span class='categories-list-triangle'> ◀</span>",
+        "en": "Professions ‎‎<span class='categories-list-triangle'> ◀</span>"
     },
     "nav-profession1": {
         "ua": "Data Analyst",
