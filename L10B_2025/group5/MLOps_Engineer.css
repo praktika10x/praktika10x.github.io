@@ -759,9 +759,9 @@ body, html {
 
 @media (min-width: 1200px) {
   .population {
-     height: 400px;
-     width: 800px;
-     font-size: 26px;
+     height: 400px !important;
+     width: 800px !important;
+     font-size: 26px !important;
   }
 }
 
