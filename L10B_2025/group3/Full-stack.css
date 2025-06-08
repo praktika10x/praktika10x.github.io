@@ -506,7 +506,7 @@ body {
   .intro1, .intro2, .intro {
     height: 280px; /* зменшено з 320px */
     padding-top: 15px;
-    margin-bottom: 50px; /* додано відступ */
+    margin-bottom: 70px; /* додано відступ */
   }
 
   h2 {
@@ -533,7 +533,7 @@ body {
 
   .main p {
     margin: 15px 5%;
-    font-size: 12px;
+    font-size: 17px;
     line-height: 1.4;
   }
 
