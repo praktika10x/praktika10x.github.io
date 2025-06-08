@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="front update v6">
-      <change afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/img/cv1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/img/cv2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/img/cv3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/img/dl1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/img/dl2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/img/dl3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/img/dl4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/img/nlp2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/img/nlp3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/page2.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/page3.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" afterDir="false" />
     </list>
     <list id="f1ab00e0-7278-4685-bbc4-952ba86327f0" name="don't commit" comment="">
       <change beforePath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" afterDir="false" />
@@ -286,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749419575013</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="front update v6">
+      <option name="closed" value="true" />
+      <created>1749420768102</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1749420768102</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
