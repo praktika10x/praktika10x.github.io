@@ -245,12 +245,18 @@
                   localStorage.setItem('theme', newTheme);
                   btn.textContent = newTheme === 'light' ? '🌙' : '☀️';
                 });
-          const menuBtn = document.querySelector(".menu-button");
-          const menu = document.querySelector(".navdiv");
-          menuBtn.addEventListener("click", function(){
-              menu.classList.toggle("active");
-              menuBtn.classList.toggle("active");
-          })
+          document.addEventListener('DOMContentLoaded', function () {
+    const menuButton = document.querySelector('.menu-button');
+    const nav = document.querySelector('.navdiv');
+
+    menuButton.addEventListener('click', function () {
+      menuButton.classList.toggle('active');
+      nav.classList.toggle('active');
+
+      const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', !expanded);
+    });
+  });
       </script>
     </body>
     </html>
