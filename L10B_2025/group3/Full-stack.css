@@ -489,7 +489,7 @@ body {
   left:75%;
   width: 50%;
   height: 50%;
-  background: white;
+  background: #000;
   transform: translateY(-100%);
   transition: transform 0.5s;
   z-index: 1000;
