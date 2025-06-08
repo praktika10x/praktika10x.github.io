@@ -486,9 +486,9 @@ body {
 .navdiv {
   position: fixed;
   top:0;
-  left:85%;
-  width: 100%;
-  height: 100%;
+  left:75%;
+  width: 50%;
+  height: 50%;
   background: white;
   transform: translateY(-100%);
   transition: transform 0.5s;
