@@ -483,7 +483,7 @@ body {
   body {
     padding-top: 60px;
   }
-
+  
   .header {
     height: 60px;
     padding: 0 15px;
@@ -504,7 +504,7 @@ body {
   }
 
   .intro1, .intro2, .intro {
-    height: 280px; /* зменшено з 320px */
+    height: 250px; /* зменшено з 320px */
     padding-top: 15px;
     margin-bottom: 40px; /* додано відступ */
   }
