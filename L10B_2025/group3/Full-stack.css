@@ -489,7 +489,7 @@ body {
   left:55%;
   width: 45%;
   height: 50%;
-  background: #000;
+  background: #261374;
   transform: translateY(-100%);
   transition: transform 0.5s;
   z-index: 1000;
@@ -499,6 +499,8 @@ body {
     transform: translateY(12%);
     flex-direction: column;
     flex-wrap: wrap;
+    display: flex;
+  justify-content: center;
   }
   .nav-links{
     flex-direction: column;
