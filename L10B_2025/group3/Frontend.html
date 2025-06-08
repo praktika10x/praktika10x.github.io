@@ -15,16 +15,19 @@
                   <div class="header-logo">
                       <img src="Project-img/SVG/ПроектЛого.svg" class="eniac" />
                   </div>
-                  <div class="navdiv"><ul class="nav-links">
-                     <li> <a href="#essence">Сутність професії</a> </li>
-                     <li>  <a href="#knowledge">Специфічні знання та вимоги</a> </li>
-                     <li> <a href="#tools">Основні інструменти</a> </li>
-                     <li><a href="#product">Продукти</a></li>
-                     <li> <a href="#demand">Затребуваність</a></li>
-                     <li> <a href="#salary">Заробітня плата</a></li>
-                     <li>  <a href="#educational">Заклади освіти</a></li>
-                     <li>  <a href="#Djerela">Джерела інформації</a></li>
-                  </ul></div>
+                            <button class="menu-button" type="button" aria-label="close" aria-controls="navigation" aria-expanded="false" onclick="toggleMenu();"></button>
+                  <nav class="navdiv" id="navigation">
+                      <ul class="nav-links">
+                         <li> <a href="#essence" class="menu-link">Сутність професії</a> </li>
+                         <li>  <a href="#knowledge" class="menu-link">Специфічні знання та вимоги</a> </li>
+                         <li> <a href="#tools" class="menu-link">Основні інструменти</a> </li>
+                         <li><a href="#product" class="menu-link">Продукти</a></li>
+                         <li> <a href="#demand" class="menu-link">Затребуваність</a></li>
+                         <li> <a href="#salary" class="menu-link">Заробітня плата</a></li>
+                         <li>  <a href="#educational" class="menu-link">Заклади освіти</a></li>
+                         <li>  <a href="#Djerela" class="menu-link">Джерела інформації</a></li>
+                      </ul>
+                  </nav>
               </div>
       
               <div class="intro1">
@@ -205,33 +208,45 @@
 
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
-          document.addEventListener('DOMContentLoaded', function () {
-            const swiper = new Swiper('.swiper', {
-              direction: 'horizontal',
-              loop: true,
-              pagination: {
-                el: '.swiper-pagination',
-              },
-              navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              },
-            });
-          });
-                 const btn = document.getElementById('themeToggle');
-                const html = document.documentElement;
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const swiper = new Swiper('.swiper', {
+          direction: 'horizontal',
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      });
+           const btn = document.getElementById('themeToggle');
+              const html = document.documentElement;
 
-                const currentTheme = localStorage.getItem('theme') || 'light';
-                html.setAttribute('data-theme', currentTheme);
-                btn.textContent = currentTheme === 'light' ? '🌙' : '☀️';
+              const currentTheme = localStorage.getItem('theme') || 'light';
+              html.setAttribute('data-theme', currentTheme);
+              btn.textContent = currentTheme === 'light' ? '🌙' : '☀️';
 
-                btn.addEventListener('click', () => {
-                  const newTheme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-                  html.setAttribute('data-theme', newTheme);
-                  localStorage.setItem('theme', newTheme);
-                  btn.textContent = newTheme === 'light' ? '🌙' : '☀️';
-                });
-        </script>
-      </body>
-      </html>
+              btn.addEventListener('click', () => {
+                const newTheme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+                html.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                btn.textContent = newTheme === 'light' ? '🌙' : '☀️';
+              });
+        function toggleMenu() {
+          const nav = document.querySelector('.navdiv');
+          nav.classList.toggle('active');
+
+        }
+
+        document.body.addEventListener('click', () => {
+          const nav = document.querySelector('.navdiv');
+          if (nav.classList.contains('active')) {
+            nav.classList.remove('active');
+          }
+        });
+    </script>
+  </body>
+  </html>
