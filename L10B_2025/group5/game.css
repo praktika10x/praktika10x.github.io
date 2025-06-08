@@ -36,6 +36,11 @@ button {
   opacity: 0.98;
 }
 
+.move-image {
+    height: 50px;
+    width: 50px;
+  }
+
 
 @media (min-width: 1000px) {
   .game-container {
