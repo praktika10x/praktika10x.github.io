@@ -2,12 +2,14 @@
   --bg-color: #ffffff;
   --text-color: #000000;
   --card-bg: #f0f0f0;
+  --card-button-text: #ffffff;
 }
 
 body.dark {
   --bg-color: #121212;
   --text-color: #ffffff;
   --card-bg: #1f1f1f;
+  --card-button-text: #ffffff;
 }
 
 html, body {
@@ -356,4 +358,33 @@ footer > div:nth-child(3) {
   .text-card-row .text-card {
     flex: 1 1 100%;
   }
+}
+
+.card-gradient {
+  display: block;
+  text-decoration: none;
+  background: linear-gradient(45deg, #312e81, #3f3cbb, #134e4a, #4c1d95, #0f766e);
+  background-size: 400% 400%;
+  animation: moveGradients 8s ease-in-out infinite;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  max-width: 400px;
+  margin: 1.5rem auto 0;
+  color: var(--card-button-text);
+}
+
+.card-gradient:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.card-gradient-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: inherit;
+  margin: 0;
 }

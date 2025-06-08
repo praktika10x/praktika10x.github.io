@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="Update index.html and style.css">
+    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="global update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AI_Profession/main/static/main/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI_Profession/main/static/main/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/page2.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page2.html" afterDir="false" />
@@ -224,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749248275169</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="global update">
+      <option name="closed" value="true" />
+      <created>1749320089273</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1749320089273</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -276,6 +285,7 @@
     <MESSAGE value="New page V1" />
     <MESSAGE value="New page V2" />
     <MESSAGE value="Update index.html and style.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update index.html and style.css" />
+    <MESSAGE value="global update" />
+    <option name="LAST_COMMIT_MESSAGE" value="global update" />
   </component>
 </project>
