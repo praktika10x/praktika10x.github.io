@@ -485,12 +485,10 @@ body {
   }
 .navdiv {
   position: fixed;
-  display: flex;
-  flex-wrap: wrap;
   top:0;
-  left:75%;
-  width: 50%;
-  height: 50%;
+  left:55%;
+  width: 45%;
+  height: 80%;
   background: #000;
   transform: translateY(-100%);
   transition: transform 0.5s;
@@ -499,6 +497,12 @@ body {
 
   .navdiv.active{
     transform: translateY(0%);
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .nav-links{
+    flex-direction: column;
+  flex-wrap: wrap;
   }
   
   .menu-link{
