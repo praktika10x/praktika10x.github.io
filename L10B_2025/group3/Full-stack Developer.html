@@ -245,20 +245,18 @@
                   localStorage.setItem('theme', newTheme);
                   btn.textContent = newTheme === 'light' ? '🌙' : '☀️';
                 });
-          document.addEventListener('DOMContentLoaded', function () {
-    const menuButton = document.querySelector('.menu-button');
-    const nav = document.querySelector('.navdiv');
+          function toggleMenu() {
+            const nav = document.querySelector('.navdiv');
+            nav.classList.toggle('active');
+          
+          }
 
-              
-    menuButton.addEventListener('click', function () {
-        console.log("Кнопка натиснута");
-      menuButton.classList.toggle('active');
-      nav.classList.toggle('active');
-
-      const expanded = menuButton.getAttribute('aria-expanded') === 'true';
-      menuButton.setAttribute('aria-expanded', !expanded);
-    });
-  });
+          document.body.addEventListener('click', () => {
+            const nav = document.querySelector('.navdiv');
+            if (nav.classList.contains('active')) {
+              nav.classList.remove('active');
+            }
+          });
       </script>
     </body>
     </html>
