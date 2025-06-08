@@ -116,7 +116,7 @@ body {
 }
 
 /* === TYPOGRAPHY === */
-h1:not(.footer-h1) {
+h1 {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
