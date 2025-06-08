@@ -1,0 +1,583 @@
+Index: AI_Profession/main/templates/main/page1.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Title</title>\r\n</head>\r\n<body>\r\n<p1>Не все дома</p1>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/AI_Profession/main/templates/main/page1.html b/AI_Profession/main/templates/main/page1.html
+--- a/AI_Profession/main/templates/main/page1.html	(revision f7bbb41f450814423b33dceb41251dbfcccad656)
++++ b/AI_Profession/main/templates/main/page1.html	(date 1749319832788)
+@@ -1,10 +1,104 @@
++{% load static %}
+ <!DOCTYPE html>
+-<html lang="en">
++<html lang="uk">
+ <head>
+-    <meta charset="UTF-8">
+-    <title>Title</title>
++  <meta charset="UTF-8" />
++  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
++  <title>NLP Engineer</title>
++  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+ </head>
+ <body>
+-<p1>Не все дома</p1>
++  <header id="header" class="animated-gradient">
++    <div class="theme-switch-wrapper">
++      <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
++        <div class="switch-thumb"></div>
++        <span class="icon sun"><img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема"></span>
++        <span class="icon moon"><img src="{% static 'main/img/moon.png' %}" alt="Темна тема"></span>
++      </div>
++    </div>
++    <h1 id="title">NLP Engineer</h1>
++  </header>
++
++  <main>
++    <section class="info-section">
++      <div class="info-text">
++        <h2>Загальний опис професії</h2>
++        <p>NLP-інженер створює системи, які дозволяють машинам аналізувати, розуміти і генерувати природну мову. Це поєднання лінгвістики, штучного інтелекту та програмування.</p>
++      </div>
++      <div class="info-image">
++        <img src="{% static 'main/img/nlp1.jpg' %}" alt="NLP Image">
++      </div>
++    </section>
++
++    <section class="info-section">
++      <div class="info-image">
++        <img src="{% static 'main/img/nlp1.jpg' %}" alt="Фото NLP">
++      </div>
++      <div class="info-text">
++        <h2>Де працює NLP-інженер?</h2>
++        <p>У великих IT-компаніях, стартапах, дослідницьких центрах — скрізь, де потрібно автоматизувати обробку текстових або голосових даних.</p>
++      </div>
++    </section>
++
++    <section>
++      <div class="text-card">
++        <h2>Основні обов’язки NLP-інженера</h2>
++        <p>
++          Серед основних завдань — R&D, очищення та токенізація даних, побудова моделей машинного навчання, тестування, розгортання в продакшн і співпраця з іншими командами.
++        </p>
++      </div>
++    </section>
++
++    <section class="text-card-row">
++      <div class="text-card">
++        <h2>Що таке токен?</h2>
++        <p>
++          Токен — це елементарна одиниця тексту. Наприклад, речення “I love NLP” може бути розбите на ["I", "love", "NLP"].
++        </p>
++      </div>
++      <div class="text-card">
++        <h2>BPE та GPT</h2>
++        <p>
++          GPT використовує байто-орієнтовану токенізацію на основі BPE (Byte Pair Encoding), яка дозволяє ефективно працювати з рідкісними словами.
++        </p>
++      </div>
++    </section>
++
++    <section>
++      <div class="text-card">
++        <h2>Кар’єра та зарплати</h2>
++        <p>
++          У США середня зарплата NLP-інженера — $123K, у FAANG-компаніях — понад $200K. В Україні — нижча, але попит швидко зростає.
++        </p>
++      </div>
++    </section>
++  </main>
++
++
++  <footer>
++    <div>
++      <h4>Автори сайту</h4>
++      <p>П. Бакун, К. Гречка, Б. Підгорний</p>
++    </div>
++    <div>
++      <h4>Контакти</h4>
++      <p>Email: peter.d.bakun@gmail.com</p>
++      <p>Телефон: +380 68 228 1337</p>
++    </div>
++    <div class="footer-theme">
++      <h4>Тема</h4>
++      <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
++        <div class="switch-thumb"></div>
++        <span class="icon sun">
++          <img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема">
++        </span>
++        <span class="icon moon">
++          <img src="{% static 'main/img/moon.png' %}" alt="Темна тема">
++        </span>
++      </div>
++    </div>
++  </footer>
++
++  <script src="{% static 'main/js/script.js' %}"></script>
+ </body>
+ </html>
+\ No newline at end of file
+Index: AI_Profession/main/templates/main/page2.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Title</title>\r\n</head>\r\n<body>\r\n<p1>Выход в город</p1>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/AI_Profession/main/templates/main/page2.html b/AI_Profession/main/templates/main/page2.html
+--- a/AI_Profession/main/templates/main/page2.html	(revision f7bbb41f450814423b33dceb41251dbfcccad656)
++++ b/AI_Profession/main/templates/main/page2.html	(date 1749310149603)
+@@ -1,10 +1,63 @@
++{% load static %}
+ <!DOCTYPE html>
+-<html lang="en">
++<html lang="uk">
+ <head>
+-    <meta charset="UTF-8">
+-    <title>Title</title>
++  <meta charset="UTF-8" />
++  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
++  <title>Computer Vision Engineer</title>
++  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+ </head>
+ <body>
+-<p1>Выход в город</p1>
++  <header id="header" class="animated-gradient">
++    <div class="theme-switch-wrapper">
++      <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
++        <div class="switch-thumb"></div>
++        <span class="icon sun"><img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема"></span>
++        <span class="icon moon"><img src="{% static 'main/img/moon.png' %}" alt="Темна тема"></span>
++      </div>
++    </div>
++    <h1 id="title">Computer Vision Engineer</h1>
++  </header>
++
++  <main>
++    <section class="info-section">
++      <div class="info-text">
++        <h2>Фахівець із комп’ютерного зору</h2>
++        <p>
++          Computer Vision Engineer розробляє алгоритми, що дозволяють комп’ютерам "бачити" та інтерпретувати зображення чи відео.
++          Вони працюють над задачами розпізнавання об'єктів, сегментації, трекінгу, доповненої реальності, автоматичного водіння тощо.
++          <br><br>
++          У своїй роботі використовують бібліотеки OpenCV, TensorFlow, PyTorch, YOLO, Detectron2 та сучасні нейронні мережі.
++          <br><br>
++          Ця спеціальність поєднує програмування, математику, фізику та глибоке розуміння обробки зображень.
++        </p>
++      </div>
++      <div class="info-image">
++        <img src="{% static 'main/img/computer_vision.jpg' %}" alt="Computer Vision Illustration">
++      </div>
++    </section>
++  </main>
++
++  <footer>
++    <div>
++      <h4>Автори сайту</h4>
++      <p>П. Бакун, К. Гречка, Б. Підгорний</p>
++    </div>
++    <div>
++      <h4>Контакти</h4>
++      <p>Email: peter.d.bakun@gmail.com</p>
++      <p>Телефон: +380 68 228 1337</p>
++    </div>
++    <div class="footer-theme">
++      <h4>Тема</h4>
++      <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
++        <div class="switch-thumb"></div>
++        <span class="icon sun"><img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема"></span>
++        <span class="icon moon"><img src="{% static 'main/img/moon.png' %}" alt="Темна тема"></span>
++      </div>
++    </div>
++  </footer>
++
++  <script src="{% static 'main/js/script.js' %}"></script>
+ </body>
+ </html>
+\ No newline at end of file
+Index: AI_Profession/main/templates/main/page3.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Title</title>\r\n</head>\r\n<body>\r\n<p1>Последний альбом</p1>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/AI_Profession/main/templates/main/page3.html b/AI_Profession/main/templates/main/page3.html
+--- a/AI_Profession/main/templates/main/page3.html	(revision f7bbb41f450814423b33dceb41251dbfcccad656)
++++ b/AI_Profession/main/templates/main/page3.html	(date 1749310434770)
+@@ -1,10 +1,62 @@
++{% load static %}
+ <!DOCTYPE html>
+-<html lang="en">
++<html lang="uk">
+ <head>
+-    <meta charset="UTF-8">
+-    <title>Title</title>
++  <meta charset="UTF-8" />
++  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
++  <title>Deep Learning Engineer</title>
++  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+ </head>
+ <body>
+-<p1>Последний альбом</p1>
++  <header id="header" class="animated-gradient">
++    <div class="theme-switch-wrapper">
++      <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
++        <div class="switch-thumb"></div>
++        <span class="icon sun"><img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема"></span>
++        <span class="icon moon"><img src="{% static 'main/img/moon.png' %}" alt="Темна тема"></span>
++      </div>
++    </div>
++    <h1 id="title">Deep Learning Engineer</h1>
++  </header>
++
++  <main>
++    <section class="info-section">
++      <div class="info-text">
++        <h2>Інженер глибинного навчання</h2>
++        <p>
++          Deep Learning Engineer спеціалізується на створенні, навчанні та оптимізації глибоких нейронних мереж, які використовуються в задачах прогнозування, класифікації, генерації даних, розпізнавання мовлення та зображень.
++          <br><br>
++          Ці інженери використовують фреймворки PyTorch, TensorFlow, Keras, Hugging Face Transformers і GPU-обчислення для тренування моделей.
++          <br><br>
++          Ця роль вимагає знань в галузі математики, теорії оптимізації, статистики та практичного досвіду з великими наборами даних.
++        </p>
++      </div>
++      <div class="info-image">
++        <img src="{% static 'main/img/deep_learning.jpg' %}" alt="Deep Learning Illustration">
++      </div>
++    </section>
++  </main>
++
++  <footer>
++    <div>
++      <h4>Автори сайту</h4>
++      <p>П. Бакун, К. Гречка, Б. Підгорний</p>
++    </div>
++    <div>
++      <h4>Контакти</h4>
++      <p>Email: peter.d.bakun@gmail.com</p>
++      <p>Телефон: +380 68 228 1337</p>
++    </div>
++    <div class="footer-theme">
++      <h4>Тема</h4>
++      <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
++        <div class="switch-thumb"></div>
++        <span class="icon sun"><img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема"></span>
++        <span class="icon moon"><img src="{% static 'main/img/moon.png' %}" alt="Темна тема"></span>
++      </div>
++    </div>
++  </footer>
++
++  <script src="{% static 'main/js/script.js' %}"></script>
+ </body>
+ </html>
+\ No newline at end of file
+Index: AI_Profession/main/templates/main/page4.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Title</title>\r\n</head>\r\n<body>\r\n<p1>Новий альбом</p1>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/AI_Profession/main/templates/main/page4.html b/AI_Profession/main/templates/main/page4.html
+--- a/AI_Profession/main/templates/main/page4.html	(revision f7bbb41f450814423b33dceb41251dbfcccad656)
++++ b/AI_Profession/main/templates/main/page4.html	(date 1749310494173)
+@@ -1,10 +1,62 @@
++{% load static %}
+ <!DOCTYPE html>
+-<html lang="en">
++<html lang="uk">
+ <head>
+-    <meta charset="UTF-8">
+-    <title>Title</title>
++  <meta charset="UTF-8" />
++  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
++  <title>AI Researcher</title>
++  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+ </head>
+ <body>
+-<p1>Новий альбом</p1>
++  <header id="header" class="animated-gradient">
++    <div class="theme-switch-wrapper">
++      <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
++        <div class="switch-thumb"></div>
++        <span class="icon sun"><img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема"></span>
++        <span class="icon moon"><img src="{% static 'main/img/moon.png' %}" alt="Темна тема"></span>
++      </div>
++    </div>
++    <h1 id="title">AI Researcher</h1>
++  </header>
++
++  <main>
++    <section class="info-section">
++      <div class="info-text">
++        <h2>Дослідник штучного інтелекту</h2>
++        <p>
++          AI Researcher займається створенням нових алгоритмів та моделей у сфері штучного інтелекту. Основна мета — покращення якості, продуктивності та безпеки ІІ-систем.
++          <br><br>
++          Дослідники працюють з теорією машинного навчання, генеративними моделями (наприклад, GAN чи Diffusion), reinforcement learning, а також займаються етикою ШІ.
++          <br><br>
++          Робота передбачає глибоке розуміння статистики, лінійної алгебри, теорії ймовірностей та вміння публікувати наукові результати в конференціях як NeurIPS, ICML чи ICLR.
++        </p>
++      </div>
++      <div class="info-image">
++        <img src="{% static 'main/img/ai_research.jpg' %}" alt="AI Researcher Illustration">
++      </div>
++    </section>
++  </main>
++
++  <footer>
++    <div>
++      <h4>Автори сайту</h4>
++      <p>П. Бакун, К. Гречка, Б. Підгорний</p>
++    </div>
++    <div>
++      <h4>Контакти</h4>
++      <p>Email: peter.d.bakun@gmail.com</p>
++      <p>Телефон: +380 68 228 1337</p>
++    </div>
++    <div class="footer-theme">
++      <h4>Тема</h4>
++      <div class="theme-switch" onclick="toggleTheme()" title="Перемкнути тему">
++        <div class="switch-thumb"></div>
++        <span class="icon sun"><img src="{% static 'main/img/black_sun.svg' %}" alt="Світла тема"></span>
++        <span class="icon moon"><img src="{% static 'main/img/moon.png' %}" alt="Темна тема"></span>
++      </div>
++    </div>
++  </footer>
++
++  <script src="{% static 'main/js/script.js' %}"></script>
+ </body>
+ </html>
+\ No newline at end of file
+Index: AI_Profession/main/static/main/css/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>:root {\r\n  --bg-color: #ffffff;\r\n  --text-color: #000000;\r\n  --card-bg: #f0f0f0;\r\n}\r\n\r\nbody.dark {\r\n  --bg-color: #121212;\r\n  --text-color: #ffffff;\r\n  --card-bg: #1f1f1f;\r\n}\r\n\r\nhtml, body {\r\n  margin: 0;\r\n  padding: 0;\r\n  background-color: var(--bg-color);\r\n  color: var(--text-color);\r\n  font-family: Arial, sans-serif;\r\n  transition: background-color 0.3s, color 0.3s;\r\n  overflow-x: hidden;\r\n}\r\n\r\nheader {\r\n  height: 100vh;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  position: relative;\r\n  transition: height 0.5s ease;\r\n  background:\r\n    radial-gradient(circle at 20% 20%, #312e81, transparent 40%),\r\n    radial-gradient(circle at 80% 30%, #3f3cbb, transparent 40%),\r\n    radial-gradient(circle at 50% 80%, #134e4a, transparent 40%),\r\n    radial-gradient(circle at 30% 60%, #4c1d95, transparent 40%),\r\n    radial-gradient(circle at 70% 75%, #0f766e, transparent 40%);\r\n  background-blend-mode: screen;\r\n  background-color: #0a0e27;\r\n  background-size: 200% 200%;\r\n  animation: moveGradients 16s ease-in-out infinite;\r\n  text-align: center;\r\n  padding: 1rem;\r\n}\r\n\r\n@keyframes moveGradients {\r\n  0%, 100% {\r\n    background-position:\r\n      20% 20%,\r\n      80% 30%,\r\n      50% 80%,\r\n      30% 60%,\r\n      70% 75%;\r\n  }\r\n  50% {\r\n    background-position:\r\n      70% 50%,\r\n      30% 80%,\r\n      80% 20%,\r\n      40% 30%,\r\n      60% 60%;\r\n  }\r\n}\r\n\r\nheader.shrink {\r\n  height: 150px;\r\n}\r\n\r\nh1 {\r\n  font-size: 4rem;\r\n  margin: 0;\r\n  color: white;\r\n  transition: font-size 0.5s ease, color 0.5s ease;\r\n}\r\n\r\nheader.shrink h1 {\r\n  font-size: 2rem;\r\n}\r\n\r\nbody.dark header h1 {\r\n  color: #333;\r\n}\r\n\r\n.theme-switch-wrapper {\r\n  position: absolute;\r\n  top: 20px;\r\n  right: 20px;\r\n  z-index: 10;\r\n}\r\n\r\n.theme-switch {\r\n  position: relative;\r\n  width: 70px;\r\n  height: 36px;\r\n  background-color: rgba(255, 255, 255, 0.3);\r\n  border-radius: 18px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  padding: 0 6px;\r\n  box-sizing: border-box;\r\n  cursor: pointer;\r\n  transition: background-color 0.3s ease;\r\n}\r\n\r\n.theme-switch .icon {\r\n  width: 22px;\r\n  height: 22px;\r\n  z-index: 3;\r\n  pointer-events: none;\r\n}\r\n\r\n.theme-switch .icon img {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: contain;\r\n}\r\n\r\n.switch-thumb {\r\n  position: absolute;\r\n  top: 3px;\r\n  left: 3px;\r\n  width: 30px;\r\n  height: 30px;\r\n  background-color: white;\r\n  border-radius: 50%;\r\n  transition: left 0.3s ease;\r\n  z-index: 1;\r\n}\r\n\r\nbody.dark .switch-thumb {\r\n  left: 37px;\r\n}\r\n\r\nmain {\r\n  padding: 2rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 3rem;\r\n  max-width: 100%;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.info-section {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  flex-wrap: nowrap;\r\n  gap: 2rem;\r\n}\r\n\r\n.info-text {\r\n  flex: 1;\r\n  min-width: 300px;\r\n  text-align: left;\r\n}\r\n\r\n.info-image {\r\n  flex: 1;\r\n  min-width: 300px;\r\n  display: flex;\r\n  justify-content: flex-end;\r\n  align-items: center;\r\n}\r\n\r\n.info-image img {\r\n  max-width: 100%;\r\n  height: auto;\r\n  border-radius: 10px;\r\n}\r\n\r\n.cards {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-between;\r\n  gap: 1rem;\r\n  padding: 0 2rem;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.cards a {\r\n  text-decoration: none;\r\n  color: inherit;\r\n  flex: 1 1 calc(25% - 1rem); /* ~4 картки на ряд з урахуванням gap */\r\n  min-width: 200px;\r\n  max-width: 100%;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.card {\r\n  background-color: var(--card-bg);\r\n  padding: 1rem;\r\n  border-radius: 10px;\r\n  height: 200px;\r\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\r\n  transition: transform 0.3s ease, box-shadow 0.3s ease;\r\n  cursor: pointer;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  text-align: center;\r\n}\r\n\r\n.card:hover {\r\n  transform: translateY(-5px);\r\n  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);\r\n}\r\n\r\nfooter {\r\n  background-color: #333;\r\n  color: white;\r\n  padding: 2rem 4rem;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: flex-start;\r\n  flex-wrap: wrap;\r\n  gap: 1.5rem;\r\n  box-sizing: border-box;\r\n}\r\n\r\nfooter > div {\r\n  flex: 1 1 200px;\r\n  box-sizing: border-box;\r\n}\r\n\r\nfooter > div:nth-child(1) {\r\n  text-align: left;\r\n}\r\n\r\nfooter > div:nth-child(2) {\r\n  text-align: center;\r\n}\r\n\r\nfooter > div:nth-child(3) {\r\n  text-align: right;\r\n}\r\n\r\n.footer-theme {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: flex-end;\r\n}\r\n\r\n@media (max-width: 1024px) {\r\n  .cards a {\r\n    flex: 1 1 calc(50% - 1rem); /* 2 картки в ряд з урахуванням gap */\r\n  }\r\n}\r\n\r\n@media (max-width: 768px) {\r\n  h1 {\r\n    font-size: 2.5rem;\r\n  }\r\n\r\n  .info-section {\r\n    flex-direction: column;\r\n    align-items: center;\r\n    text-align: center;\r\n  }\r\n\r\n  .info-text {\r\n    text-align: center;\r\n  }\r\n\r\n  .info-image {\r\n    justify-content: center;\r\n  }\r\n\r\n  .cards {\r\n    padding: 0 1rem;\r\n    gap: 0.75rem;\r\n    justify-content: center;\r\n  }\r\n\r\n  .cards a {\r\n    flex: 1 1 100%;\r\n    max-width: 100%;\r\n  }\r\n\r\n  footer {\r\n    flex-direction: column;\r\n    align-items: center;\r\n    text-align: center;\r\n    padding: 1rem;\r\n    gap: 0.5rem;\r\n  }\r\n\r\n  footer > div {\r\n    text-align: center !important;\r\n  }\r\n\r\n  .footer-theme {\r\n    align-items: center !important;\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/AI_Profession/main/static/main/css/style.css b/AI_Profession/main/static/main/css/style.css
+--- a/AI_Profession/main/static/main/css/style.css	(revision f7bbb41f450814423b33dceb41251dbfcccad656)
++++ b/AI_Profession/main/static/main/css/style.css	(date 1749319856318)
+@@ -64,21 +64,31 @@
+   height: 150px;
+ }
+ 
+-h1 {
++@keyframes fadeSlideDown {
++  from {
++    transform: translateY(-80px);
++  }
++  to {
++    transform: translateY(0);
++  }
++}
++
++h1#title {
+   font-size: 4rem;
+   margin: 0;
+   color: white;
+   transition: font-size 0.5s ease, color 0.5s ease;
++  animation: fadeSlideDown 1.2s cubic-bezier(0.25, 0.8, 0.25, 1);
++}
++
++body.dark h1#title {
++  color: #333;
+ }
+ 
+ header.shrink h1 {
+   font-size: 2rem;
+ }
+ 
+-body.dark header h1 {
+-  color: #333;
+-}
+-
+ .theme-switch-wrapper {
+   position: absolute;
+   top: 20px;
+@@ -179,7 +189,7 @@
+ .cards a {
+   text-decoration: none;
+   color: inherit;
+-  flex: 1 1 calc(25% - 1rem); /* ~4 картки на ряд з урахуванням gap */
++  flex: 1 1 calc(25% - 1rem);
+   min-width: 200px;
+   max-width: 100%;
+   box-sizing: border-box;
+@@ -240,9 +250,37 @@
+   align-items: flex-end;
+ }
+ 
++/* Статичні текстові картки (text-card) */
++.text-card {
++  background-color: var(--card-bg);
++  color: var(--text-color);
++  border-radius: 10px;
++  padding: 2rem;
++  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
++  box-sizing: border-box;
++  width: 100%;
++  max-width: 100%;
++  margin: 2rem auto;
++  transition: none;
++  cursor: default;
++}
++
++.text-card h2 {
++  margin-top: 0;
++  font-size: 1.8rem;
++  font-weight: bold;
++}
++
++.text-card p {
++  font-size: 1rem;
++  line-height: 1.6;
++  margin-bottom: 0;
++}
++
++/* Адаптивність */
+ @media (max-width: 1024px) {
+   .cards a {
+-    flex: 1 1 calc(50% - 1rem); /* 2 картки в ряд з урахуванням gap */
++    flex: 1 1 calc(50% - 1rem);
+   }
+ }
+ 
+@@ -276,6 +314,15 @@
+     max-width: 100%;
+   }
+ 
++  .text-card {
++    padding: 1.5rem;
++    font-size: 0.95rem;
++  }
++
++  .text-card h2 {
++    font-size: 1.5rem;
++  }
++
+   footer {
+     flex-direction: column;
+     align-items: center;
+@@ -292,3 +339,21 @@
+     align-items: center !important;
+   }
+ }
++
++.text-card-row {
++  display: flex;
++  flex-wrap: wrap;
++  gap: 2rem;
++  justify-content: space-between;
++}
++
++.text-card-row .text-card {
++  flex: 1 1 calc(50% - 1rem);
++  margin: 0;
++}
++
++@media (max-width: 768px) {
++  .text-card-row .text-card {
++    flex: 1 1 100%;
++  }
++}
+\ No newline at end of file
+Index: AI_Profession/main/templates/main/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{% load static %}\r\n\r\n<!DOCTYPE html>\r\n<html lang=\"uk\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\r\n  <title>AI Професії</title>\r\n  <link rel=\"stylesheet\" href=\"{% static 'main/css/style.css' %}\">\r\n</head>\r\n<body>\r\n  <header id=\"header\" class=\"animated-gradient\">\r\n    <div class=\"theme-switch-wrapper\">\r\n      <div class=\"theme-switch\" onclick=\"toggleTheme()\" title=\"Перемкнути тему\">\r\n        <div class=\"switch-thumb\"></div>\r\n        <span class=\"icon sun\"><img src=\"{% static 'main/img/black_sun.svg' %}\" alt=\"Світла тема\"></span>\r\n        <span class=\"icon moon\"><img src=\"{% static 'main/img/moon.png' %}\" alt=\"Темна тема\"></span>\r\n      </div>\r\n    </div>\r\n    <h1 id=\"title\">Штучний інтелект</h1>\r\n  </header>\r\n\r\n  <main>\r\n    <section class=\"info-section\">\r\n      <div class=\"info-text\">\r\n        <h2>Ласкаво просимо у світ ШІ</h2>\r\n        <p>\r\n          Світ змінюється, і ШІ вже сьогодні відіграє ключову роль у трансформації бізнесу, науки, медицини, освіти та інших галузей.\r\n          Це не просто тренд — це новий етап розвитку людства, який відкриває безліч кар’єрних можливостей.\r\n          <br><br>\r\n          Наш сайт створено для студентів та спеціалістів, які хочуть розвиватись у сфері ШІ — від інженерів машинного навчання до аналітиків даних.\r\n          <br><br>\r\n          Ми зібрали практичну інформацію, інструменти для професійного росту та реальні історії успіху.\r\n        </p>\r\n      </div>\r\n      <div class=\"info-image\">\r\n        <img src=\"{% static 'main/img/IndexImage.jpg' %}\" alt=\"AI Illustration\">\r\n      </div>\r\n    </section>\r\n\r\n    <section class=\"cards\">\r\n      <a href=\"page1\"><div class=\"card\">\r\n        <h3>NLP Engineer</h3>\r\n        <p>Працює з обробкою природної мови...</p>\r\n      </div></a>\r\n      <a href=\"page2\"><div class=\"card\">\r\n        <h3>Computer Vision Engineer</h3>\r\n        <p>Створює системи, які розпізнають об’єкти...</p>\r\n      </div></a>\r\n      <a href=\"page3\"><div class=\"card\">\r\n        <h3>Deep Learning Engineer</h3>\r\n        <p>Будує глибокі нейронні мережі...</p>\r\n      </div></a>\r\n      <a href=\"page4\"><div class=\"card\">\r\n        <h3>AI Researcher</h3>\r\n        <p>Досліджує нові підходи...</p>\r\n      </div></a>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n  <!-- Лівий блок -->\r\n  <div>\r\n    <h4>Автори сайту</h4>\r\n    <p>П. Бакун, К. Гречка, Б. Підгорний</p>\r\n  </div>\r\n\r\n  <!-- Центральний блок -->\r\n  <div>\r\n    <h4>Контакти</h4>\r\n    <p>Email: peter.d.bakun@gmail.com</p>\r\n    <p>Телефон: +380 68 228 1337</p>\r\n  </div>\r\n\r\n  <!-- Правий блок -->\r\n  <div class=\"footer-theme\">\r\n    <h4>Тема</h4>\r\n    <div class=\"theme-switch\" onclick=\"toggleTheme()\" title=\"Перемкнути тему\">\r\n      <div class=\"switch-thumb\"></div>\r\n      <span class=\"icon sun\">\r\n        <img src=\"{% static 'main/img/black_sun.svg' %}\" alt=\"Світла тема\">\r\n      </span>\r\n      <span class=\"icon moon\">\r\n        <img src=\"{% static 'main/img/moon.png' %}\" alt=\"Темна тема\">\r\n      </span>\r\n    </div>\r\n  </div>\r\n</footer>\r\n\r\n  <script src=\"{% static 'main/js/script.js' %}\"></script>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/AI_Profession/main/templates/main/index.html b/AI_Profession/main/templates/main/index.html
+--- a/AI_Profession/main/templates/main/index.html	(revision f7bbb41f450814423b33dceb41251dbfcccad656)
++++ b/AI_Profession/main/templates/main/index.html	(date 1749309128883)
+@@ -25,12 +25,11 @@
+       <div class="info-text">
+         <h2>Ласкаво просимо у світ ШІ</h2>
+         <p>
+-          Світ змінюється, і ШІ вже сьогодні відіграє ключову роль у трансформації бізнесу, науки, медицини, освіти та інших галузей.
+-          Це не просто тренд — це новий етап розвитку людства, який відкриває безліч кар’єрних можливостей.
++          Світ змінюється, і ШІ вже сьогодні відіграє ключову роль у трансформації бізнесу, науки, медицини, освіти та інших галузей. Це не просто тренд — це новий етап розвитку людства, який відкриває безліч кар’єрних можливостей для тих, хто готовий діяти на передовій інновацій.
+           <br><br>
+-          Наш сайт створено для студентів та спеціалістів, які хочуть розвиватись у сфері ШІ — від інженерів машинного навчання до аналітиків даних.
++          Наш сайт створено для студентів, які шукають напрям розвитку, та спеціалістів, які прагнуть поглибити свої знання або змінити професійний вектор. Ви дізнаєтесь про актуальні професії в сфері ШІ — від інженерів машинного навчання до фахівців із генеративного ШІ, аналітики даних, науковців з етики штучного інтелекту тощо.
+           <br><br>
+-          Ми зібрали практичну інформацію, інструменти для професійного росту та реальні історії успіху.
++          Ми зібрали практичну інформацію, рекомендації щодо навчання, інструменти для професійного росту та реальні історії успіху. Якщо ви хочете залишатися конкурентоспроможними у світі, який змінюється щодня — ви в правильному місці.
+         </p>
+       </div>
+       <div class="info-image">
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"30317e9a-2a98-4141-80d1-1e2a451f9c8c\" name=\"Changes\" comment=\"New page V2\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AI_Profession/main/static/main/css/style.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AI_Profession/main/static/main/css/style.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AI_Profession/main/templates/main/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AI_Profession/main/templates/main/index.html\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"f1ab00e0-7278-4685-bbc4-952ba86327f0\" name=\"don't commit\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"2022e4c7-dfdd-48fb-b1e4-4f61ac093540\" name=\"to commit\" comment=\"to commit\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_AUTO_UPDATE\" value=\"true\" />\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/../..\" />\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/AI_Profession/main/templates/main/index.html\" root0=\"SKIP_INSPECTION\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"customColor\": \"\",\r\n  \"associatedIndex\": -1\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2xzocPcKcyOh6vkaS8CfuaQ3b8G\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/Peter Bakun/Documents/GitHub/praktika10x.github.io/L10B_2025/group9/AI_Profession/main/static/main/img&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Peter Bakun\\Documents\\GitHub\\praktika10x.github.io\\L10B_2025\\group9\\AI_Profession\\main\\static\\main\\img\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Peter Bakun\\Documents\\GitHub\\praktika10x.github.io\\L10B_2025\\group9\\AI_Profession\\main\\static\\main\\img\" />\r\n      <recent name=\"C:\\Users\\Peter Bakun\\Documents\\GitHub\\praktika10x.github.io\\L10B_2025\\group9\\AI_Profession\" />\r\n      <recent name=\"C:\\Users\\Peter Bakun\\Documents\\GitHub\\praktika10x.github.io\\L10B_2025\\group9\\main\\static\\main\\img\" />\r\n      <recent name=\"C:\\Users\\Peter Bakun\\Documents\\GitHub\\praktika10x.github.io\\L10B_2025\\group9\\main\\templates\\main\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"30317e9a-2a98-4141-80d1-1e2a451f9c8c\" name=\"Changes\" comment=\"\" />\r\n      <changelist id=\"2022e4c7-dfdd-48fb-b1e4-4f61ac093540\" name=\"to commit\" comment=\"\" />\r\n      <changelist id=\"f1ab00e0-7278-4685-bbc4-952ba86327f0\" name=\"don't commit\" comment=\"\" />\r\n      <created>1748950341455</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1748950341455</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Restart V5\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1748951764323</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1748951764324</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"to commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749029251572</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749029251572</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Restart V5\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749030163046</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749030163046</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"CSS linked\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749030404091</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749030404091</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"CSS linked\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749030461651</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749030461651</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"CSS linked\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749032167116</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749032167116</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Deploy\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749110557622</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749110557622</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Deploy V1\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749110897949</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749110897949</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Deploy V1\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749111315139</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749111315139</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Deploy V1\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749112026514</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749112026514</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Fron Update 1\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749112280693</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749112280693</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Front Update 2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749113022735</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749113022735</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"New page V1\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749113945957</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749113945957</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"New page V1\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749114125321</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749114125321</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"New page V1\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749114339278</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749114339278</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"New page V1\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749114948421</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749114948421</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"New page V2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749116502039</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749116502039</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"18\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"RECENT_FILTERS\">\r\n      <map>\r\n        <entry key=\"User\">\r\n          <value>\r\n            <list>\r\n              <RecentGroup>\r\n                <option name=\"FILTER_VALUES\">\r\n                  <option value=\"*\" />\r\n                </option>\r\n              </RecentGroup>\r\n            </list>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"user\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"*\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"to commit\" />\r\n    <MESSAGE value=\"Restart V5\" />\r\n    <MESSAGE value=\"CSS linked\" />\r\n    <MESSAGE value=\"Deploy\" />\r\n    <MESSAGE value=\"Deploy V1\" />\r\n    <MESSAGE value=\"Fron Update 1\" />\r\n    <MESSAGE value=\"Front Update 2\" />\r\n    <MESSAGE value=\"New page V1\" />\r\n    <MESSAGE value=\"New page V2\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"New page V2\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f7bbb41f450814423b33dceb41251dbfcccad656)
++++ b/.idea/workspace.xml	(date 1749310494212)
+@@ -4,10 +4,14 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="New page V2">
++    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="Update index.html and style.css">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/AI_Profession/main/static/main/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/static/main/css/style.css" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page1.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/page2.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page2.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/page3.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page3.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/page4.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page4.html" afterDir="false" />
+     </list>
+     <list id="f1ab00e0-7278-4685-bbc4-952ba86327f0" name="don't commit" comment="">
+       <change beforePath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" afterDir="false" />
+@@ -33,10 +37,10 @@
+   <component name="HighlightingSettingsPerFile">
+     <setting file="file://$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" root0="SKIP_INSPECTION" />
+   </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "customColor": "",
+-  "associatedIndex": -1
+-}]]></component>
++  <component name="ProjectColorInfo">{
++  &quot;customColor&quot;: &quot;&quot;,
++  &quot;associatedIndex&quot;: -1
++}</component>
+   <component name="ProjectId" id="2xzocPcKcyOh6vkaS8CfuaQ3b8G" />
+   <component name="ProjectLevelVcsManager">
+     <ConfirmationsSetting value="2" id="Add" />
+@@ -212,7 +216,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1749116502039</updated>
+     </task>
+-    <option name="localTasksCounter" value="18" />
++    <task id="LOCAL-00018" summary="Update index.html and style.css">
++      <option name="closed" value="true" />
++      <created>1749248275169</created>
++      <option name="number" value="00018" />
++      <option name="presentableId" value="LOCAL-00018" />
++      <option name="project" value="LOCAL" />
++      <updated>1749248275169</updated>
++    </task>
++    <option name="localTasksCounter" value="19" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -263,6 +275,7 @@
+     <MESSAGE value="Front Update 2" />
+     <MESSAGE value="New page V1" />
+     <MESSAGE value="New page V2" />
+-    <option name="LAST_COMMIT_MESSAGE" value="New page V2" />
++    <MESSAGE value="Update index.html and style.css" />
++    <option name="LAST_COMMIT_MESSAGE" value="Update index.html and style.css" />
+   </component>
+ </project>
+\ No newline at end of file

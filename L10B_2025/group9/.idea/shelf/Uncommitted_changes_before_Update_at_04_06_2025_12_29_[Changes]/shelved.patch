@@ -1,0 +1,75 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"30317e9a-2a98-4141-80d1-1e2a451f9c8c\" name=\"Changes\" comment=\"Restart V5\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/git_toolbox_prj.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_06_2025_14_55_[Changes]/shelved.patch\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_06_2025_14_55__Changes_.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/AI_Profession/AI_Profession/__init__.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/AI_Profession/AI_Profession/asgi.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/AI_Profession/AI_Profession/urls.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/AI_Profession/AI_Profession/wsgi.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/AI_Profession/manage.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/main/__init__.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/main/admin.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/main/apps.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/main/migrations/__init__.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/main/models.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/main/tests.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/main/views.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/../..\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"customColor\": \"\",\r\n  \"associatedIndex\": -1\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2xzocPcKcyOh6vkaS8CfuaQ3b8G\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"main\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Peter Bakun\\Documents\\GitHub\\praktika10x.github.io\\L10B_2025\\group9\\main\\templates\\main\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"30317e9a-2a98-4141-80d1-1e2a451f9c8c\" name=\"Changes\" comment=\"\" />\r\n      <created>1748950341455</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1748950341455</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Restart V5\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1748951764323</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1748951764324</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"RECENT_FILTERS\">\r\n      <map>\r\n        <entry key=\"User\">\r\n          <value>\r\n            <list>\r\n              <RecentGroup>\r\n                <option name=\"FILTER_VALUES\">\r\n                  <option value=\"*\" />\r\n                </option>\r\n              </RecentGroup>\r\n            </list>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"user\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"*\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Restart V5\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Restart V5\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f23bfd4e1472dd7addc0f7ca18b1052677c779d7)
++++ b/.idea/workspace.xml	(date 1749029257857)
+@@ -4,25 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="Restart V5">
+-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_06_2025_14_55_[Changes]/shelved.patch" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_06_2025_14_55__Changes_.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/__init__.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/asgi.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/urls.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/wsgi.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/AI_Profession/manage.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/main/__init__.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/main/admin.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/main/apps.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/main/migrations/__init__.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/main/tests.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+-    </list>
++    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="Restart V5" />
++    <list id="f1ab00e0-7278-4685-bbc4-952ba86327f0" name="don't commit" comment="" />
++    <list id="2022e4c7-dfdd-48fb-b1e4-4f61ac093540" name="to commit" comment="to commit" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -63,6 +47,8 @@
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+       <changelist id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="" />
++      <changelist id="2022e4c7-dfdd-48fb-b1e4-4f61ac093540" name="to commit" comment="" />
++      <changelist id="f1ab00e0-7278-4685-bbc4-952ba86327f0" name="don't commit" comment="" />
+       <created>1748950341455</created>
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+@@ -76,7 +62,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1748951764324</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="to commit">
++      <option name="closed" value="true" />
++      <created>1749029251572</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1749029251572</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -119,6 +113,7 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Restart V5" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Restart V5" />
++    <MESSAGE value="to commit" />
++    <option name="LAST_COMMIT_MESSAGE" value="to commit" />
+   </component>
+ </project>
+\ No newline at end of file

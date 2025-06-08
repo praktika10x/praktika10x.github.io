@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="front update v5">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/page2.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI_Profession/main/templates/main/page4.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/main/templates/main/page4.html" afterDir="false" />
-    </list>
+    <list default="true" id="30317e9a-2a98-4141-80d1-1e2a451f9c8c" name="Changes" comment="front update v6" />
     <list id="f1ab00e0-7278-4685-bbc4-952ba86327f0" name="don't commit" comment="">
       <change beforePath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Profession/AI_Profession/settings.py" afterDir="false" />
     </list>
@@ -254,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749405580862</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="front update v6">
+      <option name="closed" value="true" />
+      <created>1749405921048</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1749405921048</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,6 +311,7 @@
     <MESSAGE value="global update" />
     <MESSAGE value="front update v4" />
     <MESSAGE value="front update v5" />
-    <option name="LAST_COMMIT_MESSAGE" value="front update v5" />
+    <MESSAGE value="front update v6" />
+    <option name="LAST_COMMIT_MESSAGE" value="front update v6" />
   </component>
 </project>
