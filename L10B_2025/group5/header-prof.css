@@ -214,34 +214,3 @@ mobile-menu {
 }
 
 
-
-@media (max-width: 700px) {
-  header {
-   top: 0;
-   left: 0;
-   height: 60px;
-   display: flex;
-   background-color: #0051ff; 
-   color: #fff;
-   padding: 10px 5vw;
-   height: auto;
-   flex-wrap: wrap;
-}
-.main-title {
-  font-family: 'Rubik Dirt', sans-serif;
-  font-size: 1.5rem;
-  color: #fff;
-  margin: 0;
-  padding: 0 0 0 2px;
-  letter-spacing: 1px;
-  white-space: nowrap;
-}
-
-.desktop-menu {
-    display: none;
-}
-.material-symbols-outlined {
-  font-size: 35px !important;
-  margin-top: 10px !important; 
-}
-}
