@@ -605,7 +605,7 @@ const langArr = {
     },
 	"game-title": {
         "ua": "Втомилися від інформації?<br> Пропонуємо вам трохи відволіктись у міні-грі <br> 'Камінь-ножиці-папір' 😊",
-        "en": "Overwhelmed with all that information>?<br>Take a break and try out our mini-game <br> 'Rock-paper-scissors' 😊"
+        "en": "Overwhelmed with all that information?<br>Take a break and try out our mini-game <br> 'Rock-paper-scissors' 😊"
     }
 };
 
