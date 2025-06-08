@@ -1,4 +1,4 @@
-/* === RESET === */
+/* === RESET === */More actions
 html, body {
   margin: 0;
   padding: 0;
@@ -269,6 +269,9 @@ a{
 body {
     background-color: var(--bkg-color);
 }
+.bn {
+    justify-content: center;
+  }
 .btn {
     background-color: #954baa;
     color: white;
@@ -470,7 +473,6 @@ Mobile adaptation
 
 
 
-/* Mobile adaptation */
 @media (max-width: 768px) {
   .headerhome {
     width: 100%;
@@ -502,7 +504,6 @@ Mobile adaptation
 
   .nav {
     position: static;
-    left: auto;
     width: 100%;
     height: auto;
     min-height: 60px;
@@ -511,14 +512,14 @@ Mobile adaptation
     align-items: center;
     box-sizing: border-box;
     padding: 5px;
-    transition: none;
   }
 
   .nav:hover {
     left: auto;
   }
 
-  .anav {
+  .anav,
+  .nav-link .anav {
     display: block;
     margin: 2px;
     font-size: 8px !important;
@@ -532,31 +533,8 @@ Mobile adaptation
     text-decoration: none;
   }
 
-  .nav-link .anav {
-    background-color: #261374;
-    color: #ffffff;
-    border-radius: 3px;
-    margin: 2px;
-  }
-
   .nav-link .anav:hover {
     color: #F5BB47;
-  }
-
-  .pnav {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    justify-self: center;
-    align-self: center;
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 125%;
-    text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.50);
-    letter-spacing: -0.05em;
-    text-align: center;
-    color: #fff;
-    margin: 20px 10px;
   }
 
   .logonav {
@@ -568,7 +546,24 @@ Mobile adaptation
     margin: 8px;
   }
 
-  /* Відео адаптація */
+  .video-container {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .video-block iframe,
+  .video-container iframe,
+  .video-container video {
+    width: 100%;
+    max-width: 280px;       /* Зменшив максимальну ширину відео */
+    height: 160px;          /* Пропорційно зменшив висоту */
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+  }
+
   .video-block {
     margin: 20px auto;
     padding: 0 10px;
@@ -579,14 +574,6 @@ Mobile adaptation
     margin: 10px 5%;
   }
 
-  .video-block iframe,
-  iframe {
-    width: 100%;
-    height: 200px;
-    max-width: 320px;
-  }
-
-  /* Картки команди */
   .wrapnav {
     padding: 20px 10px;
     gap: 15px;
@@ -639,7 +626,13 @@ Mobile adaptation
     margin: 8px 0;
   }
 
-  /* Заголовки */
+  @media (max-width: 768px) {
+  .pnav {
+    font-size: 18px;        /* Зменшив розмір заголовка */
+    margin: 10px 15px;
+    text-align: center;
+  }
+
   h2 {
     font-family: Tektur, sans-serif;
     font-weight: 400;
@@ -662,7 +655,6 @@ Mobile adaptation
     border-radius: 3px;
   }
 
-  /* Текст */
   p {
     font-family: "Comic_Sans_MS", cursive;
     margin: 15px 5%;
@@ -686,7 +678,6 @@ Mobile adaptation
     color: var(--h2-color);
   }
 
-  /* Картки інформації */
   .info-cards {
     display: block;
     padding: 0 20px;
@@ -707,46 +698,5 @@ Mobile adaptation
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 20px;
-  }
-}
-
-/* Tablet adaptation */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .headerhome {
-    height: 60vh;
-  }
-
-  .pnav {
-    font-size: 70px;
-  }
-
-  .wrapnav {
-    gap: 15px;
-    padding: 30px 20px;
-  }
-
-  .cardnav {
-    width: 220px;
-    height: 300px;
-  }
-
-  .imgnav {
-    width: 130px;
-    height: 130px;
-  }
-
-  h2 {
-    font-size: 40px;
-    margin: 15px 8%;
-    color: var(--h2-color);
-  }
-
-  p, ul:not(.ulnav) {
-    margin: 20px 15%;
-    color: var(--text-color);
-  }
-
-  .info-cards {
-    padding: 0 60px;
   }
 }
