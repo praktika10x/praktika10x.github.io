@@ -485,6 +485,8 @@ body {
   }
 .navdiv {
   position: fixed;
+  display: flex;
+  flex-wrap: wrap;
   top:0;
   left:75%;
   width: 50%;
