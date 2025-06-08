@@ -51,7 +51,7 @@ const langArr = {
         "ua": "Пигина Михайло",
         "en": "Pyhyna Mikhailo",
     },
-    "sources": {
+    "sourses": {
         "ua": "Джерела",
         "en": "Sources",
     },
