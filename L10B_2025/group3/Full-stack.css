@@ -127,6 +127,7 @@ h1 {
   text-align: center;
   padding-bottom: 30px;
 }
+.h1stor{font-size: 40px;}
 
 h2 {    
   font-family: Tektur, sans-serif;
@@ -573,6 +574,12 @@ body {
     padding: 10px 5px;
   }
 
+ .h1stor{
+   font-size: 30px;
+    line-height: 55px;
+    padding: 10px 5px;
+ }
+  
   .intro1, .intro2, .intro {
     height: 220px; /* зменшено з 320px */
     padding-top: 15px;
