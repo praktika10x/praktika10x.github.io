@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Камінь-ножиці-папір</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+  <div class="game-container">
+    <p class="Title">Камінь-ножиці-папір</p>
+
+    <div class="move-buttons-container">
+      <button class="move-button js-rock-button">
+        <img src="img/rock-emoji.png" class="move-icon" alt="Камінь" />
+      </button>
+
+      <button class="move-button js-paper-button">
+        <img src="img/paper-emoji.png" class="move-icon" alt="Папір" />
+      </button>
+
+      <button class="move-button js-scissors-button">
+        <img src="img/scissors-emoji.png" class="move-icon" alt="Ножиці" />
+      </button>
+    </div>
+
+    <p class="js-result result"></p>
+    <p class="js-playerMove"></p>
+    <p class="js-computerMove"></p>
+    <p class="js-score"></p>
+
+    <button class="reset-score-button js-reset-score-button">Скинути рахунок</button>
+    <button class="auto-play-button js-auto-play-button">Авто-гра</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
