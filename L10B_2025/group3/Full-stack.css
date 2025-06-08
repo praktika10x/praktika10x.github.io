@@ -116,12 +116,24 @@ body {
 }
 
 /* === TYPOGRAPHY === */
-h1 {
+h1:not(.footer-h1) {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
   color: white;
   font-size: 140px;
+  line-height: 160px;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.footer-h1{
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 110px;
   line-height: 160px;
   margin: 0;
   text-align: center;
