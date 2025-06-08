@@ -245,6 +245,12 @@
                   localStorage.setItem('theme', newTheme);
                   btn.textContent = newTheme === 'light' ? '🌙' : '☀️';
                 });
+          const menuBtn = document.querySelector(".menu-button");
+          const menu = document.querySelector(".navdiv");
+          menuBtn.addEventListener("click", function(){
+              menu.classList.toggle("active");
+              menuBtn.classList.toggle("active");
+          })
       </script>
     </body>
     </html>
