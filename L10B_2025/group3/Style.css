@@ -557,8 +557,8 @@ Mobile adaptation
   .video-container iframe,
   .video-container video {
     width: 100%;
-    max-width: 280px;       /* Зменшив максимальну ширину відео */
-    height: 160px;          /* Пропорційно зменшив висоту */
+    max-width: 280px;       
+    height: 160px;          
     border-radius: 10px;
     display: block;
     margin: 10px auto;
@@ -626,9 +626,8 @@ Mobile adaptation
     margin: 8px 0;
   }
 
-  @media (max-width: 768px) {
   .pnav {
-    font-size: 18px;        /* Зменшив розмір заголовка */
+    font-size: 18px;      
     margin: 10px 15px;
     text-align: center;
   }
