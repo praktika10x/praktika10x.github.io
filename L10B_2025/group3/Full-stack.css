@@ -534,7 +534,7 @@ body {
 }
 
 .menu-button.active {
-  border-button: none;
+  border: none;
 }
 
 .menu-button.active::before {
