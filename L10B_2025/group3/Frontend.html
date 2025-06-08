@@ -156,7 +156,7 @@
                   </div>
                 </section>
 <footer class="footer">
-  <h1 style="font-size: 40px;">Пропонуємо для ознайомлення</h1>
+  <h1>Пропонуємо для ознайомлення</h1>
   <div class="wrap">
     <a href="Frontend.html" class="card-link">
       <div>
@@ -205,48 +205,49 @@
   </div>
 </footer>
 
+                  
 
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const swiper = new Swiper('.swiper', {
-          direction: 'horizontal',
-          loop: true,
-          pagination: {
-            el: '.swiper-pagination',
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+              el: '.swiper-pagination',
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
         });
-      });
-           const btn = document.getElementById('themeToggle');
-              const html = document.documentElement;
+             const btn = document.getElementById('themeToggle');
+                const html = document.documentElement;
 
-              const currentTheme = localStorage.getItem('theme') || 'light';
-              html.setAttribute('data-theme', currentTheme);
-              btn.textContent = currentTheme === 'light' ? '🌙' : '☀️';
+                const currentTheme = localStorage.getItem('theme') || 'light';
+                html.setAttribute('data-theme', currentTheme);
+                btn.textContent = currentTheme === 'light' ? '🌙' : '☀️';
 
-              btn.addEventListener('click', () => {
-                const newTheme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-                html.setAttribute('data-theme', newTheme);
-                localStorage.setItem('theme', newTheme);
-                btn.textContent = newTheme === 'light' ? '🌙' : '☀️';
-              });
-        function toggleMenu() {
-          const nav = document.querySelector('.navdiv');
-          nav.classList.toggle('active');
-
-        }
-
-        document.body.addEventListener('click', () => {
-          const nav = document.querySelector('.navdiv');
-          if (nav.classList.contains('active')) {
-            nav.classList.remove('active');
+                btn.addEventListener('click', () => {
+                  const newTheme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+                  html.setAttribute('data-theme', newTheme);
+                  localStorage.setItem('theme', newTheme);
+                  btn.textContent = newTheme === 'light' ? '🌙' : '☀️';
+                });
+          function toggleMenu() {
+            const nav = document.querySelector('.navdiv');
+            nav.classList.toggle('active');
+          
           }
-        });
-    </script>
-  </body>
-  </html>
+
+          document.body.addEventListener('click', () => {
+            const nav = document.querySelector('.navdiv');
+            if (nav.classList.contains('active')) {
+              nav.classList.remove('active');
+            }
+          });
+      </script>
+    </body>
+    </html>
