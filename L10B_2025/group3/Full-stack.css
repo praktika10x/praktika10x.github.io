@@ -507,12 +507,12 @@ body {
   width: 30px;
   height: 30px;
   position: fixed;
+  top:20px;
+  right: 15px;
   z-index:1;
   overflow: hidden;
   border: none;
   background: transparent;
-  margin-right: 15px;
-  border-bottom: 2px solid white;
 }
 
 .menu-button::before,
