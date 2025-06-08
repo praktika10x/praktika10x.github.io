@@ -567,7 +567,7 @@ body {
   }
 
   .intro1, .intro2, .intro {
-    height: 250px; /* зменшено з 320px */
+    height: 220px; /* зменшено з 320px */
     padding-top: 15px;
     margin-bottom: 40px; /* додано відступ */
   }
