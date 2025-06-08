@@ -16,7 +16,7 @@
                       <img src="Project-img/SVG/ПроектЛого.svg" class="eniac" />
                   </div>
                             <button class="menu-button" type="button" aria-label="close" aria-controls="navigation" aria-expanded="false"></button>
-                  <nav class="navdiv" id="navigation">
+                  <nav class="navdiv active" id="navigation">
                       <ul class="nav-links">
                          <li> <a href="#essence" class="menu-link">Сутність професії</a> </li>
                          <li>  <a href="#knowledge" class="menu-link">Специфічні знання та вимоги</a> </li>
@@ -249,6 +249,7 @@
     const menuButton = document.querySelector('.menu-button');
     const nav = document.querySelector('.navdiv');
 
+              
     menuButton.addEventListener('click', function () {
         console.log("Кнопка натиснута");
       menuButton.classList.toggle('active');
