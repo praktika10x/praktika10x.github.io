@@ -298,7 +298,10 @@ body {
     transform: translateY(1px);
     background-color: #5e2d6c;
   }
-
+iframe {
+  width:660px;
+  height:415px;
+}
 
 /* 
 
@@ -336,8 +339,8 @@ body {
 
   .anav {
     display: flex;
-    margin: 10px 0; /* менше відступів */
-    font-size: 10px; /* зменшений текст 
+    margin: 10px 0; 
+    font-size: 10; 
   }
 
   .pnav {
