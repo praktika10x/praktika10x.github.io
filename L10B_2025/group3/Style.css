@@ -627,7 +627,7 @@ Mobile adaptation
   }
 
   .pnav {
-    font-size: 18px;      
+    font-size: 18px !important;     
     margin: 10px 15px;
     text-align: center;
   }
