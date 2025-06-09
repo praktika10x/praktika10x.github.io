@@ -348,7 +348,7 @@ body {
   .nav-link .anav {
     display: block;
     margin: 2px;
-    font-size: 8px !important;
+    font-size: 5px !important;
     padding: 4px 6px;
     white-space: nowrap;
     overflow: hidden;
@@ -383,8 +383,7 @@ body {
   .video-container iframe,
   .video-container video {
     width: 100%; 
-
-    max-width: 280px;       Add commentMore actions
+    max-width: 280px;
     height: 160px;          
     border-radius: 10px;
     display: block;
