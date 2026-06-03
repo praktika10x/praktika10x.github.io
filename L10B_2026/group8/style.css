@@ -53,7 +53,7 @@ span{
 .gol{
   font-family: bitter-text;
   width: 100%;
-  height: 170px;
+  height: 160px;
   color: white;
   background-color: #8799AE;
   text-align:center;
@@ -62,7 +62,7 @@ span{
   font-size:30px;
 }
 .gla{
-  background-image: url("https://mapi7.com/assets/images/blog/kak-sdelat-foto-pod-vodoj/pod-vodoy-5.jpg");
+  background-image: url("https://img.pikbest.com/wp/202344/underwater-diving-view-of-air-bubbles-and-texture_9900779.jpg!w700wp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -90,8 +90,8 @@ span{
 }
 img{
   font-style: bold;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     float:center;
 }
 .card:hover{
@@ -123,7 +123,7 @@ a:link, a:visited{
 }
 .ulnav .anav {
   display: block;
-  padding: 10px;
+  padding: 15px;
   text-align: left; 
   color: white;
   text-decoration: none;
