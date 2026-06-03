@@ -1,3 +1,45 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    background-color: pink;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.subtitle {
+    color: cyan;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background-color: darkmagenta;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: magenta;
+    transform: scale(1.03);
+}
+
+.menu a:hover {
+    opacity: 1;
+}
+
+.main-box {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
 }
