@@ -95,31 +95,3 @@ a:link, a:visited{
   color:white;
 }
 
-
-.nav:hover {
-  right: 0;
-}
-.menu .inmen {
-  display: block;
-  padding: 5px;
-  text-align: left; 
-  color: white;
-  text-decoration: none;
-  font-family: "Press Start 2P", system-ui;
-  margin: 0; 
-  box-sizing: border-box;
-  
-  font-size: 25px;
-}
-.menu-link .inmen:hover{
-  color: #F5BB47;
-}
-
-.menu-link{
-  margin-bottom: 50px;
-}
-
-
-.menu-link{
-    list-style-type:none;
-}
