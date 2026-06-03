@@ -85,3 +85,8 @@ img{
 p{
 	font-weight: 600;
 }
+.game_block h2 {
+	font-size: 32px;
+	margin-bottom: 25px;
+	margin-left: 5%;
+}
