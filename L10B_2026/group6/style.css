@@ -4,7 +4,7 @@ body{
 
 .container{
 	background-color: #486B85;
-	height: 80px;
+	height: auto;
 }
 .card{
 	background-color: #93B4BC;
