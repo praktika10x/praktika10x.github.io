@@ -84,6 +84,7 @@ span{
   font-size:30px;
 }
 img{
+  font-style: bold;
     width: 100px;
     height: 100px;
     float:left;
