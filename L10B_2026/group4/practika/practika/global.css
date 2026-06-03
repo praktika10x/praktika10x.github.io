@@ -1,0 +1,48 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Jersey 25-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Jersey 25-Regular";
+  src: local("Jersey 25-Regular");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Science Gothic-SemiBold", "weight": "600", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Science Gothic-SemiBold";
+  src: local("Science Gothic-SemiBold");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Montserrat-ExtraBold", "weight": "800", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: local("Montserrat-ExtraBold");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Montserrat-Medium", "weight": "500", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: local("Montserrat-Medium");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Science Gothic-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Science Gothic-Regular";
+  src: local("Science Gothic-Regular");
+}
