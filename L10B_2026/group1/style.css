@@ -374,3 +374,163 @@ p {
     padding: 2rem;
     border-radius: 1rem;
 }
+.hero-image-container {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.tech-banner {
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(135deg, #020617, #1e1b4b);
+    border-radius: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circuit-board {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+    background-image: 
+        radial-gradient(circle at 20% 30%, #3b82f6 2px, transparent 3px),
+        radial-gradient(circle at 75% 60%, #8b5cf6 2px, transparent 3px);
+    border-left: 2px dashed rgba(99, 102, 241, 0.2);
+    border-right: 2px dashed rgba(99, 102, 241, 0.2);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.banner-text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    opacity: 0.9;
+}
+
+.align-start {
+    align-items: flex-start !important;
+}
+
+.black-text li {
+    color: var(--foreground) !important;
+}
+
+.text-green {
+    color: #16a34a !important;
+}
+
+.green-gradient {
+    background: linear-gradient(135deg, #10b981, #059669) !important;
+}
+
+.bg-opaque {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.accordion-section {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.accordion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.accordion-item {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.accordion-item.active {
+    background-color: #f1f5f9;
+    border-color: #cbd5e1;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.accordion-info h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.arrow-icon {
+    color: #94a3b8;
+    transition: transform 0.2s ease;
+}
+
+.accordion-item.active .arrow-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    margin-top: 0.5rem;
+    padding-left: 2.5rem;
+}
+
+.accordion-content p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Нова ізольована секція для прикладів запитів з зеленим відтінком */
+.prompt-examples-section {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    background-color: #f0fdf4; /* Світло-зелена підкладка як на скрині */
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.prompt-examples-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.prompt-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.shrink-none {
+    flex-shrink: 0;
+}
