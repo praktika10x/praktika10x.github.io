@@ -137,7 +137,8 @@ a:link, a:visited{
   margin: 0; 
   box-sizing: border-box;
   font-size: 30px;
-  float:left;
+  display: flex;
+  flex-wrap: wrap;
 }
 .nav-link .anav:hover{
   color: #8799AE;
