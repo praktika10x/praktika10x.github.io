@@ -103,7 +103,7 @@ a:link, a:visited{
   left: -300px; 
   width: 20%;
   height: 100vh;
-  background-color: skyblue;
+  background-color: #3770BC;
   border: 3px solid darkblue;
   padding: 20px 10px;
   transition: left 0.5s;
