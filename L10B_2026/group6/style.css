@@ -23,9 +23,10 @@ body{
 	padding: 10px;
 }
 .box_img{
-	background-image: url("praktika10x/praktika10x.github.io/L10B_2026/group6/images/box_image.jpg");
-	height: 50px;
-	width: 100%;
+	background-image: url(images/box_image.jpg);
+    height: 50px;
+    width: 100%;
+    margin-top: -30px;
 }
 table, th, td {
 	border: 2px solid;
