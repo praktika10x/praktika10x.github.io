@@ -1,6 +1,11 @@
 body{
   background-color:#E8E8E8 ;
 }
+
+.card{
+	background-color: #93B4BC;
+}
+
 table, th, td {
 	border: 2px solid;
   border-collapse: collapse;
@@ -14,4 +19,4 @@ th {
 table {
   width: 80%;
   margin: auto ;
-	    }
+}
