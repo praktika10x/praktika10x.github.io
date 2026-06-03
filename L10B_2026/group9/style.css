@@ -22,18 +22,3 @@ font-size: 16px;
 border-radius: 4px;
 transition: background-color 0.3s, transform 0.2s;
 }
-.button:hover {
-background-color: magenta;
-transform: scale(1.03);
-}
-.menu a:hover {
-opacity: 1;
-}
-.main-box{
-  display:flex;
-  justify-content:center;
-}
-.menu{
-  display:flex;
-  justify-content:center;
-}
