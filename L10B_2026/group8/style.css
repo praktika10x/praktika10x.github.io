@@ -74,6 +74,10 @@ span{
   margin: 0 auto;
 }
 .osn{
+  background-image: url("https://mapi7.com/assets/images/blog/kak-sdelat-foto-pod-vodoj/pod-vodoy-5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: average-text;
   background-color: #98C8FF;
   width: 100%;
