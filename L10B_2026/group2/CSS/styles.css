@@ -41,9 +41,9 @@ h5
 h6
 {
     text-align: left;
-    font-family: "Press Start 2P";
-    color: #77BB44;
-    font-size: 45px;
+    font-family: Nunito;
+    color: white;
+    font-size: 15px;
 }
 
 body
@@ -239,7 +239,7 @@ td
 
 .horcard
 {
-    width:850px;
+    width:650px;
     height:450px;
     margin: 50px;
     background: linear-gradient(135deg, #77bb44 35%, #107c10 100%);
@@ -249,10 +249,11 @@ td
 .horcard:hover
 {
     border:10px lightgreen solid;
-    width:850px;
+    width:650px;
     height:450px;
     transform: translateY(1px);
     transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+    transform-origin: bottom;
 }
 
 .horcards{
@@ -275,4 +276,32 @@ td
     margin-left: 0px;
     margin-right: 20px;
     width: 400px;
+}
+
+/*********************/
+
+.piccard
+{
+    width:450px;
+    height:300px;
+    margin: auto;
+    background: linear-gradient(90deg, #171717 35%, #5B5B5B 100%);
+    border: 5px white solid;
+	transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+}
+.piccard:hover
+{
+    border:7px white solid;
+    width:450px;
+    height:300px;
+    transform: translateY(1px);
+    transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+    transform-origin: bottom;
+}
+.imglng
+{
+    width: 400px;
+    height: 275px;
+    margin: 10px;
+    border: 5px white solid;
 }
