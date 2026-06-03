@@ -46,9 +46,8 @@ h1 {
 }
 span{
   font-family: "Inria Serif", sans-serif;
-  font-size: 20px;
   font-weight: 450;
-  
+  font-style: bold;
 }
 .gol{
   font-family: "raleway-text";
