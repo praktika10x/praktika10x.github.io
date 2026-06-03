@@ -50,7 +50,7 @@ span{
   font-size: 20px;
 }
 .gol{
-  font-family: raleway-text;
+  font-family: "raleway-text";
   width: 100%;
   height: 50px;
   color: white;
@@ -61,7 +61,7 @@ span{
 }
 .gla{
   text-size: 10px;
-  font-family: bitter-text;
+  font-family: "bitter-text";
   background-color: #7681FF;
   width: 100%;
   height: 100px;
