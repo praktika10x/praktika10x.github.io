@@ -45,12 +45,12 @@ h1 {
   
 }
 span{
-  font-family: "Inria Serif", sans-serif;
+  font-family: "inria-serif-bold", sans-serif;
   font-weight: 450;
   font-style: bold;
 }
 .gol{
-  font-family: "raleway-text";
+  font-family: "bitter-text";
   width: 100%;
   height: 150px;
   color: white;
@@ -73,7 +73,7 @@ span{
   padding: 15px;
 }
 .osn{
-  font-family:"Inria Serif";
+  font-family:"average-text";
   background-color: #98C8FF;
   width: 100%;
   height: 500px;
@@ -105,7 +105,7 @@ a:link, a:visited{
   left: -300px; 
   width: 20%;
   height: 100vh;
-  background-color: #3770BC;
+  background-color: darkblue;
   border: 3px solid darkblue;
   padding: 20px 10px;
   transition: left 0.5s;
@@ -120,7 +120,7 @@ a:link, a:visited{
   display: block;
   padding: 5px;
   text-align: left; 
-  color: red;
+  color: white;
   text-decoration: none;
   font-family: "Inria Serif", system-ui;
   margin: 0; 
