@@ -29,3 +29,11 @@ transform: scale(1.03);
 .menu a:hover {
 opacity: 1;
 }
+.main-box{
+  display:flex;
+  justify-content:center;
+}
+.menu{
+  display:flex;
+  justify-content:center;
+}
