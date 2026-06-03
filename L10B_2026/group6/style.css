@@ -35,6 +35,10 @@ body{
 	margin: 10px;
 	padding: 16px;
 }
+	.cardd:hover{
+	 transition: 1s;
+     transform: scale(1.05);
+     transform-origin: center;
 .block_img{
 	background-image: url(images/box_image.jpg);
     height: 50px;
