@@ -1,11 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аніматор - Професія Майбутнього</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Базові налаштування */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f6e3db; 
+            color: #333;
+        }
+
+        /* Меню навігації */
+        .menu {
+            width: 100%;
+            height: 50px;
+            background: #0f5257; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            color: #a1c4fd; 
+        }
+
+        /* Основний контейнер для контенту */
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .container p {
+            line-height: 1.7;
+            font-size: 16px;
+            color: #444;
+        }
+
+        h2 {
+            color: #1d4e6d; 
+            margin: 30px 0 15px 0;
+            font-size: 24px;
+        }
+
+        /* Слайдер (шапка першої сторінки) */
+        .slider {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            height: 350px;
+            margin: 20px auto;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .item {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+        }
+
+        .item:hover {
+            flex: 5;
+        }
+
+        .item h1 {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            font-weight: bold;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Список вимог */
+        .requirements {
+            margin-top: 30px;
+        }
+
+        .requirements h3 {
+            color: #1d4e6d;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .requirements ul {
+            list-style: none;
+            line-height: 1.6;
+            padding: 0;
+        }
+
+        .requirements li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: #b07040; 
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .requirements li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #1d4e6d; 
+            font-size: 20px;
+            line-height: 1;
+        }
+
+        /* Блок "Зразок вимог" */
+        .sample-image {
+            width: 100%;
+            height: 250px;
+            background-color: #ebd1c5; 
+            border-radius: 20px;
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Форми та кнопки */
+        form {
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #1d4e6d;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #0f5257;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #fff;
+        }
+
+        table, th, td {
+            border: 2px solid #0f5257;
+        }
+
+        th {
+            background: #0f5257;
+            color: #fff;
+            padding: 12px;
+        }
+
+        td {
+            padding: 12px;
+        }
+
+        .top {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #0f5257;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        video, audio {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Адаптивність під мобільні пристрої */
+        @media(max-width: 640px){
+            .slider {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .item {
+                width: 100%;
+                height: 200px;
+                flex: none;
+            }
+
+            .menu {
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+                gap: 15px;
+            }
+            
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-	<h1>Група 7</h1>
+
+<div class="slider">
+    <div class="item" style="background-image:url('../images/water_lilies.png'); background-position: center; background-size: cover; color: white; display: flex; align-items: flex-end; padding: 20px;">
+        <h1 style="color: white; text-align: left; margin: 0; font-size: 32px;">Аніматор</h1>
+    </div>
+</div>
+
+<nav class="menu">
+    <a href="index.html">Головна (Аніматор)</a>
+    <a href="institutions.html">Заклади</a>
+    <a href="generation.html">Генерація</a>
+    <a href="about.html">Автори</a>
+</nav>
+
+<div class="container">
+    <h2>Про професію</h2>
+    <p>
+        <span style="font-weight: bold;">3-D Аніматор</span> - це спеціаліст, який створює анімовані сцени, персонажів та візуальні ефекти за допомогою програм комп'ютерної графіки та сучасних технологій автоматизованої генерації. Він працює над розробкою рухів, налаштуванням анімаційних моделей та використанням інструментів штучного інтелекту для прискорення процесу створення анімації. Такі спеціалісти затребувані в кіноіндустрії, геймдеві, рекламі та мультимедійних проектах.
+    </p>
+
+    <div class="requirements">
+        <h3>Вимоги до фахівця</h3>
+        <ul>
+            <li>знання програм для створення анімації та комп'ютерної графіки</li>
+            <li>творче мислення</li>
+            <li>художній смак</li>
+            <li>уважність до деталей</li>
+            <li>навички роботи з комп'ютером</li>
+            <li>уміння працювати в команді та постійно вивчати нові технології</li>
+            <li>креативність, терпіння та відповідальність</li>
+        </ul>
+    </div>
+
+    <div class="sample-image">
+        <span>Зразок вимог</span>
+    </div>
+
+</div>
+
 </body>
 </html>
