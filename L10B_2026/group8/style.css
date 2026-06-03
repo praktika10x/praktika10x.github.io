@@ -132,3 +132,7 @@ a:link, a:visited{
 .nav-link{
   list-style-type:none;
 }
+.video-block {
+  text-align: center;
+  margin: 40px auto;
+}
