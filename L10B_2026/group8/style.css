@@ -70,13 +70,12 @@ span{
   padding: 15px;
 }
 .osn{
-  font-family:average-text;
+  font-family:"Inria Serif";
   background-color: #98C8FF;
   width: 100%;
   height: 300px;
   text-align:left;
   text-align-last: left;
-  font-family:raleway-text;
   margin: 0 auto;
   padding: 15px;
 }
