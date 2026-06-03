@@ -2,6 +2,10 @@ body{
   background-color:#E8E8E8 ;
 }
 
+.container{
+	background-color: #486B85;
+	height: 80px;
+}
 .card{
 	background-color: #93B4BC;
 	width: 100px;
