@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatGPT - ШІ Generation</title>
+    <title>ChatGPT - ШІ Генерація Тексту</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,7 +18,6 @@
             <a href="#" class="btn-primary">ChatGPT</a>
             <a href="gemini.html" class="nav-item">Gemini</a>
             <a href="porivnyannya.html" class="nav-item">Порівняння</a>
-            <a href="styli.html" class="nav-item">Стилі</a>
         </nav>
     </header>
 
@@ -40,21 +39,21 @@
             </div>
         </div>
 
-        <div class="content-grid" style="margin-top: 3.5rem;">
+        <div class="content-grid">
             <div class="white-card align-start">
                 <div class="section-title">
                     <svg class="icon icon-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
                     <h2>Ключові переваги</h2>
                 </div>
                 <ul class="card-list black-text">
-                    <li><svg class="icon-check text-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Universal and copes with a wide range of tasks</li>
-                    <li><svg class="icon-check text-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Strong analytical thinking and logical deduction</li>
-                    <li><svg class="icon-check text-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Excellent understanding of text structure</li>
-                    <li><svg class="icon-check text-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Supports custom instructions and fine-tuning</li>
-                    <li><svg class="icon-check text-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Regular updates and modern advancements</li>
-                    <li><svg class="icon-check text-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Large data set with knowledge base updates</li>
-                    <li><svg class="icon-check text-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Generates and reads multi-modal media data</li>
-                    <li><svg class="icon-check text-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Safe API connectivity methods for systems</li>
+                    <li><svg class="icon-check text-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Universalний та впорається з широким спектром завдань</li>
+                    <li><svg class="icon-check text-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Сильні аналітичні здібності та логічне мислення</li>
+                    <li><svg class="icon-check text-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Відмінно розуміє контекст</li>
+                    <li><svg class="icon-check text-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Підтримує плагіни та користувацькі інструкції</li>
+                    <li><svg class="icon-check text-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Регулярні оновлення та покращення</li>
+                    <li><svg class="icon-check text-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Велика база знань до квітня 2023 року</li>
+                    <li><svg class="icon-check text-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Може генерувати та аналізувати зображення (GPT-4)</li>
+                    <li><svg class="icon-check text-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Доступний через API для інтеграції</li>
                 </ul>
             </div>
 
@@ -62,20 +61,17 @@
                 <div class="section-title">
                     <h2 class="text-white">Що робить ChatGPT особливим?</h2>
                 </div>
-                
                 <div class="inner-blur-box bg-opaque">
                     <h3 class="text-white">Розширене розуміння</h3>
                     <p class="text-white-muted text-sm" style="margin-top: 0.5rem; opacity: 0.9;">ChatGPT використовує архітектуру GPT (Generative Pre-trained Transformer) для розуміння контексту та генерації релевантних, послідовних відповідей.</p>
                 </div>
-
                 <div class="inner-blur-box bg-opaque" style="margin-top: 1rem;">
                     <h3 class="text-white">Постійне навчання</h3>
                     <p class="text-white-muted text-sm" style="margin-top: 0.5rem; opacity: 0.9;">Побудований на великих обсягах навчальних даних і доопрацьований за допомогою людського зворотного зв'язку для надання корисних і точних відповідей.</p>
                 </div>
-
                 <div class="inner-blur-box bg-opaque" style="margin-top: 1rem;">
                     <h3 class="text-white">Гнучкі застосування</h3>
-                    <p class="text-white-muted text-sm" style="margin-top: 0.5rem; opacity: 0.9;">Від творчого письма до технічної підтримки, ChatGPT адаптується до різних випадків використання та професійних потребах.</p>
+                    <p class="text-white-muted text-sm" style="margin-top: 0.5rem; opacity: 0.9;">Від творчого письма до технічної підтримки, ChatGPT адаптується до різних випадків використання та професійних потреб.</p>
                 </div>
             </div>
         </div>
@@ -85,7 +81,6 @@
                 <svg class="icon icon-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .6 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
                 <h2>Функції та можливості</h2>
             </div>
-            
             <div class="accordion-list">
                 <div class="accordion-item active">
                     <div class="accordion-header">
@@ -99,7 +94,6 @@
                         <p class="text-muted-foreground">Ведіть діалоги, схожі на людські, з розумінням контексту та пам'яттю про попередні повідомлення.</p>
                     </div>
                 </div>
-
                 <div class="accordion-item">
                     <div class="accordion-header">
                         <div class="accordion-info">
@@ -112,7 +106,6 @@
                         <p class="text-muted-foreground">Пишіть, налагоджуйте та пояснюйте код різними мовами програмування.</p>
                     </div>
                 </div>
-
                 <div class="accordion-item">
                     <div class="accordion-header">
                         <div class="accordion-info">
@@ -125,8 +118,9 @@
                         <p class="text-muted-foreground">Спілкуйтеся та перекладайте понад 50 мовами без зусиль.</p>
                     </div>
                 </div>
-
                 <div class="accordion-item">
                     <div class="accordion-header">
                         <div class="accordion-info">
                             <svg class="icon icon-green" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .6 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+                            <h3>Творче письмо</h3>
+                        </div>
