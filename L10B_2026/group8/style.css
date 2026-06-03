@@ -134,6 +134,4 @@ a:link, a:visited{
 span{
   font-family: "Inria Serif", sans-serif;
   font-size: 20px;
-  font-weight: 550;
-  color: var(--h2-color);
 }
