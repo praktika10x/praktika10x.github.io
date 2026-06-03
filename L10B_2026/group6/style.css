@@ -23,7 +23,7 @@ body{
 	margin: 10px;
 	padding: 10px;
 	transition: 1s;
-	box-shadow: 2px 3px 5px #486B4B;
+	box-shadow: 2px 3px 5px #1C252B;
 }
 .card:hover{ 
     transform: scale(1.05);
