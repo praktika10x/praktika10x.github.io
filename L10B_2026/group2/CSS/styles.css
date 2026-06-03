@@ -225,7 +225,7 @@ li{
 
 
 /*********************/
-
+/*
 table, th, td 
 {
     border: 10px solid white;
@@ -236,7 +236,7 @@ td
 {
     padding:10px;
 } 
-
+*/
 .horcard
 {
     width:650px;
@@ -280,24 +280,7 @@ td
 
 /*********************/
 
-.piccard
-{
-    width:450px;
-    height:300px;
-    margin: auto;
-    background: linear-gradient(90deg, #171717 35%, #5B5B5B 100%);
-    border: 5px white solid;
-	transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
-}
-.piccard:hover
-{
-    border:7px white solid;
-    width:450px;
-    height:300px;
-    transform: translateY(1px);
-    transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
-    transform-origin: bottom;
-}
+
 .imglng
 {
     width: 400px;
@@ -305,3 +288,42 @@ td
     margin: 10px;
     border: 5px white solid;
 }
+
+/*********************/
+
+.compare-grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+    margin:20px;
+}
+
+.grid-header{
+    border:10px solid white;
+    text-align:center;
+    padding:20px;
+}
+
+.grid-cell{
+    border:10px solid white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:30px;
+    margin-top:70px;
+    padding:20px;
+}
+
+.gallery-slot{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+/*********************/
