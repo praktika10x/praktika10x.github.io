@@ -94,13 +94,5 @@ p{
 .game_block h2 {
 	font-size: 32px;
 	margin-bottom: 25px;
-	margin-left: 5%;
-}
-.game_block iframe {
-    display: block;           
-    margin: auto;           
-    width: 850px;         
-    height: 650px;            
-    border: none;             
-    border-radius: 12px;  
+	margin-left: 45%;
 }
