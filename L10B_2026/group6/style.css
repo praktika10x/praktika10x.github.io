@@ -9,6 +9,7 @@ body{
 .container{
 	background-color: #486B85;
 	height: auto;
+	padding: 10px;
 }
 .card{
 	background-color: #93B4BC;
