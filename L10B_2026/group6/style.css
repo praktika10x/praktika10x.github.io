@@ -19,7 +19,11 @@ body{
 	margin: 10px;
 	padding: 10px;
 }
-
+.box_img{
+	background-image: url("L10B_2026/group6/images/box_image.jpg");
+	height: auto;
+	padding: 10px;
+}
 table, th, td {
 	border: 2px solid;
   border-collapse: collapse;
