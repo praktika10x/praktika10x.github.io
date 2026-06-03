@@ -63,6 +63,13 @@ h2 {
 	width: 100%;
 	font-family: Pacifico, sans-serif;
 }
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+a:active{
+	color: #486B85;
+}
 .circular_img{
 	border-radius: 100%;
 	margin-top: 10px;
