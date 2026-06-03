@@ -115,7 +115,7 @@ a:link, a:visited{
   display: block;
   padding: 5px;
   text-align: left; 
-  color: white;
+  color: red;
   text-decoration: none;
   font-family: "Inria Serif", system-ui;
   margin: 0; 
