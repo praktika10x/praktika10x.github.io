@@ -97,7 +97,8 @@ img{
   font-style: bold;
     width: 120px;
     height: 120px;
-    float:center;
+    text-align:center;
+    float: right;
 }
 .card:hover{
   transform:scale(1.1);
