@@ -299,13 +299,13 @@ td
 }
 
 .grid-header{
-    border:10px solid white;
+    /*border:10px solid white;*/
     text-align:center;
     padding:20px;
 }
 
 .grid-cell{
-    border:10px solid white;
+    /*border:10px solid white;*/
     display:flex;
     justify-content:center;
     align-items:center;
