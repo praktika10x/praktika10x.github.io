@@ -56,7 +56,7 @@ span{
   height: 170px;
   color: white;
   background-color: #8799AE;
-  text-align:right;
+  text-align:center;
   margin: 0 auto;
   padding: 15px;
   font-size:30px;
@@ -89,7 +89,7 @@ img{
   font-style: bold;
     width: 100px;
     height: 100px;
-    float:left;
+    float:center;
 }
 .card:hover{
   transform:scale(1.1);
