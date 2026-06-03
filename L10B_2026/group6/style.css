@@ -8,8 +8,8 @@ body{
 }
 .container{
 	background-color: #486B85;
-	height: 100;
-	width: 200%;
+	height: auto;
+	width: 100%;
 	padding: 10px;
 	margin-bottom:30px;
 }
@@ -23,8 +23,7 @@ body{
 }
 .box_img{
 	background-image: url("L10B_2026/group6/images/box_image.jpg");
-	height: auto;
-	padding: 10px;
+	height: 50px;
 }
 table, th, td {
 	border: 2px solid;
