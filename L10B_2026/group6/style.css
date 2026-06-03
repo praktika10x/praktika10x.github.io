@@ -4,6 +4,9 @@ body{
 
 .card{
 	background-color: #93B4BC;
+	width: 33;
+	height: 100px;
+	border-radius: 10px;
 }
 
 table, th, td {
