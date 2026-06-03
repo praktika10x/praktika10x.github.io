@@ -1,7 +1,11 @@
 body{
   background-color:#E8E8E8 ;
 }
-
+.wrap{
+	display: flex;
+	flex-wrap: flex;
+	justify-content: space-around;
+}
 .container{
 	background-color: #486B85;
 	height: auto;
