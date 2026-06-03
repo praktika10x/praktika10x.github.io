@@ -131,3 +131,9 @@ a:link, a:visited{
 .nav-link{
   list-style-type:none;
 }
+span{
+  font-family: "Tektur", sans-serif;
+  font-size: 20px;
+  font-weight: 550;
+  color: var(--h2-color);
+}
