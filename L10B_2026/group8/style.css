@@ -94,3 +94,45 @@ a:link, a:visited{
   color:white;
 }
 
+.nav {
+  position: fixed;
+  margin: 0;
+  left: -370px; 
+  width: 20%;
+  height: 100vh;
+  background-color: skyblue;
+  border: 3px solid darkblue;
+  padding: 20px 10px;
+  transition: left 0.5s;
+  align-items: start;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.nav:hover {
+  left: 0;
+}
+.ulnav .anav {
+  display: block;
+  padding: 5px;
+  text-align: left; 
+  color: white;
+  text-decoration: none;
+  font-family: "Inria Serif", system-ui;
+  margin: 0; 
+  box-sizing: border-box;
+
+  font-size: 25px;
+}
+.nav-link .anav:hover{
+  color: #8799AE;
+}
+
+.nav-link{
+  margin-bottom: 50px;
+}
+
+
+.nav-link{
+    list-style-type:none;
+}
