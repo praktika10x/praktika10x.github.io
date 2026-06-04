@@ -27,6 +27,13 @@
   font-style: bold;
 }
 
+.jura-text {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 * {
   margin: 0;
