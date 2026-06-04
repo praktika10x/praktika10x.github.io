@@ -126,7 +126,6 @@
             box-shadow: 0 5px 12px rgba(0,0,0,0.2);
         }
 
-        
         main {
             flex: 1;
             padding: 30px 20px;
@@ -144,7 +143,7 @@
             display: block; 
         }
 
-        .interactive-card, .team-card, .guide-step, .faq-item, video, table tr {
+        .interactive-card, .team-card, .guide-step, .faq-item, video, .playlist-btn {
             cursor: pointer;
         }
 
@@ -185,7 +184,6 @@
             margin: 10px auto 0;
         }
 
-     
         .team-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -211,16 +209,18 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 36px;
-            background: linear-gradient(135deg, var(--card-pink), var(--accent-bronze));
-            color: white;
         }
 
-    
         .info-grid {
             display: grid;
             grid-template-columns: 1fr;
             gap: 25px;
+        }
+
+        @media (min-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr 1fr;
+            }
         }
 
         .concept-block {
@@ -242,13 +242,15 @@
             font-size: 15px;
         }
 
-      
         .media-container {
             text-align: center;
             background-color: rgba(15, 76, 97, 0.05);
             padding: 20px;
             border-radius: 15px;
-            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         video {
@@ -259,7 +261,29 @@
             background-color: #000;
         }
 
-        
+        .video-playlist {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .playlist-btn {
+            background-color: var(--primary-light);
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+
+        .playlist-btn.active, .playlist-btn:hover {
+            background-color: var(--primary-dark);
+        }
+
         .samples-layout {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -283,6 +307,7 @@
             margin-top: 15px;
             font-size: 13.5px;
             border: 1px solid rgba(0,0,0,0.03);
+            clear: both;
         }
 
         .prompt-field {
@@ -293,7 +318,6 @@
             font-style: italic;
         }
 
-        
         .guide-list {
             display: flex;
             flex-direction: column;
@@ -327,7 +351,6 @@
             line-height: 1.6;
         }
 
-       
         .table-wrapper {
             width: 100%;
             overflow-x: auto;
@@ -368,7 +391,6 @@
         .rating { color: #f39c12; }
         .ok { color: #27ae60; font-weight: bold; }
 
-        
         .faq-grid {
             display: flex;
             flex-direction: column;
@@ -389,7 +411,6 @@
             font-size: 16px;
         }
 
-        
         @keyframes fadeInPage {
             from { opacity: 0; transform: translateY(12px); }
             to { opacity: 1; transform: translateY(0); }
@@ -400,7 +421,6 @@
             to { text-shadow: 0 0 8px rgba(217, 184, 176, 0.5); }
         }
 
-       
         footer {
             background-color: var(--primary-dark);
             color: var(--white);
@@ -411,7 +431,6 @@
             border-top: 3px solid var(--accent-bronze);
         }
 
-        
         @media (max-width: 768px) {
             .nav-btn {
                 flex: 1 1 45%;
@@ -431,7 +450,7 @@
                 padding: 10px;
                 font-size: 12px;
             }
-           
+            
             table, thead, tbody, th, td, tr { 
                 display: block; 
             }
@@ -463,56 +482,56 @@
 
     <main>
 
-       <section id="tab1" class="page-section active">
-    <div class="hero-banner">
-        <h1>Генерація анімацій за допомогою ШІ</h1>
-        <p>Сучасний науково-дослідницький проєкт, що демонструє революцію у сфері комп'ютерного моделювання, кінематографу та геймдеву.</p>
-    </div>
-    <h2 class="section-title">Склад нашої команди</h2>
-    <div class="team-gallery">
-        
-        <div class="team-card">
-            <div class="avatar-container" style="padding: 0; background: none;">
-                <img src="іра.jpg" alt="Ханат Іра" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        <section id="tab1" class="page-section active">
+            <div class="hero-banner">
+                <h1>Генерація анімацій за допомогою ШІ</h1>
+                <p>Сучасний науково-дослідницький проєкт, що демонструє революцію у сфері комп'ютерного моделювання, кінематографу та геймдеву.</p>
             </div>
-            <h3>Ханат Іра</h3>
-            <p>UI/UX Дизайнер Тімлід & Програміст</p>
-        </div>
-        
-        <div class="team-card">
-            <div class="avatar-container" style="padding: 0; background: none;">
-                <img src="крістіна.jpg" alt="Карпенко Крістіна" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <h2 class="section-title">Склад нашої команди</h2>
+            <div class="team-gallery">
+                <div class="team-card">
+                    <div class="avatar-container">
+                        <img src="іра.jpg" alt="Ханат Іра">
+                    </div>
+                    <h3>Ханат Іра</h3>
+                    <p>UI/UX Дизайнер Тімлід & Програміст</p>
+                </div>
+                <div class="team-card">
+                    <div class="avatar-container">
+                        <img src="крістіна.jpg" alt="Карпенко Крістіна">
+                    </div>
+                    <h3>Карпенко Крістіна</h3>
+                    <p>ШІ-Інженер & Програміст</p>
+                </div>
+                <div class="team-card">
+                    <div class="avatar-container">
+                        <img src="альбіна.jpg" alt="Остахова Альбіна">
+                    </div>
+                    <h3>Остахова Альбіна</h3>
+                    <p>Аналітик контенту & Frontend</p>
+                </div>
             </div>
-            <h3>Карпенко Крістіна</h3>
-            <p>ШІ-Інженер & Програміст</p>
-        </div>
-        
-        <div class="team-card">
-            <div class="avatar-container" style="padding: 0; background: none;">
-                <img src="альбіна.jpg" alt="Остахова Альбіна" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-            </div>
-            <h3>Остахова Альбіна</h3>
-            <p>Аналітик контенту & Frontend</p>
-        </div>
-        
-    </div>
-</section>
+        </section>
+
         <section id="tab2" class="page-section">
             <h2 class="section-title">Теоретична база дослідження</h2>
             <div class="info-grid">
                 <div class="concept-block interactive-card">
-                    <h3>Що таке генерація анімацій?</h3>
+                    <h3>What is animation generation?</h3>
                     <p><strong>Генерація анімації</strong> – це автоматизований процес послідовного створення кадрів за допомогою комп'ютерних алгоритмів, що створює плавний візуальний ефект руху об'єктів у просторі й часі.</p>
                     <p>Використання генеративного ШІ кардинально скорочує час виробництва графічного контенту, дозволяючи створювати складні сцени за секунди.</p>
                 </div>
                 <div class="media-container">
                     <h3 style="color:var(--primary-dark); margin-bottom:10px;">Демонстрація медіапродукту</h3>
-                    <video controls width="400" height="300">
+                    <video id="mainVideo" controls width="400" height="300">
                         <source src="лебеді.mp4" type="video/mp4">
-                        <source src="Котик.mp4" type="video/mp4">
-                        <source src="Практична саакура 2 .mp4" type="video/mp4">
                         Ваш браузер не підтримує відео.
                     </video>
+                    <div class="video-playlist">
+                        <button class="playlist-btn active" onclick="changeVideo('лебеді.mp4', this)">Лебеді</button>
+                        <button class="playlist-btn" onclick="changeVideo('Котик.mp4', this)">Котик</button>
+                        <button class="playlist-btn" onclick="changeVideo('Практична саакура 2 .mp4', this)">Сакура</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -534,7 +553,7 @@
                     <h3>Оживлення концепт-арту</h3>
                     <div class="chat-area">
                         <p><strong>Запит до ШІ:</strong></p>
-                        <div class="prompt-field">"[Завантажене фото птаха фенікса] -> Make the fire wings flap realistically, smoke rising up, cinematic lighting, 60fps."</div>
+                        <div class="prompt-field">"[Завантажене фото] -> Make the fire wings flap realistically, smoke rising up, cinematic lighting, 60fps."</div>
                         <p><strong>Результат:</strong> Статичне зображення перетворюється на анімований живий аватар із коректною фізикою частинок вогню.</p>
                     </div>
                 </div>
@@ -579,7 +598,7 @@
                     <tbody>
                         <tr>
                             <td data-label="Критерій"><strong>Основне призначення</strong></td>
-                            <td data-label="Pika AI">Генерація коротких відео, мемів та швидка анімація зображень</td>
+                            <td data-label="Pika AI">Генерація коротких відео, мемів та анімація зображень</td>
                             <td data-label="Runway Gen-2">Професійний інструментарій для створення відео та спецефектів</td>
                             <td data-label="Luma AI">Генерація фотореалістичних та фізично точних тривимірних сцен</td>
                         </tr>
@@ -621,7 +640,7 @@
                 </div>
                 <div class="concept-block interactive-card">
                     <h3>Розуміння законів фізики реального світу</h3>
-                    <p>Нові покоління нейромереж навчаються не просто склеювати пікселі, а симулювати реальну фізику: гравітацію, кінематику рідин, заломлення світла та взаємодію твердих тіл, що робить анімацію невідлітною від реального відео.</p>
+                    <p>Нові покоління нейромереж навчаються не просто склеювати пікселі, а симулювати реальну фізику: гравітацію, кінематику рідин, заломлення світла та взаємодію твердих тіл.</p>
                 </div>
             </div>
         </section>
@@ -631,11 +650,11 @@
             <div class="info-grid">
                 <div class="concept-block interactive-card">
                     <h3>Проблема використання авторських баз даних</h3>
-                    <p>Більшість сучасних моделей навчаються на мільярдах зображень та відео з мережі Інтернет. Це викликає дискусії серед художників та аніматорів щодо захисту їхньої інтелектуальної власності та компенсацій за використання їхнього стилю.</p>
+                    <p>Більшість сучасних моделей навчаються на мільярдах зображень та відео з мережі Інтернет. Це викликає дискусії серед художників щодо захисту їхньої інтелектуальної власності.</p>
                 </div>
                 <div class="concept-block interactive-card">
                     <h3>Маркування штучного контенту (Watermarking)</h3>
-                    <p>Для боротьби з дезінформацією та фейками великі розробники впроваджують невидимі цифрові метадані (криптографічні водяні знаки), які дозволяють ідентифікувати, що відео чи анімація були створені за допомогою ШІ.</p>
+                    <p>Для боротьби з дезінформацією та фейками великі розробники впроваджують невидимі цифрові метадані (криптографічні водяні знаки), які дозволяють ідентифікувати автора контенту.</p>
                 </div>
             </div>
         </section>
@@ -645,15 +664,15 @@
             <div class="faq-grid">
                 <div class="faq-item">
                     <h3>Чи може ШІ повністю замінити класичного 3D-аніматора?</h3>
-                    <p>Ні, на поточному етапі ШІ виступає потужним асистентом (інструментом концепт-арту та швидкого прототипування), проте він не має режисерського бачення та не може вносити мікрокорекції, які потрібні у великому кіновиробництві.</p>
+                    <p>Ні, на поточному етапі ШІ виступає потужним асистентом для концепт-арту, проте він не має режисерського бачення та не може вносити тонкі мікрокорекції.</p>
                 </div>
                 <div class="faq-item">
                     <h3>Яка роздільна здатність є стандартною для генерації?</h3>
-                    <p>Більшість сервісів безкоштовно генерують відео у форматі 720p. Платні підписки або функції Upscaling дозволяють збільшувати якість до Full HD (1080p) та Ultra HD (4K).</p>
+                    <p>Більшість сервісів безкоштовно генерують відео у форматі 720p. Платні підписки дозволяють збільшувати якість до Full HD (1080p) та Ultra HD (4K).</p>
                 </div>
                 <div class="faq-item">
                     <h3>Як уникнути розмиття обличчя під час створення руху?</h3>
-                    <p>Для цього використовують спеціальні функції фіксації обличчя (наприклад, Face Anchor у Runway) або додатково обробляють готове відео через нейромережі-інтенсифікатори деталей.</p>
+                    <p>Для цього використовують спеціальні функції фіксації обличчя (наприклад, Face Anchor) або додатково обробляють готове відео через нейромережі-апскейлери.</p>
                 </div>
             </div>
         </section>
@@ -661,12 +680,11 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 проєкт "Animation Generation". Науковий ліцей "Політ". Роботу виконали Карпеко Крістіна, Ханат Іра, Остахова Альбіна</p>
+        <p>&copy; 2026 проєкт "Animation Generation". Науковий ліцей "Політ". Роботу виконали: Карпенко Крістіна, Ханат Іра, Остахова Альбіна</p>
     </footer>
 
     <script>
         function showTab(tabId, btnElement) {
-        
             const sections = document.querySelectorAll('.page-section');
             sections.forEach(section => {
                 section.classList.remove('active');
@@ -683,8 +701,17 @@
             }
 
             btnElement.classList.add('active');
-
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function changeVideo(videoSrc, btn) {
+            const video = document.getElementById('mainVideo');
+            video.src = videoSrc;
+            video.load();
+            video.play();
+            
+            document.querySelectorAll('.playlist-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
         }
     </script>
 </body>
