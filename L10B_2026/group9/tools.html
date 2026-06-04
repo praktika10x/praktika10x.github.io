@@ -1,77 +1,160 @@
 <!DOCTYPE html>
-<html lang="uk"> 
+<html lang="uk">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>project</title>
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="menu">
-    <a href="index.html">Головна</a>
-    <a href="tools.html" class="active">ШІ Інструменти</a>
-    <a href="gallery.html">Галерея 3D</a>
-  </div>
-  <div class="main-box" style="max-width: 900px; margin: 50px auto; text-align: left;">
-    <h1 style="text-align: center;">ШІ Інструменти</h1>
-    <p class="subtitle" style="text-align: center; font-style: italic; font-size: 14px;">Як нейромережі змінюють світ тривимірної графіки.</p>
-	 <div style="margin-bottom: 40px;">
-		<h2 style="font-size: 24px; margin-bottom: 15px; color: white;">Майбутнє 3D-дизайну</h2>
-		<p style="color: lightgray; font-size: 15px; line-height: 1.6;">
-			Генерація 3D-моделей за допомогою ШІ - це справжня революція у світі ігор та VR. Раніше для створення якісного об'єкта 3D-дизайнеру потрібно було витрачати години на вибудовування топології та налаштування сітки. Зараз ШІ автоматизує рутину, дозволяючи дизайнерам фокусуватися на ідеях, а не на технічних аспектах.
-		</p>
-	 <p style="color: lightgray; font-size: 15px; line-height: 1.6;">
-	<span class="accent">Text-to-3D</span> та <span class="accent">Image-to-3D</span> відкривають двері для новачків: тепер не потрібно бути професійним моделером, щоб додати у свій проєкт унікальний 3D-об'єкт.
-	</p>
-	</div>
-	<div class="info-box">
-		<h3>Чому ми обрали Meshy AI?</h3>
-		<p>Для нашого проєкту ми зупинилися на інструменті <span class="accent">Meshy AI</span>. Це потужний сервіс, який дозволяє створювати складні об'єкти з мінімальними зусиллями.</p>
-		<div class="info-bullets">
-       	 	<p><span class="accent">Висока якість текстур:</span> Meshy AI створює не просто "сиру" сітку, а відразу накладає PBR-текстури.</p>
-        	<p><span class="accent">Чиста топологія:</span> Моделі мають передбачувану структуру.</p>
-        	<p><span class="accent">Універсальність:</span> Він чудово розуміє складні запити, перетворюючи навіть абстрактні текстові описи на реалістичні об'єкти.</p>
-      </div>
-    </div>
-	<div style="margin: 40px 0;">
-      <h2 style="font-size: 24px; margin-bottom: 10px; color: white;">Порівняння Meshy AI та Tripo3D</h2>
-      <p style="color: lightgray; font-size: 14px; margin-bottom: 20px;">
-        Ми протестували два лідери в індустрії генерації 3D-моделей. Ось результати нашого швидкого порівняння:
-      </p>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Характеристика</th>
-            <th>Meshy AI</th>
-            <th>Tripo3D</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-			<td><span class="accent">Швидкість роботи</span></td>
-            <td>Близько 1-2 хвилин</td>
-            <td>Дуже швидко (до 15 секунд)</td>
-          </tr>
-          <tr>
-            <td><span class="accent">Якість текстур</span></td>
-            <td>Дуже висока, деталізована</td>
-            <td>Середня, потребує доопрацювання</td>
-          </tr>
-          <tr>
-			<td><span class="accent">Топологія сітки</span></td>
-            <td>Чиста, правильна геометрія</td>
-            <td>Спрощена (Low-poly)</td>
-          </tr>
-          <tr>
-            <td><span class="accent">Для чого підходить</span></td>
-            <td>Готові ігрові об'єкти та деталі</td>
-            <td>Швидкі чернетки та прототипи</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<body>
+
+	<div class="menu">
+		<a href="index.html">Головна</a>
+		<a href="tools.html" class="active">ШІ Інструменти</a>
+		<a href="gallery.html">Галерея 3D</a>
+	</div>
+
+	<div class="main-box" style="max-width: 900px; margin: 50px auto; text-align: left;">
+
+		<h1 style="text-align: center;">ШІ Інструменти</h1>
+
+		<p class="subtitle" style="text-align: center; font-style: italic; font-size: 14px;">
+			Як нейромережі змінюють світ тривимірної графіки.
+		</p>
+
+		<div style="margin-bottom: 40px;">
+
+			<h2 style="font-size: 24px; margin-bottom: 15px; color: white;">
+				Майбутнє 3D-дизайну
+			</h2>
+
+			<p style="color: lightgray; font-size: 15px; line-height: 1.6;">
+				Генерація 3D-моделей за допомогою ШІ - це справжня революція у світі ігор та VR.
+				Раніше для створення якісного об'єкта 3D-дизайнеру потрібно було витрачати години
+				на вибудовування топології та налаштування сітки. Зараз ШІ автоматизує рутину,
+				дозволяючи дизайнерам фокусуватися на ідеях, а не на технічних аспектах.
+			</p>
+
+			<p style="color: lightgray; font-size: 15px; line-height: 1.6;">
+				<span class="accent">Text-to-3D</span> та
+				<span class="accent">Image-to-3D</span> відкривають двері для новачків:
+				тепер не потрібно бути професійним моделером, щоб додати у свій проєкт
+				унікальний 3D-об'єкт.
+			</p>
+
+		</div>
+
+		<div class="info-box">
+
+			<h3>Чому ми обрали Meshy AI?</h3>
+
+			<p>
+				Для нашого проєкту ми зупинилися на інструменті
+				<span class="accent">Meshy AI</span>.
+				Це потужний сервіс, який дозволяє створювати складні об'єкти з мінімальними зусиллями.
+			</p>
+
+			<div class="info-bullets">
+
+				<p>
+					<span class="accent">Висока якість текстур:</span>
+					Meshy AI створює не просто "сиру" сітку, а відразу накладає PBR-текстури.
+				</p>
+
+				<p>
+					<span class="accent">Чиста топологія:</span>
+					Моделі мають передбачувану структуру.
+				</p>
+
+				<p>
+					<span class="accent">Універсальність:</span>
+					Він чудово розуміє складні запити, перетворюючи навіть абстрактні
+					текстові описи на реалістичні об'єкти.
+				</p>
+
+			</div>
+
+		</div>
+
+		<div style="margin: 40px 0;">
+
+			<h2 style="font-size: 24px; margin-bottom: 10px; color: white;">
+				Порівняння Meshy AI та Tripo3D
+			</h2>
+
+			<p style="color: lightgray; font-size: 14px; margin-bottom: 20px;">
+				Ми протестували два лідери в індустрії генерації 3D-моделей.
+				Ось результати нашого швидкого порівняння:
+			</p>
+
+			<table>
+
+				<thead>
+					<tr>
+						<th>Характеристика</th>
+						<th>Meshy AI</th>
+						<th>Tripo3D</th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+					<tr>
+						<td><span class="accent">Швидкість роботи</span></td>
+						<td>Близько 1-2 хвилин</td>
+						<td>Дуже швидко (до 15 секунд)</td>
+					</tr>
+
+					<tr>
+						<td><span class="accent">Якість текстур</span></td>
+						<td>Дуже висока, деталізована</td>
+						<td>Середня, потребує доопрацювання</td>
+					</tr>
+
+					<tr>
+						<td><span class="accent">Топологія сітки</span></td>
+						<td>Чиста, правильна геометрія</td>
+						<td>Спрощена (Low-poly)</td>
+					</tr>
+
+					<tr>
+						<td><span class="accent">Для чого підходить</span></td>
+						<td>Готові ігрові об'єкти та деталі</td>
+						<td>Швидкі чернетки та прототипи</td>
+					</tr>
+
+				</tbody>
+
+			</table>
+
+		</div>
+
+		<div class="formula-container">
+
+			<h3>Мистецтво правильних промптів</h3>
+
+			<p>
+				ШІ — це інструмент, який вимагає точних вказівок.
+				Формула вашого успіху при генерації:
+			</p>
+
+			<div class="formula-box">
+				[Тип об'єкта] + [Деталі] + [Стиль] + [Матеріали]
+			</div>
+
+			<p style="font-size: 13px; color: gray; margin-top: 15px; text-align: center;">
+				Чим більше деталей ви вкажете (наприклад, "металевий", "неоновий"),
+				тим кращою буде фінальна модель.
+			</p>
+
+		</div>
+
+	</div>
+
 </body>
+</html>
