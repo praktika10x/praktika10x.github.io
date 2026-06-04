@@ -372,4 +372,59 @@ td
     align-items:center;
     gap:45px;
 }
+/***Adaptation***/
 
+@media (max-width: 768px) {
+
+  .menu {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    list-style: none;
+    padding-left: 10px; 
+    margin:0;
+    font-family: "Press Start 2P", system-ui;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: #261374;
+  }
+
+  .nav {
+    position: static;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    background-color: #261374;
+    display: flex;
+    box-sizing: border-box;
+    padding: 15px 10px;
+  }
+
+  .nav:hover {
+    right: auto;}
+
+  .menu-link .mhr{
+      display: none!important;
+  }
+
+  .inmen,
+  .menu-link .inmen {
+    display: block;
+    margin: 2px;
+    font-size: 8px !important;
+    padding: 4px 6px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #261374;
+    color: #ffffff;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+}
