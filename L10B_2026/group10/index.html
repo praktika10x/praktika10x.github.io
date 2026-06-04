@@ -10,57 +10,78 @@
 </head>
 <body>
 
-    <aside class="sidebar">
-        <div class="sidebar-logo">Група 10</div>
-        <nav class="sidebar-menu">
-            <a href="index.html" class="nav-item active">Головна</a>
-            <a href="page2.html" class="nav-item">Допомога ШІ</a>
-            <a href="page3.html" class="nav-item">Команда</a>
-        </nav>
-    </aside>
+    <div class="phone-container">
+        <!-- Верхня панель навігації -->
+        <header class="top-nav">
+            <span class="nav-title">Головна</span>
+            <div class="nav-icons">
+                <span class="icon">🔍</span>
+                <span class="icon">🌐</span>
+            </div>
+        </header>
 
-    <main class="main-content">
-        <section class="hero-green">
-            <h1 class="pixel-title">Генерація відео</h1>
+        <!-- Зелений банер з великим заголовком -->
+        <section class="green-hero">
+            <h1 class="pixel-title">Генерація<br>відео</h1>
         </section>
 
-        <section class="info-section">
-            <div class="text-block">
-                <p>Генерація відео за допомогою ШІ — це не просто автоматичне створення роликів. Це революційний і захопливий процес перетворення текстових запитів, зображень або ідей у динамічний візуальний контент.</p>
+        <!-- Текстовий блок дослідження -->
+        <section class="main-text-content">
+            <p><strong>Генерація відео за допомогою ШІ</strong> — це не просто автоматичне створення роликів. Це революційний і захопливий процес перетворення текстових запитів, зображень або ідей у динамічний візуальний контент. Це технологія, яку ми щодня бачимо в кіно, рекламі, соцмережах, комп'ютерних іграх та маркетингу.</p>
+            
+            <p class="center-text"><strong>Цей процес включає кілька ключових етапів:</strong></p>
+            <ul class="steps-list">
+                <li>• Формування промпту — точний опис сюжету, стилю та рухів камери;</li>
+                <li>• Налаштування моделі — вибір нейромережі, роздільної здатності та хронометражу;</li>
+                <li>• Генерація кадрів — безпосередній прорахунок візуального ряду алгоритмами;</li>
+                <li>• Апскейлінг та рендеринг — покращення чіткості, деталізації та плавності рухів;</li>
+                <li>• Монтаж та звук — додавання генеративної музики та ефектів;</li>
+                <li>• Фінальна обробка — адаптація готового відео під формат потрібної платформи.</li>
+            </ul>
+
+            <p>Генерація відео за допомогою ШІ — це командна гра, у якій беруть участь креатори, промпт-інженери, 3D художники, маркетологи та розробники моделей. Це поле, де творчість зустрічається з технологіями, а кожен новий генеративний проєкт — це виклик і можливість змінити світ на краще.</p>
+
+            <!-- Дві кнопки-посилання -->
+            <div class="buttons-layout">
+                <a href="page2.html" class="action-btn">sora.ai</a>
+                <a href="page3.html" class="action-btn">pika.ai</a>
+            </div>
+        </section>
+
+        <!-- Блок команди з градієнтними картками -->
+        <section class="team-block-container">
+            <div class="team-cards-vertical">
                 
-                <ul class="process-list">
-                    <li><strong>Формування промпту</strong> — точний опис сюжету, стилю та рухів камери.</li>
-                    <li><strong>Налаштування моделі</strong> — вибір нейромережі, роздільної здатності.</li>
-                    <li><strong>Генерація кадрів</strong> — безпосередній прорахунок алгоритмами.</li>
-                </ul>
-            </div>
-
-            <div class="button-group">
-                <a href="page2.html" class="green-btn">sora.ai</a>
-                <a href="#" class="green-btn">pika.ai</a>
-            </div>
-        </section>
-
-        <section class="team-section-bg">
-            <div class="team-grid-modern">
                 <div class="member-card">
-                    <div class="avatar-circle">👤</div>
+                    <div class="avatar-box">
+                        <div class="user-head"></div>
+                        <div class="user-body"></div>
+                    </div>
                     <h3>Біляков Микола</h3>
-                    <p>Тімлід, відповідаю за пошук інформації</p>
+                    <p>Тімлід,<br>відповідаю за<br>пошук інформації</p>
                 </div>
+
                 <div class="member-card">
-                    <div class="avatar-circle">👤</div>
+                    <div class="avatar-box">
+                        <div class="user-head"></div>
+                        <div class="user-body"></div>
+                    </div>
                     <h3>Сліпченко Руслан</h3>
-                    <p>Відповідаю за створення макету сторінок</p>
+                    <p>Відповідаю за створення макету сторінок (Figma)</p>
                 </div>
+
                 <div class="member-card">
-                    <div class="avatar-circle">👤</div>
+                    <div class="avatar-box">
+                        <div class="user-head"></div>
+                        <div class="user-body"></div>
+                    </div>
                     <h3>Бойко Михайло</h3>
                     <p>Відповідаю за створення сайту</p>
                 </div>
+
             </div>
         </section>
-    </main>
+    </div>
 
 </body>
 </html>
