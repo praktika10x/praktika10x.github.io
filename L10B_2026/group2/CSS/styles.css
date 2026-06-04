@@ -169,10 +169,12 @@ hr{
 }
 /***********************************/
 .vl {
-    width: 1px;
-    height: 500px;
+    width: 5px;
+    height: 400px;
     background: #000;
     border: 0px solid black;
+    margin-right: 65px; 
+    margin-left: 65px;
 }
 
 .imgbig{
@@ -210,7 +212,7 @@ li{
 
 .minicard{
     width:525px;
-	height: 700px;
+    height:auto;
     margin: 50px;
     background: linear-gradient(135deg, #77bb44 35%, #107c10 100%);
     border: 7px solid transparent;
@@ -376,65 +378,17 @@ td
     align-items:center;
     gap:45px;
 }
-/***Adaptation***/
-
-@media (max-width: 768px) {
-
-  .menu {
-    grid-column: 1;
-    grid-row: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    gap: 5px;
-    list-style: none;
-    padding-left: 10px; 
-    margin:0;
-    font-family: "Press Start 2P", system-ui;
-    width: 100%;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    height: auto;
-    background-color: #261374;
-  }
-
-  .nav {
-    position: static;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    background-color: #261374;
-    display: flex;
-    box-sizing: border-box;
-    padding: 15px 10px;
-  }
-
-  .nav:hover {
-    right: auto;}
-
-  .menu-link .mhr{
-      display: none!important;
-  }
-
-  .inmen,
-  .menu-link .inmen {
-    display: block;
-    margin: 2px;
-    font-size: 8px !important;
-    padding: 4px 6px;
-    white-space: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    background-color: #261374;
-    color: #ffffff;
-    border-radius: 3px;
-    text-decoration: none;
-  }
-}
 
 
 /**************************************************************************************************************/
+
+.topcnt
+{
+    display: flex;
+    background: transparent;
+    align-items:center;
+    gap:15px;
+}
 
 .imgtpl
 {
@@ -477,7 +431,7 @@ td
   transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
 }
 
-@media (max-width: 600px) 
+@media (max-width: 768px) 
 {
     .gal
     {
@@ -489,25 +443,25 @@ td
     
     .imgtpl
     {
-        margin-left: 100px;
+        margin-left: 0px;
         width: 325px;
         height: 200px;
         border-radius: 15px;
         border: 2px solid #000000;
         display: block;
         background: #171717;
-      transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+        transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
     }
     .imgtpr
     {
-        margin-right: 100px;
+        margin-right: 0px;
         width: 325px;
         height: 200px;
         border-radius: 15px;
         border: 2px solid #000000;
         display: block;
         background: #171717;
-      transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+        transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
     }
     .imgtpl:hover{
         width: 335px;
@@ -516,7 +470,7 @@ td
         border: 5px solid green;
         display: block;
         background: #171717;
-      transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+        transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
     }
     .imgtpr:hover{
         width: 335px;
@@ -525,7 +479,7 @@ td
         border: 5px solid green;
         display: block;
         background: #171717;
-      transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+        transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
     }
     
     
@@ -577,6 +531,13 @@ td
         color: white;
         font-size: 10px;
     }
+    
+    li{
+        text-align: left;
+        font-family: "Press Start 2P";
+        color: #77BB44;
+        font-size: 20px;
+    }
     /******************  CARDS *********************/
     .horcard
     {
@@ -584,7 +545,7 @@ td
         height:auto;
         background: linear-gradient(135deg, #77bb44 35%, #107c10 100%);
         border: 4px solid transparent;
-      transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+        transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
     }
     .horcard:hover
     {
@@ -613,7 +574,7 @@ td
     .minicard:hover{
         border:8px lightgreen solid;
         width:275px;
-        height:330px;
+        height:auto;
         transform: translateY(2px);
         transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
     }
@@ -654,7 +615,79 @@ td
         transform: translateY(2px);
         transition: border 0.3s ease, transform 0.3s ease, width 0.3s ease, height 0.3s ease;
     }
+    
+    .menu {
+        grid-column: 1;
+        grid-row: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        gap: 5px;
+        list-style: none;
+        padding-left: 10px; 
+        margin:0;
+        font-family: "Press Start 2P", system-ui;
+        width: 100%;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        height: auto;
+        background-color: #261374;
+      }
+    
+      .nav {
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        background-color: #261374;
+        display: flex;
+        box-sizing: border-box;
+        padding: 15px 10px;
+      }
+    
+      .nav:hover {
+        right: auto;}
+    
+      .menu-link .mhr{
+          display: none!important;
+      }
+    
+      .inmen,
+      .menu-link .inmen {
+        display: block;
+        margin: 2px;
+        font-size: 8px !important;
+        padding: 4px 6px;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background-color: #261374;
+        color: #ffffff;
+        border-radius: 3px;
+        text-decoration: none;
+      }
+      
+    .vl 
+    {
+        width: 400px;
+        height:5px;
+        background: white;
+        border: 0px solid black;
+        margin-top: 30px; 
+        margin-bottom: 30px;
+        margin-left: 0px; 
+        margin-right: 0px;
+    }
+    
+    .topcnt
+    {
+        display: flex;
+        background: transparent;
+        /*align-items:center;*/
+        flex-direction:column;
+        
+        gap:15px;
+    }
 }
-
-
 /**************************************************************************************************************/
