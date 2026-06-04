@@ -46,6 +46,9 @@ th {
   	background-color: #486B85;
 	color:white;
 }
+td {
+	color:#486B85;
+}
 table {
   	width: 70%;
   	margin: auto;
