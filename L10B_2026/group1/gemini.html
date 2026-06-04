@@ -17,8 +17,13 @@
         .accordion-header { display: flex; justify-content: space-between; align-items: center; }
         .accordion-info { display: flex; align-items: center; gap: 10px; }
         .mode-tabs { display: flex; gap: 15px; margin: 20px 0; overflow-x: auto; }
-        .mode-tab { display: flex; align-items: center; gap: 8px; background: white; padding: 10px 20px; border-radius: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .mode-tab.active { background: #8a3ffc; color: white; }
+        
+        /* Стиль для всіх вкладок вибору режиму — тепер вони ВСІ за замовчуванням білі */
+        .mode-tab { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; background: white; padding: 15px 25px; border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); min-width: 140px; text-align: center; color: #333; font-weight: 500; }
+        
+        /* Стиль для іконок всередині вкладок, щоб вони мали гарний фіолетовий колір */
+        .mode-tab .icon { color: #8a3ffc; width: 28px; height: 28px; margin-bottom: 4px; }
+        
         .models-three-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 30px 0; }
         .white-card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
         .footer { background: #1e1e2f; color: white; padding: 20px; text-align: center; margin-top: 50px; }
@@ -95,25 +100,25 @@
             </div>
         </section>
 
+        <!-- Інтерактивний вибір режиму — тепер усі вкладки однакові та білі -->
         <section class="mode-section">
             <h2>Інтерактивний вибір режиму</h2>
             
             <div class="mode-tabs">
-                <!-- Кнопка «Генерація текста» тепер звичайна та не підсвічується -->
                 <div class="mode-tab">
-                    <svg class="icon icon-purple-gemini" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    <svg class="icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
                     <span>Генерація текста</span>
                 </div>
                 <div class="mode-tab">
-                    <svg class="icon icon-purple-gemini" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                    <svg class="icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
                     <span>Аналіз зображень</span>
                 </div>
                 <div class="mode-tab">
-                    <svg class="icon icon-purple-gemini" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    <svg class="icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
                     <span>Асистент коду</span>
                 </div>
                 <div class="mode-tab">
-                    <svg class="icon icon-purple-gemini" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7a2 2 0 0 0-2.45-1.45L16 7V5a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2l4.55 1.45A2 2 0 0 0 23 17V7z"/></svg>
+                    <svg class="icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7a2 2 0 0 0-2.45-1.45L16 7V5a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2l4.55 1.45A2 2 0 0 0 23 17V7z"/></svg>
                     <span>Розуміння відео</span>
                 </div>
             </div>
@@ -136,7 +141,7 @@
             </div>
         </section>
 
-        <!-- Друге зображення: Світлова модель нейромережі та цифрового мозку -->
+        <!-- Друге зображення: Світлова модель цифрового мозку -->
         <div class="hero-image-container">
             <div class="tech-banner-img">
                 <img src="https://unsplash.com" alt="Цифрова модель штучного інтелекту та нейронних зв'язків мозку">
