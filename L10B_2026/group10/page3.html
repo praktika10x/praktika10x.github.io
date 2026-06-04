@@ -1,58 +1,135 @@
-<!DOCTYPE html>
-<html lang="uk">
+<!DOCTYPE html><html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pika.ai</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pika AI</title><style>
 
-    <div class="phone-container">
-        <header class="top-nav">
-            <span class="nav-title pixel-font">pika.ai</span>
-            <div class="nav-icons">
-                <span class="icon">🔍</span>
-                <span class="icon">🌐</span>
-            </div>
-        </header>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
 
-        <section class="description-body">
-            <p class="center-text bold-text">Мета: Показати доступний та швидкий інструмент для творчості.</p>
-            
-            <p class="center-text bold-text">Pika: Швидкість та гнучка анімація</p>
-            
-            <p class="center-text">Pika (Pika.art) — це популярна та доступна ШІ-платформа, орієнтована на швидке створення коротких відеороликів та анімацію готових зображень.</p>
+body{
+background:#f0f0f0;
+}
 
-            <p class="center-text bold-text">Головні особливості та переваги:</p>
-            <p class="center-text"><strong>Доступність для кожного:</strong> Має зручний безкоштовний тариф зі щоденними кредитами на сайті або через Discord-бота.</p>
-            <p class="center-text"><strong>Ефективна анімація (Image-to-Video):</strong> Найкраще справляється з «оживленням» статичних картинок, додаванням вогню, вибухів чи руху води.</p>
-            <p class="center-text"><strong>Керування камерою (Camera Control):</strong> Дозволяє легко налаштовувати рух об'єктива (наїзд, панорамування, обертання) за допомогою простих кнопок.</p>
+.container{
+width:90%;
+max-width:1200px;
+margin:20px auto;
+background:white;
+}
 
-            <p class="center-text bold-text">Специфіка використання:</p>
-            <p class="center-text"><strong>Швидкість:</strong> Дуже висока. Відеоролики тривалістю 3-4 секунди генеруються всього за 1-2 хвилини.</p>
-            <p class="center-text"><strong>Обмеження:</strong> На безкоштовному тарифі додає невеликий водяний знак «Pika» у кутку екрана.</p>
+header{
+background:linear-gradient(to right,#001a00,#003300);
+color:white;
+padding:15px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-            <p class="center-text bold-text">Зразок продукції (Наш Промт):</p>
-            <p class="center-text font-italic">Cinematic close-up shot of a futuristic search-and-rescue robot navigating through the dark, smoky debris...</p>
-            
-            <p class="center-text"><strong>Результат Pika:</strong> Швидка генерація динамічного кадру. Робот виглядає ефектно, проте рух диму та дрібна міміка прораховані простіше, ніж у Sora.</p>
+header a{
+color:white;
+text-decoration:none;
+font-size:20px;
+}
 
-            <div class="center-btn-holder">
-                <a href="index.html" class="action-btn">video</a>
-            </div>
-        </section>
+.content{
+padding:50px;
+text-align:center;
+line-height:2;
+font-size:20px;
+}
 
-        <footer class="green-sources-footer">
-            <h3>Джерела:</h3>
-            <p>gemini.ai</p>
-            <p>sora.ai</p>
-            <p>pika.ai</p>
-            <p>Вікіпедія</p>
-        </footer>
-    </div>
+.content p{
+margin-bottom:20px;
+}
 
-</body>
+.video-box{
+margin-top:40px;
+}
+
+video{
+width:80%;
+max-width:700px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+.video-btn{
+display:inline-block;
+margin-top:20px;
+padding:15px 50px;
+background:#3cb043;
+color:white;
+text-decoration:none;
+font-size:24px;
+}
+
+.video-btn:hover{
+background:#2b8a31;
+}
+
+footer{
+background:linear-gradient(to right,#003300,#39b54a,#003300);
+color:white;
+text-align:center;
+padding:40px;
+}
+
+footer h2{
+margin-bottom:20px;
+}
+
+footer p{
+font-size:28px;
+margin:10px;
+}
+
+</style></head><body><div class="container"><header>
+<a href="index.html">← Головна</a>
+<div>🔍 🌐</div>
+</header><section class="content"><p><b>Мета:</b> Показати доступний та швидкий інструмент для творчості.</p><p><b>Pika: Швидкість та гнучка анімація</b></p><p>
+Pika (Pika.art) — популярна ШІ-платформа,
+орієнтована на швидке створення коротких
+відеороликів та анімацій із готових зображень.
+</p><p><b>Головні особливості та переваги:</b></p><p>
+Доступність для кожного —
+зручний безкоштовний тариф
+як для сайту, так і для Discord-бота.
+</p><p>
+Вбудована анімація (Image-to-Video):
+нейромережа оживляє статичні картинки,
+додаючи рух, ефекти та динаміку.
+</p><p>
+Керування камерою (Camera Controls):
+можна легко налаштовувати рух камери,
+наближення, панорамування та обертання.
+</p><p><b>Специфіка використання:</b></p><p>
+Швидкість дуже висока.
+Відеоролики тривалістю 4–5 секунд
+генеруються приблизно за 1–2 хвилини.
+</p><p>
+Обмеження:
+на безкоштовному тарифі додається
+невеликий водяний знак Pika.
+</p><p><b>Зразок промпту:</b></p><p>
+Create a close-up shot of a futuristic search-and-rescue robot navigating through the dark, snowy debris...
+</p><p>
+Результат Pika:
+швидка генерація динамічного кадру.
+Робот виглядає ефектно, але рух дещо менш
+природний порівняно з Sora.
+</p><div class="video-box"><video controls>
+<source src="1000020247.mp4" type="video/mp4">
+Ваш браузер не підтримує відео.
+</video><br><a href="1000020247.mp4" class="video-btn" target="_blank">
+Video
+</a></div></section><footer><h2>Джерела:</h2><p>gemini.ai</p>
+<p>sora.ai</p>
+<p>pika.ai</p>
+<p>Вікіпедія</p></footer></div></body>
 </html>
