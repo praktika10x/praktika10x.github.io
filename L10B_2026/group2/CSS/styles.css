@@ -143,6 +143,7 @@ hr{
     transform: translateX(-2px);
 }
 .btn {
+    display:flex;
     background-color: #171717;
     padding: 10px 20px;
     font-size: 16px;
@@ -155,6 +156,7 @@ hr{
     position: fixed;
     top: 90vh;
     justify-content: center;
+    align-items:flex-end;
 }
 .ai{
     display:flex;
@@ -430,3 +432,229 @@ td
     text-decoration: none;
   }
 }
+
+
+/**************************************************************************************************************/
+
+.imgtpl
+{
+    margin-left: 100px;
+    width: 650px;
+    height: 400px;
+    border-radius: 15px;
+    border: 5px solid #000000;
+    display: block;
+    background: #171717;
+  transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+}
+.imgtpr
+{
+    margin-right: 100px;
+    width: 650px;
+    height: 400px;
+    border-radius: 15px;
+    border: 5px solid #000000;
+    display: block;
+    background: #171717;
+  transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+}
+.imgtpl:hover{
+    width: 675px;
+    height: 425px;
+    border-radius: 20px;
+    border: 10px solid green;
+    display: block;
+    background: #171717;
+  transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+}
+.imgtpr:hover{
+    width: 675px;
+    height: 425px;
+    border-radius: 20px;
+    border: 10px solid green;
+    display: block;
+    background: #171717;
+  transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+}
+
+@media (max-width: 600px) 
+{
+    .gal
+    {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:45px;
+    }
+    
+    .imgtpl
+    {
+        margin-left: 100px;
+        width: 325px;
+        height: 200px;
+        border-radius: 15px;
+        border: 2px solid #000000;
+        display: block;
+        background: #171717;
+      transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+    }
+    .imgtpr
+    {
+        margin-right: 100px;
+        width: 325px;
+        height: 200px;
+        border-radius: 15px;
+        border: 2px solid #000000;
+        display: block;
+        background: #171717;
+      transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+    }
+    .imgtpl:hover{
+        width: 335px;
+        height: 230px;
+        border-radius: 20px;
+        border: 5px solid green;
+        display: block;
+        background: #171717;
+      transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+    }
+    .imgtpr:hover{
+        width: 335px;
+        height: 230px;
+        border-radius: 20px;
+        border: 5px solid green;
+        display: block;
+        background: #171717;
+      transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+    }
+    
+    
+    /*************  FONT  *********************/
+    h1{
+      text-align: center;
+      font-family: "Press Start 2P";
+      color: white;
+      font-size: 20px;
+      line-height:1.2;
+      
+      text-shadow: 2px 2px 4px black;
+    }
+     
+    h2
+    { 
+        font-family: "Nunito";
+        color: white;
+        font-size: 16px;
+    }
+    
+    h3
+    {
+        text-align: center;
+        font-size: 25px;
+        font-family: "Press Start 2P";
+        color: white;
+    }
+    
+    h4
+    {
+        text-align: left;
+        font-family: "Press Start 2P";
+        color: #77BB44;
+        font-size: 16px;
+    }
+    
+    h5
+    {
+        font-family: "Nunito";
+        color: white;
+        font-size: 12px;
+    }
+    
+    h6
+    {
+        text-align: left;
+        font-family: "Nunito";
+        color: white;
+        font-size: 10px;
+    }
+    /******************  CARDS *********************/
+    .horcard
+    {
+        width:325px;
+        height:auto;
+        background: linear-gradient(135deg, #77bb44 35%, #107c10 100%);
+        border: 4px solid transparent;
+      transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+    }
+    .horcard:hover
+    {
+        border:7px lightgreen solid;
+        width:325px;
+        height:auto;
+        transform: translateY(1px);
+        transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+        transform-origin: bottom;
+    }
+    
+    .minicard{
+        width:270px;
+        height:350px;
+        margin: 25px;
+        background: linear-gradient(135deg, #77bb44 35%, #107c10 100%);
+        border: 3px solid transparent;
+        transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+    }
+    .minicards{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+    
+    .minicard:hover{
+        border:8px lightgreen solid;
+        width:275px;
+        height:330px;
+        transform: translateY(2px);
+        transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+    }
+    
+    /*************** IMG ********************/
+    
+    .imglng
+    {
+        width: 200px;
+        height: 135px;
+        margin: 5px;
+        border: 3px white solid;
+    }
+    
+    .imgbig{
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        border: 3px solid #000000;
+        display: block;
+        background: #171717;
+      transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
+    }
+    .imglst{
+        width: 150px;
+        height: 150px;
+        border: 3px solid #000000;
+    }
+    .imgsml{
+        width: 65px;
+        height: 65px;
+    }
+    
+    .imgbig:hover{
+        border: 6px solid lightgreen;
+        width:210px;
+        height:210px;
+        transform: translateY(2px);
+        transition: border 0.3s ease, transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    }
+}
+
+
+/**************************************************************************************************************/
