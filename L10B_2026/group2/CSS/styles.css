@@ -334,7 +334,7 @@ td
     width:80%;
     height:300px;
     margin:50px;
-    background: linear-gradient(180deg, #77bb44 5%, #107c10 100%);
+    background: linear-gradient(180deg, #77bb44 25%, #107c10 100%);
     border: 7px solid transparent;
 	transition: border 0.3s ease, transform 0.5s ease;
 }
