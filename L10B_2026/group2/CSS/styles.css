@@ -210,7 +210,8 @@ li{
 
 .minicard{
     width:525px;
-    height:700px;
+    height:auto;
+	min-height: 700px;
     margin: 50px;
     background: linear-gradient(135deg, #77bb44 35%, #107c10 100%);
     border: 7px solid transparent;
