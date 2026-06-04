@@ -96,8 +96,8 @@ ul{
 img{
     width: 100px;
     height: 100px;
-    text-align:center;
-    float: left;
+    text-align:right;
+    float: center;
 
 }
 .card:hover{
