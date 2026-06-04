@@ -227,7 +227,7 @@ li{
 .minicard:hover{
     border:10px lightgreen solid;
     width:530px;
-    height:auto;
+    height:725px;
     transform: translateY(2px);
     transition: border 0.3s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease;
 }
