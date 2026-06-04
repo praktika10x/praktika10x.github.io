@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Покращення якості зображень</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -55,79 +55,65 @@
         </div>
     </div>
     
-    <hr>
-    
-    <div class="compare-grid">
-    
-        <div class="grid-header">
-            <h4 style="text-align:center;">Зображення до обробки</h4>
-        </div>
-    
-        <div class="grid-header">
-            <h4 style="text-align:center;">Зображення після обробки</h4>
-        </div>
-    
-        <div class="grid-cell">
-            <div class="horcard">
-                <div class="horcards">
-                    <img class="imglst" style="margin:10px;" src="Images/ImageOrigin/Image.jpg">
-                    <h5><span><h4 style="color:white;">Оригінал</h4></span> Стара фотографія будівлі банку.</h5>
-                </div>
-            </div>
-        </div>
-    
-        <div class="grid-cell">
-            <div class="horcard">
-                <div class="horcards">
-                    <img class="imglst" style="margin:10px;" src="Images/Gemini/Gemini1.png">
-                    <h6><span><h4 style="color:#6e80db;">Gemini</h4></span>Після обробки фото стало значно чіткішим: добре видно архітектурні деталі будівлі, гілки дерев і елементи одягу людей. Зображення виглядає чистішим і краще підходить для перегляду чи друку. Водночас деякі дрібні деталі можуть бути штучно домальовані ШІ, а природна зернистість старої фотографії частково втрачена, через що окремі ділянки виглядають занадто згладженими.</h6>
-                </div>
-            </div>
-        </div>
-    
-        <div class="grid-cell">
-            <div class="horcard">
-                <div class="horcards">
-                    <img class="imglst" style="margin:10px;" src="Images/ImageOrigin/Image2.jpg">
-                    <h5><span><h4 style="color:white;">Оригінал</h4></span> Фотографія американського міста, 1900-ті роки.</h5>
-                </div>
-            </div>
-        </div>
-    
-        <div class="grid-cell">
-            <div class="horcard">
-                <div class="horcards">
-                    <img class="imglst" style="margin:10px;" src="Images/Grok/Grok2.jpg">
-                    <h6><span><h4 style="color:#171717;">Grok</h4></span>Після обробки фото стало значно чіткішим: тепер можна розгледіти цегляну кладку, вивіски, людей, коней і дрібні деталі міського пейзажу. Зображення виглядає чистішим і краще передає історичну інформацію, не змінюючи композицію оригіналу. Недоліком є те, що деякі деталі могли бути штучно домальовані алгоритмами ШІ, а природна зернистість старої фотографії частково втрачена, через що окремі ділянки виглядають надто згладженими.</h6>
-                </div>
-            </div>
-        </div>
-    
-        <div class="grid-cell">
-            <div class="horcard">
-                <div class="horcards">
-                    <img class="imglst" style="margin:10px;" src="Images/ImageOrigin/Image3.jpg">
-                    <h5><span><h4 style="color:white;">Оригінал</h4></span> Фотографія американського чоловіка, 1900-ті роки.</h5>
-                </div>
-            </div>
-        </div>
-    
-        <div class="grid-cell">
-            <div class="horcard">
-                <div class="horcards">
-                    <img class="imglst" style="margin:10px;" src="Images/Claude/Claude3.jpg">
-                    <h6><span><h4 style="color:#db9d6e;">Claude</h4></span>Після обробки фото стало контрастнішим і виразнішим: силуети вола, воза та чоловіка краще виділяються. Однак через надмірний контраст втрачено багато деталей у світлих і темних ділянках, з’явився цифровий шум, а небо перетворилося на суцільну білу пляму. Оригінальне фото зберігає більше деталей, природні градації тонів і автентичну атмосферу старовинного знімка, хоча може здаватися менш яскравим для сучасного глядача.</h6>
-                </div>
-            </div>
-        </div>
-    
-    </div>
-    
     <!----------------------->
     
     
+    <hr style="margin-top: 100px;">
+    <div class="card" style="padding-top: 20px; background: black;">
+       <div class="gal" style="justify-content: center;">
+            <div class="gcard">
+                <h4 style="text-align:center;">Зображення до обробки</h4>
+                
+                <div class="horcard">
+                    <div class="horcards">
+                        <img class="imglst" style="margin:10px;" src="Images/ImageOrigin/Image.jpg">
+                        <h5><span><h4 style="color:white;">Оригінал</h4></span> Стара фотографія будівлі банку.</h5>
+                    </div>
+                </div>
+                
+                <div class="horcard">
+                    <div class="horcards">
+                        <img class="imglst" style="margin:10px;" src="Images/ImageOrigin/Image2.jpg">
+                        <h5><span><h4 style="color:white;">Оригінал</h4></span> Фотографія американського міста, 1900-ті роки.</h5>
+                    </div>
+                </div>
+                
+                <div class="horcard">
+                    <div class="horcards">
+                        <img class="imglst" style="margin:10px;" src="Images/ImageOrigin/Image3.jpg">
+                        <h5><span><h4 style="color:white;">Оригінал</h4></span> Фотографія американського чоловіка, 1900-ті роки.</h5>
+                    </div>
+                </div>
+            </div>
+       
+            <div class="gcard">
+                <h4 style="text-align:center;">Зображення після обробки</h4>
+                <div class="horcard">
+                    <div class="horcards">
+                        <img class="imglst" style="margin:10px;" src="Images/Gemini/Gemini1.png">
+                        <h6><span><h4 style="color:#6e80db;">Gemini</h4></span>Після обробки фото стало значно чіткішим: добре видно архітектурні деталі будівлі, гілки дерев і елементи одягу людей. Зображення виглядає чистішим і краще підходить для перегляду чи друку. Водночас деякі дрібні деталі можуть бути штучно домальовані ШІ, а природна зернистість старої фотографії частково втрачена, через що окремі ділянки виглядають занадто згладженими.</h6>
+                    </div>
+                </div>
+                
+                <div class="horcard">
+                    <div class="horcards">
+                        <img class="imglst" style="margin:10px;" src="Images/Grok/Grok2.jpg">
+                        <h6><span><h4 style="color:#171717;">Grok</h4></span>Після обробки фото стало значно чіткішим: тепер можна розгледіти цегляну кладку, вивіски, людей, коней і дрібні деталі міського пейзажу. Зображення виглядає чистішим і краще передає історичну інформацію, не змінюючи композицію оригіналу. Недоліком є те, що деякі деталі могли бути штучно домальовані алгоритмами ШІ, а природна зернистість старої фотографії частково втрачена, через що окремі ділянки виглядають надто згладженими.</h6>
+                    </div>
+                </div>
+                
+                <div class="horcard">
+                    <div class="horcards">
+                        <img class="imglst" style="margin:10px;" src="Images/Claude/Claude3.jpg">
+                        <h6><span><h4 style="color:#db9d6e;">Claude</h4></span>Після обробки фото стало контрастнішим і виразнішим: силуети вола, воза та чоловіка краще виділяються. Однак через надмірний контраст втрачено багато деталей у світлих і темних ділянках, з’явився цифровий шум, а небо перетворилося на суцільну білу пляму. Оригінальне фото зберігає більше деталей, природні градації тонів і автентичну атмосферу старовинного знімка, хоча може здаватися менш яскравим для сучасного глядача.</h6>
+                    </div>
+                </div>
+            </div>
+    </div> 
+    
     
     <!----------------------->
+
     <hr style="margin-top: 100px;">
     <div class="card" style="padding-top: 20px; background: linear-gradient(90deg, #171717 35%, #5B5B5B 100%);">
        <div class="gal">
