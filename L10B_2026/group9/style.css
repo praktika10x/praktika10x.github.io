@@ -71,3 +71,54 @@ line-height: 1.6;
 color: cyan;
 font-weight: bold;
 }
+.button:hover {
+background-color: magenta;
+transform: scale(1.03);
+}
+.info-box {
+background-color: darkslategray;
+border-radius: 12px;
+padding: 25px;
+text-align: left;
+margin: 30px 0;
+}
+.info-box h3 {
+font-size: 22px;
+margin-top: 0;
+margin-bottom: 15px;
+color: white;
+}
+.info-box p {
+color: lightgray;
+font-size: 15px;
+line-height: 1.6;
+}
+.info-bullets {
+margin-top: 20px;
+}
+.info-bullets p {
+margin: 10px 0;
+padding-left: 15px;
+border-left: 3px solid cyan;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+margin-bottom: 20px;
+background-color: black;
+}
+th, td {
+border: 1.5px solid darkslategray;
+padding: 14px;
+text-align: left;
+font-size: 14px;
+}
+th {
+background-color: darkslategray;
+color: cyan;
+font-weight: bold;
+}
+tr:hover {
+  background-color: darkslategray;
+}
