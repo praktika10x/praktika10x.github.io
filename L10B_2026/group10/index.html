@@ -1,86 +1,153 @@
-<!DOCTYPE html>
-<html lang="uk">
+<!DOCTYPE html><html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Генерація відео — Головна</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Генерація відео</title><style>
 
-    <div class="phone-container">
-        <!-- Верхня панель навігації -->
-        <header class="top-nav">
-            <span class="nav-title">Головна</span>
-            <div class="nav-icons">
-                <span class="icon">🔍</span>
-                <span class="icon">🌐</span>
-            </div>
-        </header>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
 
-        <!-- Зелений банер з великим заголовком -->
-        <section class="green-hero">
-            <h1 class="pixel-title">Генерація<br>відео</h1>
-        </section>
+body{
+background:#f0f0f0;
+}
 
-        <!-- Текстовий блок дослідження -->
-        <section class="main-text-content">
-            <p><strong>Генерація відео за допомогою ШІ</strong> — це не просто автоматичне створення роликів. Це революційний і захопливий процес перетворення текстових запитів, зображень або ідей у динамічний візуальний контент. Це технологія, яку ми щодня бачимо в кіно, рекламі, соцмережах, комп'ютерних іграх та маркетингу.</p>
-            
-            <p class="center-text"><strong>Цей процес включає кілька ключових етапів:</strong></p>
-            <ul class="steps-list">
-                <li>• Формування промпту — точний опис сюжету, стилю та рухів камери;</li>
-                <li>• Налаштування моделі — вибір нейромережі, роздільної здатності та хронометражу;</li>
-                <li>• Генерація кадрів — безпосередній прорахунок візуального ряду алгоритмами;</li>
-                <li>• Апскейлінг та рендеринг — покращення чіткості, деталізації та плавності рухів;</li>
-                <li>• Монтаж та звук — додавання генеративної музики та ефектів;</li>
-                <li>• Фінальна обробка — адаптація готового відео під формат потрібної платформи.</li>
-            </ul>
+header{
+background:linear-gradient(to right,#001a00,#003300);
+color:white;
+padding:15px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-            <p>Генерація відео за допомогою ШІ — це командна гра, у якій беруть участь креатори, промпт-інженери, 3D художники, маркетологи та розробники моделей. Це поле, де творчість зустрічається з технологіями, а кожен новий генеративний проєкт — це виклик і можливість змінити світ на краще.</p>
+header h2{
+font-size:24px;
+}
 
-            <!-- Дві кнопки-посилання -->
-            <div class="buttons-layout">
-                <a href="page2.html" class="action-btn">sora.ai</a>
-                <a href="page3.html" class="action-btn">pika.ai</a>
-            </div>
-        </section>
+.hero{
+height:350px;
+background:linear-gradient(to bottom,#001a00,#0f6625,#39b54a);
+display:flex;
+justify-content:center;
+align-items:center;
+}
 
-        <!-- Блок команди з градієнтними картками -->
-        <section class="team-block-container">
-            <div class="team-cards-vertical">
-                
-                <div class="member-card">
-                    <div class="avatar-box">
-                        <div class="user-head"></div>
-                        <div class="user-body"></div>
-                    </div>
-                    <h3>Біляков Микола</h3>
-                    <p>Тімпід,<br>відповідаю за<br>пошук інформації</p>
-                </div>
+.hero h1{
+color:white;
+font-size:60px;
+text-align:center;
+text-shadow:2px 2px 4px black;
+}
 
-                <div class="member-card">
-                    <div class="avatar-box">
-                        <div class="user-head"></div>
-                        <div class="user-body"></div>
-                    </div>
-                    <h3>Сліпченко Руслан</h3>
-                    <p>Відповідаю за створення макету сторінок (Figma)</p>
-                </div>
+.content{
+background:white;
+padding:50px;
+text-align:center;
+line-height:1.8;
+}
 
-                <div class="member-card">
-                    <div class="avatar-box">
-                        <img src="mishok.jpg" alt="Бойко Михайло" class="member-photo">   
-                    </div>
-                    <h3>Бойко Михайло</h3>
-                    <p>Відповідаю за створення сайту</p>
-                </div>
+.content p{
+margin-bottom:20px;
+font-size:20px;
+}
 
-            </div>
-        </section>
-    </div>
+.buttons{
+margin-top:30px;
+}
 
-</body>
+.btn{
+display:inline-block;
+padding:15px 40px;
+background:#3cb043;
+color:white;
+text-decoration:none;
+font-size:24px;
+margin:10px;
+}
+
+.btn:hover{
+background:#2b8a31;
+}
+
+.team{
+padding:60px 20px;
+background:linear-gradient(to right,#003300,#1d8f3b,#003300);
+}
+
+.top-member{
+display:flex;
+justify-content:center;
+margin-bottom:50px;
+}
+
+.members{
+display:flex;
+justify-content:center;
+gap:80px;
+flex-wrap:wrap;
+}
+
+.card{
+width:260px;
+background:linear-gradient(to bottom,#28ff67,#12301a);
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.card img{
+width:120px;
+height:120px;
+border-radius:50%;
+background:white;
+margin-bottom:15px;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+footer{
+height:60px;
+background:#003300;
+}
+
+</style></head><body><header>
+<h2>Головна</h2>
+<div></div>
+</header><section class="hero">
+<h1>Генерація<br>відео</h1>
+</section><section class="content"><p>
+Генерація відео за допомогою ШІ — сучасний спосіб створення роликів на основі текстових описів.
+</p><p>
+Такі системи можуть генерувати сцени, анімації, спецефекти та рекламні відео.
+</p><p>
+Основні переваги:
+</p><p>
+• Швидке створення контенту<br>
+• Економія часу<br>
+• Автоматизація роботи<br>
+• Підтримка творчих проєктів
+</p><div class="buttons">
+<a href="sora.html" class="btn">sora.ai</a>
+<a href="pika.html" class="btn">pika.ai</a>
+</div></section><section class="team"><div class="top-member">
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/149/149071.png">
+<h3>Біляков Микола</h3>
+<p>Тімлід<br>Відповідаю за пошук інформації</p>
+</div>
+</div><div class="members"><div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/149/149071.png">
+<h3>Сліпченко Руслан</h3>
+<p>Відповідаю за створення макету сторінки (Figma)</p>
+</div><div class="card">
+<img src="mishok.jpg">
+<h3>Бойко Михайло</h3>
+<p>Відповідаю за створення сайту</p>
+</div></div></section><footer></footer></body>
 </html>
