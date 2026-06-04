@@ -15,13 +15,13 @@
   font-weight: 400;
   font-style: normal;
 }
-.inria-serif-bold {
+.span {
   font-family: "Inria Serif", serif;
   font-weight: 700;
   font-style: bold;
 }
 
-.jura-text {
+.gla {
   font-family: "Jura", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -64,13 +64,16 @@ span{
   font-size:30px;
 }
 .gla{
+ 
+  color: white;
+  text-align:right;
   background-image: url("https://v.wpimg.pl/ZDVhYjlldSU3Ci9ZQxd4MHRSewMFTnZmI0pjSENdaHRmEG9dWUM8LToNKw8cA3QjJB0pCxscdDQ6RzgaBUMsdXkMMBkcADs9eQ00CAkIdSVvWTheWQ08aTBcOwxBWDlwMEU4Ul9cd31iDD1fDQ5jITcJYUgR");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-top:10px;
   font-size:40px;
-  font-family: jura-text;
+ 
   width: 100%;
   height: 300px;
   text-align:right;
