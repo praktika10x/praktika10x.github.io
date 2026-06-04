@@ -1,53 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+One&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #e582a7;
+    font-family: 'Balsamiq Sans', sans-serif;
+    background-color: #e582a7; 
     color: #ffffff;
-    background-image:url();
 }
 
-div, header, section {
+div, header, section, ul, li, a {
     box-sizing: border-box;
 }
 
+h1, h2, h3, .logo, .main-page-title, .page-title, .column-title, .tool-name, .author-name {
+    font-family: 'Rubik One', sans-serif;
+    text-transform: uppercase; 
+    letter-spacing: 0.5px;
+}
+
 .header {
-    background-color: #9c3661
+    background-color: #9c3661; 
     padding: 15px 50px;
     width: 100%;
 }
 
 .logo {
     display: inline-block;
-    width: 49%;
-    font-weight: bold;
-    font-size: 24px;
+    width: 45%;
+    font-size: 26px;
+    vertical-align: middle;
 }
 
 .nav {
     display: inline-block;
-    width: 50%;
+    width: 54%;
     text-align: right;
+    vertical-align: middle;
 }
 
-.nav-link {
+.nav-btn {
+    display: inline-block;
+    background-color: #732245; 
     color: #ffffff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
-    margin-left: 30px;
-    display: inline-block;
+    padding: 8px 22px;
+    border-radius: 15px;
+    margin-left: 15px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover {
+    background-color: #541430; 
+    transform: scale(1.08);    
 }
 
 .hero-section {
     height: 400px;
-    background-image: linear-gradient(135deg, #260c1a 0%, #4a1931 100%);
     padding-top: 60px;
     text-align: center;
+    background-image: url('https://i.pinimg.com/736x/f9/22/ba/f922ba8b990e817652ff9c0bf9607d60.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .info-card {
-    background-color: #c95283;
+    background-color: rgba(201, 82, 131, 0.95); 
     width: 680px;
     max-width: 90%;
     margin: 0 auto;
@@ -58,7 +79,7 @@ div, header, section {
 
 .info-card p {
     font-size: 17px;
-    line-height: 1.5;
+    line-height: 1.6;
     text-align: justify;
     margin: 0;
 }
@@ -82,6 +103,13 @@ div, header, section {
     margin: 0 35px;
     text-align: center;
     box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+    background-color: #e88fb1; 
+    transform: scale(1.04);    
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.25); 
 }
 
 .tool-logo {
@@ -102,24 +130,31 @@ div, header, section {
 .tool-name {
     background-color: #ffffff;
     color: #4a1931;
-    padding: 8px 20px;
+    padding: 8px 10px;
     border-radius: 12px;
     display: inline-block;
-    font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 25px;
-    width: 130px;
+    width: 140px;
+    text-align: center;
 }
 
 .tool-btn {
+    display: block;         
+    text-decoration: none;  
     background-color: #ffffff;
     color: #4a1931;
     padding: 12px 15px;
     border-radius: 15px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     line-height: 1.4;
     box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.2s ease;
+}
+
+.tool-btn:hover {
+    background-color: #ffeef3; 
 }
 
 .authors-section {
@@ -129,15 +164,10 @@ div, header, section {
 }
 
 .page-title {
-    font-size: 36px;
+    font-size: 34px;
     color: #4a1931;
     margin-top: 0;
     margin-bottom: 40px;
-    font-weight: bold;
-}
-
-.authors-container {
-    width: 100%;
 }
 
 .author-card {
@@ -149,6 +179,12 @@ div, header, section {
     margin: 0 25px;
     text-align: center;
     box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.author-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
 }
 
 .author-img-box {
@@ -170,7 +206,92 @@ div, header, section {
     color: #4a1931;
     padding: 10px 15px;
     border-radius: 12px;
-    font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-section {
+    background-color: #e582a7;
+    padding: 40px 20px 80px 20px;
+    text-align: center;
+}
+
+.main-page-title {
+    font-size: 30px;
+    color: #4a1931;
+    margin-bottom: 40px;
+}
+
+.comparison-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+.comp-column {
+    display: inline-block;
+    width: 46%;              
+    margin: 0 1.5%;          
+    vertical-align: top;     
+    padding: 30px 25px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+    text-align: left;        
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comp-column:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 22px rgba(0,0,0,0.25);
+}
+
+.advantages-bg {
+    background-color: #f5b0c9; 
+}
+
+.disadvantages-bg {
+    background-color: #e69bbb; 
+}
+
+.column-title {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.points-list {
+    padding-left: 20px;
+    margin: 0;
+    font-size: 16px;
+    color: #3b0d22; 
+    line-height: 1.6;
+}
+
+.points-list li {
+    margin-bottom: 12px;
+}
+
+.presentation-link-wrapper {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.presentation-big-btn {
+    display: inline-block;
+    background-color: #732245; 
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 35px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.presentation-big-btn:hover {
+    background-color: #541430; 
+    transform: scale(1.05);    
 }
