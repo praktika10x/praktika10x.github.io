@@ -84,6 +84,9 @@ img{
 }
 p{
 	font-weight: 600;
+	font-size: larger;
+	color: #ffffff;
+	font-family: Prata, serif;
 }
 
 .game_block {              
