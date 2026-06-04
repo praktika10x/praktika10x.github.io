@@ -46,7 +46,7 @@ html, body {
         }
 
 h1 {
-  font-family: bitter-text;
+  font-family: jura-text;
   color: white;
   text-align:right;
   
@@ -59,7 +59,7 @@ span{
   font-size:24px;
 }
 .gol{
-  font-family: bitter-text;
+  font-family: jura-text;
   width: 100%;
   height: 170px;
   color: white;
