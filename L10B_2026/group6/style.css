@@ -10,8 +10,8 @@ body{
 	background-color: #486B85;
 	height: auto;
 	width: 100%;
-	padding: 20px;
-	margin-bottom:30px;
+	padding: 10px;
+	margin-bottom: 40px;
 	/* display: grid;
     grid-template-columns: repeat(3, 1fr); */
 }
