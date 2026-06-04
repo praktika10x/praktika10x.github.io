@@ -18,31 +18,31 @@ a {
 }
 /* @FONTWARNING[{"type": "restricted", "family": "Jersey 25-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
 
-@font-face {
-  font-family: "Jersey 25-Regular";
-  src: local("Jersey 25-Regular");
-}
-/* @FONTWARNING[{"type": "restricted", "family": "Science Gothic-SemiBold", "weight": "600", "style": "normal", "allowsCrossOrigin": false}] */
 
-@font-face {
-  font-family: "Science Gothic-SemiBold";
-  src: local("Science Gothic-SemiBold");
+.tiny5-regular {
+  font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-/* @FONTWARNING[{"type": "restricted", "family": "Montserrat-ExtraBold", "weight": "800", "style": "normal", "allowsCrossOrigin": false}] */
 
-@font-face {
-  font-family: "Montserrat-ExtraBold";
-  src: local("Montserrat-ExtraBold");
+/* <weight>: Use a value from 100 to 900 */
+/* <uniquifier>: Use a unique and descriptive class name */
+
+.montserrat-regular-200 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
 }
-/* @FONTWARNING[{"type": "restricted", "family": "Montserrat-Medium", "weight": "500", "style": "normal", "allowsCrossOrigin": false}] */
 
-@font-face {
-  font-family: "Montserrat-Medium";
-  src: local("Montserrat-Medium");
-}
-/* @FONTWARNING[{"type": "restricted", "family": "Science Gothic-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
 
-@font-face {
-  font-family: "Science Gothic-Regular";
-  src: local("Science Gothic-Regular");
+.science-gothic-200 {
+  font-family: "Science Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "CTRS" 0;
 }
