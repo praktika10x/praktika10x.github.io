@@ -1,4 +1,8 @@
-
+.gla {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -71,6 +75,11 @@ img{
 }
 .card{
   transition:0.5s;
+  
+  background: linear-gradient(135deg, #77bb44 35%, #107c10 100%);
+  width:auto;
+  height:auto;
+  padding-left:10px;
 }
 a:link, a:visited{
   color:white;
