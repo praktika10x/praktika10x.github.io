@@ -49,6 +49,11 @@ table {
   	width: 70%;
   	margin: auto;
 }
+@media (max-width: 320px){
+	table{
+		scale: ;
+	}
+}
 h1 {
 	font-family: Pacifico, sans-serif;
 	text-align: center;
@@ -67,6 +72,7 @@ a{
 	text-decoration: none;
 	color: #ffffff;
 	margin: 5px;
+	font-size: larger;
 }
 a:active{
 	color: #93B4BC;
@@ -86,7 +92,6 @@ img{
 p{
 	font-weight: 600;
 	font-size: larger;
-	color: #ffffff;
 	font-family: Prata, serif;
 }
 
