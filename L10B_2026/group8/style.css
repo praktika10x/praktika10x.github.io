@@ -1,8 +1,4 @@
-.gla {
-  font-family: "Oi", serif;
-  font-weight: 200;
-  font-style: normal;
-}
+
 }
 * {
   margin: 0;
@@ -16,7 +12,7 @@ html, body {
 
 h1 {
   text-align:right;
-  padding-right:50px;
+  
 }
 span{
   font-weight: 450;
