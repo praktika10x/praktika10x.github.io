@@ -3,242 +3,689 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation Generation - Автори</title>
+    <title>Animation Generation - Розширений веб-ресурс</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Montserrat:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <style>
+        :root {
+            --primary-dark: #0f4c61;      
+            --primary-light: #3a86a8;    
+            --bg-creamy: #e6d1cc;        
+            --card-pink: #d9b8b0;      
+            --accent-bronze: #bc8053;    
+            --text-dark: #1e1e1e;
+            --white: #ffffff;
+            --light-gradient: linear-gradient(135deg, #e6d1cc 0%, #f4e8e5 100%);
+        }
+
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            transition: all 0.25s ease-in-out;
         }
 
         body {
-            background: linear-gradient(135deg, #e2bca4 0%, #ebd1c5 35%, #a1c4fd 100%);
-            background-attachment: fixed;
             font-family: 'Montserrat', sans-serif;
-            color: #333;
+            background: var(--light-gradient);
+            color: var(--text-dark);
             min-height: 100vh;
-            padding-bottom: 5vh;
-        }
-
-        .menu {
-            width: 100%;
-            min-height: 50px;
-            background: #0f5257; 
             display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 5vw;
-            padding: 10px 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            flex-direction: column;
+            overflow-x: hidden;
         }
 
-        .menu a {
-            color: #fff;
-            text-decoration: none;
-            font-size: clamp(14px, 1.2vw, 18px);
-            font-weight: bold;
-            transition: 0.3s;
-            white-space: nowrap;
-        }
-
-        .menu a:hover {
-            color: #a1c4fd; 
-        }
-
-        .main-container {
-            width: 90%;
-            max-width: 600px;
-            margin: 4vh auto;
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(10px);
-            border-radius: 5vw;
-            padding: 6vh 5vw;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            text-align: center;
-        }
-
-        .video-link {
-            display: block;
-            text-align: right;
-            color: #333;
-            text-decoration: none;
-            font-size: clamp(11px, 1vw, 14px);
-            font-weight: 600;
-            margin-bottom: 2vh;
-        }
-        
-        .video-link::after {
-            content: " 📹";
-        }
-
-        .main-title {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(28px, 4.5vw, 42px);
-            color: #1d4e6d;
-            line-height: 1.2;
-            margin-bottom: 4vh;
-            font-style: italic;
-        }
-
-        .text-block {
-            text-align: left;
-            line-height: 1.6;
-            font-size: clamp(13px, 1.1vw, 15px);
-            color: #444;
-        }
-
-        .text-block p {
-            margin-bottom: 3vh;
-        }
-
-        
-        .text-accent h3 {
-            color: #b07040;
-            font-size: clamp(15px, 1.3vw, 18px);
-            margin-bottom: 2vh;
-            font-family: 'Comfortaa', sans-serif;
-            text-align: center;
-        }
-
-        .text-accent p {
-            color: #b07040;
+        h1, h2, h3, .logo-text {
+            font-family: 'Comfortaa', cursive;
             font-weight: 700;
-            text-align: center;
         }
 
-        .authors-section {
-            margin-top: 5vh;
-            border-top: 2px dashed rgba(29, 78, 109, 0.2);
-            padding-top: 4vh;
-        }
-
-        .authors-section h2 {
-            font-family: 'Comfortaa', sans-serif;
-            color: #1d4e6d;
-            font-size: clamp(18px, 1.8vw, 22px);
-            margin-bottom: 4vh;
-        }
-
-        .author-card {
+        header {
+            background-color: var(--primary-dark);
+            padding: 20px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 4vh;
+            gap: 15px;
         }
 
-        .photo-wrapper {
-            width: clamp(90px, 15vw, 130px);
-            height: clamp(90px, 15vw, 130px);
+        @media (min-width: 1024px) {
+            header {
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 20px 40px;
+            }
+        }
+
+        .logo-container {
+            text-align: center;
+        }
+
+        @media (min-width: 1024px) {
+            .logo-container {
+                text-align: left;
+            }
+        }
+
+        .logo-text {
+            color: var(--white);
+            font-size: 24px;
+            letter-spacing: 1px;
+            animation: pulseText 3s infinite alternate;
+        }
+
+        .logo-subtext {
+            font-size: 11px;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--card-pink);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        @media (min-width: 1024px) {
+            nav {
+                width: auto;
+                justify-content: flex-end;
+            }
+        }
+
+        .nav-btn {
+            background-color: var(--primary-light);
+            color: var(--white);
+            border: 2px solid transparent;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 13px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        .nav-btn:hover, .nav-btn.active {
+            background-color: var(--white);
+            color: var(--primary-dark);
+            border-color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+        }
+
+        
+        main {
+            flex: 1;
+            padding: 30px 20px;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .page-section {
+            display: none; 
+            animation: fadeInPage 0.5s ease-in-out forwards;
+        }
+
+        .page-section.active {
+            display: block; 
+        }
+
+        .interactive-card, .team-card, .guide-step, .faq-item, video, table tr {
+            cursor: pointer;
+        }
+
+        .interactive-card:hover, .team-card:hover, .guide-step:hover, .faq-item:hover {
+            transform: scale(1.03); 
+            box-shadow: 0 10px 25px rgba(15, 76, 97, 0.2); 
+            border-color: var(--accent-bronze);
+        }
+
+        .hero-banner {
+            text-align: center;
+            background: linear-gradient(45deg, var(--primary-dark), var(--primary-light));
+            color: var(--white);
+            padding: 40px 20px;
+            border-radius: 20px;
+            margin-bottom: 35px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+
+        .hero-banner h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 20px 0 30px;
+            color: var(--primary-dark);
+            font-size: 26px;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-bronze);
+            margin: 10px auto 0;
+        }
+
+     
+        .team-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .team-card {
+            background-color: var(--white);
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            border-bottom: 4px solid var(--primary-light);
+        }
+
+        .avatar-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 15px;
             border-radius: 50%;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-            border: 0.4vw solid #fff;
-            transition: all 0.4s ease-in-out;
+            border: 4px solid var(--card-pink);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            background: linear-gradient(135deg, var(--card-pink), var(--accent-bronze));
+            color: white;
         }
 
-        .photo-wrapper img {
+    
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        .concept-block {
+            background-color: var(--white);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+            border-left: 5px solid var(--primary-light);
+        }
+
+        .concept-block h2, .concept-block h3 {
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+
+        .concept-block p {
+            line-height: 1.6;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+      
+        .media-container {
+            text-align: center;
+            background-color: rgba(15, 76, 97, 0.05);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 15px;
+        }
+
+        video {
+            border-radius: 12px;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            background-color: #000;
+        }
+
+        
+        .samples-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .badge {
+            background-color: var(--card-pink);
+            color: var(--primary-dark);
+            font-size: 11px;
+            padding: 3px 8px;
+            border-radius: 10px;
+            font-weight: bold;
+            float: right;
+        }
+
+        .chat-area {
+            background-color: #fcf9f8;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+            font-size: 13.5px;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .prompt-field {
+            background-color: var(--white);
+            border-left: 3px solid var(--accent-bronze);
+            padding: 10px;
+            margin: 8px 0;
+            font-style: italic;
+        }
+
+        
+        .guide-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .guide-step {
+            background-color: var(--white);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.03);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .step-badge {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .guide-step ul {
+            margin-left: 40px;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+       
+        .table-wrapper {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.4s ease-in-out;
+            overflow-x: auto;
+            background-color: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
         }
 
-        .author-name {
-            margin-top: 1.5vh;
-            font-size: clamp(13px, 1.2vw, 16px);
-            font-weight: 700;
-            color: #1d4e6d;
-            font-family: 'Comfortaa', sans-serif;
-            transition: color 0.3s ease;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 14px;
         }
 
-        .author-card:hover .photo-wrapper {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(15, 82, 87, 0.4);
-            border-color: #0f5257;
+        th {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            padding: 15px 20px;
+            font-family: 'Comfortaa', cursive;
         }
 
-        .author-card:hover .photo-wrapper img {
-            transform: scale(1.15);
+        td {
+            padding: 12px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            line-height: 1.5;
         }
 
-        .author-card:hover .author-name {
-            color: #b07040;
+        tr:nth-child(even) {
+            background-color: rgba(230, 209, 204, 0.15);
         }
 
-        @media(max-width: 480px){
-            .menu {
-                flex-direction: column;
-                gap: 10px;
-                padding: 15px;
+        table tr:hover td {
+            background-color: rgba(15, 76, 97, 0.06);
+            color: var(--primary-dark);
+        }
+
+        .rating { color: #f39c12; }
+        .ok { color: #27ae60; font-weight: bold; }
+
+        
+        .faq-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .faq-item {
+            background-color: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-bronze);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.03);
+        }
+
+        .faq-item h3 {
+            color: var(--primary-dark);
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        
+        @keyframes fadeInPage {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulseText {
+            from { text-shadow: 0 0 2px rgba(255,255,255,0.1); }
+            to { text-shadow: 0 0 8px rgba(217, 184, 176, 0.5); }
+        }
+
+       
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            margin-top: auto;
+            border-top: 3px solid var(--accent-bronze);
+        }
+
+        
+        @media (max-width: 768px) {
+            .nav-btn {
+                flex: 1 1 45%;
+                font-size: 12px;
+                padding: 8px;
             }
-            .main-container {
-                width: 92%;
-                padding: 5vh 4vw;
-                margin: 2vh auto;
+            .hero-banner h1 {
+                font-size: 24px;
             }
+        }
+
+        @media (max-width: 480px) {
+            .nav-btn {
+                flex: 1 1 100%;
+            }
+            th, td {
+                padding: 10px;
+                font-size: 12px;
+            }
+           
+            table, thead, tbody, th, td, tr { 
+                display: block; 
+            }
+            thead tr { position: absolute; top: -9999px; left: -9999px; }
+            tr { border: 1px solid #ccc; margin-bottom: 10px; border-radius: 8px; background: #fff;}
+            td { border: none; border-bottom: 1px solid #eee; position: relative; padding-left: 50%; text-align: right; }
+            td:before { position: absolute; top: 10px; left: 10px; width: 45%; padding-right: 10px; text-align: left; font-weight: bold; color: var(--primary-dark); content: attr(data-label); }
         }
     </style>
 </head>
 <body>
 
-<nav class="menu">
-    <a href="index.html">Головна (Аніматор)</a>
-    <a href="institutions.html">Заклади</a>
-    <a href="generation.html">Генерація</a>
-    <a href="about.html">Автори</a>
-</nav>
+    <header>
+        <div class="logo-container">
+            <div class="logo-text">Animation Generation</div>
+            <div class="logo-subtext">Дослідження можливостей ШІ</div>
+        </div>
+        <nav>
+            <button class="nav-btn active" onclick="showTab('tab1', this)">Головна & Команда</button>
+            <button class="nav-btn" onclick="showTab('tab2', this)">Базові поняття</button>
+            <button class="nav-btn" onclick="showTab('tab3', this)">Зразки & Промти</button>
+            <button class="nav-btn" onclick="showTab('tab4', this)">Інструкція</button>
+            <button class="nav-btn" onclick="showTab('tab5', this)">Порівняння ШІ</button>
+            <button class="nav-btn" onclick="showTab('tab6', this)">Тренди & Майбутнє</button>
+            <button class="nav-btn" onclick="showTab('tab7', this)">Етика & Право</button>
+            <button class="nav-btn" onclick="showTab('tab8', this)">Часті питання (FAQ)</button>
+        </nav>
+    </header>
 
-<div class="main-container">
-    
-    <a href="#" class="video-link">Переглянути відео</a>
-    
-    <h1 class="main-title">Animation generation</h1>
+    <main>
 
-    <div class="text-block">
-        <p>
-            <strong>Генерація анімації</strong> – це процес автоматичного створення послідовності кадрів за допомогою комп'ютерних алгоритмів, що забезпечує ілюзію руху об'єктів. Вона використовується в комп'ютерній графіці, іграх, кіноіндустрії та мультимедійних застосунках для створення динамічних візуальних ефектів і персонажів.
-        </p>
+       <section id="tab1" class="page-section active">
+    <div class="hero-banner">
+        <h1>Генерація анімацій за допомогою ШІ</h1>
+        <p>Сучасний науково-дослідницький проєкт, що демонструє революцію у сфері комп'ютерного моделювання, кінематографу та геймдеву.</p>
+    </div>
+    <h2 class="section-title">Склад нашої команди</h2>
+    <div class="team-gallery">
         
-        <div class="text-accent">
-            <h3>Генерація анімації передбачає створення руху об'єктів шляхом зміни їхнього положення, форми або інших параметрів у часі.</h3>
-            <p>Сучасні методи дозволяють автоматизувати цей процес за допомогою штучного інтелекту та алгоритмів комп'ютерної графіки, що значно скорочує час розробки анімаційного контенту.</p>
+        <div class="team-card">
+            <div class="avatar-container" style="padding: 0; background: none;">
+                <img src="іра.jpg" alt="Ханат Іра" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <h3>Ханат Іра</h3>
+            <p>UI/UX Дизайнер Тімлід & Програміст</p>
         </div>
+        
+        <div class="team-card">
+            <div class="avatar-container" style="padding: 0; background: none;">
+                <img src="крістіна.jpg" alt="Карпенко Крістіна" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <h3>Карпенко Крістіна</h3>
+            <p>ШІ-Інженер & Програміст</p>
+        </div>
+        
+        <div class="team-card">
+            <div class="avatar-container" style="padding: 0; background: none;">
+                <img src="альбіна.jpg" alt="Остахова Альбіна" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <h3>Остахова Альбіна</h3>
+            <p>Аналітик контенту & Frontend</p>
+        </div>
+        
     </div>
-
-    <div class="authors-section">
-        <h2>Працювали:</h2>
-
-        <div class="author-card">
-            <div class="photo-wrapper">
-                <img src="photo_5260666074213063381_y.jpg" alt="Ханат Іра">
+</section>
+        <section id="tab2" class="page-section">
+            <h2 class="section-title">Теоретична база дослідження</h2>
+            <div class="info-grid">
+                <div class="concept-block interactive-card">
+                    <h3>Що таке генерація анімацій?</h3>
+                    <p><strong>Генерація анімації</strong> – це автоматизований процес послідовного створення кадрів за допомогою комп'ютерних алгоритмів, що створює плавний візуальний ефект руху об'єктів у просторі й часі.</p>
+                    <p>Використання генеративного ШІ кардинально скорочує час виробництва графічного контенту, дозволяючи створювати складні сцени за секунди.</p>
+                </div>
+                <div class="media-container">
+                    <h3 style="color:var(--primary-dark); margin-bottom:10px;">Демонстрація медіапродукту</h3>
+                    <video controls width="400" height="300">
+                        <source src="лебеді.mp4" type="video/mp4">
+                        <source src="Котик.mp4" type="video/mp4">
+                        <source src="Практична саакура 2 .mp4" type="video/mp4">
+                        Ваш браузер не підтримує відео.
+                    </video>
+                </div>
             </div>
-            <span class="author-name">Ханат Іра</span>
-        </div>
+        </section>
 
-        <div class="author-card">
-            <div class="photo-wrapper">
-                <img src="kristina.jpg" alt="Карпенко Крістіна">
+        <section id="tab3" class="page-section">
+            <h2 class="section-title">Інформаційні продукти та Промти</h2>
+            <div class="samples-layout">
+                <div class="concept-block interactive-card">
+                    <span class="badge">Text-to-Video</span>
+                    <h3>Пейзажна динаміка</h3>
+                    <div class="chat-area">
+                        <p><strong>Запит до ШІ:</strong></p>
+                        <div class="prompt-field">"Hyper-realistic view of neon Tokyo streets during heavy rain, reflections on the ground, cyberpunk style, 8k resolution, smooth camera panning."</div>
+                        <p><strong>Результат:</strong> ШІ генерує високодеталізований кінематографічний цикл руху води, спалахів світла та міського середовища.</p>
+                    </div>
+                </div>
+                <div class="concept-block interactive-card">
+                    <span class="badge">Image-to-Video</span>
+                    <h3>Оживлення концепт-арту</h3>
+                    <div class="chat-area">
+                        <p><strong>Запит до ШІ:</strong></p>
+                        <div class="prompt-field">"[Завантажене фото птаха фенікса] -> Make the fire wings flap realistically, smoke rising up, cinematic lighting, 60fps."</div>
+                        <p><strong>Результат:</strong> Статичне зображення перетворюється на анімований живий аватар із коректною фізикою частинок вогню.</p>
+                    </div>
+                </div>
             </div>
-            <span class="author-name">Карпенко Крістіна</span>
-        </div>
+        </section>
 
-        <div class="author-card">
-            <div class="photo-wrapper">
-                <img src="x.jpg" alt="Остахова Альбіна">
+        <section id="tab4" class="page-section">
+            <h2 class="section-title">Інструкція з інженерії запитів (Prompting)</h2>
+            <div class="guide-list">
+                <div class="guide-step">
+                    <h3><span class="step-badge">1</span> Формула ідеального промту</h3>
+                    <p>Для якісної анімації ваш запит повинен містити 4 ключові компоненти:</p>
+                    <ul>
+                        <li><strong>Об'єкт:</strong> Хто або що знаходиться в центрі уваги.</li>
+                        <li><strong>Дія:</strong> Конкретний рух (вектор, швидкість, амплітуда).</li>
+                        <li><strong>Оточення:</strong> Освітлення, атмосфера, погодні умови.</li>
+                        <li><strong>Технічні параметри:</strong> Ракурс камери (FPV, Drone shot) та роздільна здатність.</li>
+                    </ul>
+                </div>
+                <div class="guide-step">
+                    <h3><span class="step-badge">2</span> Налаштування параметрів (Motion Control)</h3>
+                    <ul>
+                        <li>Використовуйте повзунок <strong>Motion Intensity</strong> (інтенсивність руху). Значення 1-3 підходять для портретів, 7-10 — для екшн-сцен.</li>
+                        <li>Додавайте негативні промти (Negative prompts) для уникнення деформацій тіла чи розмиття.</li>
+                    </ul>
+                </div>
             </div>
-            <span class="author-name">Остахова Альбіна</span>
-        </div>
+        </section>
 
-    </div>
+        <section id="tab5" class="page-section">
+            <h2 class="section-title">Порівняльний аналіз ШІ інструментів</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Критерій аналізу</th>
+                            <th>Pika AI</th>
+                            <th>Runway Gen-2</th>
+                            <th>Luma AI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Критерій"><strong>Основне призначення</strong></td>
+                            <td data-label="Pika AI">Генерація коротких відео, мемів та швидка анімація зображень</td>
+                            <td data-label="Runway Gen-2">Професійний інструментарій для створення відео та спецефектів</td>
+                            <td data-label="Luma AI">Генерація фотореалістичних та фізично точних тривимірних сцен</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Критерій"><strong>Простота інтерфейсу</strong></td>
+                            <td data-label="Pika AI"><span class="rating">★★★★★</span> (Дуже просто)</td>
+                            <td data-label="Runway Gen-2"><span class="rating">★★★★☆</span> (Середня)</td>
+                            <td data-label="Luma AI"><span class="rating">★★★★☆</span> (Середня)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Критерій"><strong>Генерація з опису</strong></td>
+                            <td data-label="Pika AI"><span class="ok">✔</span> Наявна</td>
+                            <td data-label="Runway Gen-2"><span class="ok">✔</span> Наявна</td>
+                            <td data-label="Luma AI"><span class="ok">✔</span> Наявна</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Критерій"><strong>Якість фізики руху</strong></td>
+                            <td data-label="Pika AI">Середня (іноді є артефакти)</td>
+                            <td data-label="Runway Gen-2">Висока кінематографічна</td>
+                            <td data-label="Luma AI">Відмінна просторова фізика</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Критерій"><strong>Безкоштовний доступ</strong></td>
+                            <td data-label="Pika AI">Є щоденні безкоштовні квоти</td>
+                            <td data-label="Runway Gen-2">Є обмежений тестовий період</td>
+                            <td data-label="Luma AI">Надаються безкоштовні генерації</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-</div>
+        <section id="tab6" class="page-section">
+            <h2 class="section-title">Тренди та майбутнє генерації руху</h2>
+            <div class="info-grid">
+                <div class="concept-block interactive-card">
+                    <h3>Перехід до генерації довгих послідовностей</h3>
+                    <p>Головним трендом розвитку моделей штучного інтелекту є збільшення тривалості згенерованих роликів зі збереженням логічної та візуальної консистентності (незмінності персонажів та фону).</p>
+                </div>
+                <div class="concept-block interactive-card">
+                    <h3>Розуміння законів фізики реального світу</h3>
+                    <p>Нові покоління нейромереж навчаються не просто склеювати пікселі, а симулювати реальну фізику: гравітацію, кінематику рідин, заломлення світла та взаємодію твердих тіл, що робить анімацію невідлітною від реального відео.</p>
+                </div>
+            </div>
+        </section>
 
+        <section id="tab7" class="page-section">
+            <h2 class="section-title">Етичні аспекти та Авторське право</h2>
+            <div class="info-grid">
+                <div class="concept-block interactive-card">
+                    <h3>Проблема використання авторських баз даних</h3>
+                    <p>Більшість сучасних моделей навчаються на мільярдах зображень та відео з мережі Інтернет. Це викликає дискусії серед художників та аніматорів щодо захисту їхньої інтелектуальної власності та компенсацій за використання їхнього стилю.</p>
+                </div>
+                <div class="concept-block interactive-card">
+                    <h3>Маркування штучного контенту (Watermarking)</h3>
+                    <p>Для боротьби з дезінформацією та фейками великі розробники впроваджують невидимі цифрові метадані (криптографічні водяні знаки), які дозволяють ідентифікувати, що відео чи анімація були створені за допомогою ШІ.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tab8" class="page-section">
+            <h2 class="section-title">Часті питання (FAQ)</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Чи може ШІ повністю замінити класичного 3D-аніматора?</h3>
+                    <p>Ні, на поточному етапі ШІ виступає потужним асистентом (інструментом концепт-арту та швидкого прототипування), проте він не має режисерського бачення та не може вносити мікрокорекції, які потрібні у великому кіновиробництві.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Яка роздільна здатність є стандартною для генерації?</h3>
+                    <p>Більшість сервісів безкоштовно генерують відео у форматі 720p. Платні підписки або функції Upscaling дозволяють збільшувати якість до Full HD (1080p) та Ultra HD (4K).</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Як уникнути розмиття обличчя під час створення руху?</h3>
+                    <p>Для цього використовують спеціальні функції фіксації обличчя (наприклад, Face Anchor у Runway) або додатково обробляють готове відео через нейромережі-інтенсифікатори деталей.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 проєкт "Animation Generation". Науковий ліцей "Політ". Роботу виконали Карпеко Крістіна, Ханат Іра, Остахова Альбіна</p>
+    </footer>
+
+    <script>
+        function showTab(tabId, btnElement) {
+        
+            const sections = document.querySelectorAll('.page-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            const targetSection = document.getElementById(tabId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+
+            btnElement.classList.add('active');
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
-
