@@ -66,6 +66,7 @@ h2 {
 a{
 	text-decoration: none;
 	color: #ffffff;
+	margin: 5px;
 }
 a:active{
 	color: #93B4BC;
