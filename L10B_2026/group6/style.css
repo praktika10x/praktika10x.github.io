@@ -47,7 +47,8 @@ th {
 	color:white;
 }
 td {
-	color:#486B85;
+	color:white;
+	background-color: #93B4BC;
 }
 table {
   	width: 70%;
