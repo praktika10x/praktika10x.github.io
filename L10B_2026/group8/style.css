@@ -38,18 +38,9 @@ span{
   
   text-align:center;
   font-size:30px;
-
-  display: flex;
-  justify-content: center; 
-  align-items: center;    
-  gap: 20px;
 }
-.gol-text {
-  text-align: left;
-  line-height: 1.3; 
-}
-
-.gla{ 
+.gla{
+ 
   color: white;
   text-align:right;
   background-image: url("https://v.wpimg.pl/ZDVhYjlldSU3Ci9ZQxd4MHRSewMFTnZmI0pjSENdaHRmEG9dWUM8LToNKw8cA3QjJB0pCxscdDQ6RzgaBUMsdXkMMBkcADs9eQ00CAkIdSVvWTheWQ08aTBcOwxBWDlwMEU4Ul9cd31iDD1fDQ5jITcJYUgR");
@@ -58,9 +49,11 @@ span{
   background-repeat: no-repeat;
   padding-top:10px;
   font-size:40px;
+ 
   width: 100%;
   min-height: 300px;
   text-align:right;
+
   color: white;
   margin: 0 auto;
 }
@@ -77,28 +70,14 @@ span{
   font-size:20px;
   
 }
-
-.team{
-    background-color: #212855;
-    padding: 15px 0;
-    text-align: left; 
-}
-team {
-   margin: 0;
-   padding-left: 20px;
-   font-size: 36px;
-   color: white;
-}
-
 ul{
   padding-left:15px;
 }
 img{
-    width: 60px;        
-    height: auto;       
-    vertical-align: middle; 
-    margin-right: 15px;  
-    margin-bottom: 10px;  
+    max-width: 200px;
+    height: auto;
+    
+
 }
 .card:hover{
   transform:scale(1.1);
