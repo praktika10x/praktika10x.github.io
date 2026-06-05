@@ -211,15 +211,10 @@ tr:hover {
 .gallery .card {
   width: 320px;
 }
-.gallery-container {
-  max-width: 1200px;
-  margin: 50px auto;
-}
 .grid-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
-  padding: 10px;
   margin-top: 40px;
 }
 @media (max-width: 768px) {
@@ -244,6 +239,14 @@ tr:hover {
     align-items: center;
   }
   .gallery .card {
+    width: 100%;
+    max-width: 340px;
+  }
+  .grid-gallery {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .grid-gallery .card {
     width: 100%;
     max-width: 340px;
   }
