@@ -82,10 +82,11 @@ ul{
   padding-left:15px;
 }
 img{
-    max-width: 500px;
-    height: auto;
-    
-
+    width: 60px;        
+    height: auto;       
+    vertical-align: middle; 
+    margin-right: 15px;  
+    margin-bottom: 10px;  
 }
 .card:hover{
   transform:scale(1.1);
