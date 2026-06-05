@@ -314,7 +314,7 @@ h1, h2, h3, .logo, .main-page-title, .page-title, .column-title, .tool-name, .au
     box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
     margin: 0 auto 50px auto;
     max-width: 1000px;
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Balsamiq Sans', 'Apple Gothic', Roboto, Helvetica, Arial, sans-serif;
     box-sizing: border-box;
 }
 
@@ -383,7 +383,7 @@ h1, h2, h3, .logo, .main-page-title, .page-title, .column-title, .tool-name, .au
     box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
     margin: 0 auto 50px auto;
     max-width: 1000px;
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Balsamiq Sans', 'Apple Gothic', Roboto, Helvetica, Arial, sans-serif;
     box-sizing: border-box;
 }
 
@@ -441,4 +441,96 @@ h1, h2, h3, .logo, .main-page-title, .page-title, .column-title, .tool-name, .au
     font-style: italic;
     margin-top: -15px;
     text-align: left;
+}
+
+.chatgpt-comp-bg {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 30px;
+    color: #1a000d;
+}
+
+.gamma-comp-bg {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 30px;
+    color: #1a000d;
+}
+
+.presentation-link-wrapper {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.presentation-big-btn {
+    display: inline-block;
+    padding: 18px 30px;
+    background-color: #4a1931;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.presentation-big-btn:hover {
+    background-color: #732245;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sources-footer {
+    background-color: #9c3661;
+    padding: 35px 20px;
+    text-align: center;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.sources-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sources-badge {
+    font-family: 'Rubik One', sans-serif;
+    text-transform: uppercase;
+    background-color: #4a1931; /* Темний акцент */
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 12px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: 22px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+}
+
+.sources-links {
+    display: block;
+    text-align: center;
+}
+
+.source-link-btn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #4a1931;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 22px;
+    border-radius: 15px;
+    margin: 5px 10px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.source-link-btn:hover {
+    background-color: #ffeef3;
+    transform: scale(1.06);
 }
