@@ -229,5 +229,5 @@ a:link, a:visited{
 
 .blockcard:hover {
     transform: scale(1.05);
-    border: 5px solid #FFFFFF80; /* Біла напівпрозора рамка при наведенні */
+    border: 5px solid #FFFFFF80;
 }
