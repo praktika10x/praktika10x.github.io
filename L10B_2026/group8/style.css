@@ -165,7 +165,18 @@ a:link, a:visited{
     margin: 10px 5%;
   }
 
-
+.team{
+  background-color: #2A3778;
+  color:white;
+  width: 100%;
+  height: auto;
+  
+  text-align:left;
+  text-align-last:left;
+  margin: 0 auto;
+  padding:30px 5%;
+  font-size:40px;
+}
 .blockcard {
     width: 300px;  
     height: 370px;
