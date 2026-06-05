@@ -127,11 +127,3 @@ p{
 	margin-bottom: 25px;
 	text-align: center;
 }
-.head {
-  grid-column: 2/4;
-  grid-row: 1/2;
-}
-.header {
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
