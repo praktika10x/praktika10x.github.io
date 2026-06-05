@@ -61,6 +61,14 @@ span{
   padding:30px 5%;
   font-size:20px;
 }
+
+.team{
+    background-color: #212855;
+    padding: 15px 0;
+    text-align: left; 
+
+  
+}
 ul{
   padding-left:15px;
 }
