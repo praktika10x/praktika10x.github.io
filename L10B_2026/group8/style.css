@@ -78,12 +78,7 @@ span{
 ul{
   padding-left:15px;
 }
-img{
-    max-width: 200px;
-    height: auto;
-    
 
-}
 .card:hover{
   transform:scale(1.1);
 }
