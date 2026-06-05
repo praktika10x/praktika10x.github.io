@@ -632,7 +632,7 @@ td
         box-sizing: border-box;
         flex-wrap: wrap;
         height: auto;
-        background-color: #261374;
+        background-color: #171717;
       }
     
       .nav {
@@ -640,7 +640,7 @@ td
         width: 100%;
         height: auto;
         flex-direction: column;
-        background-color: #261374;
+        background-color: #171717;
         display: flex;
         box-sizing: border-box;
         padding: 15px 10px;
@@ -662,7 +662,7 @@ td
         white-space: normal;
         overflow: hidden;
         text-overflow: ellipsis;
-        background-color: #261374;
+        border:2px solid green;
         color: #ffffff;
         border-radius: 3px;
         text-decoration: none;
