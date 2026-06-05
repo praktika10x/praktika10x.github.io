@@ -54,6 +54,17 @@ table {
   	width: 70%;
   	margin: auto;
 }
+@media (min-width: 321px) {
+	.game_block {              
+		width: 1000px;        
+		margin: 40px auto;        
+		padding: 20px;
+	}
+	iframe{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
 @media (max-width: 320px){
 	table{
 		scale: 0.85;
@@ -65,7 +76,7 @@ table {
 	}
 	iframe{
 		width: 100%;
-		margin: 0%;
+		margin-left: 0%;
 	}
 }
 h1 {
@@ -110,12 +121,6 @@ p{
 	font-size: larger;
 	font-family: Prata, serif;
 	color: #93B4BC;
-}
-
-.game_block {              
-    width: 1000px;        
-    margin: 40px auto;        
-    padding: 20px;
 }
 .game_block h2 {
 	font-size: 32px;
