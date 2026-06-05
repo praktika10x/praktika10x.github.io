@@ -30,12 +30,15 @@ span{
   font-size:24px;
 }
 .gol{
-  width: 100%;
+  width: auto;
   padding: 20px;
-  min-height: 170px;
+  height: auto;
   color: white;
   background-color: #8799AE;
+  
+  text-align:center;
   font-size:30px;
+
   display: flex;
   justify-content: center; 
   align-items: center;    
