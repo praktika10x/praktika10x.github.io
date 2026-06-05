@@ -81,21 +81,9 @@ h2 {
 	padding-top: 30 px;
 	width: 100%;
 	font-family: Pacifico, sans-serif;
-<<<<<<< HEAD
 	text-align: center;
-=======
 	font-size: larger;
->>>>>>> 67ab467f04a557e4fa16abbc97fe131eeda6c309
 }
-<<<<<<< HEAD
-a{
-	text-decoration: none;
-	color: #ffffff;
-}
-a:active{
-	color: #486B85;
-}
-=======
 a{
 	text-decoration: none;
 	color: #ffffff;
@@ -105,7 +93,6 @@ a{
 a:active{
 	color: #93B4BC;
 }
->>>>>>> 67ab467f04a557e4fa16abbc97fe131eeda6c309
 .circular_img{
 	border-radius: 100%;
 	margin-top: 10px;
