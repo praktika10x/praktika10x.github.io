@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Експерименти з різними ШІ та їх порівняння</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Proza+Libre:wght@400;600&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ══ TOPBAR ══ -->
+<header id="topbar">
+  <button id="burgerBtn" aria-label="Меню" aria-expanded="false">
+    <span class="b-icon"><span></span><span></span><span></span></span>
+  </button>
+  <span id="topbarTitle">Експерименти з різними ШІ та їх порівняння</span>
+  <button id="themeBtn" aria-label="Перемкнути тему" title="Перемкнути тему">⭐</button>
+</header>
+
+<div id="overlay"></div>
+
+<!-- ══ SIDE DRAWER ══ -->
+<aside id="drawer">
+    <nav class="drawer-nav">
+    <a href="index.html" class="nav-item">Генерація растрових та векторних зображень</a>
+    <a href="experiments.html" class="nav-item active">Експерименти з різними ШІ та їх порівняння</a>
+    <a href="tips.html" class="nav-item">Поради у написанні промптів</a>
+    <a href="sources.html" class="nav-item">Використані джерела</a>
+  </nav>
+</aside>
+
+<!-- ══ MAIN CONTENT ══ -->
+<main class="main">
+
+  <!-- Logo -->
+  <div class="logo-wrap reveal">
+    <div class="logo-circle">
+      <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" width="110" height="110">
+        <circle cx="55" cy="55" r="55" fill="url(#bgGrad2)"/>
+        <defs>
+          <radialGradient id="bgGrad2" cx="50%" cy="40%" r="60%">
+            <stop offset="0%" stop-color="#fce8e4"/>
+            <stop offset="100%" stop-color="#f0d8d0"/>
+          </radialGradient>
+        </defs>
+        <g opacity=".9">
+          <rect x="16" y="38" width="9" height="9" rx="1.5" fill="#e0937a"/>
+          <rect x="27" y="38" width="9" height="9" rx="1.5" fill="#c9725a"/>
+          <rect x="16" y="49" width="9" height="9" rx="1.5" fill="#c9725a"/>
+          <rect x="27" y="49" width="9" height="9" rx="1.5" fill="#e8b0a0"/>
+          <rect x="16" y="60" width="9" height="9" rx="1.5" fill="#e8b0a0"/>
+          <rect x="27" y="60" width="9" height="9" rx="1.5" fill="#e0937a"/>
+          <rect x="16" y="71" width="9" height="9" rx="1.5" fill="#c9725a"/>
+          <rect x="27" y="71" width="9" height="9" rx="1.5" fill="#e0937a"/>
+        </g>
+        <line x1="43" y1="32" x2="43" y2="82" stroke="#c9725a" stroke-width="1.5" stroke-dasharray="3 2" opacity=".5"/>
+        <g fill="none" stroke="#c9725a" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M50 72 Q62 42 74 72" stroke-width="2.2"/>
+          <path d="M53 64 Q62 52 71 64" stroke-width="1.6" opacity=".6"/>
+          <circle cx="50" cy="72" r="2.2" fill="#c9725a" stroke="none"/>
+          <circle cx="74" cy="72" r="2.2" fill="#c9725a" stroke="none"/>
+          <circle cx="62" cy="40" r="2.2" fill="#e0937a" stroke="none"/>
+        </g>
+        <g transform="translate(55,22)" opacity=".85">
+          <polygon points="0,-6 1.4,-1.4 6,0 1.4,1.4 0,6 -1.4,1.4 -6,0 -1.4,-1.4" fill="#c9725a"/>
+        </g>
+        <text x="55" y="93" text-anchor="middle" font-family="Georgia,serif" font-size="7.5" font-weight="700" fill="#7a4a3a" letter-spacing=".5">ШІ-ГРАФІКА</text>
+      </svg>
+    </div>
+  </div>
+
+  <h1 class="page-title reveal">Експерименти з різними ШІ та їх порівняння</h1>
+
+  <!-- ══════════════════════════════════════
+       SECTION 1 — РАСТРОВА ГРАФІКА
+  ══════════════════════════════════════ -->
+  <section class="exp-section reveal">
+    <h2 class="exp-section-title"><span class="exp-num">1.</span> Растрова графіка</h2>
+
+    <!-- Step 1: Prompt -->
+    <div class="step-bullet reveal">
+      <span class="step-dot">•</span>
+      <span>Складаємо один детальний промпт для обох сайтів і порівнюємо їхні результати на однаковому завданні:</span>
+    </div>
+
+    <blockquote class="prompt-block reveal">
+      "Cinematic close-up portrait of an elderly sea captain inside a dimly lit wooden ship cabin. His face is weathered with deep, highly detailed wrinkles and realistic skin pores. He has a thick, white, coarse beard where individual hairs are visible. He is looking slightly away from the camera with a thoughtful expression. Lighting: dramatic volumetric chiaroscuro effect, with a warm golden light coming from a single oil lamp on the side, casting soft shadows and highlighting the texture of his skin and the dust particles in the air. Background: out of focus (bokeh effect), showing old leather-bound books, a brass compass, and polished dark wood walls. Shot on 85mm lens, photorealistic, 8k resolution, hyper-detailed textures, intricate clothing fabric, moody atmosphere."
+    </blockquote>
+
+    <!-- Step 2: NightCafe -->
+    <div class="step-bullet reveal">
+      <span class="step-dot">•</span>
+      <span>Розміщуємо готовий промпт на першому сайті – <strong>NightCafe</strong></span>
+    </div>
+
+    <div class="comparison-wrap reveal">
+      <div class="comparison-row">
+        <!-- NightCafe screenshot placeholder -->
+        <div class="comp-screenshot">
+          <div class="screenshot-placeholder">
+            <div class="screenshot-placeholder-icon">📷</div>
+            <div class="screenshot-placeholder-text">Скріншот інтерфейсу NightCafe буде додано тут</div>
+            <div class="screenshot-placeholder-label">NightCafe</div>
+          </div>
+        </div>
+        <!-- Arrow -->
+        <div class="comp-arrow-wrap">
+          <svg class="comp-arrow-svg" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <!-- Result -->
+        <div class="comp-result">
+          <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=500&h=620&fit=crop&crop=face" alt="NightCafe — результат генерації" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+
+    <p class="exp-text reveal">Отримуємо зображення людини за відповідним запитом. Генерація зайняла всього до 5 секунд. Нейромережа з першого разу точно вловила уяву промпту: згенерувала старого чоловіка, додала детальну атмосферу теплого освітлення, книги та чітко зображала компас і частинки пилу у повітрі, які підсвічуються світлом. При чому, на сайті можна вручну відредагувати зображення змінивши освітлення, контраст й інше.</p>
+
+    <!-- Step 3: Leonardo AI -->
+    <div class="step-bullet reveal">
+      <span class="step-dot">•</span>
+      <span>Переходимо до наступного ресурсу – <strong>Leonardo AI</strong></span>
+    </div>
+
+    <!-- Leonardo AI — спроба 1 -->
+    <div class="comparison-wrap reveal">
+      <div class="comparison-row">
+        <div class="comp-screenshot">
+          <div class="screenshot-placeholder">
+            <div class="screenshot-placeholder-icon">📷</div>
+            <div class="screenshot-placeholder-text">Скріншот інтерфейсу Leonardo AI (перша спроба) буде додано тут</div>
+            <div class="screenshot-placeholder-label">Leonardo AI</div>
+          </div>
+        </div>
+        <div class="comp-arrow-wrap">
+          <svg class="comp-arrow-svg" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="comp-result">
+          <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=500&h=620&fit=crop&crop=face" alt="Leonardo AI — перша спроба" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+
+    <p class="exp-text reveal">Тут все складніше. Текстура шкіри виглядала неприродно («пластиковий» ефект), деталі фону було пропрацьовано недостатньо. Модель, яка надана за замовчуванням, не підходить для складного фотореалізму та великих деталізованих запитів.</p>
+
+    <!-- Leonardo AI — зміна моделі -->
+    <div class="comparison-wrap reveal">
+      <div class="comparison-row">
+        <div class="comp-screenshot">
+          <div class="screenshot-placeholder">
+            <div class="screenshot-placeholder-icon">📷</div>
+            <div class="screenshot-placeholder-text">Скріншот налаштувань моделі (Lucid Realism) буде додано тут</div>
+            <div class="screenshot-placeholder-label">Leonardo AI — Налаштування моделі</div>
+          </div>
+        </div>
+        <div class="comp-arrow-wrap">
+          <svg class="comp-arrow-svg" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="comp-result">
+          <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=500&h=620&fit=crop&crop=face" alt="Leonardo AI — Lucid Realism" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+
+    <p class="exp-text reveal">Тепер ми замінили запропоновану спочатку модель на <strong>Lucid Realism</strong> та стиль зображення на <strong>динамічний</strong>, що зможе виправити проблему з нереалістичністю генерацій. У результаті наше фото вже більш відповідало запиту, проте деталі на фоні все одно були пропрацьовані недостатньо чітко.</p>
+
+    <!-- Leonardo AI — режим редагування -->
+    <div class="comparison-wrap reveal">
+      <div class="comparison-row">
+        <div class="comp-screenshot">
+          <div class="screenshot-placeholder">
+            <div class="screenshot-placeholder-icon">📷</div>
+            <div class="screenshot-placeholder-text">Скріншот режиму редагування Leonardo AI буде додано тут</div>
+            <div class="screenshot-placeholder-label">Leonardo AI — Режим редагування</div>
+          </div>
+        </div>
+        <div class="comp-arrow-wrap">
+          <svg class="comp-arrow-svg" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="comp-result">
+          <img src="https://images.unsplash.com/photo-1564415637254-92c66292cd64?w=500&h=620&fit=crop&crop=face" alt="Leonardo AI — фінальний результат" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+
+    <p class="exp-text reveal">У режимі редагування дописали деталі, яких не вистачало, та отримали кінцевий результат. Зміна моделі, додавання антуражних елементів та внесення змін у режимі редагування кардинально покращили деталізацію. Текстура одягу, зморшки та об'ємне світло виконані професійно, але деякі слова промпту щодо фону все одно були пропрацьовані частково.</p>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 2 — ВЕКТОРНА ГРАФІКА
+  ══════════════════════════════════════ -->
+  <section class="exp-section vector-section reveal">
+    <h2 class="exp-section-title"><span class="exp-num">2.</span> Векторна Графіка</h2>
+
+    <div class="step-bullet reveal">
+      <span class="step-dot">•</span>
+      <span>Так само розробляємо промпт для порівняння результату:</span>
+    </div>
+
+    <blockquote class="prompt-block reveal">
+      "A detailed vector illustration of a majestic mechanical owl sitting on a thick tree branch, steampunk style. The owl has glowing brass gears, intricate clockwork feathers, and large glass lens eyes. Deep midnight blue background, warm gold and bronze metallic highlights. Sharp clean lines, flat vector shapes, smooth gradients, no photo realism, scalable vector graphic."
+    </blockquote>
+
+    <!-- Side-by-side results -->
+    <div class="vector-compare-row reveal">
+      <div class="vector-compare-item">
+        <div class="vector-compare-img">
+          <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=500&h=500&fit=crop" alt="Recraft результат" loading="lazy"/>
+        </div>
+        <p class="vector-label">Зображення згенероване за допомогою <strong>Recraft</strong></p>
+      </div>
+      <div class="vector-compare-item">
+        <div class="vector-compare-img">
+          <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=500&h=500&fit=crop" alt="Kitti результат" loading="lazy"/>
+        </div>
+        <p class="vector-label">Зображення згенероване за допомогою <strong>Kitti</strong></p>
+      </div>
+    </div>
+
+    <!-- Conclusions -->
+    <div class="step-bullet reveal">
+      <span class="step-dot">•</span>
+      <span>Висновки до результатів зображень (для обох сайтів було обрано модель з найкращою деталізацією):</span>
+    </div>
+
+    <div class="conclusions-block reveal">
+      <ol class="conclusions-list">
+        <li><strong>Recraft</strong> є кращим інструментом для технічного та комерційного веб-дизайну. Його алгоритм створює цілісну геометричну точність, чіткі замкнуті контури та правильні форми (кола, лінії), які легко редагувати по точках у графічних редакторах. Файли від Recraft мають менше «сміття» і краще масштабуються без втрати сенсу деталей.</li>
+        <li><strong>Kitti</strong> орієнтований на художню ілюстрацію та дизайн-плакати. Його графіка має виразний «живий» стиль мазку від руки з глибокими тінями та штрихами. Проте, з точки зору точних зор векторизації, така модель створює значно більше дрібних векторних ліній — растрових артефактів, перенесених у вектор, — що ускладнює подальше ручне редагування окремих елементів.</li>
+      </ol>
+      <p class="recommendation"><strong>Рекомендація:</strong> Для створення іконок, інтерфейсів та точних векторних ілюстрацій доцільно обрати Recraft. Для створення складних художніх принтів, постерів та вигадних логотипів кращий результат демонструє саме Kitti.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  © Практична робота групи 3 класу Л-10В. Створено з фокусом на технологію ШІ-генерації графіки.
+</footer>
+
+<script>
+const drawer  = document.getElementById('drawer');
+const overlay = document.getElementById('overlay');
+const burger  = document.getElementById('burgerBtn');
+const themeBtn= document.getElementById('themeBtn');
+
+function openMenu(){drawer.classList.add('open');overlay.classList.add('show');burger.classList.add('open');burger.setAttribute('aria-expanded','true')}
+function closeMenu(){drawer.classList.remove('open');overlay.classList.remove('show');burger.classList.remove('open');burger.setAttribute('aria-expanded','false')}
+burger.addEventListener('click', () => drawer.classList.contains('open') ? closeMenu() : openMenu());
+overlay.addEventListener('click', closeMenu);
+
+document.querySelectorAll('.nav-item').forEach(link => {
+  link.addEventListener('click', () => { setTimeout(closeMenu, 120); });
+});
+
+// ── THEME TOGGLE (shared with index.html via localStorage) ──
+let isDark = localStorage.getItem('theme') === 'dark';
+function applyTheme(){
+  document.body.classList.toggle('dark', isDark);
+  themeBtn.textContent = isDark ? '🌙' : '⭐';
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+}
+applyTheme();
+themeBtn.addEventListener('click', () => { isDark = !isDark; applyTheme(); });
+
+// ── REVEAL ANIMATION ──
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); }});
+}, { threshold: .07, rootMargin: '0px 0px -30px 0px' });
+document.querySelectorAll('.reveal').forEach((el, i) => {
+  el.style.transitionDelay = `${i * .055}s`;
+  obs.observe(el);
+});
+</script>
+</body>
+</html>

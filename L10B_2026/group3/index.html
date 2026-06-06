@@ -1,11 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>project</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Генерація растрових та векторних зображень</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Proza+Libre:wght@400;600&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-	<h1>Група 3</h1>
+
+<header id="topbar">
+  <button id="burgerBtn" aria-label="Меню" aria-expanded="false">
+    <span class="b-icon"><span></span><span></span><span></span></span>
+  </button>
+  <span id="topbarTitle">Генерація растрових та векторних зображень</span>
+  <button id="themeBtn" aria-label="Перемкнути тему" title="Перемкнути світла / темна тема">⭐</button>
+</header>
+
+<div id="overlay"></div>
+
+<aside id="drawer">
+    <nav class="drawer-nav">
+    <a href="index.html" class="nav-item active">Генерація растрових та векторних зображень</a>
+    <a href="experiments.html" class="nav-item">Експерименти з різними ШІ та їх порівняння</a>
+    <a href="tips.html" class="nav-item">Поради у написанні промптів</a>
+    <a href="sources.html" class="nav-item">Використані джерела</a>
+  </nav>
+</aside>
+
+<main class="main">
+
+  <!-- Logo -->
+  <div class="logo-wrap reveal">
+    <div class="logo-circle">
+      <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" width="110" height="110">
+        <circle cx="55" cy="55" r="55" fill="url(#bgGrad1)"/>
+        <defs>
+          <radialGradient id="bgGrad1" cx="50%" cy="40%" r="60%">
+            <stop offset="0%" stop-color="#fce8e4"/>
+            <stop offset="100%" stop-color="#f0d8d0"/>
+          </radialGradient>
+        </defs>
+        <g opacity=".9">
+          <rect x="16" y="38" width="9" height="9" rx="1.5" fill="#e0937a"/>
+          <rect x="27" y="38" width="9" height="9" rx="1.5" fill="#c9725a"/>
+          <rect x="16" y="49" width="9" height="9" rx="1.5" fill="#c9725a"/>
+          <rect x="27" y="49" width="9" height="9" rx="1.5" fill="#e8b0a0"/>
+          <rect x="16" y="60" width="9" height="9" rx="1.5" fill="#e8b0a0"/>
+          <rect x="27" y="60" width="9" height="9" rx="1.5" fill="#e0937a"/>
+          <rect x="16" y="71" width="9" height="9" rx="1.5" fill="#c9725a"/>
+          <rect x="27" y="71" width="9" height="9" rx="1.5" fill="#e0937a"/>
+        </g>
+        <line x1="43" y1="32" x2="43" y2="82" stroke="#c9725a" stroke-width="1.5" stroke-dasharray="3 2" opacity=".5"/>
+        <g fill="none" stroke="#c9725a" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M50 72 Q62 42 74 72" stroke-width="2.2"/>
+          <path d="M53 64 Q62 52 71 64" stroke-width="1.6" opacity=".6"/>
+          <circle cx="50" cy="72" r="2.2" fill="#c9725a" stroke="none"/>
+          <circle cx="74" cy="72" r="2.2" fill="#c9725a" stroke="none"/>
+          <circle cx="62" cy="40" r="2.2" fill="#e0937a" stroke="none"/>
+        </g>
+        <g transform="translate(55,22)" opacity=".85">
+          <polygon points="0,-6 1.4,-1.4 6,0 1.4,1.4 0,6 -1.4,1.4 -6,0 -1.4,-1.4" fill="#c9725a"/>
+        </g>
+        <text x="55" y="93" text-anchor="middle" font-family="Georgia,serif" font-size="7.5" font-weight="700" fill="#7a4a3a" letter-spacing=".5">ШІ-ГРАФІКА</text>
+      </svg>
+    </div>
+  </div>
+
+  <h1 class="page-title reveal">Генерація растрових та векторних зображень</h1>
+  <section class="info-block reveal" id="experiments">
+    <h2>Дві сторони цифрової графіки</h2>
+    <p>Коли комп'ютер створює зображення, він робить це двома абсолютно різними способами. Усе залежить від нашої мети: потрібна нам чітка векторна лінійка чи живий, деталізований растр. Штучний інтелект теж підкорює ці формати по-різному. І це логічно, бо розфарбувати мільйон окремих пікселів зовсім не те саме, що прорахувати геометрію кожної лінії.</p>
+  </section>
+  <div class="two-col">
+    <article class="card reveal">
+      <h3>Що таке растрова графіка?</h3>
+      <p>Уявіть собі вишивку хрестиком або мозаїку. Якщо підійти впритул, ви побачите окремі кольорові квадратики. Але варто відійти на крок назад — і вони зливаються у єдине зображення. Саме так працює растрова графіка.</p>
+      <p>Растрове зображення — це сітка, що складається з тисяч або мільйонів крихітних точок, які називаються пікселями. Кожен піксель має свій чіткий колір і координати.</p>
+      <ul>
+        <li><strong>Приклад:</strong> Фото з телефону, картинки з інтернету чи меми.</li>
+        <li><strong>Головний плюс:</strong> Ідеально передає складні кольорові переходи, тіні, відблиски та текстури реального світу.</li>
+        <li><strong>Головний біль:</strong> При збільшенні картинка перетворюється на «кашу» з кубиків (піксилізація).</li>
+      </ul>
+    </article>
+    <article class="card reveal">
+      <h3>Що таке векторна графіка?</h3>
+      <p>Тут усе навпаки. Комп'ютер не запам'ятовує колір кожної точки. Замість цього він працює як суворий математик і кресляр. Векторне зображення складається з геометричних об'єктів: опорних точок, ліній, кривих, кіл та багатокутників.</p>
+      <p>Коли ви відкриваєте векторний файл, процесор на ходу обчислює математичну формулу кожної лінії та малює її на екрані.</p>
+      <ul>
+        <li><strong>Приклад:</strong> Логотипи компаній, шрифти, іконки в додатках.</li>
+        <li><strong>Головний плюс:</strong> Нескінченне масштабування — контури залишаються ідеально чіткими.</li>
+        <li><strong>Головний біль:</strong> Створити реалістичний пейзаж у векторі неймовірно складно.</li>
+      </ul>
+    </article>
+  </div>
+  <section class="gallery raster reveal">
+    <h3>Приклади растрової графіки згенерованої за допомогою ШІ:</h3>
+    <div class="gallery-grid">
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="портрет" loading="lazy"/></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&h=400&fit=crop" alt="місто" loading="lazy"/></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=400&fit=crop" alt="собака" loading="lazy"/></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1490750967868-88df5691cc8f?w=400&h=400&fit=crop" alt="квітка" loading="lazy"/></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop" alt="скульптура" loading="lazy"/></div>
+    </div>
+  </section>
+  <section class="gallery vector reveal">
+    <h3>Приклади векторної графіки згенерованої за допомогою ШІ:</h3>
+    <div class="gallery-grid">
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1561736778-92e52a7769ef?w=400&h=400&fit=crop" alt="графіті" loading="lazy"/></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1572375992501-4b0892d50c69?w=400&h=400&fit=crop" alt="ілюстрація" loading="lazy"/></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop" alt="поп-арт" loading="lazy"/></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop" alt="пейзаж" loading="lazy"/></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1535083783855-aaab2b679f52?w=400&h=400&fit=crop" alt="архітектура" loading="lazy"/></div>
+    </div>
+  </section>
+  <section class="ai-block reveal" id="tips">
+    <h2>Як саме ШІ генерує ці зображення?</h2>
+    <div class="ai-step">
+      <h4>1. Генерація растру: Приборкання хаосу</h4>
+      <p>Сучасні ШІ-генератори растру працюють за принципом дифузії. Спочатку ШІ бере абсолютний цифровий шум (хаотичну «кашу» з кольорових точок, як телевізор без сигналу). Орієнтуючись на текстовий запит, нейромережа крок за кроком прибирає цей шум, поки з хаосу не з'явиться чітке зображення.</p>
+      <p>ШІ чудово малює текстури, але іноді «плутається» у точній геометрії, адже мислить плямами кольору, а не лініями.</p>
+    </div>
+    <div class="ai-step">
+      <h4>2. Генерація вектора: Математика замість пензля</h4>
+      <p>Для ШІ це набагато складніше завдання. Зазвичай генерація іде двома шляхами:</p>
+      <ul>
+        <li><strong>Пряма генерація коду (SVG):</strong> ШІ пише текстовий код — координати ліній та кольори заливки. Браузер читає цей код і малює графіку.</li>
+        <li><strong>Інтелектуальне трасування:</strong> ШІ спочатку створює растровий силует, а потім алгоритм перетворює піксельні краї на гладкі векторні контури.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section class="team-section reveal">
+    <h2 class="team-title">Над проєктом працювали</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">
+          <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=240&h=240&fit=crop&crop=face" alt="Гордієнко Олег" loading="lazy"/>
+        </div>
+        <span class="team-name">Гордієнко Олег</span>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=240&h=240&fit=crop&crop=face" alt="Драпалюк Софія" loading="lazy"/>
+        </div>
+        <span class="team-name">Драпалюк Софія</span>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=240&h=240&fit=crop&crop=face" alt="Гегечкорі Евеліна" loading="lazy"/>
+        </div>
+        <span class="team-name">Гегечкорі Евеліна</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  © Практична робота групи 3 класу Л-10В. Створено з фокусом на технологію ШІ-генерації графіки.
+</footer>
+
+<script>
+const drawer=document.getElementById('drawer');
+const overlay=document.getElementById('overlay');
+const burger=document.getElementById('burgerBtn');
+const themeBtn=document.getElementById('themeBtn');
+
+function openMenu(){drawer.classList.add('open');overlay.classList.add('show');burger.classList.add('open');burger.setAttribute('aria-expanded','true')}
+function closeMenu(){drawer.classList.remove('open');overlay.classList.remove('show');burger.classList.remove('open');burger.setAttribute('aria-expanded','false')}
+burger.addEventListener('click',()=>drawer.classList.contains('open')?closeMenu():openMenu());
+overlay.addEventListener('click',closeMenu);
+document.querySelectorAll('.nav-item').forEach(link=>{
+  link.addEventListener('click',()=>{document.querySelectorAll('.nav-item').forEach(l=>l.classList.remove('active'));link.classList.add('active');closeMenu()});
+});
+
+// ── THEME TOGGLE ──
+let isDark = localStorage.getItem('theme')==='dark';
+function applyTheme(){
+  document.body.classList.toggle('dark', isDark);
+  themeBtn.textContent = isDark ? '🌙' : '⭐';
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+}
+applyTheme();
+themeBtn.addEventListener('click',()=>{isDark=!isDark;applyTheme()});
+
+// ── REVEAL ──
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.08,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=`${i*.07}s`;obs.observe(el)});
+</script>
 </body>
 </html>

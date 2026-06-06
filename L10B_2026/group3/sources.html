@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Використані джерела</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Proza+Libre:wght@400;600&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ══ TOPBAR ══ -->
+<header id="topbar">
+  <button id="burgerBtn" aria-label="Меню" aria-expanded="false">
+    <span class="b-icon"><span></span><span></span><span></span></span>
+  </button>
+  <span id="topbarTitle">Використані джерела</span>
+  <button id="themeBtn" aria-label="Перемкнути тему" title="Перемкнути тему">⭐</button>
+</header>
+
+<div id="overlay"></div>
+
+<!-- ══ SIDE DRAWER ══ -->
+<aside id="drawer">
+    <nav class="drawer-nav">
+    <a href="index.html" class="nav-item">Генерація растрових та векторних зображень</a>
+    <a href="experiments.html" class="nav-item">Експерименти з різними ШІ та їх порівняння</a>
+    <a href="tips.html" class="nav-item">Поради у написанні промптів</a>
+    <a href="sources.html" class="nav-item active">Використані джерела</a>
+  </nav>
+</aside>
+
+<!-- ══ MAIN CONTENT ══ -->
+<main class="main">
+
+  <!-- Logo -->
+  <div class="logo-wrap reveal">
+    <div class="logo-circle">
+      <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" width="110" height="110">
+        <circle cx="55" cy="55" r="55" fill="url(#bgGradSrc)"/>
+        <defs>
+          <radialGradient id="bgGradSrc" cx="50%" cy="40%" r="60%">
+            <stop offset="0%" stop-color="#fce8e4"/>
+            <stop offset="100%" stop-color="#f0d8d0"/>
+          </radialGradient>
+        </defs>
+        <!-- Open book icon -->
+        <path d="M26 38 Q26 36 28 36 L52 38 Q54 38 55 40 L55 76 Q54 74 52 74 L28 72 Q26 72 26 70 Z" fill="#e8b0a0" stroke="#c9725a" stroke-width="1.2"/>
+        <path d="M84 38 Q84 36 82 36 L58 38 Q56 38 55 40 L55 76 Q56 74 58 74 L82 72 Q84 72 84 70 Z" fill="#fce8e4" stroke="#c9725a" stroke-width="1.2"/>
+        <line x1="55" y1="40" x2="55" y2="76" stroke="#c9725a" stroke-width="1.5"/>
+        <!-- Lines on left page -->
+        <line x1="31" y1="46" x2="50" y2="47" stroke="#c9725a" stroke-width="1" opacity=".5"/>
+        <line x1="31" y1="52" x2="50" y2="53" stroke="#c9725a" stroke-width="1" opacity=".5"/>
+        <line x1="31" y1="58" x2="50" y2="59" stroke="#c9725a" stroke-width="1" opacity=".5"/>
+        <line x1="31" y1="64" x2="44" y2="65" stroke="#c9725a" stroke-width="1" opacity=".5"/>
+        <!-- Lines on right page -->
+        <line x1="60" y1="46" x2="79" y2="47" stroke="#c9725a" stroke-width="1" opacity=".4"/>
+        <line x1="60" y1="52" x2="79" y2="53" stroke="#c9725a" stroke-width="1" opacity=".4"/>
+        <line x1="60" y1="58" x2="79" y2="59" stroke="#c9725a" stroke-width="1" opacity=".4"/>
+        <line x1="60" y1="64" x2="72" y2="65" stroke="#c9725a" stroke-width="1" opacity=".4"/>
+        <!-- Sparkle -->
+        <polygon points="86,24 87.2,20.4 90.8,19.2 87.2,18 86,14.4 84.8,18 81.2,19.2 84.8,20.4" fill="#e0937a" opacity=".9"/>
+        <text x="55" y="94" text-anchor="middle" font-family="Georgia,serif" font-size="7" font-weight="700" fill="#7a4a3a" letter-spacing=".5">ДЖЕРЕЛА</text>
+      </svg>
+    </div>
+  </div>
+
+  <h1 class="page-title reveal">Використані джерела</h1>
+  <p class="page-subtitle reveal">Інструменти та ресурси, що допомогли у створенні цього проєкту</p>
+
+  <!-- ══════════════════════
+       КАТЕГОРІЯ: ПЕРЕКЛАД І ТЕКСТ
+  ══════════════════════ -->
+  <div class="cat-label reveal">
+    <span class="cat-label-line"></span>
+    <span class="cat-label-text">Переклад і текст</span>
+    <span class="cat-label-line"></span>
+  </div>
+
+  <!-- 1. Google Translate -->
+  <div class="source-card reveal">
+    <div class="source-icon-col">
+      <span class="source-icon">🌐</span>
+      <span class="source-num">01</span>
+    </div>
+    <div class="source-body">
+      <span class="source-title">Google Translate</span>
+      <span class="source-role">Переклад промптів</span>
+      <p class="source-desc">Використовувався для перекладу текстових запитів (промптів) з української на англійську мову. Оскільки більшість ШІ-генераторів зображень значно краще розуміють англійські команди, Google Translate став незамінним помічником на етапі <strong>написання та уточнення промптів</strong>.</p>
+      <a href="https://translate.google.com" target="_blank" rel="noopener" class="source-link">
+        translate.google.com <span class="source-link-arrow">↗</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════
+       КАТЕГОРІЯ: ДИЗАЙН І КОЛЬОРИ
+  ══════════════════════ -->
+  <div class="cat-label reveal">
+    <span class="cat-label-line"></span>
+    <span class="cat-label-text">Дизайн і кольори</span>
+    <span class="cat-label-line"></span>
+  </div>
+
+  <!-- 2. color.romanuke.com -->
+  <div class="source-card soft reveal">
+    <div class="source-icon-col">
+      <span class="source-icon">🎨</span>
+      <span class="source-num">02</span>
+    </div>
+    <div class="source-body">
+      <span class="source-title">color.romanuke.com — Палітра кольорів</span>
+      <span class="source-role">Підбір кольорової схеми</span>
+      <p class="source-desc">Українська платформа для підбору гармонійних колірних палітр. Саме звідси було обрано <strong>теплу кремово-теракотову гаму</strong> кольорів, яку ви бачите на всіх сторінках проєкту: відтінки кориці, персику та приглушеного рожевого.</p>
+      <a href="https://color.romanuke.com" target="_blank" rel="noopener" class="source-link">
+        color.romanuke.com <span class="source-link-arrow">↗</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════
+       КАТЕГОРІЯ: ЗОБРАЖЕННЯ
+  ══════════════════════ -->
+  <div class="cat-label reveal">
+    <span class="cat-label-line"></span>
+    <span class="cat-label-text">Зображення та ілюстрації</span>
+    <span class="cat-label-line"></span>
+  </div>
+
+  <!-- 3. Images -->
+  <div class="source-card reveal">
+    <div class="source-icon-col">
+      <span class="source-icon">🖼️</span>
+      <span class="source-num">03</span>
+    </div>
+    <div class="source-body">
+      <span class="source-title">Підбір зображень</span>
+      <span class="source-role">Візуальний контент</span>
+      <p class="source-desc">Зображення для проєкту підбирались із <strong>трьох джерел</strong>: частина — з власних ідей та уявлень (creative direction «з голови»); частина — знайдена та підібрана за допомогою <strong>Gemini</strong> як інструменту пошуку й натхнення; а також окремі підбірки з тематичних сайтів та стокових фотобанків із відкритою ліцензією.</p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════
+       КАТЕГОРІЯ: ШІ-ІНСТРУМЕНТИ
+  ══════════════════════ -->
+  <div class="cat-label reveal">
+    <span class="cat-label-line"></span>
+    <span class="cat-label-text">ШІ-інструменти</span>
+    <span class="cat-label-line"></span>
+  </div>
+
+  <div class="two-col-sources">
+
+    <!-- 4. Gemini -->
+    <div class="source-card-sm soft reveal">
+      <div class="sm-top">
+        <div class="sm-icon">✨</div>
+        <div>
+          <div class="sm-title">Google Gemini</div>
+          <div class="sm-role">Текст і структура</div>
+        </div>
+      </div>
+      <p class="sm-desc">Допомагав <strong>перефразовувати та структурувати текст</strong> для різних розділів проєкту — пояснення понять, опис технологій, формулювання висновків. Також використовувався для пошуку прикладів і підбору тематичного візуального контенту.</p>
+      <a href="https://gemini.google.com" target="_blank" rel="noopener" class="source-link">
+        gemini.google.com <span>↗</span>
+      </a>
+    </div>
+
+    <!-- 5. Claude -->
+    <div class="source-card-sm reveal">
+      <div class="sm-top">
+        <div class="sm-icon">🤖</div>
+        <div>
+          <div class="sm-title">Claude (Anthropic)</div>
+          <div class="sm-role">Допомога з кодом</div>
+        </div>
+      </div>
+      <p class="sm-desc">Використовувався як <strong>асистент при написанні HTML і CSS коду</strong> для всіх сторінок сайту. Допомагав вибудовувати структуру, стилізувати компоненти та налагоджувати анімації й адаптивний дизайн.</p>
+      <a href="https://claude.ai" target="_blank" rel="noopener" class="source-link">
+        claude.ai <span>↗</span>
+      </a>
+    </div>
+
+  </div>
+
+
+</main>
+
+<footer class="site-footer">
+  © Практична робота групи 3 класу Л-10В. Створено з фокусом на технологію ШІ-генерації графіки.
+</footer>
+
+<script>
+/* ── BURGER / DRAWER ── */
+const drawer=document.getElementById('drawer');
+const overlay=document.getElementById('overlay');
+const burger=document.getElementById('burgerBtn');
+const themeBtn=document.getElementById('themeBtn');
+
+function openMenu(){drawer.classList.add('open');overlay.classList.add('show');burger.classList.add('open');burger.setAttribute('aria-expanded','true')}
+function closeMenu(){drawer.classList.remove('open');overlay.classList.remove('show');burger.classList.remove('open');burger.setAttribute('aria-expanded','false')}
+burger.addEventListener('click',()=>drawer.classList.contains('open')?closeMenu():openMenu());
+overlay.addEventListener('click',closeMenu);
+document.querySelectorAll('.nav-item').forEach(link=>{
+  link.addEventListener('click',()=>{closeMenu()});
+});
+
+/* ── THEME TOGGLE ── */
+let isDark=localStorage.getItem('theme')==='dark';
+function applyTheme(){
+  document.body.classList.toggle('dark',isDark);
+  themeBtn.textContent=isDark?'🌙':'⭐';
+  localStorage.setItem('theme',isDark?'dark':'light');
+}
+applyTheme();
+themeBtn.addEventListener('click',()=>{isDark=!isDark;applyTheme()});
+
+/* ── REVEAL ── */
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.06,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=`${i*.06}s`;obs.observe(el)});
+
+/* ── HOVER effect on source links ── */
+document.querySelectorAll('.source-link').forEach(link=>{
+  link.addEventListener('mouseenter',()=>link.style.borderBottomColor='var(--color-accent)');
+  link.addEventListener('mouseleave',()=>link.style.borderBottomColor='transparent');
+});
+</script>
+</body>
+</html>
